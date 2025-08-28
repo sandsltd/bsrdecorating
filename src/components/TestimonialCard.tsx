@@ -38,7 +38,7 @@ const TestimonialCard = ({ name, location, rating, text, service }: TestimonialC
 
       {/* Testimonial Text */}
       <p className="text-gray-300 mb-4 leading-relaxed italic">
-        "{text}"
+        &ldquo;{text}&rdquo;
       </p>
 
       {/* Customer Info */}

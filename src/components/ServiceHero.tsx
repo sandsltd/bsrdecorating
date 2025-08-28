@@ -9,7 +9,7 @@ interface ServiceHeroProps {
   image: string;
 }
 
-const ServiceHero = ({ title, subtitle, description, image }: ServiceHeroProps) => {
+const ServiceHero = ({ title, subtitle, description }: ServiceHeroProps) => {
   return (
     <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-bsr-black via-bsr-gray to-bsr-black">
       {/* Background Pattern */}

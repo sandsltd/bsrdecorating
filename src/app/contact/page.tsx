@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, CheckCircle } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
 
 export default function ContactPage() {
@@ -43,7 +43,7 @@ export default function ContactPage() {
             Get in <span className="text-bsr-highlight">Touch</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Ready to transform your space? Contact us for a free, no-obligation quote and let's discuss your project.
+            Ready to transform your space? Contact us for a free, no-obligation quote and let&apos;s discuss your project.
           </p>
         </div>
       </section>
@@ -60,7 +60,7 @@ export default function ContactPage() {
                 <CheckCircle size={48} className="text-bsr-highlight mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-bsr-white mb-2">Thank You!</h3>
                 <p className="text-gray-300">
-                  Your message has been sent successfully. We'll get back to you within 24 hours.
+                  Your message has been sent successfully. We&apos;ll get back to you within 24 hours.
                 </p>
               </div>
             ) : (

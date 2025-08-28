@@ -15,7 +15,7 @@ interface ServiceCardProps {
   highlightColor: string;
 }
 
-const ServiceCard = ({ title, description, features, image, href, ctaText, highlightColor }: ServiceCardProps) => {
+const ServiceCard = ({ title, description, features, href, ctaText }: ServiceCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

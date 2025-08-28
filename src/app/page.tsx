@@ -121,7 +121,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-bsr-white mb-2">Local & Reliable</h3>
               <p className="text-gray-300">
-                Based in Dawlish, Devon, we're your local decorating experts with a reputation for reliability and trust.
+                Based in Dawlish, Devon, we&apos;re your local decorating experts with a reputation for reliability and trust.
               </p>
             </div>
 
@@ -149,7 +149,7 @@ export default function Home() {
               What Our <span className="text-bsr-highlight">Customers Say</span>
             </h2>
             <p className="text-xl text-gray-300">
-              Don't just take our word for it - hear from our satisfied customers
+              Don&apos;t just take our word for it - hear from our satisfied customers
             </p>
           </div>
 

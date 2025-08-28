@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Image as ImageIcon, Video, Filter, Star } from 'lucide-react';
+import { Image as ImageIcon, Video, Star } from 'lucide-react';
 
 export default function GalleryPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');

@@ -163,7 +163,7 @@ const ContactForm = ({ onSuccess }: ContactFormProps) => {
       </button>
 
       <p className="text-sm text-gray-400 text-center">
-        We'll get back to you within 24 hours with a free quote.
+        We&apos;ll get back to you within 24 hours with a free quote.
       </p>
     </form>
   );

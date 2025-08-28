@@ -97,7 +97,7 @@ export default function ReviewsPage() {
             Customer <span className="text-bsr-highlight">Reviews</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Don't just take our word for it - hear from our satisfied customers about their experience with BSR Decorating
+            Don&apos;t just take our word for it - hear from our satisfied customers about their experience with BSR Decorating
           </p>
         </div>
       </section>
@@ -179,7 +179,7 @@ export default function ReviewsPage() {
 
                 {/* Review Text */}
                 <p className="text-gray-300 mb-4 leading-relaxed italic">
-                  "{review.text}"
+                  &ldquo;{review.text}&rdquo;
                 </p>
 
                 {/* Project Info */}
