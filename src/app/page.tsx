@@ -9,26 +9,26 @@ export default function Home() {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
+      name: "Duncan Attwood",
       location: "Dawlish",
       rating: 5,
-      text: "BSR Decorating transformed our living room completely. Professional, clean, and excellent quality work. Highly recommend!",
-      service: "Domestic"
-    },
-    {
-      id: 2,
-      name: "Mike Thompson",
-      location: "Teignmouth",
-      rating: 5,
-      text: "Outstanding service for our office renovation. Completed on time and within budget. Will definitely use again.",
+      text: "My thanks go to Ben at BSR Decorating. I need to keep our fit20 studio looking its best and after 4 years thought it was time to redecorate. Ben came out promptly to assess the work that was needed and to match the paint we already had, which is important to us as a franchise to ensure everything is on brand.",
       service: "Commercial"
     },
     {
-      id: 3,
-      name: "Emma Davis",
-      location: "Exmouth",
+      id: 2,
+      name: "Jonathan Downer",
+      location: "Dawlish",
       rating: 5,
-      text: "Fantastic attention to detail and great communication throughout the project. Our kitchen looks amazing!",
+      text: "Ben carried out a significant amount of work at our property - exterior and internal decorating for a large Victorian property. From the initial response to our enquiry, through providing a clear and fair quote, to performance of the work itself, Ben has been exceptional.",
+      service: "Domestic"
+    },
+    {
+      id: 3,
+      name: "Laurence Blyth",
+      location: "Dawlish",
+      rating: 5,
+      text: "BSR Decorating painted the outside of our house. They did a cracking job. Great to come back from work and find the job done, and no mess.",
       service: "Domestic"
     }
   ];

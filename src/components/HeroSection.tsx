@@ -21,7 +21,7 @@ const HeroSection = () => {
                   <Star key={i} size={16} className="text-bsr-highlight fill-current" />
                 ))}
               </div>
-              <span className="text-bsr-highlight font-semibold">5.0 on Google</span>
+              <span className="text-bsr-highlight font-semibold">5.0 on Google (9 reviews)</span>
             </div>
 
             {/* Main Headline */}
