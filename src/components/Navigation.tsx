@@ -19,6 +19,19 @@ const Navigation = () => {
 
   return (
     <nav className="bg-bsr-black bg-opacity-95 backdrop-blur-sm border-b border-bsr-gray-light sticky top-0 z-50">
+      {/* Mobile Phone Number Bar */}
+      <div className="md:hidden bg-bsr-highlight py-2 px-4">
+        <div className="max-w-7xl mx-auto flex justify-center items-center">
+          <a
+            href="tel:07700900000"
+            className="text-bsr-white font-medium flex items-center space-x-2 hover:opacity-90 transition-opacity duration-200"
+          >
+            <Phone size={16} />
+            <span>07700 900000</span>
+          </a>
+        </div>
+      </div>
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
