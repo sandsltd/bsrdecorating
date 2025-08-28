@@ -1,103 +1,204 @@
-import Image from "next/image";
+import Link from 'next/link';
+import { ArrowRight, Star, CheckCircle, Phone } from 'lucide-react';
+import HeroSection from '@/components/HeroSection';
+import ServiceCard from '@/components/ServiceCard';
+import TestimonialCard from '@/components/TestimonialCard';
+import GalleryPreview from '@/components/GalleryPreview';
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const testimonials = [
+    {
+      id: 1,
+      name: "Sarah Johnson",
+      location: "Dawlish",
+      rating: 5,
+      text: "BSR Decorating transformed our living room completely. Professional, clean, and excellent quality work. Highly recommend!",
+      service: "Domestic"
+    },
+    {
+      id: 2,
+      name: "Mike Thompson",
+      location: "Teignmouth",
+      rating: 5,
+      text: "Outstanding service for our office renovation. Completed on time and within budget. Will definitely use again.",
+      service: "Commercial"
+    },
+    {
+      id: 3,
+      name: "Emma Davis",
+      location: "Exmouth",
+      rating: 5,
+      text: "Fantastic attention to detail and great communication throughout the project. Our kitchen looks amazing!",
+      service: "Domestic"
+    }
+  ];
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <HeroSection />
+
+      {/* Services Split */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-bsr-black to-bsr-gray">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center space-x-2 bg-bsr-highlight bg-opacity-20 border border-bsr-highlight rounded-full px-6 py-2 mb-6">
+              <span className="text-bsr-highlight font-semibold">Our Services</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-bsr-white mb-6">
+              Professional <span className="text-bsr-highlight">Decorating Services</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Whether you need domestic or commercial decorating, we provide exceptional quality workmanship 
+              with attention to detail that sets us apart.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            {/* Domestic Decorating */}
+            <ServiceCard
+              title="Home Decorating"
+              description="Transform your home with our professional domestic decorating services. From single rooms to complete house renovations."
+              features={[
+                "Interior & exterior painting",
+                "Wallpaper hanging & removal",
+                "Preparation & finishing",
+                "Color consultation",
+                "Free quotes & estimates"
+              ]}
+              image="/domestic-preview.jpg"
+              href="/domestic"
+              ctaText="View Domestic Services"
+              highlightColor="bsr-highlight"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+
+            {/* Commercial Decorating */}
+            <ServiceCard
+              title="Commercial Decorating"
+              description="Professional commercial decorating for offices, retail spaces, and industrial properties. Minimal disruption, maximum impact."
+              features={[
+                "Office & retail spaces",
+                "Industrial & warehouse",
+                "Out-of-hours working",
+                "Health & safety compliance",
+                "Project management"
+              ]}
+              image="/commercial-preview.jpg"
+              href="/commercial"
+              ctaText="View Commercial Services"
+              highlightColor="bsr-highlight"
+            />
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-bsr-gray">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center space-x-2 bg-bsr-highlight bg-opacity-20 border border-bsr-highlight rounded-full px-6 py-2 mb-6">
+              <span className="text-bsr-highlight font-semibold">Why Choose Us</span>
+            </div>
+            <h2 className="text-4xl font-bold text-bsr-white mb-6">
+              Why Choose <span className="text-bsr-highlight">BSR Decorating</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="bg-bsr-highlight w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle size={32} className="text-bsr-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-bsr-white mb-2">Quality Workmanship</h3>
+              <p className="text-gray-300">
+                We take pride in every project, ensuring the highest standards of workmanship and attention to detail.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-bsr-highlight w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Phone size={32} className="text-bsr-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-bsr-white mb-2">Local & Reliable</h3>
+              <p className="text-gray-300">
+                Based in Dawlish, Devon, we're your local decorating experts with a reputation for reliability and trust.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-bsr-highlight w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Star size={32} className="text-bsr-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-bsr-white mb-2">Competitive Pricing</h3>
+              <p className="text-gray-300">
+                Fair, transparent pricing with no hidden costs. We provide detailed quotes and stick to them.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Preview */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-bsr-gray to-bsr-black">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center space-x-2 bg-bsr-highlight bg-opacity-20 border border-bsr-highlight rounded-full px-6 py-2 mb-6">
+              <span className="text-bsr-highlight font-semibold">Testimonials</span>
+            </div>
+            <h2 className="text-4xl font-bold text-bsr-white mb-6">
+              What Our <span className="text-bsr-highlight">Customers Say</span>
+            </h2>
+            <p className="text-xl text-gray-300">
+              Don't just take our word for it - hear from our satisfied customers
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            {testimonials.map((testimonial) => (
+              <TestimonialCard key={testimonial.id} {...testimonial} />
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/reviews"
+              className="inline-flex items-center space-x-2 bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              <span>View All Reviews</span>
+              <ArrowRight size={20} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Preview */}
+      <GalleryPreview />
+
+      {/* CTA Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-bsr-highlight">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-bsr-white mb-6">
+            Ready to Transform Your Space?
+          </h2>
+          <p className="text-xl text-bsr-white mb-10 opacity-90">
+            Get your free, no-obligation quote today and see how we can bring your vision to life.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Link
+              href="/contact"
+              className="bg-bsr-white text-bsr-highlight hover:bg-gray-100 px-10 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              Get Free Quote
+            </Link>
+            <Link
+              href="/gallery"
+              className="border-2 border-bsr-white text-bsr-white hover:bg-bsr-white hover:text-bsr-highlight px-10 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              View Our Work
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
