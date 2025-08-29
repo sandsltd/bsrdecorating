@@ -140,6 +140,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Service Area Map */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-bsr-black to-bsr-gray">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center space-x-2 bg-bsr-highlight bg-opacity-20 border border-bsr-highlight rounded-full px-6 py-2 mb-6">
+              <span className="text-bsr-highlight font-semibold">Service Area</span>
+            </div>
+            <h2 className="text-4xl font-bold text-bsr-white mb-6">
+              Covering <span className="text-bsr-highlight">South East Devon</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Based in Dawlish, we provide professional decorating services across Devon and surrounding areas
+            </p>
+          </div>
+
+          <ServiceAreaMap />
+        </div>
+      </section>
+
       {/* Testimonials Preview */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-bsr-gray to-bsr-black">
         <div className="max-w-7xl mx-auto">
@@ -252,24 +271,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Service Area Map */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-bsr-black to-bsr-gray">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-            <div className="inline-flex items-center space-x-2 bg-bsr-highlight bg-opacity-20 border border-bsr-highlight rounded-full px-6 py-2 mb-6">
-              <span className="text-bsr-highlight font-semibold">Service Area</span>
-            </div>
-            <h2 className="text-4xl font-bold text-bsr-white mb-6">
-              Covering <span className="text-bsr-highlight">South East Devon</span>
-            </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Based in Dawlish, we provide professional decorating services across Devon and surrounding areas
-            </p>
-          </div>
 
-          <ServiceAreaMap />
-        </div>
-      </section>
 
       {/* Latest Blog Posts */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-bsr-gray to-bsr-black">

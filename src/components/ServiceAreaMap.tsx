@@ -183,6 +183,17 @@ const ServiceAreaMap = () => {
         });
       });
 
+      // Handle map resize for mobile responsiveness
+      const handleResize = () => {
+        if (map.current) {
+          setTimeout(() => {
+            map.current!.resize();
+          }, 100);
+        }
+      };
+
+      window.addEventListener('resize', handleResize);
+
       map.current!.on('load', () => {
         // Create BSR logo marker element for headquarters
         const el = document.createElement('div');
@@ -452,6 +463,7 @@ const ServiceAreaMap = () => {
     document.head.appendChild(script);
 
     return () => {
+      window.removeEventListener('resize', handleResize);
       if (map.current) {
         map.current!.remove();
         map.current = null;
@@ -490,7 +502,8 @@ const ServiceAreaMap = () => {
           <div className="flex-1">
             <div
               ref={mapContainer}
-              className="w-full h-full rounded-xl shadow-2xl border border-bsr-gray-light"
+              className="w-full h-[60vh] lg:h-full rounded-xl shadow-2xl border border-bsr-gray-light"
+              style={{ minHeight: '400px' }}
             />
           </div>
 
