@@ -9,6 +9,8 @@ module.exports = {
     extend: {
       colors: {
         'bsr-highlight': '#E801F8',
+        'bsr-blue': '#0E2168',
+        'bsr-blue-light': '#1a4b8c',
         'bsr-black': '#000000',
         'bsr-white': '#ffffff',
         'bsr-gray': '#1a1a1a',

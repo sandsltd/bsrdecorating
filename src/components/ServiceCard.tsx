@@ -13,9 +13,10 @@ interface ServiceCardProps {
   href: string;
   ctaText: string;
   highlightColor: string;
+  buttonStyle?: 'highlight' | 'blue';
 }
 
-const ServiceCard = ({ title, description, features, href, ctaText }: ServiceCardProps) => {
+const ServiceCard = ({ title, description, features, href, ctaText, buttonStyle = 'highlight' }: ServiceCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -57,7 +58,11 @@ const ServiceCard = ({ title, description, features, href, ctaText }: ServiceCar
         {/* CTA Button */}
         <Link
           href={href}
-          className="inline-flex items-center space-x-2 bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-6 py-3 rounded-lg font-medium transition-all duration-200 group-hover:scale-105 transform shadow-lg hover:shadow-xl"
+          className={`inline-flex items-center space-x-2 ${
+            buttonStyle === 'blue' 
+              ? 'bg-bsr-blue hover:bg-bsr-blue-light text-bsr-white' 
+              : 'bg-bsr-blue hover:bg-bsr-blue-light text-bsr-white'
+          } px-6 py-3 rounded-lg font-medium transition-all duration-200 group-hover:scale-105 transform shadow-lg hover:shadow-xl`}
         >
           <span>{ctaText}</span>
           <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform duration-200" />

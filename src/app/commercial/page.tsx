@@ -1,8 +1,12 @@
+'use client';
+
 import Link from 'next/link';
 import { Check, Star, Phone, Clock, Shield, Building } from 'lucide-react';
 import ServiceHero from '@/components/ServiceHero';
+import { useQuoteModal } from '@/contexts/QuoteModalContext';
 
 export default function CommercialPage() {
+  const { openQuoteModal } = useQuoteModal();
   const services = [
     {
       title: "Office Decorating",
@@ -169,13 +173,13 @@ export default function CommercialPage() {
             Get your free, no-obligation quote today and see how we can enhance your commercial property.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="bg-bsr-white text-bsr-highlight hover:bg-gray-100 px-8 py-3 rounded-md font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
+            <button
+              onClick={openQuoteModal}
+              className="bg-bsr-blue hover:bg-bsr-blue-light text-bsr-white px-8 py-3 rounded-md font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Phone size={20} />
               <span>Get Free Quote</span>
-            </Link>
+            </button>
             <Link
               href="/gallery"
               className="border-2 border-bsr-white text-bsr-white hover:bg-bsr-white hover:text-bsr-highlight px-8 py-3 rounded-md font-semibold transition-colors duration-200"

@@ -1,8 +1,12 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react';
+import { useQuoteModal } from '@/contexts/QuoteModalContext';
 
 const Footer = () => {
+  const { openQuoteModal } = useQuoteModal();
   return (
     <footer className="bg-bsr-gray border-t border-bsr-gray-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -95,12 +99,12 @@ const Footer = () => {
                 <span className="text-gray-300">Dawlish, Devon</span>
               </div>
             </div>
-            <Link
-              href="/contact"
-              className="inline-block mt-4 bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-4 py-2 rounded-md font-medium transition-colors duration-200"
-            >
-              Get Free Quote
-            </Link>
+                                <button
+                      onClick={openQuoteModal}
+                      className="inline-block mt-4 bg-bsr-blue hover:bg-bsr-blue-light text-bsr-white px-4 py-2 rounded-md font-medium transition-colors duration-200"
+                    >
+                      Get Free Quote
+                    </button>
           </div>
         </div>
 

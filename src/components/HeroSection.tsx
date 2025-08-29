@@ -3,8 +3,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Phone, Star } from 'lucide-react';
+import { useQuoteModal } from '@/contexts/QuoteModalContext';
 
 const HeroSection = () => {
+  const { openQuoteModal } = useQuoteModal();
   return (
     <section className="relative min-h-screen bg-bsr-black flex items-center justify-center">
       {/* Background */}
@@ -67,16 +69,16 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/contact"
-                className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl"
+              <button
+                onClick={openQuoteModal}
+                className="bg-bsr-blue hover:bg-bsr-blue-light text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl"
               >
                 <span>Get Your Free Quote</span>
                 <ArrowRight size={20} />
-              </Link>
+              </button>
               <Link
                 href="/gallery"
-                className="bg-bsr-gray hover:bg-bsr-gray-light text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 flex items-center justify-center space-x-3 border border-bsr-gray-light hover:border-bsr-highlight"
+                className="bg-bsr-gray hover:bg-bsr-gray-light text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 flex items-center justify-center space-x-3 border border-bsr-gray-light hover:border-bsr-highlight shadow-lg hover:shadow-xl"
               >
                 <span>Check Our Work</span>
                 <ArrowRight size={20} />

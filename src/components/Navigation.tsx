@@ -4,9 +4,11 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X, Phone } from 'lucide-react';
+import { useQuoteModal } from '@/contexts/QuoteModalContext';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { openQuoteModal } = useQuoteModal();
 
   const navItems = [
     { name: 'Home', href: '/' },
@@ -61,13 +63,13 @@ const Navigation = () => {
 
           {/* Contact Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link
-              href="/contact"
-              className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-4 py-2 rounded-md font-medium transition-colors duration-200 flex items-center space-x-2"
-            >
-              <Phone size={16} />
-              <span>Get Quote</span>
-            </Link>
+                                <button
+                      onClick={openQuoteModal}
+                      className="bg-bsr-blue hover:bg-bsr-blue-light text-bsr-white px-4 py-2 rounded-md font-medium transition-colors duration-200 flex items-center space-x-2"
+                    >
+                      <Phone size={16} />
+                      <span>Get Quote</span>
+                    </button>
           </div>
 
           {/* Mobile menu button */}
@@ -95,13 +97,15 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
-              <Link
-                href="/contact"
-                className="block px-3 py-2 bg-bsr-highlight text-bsr-white rounded-md font-medium mt-4"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Get Quote
-              </Link>
+                                    <button
+                        onClick={() => {
+                          openQuoteModal();
+                          setIsMenuOpen(false);
+                        }}
+                        className="block w-full text-left px-3 py-2 bg-bsr-blue text-bsr-white rounded-md font-medium mt-4"
+                      >
+                        Get Quote
+                      </button>
             </div>
           </div>
         )}

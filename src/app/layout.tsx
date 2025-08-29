@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { QuoteModalProvider } from "@/contexts/QuoteModalContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,13 +28,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="min-h-screen bg-bsr-black text-bsr-white" style={{ backgroundColor: '#000000' }}>
-          <Navigation />
-          <main className="flex-1">
-            {children}
-          </main>
-          <Footer />
-        </div>
+        <QuoteModalProvider>
+          <div className="min-h-screen bg-bsr-black text-bsr-white" style={{ backgroundColor: '#000000' }}>
+            <Navigation />
+            <main className="flex-1">
+              {children}
+            </main>
+            <Footer />
+          </div>
+        </QuoteModalProvider>
       </body>
     </html>
   );

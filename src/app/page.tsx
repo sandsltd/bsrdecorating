@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Star, CheckCircle, Phone, Heart, Calendar, Clock } from 'lucide-react';
@@ -6,8 +8,10 @@ import ServiceCard from '@/components/ServiceCard';
 import TestimonialCard from '@/components/TestimonialCard';
 import GalleryPreview from '@/components/GalleryPreview';
 import ServiceAreaMap from '@/components/ServiceAreaMap';
+import { useQuoteModal } from '@/contexts/QuoteModalContext';
 
 export default function Home() {
+  const { openQuoteModal } = useQuoteModal();
   const testimonials = [
     {
       id: 1,
@@ -89,6 +93,7 @@ export default function Home() {
               href="/commercial"
               ctaText="View Commercial Services"
               highlightColor="bsr-highlight"
+              buttonStyle="blue"
             />
           </div>
         </div>
@@ -444,12 +449,12 @@ export default function Home() {
             Get your free, no-obligation quote today and see how we can bring your vision to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link
-              href="/contact"
-              className="bg-bsr-white text-bsr-highlight hover:bg-gray-100 px-10 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+            <button
+              onClick={openQuoteModal}
+              className="bg-bsr-blue hover:bg-bsr-blue-light text-bsr-white px-10 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               Get Free Quote
-            </Link>
+            </button>
             <Link
               href="/gallery"
               className="border-2 border-bsr-white text-bsr-white hover:bg-bsr-white hover:text-bsr-highlight px-10 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"

@@ -141,6 +141,13 @@ export async function POST(request: NextRequest) {
                 <span class="value">${additionalServices.join(', ')}</span>
               </div>
               ` : ''}
+              
+              ${formData.message ? `
+              <div style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #E801F8;">
+                <h4 style="color: #E801F8; margin: 0 0 10px 0; font-size: 16px;">Customer Message:</h4>
+                <p style="margin: 0; color: #333; line-height: 1.5; white-space: pre-wrap;">${formData.message}</p>
+              </div>
+              ` : ''}
             </div>
 
             <div style="background: #e9ecef; padding: 20px; border-radius: 8px; margin: 20px 0;">
@@ -184,7 +191,10 @@ Project Details:
 ${formData.numberOfRooms ? `- Number of Rooms: ${formData.numberOfRooms}` : ''}
 ${additionalServices.length > 0 ? `- Additional Services: ${additionalServices.join(', ')}` : ''}
 
-Please contact the customer within 24 hours.
+${formData.message ? `Customer Message:
+${formData.message}
+
+` : ''}Please contact the customer within 24 hours.
       `
     };
 

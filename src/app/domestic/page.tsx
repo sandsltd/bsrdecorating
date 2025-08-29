@@ -1,8 +1,12 @@
+'use client';
+
 import Link from 'next/link';
 import { Check, Star, Phone, Clock, Shield, Palette } from 'lucide-react';
 import ServiceHero from '@/components/ServiceHero';
+import { useQuoteModal } from '@/contexts/QuoteModalContext';
 
 export default function DomesticPage() {
+  const { openQuoteModal } = useQuoteModal();
   const services = [
     {
       title: "Interior Painting",
@@ -55,7 +59,7 @@ export default function DomesticPage() {
         title="Domestic Decorating Services"
         subtitle="Transform your home with our professional decorating services across Devon - from Dawlish to Exeter, Newton Abbot to Torquay"
         description="From single room makeovers to complete house renovations, we provide exceptional quality workmanship with attention to detail that will make your home truly special."
-        image="/domestic-hero.jpg"
+        image="/images/Home decorating image.jpeg"
       />
 
       {/* Services */}
@@ -169,13 +173,13 @@ export default function DomesticPage() {
             Get your free, no-obligation quote today and see how we can bring your vision to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="bg-bsr-white text-bsr-highlight hover:bg-gray-100 px-8 py-3 rounded-md font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
+            <button
+              onClick={openQuoteModal}
+              className="bg-bsr-blue hover:bg-bsr-blue-light text-bsr-white px-8 py-3 rounded-md font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Phone size={20} />
               <span>Get Free Quote</span>
-            </Link>
+            </button>
             <Link
               href="/gallery"
               className="border-2 border-bsr-white text-bsr-white hover:bg-bsr-white hover:text-bsr-highlight px-8 py-3 rounded-md font-semibold transition-colors duration-200"
