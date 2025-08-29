@@ -26,34 +26,35 @@ const HeroSection = () => {
 
             {/* Main Headline */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-bsr-white mb-6 leading-tight">
-              Professional
+              Meet Ben
               <br />
-              <span className="text-bsr-highlight">Decorating Services</span>
+              <span className="text-bsr-highlight">Your Local Decorator</span>
             </h1>
 
             {/* Subtitle */}
             <p className="text-xl text-bsr-highlight font-semibold mb-6">
-              Serving Dawlish & Devon Since 2014
+              Professional Decorating Services in Dawlish & Devon
             </p>
 
             {/* Description */}
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-              Specialists in interior and exterior painting, with additional services including wallpaper hanging, 
-              color consultation, and complete home transformations. Professional service at your location.
+                                Hi, I&apos;m Ben Rourke, owner of BSR Decorating. With over 15 years of experience, I specialize in 
+              interior and exterior painting, wallpaper hanging, and complete home transformations. 
+              I bring professionalism, quality, and personal service to every project.
             </p>
 
             {/* Service Features */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-              <div className="flex items-center space-x-3 bg-bsr-gray bg-opacity-50 rounded-lg p-4">
+              <div className="flex items-center space-x-3 bg-bsr-gray bg-opacity-50 rounded-lg p-4 border border-bsr-gray-light">
                 <div className="bg-bsr-highlight p-2 rounded-lg">
                   <Phone size={20} className="text-bsr-white" />
                 </div>
                 <div>
-                  <p className="font-semibold text-bsr-white">Mobile Service</p>
-                  <p className="text-sm text-gray-300">We come to you across Devon</p>
+                  <p className="font-semibold text-bsr-white">Personal Service</p>
+                  <p className="text-sm text-gray-300">Direct contact with Ben</p>
                 </div>
               </div>
-              <div className="flex items-center space-x-3 bg-bsr-gray bg-opacity-50 rounded-lg p-4">
+              <div className="flex items-center space-x-3 bg-bsr-gray bg-opacity-50 rounded-lg p-4 border border-bsr-gray-light">
                 <div className="bg-bsr-highlight p-2 rounded-lg">
                   <Star size={20} className="text-bsr-white" />
                 </div>
@@ -83,20 +84,28 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Side - Large BSR Logo */}
+          {/* Right Side - Ben's Image with Professional Styling */}
           <div className="relative flex items-center justify-center">
-            <div className="bg-bsr-gray bg-opacity-30 rounded-3xl p-12 border border-bsr-gray-light backdrop-blur-sm">
-              <div className="text-center">
+            <div className="relative">
+              {/* Main Image Container */}
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <Image
-                  src="/Logos/BSR Logo-4.png"
-                  alt="BSR Decorating Ltd"
+                  src="/images/About Ben.jpg"
+                  alt="Ben Rourke - BSR Decorating"
                   width={500}
-                  height={200}
-                  className="h-40 w-auto mx-auto mb-6"
+                  height={600}
+                  className="w-full h-auto object-cover"
                   priority
                 />
-                <h3 className="text-2xl font-bold text-bsr-white mb-3">Transform Your Space</h3>
-                <p className="text-gray-300 text-lg">Professional decorating services for homes and businesses</p>
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-bsr-black/60 via-transparent to-transparent"></div>
+              </div>
+              
+
+              
+              {/* Experience Badge */}
+              <div className="absolute -top-4 -right-4 bg-bsr-black/90 backdrop-blur-sm rounded-full px-4 py-2 border border-bsr-highlight">
+                <span className="text-bsr-highlight font-semibold text-sm">15+ Years Experience</span>
               </div>
             </div>
           </div>

@@ -1,0 +1,11 @@
+{
+  "mainAreas": [
+    "EX8", "EX3", "EX1", "EX2", "EX4", "EX6", "EX7",
+    "TQ13", "TQ12", "TQ14", "TQ1", "TQ2", "TQ3", "TQ4", "TQ5", "TQ11", "TQ10", "TQ9", "TQ6"
+  ],
+  "largerJobAreas": [
+    "EX9", "EX10", "EX11", "EX14", "EX12", "EX24", "EX15", "EX16", "EX17",
+    "TQ7", "TQ8",
+    "PL21", "PL8", "PL9", "PL7", "PL6", "PL5", "PL2", "PL3", "PL4", "PL1"
+  ]
+}

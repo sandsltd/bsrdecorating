@@ -65,6 +65,16 @@ const Footer = () => {
                   Reviews
                 </Link>
               </li>
+              <li>
+                <Link href="/careers" className="text-gray-300 hover:text-bsr-highlight transition-colors duration-200">
+                  Careers
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="text-gray-300 hover:text-bsr-highlight transition-colors duration-200">
+                  Blog
+                </Link>
+              </li>
             </ul>
           </div>
 

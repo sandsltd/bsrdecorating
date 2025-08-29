@@ -21,7 +21,7 @@ export default function GalleryPage() {
       title: 'Living Room Transformation',
       category: 'domestic',
       type: 'before-after',
-      description: 'Complete living room makeover with modern color scheme',
+      description: 'Complete living room makeover with modern colour scheme',
       beforeImage: '/gallery/living-room-before.jpg',
       afterImage: '/gallery/living-room-after.jpg',
       rating: 5,

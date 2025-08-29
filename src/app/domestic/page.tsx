@@ -7,7 +7,7 @@ export default function DomesticPage() {
     {
       title: "Interior Painting",
       description: "Professional interior painting for all rooms including living rooms, bedrooms, kitchens, and bathrooms.",
-      features: ["Color consultation", "Surface preparation", "Multiple coats", "Clean finish"]
+      features: ["Colour consultation", "Surface preparation", "Multiple coats", "Clean finish"]
     },
     {
       title: "Exterior Painting",
@@ -21,8 +21,8 @@ export default function DomesticPage() {
     },
     {
       title: "Decorating Consultation",
-      description: "Professional advice on colors, finishes, and design to achieve your perfect look.",
-      features: ["Color schemes", "Material selection", "Style advice", "Budget planning"]
+      description: "Professional advice on colours, finishes, and design to achieve your perfect look.",
+      features: ["Colour schemes", "Material selection", "Style advice", "Budget planning"]
     }
   ];
 
@@ -39,8 +39,8 @@ export default function DomesticPage() {
     },
     {
       icon: <Palette size={32} />,
-      title: "Color Expertise",
-      description: "Professional color consultation to achieve your perfect look"
+      title: "Colour Expertise",
+      description: "Professional colour consultation to achieve your perfect look"
     },
     {
       icon: <Star size={32} />,
@@ -53,7 +53,7 @@ export default function DomesticPage() {
     <div className="min-h-screen">
       <ServiceHero
         title="Domestic Decorating Services"
-        subtitle="Transform your home with our professional decorating services in Dawlish, Devon"
+        subtitle="Transform your home with our professional decorating services across Devon - from Dawlish to Exeter, Newton Abbot to Torquay"
         description="From single room makeovers to complete house renovations, we provide exceptional quality workmanship with attention to detail that will make your home truly special."
         image="/domestic-hero.jpg"
       />

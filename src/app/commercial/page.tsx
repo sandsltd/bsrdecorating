@@ -7,12 +7,12 @@ export default function CommercialPage() {
     {
       title: "Office Decorating",
       description: "Professional office painting and decorating to create productive and welcoming work environments.",
-      features: ["Minimal disruption", "Out-of-hours working", "Corporate color schemes", "Durable finishes"]
+      features: ["Minimal disruption", "Out-of-hours working", "Corporate colour schemes", "Durable finishes"]
     },
     {
       title: "Retail Space Painting",
       description: "Transform retail spaces with professional painting that enhances customer experience and brand image.",
-      features: ["Brand color matching", "High-traffic finishes", "Quick turnaround", "Minimal downtime"]
+      features: ["Brand colour matching", "High-traffic finishes", "Quick turnaround", "Minimal downtime"]
     },
     {
       title: "Industrial & Warehouse",
