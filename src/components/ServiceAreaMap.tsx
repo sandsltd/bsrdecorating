@@ -154,6 +154,10 @@ const ServiceAreaMap = () => {
       if (map.current) {
         setTimeout(() => {
           map.current!.resize();
+          // Adjust zoom based on new screen size
+          const isMobile = window.innerWidth < 768;
+          const newZoom = isMobile ? 7.5 : 8.5;
+          map.current!.setZoom(newZoom);
         }, 100);
       }
     };
@@ -171,11 +175,15 @@ const ServiceAreaMap = () => {
       // Initialize map
       window.mapboxgl.accessToken = mapboxApiKey;
       
+      // Responsive zoom based on screen size
+      const isMobile = window.innerWidth < 768;
+      const zoom = isMobile ? 7.5 : 8.5; // Zoom out more on mobile
+      
       map.current = new window.mapboxgl.Map({
         container: mapContainer.current!,
         style: 'mapbox://styles/mapbox/light-v11',
         center: [-3.7, 50.6], // Centered between all locations
-        zoom: 8.5,
+        zoom: zoom,
         attributionControl: false
       });
 
