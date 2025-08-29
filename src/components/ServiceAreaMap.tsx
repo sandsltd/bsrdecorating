@@ -149,6 +149,15 @@ const ServiceAreaMap = () => {
       return;
     }
 
+    // Handle map resize for mobile responsiveness  
+    const handleResize = () => {
+      if (map.current) {
+        setTimeout(() => {
+          map.current!.resize();
+        }, 100);
+      }
+    };
+
     // Load Mapbox GL JS
     const script = document.createElement('script');
     script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js';
@@ -182,15 +191,6 @@ const ServiceAreaMap = () => {
           }
         });
       });
-
-      // Handle map resize for mobile responsiveness
-      const handleResize = () => {
-        if (map.current) {
-          setTimeout(() => {
-            map.current!.resize();
-          }, 100);
-        }
-      };
 
       window.addEventListener('resize', handleResize);
 
