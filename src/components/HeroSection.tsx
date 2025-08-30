@@ -9,13 +9,26 @@ const HeroSection = () => {
   const { openQuoteModal } = useQuoteModal();
   return (
     <section className="relative min-h-screen bg-bsr-black flex items-center justify-center">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-bsr-black via-bsr-gray to-bsr-black"></div>
+      {/* Video Background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+        >
+          <source src="/videos/hero-background.mp4" type="video/mp4" />
+        </video>
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-bsr-black/70"></div>
+      </div>
       
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
-          <div>
+          <div className="backdrop-blur-sm bg-bsr-black/20 rounded-2xl p-6 lg:p-8 border border-bsr-gray-light/30">
             {/* Rating Badge */}
             <div className="inline-flex items-center space-x-2 bg-bsr-highlight bg-opacity-20 border border-bsr-highlight rounded-full px-4 py-2 mb-8">
               <div className="flex">
@@ -88,7 +101,7 @@ const HeroSection = () => {
 
           {/* Right Side - Ben's Image with Professional Styling */}
           <div className="relative flex items-center justify-center">
-            <div className="relative">
+            <div className="relative backdrop-blur-sm bg-bsr-black/10 rounded-3xl p-4 border border-bsr-gray-light/20">
               {/* Main Image Container */}
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <Image
@@ -106,8 +119,8 @@ const HeroSection = () => {
 
               
               {/* Experience Badge */}
-              <div className="absolute -top-4 -right-4 bg-bsr-black/90 backdrop-blur-sm rounded-full px-4 py-2 border border-bsr-highlight">
-                <span className="text-bsr-highlight font-semibold text-sm">15+ Years Experience</span>
+              <div className="absolute -top-4 -right-4 bg-bsr-black/90 backdrop-blur-sm rounded-full px-4 py-2 border border-bsr-yellow">
+                <span className="text-bsr-yellow font-semibold text-sm">15+ Years Experience</span>
               </div>
             </div>
           </div>
