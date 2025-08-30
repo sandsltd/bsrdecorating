@@ -31,7 +31,7 @@ export default function RootLayout({
         <QuoteModalProvider>
           <div className="min-h-screen bg-bsr-black text-bsr-white" style={{ backgroundColor: '#000000' }}>
             <Navigation />
-            <main className="flex-1">
+            <main className="flex-1 pt-20 md:pt-16">
               {children}
             </main>
             <Footer />

@@ -20,7 +20,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="bg-bsr-black bg-opacity-95 backdrop-blur-sm border-b border-bsr-gray-light sticky top-0 z-50">
+    <nav className="bg-bsr-black bg-opacity-95 backdrop-blur-sm border-b border-bsr-gray-light fixed top-0 left-0 right-0 z-50">
       {/* Mobile Phone Number Bar */}
       <div className="md:hidden bg-bsr-highlight py-2 px-4">
         <div className="max-w-7xl mx-auto flex justify-center items-center">
