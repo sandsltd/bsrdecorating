@@ -19,8 +19,69 @@ const Navigation = () => {
     { name: 'Contact', href: '/contact' },
   ];
 
+  // Desktop main nav items (excluding items moved to top bar)
+  const mainNavItems = [
+    { name: 'Home', href: '/' },
+    { name: 'Domestic Decorating', href: '/domestic' },
+    { name: 'Commercial Decorating', href: '/commercial' },
+    { name: 'Contact', href: '/contact' },
+  ];
+
   return (
-    <nav className="bg-bsr-black bg-opacity-95 backdrop-blur-sm border-b border-bsr-gray-light fixed top-0 left-0 right-0 z-50">
+    <>
+      {/* Desktop Top Bar - Only visible on desktop */}
+      <div className="hidden lg:block bg-bsr-gray border-b border-bsr-gray-light fixed top-0 left-0 right-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-10">
+            {/* Left side links */}
+            <div className="flex items-center space-x-6">
+              <Link
+                href="/gallery"
+                className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm"
+              >
+                Gallery
+              </Link>
+              <Link
+                href="/reviews"
+                className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm"
+              >
+                Reviews
+              </Link>
+              <Link
+                href="/blog"
+                className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm"
+              >
+                Blog
+              </Link>
+              <Link
+                href="/careers"
+                className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm"
+              >
+                Careers
+              </Link>
+            </div>
+            
+            {/* Right side contact info */}
+            <div className="flex items-center space-x-6">
+              <a
+                href="tel:07805469770"
+                className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm flex items-center space-x-2"
+              >
+                <Phone size={14} />
+                <span>07805 469770</span>
+              </a>
+              <a
+                href="mailto:hello@bsrdecorating.co.uk"
+                className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm"
+              >
+                hello@bsrdecorating.co.uk
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <nav className="bg-bsr-black bg-opacity-95 backdrop-blur-sm border-b border-bsr-gray-light fixed top-10 lg:top-10 left-0 right-0 z-50">
       {/* Mobile Phone Number Bar */}
       <div className="md:hidden bg-bsr-highlight py-2 px-4">
         <div className="max-w-7xl mx-auto flex justify-center items-center">
@@ -53,7 +114,7 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
+            {mainNavItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
@@ -114,6 +175,7 @@ const Navigation = () => {
         )}
       </div>
     </nav>
+    </>
   );
 };
 
