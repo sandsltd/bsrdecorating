@@ -11,18 +11,24 @@ const HeroSection = () => {
     <section className="relative min-h-screen bg-bsr-black flex items-center justify-center">
       {/* Video Background */}
       <div className="absolute inset-0 overflow-hidden">
+        {/* Mobile optimized video (9:16 aspect ratio perfect for mobile) */}
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 min-w-full min-h-full object-cover lg:object-cover"
           autoPlay
           loop
           muted
           playsInline
           preload="auto"
+          style={{
+            objectPosition: 'center center',
+            // On mobile, let the 9:16 video fill naturally
+            transform: 'scale(1.1)' // Slight scale to ensure full coverage
+          }}
         >
           <source src="/videos/hero-background.mp4" type="video/mp4" />
         </video>
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-bsr-black/70"></div>
+        {/* Dark overlay for text readability - lighter on mobile for better video visibility */}
+        <div className="absolute inset-0 bg-bsr-black/60 md:bg-bsr-black/70"></div>
       </div>
       
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

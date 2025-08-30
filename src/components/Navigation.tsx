@@ -37,7 +37,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-3">
             <Image
               src="/Logos/BSR Logo-4.png"
               alt="BSR Decorating Ltd"
@@ -46,6 +46,9 @@ const Navigation = () => {
               className="h-10 w-auto"
               priority
             />
+            <span className="text-bsr-white font-semibold text-lg hidden sm:block">
+              BSR Decorating Ltd
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
