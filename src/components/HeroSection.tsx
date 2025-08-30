@@ -13,23 +13,28 @@ const HeroSection = () => {
       <div className="absolute inset-0 overflow-hidden">
         {/* Mobile optimized video (9:16 aspect ratio perfect for mobile) */}
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover md:object-cover"
           autoPlay
           loop
           muted
           playsInline
           preload="auto"
+          style={{
+            objectPosition: 'center center',
+            // On mobile, ensure the 9:16 TikTok video is fully visible
+            transform: 'scale(1.05)'
+          }}
         >
           <source src="/videos/hero-background.mp4" type="video/mp4" />
         </video>
-        {/* Dark overlay for text readability - lighter on mobile for better video visibility */}
-        <div className="absolute inset-0 bg-bsr-black/60 md:bg-bsr-black/70"></div>
+        {/* Much lighter overlay on mobile for better TikTok video visibility */}
+        <div className="absolute inset-0 bg-bsr-black/30 md:bg-bsr-black/60"></div>
       </div>
       
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
-          <div className="backdrop-blur-sm bg-bsr-black/20 rounded-2xl p-6 lg:p-8 border border-bsr-gray-light/30">
+          <div className="backdrop-blur-md bg-bsr-black/40 md:bg-bsr-black/20 rounded-2xl p-6 lg:p-8 border border-bsr-gray-light/50 md:border-bsr-gray-light/30 shadow-2xl">
             {/* Rating Badge */}
             <div className="inline-flex items-center space-x-2 bg-bsr-highlight bg-opacity-20 border border-bsr-highlight rounded-full px-4 py-2 mb-8">
               <div className="flex">
@@ -61,22 +66,22 @@ const HeroSection = () => {
 
             {/* Service Features */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-              <div className="flex items-center space-x-3 bg-bsr-gray bg-opacity-50 rounded-lg p-4 border border-bsr-gray-light">
+              <div className="flex items-center space-x-3 bg-bsr-black/60 md:bg-bsr-gray/50 backdrop-blur-sm rounded-lg p-4 border border-bsr-gray-light/50 md:border-bsr-gray-light">
                 <div className="bg-bsr-highlight p-2 rounded-lg">
                   <Phone size={20} className="text-bsr-white" />
                 </div>
                 <div>
                   <p className="font-semibold text-bsr-white">Personal Service</p>
-                  <p className="text-sm text-gray-300">Direct contact with Ben</p>
+                  <p className="text-sm text-gray-200 md:text-gray-300">Direct contact with Ben</p>
                 </div>
               </div>
-              <div className="flex items-center space-x-3 bg-bsr-gray bg-opacity-50 rounded-lg p-4 border border-bsr-gray-light">
+              <div className="flex items-center space-x-3 bg-bsr-black/60 md:bg-bsr-gray/50 backdrop-blur-sm rounded-lg p-4 border border-bsr-gray-light/50 md:border-bsr-gray-light">
                 <div className="bg-bsr-highlight p-2 rounded-lg">
                   <Star size={20} className="text-bsr-white" />
                 </div>
                 <div>
                   <p className="font-semibold text-bsr-white">Quality Guaranteed</p>
-                  <p className="text-sm text-gray-300">Satisfaction or we fix it</p>
+                  <p className="text-sm text-gray-200 md:text-gray-300">Satisfaction or we fix it</p>
                 </div>
               </div>
             </div>
@@ -102,7 +107,7 @@ const HeroSection = () => {
 
           {/* Right Side - Ben's Image with Professional Styling */}
           <div className="relative flex items-center justify-center">
-            <div className="relative backdrop-blur-sm bg-bsr-black/10 rounded-3xl p-4 border border-bsr-gray-light/20">
+            <div className="relative backdrop-blur-md bg-bsr-black/30 md:bg-bsr-black/10 rounded-3xl p-4 border border-bsr-gray-light/40 md:border-bsr-gray-light/20 shadow-2xl">
               {/* Main Image Container */}
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <Image
