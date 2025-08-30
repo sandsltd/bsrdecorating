@@ -46,7 +46,7 @@ const Navigation = () => {
               className="h-10 w-auto"
               priority
             />
-            <span className="text-bsr-white font-semibold text-lg hidden sm:block">
+            <span className="text-bsr-white font-semibold text-sm md:text-lg">
               BSR Decorating Ltd
             </span>
           </Link>
