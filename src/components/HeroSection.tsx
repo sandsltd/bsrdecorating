@@ -8,22 +8,17 @@ import { useQuoteModal } from '@/contexts/QuoteModalContext';
 const HeroSection = () => {
   const { openQuoteModal } = useQuoteModal();
   return (
-    <section className="relative h-screen bg-bsr-black flex items-center justify-center -mt-20 md:-mt-16 lg:-mt-28">
+    <section className="relative min-h-screen bg-bsr-black flex items-center justify-center pt-28 md:pt-16 lg:pt-28">
       {/* Video Background */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Mobile optimized video (9:16 aspect ratio perfect for mobile) */}
         <video
-          className="absolute inset-0 min-w-full min-h-full object-cover lg:object-cover"
+          className="absolute inset-0 w-full h-full object-cover"
           autoPlay
           loop
           muted
           playsInline
           preload="auto"
-          style={{
-            objectPosition: 'center center',
-            // On mobile, let the 9:16 video fill naturally
-            transform: 'scale(1.1)' // Slight scale to ensure full coverage
-          }}
         >
           <source src="/videos/hero-background.mp4" type="video/mp4" />
         </video>
