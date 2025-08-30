@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Check, Star, Phone, Clock, Shield, Palette } from 'lucide-react';
 import ServiceHero from '@/components/ServiceHero';
 import GalleryPreview from '@/components/GalleryPreview';
-import PageWrapper from '@/components/PageWrapper';
+
 import { useQuoteModal } from '@/contexts/QuoteModalContext';
 
 export default function DomesticPage() {
@@ -56,13 +56,12 @@ export default function DomesticPage() {
   ];
 
   return (
-    <PageWrapper>
-      <div className="min-h-screen">
+    <div className="min-h-screen">
       <ServiceHero
         title="Domestic Decorating Services"
         subtitle="Transform your home with our professional decorating services across Devon - from Dawlish to Exeter, Newton Abbot to Torquay"
         description="From single room makeovers to complete house renovations, we provide exceptional quality workmanship with attention to detail that will make your home truly special."
-        image="/images/Home decorating image.jpeg"
+        image="/gallery/internal/living-room-transformation.jpeg"
       />
 
       {/* Services */}
@@ -200,6 +199,5 @@ export default function DomesticPage() {
         </div>
       </section>
       </div>
-    </PageWrapper>
   );
 }

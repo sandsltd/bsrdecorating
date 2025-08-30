@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Check, Star, Phone, Clock, Shield, Building } from 'lucide-react';
 import ServiceHero from '@/components/ServiceHero';
 import GalleryPreview from '@/components/GalleryPreview';
+
 import { useQuoteModal } from '@/contexts/QuoteModalContext';
 
 export default function CommercialPage() {
@@ -56,11 +57,11 @@ export default function CommercialPage() {
 
   return (
     <div className="min-h-screen">
-      <ServiceHero
+        <ServiceHero
         title="Commercial Decorating Services"
         subtitle="Professional decorating solutions for businesses in Dawlish, Devon"
         description="From office renovations to retail space transformations, we provide commercial decorating services that enhance your business environment while minimizing disruption to your operations."
-        image="/commercial-hero.jpg"
+        image="/gallery/commercial/office-renovation.jpeg"
       />
 
       {/* Services */}
