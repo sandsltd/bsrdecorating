@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, CheckCircle } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
+import ServiceAreaMap from '@/components/ServiceAreaMap';
 
 export default function ContactPage() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -11,8 +12,8 @@ export default function ContactPage() {
     {
       icon: <Phone size={24} />,
       title: "Phone",
-      details: ["07700 900000"],
-      link: "tel:07700900000"
+      details: ["07805 469770"],
+      link: "tel:07805469770"
     },
     {
       icon: <Mail size={24} />,
@@ -129,13 +130,7 @@ export default function ContactPage() {
             </p>
           </div>
           
-          <div className="bg-bsr-black border border-bsr-gray-light rounded-lg h-64 flex items-center justify-center">
-            <div className="text-center">
-              <MapPin size={48} className="text-bsr-highlight mx-auto mb-4" />
-              <p className="text-gray-300">Map placeholder - Dawlish, Devon</p>
-              <p className="text-sm text-gray-400 mt-2">Serving: Dawlish, Teignmouth, Exmouth, Newton Abbot</p>
-            </div>
-          </div>
+          <ServiceAreaMap />
         </div>
       </section>
     </div>

@@ -25,11 +25,11 @@ const Navigation = () => {
       <div className="md:hidden bg-bsr-highlight py-2 px-4">
         <div className="max-w-7xl mx-auto flex justify-center items-center">
           <a
-            href="tel:07700900000"
+            href="tel:07805469770"
             className="text-bsr-white font-medium flex items-center space-x-2 hover:opacity-90 transition-opacity duration-200"
           >
             <Phone size={16} />
-            <span>07700 900000</span>
+            <span>07805 469770</span>
           </a>
         </div>
       </div>
@@ -65,7 +65,7 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-4">
                                 <button
                       onClick={openQuoteModal}
-                      className="bg-bsr-blue hover:bg-bsr-blue-light text-bsr-white px-4 py-2 rounded-md font-medium transition-colors duration-200 flex items-center space-x-2"
+                      className="bg-bsr-yellow hover:bg-bsr-yellow-light text-bsr-black px-4 py-2 rounded-md font-medium transition-colors duration-200 flex items-center space-x-2"
                     >
                       <Phone size={16} />
                       <span>Get Quote</span>
@@ -102,7 +102,7 @@ const Navigation = () => {
                           openQuoteModal();
                           setIsMenuOpen(false);
                         }}
-                        className="block w-full text-left px-3 py-2 bg-bsr-blue text-bsr-white rounded-md font-medium mt-4"
+                        className="block w-full text-left px-3 py-2 bg-bsr-yellow text-bsr-black rounded-md font-medium mt-4"
                       >
                         Get Quote
                       </button>

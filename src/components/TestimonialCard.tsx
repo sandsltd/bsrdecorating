@@ -30,7 +30,7 @@ const TestimonialCard = ({ name, location, rating, text, service }: TestimonialC
       <div className="flex items-center mb-4">
         <div className="flex">
           {[...Array(rating)].map((_, i) => (
-            <Star key={i} size={18} className="text-bsr-highlight fill-current" />
+            <Star key={i} size={18} className="text-bsr-yellow fill-current" />
           ))}
         </div>
         <span className="ml-2 text-sm text-gray-400">({rating}.0)</span>

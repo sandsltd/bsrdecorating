@@ -6,7 +6,17 @@ import Image from 'next/image';
 import { ArrowRight, Image as ImageIcon, Video, ChevronLeft, ChevronRight, X, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const GalleryPreview = () => {
+interface GalleryPreviewProps {
+  filterCategories?: string[];
+  title?: string;
+  subtitle?: string;
+}
+
+const GalleryPreview = ({ 
+  filterCategories, 
+  title = "Featured Projects",
+  subtitle = "See some of our recent work"
+}: GalleryPreviewProps) => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const galleryItems = [
@@ -94,20 +104,31 @@ const GalleryPreview = () => {
     }
   ];
 
+  // Filter items based on filterCategories prop
+  const filteredItems = filterCategories 
+    ? galleryItems.filter(item => filterCategories.includes(item.category))
+    : galleryItems;
+
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-bsr-gray">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-bsr-white mb-4">
-            Our <span className="text-bsr-highlight">Work Gallery</span>
+            {title.split(' ').map((word, index, array) => 
+              index === array.length - 1 ? (
+                <span key={index} className="text-bsr-highlight">{word}</span>
+              ) : (
+                `${word} `
+              )
+            )}
           </h2>
           <p className="text-xl text-gray-300">
-            See the transformation in action with our before & after gallery
+            {subtitle}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {galleryItems.map((item, index) => (
+          {filteredItems.map((item, index) => (
             <motion.div
               key={item.id}
               initial={{ opacity: 0, y: 20 }}
@@ -265,7 +286,7 @@ const GalleryPreview = () => {
                   </div>
                   <div className="flex items-center space-x-1 ml-4">
                     {[...Array(project.rating)].map((_, i) => (
-                      <Star key={i} size={16} className="text-bsr-highlight fill-current" />
+                      <Star key={i} size={16} className="text-bsr-yellow fill-current" />
                     ))}
                   </div>
                 </div>

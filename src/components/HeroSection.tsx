@@ -20,7 +20,7 @@ const HeroSection = () => {
             <div className="inline-flex items-center space-x-2 bg-bsr-highlight bg-opacity-20 border border-bsr-highlight rounded-full px-4 py-2 mb-8">
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={16} className="text-bsr-highlight fill-current" />
+                  <Star key={i} size={16} className="text-bsr-yellow fill-current" />
                 ))}
               </div>
               <span className="text-bsr-highlight font-semibold">5.0 on Google (9 reviews)</span>
@@ -71,14 +71,14 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={openQuoteModal}
-                className="bg-bsr-blue hover:bg-bsr-blue-light text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl"
+                className="bg-bsr-yellow hover:bg-bsr-yellow-light text-bsr-black px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl"
               >
                 <span>Get Your Free Quote</span>
                 <ArrowRight size={20} />
               </button>
               <Link
                 href="/gallery"
-                className="bg-bsr-gray hover:bg-bsr-gray-light text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 flex items-center justify-center space-x-3 border border-bsr-gray-light hover:border-bsr-highlight shadow-lg hover:shadow-xl"
+                className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl"
               >
                 <span>Check Our Work</span>
                 <ArrowRight size={20} />

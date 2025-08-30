@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Check, Star, Phone, Clock, Shield, Building } from 'lucide-react';
 import ServiceHero from '@/components/ServiceHero';
+import GalleryPreview from '@/components/GalleryPreview';
 import { useQuoteModal } from '@/contexts/QuoteModalContext';
 
 export default function CommercialPage() {
@@ -163,6 +164,13 @@ export default function CommercialPage() {
         </div>
       </section>
 
+      {/* Commercial Gallery Preview */}
+      <GalleryPreview 
+        filterCategories={['Commercial', 'External']}
+        title="Commercial Project Gallery"
+        subtitle="View our professional commercial decorating projects including offices, retail spaces, and industrial properties"
+      />
+
       {/* CTA */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-bsr-highlight">
         <div className="max-w-4xl mx-auto text-center">
@@ -175,7 +183,7 @@ export default function CommercialPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={openQuoteModal}
-              className="bg-bsr-blue hover:bg-bsr-blue-light text-bsr-white px-8 py-3 rounded-md font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
+              className="bg-bsr-yellow hover:bg-bsr-yellow-light text-bsr-black px-8 py-3 rounded-md font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Phone size={20} />
               <span>Get Free Quote</span>

@@ -197,6 +197,78 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Work Showcase Videos */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-bsr-gray to-bsr-black">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center space-x-2 bg-bsr-highlight bg-opacity-20 border border-bsr-highlight rounded-full px-6 py-2 mb-6">
+              <span className="text-bsr-highlight font-semibold">Our Work</span>
+            </div>
+            <h2 className="text-4xl font-bold text-bsr-white mb-6">
+              See Our <span className="text-bsr-highlight">Projects in Action</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Watch our professional decorating projects come to life with transformation videos and behind-the-scenes content
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {/* Video 1 - Native video */}
+            <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg overflow-hidden">
+              <div className="aspect-[9/16] relative">
+                <video
+                  className="absolute inset-0 w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="metadata"
+                >
+                  <source src="/videos/tiktok/video1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+
+            {/* Video 2 - Native video */}
+            <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg overflow-hidden">
+              <div className="aspect-[9/16] relative">
+                <video
+                  className="absolute inset-0 w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="metadata"
+                >
+                  <source src="/videos/tiktok/video2.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+
+            {/* Video 3 - Native video */}
+            <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg overflow-hidden">
+              <div className="aspect-[9/16] relative">
+                <video
+                  className="absolute inset-0 w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="metadata"
+                >
+                  <source src="/videos/tiktok/video3.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
       {/* Community & Charity Section */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-bsr-black to-bsr-gray">
         <div className="max-w-7xl mx-auto">
@@ -451,7 +523,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button
               onClick={openQuoteModal}
-              className="bg-bsr-blue hover:bg-bsr-blue-light text-bsr-white px-10 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="bg-bsr-yellow hover:bg-bsr-yellow-light text-bsr-black px-10 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               Get Free Quote
             </button>

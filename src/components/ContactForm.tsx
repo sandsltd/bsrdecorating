@@ -99,7 +99,7 @@ const ContactForm = ({ onSuccess }: ContactFormProps) => {
           type="tel"
           id="phone"
           className="w-full px-4 py-3 bg-bsr-gray border border-bsr-gray-light rounded-md text-bsr-white placeholder-gray-400 focus:outline-none focus:border-bsr-highlight transition-colors duration-200"
-          placeholder="07700 900000"
+          placeholder="07805 469770"
         />
         {errors.phone && (
           <p className="mt-1 text-sm text-red-400">{errors.phone.message}</p>

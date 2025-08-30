@@ -272,7 +272,7 @@ export default function GalleryPage() {
                     <h3 className="font-semibold text-bsr-white">{project.title}</h3>
                     <div className="flex items-center space-x-1">
                       {[...Array(project.rating)].map((_, i) => (
-                        <Star key={i} size={14} className="text-bsr-highlight fill-current" />
+                        <Star key={i} size={14} className="text-bsr-yellow fill-current" />
                       ))}
                     </div>
                   </div>
@@ -383,7 +383,7 @@ export default function GalleryPage() {
                   </div>
                   <div className="flex items-center space-x-1 ml-4">
                     {[...Array(project.rating)].map((_, i) => (
-                      <Star key={i} size={16} className="text-bsr-highlight fill-current" />
+                      <Star key={i} size={16} className="text-bsr-yellow fill-current" />
                     ))}
                   </div>
                 </div>

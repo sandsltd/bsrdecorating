@@ -416,7 +416,7 @@ const ServiceAreaMap = () => {
                 <p className="text-sm text-gray-300">Get a personalised quote for your decorating project</p>
                                       <button
                         onClick={() => setIsQuoteModalOpen(true)}
-                        className="w-full bg-bsr-blue hover:bg-bsr-blue-light text-bsr-white px-4 py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+                        className="w-full bg-bsr-yellow hover:bg-bsr-yellow-light text-bsr-black px-4 py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
                       >
                         Request Quote
                       </button>
@@ -429,7 +429,7 @@ const ServiceAreaMap = () => {
               <div className="space-y-3">
                 <p className="text-sm text-gray-300">Free quotes across all areas</p>
                 <div className="text-center py-2">
-                  <div className="text-bsr-highlight font-bold text-xl">07700 900000</div>
+                  <div className="text-bsr-highlight font-bold text-xl">07805 469770</div>
                   <p className="text-xs text-gray-300 mt-1">Click markers for details</p>
                 </div>
               </div>

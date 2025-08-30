@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
       console.error('Email environment variables not configured');
       return NextResponse.json({
         success: false,
-        message: 'Email service not configured. Please contact us directly at 07700 900000.',
+        message: 'Email service not configured. Please contact us directly at 07805 469770.',
         missingConfig: true
       }, { status: 200 }); // Return 200 to avoid browser errors
     }
@@ -218,7 +218,7 @@ ${formData.message}
     return NextResponse.json(
       { 
         success: false, 
-        message: 'Failed to send quote request. Please call 07700 900000.',
+        message: 'Failed to send quote request. Please call 07805 469770.',
         error: error instanceof Error ? error.message : 'Unknown error'
       },
       { status: 200 } // Change to 200 to avoid browser console errors

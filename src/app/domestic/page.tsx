@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Check, Star, Phone, Clock, Shield, Palette } from 'lucide-react';
 import ServiceHero from '@/components/ServiceHero';
+import GalleryPreview from '@/components/GalleryPreview';
 import { useQuoteModal } from '@/contexts/QuoteModalContext';
 
 export default function DomesticPage() {
@@ -163,6 +164,13 @@ export default function DomesticPage() {
         </div>
       </section>
 
+      {/* Domestic Gallery Preview */}
+      <GalleryPreview 
+        filterCategories={['Internal', 'Doors']}
+        title="Domestic Project Gallery"
+        subtitle="See our recent domestic decorating projects including interior painting, wallpaper hanging, and door finishing"
+      />
+
       {/* CTA */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-bsr-highlight">
         <div className="max-w-4xl mx-auto text-center">
@@ -175,7 +183,7 @@ export default function DomesticPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={openQuoteModal}
-              className="bg-bsr-blue hover:bg-bsr-blue-light text-bsr-white px-8 py-3 rounded-md font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
+              className="bg-bsr-yellow hover:bg-bsr-yellow-light text-bsr-black px-8 py-3 rounded-md font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Phone size={20} />
               <span>Get Free Quote</span>
