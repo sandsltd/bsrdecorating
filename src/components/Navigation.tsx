@@ -100,15 +100,15 @@ const Navigation = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <Image
-              src="/Logos/BSR Logo-4.png"
-              alt="BSR Decorating Ltd"
+              src="/Logos/BSR Logo-7.png"
+              alt="BSR Decorating"
               width={120}
               height={40}
               className="h-10 w-auto"
               priority
             />
             <span className="text-bsr-white font-semibold text-sm md:text-lg">
-              BSR Decorating Ltd
+              BSR Decorating
             </span>
           </Link>
 

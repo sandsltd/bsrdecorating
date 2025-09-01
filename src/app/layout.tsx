@@ -8,12 +8,12 @@ import { QuoteModalProvider } from "@/contexts/QuoteModalContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "BSR Decorating Ltd - Professional Decorating Services in Dawlish, Devon",
+  title: "BSR Decorating - Professional Decorating Services in Dawlish, Devon",
   description: "Professional decorating services for both domestic and commercial properties in Dawlish, Devon. Quality workmanship, competitive prices, and exceptional results.",
   keywords: "decorating, painter, decorator, Dawlish, Devon, domestic decorating, commercial decorating, interior design",
-  authors: [{ name: "BSR Decorating Ltd" }],
+  authors: [{ name: "BSR Decorating" }],
   openGraph: {
-    title: "BSR Decorating Ltd - Professional Decorating Services",
+    title: "BSR Decorating - Professional Decorating Services",
     description: "Professional decorating services for both domestic and commercial properties in Dawlish, Devon.",
     type: "website",
     locale: "en_GB",

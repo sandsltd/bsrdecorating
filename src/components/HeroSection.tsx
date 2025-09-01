@@ -4,31 +4,54 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Phone, Star } from 'lucide-react';
 import { useQuoteModal } from '@/contexts/QuoteModalContext';
+import { useState, useEffect } from 'react';
 
 const HeroSection = () => {
   const { openQuoteModal } = useQuoteModal();
+  
+  // Array of background images to cycle through
+  const backgroundImages = [
+    "/gallery/commercial/warehouse-industrial.jpeg",
+    "/gallery/domestic/dining-room.jpeg",
+    "/gallery/doors/garage-door-painting.jpeg",
+    "/gallery/external/exterior-painting-2.jpeg",
+    "/gallery/internal/bathroom-renovation.jpeg",
+    "/gallery/internal/kitchen-renovation.jpeg"
+  ];
+  
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        (prevIndex + 1) % backgroundImages.length
+      );
+    }, 4000); // Change image every 4 seconds
+    
+    return () => clearInterval(interval);
+  }, [backgroundImages.length]);
+  
   return (
     <section className="relative min-h-screen bg-bsr-black flex items-center justify-center pt-28 md:pt-16 lg:pt-28">
-      {/* Video Background */}
+      {/* Image Background Slideshow */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Mobile optimized video (9:16 aspect ratio perfect for mobile) */}
-        <video
-          className="absolute inset-0 w-full h-full object-cover md:object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          style={{
-            objectPosition: 'center center',
-            // On mobile, ensure the 9:16 TikTok video is fully visible
-            transform: 'scale(1.05)'
-          }}
-        >
-          <source src="/videos/hero-background.mp4" type="video/mp4" />
-        </video>
-        {/* Much lighter overlay on mobile for better TikTok video visibility */}
-        <div className="absolute inset-0 bg-bsr-black/30 md:bg-bsr-black/60"></div>
+        {backgroundImages.map((image, index) => (
+          <Image
+            key={image}
+            src={image}
+            alt="BSR Decorating Professional Work"
+            fill
+            className={`object-cover transition-opacity duration-1000 ${
+              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{
+              objectPosition: 'center center'
+            }}
+            priority={index === 0}
+          />
+        ))}
+        {/* Overlay for text readability */}
+        <div className="absolute inset-0 bg-bsr-black/40 md:bg-bsr-black/60"></div>
       </div>
       
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,43 +65,43 @@ const HeroSection = () => {
                   <Star key={i} size={16} className="text-bsr-yellow fill-current" />
                 ))}
               </div>
-              <span className="text-bsr-highlight font-semibold">5.0 on Google (9 reviews)</span>
+              <span className="text-bsr-highlight font-semibold">5.0 on Google</span>
             </div>
 
             {/* Main Headline */}
             <div className="mb-6">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-bsr-white leading-tight" style={{ textShadow: '2px 2px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000' }}>
-                Meet Ben
+                Welcome to
                 <br />
-                <span className="text-bsr-highlight" style={{ textShadow: '2px 2px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000' }}>Your Local Decorator</span>
+                <span className="text-bsr-highlight" style={{ textShadow: '2px 2px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000' }}>BSR Decorating</span>
               </h1>
             </div>
 
             {/* Subtitle */}
             <div className="mb-6">
               <p className="text-xl text-bsr-highlight font-semibold" style={{ textShadow: '2px 2px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000' }}>
-                Professional Decorating Services in Dawlish & Devon
+                Expert Commercial & Domestic Decorating Services
               </p>
             </div>
 
             {/* Description */}
             <div className="bg-bsr-black/60 backdrop-blur-sm rounded-lg p-4 mb-8">
               <p className="text-lg text-gray-300 leading-relaxed">
-                                Hi, I&apos;m Ben Rourke, owner of BSR Decorating. With over 15 years of experience, I specialize in 
-              interior and exterior painting, wallpaper hanging, and complete home transformations. 
-              I bring professionalism, quality, and personal service to every project.
+                Our experienced team of professional decorators brings over 20 years of expertise to every project. 
+                We specialize in commercial and domestic interior and exterior painting, wallpaper installation, 
+                and complete property transformations. Quality workmanship and exceptional results guaranteed.
               </p>
             </div>
 
             {/* Service Features */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="flex items-center space-x-3 bg-bsr-black/70 backdrop-blur-sm rounded-lg p-4 border border-bsr-gray-light/50 md:border-bsr-gray-light shadow-lg">
                 <div className="bg-bsr-highlight p-2 rounded-lg">
                   <Phone size={20} className="text-bsr-white" />
                 </div>
                 <div>
-                  <p className="font-semibold text-bsr-white">Personal Service</p>
-                  <p className="text-sm text-gray-200 md:text-gray-300">Direct contact with Ben</p>
+                  <p className="font-semibold text-bsr-white">Professional Service</p>
+                  <p className="text-sm text-gray-200 md:text-gray-300">Direct contact with our team</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3 bg-bsr-black/70 backdrop-blur-sm rounded-lg p-4 border border-bsr-gray-light/50 md:border-bsr-gray-light shadow-lg">
@@ -89,6 +112,44 @@ const HeroSection = () => {
                   <p className="font-semibold text-bsr-white">Quality Guaranteed</p>
                   <p className="text-sm text-gray-200 md:text-gray-300">Satisfaction or we fix it</p>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Side - Professional Work Video with CTA Buttons */}
+          <div className="relative flex flex-col space-y-8">
+            {/* Video Container */}
+            <div className="relative backdrop-blur-md bg-bsr-black/30 md:bg-bsr-black/10 rounded-3xl p-4 border border-bsr-gray-light/40 md:border-bsr-gray-light/20 shadow-2xl">
+              {/* Main Video Container */}
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                <video
+                  className="w-full h-auto object-cover aspect-[4/5]"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="auto"
+                >
+                  <source src="/videos/hero-background.mp4" type="video/mp4" />
+                </video>
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-bsr-black/60 via-transparent to-transparent"></div>
+              </div>
+              
+              {/* Experience Badge */}
+              <div className="absolute -top-4 -right-4 bg-bsr-black/90 backdrop-blur-sm rounded-full px-4 py-2 border border-bsr-yellow">
+                <span className="text-bsr-yellow font-semibold text-sm">20+ Years Experience</span>
+              </div>
+              
+              {/* BSR Logo Badge */}
+              <div className="absolute -bottom-4 -left-4">
+                <Image
+                  src="/Logos/BSR Logo-8.png"
+                  alt="BSR Decorating Logo"
+                  width={240}
+                  height={240}
+                  className="h-48 w-48 drop-shadow-lg"
+                />
               </div>
             </div>
 
@@ -108,32 +169,6 @@ const HeroSection = () => {
                 <span>Check Our Work</span>
                 <ArrowRight size={20} />
               </Link>
-            </div>
-          </div>
-
-          {/* Right Side - Ben's Image with Professional Styling */}
-          <div className="relative flex items-center justify-center">
-            <div className="relative backdrop-blur-md bg-bsr-black/30 md:bg-bsr-black/10 rounded-3xl p-4 border border-bsr-gray-light/40 md:border-bsr-gray-light/20 shadow-2xl">
-              {/* Main Image Container */}
-              <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-                <Image
-                  src="/images/About Ben.jpg"
-                  alt="Ben Rourke - BSR Decorating"
-                  width={500}
-                  height={600}
-                  className="w-full h-auto object-cover"
-                  priority
-                />
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-bsr-black/60 via-transparent to-transparent"></div>
-              </div>
-              
-
-              
-              {/* Experience Badge */}
-              <div className="absolute -top-4 -right-4 bg-bsr-black/90 backdrop-blur-sm rounded-full px-4 py-2 border border-bsr-yellow">
-                <span className="text-bsr-yellow font-semibold text-sm">15+ Years Experience</span>
-              </div>
             </div>
           </div>
         </div>

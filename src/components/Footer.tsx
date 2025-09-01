@@ -15,8 +15,8 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <Image
-                src="/Logos/BSR Logo-4.png"
-                alt="BSR Decorating Ltd"
+                src="/Logos/BSR Logo-7.png"
+                alt="BSR Decorating"
                 width={150}
                 height={50}
                 className="h-12 w-auto"
@@ -133,7 +133,7 @@ const Footer = () => {
         <div className="border-t border-bsr-gray-light mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-center md:text-left">
-              © {new Date().getFullYear()} BSR Decorating Ltd. All rights reserved.
+              © {new Date().getFullYear()} BSR Decorating. All rights reserved.
             </p>
             
             {/* Developer Credit */}

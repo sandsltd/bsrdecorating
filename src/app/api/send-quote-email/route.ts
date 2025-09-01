@@ -78,7 +78,7 @@ export async function POST(request: NextRequest) {
       <body>
         <div class="container">
           <div class="header">
-            <div class="logo">BSR Decorating Ltd</div>
+            <div class="logo">BSR Decorating</div>
             <p style="margin: 10px 0 0 0; font-size: 16px;">New Quote Request</p>
           </div>
           
@@ -162,7 +162,7 @@ export async function POST(request: NextRequest) {
           </div>
           
           <div class="footer">
-            <p style="margin: 0;"><strong>BSR Decorating Ltd</strong></p>
+            <p style="margin: 0;"><strong>BSR Decorating</strong></p>
             <p style="margin: 5px 0 0 0;">Professional Decorating Services • South East Devon</p>
           </div>
         </div>
@@ -177,7 +177,7 @@ export async function POST(request: NextRequest) {
       subject: `🎨 New Quote Request from ${formData.name} (${formData.postcode})`,
       html: emailHTML,
       text: `
-New Quote Request - BSR Decorating Ltd
+New Quote Request - BSR Decorating
 
 Customer Details:
 - Name: ${formData.name}

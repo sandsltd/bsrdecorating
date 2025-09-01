@@ -97,7 +97,7 @@ const ServiceAreaMap = () => {
         
         // Add logo image
         const img = document.createElement('img');
-        img.src = '/Logos/BSR Logo-4.png';
+        img.src = '/Logos/BSR Logo-7.png';
         img.style.width = '60px';
         img.style.height = '60px';
         img.style.objectFit = 'contain';

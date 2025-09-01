@@ -13,3 +13,4 @@ const PageWrapper = ({ children }: PageWrapperProps) => {
 };
 
 export default PageWrapper;
+
