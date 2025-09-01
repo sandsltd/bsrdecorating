@@ -86,14 +86,14 @@ const ServiceAreaMap = () => {
                       if (map.current!.getLayer(layer.id)) {
                         map.current!.removeLayer(layer.id);
                       }
-                    } catch (e) {
+                    } catch {
                       console.warn('Could not remove layer:', layer.id);
                     }
                   }
                 });
               }
-            } catch (e) {
-              console.warn('Could not process map style:', e);
+            } catch {
+              console.warn('Could not process map style');
             }
           }
         }, 100);

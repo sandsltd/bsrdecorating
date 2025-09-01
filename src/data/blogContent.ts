@@ -1,6 +1,6 @@
 export interface BlogSection {
   type: 'paragraph' | 'heading' | 'subheading' | 'list' | 'quote' | 'image' | 'link';
-  content: string | string[];
+  content?: string | string[];
   level?: number; // for headings (1-6)
   imageAlt?: string; // for images
   href?: string; // for links

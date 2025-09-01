@@ -72,7 +72,7 @@ export default function DomesticPage() {
               Our <span className="text-bsr-highlight">Domestic Services</span>
             </h2>
             <p className="text-xl text-gray-300">
-              Comprehensive decorating solutions for every room in your home
+              Comprehensive decorating solutions for every room in your home across Devon
             </p>
           </div>
 

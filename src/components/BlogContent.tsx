@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
@@ -57,7 +58,7 @@ export default function BlogContent({ sections }: BlogContentProps) {
         );
 
       case 'heading':
-        const HeadingTag = `h${section.level || 2}` as keyof JSX.IntrinsicElements;
+        const HeadingTag = `h${section.level || 2}` as 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
         const headingClasses = {
           1: "text-4xl md:text-5xl font-bold text-bsr-white mb-8 mt-12",
           2: "text-3xl font-bold text-bsr-highlight mb-6 mt-12",
@@ -109,7 +110,7 @@ export default function BlogContent({ sections }: BlogContentProps) {
             className="my-8 p-6 bg-bsr-gray border-l-4 border-bsr-highlight rounded-r-lg"
           >
             <p className="text-bsr-white text-xl font-medium italic leading-relaxed">
-              "{section.content}"
+              &ldquo;{section.content}&rdquo;
             </p>
           </blockquote>
         );

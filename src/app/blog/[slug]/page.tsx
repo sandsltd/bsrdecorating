@@ -16,7 +16,19 @@ const blogPostsMap = blogPosts.reduce((acc, post) => {
     keywords: getBlogKeywords(post.slug)
   };
   return acc;
-}, {} as Record<string, any>);
+}, {} as Record<string, {
+  id: number;
+  title: string;
+  excerpt: string;
+  category: string;
+  date: string;
+  readTime: string;
+  image: string;
+  slug: string;
+  author: string;
+  metaDescription: string;
+  keywords: string;
+}>);
 
 // Helper function to get keywords for each blog post
 function getBlogKeywords(slug: string): string {
@@ -39,10 +51,11 @@ function getAdjacentPosts(currentSlug: string) {
   };
 }
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
-  const post = blogPostsMap[params.slug];
-  const content = blogContent[params.slug];
-  const { previous, next } = getAdjacentPosts(params.slug);
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = blogPostsMap[slug];
+  const content = blogContent[slug];
+  const { previous, next } = getAdjacentPosts(slug);
 
   if (!post || !content) {
     notFound();
@@ -180,8 +193,9 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   );
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const post = blogPostsMap[params.slug];
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = blogPostsMap[slug];
 
   if (!post) {
     return {

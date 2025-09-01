@@ -72,7 +72,7 @@ export default function CommercialPage() {
               Our <span className="text-bsr-highlight">Commercial Services</span>
             </h2>
             <p className="text-xl text-gray-300">
-              Comprehensive decorating solutions for all types of commercial properties
+              Comprehensive decorating solutions for all types of commercial properties across Devon
             </p>
           </div>
 

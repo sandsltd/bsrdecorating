@@ -23,7 +23,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-300 mb-4">
-              Professional decorating services for both domestic and commercial properties in Dawlish, Devon.
+              Professional decorating services for both domestic and commercial properties across Devon. Serving Dawlish, Newton Abbot, Torquay, Exeter, Topsham, Exmouth & Bovey Tracey.
             </p>
           </div>
 

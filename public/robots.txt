@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# High-value pages for crawling
+Allow: /domestic
+Allow: /commercial
+Allow: /gallery
+Allow: /blog
+Allow: /contact
+Allow: /reviews
+
+# Sitemap location
+Sitemap: https://bsrdecorating.co.uk/sitemap.xml
+
+# Block unnecessary paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Specific instructions for search bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
