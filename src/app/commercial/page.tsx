@@ -22,7 +22,7 @@ export default function CommercialPage() {
     },
     {
       title: "Industrial & Warehouse",
-      description: "Specialized painting services for industrial facilities and warehouse spaces.",
+      description: "Specialised painting services for industrial facilities and warehouse spaces.",
       features: ["Industrial-grade paints", "Safety compliance", "Large-scale projects", "Durable coatings"]
     },
     {
@@ -36,7 +36,7 @@ export default function CommercialPage() {
     {
       icon: <Building size={32} />,
       title: "Commercial Expertise",
-      description: "Specialized knowledge of commercial decorating requirements and regulations"
+      description: "Specialised knowledge of commercial decorating requirements and regulations"
     },
     {
       icon: <Clock size={32} />,

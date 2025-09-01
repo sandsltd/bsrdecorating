@@ -88,7 +88,7 @@ const HeroSection = () => {
             <div className="bg-bsr-black/60 backdrop-blur-sm rounded-lg p-4 mb-8">
               <p className="text-lg text-gray-300 leading-relaxed">
                 Our experienced team of professional decorators brings over 20 years of expertise to every project. 
-                We specialize in commercial and domestic interior and exterior painting, wallpaper installation, 
+                We specialise in commercial and domestic interior and exterior painting, wallpaper installation, 
                 and complete property transformations. Quality workmanship and exceptional results guaranteed.
               </p>
             </div>
