@@ -4,79 +4,9 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
+import { blogPosts, categories } from '@/data/blogPosts';
 
 export default function BlogPage() {
-  const blogPosts = [
-    {
-      id: 1,
-      title: "Top 5 Colour Trends for 2025",
-      excerpt: "Discover the latest colour trends that are transforming homes across Devon this year, from calming neutrals to bold statement colours.",
-      category: "Design Trends",
-      date: "2025-01-15",
-      readTime: "5 min read",
-      image: "/images/Home decorating image.jpeg",
-      slug: "top-5-colour-trends-2025"
-    },
-    {
-      id: 2,
-      title: "How to Prepare Your Home for Professional Decorating",
-      excerpt: "Essential tips to help you prepare your home before the decorators arrive, ensuring a smooth and efficient decorating process.",
-      category: "Tips & Advice",
-      date: "2025-01-10",
-      readTime: "4 min read",
-      image: "/images/About Ben.jpg",
-      slug: "prepare-home-professional-decorating"
-    },
-    {
-      id: 3,
-      title: "Commercial vs Domestic Decorating: Key Differences",
-      excerpt: "Understanding the important differences between commercial and domestic decorating projects and what to expect from each.",
-      category: "Industry Insights",
-      date: "2025-01-05",
-      readTime: "6 min read",
-      image: "/images/Business decorating image.jpeg",
-      slug: "commercial-vs-domestic-decorating-differences"
-    },
-    {
-      id: 4,
-      title: "The Benefits of Professional Wallpaper Installation",
-      excerpt: "Why choosing professional wallpaper installation over DIY can save you time, money, and ensure a flawless finish.",
-      category: "Services",
-      date: "2024-12-20",
-      readTime: "3 min read",
-      image: "/images/Home decorating image.jpeg",
-      slug: "benefits-professional-wallpaper-installation"
-    },
-    {
-      id: 5,
-      title: "Exterior Painting: Weather Considerations for Devon",
-      excerpt: "Important weather considerations when planning exterior painting projects in Devon's unique climate conditions.",
-      category: "Tips & Advice",
-      date: "2024-12-15",
-      readTime: "4 min read",
-      image: "/images/Business decorating image.jpeg",
-      slug: "exterior-painting-weather-devon"
-    },
-    {
-      id: 6,
-      title: "Project Showcase: Victorian Property Transformation",
-      excerpt: "A detailed look at our recent Victorian property renovation project, showcasing the transformation from start to finish.",
-      category: "Project Showcase",
-      date: "2024-12-10",
-      readTime: "7 min read",
-      image: "/images/About Ben.jpg",
-      slug: "victorian-property-transformation-showcase"
-    }
-  ];
-
-  const categories = [
-    { name: "All Posts", count: blogPosts.length },
-    { name: "Design Trends", count: 1 },
-    { name: "Tips & Advice", count: 2 },
-    { name: "Industry Insights", count: 1 },
-    { name: "Services", count: 1 },
-    { name: "Project Showcase", count: 1 }
-  ];
 
   return (
     <div className="min-h-screen">

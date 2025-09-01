@@ -9,9 +9,11 @@ import TestimonialCard from '@/components/TestimonialCard';
 import GalleryPreview from '@/components/GalleryPreview';
 import ServiceAreaMap from '@/components/ServiceAreaMap';
 import { useQuoteModal } from '@/contexts/QuoteModalContext';
+import { getLatestBlogPosts } from '@/data/blogPosts';
 
 export default function Home() {
   const { openQuoteModal } = useQuoteModal();
+  const latestBlogPosts = getLatestBlogPosts(3);
   const testimonials = [
     {
       id: 1,
@@ -366,134 +368,49 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {/* Latest Blog Post 1 */}
-            <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg overflow-hidden hover:border-bsr-highlight transition-all duration-300 group">
-              <div className="relative h-48 overflow-hidden">
-          <Image
-                  src="/images/Home decorating image.jpeg"
-                  alt="Top 5 Colour Trends for 2025"
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-bsr-black/50 to-transparent"></div>
-                <div className="absolute top-4 left-4">
-                  <span className="bg-bsr-highlight text-bsr-white px-3 py-1 rounded-full text-sm font-medium">
-                    Design Trends
-                  </span>
-                </div>
-              </div>
-              <div className="p-6">
-                <div className="flex items-center space-x-4 text-sm text-gray-400 mb-3">
-                  <div className="flex items-center space-x-1">
-                    <Calendar size={14} />
-                    <span>15 Jan 2025</span>
-                  </div>
-                  <div className="flex items-center space-x-1">
-                    <Clock size={14} />
-                    <span>5 min read</span>
+            {latestBlogPosts.map((post) => (
+              <div key={post.id} className="bg-bsr-gray border border-bsr-gray-light rounded-lg overflow-hidden hover:border-bsr-highlight transition-all duration-300 group">
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-bsr-black/50 to-transparent"></div>
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-bsr-highlight text-bsr-white px-3 py-1 rounded-full text-sm font-medium">
+                      {post.category}
+                    </span>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-bsr-white mb-3 group-hover:text-bsr-highlight transition-colors duration-200">
-                  Top 5 Colour Trends for 2025
-                </h3>
-                <p className="text-gray-300 mb-4">
-                  Discover the latest colour trends that are transforming homes across Devon this year.
-                </p>
-                <Link
-                  href="/blog/top-5-colour-trends-2025"
-                  className="inline-flex items-center space-x-2 text-bsr-highlight hover:text-[#d001e8] font-medium transition-colors duration-200"
-                >
-                  <span>Read More</span>
-                  <ArrowRight size={16} />
-                </Link>
-              </div>
-            </div>
-
-            {/* Latest Blog Post 2 */}
-            <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg overflow-hidden hover:border-bsr-highlight transition-all duration-300 group">
-              <div className="relative h-48 overflow-hidden">
-          <Image
-                  src="/images/About Ben.jpg"
-                  alt="How to Prepare Your Home for Professional Decorating"
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-bsr-black/50 to-transparent"></div>
-                <div className="absolute top-4 left-4">
-                  <span className="bg-bsr-highlight text-bsr-white px-3 py-1 rounded-full text-sm font-medium">
-                    Tips & Advice
-                  </span>
+                <div className="p-6">
+                  <div className="flex items-center space-x-4 text-sm text-gray-400 mb-3">
+                    <div className="flex items-center space-x-1">
+                      <Calendar size={14} />
+                      <span>{new Date(post.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+                    </div>
+                    <div className="flex items-center space-x-1">
+                      <Clock size={14} />
+                      <span>{post.readTime}</span>
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-bsr-white mb-3 group-hover:text-bsr-highlight transition-colors duration-200">
+                    {post.title}
+                  </h3>
+                  <p className="text-gray-300 mb-4">
+                    {post.excerpt}
+                  </p>
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="inline-flex items-center space-x-2 text-bsr-highlight hover:text-[#d001e8] font-medium transition-colors duration-200"
+                  >
+                    <span>Read More</span>
+                    <ArrowRight size={16} />
+                  </Link>
                 </div>
               </div>
-              <div className="p-6">
-                <div className="flex items-center space-x-4 text-sm text-gray-400 mb-3">
-                  <div className="flex items-center space-x-1">
-                    <Calendar size={14} />
-                    <span>10 Jan 2025</span>
-                  </div>
-                  <div className="flex items-center space-x-1">
-                    <Clock size={14} />
-                    <span>4 min read</span>
-                  </div>
-                </div>
-                <h3 className="text-xl font-bold text-bsr-white mb-3 group-hover:text-bsr-highlight transition-colors duration-200">
-                  How to Prepare Your Home for Professional Decorating
-                </h3>
-                <p className="text-gray-300 mb-4">
-                  Essential tips to help you prepare your home before the decorators arrive.
-                </p>
-                <Link
-                  href="/blog/prepare-home-professional-decorating"
-                  className="inline-flex items-center space-x-2 text-bsr-highlight hover:text-[#d001e8] font-medium transition-colors duration-200"
-                >
-                  <span>Read More</span>
-                  <ArrowRight size={16} />
-                </Link>
-              </div>
-            </div>
-
-            {/* Latest Blog Post 3 */}
-            <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg overflow-hidden hover:border-bsr-highlight transition-all duration-300 group">
-              <div className="relative h-48 overflow-hidden">
-          <Image
-                  src="/images/Business decorating image.jpeg"
-                  alt="Project Showcase: Victorian Property Transformation"
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-bsr-black/50 to-transparent"></div>
-                <div className="absolute top-4 left-4">
-                  <span className="bg-bsr-highlight text-bsr-white px-3 py-1 rounded-full text-sm font-medium">
-                    Project Showcase
-                  </span>
-                </div>
-              </div>
-              <div className="p-6">
-                <div className="flex items-center space-x-4 text-sm text-gray-400 mb-3">
-                  <div className="flex items-center space-x-1">
-                    <Calendar size={14} />
-                    <span>10 Dec 2024</span>
-                  </div>
-                  <div className="flex items-center space-x-1">
-                    <Clock size={14} />
-                    <span>7 min read</span>
-                  </div>
-                </div>
-                <h3 className="text-xl font-bold text-bsr-white mb-3 group-hover:text-bsr-highlight transition-colors duration-200">
-                  Victorian Property Transformation
-                </h3>
-                <p className="text-gray-300 mb-4">
-                  A detailed look at our recent Victorian property renovation project.
-                </p>
-                <Link
-                  href="/blog/victorian-property-transformation-showcase"
-                  className="inline-flex items-center space-x-2 text-bsr-highlight hover:text-[#d001e8] font-medium transition-colors duration-200"
-                >
-                  <span>Read More</span>
-                  <ArrowRight size={16} />
-                </Link>
-              </div>
-            </div>
+            ))}
           </div>
 
           <div className="text-center">
