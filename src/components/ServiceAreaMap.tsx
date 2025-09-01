@@ -56,25 +56,47 @@ const ServiceAreaMap = () => {
       const isMobile = window.innerWidth < 768;
       const zoom = isMobile ? 7.5 : 8.5; // Zoom out more on mobile
       
-      map.current = new window.mapboxgl.Map({
-        container: mapContainer.current!,
-        style: 'mapbox://styles/mapbox/light-v11',
-        center: [-3.7, 50.6], // Centered between all locations
-        zoom: zoom,
-        attributionControl: false
-      });
+      try {
+        map.current = new window.mapboxgl.Map({
+          container: mapContainer.current!,
+          style: 'mapbox://styles/mapbox/light-v11',
+          center: [-3.7, 50.6], // Centered between all locations
+          zoom: zoom,
+          attributionControl: false
+        });
+      } catch (error) {
+        console.error('Failed to initialize Mapbox:', error);
+        return;
+      }
 
       // Add zoom controls
       map.current!.addControl(new window.mapboxgl.NavigationControl(), 'top-right');
 
-      // Remove default map labels
+      // Remove default map labels with delay to ensure style is loaded
       map.current!.on('style.load', () => {
-        const layers = map.current!.getStyle().layers;
-        layers.forEach((layer) => {
-          if (layer.type === 'symbol' && layer.layout && layer.layout['text-field']) {
-            map.current!.removeLayer(layer.id);
+        setTimeout(() => {
+          if (map.current && map.current.isStyleLoaded()) {
+            try {
+              const style = map.current.getStyle();
+              if (style && style.layers) {
+                const layers = [...style.layers]; // Create a copy to avoid iteration issues
+                layers.forEach((layer) => {
+                  if (layer.type === 'symbol' && layer.layout && layer.layout['text-field']) {
+                    try {
+                      if (map.current!.getLayer(layer.id)) {
+                        map.current!.removeLayer(layer.id);
+                      }
+                    } catch (e) {
+                      console.warn('Could not remove layer:', layer.id);
+                    }
+                  }
+                });
+              }
+            } catch (e) {
+              console.warn('Could not process map style:', e);
+            }
           }
-        });
+        }, 100);
       });
 
       window.addEventListener('resize', handleResize);
@@ -112,14 +134,14 @@ const ServiceAreaMap = () => {
 
         // Main coverage areas - individual markers for each location
         const mainAreas: Array<{ name: string; coords: [number, number] }> = [
-          { name: 'Teignmouth', coords: [-3.4986, 50.5465] },
           { name: 'Newton Abbot', coords: [-3.6107, 50.5301] },
-          { name: 'Kingsteignton', coords: [-3.5839, 50.5459] },
           { name: 'Bovey Tracey', coords: [-3.6751, 50.5905] },
+          { name: 'Buckfastleigh', coords: [-3.7781, 50.4831] },
+          { name: 'Ivybridge', coords: [-3.9228, 50.3897] },
           { name: 'Torquay', coords: [-3.5312, 50.4619] },
           { name: 'Exeter', coords: [-3.5339, 50.7236] },
-          { name: 'Exton', coords: [-3.4167, 50.6167] },
-          { name: 'Limpstone', coords: [-3.4500, 50.6333] },
+          { name: 'Topsham', coords: [-3.4653, 50.6853] },
+          { name: 'Ottery St Mary', coords: [-3.2775, 50.7592] },
           { name: 'Exmouth', coords: [-3.4139, 50.6195] }
         ];
 
@@ -400,7 +422,7 @@ const ServiceAreaMap = () => {
               <div className="space-y-3">
                 <div>
                   <h5 className="text-sm font-semibold text-bsr-white mb-2">Main Coverage</h5>
-                  <p className="text-xs text-gray-300">Dawlish • Teignmouth • Newton Abbot • Kingsteignton • Bovey Tracey • Torquay • Exeter • Exton • Limpstone • Exmouth</p>
+                  <p className="text-xs text-gray-300">Dawlish • Newton Abbot • Bovey Tracey • Buckfastleigh • Ivybridge • Torquay • Exeter • Topsham • Ottery St Mary • Exmouth</p>
                 </div>
                 <div className="pt-3 border-t border-bsr-gray-light">
                   <h5 className="text-sm font-semibold text-bsr-white mb-2">Larger Projects</h5>
