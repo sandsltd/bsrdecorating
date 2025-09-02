@@ -1,7 +1,7 @@
 export interface Project {
   id: number;
   title: string;
-  category: 'timber-repair' | 'doors' | 'external' | 'internal' | 'commercial';
+  category: 'timber-repair' | 'doors' | 'external' | 'internal' | 'commercial' | 'domestic';
   type: 'image' | 'video';
   description: string;
   fullDescription?: string;
@@ -21,7 +21,7 @@ export const projects: Project[] = [
   {
     id: 1,
     title: 'Historic Farmhouse Timber Restoration',
-    category: 'timber-repair',
+    category: 'domestic',
     type: 'image',
     description: 'Extensive timber repair and restoration work on a traditional farmhouse near Honiton, bringing 25-year-old weathered timber back to life with seamless repairs.',
     fullDescription: 'This property required extensive timber repair work on a beautiful farmhouse located in Fenny Bridges near Honiton. The property hadn\'t undergone any significant maintenance work for nearly 25 years, making this a truly massive undertaking. Our skilled craftsmen meticulously spliced in new timber sections, ensuring every repair was seamlessly integrated to look as if the repairs were never there. The project demanded exceptional attention to detail, matching wood grain patterns, aging techniques, and traditional joinery methods to preserve the farmhouse\'s authentic character while ensuring structural integrity for decades to come.',

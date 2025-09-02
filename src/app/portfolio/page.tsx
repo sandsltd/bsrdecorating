@@ -15,11 +15,12 @@ export default function PortfolioPage() {
 
   const categories = [
     { id: 'all', name: 'All Projects' },
-    { id: 'timber-repair', name: 'Timber Repair' },
-    { id: 'doors', name: 'Doors' },
+    { id: 'domestic', name: 'Domestic' },
+    { id: 'commercial', name: 'Commercial' },
     { id: 'external', name: 'External' },
     { id: 'internal', name: 'Internal' },
-    { id: 'commercial', name: 'Commercial' },
+    { id: 'doors', name: 'Doors' },
+    { id: 'timber-repair', name: 'Timber Repair' },
   ];
 
   // Use projects from the data file
