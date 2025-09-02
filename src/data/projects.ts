@@ -113,7 +113,7 @@ export const projects: Project[] = [
     type: 'image',
     description: 'Interior and exterior decoration of a newly built porch on a Georgian property, replacing an old timber conservatory with professional finishing and attention to period details.',
     fullDescription: 'This was a small project carried out for a builder that had built a new porch on this Georgian property, removing the old timber conservatory. We carried out decoration of both the inside and the exterior, making good of the details on the exterior. The project required careful attention to the Georgian architectural style, ensuring that all decorative work complemented the property\'s historical character while providing a modern, durable finish.',
-    location: 'Devon', // Update with specific location when known
+    location: 'Newton Abbot',
     year: 2025,
     duration: '1 week',
     specialFeatures: [
