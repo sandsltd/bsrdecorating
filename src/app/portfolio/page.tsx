@@ -100,10 +100,10 @@ export default function PortfolioPage() {
               <span className="text-bsr-highlight font-semibold">Project Locations</span>
             </div>
             <h2 className="text-4xl font-bold text-bsr-white mb-6">
-              Where We've <span className="text-bsr-highlight">Delivered Excellence</span>
+              Where We&apos;ve <span className="text-bsr-highlight">Delivered Excellence</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Explore the locations of our completed projects across Devon. Each marker shows the number of projects we've completed in that area.
+              Explore the locations of our completed projects across Devon. Each marker shows the number of projects we&apos;ve completed in that area.
             </p>
           </div>
 
