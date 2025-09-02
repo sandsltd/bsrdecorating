@@ -26,8 +26,6 @@ export const projects: Project[] = [
     description: 'Extensive timber repair and restoration work on a traditional farmhouse near Honiton, bringing 25-year-old weathered timber back to life with seamless repairs.',
     fullDescription: 'This property required extensive timber repair work on a beautiful farmhouse located in Fenny Bridges near Honiton. The property hadn\'t undergone any significant maintenance work for nearly 25 years, making this a truly massive undertaking. Our skilled craftsmen meticulously spliced in new timber sections, ensuring every repair was seamlessly integrated to look as if the repairs were never there. The project demanded exceptional attention to detail, matching wood grain patterns, aging techniques, and traditional joinery methods to preserve the farmhouse\'s authentic character while ensuring structural integrity for decades to come.',
     location: 'Fenny Bridges, Honiton',
-    year: 2025,
-    duration: '3 weeks',
     specialFeatures: [
       'Heritage timber matching and splicing',
       'Traditional joinery techniques',
@@ -114,8 +112,6 @@ export const projects: Project[] = [
     description: 'Interior and exterior decoration of a newly built porch on a Georgian property, replacing an old timber conservatory with professional finishing and attention to period details.',
     fullDescription: 'This was a small project carried out for a builder that had built a new porch on this Georgian property, removing the old timber conservatory. We carried out decoration of both the inside and the exterior, making good of the details on the exterior. The project required careful attention to the Georgian architectural style, ensuring that all decorative work complemented the property\'s historical character while providing a modern, durable finish.',
     location: 'Newton Abbot',
-    year: 2025,
-    duration: '1 week',
     specialFeatures: [
       'Georgian period property restoration',
       'New porch interior and exterior decoration',
@@ -155,8 +151,6 @@ export const projects: Project[] = [
     description: 'Complete shopfront refresh for two Howden Insurance locations in Exeter and Newton Abbot, implementing their new corporate colour scheme with professional commercial decorating standards.',
     fullDescription: 'We carried out a comprehensive refresh on 2 shopfronts for Howden Insurance based in Exeter and Newton Abbot, bringing in their new colour scheme. This commercial project required careful attention to corporate branding standards, ensuring consistent application of the new colour palette across both locations. The work involved exterior shopfront painting, signage preparation, and coordination with business operations to minimize disruption to daily operations.',
     location: 'Exeter & Newton Abbot',
-    year: 2025,
-    duration: '2 weeks',
     specialFeatures: [
       'Corporate branding implementation',
       'Multi-location project coordination',
@@ -190,8 +184,6 @@ export const projects: Project[] = [
     description: 'Complete spray application of water-based environmentally friendly paint on a brand-new passive house in Exeter, maintaining eco-conscious principles while delivering exceptional durability and breathability.',
     fullDescription: 'This was a brand-new property in Exeter where we were contracted to spray everything with water-based environmentally friendly paint that\'s highly breathable but also maintains a durable finish. Being a brand-new passive house, we kept the eco-conscious theme from the architect and worked very well alongside them. The project required specialized knowledge of sustainable building practices and eco-friendly materials, ensuring the paint system complemented the passive house energy efficiency standards.',
     location: 'Exeter',
-    year: 2025,
-    duration: '3 weeks',
     specialFeatures: [
       'Water-based environmentally friendly paint',
       'Passive house specialized application',
@@ -248,8 +240,6 @@ export const projects: Project[] = [
     description: 'Large-scale exterior renovation for property management company covering 16 properties with specialized coastal protection.',
     fullDescription: 'This was a large exterior project carried out in Dawlish for a property management company. We were tasked with carrying out all the decoration work on 16 properties, repairing extensive cracks, removing all previously failed paint, and rectifying rust issues from sea damage on metal beads. We worked closely with a paint manufacturer to ensure the buildings receive the full protection needed for coastal conditions.',
     location: 'Dawlish',
-    year: 2024,
-    duration: '8 weeks',
     specialFeatures: [
       'Multi-property coordination (16 buildings)',
       'Coastal weather protection specialist coatings',
@@ -313,6 +303,50 @@ export const projects: Project[] = [
       '/portfolio/project5/PHOTO-2025-09-02-11-16-34 2.jpg',
       '/portfolio/project5/PHOTO-2025-09-02-11-16-33.jpg',
       '/portfolio/project5/PHOTO-2025-09-02-11-16-33 2.jpg'
+    ],
+    rating: 5,
+    featured: true
+  },
+  {
+    id: 6,
+    title: '300-Year-Old Heritage House Restoration',
+    category: 'domestic',
+    type: 'image',
+    description: 'Staged renovation of a 300-year-old property in Harbourton, Totnes, blending modern restoration techniques with heritage preservation to make it feel newly built while honouring its historical character.',
+    fullDescription: 'This was a property we completed in Totnes, Harbourton. The house was undergoing renovation and we carried out work in stages. At nearly 300 years old, our challenge was to make it feel like it was built yesterday while keeping a respectful nod to the heritage of the house. This required careful selection of appropriate materials, traditional techniques where necessary, and modern approaches that would enhance rather than detract from the property\'s historical significance. The staged approach allowed us to work around the ongoing renovation while maintaining the property\'s authentic character.',
+    location: 'Harbourton, Totnes',
+    specialFeatures: [
+      '300-year-old heritage property',
+      'Staged renovation coordination',
+      'Heritage preservation techniques',
+      'Modern restoration with traditional respect',
+      'Historical character enhancement',
+      'Authentic material selection'
+    ],
+    beforeAfter: true,
+    image: '/portfolio/project6/PHOTO-2025-09-02-11-19-17.jpg', // Main showcase image
+    images: [
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-17.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-17 2.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-16.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-16 2.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-16 3.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-15.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-15 2.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-15 3.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-15 4.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-15 5.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-14.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-14 2.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-14 3.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-13.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-13 2.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-11.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-10.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-08.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-07.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-05.jpg',
+      '/portfolio/project6/PHOTO-2025-09-02-11-19-04.jpg'
     ],
     rating: 5,
     featured: true
