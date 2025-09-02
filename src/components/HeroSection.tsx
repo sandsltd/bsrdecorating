@@ -73,7 +73,7 @@ const HeroSection = () => {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-bsr-white leading-tight" style={{ filter: 'drop-shadow(0 0 16px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 8px rgba(0, 0, 0, 0.6))' }}>
                 Welcome to
                 <br />
-                <span className="text-bsr-highlight" style={{ filter: 'drop-shadow(0 0 16px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 8px rgba(0, 0, 0, 0.6))' }}>BSR Decorating</span>
+                <span className="text-bsr-highlight">BSR Decorating</span>
               </h1>
             </div>
 
