@@ -129,6 +129,9 @@ const ProjectLocationMap = () => {
           Object.entries(projectLocations).forEach(([locationName, data]) => {
             const { count, coords } = data;
             
+            // Check if this is Dawlish (our HQ location) - use gold styling
+            const isDawlish = locationName === 'Dawlish';
+            
             // Create container for marker and label
             const markerContainer = document.createElement('div');
             markerContainer.style.cssText = `
@@ -143,16 +146,16 @@ const ProjectLocationMap = () => {
             markerEl.style.cssText = `
               width: 40px;
               height: 40px;
-              background: #E801F8;
+              background: ${isDawlish ? '#FFD700' : '#E801F8'};
               border-radius: 50%;
               border: 3px solid white;
-              box-shadow: 0 4px 12px rgba(232, 1, 248, 0.4);
+              box-shadow: 0 4px 12px rgba(${isDawlish ? '255, 215, 0' : '232, 1, 248'}, 0.4);
               display: flex;
               align-items: center;
               justify-content: center;
               font-weight: bold;
               font-size: 18px;
-              color: white;
+              color: ${isDawlish ? '#000' : 'white'};
               transition: transform 0.2s ease;
             `;
             markerEl.textContent = count.toString();
@@ -160,8 +163,8 @@ const ProjectLocationMap = () => {
             // Create label below the marker
             const labelEl = document.createElement('div');
             labelEl.style.cssText = `
-              background: rgba(232, 1, 248, 0.95);
-              color: white;
+              background: rgba(${isDawlish ? '255, 215, 0' : '232, 1, 248'}, 0.95);
+              color: ${isDawlish ? 'black' : 'white'};
               padding: 4px 8px;
               border-radius: 4px;
               font-size: 11px;
@@ -193,85 +196,20 @@ const ProjectLocationMap = () => {
             const popup = new (window as any).mapboxgl.Popup({ offset: 15 })
               .setHTML(`
                 <div style="text-align: center; padding: 12px; font-family: Arial, sans-serif;">
-                  <h4 style="margin: 0; color: #E801F8; font-weight: bold; font-size: 18px;">${locationName}</h4>
+                  <h4 style="margin: 0; color: ${isDawlish ? '#FFD700' : '#E801F8'}; font-weight: bold; font-size: 18px;">
+                    ${locationName}${isDawlish ? ' - BSR HQ' : ''}
+                  </h4>
                   <p style="margin: 4px 0 0 0; font-size: 14px; color: #333; font-weight: 500;">
                     ${count} ${count === 1 ? 'Project' : 'Projects'} Completed
                   </p>
+                  ${isDawlish ? '<p style="margin: 4px 0 0 0; font-size: 12px; color: #666; font-style: italic;">BSR Decorating Headquarters</p>' : ''}
                 </div>
               `);
             
             marker.setPopup(popup);
           });
 
-          // Add BSR headquarters marker with consistent layout
-          const hqContainer = document.createElement('div');
-          hqContainer.style.cssText = `
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            cursor: pointer;
-          `;
 
-          const hqEl = document.createElement('div');
-          hqEl.style.cssText = `
-            width: 40px;
-            height: 40px;
-            background: #FFD700;
-            border-radius: 50%;
-            border: 3px solid white;
-            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 16px;
-            color: #000;
-            transition: transform 0.2s ease;
-          `;
-          hqEl.textContent = 'HQ';
-
-          // Add HQ label below the marker
-          const hqLabelEl = document.createElement('div');
-          hqLabelEl.style.cssText = `
-            background: rgba(255, 215, 0, 0.95);
-            color: black;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 11px;
-            font-weight: bold;
-            white-space: nowrap;
-            border: 1px solid white;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-            margin-top: 6px;
-            text-align: center;
-          `;
-          hqLabelEl.textContent = 'Dawlish';
-
-          hqContainer.appendChild(hqEl);
-          hqContainer.appendChild(hqLabelEl);
-
-          // Add hover effect
-          hqContainer.addEventListener('mouseenter', () => {
-            hqEl.style.transform = 'scale(1.1)';
-          });
-          hqContainer.addEventListener('mouseleave', () => {
-            hqEl.style.transform = 'scale(1)';
-          });
-
-          const hqMarker = new (window as any).mapboxgl.Marker(hqContainer)
-            .setLngLat([-3.4648, 50.5775]) // Dawlish coordinates
-            .addTo(map.current!);
-
-          // Add HQ popup
-          const hqPopup = new (window as any).mapboxgl.Popup({ offset: 15 })
-            .setHTML(`
-              <div style="text-align: center; padding: 12px; font-family: Arial, sans-serif;">
-                <h4 style="margin: 0; color: #FFD700; font-weight: bold; font-size: 18px;">BSR Decorating</h4>
-                <p style="margin: 4px 0 0 0; font-size: 14px; color: #333; font-weight: 500;">Headquarters - Dawlish</p>
-              </div>
-            `);
-          
-          hqMarker.setPopup(hqPopup);
               } catch (error) {
                 console.error('Error setting up map markers:', error);
               }
