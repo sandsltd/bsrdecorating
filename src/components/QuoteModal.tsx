@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface QuoteModalProps {
   isOpen: boolean;
@@ -14,6 +15,13 @@ interface FormData {
   externalDecorating: boolean;
   garageDoor: boolean;
   frontDoor: boolean;
+  wallpaperHanging: boolean;
+  colourConsultation: boolean;
+  officeSpaces: boolean;
+  retailSpaces: boolean;
+  industrialWarehouse: boolean;
+  outOfHours: boolean;
+  otherCommercial: boolean;
   name: string;
   email: string;
   phone: string;
@@ -26,6 +34,7 @@ interface PostcodeData {
 }
 
 const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
+  const [currentStep, setCurrentStep] = useState(1);
   const [postcodeData, setPostcodeData] = useState<PostcodeData | null>(null);
   const [formData, setFormData] = useState<FormData>({
     postcode: '',
@@ -34,6 +43,13 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
     externalDecorating: false,
     garageDoor: false,
     frontDoor: false,
+    wallpaperHanging: false,
+    colourConsultation: false,
+    officeSpaces: false,
+    retailSpaces: false,
+    industrialWarehouse: false,
+    outOfHours: false,
+    otherCommercial: false,
     name: '',
     email: '',
     phone: '',
@@ -48,9 +64,10 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
       .catch(error => console.error('Error loading postcode data:', error));
   }, []);
 
-  // Reset form when modal closes
+  // Reset form and step when modal closes
   useEffect(() => {
     if (!isOpen) {
+      setCurrentStep(1);
       setFormData({
         postcode: '',
         serviceType: 'domestic',
@@ -58,6 +75,13 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
         externalDecorating: false,
         garageDoor: false,
         frontDoor: false,
+        wallpaperHanging: false,
+        colourConsultation: false,
+        officeSpaces: false,
+        retailSpaces: false,
+        industrialWarehouse: false,
+        outOfHours: false,
+        otherCommercial: false,
         name: '',
         email: '',
         phone: '',
@@ -149,14 +173,349 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
+  // Step navigation
+  const nextStep = () => {
+    if (currentStep < 3) {
+      setCurrentStep(currentStep + 1);
+    }
+  };
+
+  const prevStep = () => {
+    if (currentStep > 1) {
+      setCurrentStep(currentStep - 1);
+    }
+  };
+
+  // Step validation
+  const canProceedToStep2 = () => {
+    return formData.postcode.trim() !== '' && formData.serviceType !== '';
+  };
+
+  const canProceedToStep3 = () => {
+    if (formData.serviceType === 'commercial') {
+      // For commercial, at least one service must be selected
+      return formData.officeSpaces || formData.retailSpaces || formData.industrialWarehouse || formData.outOfHours || formData.otherCommercial;
+    } else {
+      // For domestic, either number of rooms OR at least one service must be provided
+      const hasRooms = formData.numberOfRooms.trim() !== '';
+      const hasService = formData.externalDecorating || formData.garageDoor || formData.frontDoor || formData.wallpaperHanging || formData.colourConsultation;
+      return hasRooms || hasService;
+    }
+  };
+
   if (!isOpen) return null;
+
+  const renderStep1 = () => (
+    <div className="space-y-6">
+      <div className="text-center mb-6">
+        <h4 className="text-lg font-semibold text-bsr-white mb-2">Let's start with the basics</h4>
+        <p className="text-gray-300 text-sm">We need to know your location and service type</p>
+      </div>
+
+      {/* Postcode */}
+      <div>
+        <label className="block text-sm font-medium text-bsr-white mb-2">
+          Postcode *
+        </label>
+        <input
+          type="text"
+          required
+          value={formData.postcode}
+          onChange={(e) => updateFormField('postcode', e.target.value)}
+          placeholder="e.g. EX1 2GH"
+          className="w-full p-3 bg-bsr-black border border-bsr-gray-light rounded-lg text-bsr-white placeholder-gray-400 focus:border-bsr-highlight focus:outline-none"
+        />
+      </div>
+
+      {/* Service Type */}
+      <div>
+        <label className="block text-sm font-medium text-bsr-white mb-3">
+          What type of service do you need? *
+        </label>
+        <div className="grid grid-cols-1 gap-3">
+          <label 
+            className={`flex items-center p-4 border-2 rounded-lg cursor-pointer transition-all duration-200 ${
+              formData.serviceType === 'domestic' 
+                ? 'border-bsr-highlight bg-bsr-highlight bg-opacity-10' 
+                : 'border-bsr-gray-light hover:border-bsr-highlight'
+            }`}
+          >
+            <input
+              type="radio"
+              name="serviceType"
+              value="domestic"
+              checked={formData.serviceType === 'domestic'}
+              onChange={(e) => updateFormField('serviceType', e.target.value)}
+              className="mr-3 text-bsr-highlight focus:ring-bsr-highlight"
+            />
+            <div>
+              <div className="font-semibold text-bsr-white">Domestic</div>
+              <div className="text-sm text-gray-300">Home & Residential</div>
+            </div>
+          </label>
+          <label 
+            className={`flex items-center p-4 border-2 rounded-lg cursor-pointer transition-all duration-200 ${
+              formData.serviceType === 'commercial' 
+                ? 'border-bsr-highlight bg-bsr-highlight bg-opacity-10' 
+                : 'border-bsr-gray-light hover:border-bsr-highlight'
+            }`}
+          >
+            <input
+              type="radio"
+              name="serviceType"
+              value="commercial"
+              checked={formData.serviceType === 'commercial'}
+              onChange={(e) => updateFormField('serviceType', e.target.value)}
+              className="mr-3 text-bsr-highlight focus:ring-bsr-highlight"
+            />
+            <div>
+              <div className="font-semibold text-bsr-white">Commercial</div>
+              <div className="text-sm text-gray-300">Business & Industrial</div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderStep2 = () => (
+    <div className="space-y-6">
+      <div className="text-center mb-6">
+        <h4 className="text-lg font-semibold text-bsr-white mb-2">
+          {formData.serviceType === 'domestic' ? 'Home Decorating Options' : 'Commercial Project Details'}
+        </h4>
+        <p className="text-gray-300 text-sm">Select any services that apply to your project</p>
+      </div>
+
+      {formData.serviceType === 'domestic' ? (
+        <>
+          {/* Number of Rooms */}
+          <div>
+            <label className="block text-sm font-medium text-bsr-white mb-2">
+              Number of Rooms
+            </label>
+            <input
+              type="number"
+              value={formData.numberOfRooms}
+              onChange={(e) => updateFormField('numberOfRooms', e.target.value)}
+              placeholder="e.g. 3"
+              className="w-full p-3 bg-bsr-black border border-bsr-gray-light rounded-lg text-bsr-white placeholder-gray-400 focus:border-bsr-highlight focus:outline-none"
+            />
+          </div>
+
+          {/* Domestic Services */}
+          <div>
+            <label className="block text-sm font-medium text-bsr-white mb-3">
+              Domestic Services
+            </label>
+            <p className="text-sm text-gray-400 mb-3">Please provide number of rooms above OR select at least one service below</p>
+            <div className="space-y-2">
+              <label className="flex items-center p-3 border border-bsr-gray-light rounded-lg hover:border-bsr-highlight transition-colors">
+                <input
+                  type="checkbox"
+                  checked={formData.externalDecorating}
+                  onChange={(e) => updateFormField('externalDecorating', e.target.checked)}
+                  className="mr-3 text-bsr-highlight focus:ring-bsr-highlight"
+                />
+                <span className="text-gray-300">Exterior Decorating</span>
+              </label>
+              <label className="flex items-center p-3 border border-bsr-gray-light rounded-lg hover:border-bsr-highlight transition-colors">
+                <input
+                  type="checkbox"
+                  checked={formData.garageDoor}
+                  onChange={(e) => updateFormField('garageDoor', e.target.checked)}
+                  className="mr-3 text-bsr-highlight focus:ring-bsr-highlight"
+                />
+                <span className="text-gray-300">Garage Door Painting</span>
+              </label>
+              <label className="flex items-center p-3 border border-bsr-gray-light rounded-lg hover:border-bsr-highlight transition-colors">
+                <input
+                  type="checkbox"
+                  checked={formData.frontDoor}
+                  onChange={(e) => updateFormField('frontDoor', e.target.checked)}
+                  className="mr-3 text-bsr-highlight focus:ring-bsr-highlight"
+                />
+                <span className="text-gray-300">Front Door Painting</span>
+              </label>
+              <label className="flex items-center p-3 border border-bsr-gray-light rounded-lg hover:border-bsr-highlight transition-colors">
+                <input
+                  type="checkbox"
+                  checked={formData.wallpaperHanging}
+                  onChange={(e) => updateFormField('wallpaperHanging', e.target.checked)}
+                  className="mr-3 text-bsr-highlight focus:ring-bsr-highlight"
+                />
+                <span className="text-gray-300">Wallpaper Hanging & Removal</span>
+              </label>
+              <label className="flex items-center p-3 border border-bsr-gray-light rounded-lg hover:border-bsr-highlight transition-colors">
+                <input
+                  type="checkbox"
+                  checked={formData.colourConsultation}
+                  onChange={(e) => updateFormField('colourConsultation', e.target.checked)}
+                  className="mr-3 text-bsr-highlight focus:ring-bsr-highlight"
+                />
+                <span className="text-gray-300">Colour Consultation</span>
+              </label>
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          {/* Commercial Services */}
+          <div>
+            <label className="block text-sm font-medium text-bsr-white mb-3">
+              Commercial Services *
+            </label>
+            <p className="text-sm text-gray-400 mb-3">Please select at least one service type</p>
+            <div className="space-y-2">
+              <label className="flex items-center p-3 border border-bsr-gray-light rounded-lg hover:border-bsr-highlight transition-colors">
+                <input
+                  type="checkbox"
+                  checked={formData.officeSpaces}
+                  onChange={(e) => updateFormField('officeSpaces', e.target.checked)}
+                  className="mr-3 text-bsr-highlight focus:ring-bsr-highlight"
+                />
+                <span className="text-gray-300">Office Spaces</span>
+              </label>
+              <label className="flex items-center p-3 border border-bsr-gray-light rounded-lg hover:border-bsr-highlight transition-colors">
+                <input
+                  type="checkbox"
+                  checked={formData.retailSpaces}
+                  onChange={(e) => updateFormField('retailSpaces', e.target.checked)}
+                  className="mr-3 text-bsr-highlight focus:ring-bsr-highlight"
+                />
+                <span className="text-gray-300">Retail Spaces</span>
+              </label>
+              <label className="flex items-center p-3 border border-bsr-gray-light rounded-lg hover:border-bsr-highlight transition-colors">
+                <input
+                  type="checkbox"
+                  checked={formData.industrialWarehouse}
+                  onChange={(e) => updateFormField('industrialWarehouse', e.target.checked)}
+                  className="mr-3 text-bsr-highlight focus:ring-bsr-highlight"
+                />
+                <span className="text-gray-300">Industrial & Warehouse</span>
+              </label>
+              <label className="flex items-center p-3 border border-bsr-gray-light rounded-lg hover:border-bsr-highlight transition-colors">
+                <input
+                  type="checkbox"
+                  checked={formData.outOfHours}
+                  onChange={(e) => updateFormField('outOfHours', e.target.checked)}
+                  className="mr-3 text-bsr-highlight focus:ring-bsr-highlight"
+                />
+                <span className="text-gray-300">Out-of-Hours Working</span>
+              </label>
+              <label className="flex items-center p-3 border border-bsr-gray-light rounded-lg hover:border-bsr-highlight transition-colors">
+                <input
+                  type="checkbox"
+                  checked={formData.otherCommercial}
+                  onChange={(e) => updateFormField('otherCommercial', e.target.checked)}
+                  className="mr-3 text-bsr-highlight focus:ring-bsr-highlight"
+                />
+                <span className="text-gray-300">Other (please detail in project details below)</span>
+              </label>
+            </div>
+          </div>
+        </>
+      )}
+
+      {/* Additional Message */}
+      <div>
+        <label className="block text-sm font-medium text-bsr-white mb-2">
+          Project Details
+        </label>
+        <textarea
+          value={formData.message}
+          onChange={(e) => updateFormField('message', e.target.value)}
+          placeholder="Tell us more about your project requirements, timeline, or any specific details..."
+          rows={4}
+          className="w-full p-3 bg-bsr-black border border-bsr-gray-light rounded-lg text-bsr-white placeholder-gray-400 focus:border-bsr-highlight focus:outline-none resize-none"
+        />
+      </div>
+    </div>
+  );
+
+  const renderStep3 = () => (
+    <div className="space-y-6">
+      <div className="text-center mb-6">
+        <h4 className="text-lg font-semibold text-bsr-white mb-2">Contact Details</h4>
+        <p className="text-gray-300 text-sm">How can we get back to you with your quote?</p>
+      </div>
+
+      {/* Name */}
+      <div>
+        <label className="block text-sm font-medium text-bsr-white mb-2">
+          Name *
+        </label>
+        <input
+          type="text"
+          required
+          value={formData.name}
+          onChange={(e) => updateFormField('name', e.target.value)}
+          placeholder="Your full name"
+          className="w-full p-3 bg-bsr-black border border-bsr-gray-light rounded-lg text-bsr-white placeholder-gray-400 focus:border-bsr-highlight focus:outline-none"
+        />
+      </div>
+
+      {/* Email */}
+      <div>
+        <label className="block text-sm font-medium text-bsr-white mb-2">
+          Email *
+        </label>
+        <input
+          type="email"
+          required
+          value={formData.email}
+          onChange={(e) => updateFormField('email', e.target.value)}
+          placeholder="your@email.com"
+          className="w-full p-3 bg-bsr-black border border-bsr-gray-light rounded-lg text-bsr-white placeholder-gray-400 focus:border-bsr-highlight focus:outline-none"
+        />
+      </div>
+
+      {/* Phone */}
+      <div>
+        <label className="block text-sm font-medium text-bsr-white mb-2">
+          Contact Number
+        </label>
+        <input
+          type="tel"
+          value={formData.phone}
+          onChange={(e) => updateFormField('phone', e.target.value)}
+          placeholder="07805 469770"
+          className="w-full p-3 bg-bsr-black border border-bsr-gray-light rounded-lg text-bsr-white placeholder-gray-400 focus:border-bsr-highlight focus:outline-none"
+        />
+      </div>
+
+      {/* Summary */}
+      <div className="bg-bsr-black bg-opacity-50 rounded-lg p-4 border border-bsr-gray-light">
+        <h5 className="font-semibold text-bsr-highlight mb-2">Quote Summary</h5>
+        <div className="text-sm text-gray-300 space-y-1">
+          <div>Location: {formData.postcode}</div>
+          <div>Service: {formData.serviceType === 'domestic' ? 'Domestic' : 'Commercial'}</div>
+          {formData.numberOfRooms && <div>Rooms: {formData.numberOfRooms}</div>}
+        </div>
+      </div>
+    </div>
+  );
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-[9999]">
-      <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto">
+      <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg max-w-lg w-full max-h-[90vh] overflow-y-auto">
         <div className="p-6">
+          {/* Header */}
           <div className="flex justify-between items-center mb-6">
-            <h3 className="text-xl font-semibold text-bsr-highlight">Request a Quote</h3>
+            <div>
+              <h3 className="text-xl font-semibold text-bsr-highlight">Request a Quote</h3>
+              <div className="flex items-center space-x-2 mt-1">
+                {[1, 2, 3].map((step) => (
+                  <div
+                    key={step}
+                    className={`w-8 h-2 rounded-full transition-colors duration-200 ${
+                      step <= currentStep ? 'bg-bsr-highlight' : 'bg-bsr-gray-light'
+                    }`}
+                  />
+                ))}
+                <span className="text-sm text-gray-400 ml-2">Step {currentStep} of 3</span>
+              </div>
+            </div>
             <button
               onClick={onClose}
               className="text-gray-400 hover:text-white text-2xl"
@@ -165,162 +524,46 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
             </button>
           </div>
 
-          <form onSubmit={handleSubmitQuote} className="space-y-4">
-            {/* Postcode */}
-            <div>
-              <label className="block text-sm font-medium text-bsr-white mb-2">
-                Postcode *
-              </label>
-              <input
-                type="text"
-                required
-                value={formData.postcode}
-                onChange={(e) => updateFormField('postcode', e.target.value)}
-                placeholder="e.g. EX1 2GH"
-                className="w-full p-3 bg-bsr-black border border-bsr-gray-light rounded-lg text-bsr-white placeholder-gray-400 focus:border-bsr-highlight focus:outline-none"
-              />
-            </div>
+          <form onSubmit={currentStep === 3 ? handleSubmitQuote : (e) => e.preventDefault()}>
+            {/* Step Content */}
+            {currentStep === 1 && renderStep1()}
+            {currentStep === 2 && renderStep2()}
+            {currentStep === 3 && renderStep3()}
 
-            {/* Service Type */}
-            <div>
-              <label className="block text-sm font-medium text-bsr-white mb-2">
-                Service Type *
-              </label>
-              <div className="relative">
-                <select
-                  required
-                  value={formData.serviceType}
-                  onChange={(e) => updateFormField('serviceType', e.target.value as 'domestic' | 'commercial')}
-                  className="w-full p-3 bg-bsr-black border border-bsr-gray-light rounded-lg text-bsr-white focus:border-bsr-highlight focus:outline-none appearance-none cursor-pointer pr-10"
+            {/* Navigation Buttons */}
+            <div className="flex justify-between pt-6 border-t border-bsr-gray-light mt-6">
+              {currentStep > 1 ? (
+                <button
+                  type="button"
+                  onClick={prevStep}
+                  className="flex items-center space-x-2 px-6 py-3 border border-bsr-gray-light text-bsr-white rounded-lg hover:border-bsr-highlight transition-colors duration-200"
                 >
-                  <option value="domestic">Domestic - Home & Residential</option>
-                  <option value="commercial">Commercial - Business & Industrial</option>
-                </select>
-                {/* Custom dropdown arrow */}
-                <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                  <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
+                  <ChevronLeft size={18} />
+                  <span>Back</span>
+                </button>
+              ) : (
+                <div></div>
+              )}
 
-            {/* Number of Rooms */}
-            <div>
-              <label className="block text-sm font-medium text-bsr-white mb-2">
-                Number of Rooms
-              </label>
-              <input
-                type="number"
-                value={formData.numberOfRooms}
-                onChange={(e) => updateFormField('numberOfRooms', e.target.value)}
-                placeholder="e.g. 3"
-                className="w-full p-3 bg-bsr-black border border-bsr-gray-light rounded-lg text-bsr-white placeholder-gray-400 focus:border-bsr-highlight focus:outline-none"
-              />
-            </div>
-
-            {/* Additional Services */}
-            <div>
-              <label className="block text-sm font-medium text-bsr-white mb-3">
-                Additional Services
-              </label>
-              <div className="space-y-2">
-                <label className="flex items-center">
-                  <input
-                    type="checkbox"
-                    checked={formData.externalDecorating}
-                    onChange={(e) => updateFormField('externalDecorating', e.target.checked)}
-                    className="mr-2 text-bsr-highlight focus:ring-bsr-highlight"
-                  />
-                  <span className="text-gray-300">Exterior Decorating</span>
-                </label>
-                <label className="flex items-center">
-                  <input
-                    type="checkbox"
-                    checked={formData.garageDoor}
-                    onChange={(e) => updateFormField('garageDoor', e.target.checked)}
-                    className="mr-2 text-bsr-highlight focus:ring-bsr-highlight"
-                  />
-                  <span className="text-gray-300">Garage Door</span>
-                </label>
-                <label className="flex items-center">
-                  <input
-                    type="checkbox"
-                    checked={formData.frontDoor}
-                    onChange={(e) => updateFormField('frontDoor', e.target.checked)}
-                    className="mr-2 text-bsr-highlight focus:ring-bsr-highlight"
-                  />
-                  <span className="text-gray-300">Front Door</span>
-                </label>
-              </div>
-            </div>
-
-            {/* Name */}
-            <div>
-              <label className="block text-sm font-medium text-bsr-white mb-2">
-                Name *
-              </label>
-              <input
-                type="text"
-                required
-                value={formData.name}
-                onChange={(e) => updateFormField('name', e.target.value)}
-                placeholder="Your full name"
-                className="w-full p-3 bg-bsr-black border border-bsr-gray-light rounded-lg text-bsr-white placeholder-gray-400 focus:border-bsr-highlight focus:outline-none"
-              />
-            </div>
-
-            {/* Email */}
-            <div>
-              <label className="block text-sm font-medium text-bsr-white mb-2">
-                Email *
-              </label>
-              <input
-                type="email"
-                required
-                value={formData.email}
-                onChange={(e) => updateFormField('email', e.target.value)}
-                placeholder="your@email.com"
-                className="w-full p-3 bg-bsr-black border border-bsr-gray-light rounded-lg text-bsr-white placeholder-gray-400 focus:border-bsr-highlight focus:outline-none"
-              />
-            </div>
-
-            {/* Phone */}
-            <div>
-              <label className="block text-sm font-medium text-bsr-white mb-2">
-                Contact Number
-              </label>
-              <input
-                type="tel"
-                value={formData.phone}
-                onChange={(e) => updateFormField('phone', e.target.value)}
-                placeholder="07805 469770"
-                className="w-full p-3 bg-bsr-black border border-bsr-gray-light rounded-lg text-bsr-white placeholder-gray-400 focus:border-bsr-highlight focus:outline-none"
-              />
-            </div>
-
-            {/* Message */}
-            <div>
-              <label className="block text-sm font-medium text-bsr-white mb-2">
-                Additional Message
-              </label>
-              <textarea
-                value={formData.message}
-                onChange={(e) => updateFormField('message', e.target.value)}
-                placeholder="Tell us more about your project requirements, timeline, or any specific details..."
-                rows={4}
-                className="w-full p-3 bg-bsr-black border border-bsr-gray-light rounded-lg text-bsr-white placeholder-gray-400 focus:border-bsr-highlight focus:outline-none resize-none"
-              />
-            </div>
-
-            {/* Submit Button */}
-            <div className="pt-4">
-              <button
-                type="submit"
-                className="w-full bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
-              >
-                Submit Quote Request
-              </button>
+              {currentStep < 3 ? (
+                <button
+                  type="button"
+                  onClick={nextStep}
+                  disabled={(currentStep === 1 && !canProceedToStep2()) || (currentStep === 2 && !canProceedToStep3())}
+                  className="flex items-center space-x-2 bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  <span>Next</span>
+                  <ChevronRight size={18} />
+                </button>
+              ) : (
+                <button
+                  type="submit"
+                  className="flex items-center space-x-2 bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
+                >
+                  <span>Submit Quote Request</span>
+                  <ChevronRight size={18} />
+                </button>
+              )}
             </div>
           </form>
         </div>

@@ -43,8 +43,15 @@ export async function POST(request: NextRequest) {
     // Additional services list
     const additionalServices = [];
     if (formData.externalDecorating) additionalServices.push('Exterior Decorating');
-    if (formData.garageDoor) additionalServices.push('Garage Door');
-    if (formData.frontDoor) additionalServices.push('Front Door');
+    if (formData.garageDoor) additionalServices.push('Garage Door Painting');
+    if (formData.frontDoor) additionalServices.push('Front Door Painting');
+    if (formData.wallpaperHanging) additionalServices.push('Wallpaper Hanging & Removal');
+    if (formData.colourConsultation) additionalServices.push('Colour Consultation');
+    if (formData.officeSpaces) additionalServices.push('Office Spaces');
+    if (formData.retailSpaces) additionalServices.push('Retail Spaces');
+    if (formData.industrialWarehouse) additionalServices.push('Industrial & Warehouse');
+    if (formData.outOfHours) additionalServices.push('Out-of-Hours Working');
+    if (formData.otherCommercial) additionalServices.push('Other (see project details)');
 
     // Create professional email HTML
     const emailHTML = `
