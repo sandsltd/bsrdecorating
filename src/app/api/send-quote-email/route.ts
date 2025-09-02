@@ -218,8 +218,8 @@ ${formData.message}
           body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
           .container { max-width: 600px; margin: 0 auto; background: #ffffff; }
           .header { background: linear-gradient(135deg, #000000, #1a1a1a); color: white; padding: 40px 30px; text-align: center; }
-          .logo { width: 120px; height: 120px; margin: 0 auto 20px auto; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center; }
-          .logo img { width: 100px; height: 100px; object-fit: contain; border-radius: 50%; }
+          .logo { width: 120px; height: 120px; margin: 0 auto 20px auto; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center; border: 3px solid #E801F8; }
+          .logo-text { font-size: 28px; font-weight: bold; color: #E801F8; }
           .company-name { font-size: 32px; font-weight: bold; color: #E801F8; margin: 0; }
           .tagline { font-size: 16px; margin: 10px 0 0 0; color: #cccccc; }
           .content { padding: 40px 30px; }
@@ -236,7 +236,7 @@ ${formData.message}
         <div class="container">
           <div class="header">
             <div class="logo">
-              <img src="https://bsrdecorating.co.uk/Logos/BSR Logo-8.png" alt="BSR Decorating Logo" />
+              <span class="logo-text">BSR</span>
             </div>
             <h1 class="company-name">BSR Decorating</h1>
             <p class="tagline">Professional Decorating Services</p>
@@ -258,11 +258,6 @@ ${formData.message}
             <div class="quote-reference">
               <h3 style="margin: 0; font-size: 18px;">Your Quote Reference</h3>
               <p style="margin: 5px 0 0 0; font-size: 16px;">Location: ${formData.postcode} | Service: ${formData.serviceType.charAt(0).toUpperCase() + formData.serviceType.slice(1)}</p>
-            </div>
-
-            <div class="service-area">
-              <h3 style="color: #E801F8; margin-top: 0;">Our Service Area</h3>
-              <p>We proudly serve South East Devon including Dawlish, Newton Abbot, Bovey Tracey, Torquay, Exeter, Topsham, Exmouth and surrounding areas. For larger projects, we also cover Plymouth, Honiton, Buckfastleigh, Ivybridge, and Ottery St Mary.</p>
             </div>
 
             <div class="contact-info">
@@ -304,9 +299,6 @@ We will contact you within 2 working days to discuss your project requirements a
 
 Your Quote Reference:
 Location: ${formData.postcode} | Service: ${formData.serviceType.charAt(0).toUpperCase() + formData.serviceType.slice(1)}
-
-Our Service Area:
-We proudly serve South East Devon including Dawlish, Newton Abbot, Bovey Tracey, Torquay, Exeter, Topsham, Exmouth and surrounding areas. For larger projects, we also cover Plymouth, Honiton, Buckfastleigh, Ivybridge, and Ottery St Mary.
 
 Need to speak to us sooner?
 Phone: 07805 469770
