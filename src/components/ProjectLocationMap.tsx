@@ -105,7 +105,8 @@ const ProjectLocationMap = () => {
           style: 'mapbox://styles/mapbox/dark-v11',
           center: [-3.5, 50.7], // Center on Devon
           zoom: isMobile ? 7.5 : 8.5,
-          accessToken: mapboxApiKey
+          accessToken: mapboxApiKey,
+          attributionControl: false
         });
 
         map.current!.on('load', () => {
