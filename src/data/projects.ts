@@ -105,6 +105,47 @@ export const projects: Project[] = [
     ],
     rating: 5,
     featured: true
+  },
+  {
+    id: 2,
+    title: 'Georgian Property Porch Restoration',
+    category: 'domestic',
+    type: 'image',
+    description: 'Interior and exterior decoration of a newly built porch on a Georgian property, replacing an old timber conservatory with professional finishing and attention to period details.',
+    fullDescription: 'This was a small project carried out for a builder that had built a new porch on this Georgian property, removing the old timber conservatory. We carried out decoration of both the inside and the exterior, making good of the details on the exterior. The project required careful attention to the Georgian architectural style, ensuring that all decorative work complemented the property\'s historical character while providing a modern, durable finish.',
+    location: 'Devon', // Update with specific location when known
+    year: 2025,
+    duration: '1 week',
+    specialFeatures: [
+      'Georgian period property restoration',
+      'New porch interior and exterior decoration',
+      'Historical detail preservation',
+      'Professional builder collaboration',
+      'Period-appropriate finishing techniques',
+      'Exterior detail making good'
+    ],
+    beforeAfter: false,
+    image: '/portfolio/project2/PHOTO-2025-09-02-11-09-52.jpg',
+    images: [
+      '/portfolio/project2/PHOTO-2025-09-02-11-09-52.jpg',
+      '/portfolio/project2/PHOTO-2025-09-02-11-09-52 2.jpg',
+      '/portfolio/project2/PHOTO-2025-09-02-11-09-52 3.jpg',
+      '/portfolio/project2/PHOTO-2025-09-02-11-09-53.jpg',
+      '/portfolio/project2/PHOTO-2025-09-02-11-09-53 2.jpg',
+      '/portfolio/project2/PHOTO-2025-09-02-11-09-53 3.jpg',
+      '/portfolio/project2/PHOTO-2025-09-02-11-09-53 4.jpg',
+      '/portfolio/project2/PHOTO-2025-09-02-11-09-54.jpg',
+      '/portfolio/project2/PHOTO-2025-09-02-11-09-54 2.jpg',
+      '/portfolio/project2/PHOTO-2025-09-02-11-09-54 3.jpg',
+      '/portfolio/project2/PHOTO-2025-09-02-11-09-54 4.jpg',
+      '/portfolio/project2/PHOTO-2025-09-02-11-09-55.jpg',
+      '/portfolio/project2/PHOTO-2025-09-02-11-09-55 2.jpg',
+      '/portfolio/project2/PHOTO-2025-09-02-11-09-55 3.jpg',
+      '/portfolio/project2/PHOTO-2025-09-02-11-09-55 4.jpg',
+      '/portfolio/project2/PHOTO-2025-09-02-11-09-56.jpg'
+    ],
+    rating: 5,
+    featured: false
   }
 ];
 
