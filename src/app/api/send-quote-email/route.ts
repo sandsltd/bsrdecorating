@@ -336,11 +336,12 @@ This email was sent in response to your quote request on our website.
       console.log('Customer thank you email sent successfully to:', formData.email);
     } catch (customerEmailError) {
       console.error('Failed to send customer thank you email:', customerEmailError);
-      console.error('Customer email error details:', {
-        message: customerEmailError.message,
-        code: customerEmailError.code,
-        response: customerEmailError.response
-      });
+      const errorDetails = {
+        message: customerEmailError instanceof Error ? customerEmailError.message : 'Unknown error',
+        code: 'code' in (customerEmailError as object) ? (customerEmailError as { code: string }).code : 'Unknown code',
+        response: 'response' in (customerEmailError as object) ? (customerEmailError as { response: string }).response : 'No response'
+      };
+      console.error('Customer email error details:', errorDetails);
       // Don't fail the whole request if customer email fails - BSR email is more important
     }
 
