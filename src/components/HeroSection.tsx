@@ -70,16 +70,16 @@ const HeroSection = () => {
 
             {/* Main Headline */}
             <div className="mb-6">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-bsr-white leading-tight" style={{ textShadow: '2px 2px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000' }}>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-bsr-white leading-tight" style={{ filter: 'drop-shadow(0 0 16px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 8px rgba(0, 0, 0, 0.6))' }}>
                 Welcome to
                 <br />
-                <span className="text-bsr-highlight" style={{ textShadow: '2px 2px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000' }}>BSR Decorating</span>
+                <span className="text-bsr-highlight" style={{ filter: 'drop-shadow(0 0 16px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 8px rgba(0, 0, 0, 0.6))' }}>BSR Decorating</span>
               </h1>
             </div>
 
             {/* Subtitle */}
             <div className="mb-6">
-              <p className="text-xl text-bsr-highlight font-semibold" style={{ textShadow: '2px 2px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000' }}>
+              <p className="text-xl text-bsr-highlight font-semibold" style={{ filter: 'drop-shadow(0 0 16px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 8px rgba(0, 0, 0, 0.6))' }}>
                 Expert Commercial & Domestic Decorating Services
               </p>
             </div>
