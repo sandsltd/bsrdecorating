@@ -28,32 +28,37 @@ const getProjectLocations = () => {
   projects.forEach(project => {
     const location = project.location;
     
-    // Try to find exact match first, then try to extract town name
-    let coords: [number, number] | undefined;
-    let locationKey = '';
+    // Handle multiple locations separated by &, and, or commas
+    const locationParts = location.split(/[&,]|and/).map(part => part.trim());
     
-    if (locationMap[location]) {
-      coords = locationMap[location];
-      locationKey = location;
-    } else {
-      // Try to extract town name (e.g., "Fenny Bridges, Honiton" -> "Honiton")
-      const parts = location.split(',').map(part => part.trim());
-      for (const part of parts) {
-        if (locationMap[part]) {
-          coords = locationMap[part];
-          locationKey = part;
-          break;
+    locationParts.forEach(locationPart => {
+      let coords: [number, number] | undefined;
+      let locationKey = '';
+      
+      // Try direct match first
+      if (locationMap[locationPart]) {
+        coords = locationMap[locationPart];
+        locationKey = locationPart;
+      } else {
+        // Try to extract town name (e.g., "Fenny Bridges, Honiton" -> "Honiton")
+        const subParts = locationPart.split(',').map(part => part.trim());
+        for (const subPart of subParts) {
+          if (locationMap[subPart]) {
+            coords = locationMap[subPart];
+            locationKey = subPart;
+            break;
+          }
         }
       }
-    }
 
-    if (coords && locationKey) {
-      if (locationCounts[locationKey]) {
-        locationCounts[locationKey].count++;
-      } else {
-        locationCounts[locationKey] = { count: 1, coords };
+      if (coords && locationKey) {
+        if (locationCounts[locationKey]) {
+          locationCounts[locationKey].count++;
+        } else {
+          locationCounts[locationKey] = { count: 1, coords };
+        }
       }
-    }
+    });
   });
 
   return locationCounts;
