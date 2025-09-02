@@ -153,7 +153,7 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
       const result = await response.json();
 
       if (result.success) {
-        alert(`Quote request submitted successfully! We'll contact you within 24 hours.`);
+        alert(`Quote request submitted successfully! We'll contact you within 2 working days. Please check your email for a confirmation.`);
         onClose();
       } else if (result.missingConfig) {
         // Email not configured yet - show fallback message

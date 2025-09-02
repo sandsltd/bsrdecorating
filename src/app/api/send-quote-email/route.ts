@@ -205,8 +205,144 @@ ${formData.message}
       `
     };
 
-    // Send email
+    // Send email to BSR
     await transporter.sendMail(mailOptions);
+    console.log('BSR notification email sent successfully');
+
+    // Send thank you email to customer
+    const customerEmailHTML = `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+          .container { max-width: 600px; margin: 0 auto; background: #ffffff; }
+          .header { background: linear-gradient(135deg, #000000, #1a1a1a); color: white; padding: 40px 30px; text-align: center; }
+          .logo { width: 120px; height: 120px; margin: 0 auto 20px auto; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center; }
+          .logo img { width: 100px; height: 100px; object-fit: contain; border-radius: 50%; }
+          .company-name { font-size: 32px; font-weight: bold; color: #E801F8; margin: 0; }
+          .tagline { font-size: 16px; margin: 10px 0 0 0; color: #cccccc; }
+          .content { padding: 40px 30px; }
+          .message-box { background: #f8f9fa; border-left: 4px solid #E801F8; padding: 25px; margin: 25px 0; border-radius: 8px; }
+          .highlight { color: #E801F8; font-weight: bold; }
+          .quote-reference { background: #E801F8; color: white; padding: 15px; border-radius: 8px; text-align: center; margin: 25px 0; }
+          .contact-info { background: #000000; color: white; padding: 25px; border-radius: 8px; margin: 25px 0; }
+          .contact-info h3 { color: #E801F8; margin-top: 0; }
+          .footer { background: #f1f1f1; padding: 20px 30px; text-align: center; color: #666; font-size: 14px; }
+          .service-area { background: #e9ecef; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="header">
+            <div class="logo">
+              <img src="https://bsrdecorating.co.uk/Logos/BSR Logo-8.png" alt="BSR Decorating Logo" />
+            </div>
+            <h1 class="company-name">BSR Decorating</h1>
+            <p class="tagline">Professional Decorating Services</p>
+          </div>
+          
+          <div class="content">
+            <h2 style="color: #E801F8; margin-top: 0;">Thank You for Your Quote Request</h2>
+            
+            <p>Dear ${formData.name},</p>
+            
+            <p>Thank you for choosing BSR Decorating for your ${formData.serviceType} decorating project. We have received your quote request and our team is reviewing the details you provided.</p>
+            
+            <div class="message-box">
+              <h3 style="color: #E801F8; margin-top: 0;">What happens next?</h3>
+              <p><strong>We will contact you within 2 working days</strong> to discuss your project requirements and arrange a convenient time for a site visit if needed.</p>
+              <p>Our experienced team will provide you with a detailed, competitive quote tailored to your specific needs.</p>
+            </div>
+
+            <div class="quote-reference">
+              <h3 style="margin: 0; font-size: 18px;">Your Quote Reference</h3>
+              <p style="margin: 5px 0 0 0; font-size: 16px;">Location: ${formData.postcode} | Service: ${formData.serviceType.charAt(0).toUpperCase() + formData.serviceType.slice(1)}</p>
+            </div>
+
+            <div class="service-area">
+              <h3 style="color: #E801F8; margin-top: 0;">Our Service Area</h3>
+              <p>We proudly serve South East Devon including Dawlish, Newton Abbot, Bovey Tracey, Torquay, Exeter, Topsham, Exmouth and surrounding areas. For larger projects, we also cover Plymouth, Honiton, Buckfastleigh, Ivybridge, and Ottery St Mary.</p>
+            </div>
+
+            <div class="contact-info">
+              <h3>Need to speak to us sooner?</h3>
+              <p><strong>Phone:</strong> 07805 469770</p>
+              <p><strong>Email:</strong> hello@saunders-simmons.co.uk</p>
+              <p>We are available Monday to Friday, 8:00 AM to 6:00 PM</p>
+            </div>
+
+            <p>We look forward to helping transform your space with our professional decorating services.</p>
+            
+            <p>Best regards,<br>
+            <span class="highlight">The BSR Decorating Team</span></p>
+          </div>
+          
+          <div class="footer">
+            <p><strong>BSR Decorating</strong> | Professional Decorating Services | South East Devon</p>
+            <p>This email was sent in response to your quote request on our website.</p>
+          </div>
+        </div>
+      </body>
+      </html>
+    `;
+
+    const customerMailOptions = {
+      from: process.env.EMAIL_FROM || process.env.EMAIL_USER,
+      to: formData.email,
+      subject: 'Thank you for your quote request - BSR Decorating',
+      html: customerEmailHTML,
+      text: `
+Thank you for your quote request - BSR Decorating
+
+Dear ${formData.name},
+
+Thank you for choosing BSR Decorating for your ${formData.serviceType} decorating project. We have received your quote request and our team is reviewing the details you provided.
+
+What happens next?
+We will contact you within 2 working days to discuss your project requirements and arrange a convenient time for a site visit if needed. Our experienced team will provide you with a detailed, competitive quote tailored to your specific needs.
+
+Your Quote Reference:
+Location: ${formData.postcode} | Service: ${formData.serviceType.charAt(0).toUpperCase() + formData.serviceType.slice(1)}
+
+Our Service Area:
+We proudly serve South East Devon including Dawlish, Newton Abbot, Bovey Tracey, Torquay, Exeter, Topsham, Exmouth and surrounding areas. For larger projects, we also cover Plymouth, Honiton, Buckfastleigh, Ivybridge, and Ottery St Mary.
+
+Need to speak to us sooner?
+Phone: 07805 469770
+Email: hello@saunders-simmons.co.uk
+We are available Monday to Friday, 8:00 AM to 6:00 PM
+
+We look forward to helping transform your space with our professional decorating services.
+
+Best regards,
+The BSR Decorating Team
+
+BSR Decorating | Professional Decorating Services | South East Devon
+This email was sent in response to your quote request on our website.
+      `
+    };
+
+    // Send customer thank you email
+    console.log('Attempting to send customer thank you email to:', formData.email);
+    console.log('Customer email options:', {
+      from: customerMailOptions.from,
+      to: customerMailOptions.to,
+      subject: customerMailOptions.subject
+    });
+    
+    try {
+      await transporter.sendMail(customerMailOptions);
+      console.log('Customer thank you email sent successfully to:', formData.email);
+    } catch (customerEmailError) {
+      console.error('Failed to send customer thank you email:', customerEmailError);
+      console.error('Customer email error details:', {
+        message: customerEmailError.message,
+        code: customerEmailError.code,
+        response: customerEmailError.response
+      });
+      // Don't fail the whole request if customer email fails - BSR email is more important
+    }
 
     return NextResponse.json({ 
       success: true, 
