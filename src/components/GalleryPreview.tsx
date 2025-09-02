@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Image as ImageIcon, Video, ChevronLeft, ChevronRight, X, Star } from 'lucide-react';
@@ -20,6 +20,7 @@ const GalleryPreview = ({
 }: GalleryPreviewProps) => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
   // Get all projects - will only show the farmhouse project for now
   const galleryItems = projects;
 
@@ -27,6 +28,46 @@ const GalleryPreview = ({
   const filteredItems = filterCategories 
     ? galleryItems.filter(item => filterCategories.includes(item.category))
     : galleryItems;
+
+  // Handle keyboard navigation
+  useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      if (!selectedProject) return;
+      
+      if (e.key === 'Escape') {
+        setSelectedProject(null);
+        setSelectedVideo(null);
+      } else if (e.key === 'ArrowLeft') {
+        const project = galleryItems.find(p => p.id === selectedProject);
+        if (project && project.images && project.images.length > 1) {
+          setCurrentImageIndex((prev) => (prev - 1 + project.images!.length) % project.images!.length);
+          setSelectedVideo(null);
+        }
+      } else if (e.key === 'ArrowRight') {
+        const project = galleryItems.find(p => p.id === selectedProject);
+        if (project && project.images && project.images.length > 1) {
+          setCurrentImageIndex((prev) => (prev + 1) % project.images!.length);
+          setSelectedVideo(null);
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [selectedProject, galleryItems]);
+
+  // Prevent body scrolling when modal is open
+  useEffect(() => {
+    if (selectedProject) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [selectedProject]);
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-bsr-gray">
@@ -58,6 +99,7 @@ const GalleryPreview = ({
               onClick={() => {
                 setSelectedProject(item.id);
                 setCurrentImageIndex(0);
+                setSelectedVideo(null);
               }}
             >
               {/* Project Image */}
@@ -116,7 +158,7 @@ const GalleryPreview = ({
 
         <div className="text-center">
           <Link
-            href="/gallery"
+            href="/portfolio"
             className="inline-flex items-center space-x-2 bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             <span>View Full Projects</span>
@@ -147,6 +189,7 @@ const GalleryPreview = ({
               onClick={() => {
                 setSelectedProject(null);
                 setCurrentImageIndex(0);
+                setSelectedVideo(null);
               }}
               className="absolute top-4 right-4 text-white hover:text-bsr-highlight z-10 bg-black bg-opacity-50 rounded-full p-2"
             >
