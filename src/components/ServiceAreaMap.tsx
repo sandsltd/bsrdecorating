@@ -132,8 +132,11 @@ const ServiceAreaMap = () => {
           .setLngLat([-3.4667, 50.5833]) // Dawlish coordinates
           .addTo(map.current!);
 
-        // Main coverage areas - individual markers for each location
-        const mainAreas: Array<{ name: string; coords: [number, number] }> = [
+        // Check if we're on mobile for simplified view
+        const isMobile = window.innerWidth < 768;
+        
+        // Main coverage areas - all locations for desktop, limited for mobile
+        const allMainAreas: Array<{ name: string; coords: [number, number] }> = [
           { name: 'Newton Abbot', coords: [-3.6107, 50.5301] },
           { name: 'Bovey Tracey', coords: [-3.6751, 50.5905] },
           { name: 'Torquay', coords: [-3.5312, 50.4619] },
@@ -141,6 +144,14 @@ const ServiceAreaMap = () => {
           { name: 'Topsham', coords: [-3.4653, 50.6853] },
           { name: 'Exmouth', coords: [-3.4139, 50.6195] }
         ];
+
+        // Mobile view: only show Torquay and Exeter from main areas
+        const mobileMainAreas: Array<{ name: string; coords: [number, number] }> = [
+          { name: 'Torquay', coords: [-3.5312, 50.4619] },
+          { name: 'Exeter', coords: [-3.5339, 50.7236] }
+        ];
+
+        const mainAreas = isMobile ? mobileMainAreas : allMainAreas;
 
         // Add individual markers for each main coverage area
         mainAreas.forEach(area => {
@@ -195,14 +206,22 @@ const ServiceAreaMap = () => {
           marker.setPopup(popup);
         });
 
-        // Larger project areas - individual markers
-        const largerProjectAreas: Array<{ name: string; coords: [number, number] }> = [
+        // Larger project areas - all locations for desktop, limited for mobile
+        const allLargerProjectAreas: Array<{ name: string; coords: [number, number] }> = [
           { name: 'Buckfastleigh', coords: [-3.7781, 50.4831] },
           { name: 'Ivybridge', coords: [-3.9228, 50.3897] },
           { name: 'Ottery St Mary', coords: [-3.2775, 50.7592] },
           { name: 'Plymouth', coords: [-4.1420, 50.3755] },
           { name: 'Honiton', coords: [-3.1967, 50.7984] }
         ];
+
+        // Mobile view: only show Plymouth and Honiton from larger project areas
+        const mobileLargerProjectAreas: Array<{ name: string; coords: [number, number] }> = [
+          { name: 'Plymouth', coords: [-4.1420, 50.3755] },
+          { name: 'Honiton', coords: [-3.1967, 50.7984] }
+        ];
+
+        const largerProjectAreas = isMobile ? mobileLargerProjectAreas : allLargerProjectAreas;
 
         // Add individual markers for larger project areas
         largerProjectAreas.forEach(area => {
@@ -422,11 +441,17 @@ const ServiceAreaMap = () => {
               <div className="space-y-3">
                 <div>
                   <h5 className="text-sm font-semibold text-bsr-white mb-2">Main Coverage</h5>
-                  <p className="text-xs text-gray-300">Dawlish • Newton Abbot • Bovey Tracey • Torquay • Exeter • Topsham • Exmouth</p>
+                  <p className="text-xs text-gray-300">
+                    <span className="hidden md:inline">Dawlish • Newton Abbot • Bovey Tracey • Torquay • Exeter • Topsham • Exmouth</span>
+                    <span className="md:hidden">Dawlish • Torquay • Exeter • and surrounding areas</span>
+                  </p>
                 </div>
                 <div className="pt-3 border-t border-bsr-gray-light">
                   <h5 className="text-sm font-semibold text-bsr-white mb-2">Larger Projects</h5>
-                  <p className="text-xs text-gray-300">Buckfastleigh • Ivybridge • Ottery St Mary • Plymouth • Honiton</p>
+                  <p className="text-xs text-gray-300">
+                    <span className="hidden md:inline">Buckfastleigh • Ivybridge • Ottery St Mary • Plymouth • Honiton</span>
+                    <span className="md:hidden">Plymouth • Honiton • and surrounding areas</span>
+                  </p>
                 </div>
               </div>
             </div>
