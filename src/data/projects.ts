@@ -145,7 +145,7 @@ export const projects: Project[] = [
       '/portfolio/project2/PHOTO-2025-09-02-11-09-56.jpg'
     ],
     rating: 5,
-    featured: false
+    featured: true
   },
   {
     id: 3,
@@ -180,7 +180,7 @@ export const projects: Project[] = [
       '/portfolio/project3/PHOTO-2025-09-02-11-11-04.jpg'
     ],
     rating: 5,
-    featured: false
+    featured: true
   },
   {
     id: 4,
@@ -238,7 +238,7 @@ export const projects: Project[] = [
       '/portfolio/project4/PHOTO-2025-09-02-11-13-25 2.jpg'
     ],
     rating: 5,
-    featured: false
+    featured: true
   },
   {
     id: 5,
@@ -315,7 +315,7 @@ export const projects: Project[] = [
       '/portfolio/project5/PHOTO-2025-09-02-11-16-33 2.jpg'
     ],
     rating: 5,
-    featured: false
+    featured: true
   }
 ];
 
@@ -330,6 +330,11 @@ export const getProjectsByCategory = (category?: string): Project[] => {
 // Helper function to get featured projects
 export const getFeaturedProjects = (): Project[] => {
   return projects.filter(project => project.featured);
+};
+
+// Helper function to get featured projects by category
+export const getFeaturedProjectsByCategory = (category: string): Project[] => {
+  return projects.filter(project => project.featured && project.category === category);
 };
 
 // Helper function to get project by ID

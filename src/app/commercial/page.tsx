@@ -58,7 +58,7 @@ export default function CommercialPage() {
     {
       icon: <Clock size={32} />,
       title: "Flexible Scheduling",
-      description: "Out-of-hours and weekend working to minimize business disruption"
+      description: "Out-of-hours and weekend working to minimise business disruption"
     },
     {
       icon: <Shield size={32} />,
@@ -91,7 +91,7 @@ export default function CommercialPage() {
     },
     {
       question: "Can you work outside normal business hours?",
-      answer: "Yes, we specialise in out-of-hours working to minimize disruption to your business operations. We can work evenings, weekends, and during planned shutdowns. Our flexible scheduling ensures your business continues operating normally while we complete your decorating project."
+      answer: "Yes, we specialise in out-of-hours working to minimise disruption to your business operations. We can work evenings, weekends, and during planned shutdowns. Our flexible scheduling ensures your business continues operating normally while we complete your decorating project."
     },
     {
       question: "Do you provide project management for large commercial projects?",
@@ -103,11 +103,11 @@ export default function CommercialPage() {
     },
     {
       question: "How long do commercial decorating projects take?",
-      answer: "Project timelines depend on scope and size. Small offices typically take 3-7 days, retail spaces 1-2 weeks, and large commercial projects 2-8 weeks. We provide detailed project schedules and work efficiently to minimize business disruption while maintaining high quality standards."
+      answer: "Project timelines depend on scope and size. Small offices typically take 3-7 days, retail spaces 1-2 weeks, and large commercial projects 2-8 weeks. We provide detailed project schedules and work efficiently to minimise business disruption while maintaining high quality standards."
     },
     {
       question: "Do you handle corporate branding and colour schemes?",
-      answer: "Yes, we specialize in implementing corporate branding and colour schemes. We can match existing brand colours precisely, work with your marketing team, and ensure consistent application across multiple locations. Our experience includes major corporate rebrandings and franchise requirements."
+      answer: "Yes, we specialise in implementing corporate branding and colour schemes. We can match existing brand colours precisely, work with your marketing team, and ensure consistent application across multiple locations. Our experience includes major corporate rebrandings and franchise requirements."
     },
     {
       question: "Are you qualified for industrial and warehouse projects?",
@@ -239,7 +239,7 @@ export default function CommercialPage() {
               Why Choose <span className="text-bsr-highlight">BSR for Your Business</span>
             </h2>
             <p className="text-xl text-gray-300">
-              20 years of commercial decorating excellence across Devon's business sector
+              20 years of commercial decorating excellence across Devon&apos;s business sector
             </p>
           </div>
 
@@ -313,7 +313,6 @@ export default function CommercialPage() {
               >
                 <h3 className={`font-semibold mb-1 ${area.type === 'HQ' ? 'text-lg' : 'text-base'}`}>
                   {area.area}
-                  {area.type === 'HQ' && ' 🏢'}
                 </h3>
                 <p className={`text-xs ${area.type === 'HQ' ? 'text-bsr-white/90' : area.type === 'main' ? 'text-gray-300' : 'text-gray-400'}`}>
                   {area.description}
@@ -324,7 +323,7 @@ export default function CommercialPage() {
 
           <div className="mt-8 text-center">
             <p className="text-gray-300 text-sm">
-              <span className="text-bsr-highlight font-semibold">🏢 HQ</span> - Full services & rapid response • 
+              <span className="text-bsr-highlight font-semibold">HQ</span> - Full services & rapid response • 
               <span className="text-bsr-white font-semibold"> Main Areas</span> - Complete commercial services • 
               <span className="text-bsr-yellow font-semibold"> Larger Projects</span> - Multi-property & industrial
             </p>
