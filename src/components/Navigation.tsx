@@ -123,7 +123,7 @@ const Navigation = () => {
                 </Link>
                 {/* Add separator after each item except the last one */}
                 {index < mainNavItems.length - 1 && (
-                  <div className="h-6 w-px bg-white opacity-80 mx-2"></div>
+                  <div className="h-6 w-px bg-gray-400 mx-2"></div>
                 )}
               </div>
             ))}
