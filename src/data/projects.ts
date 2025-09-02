@@ -1,7 +1,7 @@
 export interface Project {
   id: number;
   title: string;
-  category: 'timber-repair' | 'doors' | 'external' | 'internal' | 'commercial' | 'domestic';
+  category: 'commercial' | 'domestic';
   type: 'image' | 'video';
   description: string;
   fullDescription?: string;

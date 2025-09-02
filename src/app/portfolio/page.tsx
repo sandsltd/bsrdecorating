@@ -17,10 +17,6 @@ export default function PortfolioPage() {
     { id: 'all', name: 'All Projects' },
     { id: 'domestic', name: 'Domestic' },
     { id: 'commercial', name: 'Commercial' },
-    { id: 'external', name: 'External' },
-    { id: 'internal', name: 'Internal' },
-    { id: 'doors', name: 'Doors' },
-    { id: 'timber-repair', name: 'Timber Repair' },
   ];
 
   // Use projects from the data file
