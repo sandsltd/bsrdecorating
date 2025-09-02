@@ -35,51 +35,43 @@ const Navigation = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-10">
             {/* Left side links */}
-            <div className="flex items-center space-x-6">
-              <Link
-                href="/portfolio"
-                className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm"
-              >
-                Portfolio
-              </Link>
-              <Link
-                href="/reviews"
-                className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm"
-              >
-                Reviews
-              </Link>
-              <Link
-                href="/blog"
-                className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm"
-              >
-                Blog
-              </Link>
-              <Link
-                href="/community"
-                className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm"
-              >
-                Community
-              </Link>
-              <Link
-                href="/careers"
-                className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm"
-              >
-                Careers
-              </Link>
+            <div className="flex items-center">
+              {[
+                { name: 'Portfolio', href: '/portfolio' },
+                { name: 'Reviews', href: '/reviews' },
+                { name: 'Blog', href: '/blog' },
+                { name: 'Community', href: '/community' },
+                { name: 'Careers', href: '/careers' },
+              ].map((item, index, array) => (
+                <div key={item.name} className="flex items-center">
+                  <Link
+                    href={item.href}
+                    className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm px-3 py-1"
+                  >
+                    {item.name}
+                  </Link>
+                  {/* Add separator after each item except the last one */}
+                  {index < array.length - 1 && (
+                    <div className="h-4 w-px bg-white opacity-80 mx-2"></div>
+                  )}
+                </div>
+              ))}
             </div>
             
             {/* Right side contact info */}
-            <div className="flex items-center space-x-6">
+            <div className="flex items-center">
               <a
                 href="tel:07805469770"
-                className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm flex items-center space-x-2"
+                className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm flex items-center space-x-2 px-3 py-1"
               >
                 <Phone size={14} />
                 <span>07805 469770</span>
               </a>
+              {/* Contact separator */}
+              <div className="h-4 w-px bg-white opacity-80 mx-2"></div>
               <a
                 href="mailto:hello@bsrdecorating.co.uk"
-                className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm"
+                className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm px-3 py-1"
               >
                 hello@bsrdecorating.co.uk
               </a>
@@ -120,15 +112,20 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {mainNavItems.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium"
-              >
-                {item.name}
-              </Link>
+          <div className="hidden md:flex items-center">
+            {mainNavItems.map((item, index) => (
+              <div key={item.name} className="flex items-center">
+                <Link
+                  href={item.href}
+                  className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium px-4 py-2"
+                >
+                  {item.name}
+                </Link>
+                {/* Add separator after each item except the last one */}
+                {index < mainNavItems.length - 1 && (
+                  <div className="h-6 w-px bg-white opacity-80 mx-2"></div>
+                )}
+              </div>
             ))}
           </div>
 
