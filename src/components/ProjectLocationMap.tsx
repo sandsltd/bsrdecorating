@@ -20,6 +20,8 @@ const getProjectLocations = () => {
     'Exeter': [-3.5339, 50.7184],
     'Exmouth': [-3.4139, 50.6195],
     'Teignmouth': [-3.4978, 50.5458],
+    'Harbourton, Totnes': [-3.6945, 50.4318], // Coordinates for Harbourton, Totnes
+    'Totnes': [-3.6945, 50.4318],
   };
 
   projects.forEach(project => {
