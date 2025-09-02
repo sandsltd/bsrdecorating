@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Image as ImageIcon, Video, ChevronLeft, ChevronRight, X, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { projects } from '@/data/projects';
 
 interface GalleryPreviewProps {
   filterCategories?: string[];
@@ -19,90 +20,8 @@ const GalleryPreview = ({
 }: GalleryPreviewProps) => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const galleryItems = [
-    {
-      id: 1,
-      type: 'image',
-      title: 'Front Door Painting',
-      category: 'Doors',
-      description: 'Professional front door painting with weather-resistant finishes and attention to detail',
-      beforeAfter: false,
-      image: '/gallery/doors/front-door-painting.jpeg',
-      images: [
-        '/gallery/doors/front-door-painting.jpeg',
-        '/gallery/doors/front-door-painting-2.jpeg'
-      ],
-      rating: 5,
-      location: 'Dawlish'
-    },
-    {
-      id: 2,
-      type: 'image',
-      title: 'Exterior House Painting',
-      category: 'External',
-      description: 'External property painting with weather-resistant paints and protective finishes',
-      beforeAfter: false,
-      image: '/gallery/external/exterior-painting.jpeg',
-      images: [
-        '/gallery/external/exterior-painting.jpeg',
-        '/gallery/external/exterior-painting-2.jpeg'
-      ],
-      rating: 5,
-      location: 'Torquay'
-    },
-    {
-      id: 3,
-      type: 'image',
-      title: 'Interior Room Painting',
-      category: 'Internal',
-      description: 'Professional interior painting with high-quality finishes and colour consultation',
-      beforeAfter: false,
-      image: '/gallery/internal/living-room-transformation.jpeg',
-      images: [
-        '/gallery/internal/living-room-transformation.jpeg',
-        '/gallery/internal/interior-painting-2.jpeg',
-        '/gallery/internal/wallpaper-installation.jpeg'
-      ],
-      rating: 5,
-      location: 'Exmouth'
-    },
-    {
-      id: 4,
-      type: 'image',
-      title: 'Commercial Office Painting',
-      category: 'Commercial',
-      description: 'Professional office space decoration for business environments',
-      beforeAfter: false,
-      image: '/gallery/commercial/office-renovation.jpeg',
-      images: ['/gallery/commercial/office-renovation.jpeg'],
-      rating: 5,
-      location: 'Newton Abbot'
-    },
-    {
-      id: 5,
-      type: 'image',
-      title: 'Garage Door Painting',
-      category: 'Doors',
-      description: 'Garage door painting and restoration with durable protective coatings',
-      beforeAfter: false,
-      image: '/gallery/doors/garage-door-painting.jpeg',
-      images: ['/gallery/doors/garage-door-painting.jpeg'],
-      rating: 5,
-      location: 'Teignmouth'
-    },
-    {
-      id: 6,
-      type: 'image',
-      title: 'Wallpaper Installation',
-      category: 'Internal',
-      description: 'Expert wallpaper hanging with precise pattern matching and seamless finish',
-      beforeAfter: false,
-      image: '/gallery/internal/wallpaper-installation.jpeg',
-      images: ['/gallery/internal/wallpaper-installation.jpeg'],
-      rating: 5,
-      location: 'Exmouth'
-    }
-  ];
+  // Get all projects - will only show the farmhouse project for now
+  const galleryItems = projects;
 
   // Filter items based on filterCategories prop
   const filteredItems = filterCategories 
@@ -200,7 +119,7 @@ const GalleryPreview = ({
             href="/gallery"
             className="inline-flex items-center space-x-2 bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
-            <span>View Full Gallery</span>
+            <span>View Full Projects</span>
             <ArrowRight size={20} />
           </Link>
         </div>

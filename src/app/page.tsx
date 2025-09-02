@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Star, CheckCircle, Phone, Heart, Calendar, Clock } from 'lucide-react';
+import { ArrowRight, Star, CheckCircle, Phone, Calendar, Clock } from 'lucide-react';
 import HeroSection from '@/components/HeroSection';
 import ServiceCard from '@/components/ServiceCard';
 import TestimonialCard from '@/components/TestimonialCard';
@@ -287,63 +287,93 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Charity Content */}
+            {/* Environmental Content */}
             <div>
               <div className="flex items-center space-x-3 mb-6">
-                <div className="bg-bsr-highlight p-3 rounded-full">
-                  <Heart size={24} className="text-bsr-white" />
+                <div className="bg-[#0B7EC8] p-3 rounded-full">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-white">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="currentColor"/>
+                  </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-bsr-white">2025 London Marathon for InFocus Charity</h3>
+                <h3 className="text-2xl font-bold text-bsr-white">Protecting Our Coastlines</h3>
+              </div>
+
+              <div className="flex items-center space-x-3 mb-4">
+                <span className="text-[#0B7EC8] font-semibold">Supporting</span>
+                <Image
+                  src="/images/logo-2.png"
+                  alt="Surfers Against Sewage"
+                  width={160}
+                  height={48}
+                  className="h-8 w-auto"
+                />
               </div>
               
               <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-                I was proud to stand at the start line of the 2025 London Marathon InFocus Charity to run in support of @infocus charity. 
-                This incredible cause helps change lives, and every pound raised makes a real difference.
+                At BSR Decorating we&apos;re committed to doing more than just transforming properties. We proudly donate to 
+                <strong className="text-[#0B7EC8]"> Surfers Against Sewage</strong>, helping to protect our coastlines and marine life.
               </p>
               
+              <p className="text-gray-300 mb-6 leading-relaxed">
+                That&apos;s why we choose <strong className="text-bsr-highlight">eco-friendly water-based paint systems</strong> wherever possible. 
+                Unlike solvent-based paints, they contain fewer harmful chemicals, which means less pollution running into our oceans.
+              </p>
+
               <p className="text-gray-300 mb-8 leading-relaxed">
-                Running the London Marathon was not just about the physical challenge - it was about supporting a charity that makes a real impact 
-                in people&apos;s lives. InFocus Charity does incredible work, and I was honoured to run in their support.
+                Every project we complete doesn&apos;t just look great – <strong className="text-bsr-highlight">it leaves a cleaner footprint behind</strong>.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/community"
+                  className="bg-[#0B7EC8] hover:bg-[#095A9C] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+                >
+                  <span>View Our Community Work</span>
+                  <ArrowRight size={18} />
+                </Link>
                 <a
-                  href="#"
-                  className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+                  href="https://www.sas.org.uk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-2 border-[#0B7EC8] text-[#0B7EC8] hover:bg-[#0B7EC8] hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200"
                 >
-                  <Heart size={18} />
-                  <span>Support the Cause</span>
-          </a>
-          <a
-                  href="#"
-                  className="border-2 border-bsr-highlight text-bsr-highlight hover:bg-bsr-highlight hover:text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200"
-                >
-                  Learn More About InFocus
+                  Visit Surfers Against Sewage
                 </a>
               </div>
             </div>
 
-            {/* Charity Images */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="relative overflow-hidden rounded-lg shadow-xl">
-                <Image
-                  src="/images/Charity Run.jpg"
-                  alt="Ben running for charity"
-                  width={300}
-                  height={400}
-                  className="w-full h-auto object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-bsr-black/60 to-transparent"></div>
-              </div>
-              <div className="relative overflow-hidden rounded-lg shadow-xl">
-                <Image
-                  src="/images/Charity Run 2.jpg"
-                  alt="Ben supporting InFocus charity"
-                  width={300}
-                  height={400}
-                  className="w-full h-auto object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-bsr-black/60 to-transparent"></div>
+            {/* Environmental Visual */}
+            <div className="relative">
+              <div className="bg-gradient-to-br from-[#0B7EC8]/20 to-bsr-highlight/20 rounded-2xl p-8 border border-[#0B7EC8]/30">
+                {/* Ocean/Wave visualization */}
+                <div className="text-center mb-6">
+                  <div className="text-6xl mb-4">🌊</div>
+                  <h4 className="text-2xl font-bold text-[#0B7EC8] mb-2">Clean Coasts</h4>
+                  <p className="text-gray-300">Protected Marine Life</p>
+                </div>
+                
+                <div className="grid grid-cols-2 gap-4 text-center">
+                  <div className="bg-bsr-black/50 rounded-lg p-4">
+                    <div className="text-2xl mb-2">🎨</div>
+                    <div className="text-bsr-highlight font-semibold text-sm">Water-Based</div>
+                    <div className="text-gray-300 text-xs">Paint Systems</div>
+                  </div>
+                  <div className="bg-bsr-black/50 rounded-lg p-4">
+                    <div className="text-2xl mb-2">🌱</div>
+                    <div className="text-bsr-highlight font-semibold text-sm">Eco-Friendly</div>
+                    <div className="text-gray-300 text-xs">Low VOC</div>
+                  </div>
+                  <div className="bg-bsr-black/50 rounded-lg p-4">
+                    <div className="text-2xl mb-2">💧</div>
+                    <div className="text-bsr-highlight font-semibold text-sm">Less Pollution</div>
+                    <div className="text-gray-300 text-xs">Ocean Safe</div>
+                  </div>
+                  <div className="bg-bsr-black/50 rounded-lg p-4">
+                    <div className="text-2xl mb-2">❤️</div>
+                    <div className="text-bsr-highlight font-semibold text-sm">Direct Support</div>
+                    <div className="text-gray-300 text-xs">SAS Donations</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -445,7 +475,7 @@ export default function Home() {
               Get Free Quote
             </button>
             <Link
-              href="/gallery"
+              href="/portfolio"
               className="border-2 border-bsr-white text-bsr-white hover:bg-bsr-white hover:text-bsr-highlight px-10 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               View Our Work

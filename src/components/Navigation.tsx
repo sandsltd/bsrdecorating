@@ -14,8 +14,9 @@ const Navigation = () => {
     { name: 'Home', href: '/' },
     { name: 'Domestic Decorating', href: '/domestic' },
     { name: 'Commercial Decorating', href: '/commercial' },
-    { name: 'Gallery', href: '/gallery' },
+    { name: 'Portfolio', href: '/portfolio' },
     { name: 'Reviews', href: '/reviews' },
+    { name: 'Community', href: '/community' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -36,10 +37,10 @@ const Navigation = () => {
             {/* Left side links */}
             <div className="flex items-center space-x-6">
               <Link
-                href="/gallery"
+                href="/portfolio"
                 className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm"
               >
-                Gallery
+                Portfolio
               </Link>
               <Link
                 href="/reviews"
@@ -52,6 +53,12 @@ const Navigation = () => {
                 className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm"
               >
                 Blog
+              </Link>
+              <Link
+                href="/community"
+                className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm"
+              >
+                Community
               </Link>
               <Link
                 href="/careers"

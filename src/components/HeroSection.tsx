@@ -11,12 +11,12 @@ const HeroSection = () => {
   
   // Array of background images to cycle through
   const backgroundImages = [
-    "/gallery/commercial/warehouse-industrial.jpeg",
-    "/gallery/domestic/dining-room.jpeg",
-    "/gallery/doors/garage-door-painting.jpeg",
-    "/gallery/external/exterior-painting-2.jpeg",
-    "/gallery/internal/bathroom-renovation.jpeg",
-    "/gallery/internal/kitchen-renovation.jpeg"
+    "/portfolio/project1/PHOTO-2025-09-02-11-07-28.jpg",
+    "/portfolio/project1/PHOTO-2025-09-02-11-07-49.jpg",
+    "/portfolio/project1/PHOTO-2025-09-02-11-08-08.jpg",
+    "/portfolio/project1/PHOTO-2025-09-02-11-08-09.jpg",
+    "/portfolio/project1/PHOTO-2025-09-02-11-07-53.jpg",
+    "/portfolio/project1/PHOTO-2025-09-02-11-07-27.jpg"
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -163,7 +163,7 @@ const HeroSection = () => {
                 <ArrowRight size={20} />
               </button>
               <Link
-                href="/gallery"
+                href="/portfolio"
                 className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl"
               >
                 <span>Check Our Work</span>

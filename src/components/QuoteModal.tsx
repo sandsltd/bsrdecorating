@@ -188,7 +188,7 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
 
   // Step validation
   const canProceedToStep2 = () => {
-    return formData.postcode.trim() !== '' && formData.serviceType !== '';
+    return formData.postcode.trim() !== '';
   };
 
   const canProceedToStep3 = () => {
@@ -208,7 +208,7 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
   const renderStep1 = () => (
     <div className="space-y-6">
       <div className="text-center mb-6">
-        <h4 className="text-lg font-semibold text-bsr-white mb-2">Let's start with the basics</h4>
+        <h4 className="text-lg font-semibold text-bsr-white mb-2">Let&apos;s start with the basics</h4>
         <p className="text-gray-300 text-sm">We need to know your location and service type</p>
       </div>
 
