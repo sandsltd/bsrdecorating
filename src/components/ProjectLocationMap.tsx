@@ -3,11 +3,8 @@
 import { useEffect, useRef } from 'react';
 import { projects } from '@/data/projects';
 
-declare global {
-  interface Window {
-    mapboxgl: typeof import('mapbox-gl');
-  }
-}
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// Type assertion for Mapbox GL JS when loaded via script tag
 
 // Function to extract and count project locations
 const getProjectLocations = () => {
@@ -91,30 +88,40 @@ const ProjectLocationMap = () => {
       }
     };
 
-    // Load Mapbox GL JS
+    // Load Mapbox GL JS with error handling
     const script = document.createElement('script');
     script.src = 'https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js';
+    script.onerror = (error) => {
+      console.error('Failed to load Mapbox GL JS:', error);
+    };
     script.onload = () => {
-      // Load CSS
-      const link = document.createElement('link');
-      link.href = 'https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css';
-      link.rel = 'stylesheet';
-      document.head.appendChild(link);
+      try {
+        // Load CSS
+        const link = document.createElement('link');
+        link.href = 'https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css';
+        link.rel = 'stylesheet';
+        document.head.appendChild(link);
 
-      // Initialize map after both script and CSS are loaded
-      setTimeout(() => {
-        const isMobile = window.innerWidth < 768;
-        
-        map.current = new window.mapboxgl.Map({
-          container: mapContainer.current!,
-          style: 'mapbox://styles/mapbox/dark-v11',
-          center: [-3.5, 50.7], // Center on Devon
-          zoom: isMobile ? 7.5 : 8.5,
-          accessToken: mapboxApiKey,
-          attributionControl: false
-        });
+        // Initialize map after both script and CSS are loaded
+        setTimeout(() => {
+          try {
+            if (!(window as any).mapboxgl) {
+              console.error('Mapbox GL JS not loaded');
+              return;
+            }
 
-        map.current!.on('load', () => {
+            const isMobile = window.innerWidth < 768;
+            
+            map.current = new (window as any).mapboxgl.Map({
+              container: mapContainer.current!,
+              style: 'mapbox://styles/mapbox/dark-v11',
+              center: [-3.5, 50.7], // Center on Devon
+              zoom: isMobile ? 7.5 : 8.5,
+              accessToken: mapboxApiKey,
+              attributionControl: false
+            });
+            map.current!.on('load', () => {
+              try {
           // Get project locations with counts
           const projectLocations = getProjectLocations();
 
@@ -122,57 +129,68 @@ const ProjectLocationMap = () => {
           Object.entries(projectLocations).forEach(([locationName, data]) => {
             const { count, coords } = data;
             
-            // Create marker element
+            // Create container for marker and label
+            const markerContainer = document.createElement('div');
+            markerContainer.style.cssText = `
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              cursor: pointer;
+            `;
+
+            // Create marker element with number
             const markerEl = document.createElement('div');
             markerEl.style.cssText = `
-              width: 32px;
-              height: 32px;
+              width: 40px;
+              height: 40px;
               background: #E801F8;
               border-radius: 50%;
               border: 3px solid white;
               box-shadow: 0 4px 12px rgba(232, 1, 248, 0.4);
-              cursor: pointer;
               display: flex;
               align-items: center;
               justify-content: center;
               font-weight: bold;
-              font-size: 14px;
+              font-size: 18px;
               color: white;
-              position: relative;
+              transition: transform 0.2s ease;
             `;
             markerEl.textContent = count.toString();
 
-            const marker = new window.mapboxgl.Marker(markerEl)
-              .setLngLat(coords)
-              .addTo(map.current!);
-
-            // Add label below the marker
+            // Create label below the marker
             const labelEl = document.createElement('div');
             labelEl.style.cssText = `
-              position: absolute;
-              background: rgba(232, 1, 248, 0.9);
+              background: rgba(232, 1, 248, 0.95);
               color: white;
               padding: 4px 8px;
               border-radius: 4px;
-              font-size: 12px;
+              font-size: 11px;
               font-weight: bold;
               white-space: nowrap;
-              pointer-events: none;
-              transform: translate(-50%, 10px);
               border: 1px solid white;
-              box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+              box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+              margin-top: 6px;
+              text-align: center;
             `;
             labelEl.textContent = locationName;
 
-            new window.mapboxgl.Marker({
-              element: labelEl,
-              anchor: 'top'
-            })
-            .setLngLat(coords)
-            .addTo(map.current!);
+            markerContainer.appendChild(markerEl);
+            markerContainer.appendChild(labelEl);
+
+            // Add hover effect
+            markerContainer.addEventListener('mouseenter', () => {
+              markerEl.style.transform = 'scale(1.1)';
+            });
+            markerContainer.addEventListener('mouseleave', () => {
+              markerEl.style.transform = 'scale(1)';
+            });
+
+            const marker = new (window as any).mapboxgl.Marker(markerContainer)
+              .setLngLat(coords)
+              .addTo(map.current!);
 
             // Add popup for project details
-            const popup = new window.mapboxgl.Popup({ offset: 15 })
+            const popup = new (window as any).mapboxgl.Popup({ offset: 15 })
               .setHTML(`
                 <div style="text-align: center; padding: 12px; font-family: Arial, sans-serif;">
                   <h4 style="margin: 0; color: #E801F8; font-weight: bold; font-size: 18px;">${locationName}</h4>
@@ -185,7 +203,15 @@ const ProjectLocationMap = () => {
             marker.setPopup(popup);
           });
 
-          // Add BSR headquarters marker
+          // Add BSR headquarters marker with consistent layout
+          const hqContainer = document.createElement('div');
+          hqContainer.style.cssText = `
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+          `;
+
           const hqEl = document.createElement('div');
           hqEl.style.cssText = `
             width: 40px;
@@ -194,47 +220,50 @@ const ProjectLocationMap = () => {
             border-radius: 50%;
             border: 3px solid white;
             box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
-            cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: bold;
             font-size: 16px;
             color: #000;
+            transition: transform 0.2s ease;
           `;
           hqEl.textContent = 'HQ';
 
-          const hqMarker = new window.mapboxgl.Marker(hqEl)
-            .setLngLat([-3.4648, 50.5775]) // Dawlish coordinates
-            .addTo(map.current!);
-
-          // Add HQ label
+          // Add HQ label below the marker
           const hqLabelEl = document.createElement('div');
           hqLabelEl.style.cssText = `
-            position: absolute;
-            background: rgba(255, 215, 0, 0.9);
+            background: rgba(255, 215, 0, 0.95);
             color: black;
             padding: 4px 8px;
             border-radius: 4px;
-            font-size: 12px;
+            font-size: 11px;
             font-weight: bold;
             white-space: nowrap;
-            pointer-events: none;
-            transform: translate(-50%, 10px);
             border: 1px solid white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            margin-top: 6px;
+            text-align: center;
           `;
-          hqLabelEl.textContent = 'BSR Decorating HQ';
+          hqLabelEl.textContent = 'Dawlish';
 
-          new window.mapboxgl.Marker({
-            element: hqLabelEl,
-            anchor: 'top'
-          })
-          .setLngLat([-3.4648, 50.5775])
-          .addTo(map.current!);
+          hqContainer.appendChild(hqEl);
+          hqContainer.appendChild(hqLabelEl);
+
+          // Add hover effect
+          hqContainer.addEventListener('mouseenter', () => {
+            hqEl.style.transform = 'scale(1.1)';
+          });
+          hqContainer.addEventListener('mouseleave', () => {
+            hqEl.style.transform = 'scale(1)';
+          });
+
+          const hqMarker = new (window as any).mapboxgl.Marker(hqContainer)
+            .setLngLat([-3.4648, 50.5775]) // Dawlish coordinates
+            .addTo(map.current!);
 
           // Add HQ popup
-          const hqPopup = new window.mapboxgl.Popup({ offset: 15 })
+          const hqPopup = new (window as any).mapboxgl.Popup({ offset: 15 })
             .setHTML(`
               <div style="text-align: center; padding: 12px; font-family: Arial, sans-serif;">
                 <h4 style="margin: 0; color: #FFD700; font-weight: bold; font-size: 18px;">BSR Decorating</h4>
@@ -243,20 +272,20 @@ const ProjectLocationMap = () => {
             `);
           
           hqMarker.setPopup(hqPopup);
-        });
+              } catch (error) {
+                console.error('Error setting up map markers:', error);
+              }
+            });
 
-        // Add resize listener
-        window.addEventListener('resize', handleResize);
-
-        // Cleanup function
-        return () => {
-          window.removeEventListener('resize', handleResize);
-          if (map.current) {
-            map.current.remove();
-            map.current = null;
+            // Add resize listener
+            window.addEventListener('resize', handleResize);
+          } catch (mapError) {
+            console.error('Error initializing Mapbox map:', mapError);
           }
-        };
-      }, 100);
+        }, 100);
+      } catch (scriptError) {
+        console.error('Error in script onload:', scriptError);
+      }
     };
 
     document.body.appendChild(script);
