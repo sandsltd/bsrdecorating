@@ -210,8 +210,8 @@ const GalleryPreview = ({
             <div className="relative w-full h-full max-w-7xl mx-auto flex flex-col lg:flex-row gap-6 p-6">
               
               {/* Media Display Section */}
-              <div className="relative flex-1 flex items-center justify-center">
-                <div className="relative w-full h-full max-h-[85vh] bg-gradient-to-br from-bsr-gray to-bsr-black rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative flex-1 flex items-center justify-center min-h-[50vh] lg:min-h-0">
+                <div className="relative w-full h-full max-h-[50vh] lg:max-h-[85vh] bg-gradient-to-br from-bsr-gray to-bsr-black rounded-2xl overflow-hidden shadow-2xl">
                   {selectedVideo ? (
                     /* Video Display */
                     <>
@@ -287,7 +287,7 @@ const GalleryPreview = ({
               </div>
 
               {/* Project Details Panel */}
-              <div className="lg:w-96 bg-gradient-to-b from-bsr-black to-bsr-gray rounded-2xl p-6 shadow-2xl overflow-y-auto max-h-[85vh]">
+              <div className="lg:w-96 bg-gradient-to-b from-bsr-black to-bsr-gray rounded-2xl p-6 shadow-2xl overflow-y-auto max-h-[40vh] lg:max-h-[85vh]">
                 
                 {/* Header */}
                 <div className="mb-6">
