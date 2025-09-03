@@ -36,16 +36,32 @@ const ContactForm = ({ onSuccess }: ContactFormProps) => {
     setIsSubmitting(true);
     
     try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      // Here you would typically send the data to your backend
-      console.log('Form data:', data);
-      
+      const response = await fetch('/api/send-contact-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to send message');
+      }
+
       reset();
       onSuccess();
     } catch (error) {
       console.error('Error submitting form:', error);
+      
+      // Get error message from the caught error or use default
+      let errorMessage = 'Failed to send message. Please try again or contact us directly at info@bsrdecorating.co.uk or 01626 911236.';
+      
+      if (error instanceof Error && error.message) {
+        errorMessage = error.message;
+      }
+      
+      alert(errorMessage);
     } finally {
       setIsSubmitting(false);
     }

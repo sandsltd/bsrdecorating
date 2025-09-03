@@ -12,6 +12,8 @@ EMAIL_SECURE=false
 EMAIL_USER=your-gmail@gmail.com
 EMAIL_PASSWORD=your-app-password
 EMAIL_FROM=BSR Decorating <your-gmail@gmail.com>
+# Optional: Additional recipient for all form submissions
+EMAIL_TO=additional-email@example.com
 ```
 
 ## How to Get Email Credentials
@@ -48,9 +50,31 @@ Once configured, the quote request form will:
 - ✅ Include all customer details and project requirements
 - ✅ Show success/error messages to users
 
+## Email Recipients Configuration
+
+### Default Recipients
+- **All form submissions** automatically go to: `info@bsrdecorating.co.uk`
+
+### Additional Recipients (Optional)
+- Set `EMAIL_TO` environment variable to send copies to additional email addresses
+- If `EMAIL_TO` is different from the default, both emails will receive submissions
+- If `EMAIL_TO` is the same as default, only one email is sent (no duplicates)
+
+### Examples:
+```bash
+# Send to both info@bsrdecorating.co.uk AND ben@example.com
+EMAIL_TO=ben@example.com
+
+# Send only to info@bsrdecorating.co.uk (no additional recipient)
+EMAIL_TO=info@bsrdecorating.co.uk
+# OR simply don't set EMAIL_TO at all
+```
+
 ## Current Status
-- 🔧 Email API is ready but needs environment variables
-- 📧 Professional email template is complete
+- 🔧 Email APIs are ready but need environment variables
+- 📧 Professional email templates are complete  
 - 🎯 Form validation and error handling implemented
+- 📬 Both quote form AND contact form now send emails
+- 📧 Flexible recipient configuration with EMAIL_TO support
 
 Contact me once you've added the email credentials to test the system!

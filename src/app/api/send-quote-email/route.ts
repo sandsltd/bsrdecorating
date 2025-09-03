@@ -177,10 +177,16 @@ export async function POST(request: NextRequest) {
       </html>
     `;
 
+    // Prepare recipient list - include both default and environment variable
+    const recipients = ['info@bsrdecorating.co.uk'];
+    if (process.env.EMAIL_TO && process.env.EMAIL_TO !== 'info@bsrdecorating.co.uk') {
+      recipients.push(process.env.EMAIL_TO);
+    }
+
     // Email options
     const mailOptions = {
       from: process.env.EMAIL_FROM || process.env.EMAIL_USER,
-      to: 'info@bsrdecorating.co.uk',
+      to: recipients.join(', '),
       subject: `🎨 New Quote Request from ${formData.name} (${formData.postcode})`,
       html: emailHTML,
       text: `
@@ -218,8 +224,6 @@ ${formData.message}
           body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
           .container { max-width: 600px; margin: 0 auto; background: #ffffff; }
           .header { background: linear-gradient(135deg, #000000, #1a1a1a); color: white; padding: 40px 30px; text-align: center; }
-          .logo { width: 120px; height: 120px; margin: 0 auto 20px auto; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center; border: 3px solid #E801F8; }
-          .logo-text { font-size: 28px; font-weight: bold; color: #E801F8; }
           .company-name { font-size: 32px; font-weight: bold; color: #E801F8; margin: 0; }
           .tagline { font-size: 16px; margin: 10px 0 0 0; color: #cccccc; }
           .content { padding: 40px 30px; }
@@ -235,9 +239,6 @@ ${formData.message}
       <body>
         <div class="container">
           <div class="header">
-            <div class="logo">
-              <span class="logo-text">BSR</span>
-            </div>
             <h1 class="company-name">BSR Decorating</h1>
             <p class="tagline">Professional Decorating Services</p>
           </div>
