@@ -144,7 +144,7 @@ const HeroSection = () => {
               {/* BSR Logo Badge */}
               <div className="absolute -bottom-4 -left-4">
                 <Image
-                  src="/Logos/BSR Logo-8.png"
+                  src="/Logos/Logo white.png"
                   alt="BSR Decorating Logo"
                   width={240}
                   height={240}
