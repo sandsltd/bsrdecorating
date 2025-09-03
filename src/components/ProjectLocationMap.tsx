@@ -25,13 +25,15 @@ const getProjectLocations = () => {
     'Kenton': [-3.4648, 50.5989], // Coordinates for Kenton, Devon
     'Torquay': [-3.5339, 50.4619], // Coordinates for Torquay, Devon
     'Bovey Tracey': [-3.6778, 50.5922], // Coordinates for Bovey Tracey, Devon
+    'Salcombe': [-3.7694, 50.2389], // Coordinates for Salcombe, Devon
+    'Cheriton Bishop': [-3.6889, 50.7556], // Coordinates for Cheriton Bishop, Devon
   };
 
   projects.forEach(project => {
     const location = project.location;
     
     // Handle multiple locations separated by &, and, or commas
-    const locationParts = location.split(/[&,]|and/).map(part => part.trim());
+    const locationParts = location.split(/\s*&\s*|\s*,\s*|\s+and\s+/).map(part => part.trim()).filter(part => part.length > 0);
     
     locationParts.forEach(locationPart => {
       let coords: [number, number] | undefined;
@@ -87,7 +89,7 @@ const ProjectLocationMap = () => {
           map.current!.resize();
           // Adjust zoom based on new screen size
           const isMobile = window.innerWidth < 768;
-          const newZoom = isMobile ? 7.5 : 8.5;
+          const newZoom = isMobile ? 7.8 : 8.3;
           map.current!.setZoom(newZoom);
         }, 100);
       }
@@ -120,8 +122,8 @@ const ProjectLocationMap = () => {
             map.current = new (window as any).mapboxgl.Map({
               container: mapContainer.current!,
               style: 'mapbox://styles/mapbox/dark-v11',
-              center: [-3.5, 50.7], // Center on Devon
-              zoom: isMobile ? 7.5 : 8.5,
+              center: [-3.57, 50.50], // Center to include Salcombe in the south
+              zoom: isMobile ? 7.8 : 8.3,
               accessToken: mapboxApiKey,
               attributionControl: false
             });
@@ -149,17 +151,17 @@ const ProjectLocationMap = () => {
             // Create marker element with number
             const markerEl = document.createElement('div');
             markerEl.style.cssText = `
-              width: 40px;
-              height: 40px;
+              width: 30px;
+              height: 30px;
               background: ${isDawlish ? '#FFD700' : '#E801F8'};
               border-radius: 50%;
-              border: 3px solid white;
-              box-shadow: 0 4px 12px rgba(${isDawlish ? '255, 215, 0' : '232, 1, 248'}, 0.4);
+              border: 2px solid white;
+              box-shadow: 0 3px 9px rgba(${isDawlish ? '255, 215, 0' : '232, 1, 248'}, 0.4);
               display: flex;
               align-items: center;
               justify-content: center;
               font-weight: bold;
-              font-size: 18px;
+              font-size: 14px;
               color: ${isDawlish ? '#000' : 'white'};
               transition: transform 0.2s ease;
             `;
@@ -239,13 +241,13 @@ const ProjectLocationMap = () => {
       {/* Map Legend */}
       <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm">
         <div className="flex items-center gap-2">
-          <div className="w-6 h-6 bg-bsr-highlight rounded-full border-2 border-white flex items-center justify-center text-white font-bold text-xs">
+          <div className="w-5 h-5 bg-bsr-highlight rounded-full border-2 border-white flex items-center justify-center text-white font-bold text-xs">
             1
           </div>
           <span className="text-gray-300">Project Locations</span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 bg-bsr-yellow rounded-full border-2 border-white flex items-center justify-center text-black font-bold text-xs">
+          <div className="w-5 h-5 bg-bsr-yellow rounded-full border-2 border-white flex items-center justify-center text-black font-bold text-xs">
             HQ
           </div>
           <span className="text-gray-300">BSR Headquarters</span>
