@@ -15,7 +15,7 @@ const getProjectLocations = () => {
   const locationMap: { [key: string]: [number, number] } = {
     'Fenny Bridges, Honiton': [-3.1889, 50.8088], // Approximate coordinates for Fenny Bridges near Honiton
     'Honiton': [-3.1889, 50.8088],
-    'Dawlish': [-3.4648, 50.5775],
+    'Dawlish': [-3.46958, 50.58192],
     'Newton Abbot': [-3.6093, 50.5233],
     'Exeter': [-3.5339, 50.7184],
     'Exeter & Newton Abbot': [-3.5716, 50.6208], // Midpoint between Exeter and Newton Abbot
@@ -24,7 +24,7 @@ const getProjectLocations = () => {
     'Harbourton, Totnes': [-3.6945, 50.4318], // Coordinates for Harbourton, Totnes
     'Totnes': [-3.6945, 50.4318],
     'Kenton': [-3.4648, 50.5989], // Coordinates for Kenton, Devon
-    'Torquay': [-3.5339, 50.4619], // Coordinates for Torquay, Devon
+    'Torquay': [-3.5212, 50.4619], // Coordinates for Torquay, Devon
     'Bovey Tracey': [-3.6778, 50.5922], // Coordinates for Bovey Tracey, Devon
     'Salcombe': [-3.7694, 50.2389], // Coordinates for Salcombe, Devon
     'Cheriton Bishop': [-3.6889, 50.7556], // Coordinates for Cheriton Bishop, Devon
@@ -79,7 +79,6 @@ const ProjectLocationMap = () => {
     const mapboxApiKey = process.env.NEXT_PUBLIC_MAPBOX_API_KEY;
     
     if (!mapboxApiKey) {
-      console.error('Mapbox API key not found');
       return;
     }
 
@@ -137,16 +136,11 @@ const ProjectLocationMap = () => {
           const sortedEntries = Object.entries(projectLocations).sort(([,a], [,b]) => a.count - b.count);
           
           // Add project location markers
-          sortedEntries.forEach(([locationName, data], index) => {
+          sortedEntries.forEach(([locationName, data]) => {
             const { count, coords } = data;
             
             // Check if this is Dawlish (our HQ location) - use gold styling
             const isDawlish = locationName === 'Dawlish';
-            
-            // Calculate z-index for overlap handling - higher counts on top
-            // Use much higher z-index values to override Mapbox defaults
-            const baseZIndex = 10000; // Very high base to override Mapbox
-            const zIndex = baseZIndex + (count * 1000) + index;
             
             // Create container for marker and label
             const markerContainer = document.createElement('div');
@@ -155,8 +149,6 @@ const ProjectLocationMap = () => {
               flex-direction: column;
               align-items: center;
               cursor: pointer;
-              position: relative;
-              z-index: ${zIndex};
             `;
 
             // Create marker element with number
@@ -175,8 +167,6 @@ const ProjectLocationMap = () => {
               font-size: 14px;
               color: ${isDawlish ? '#000' : 'white'};
               transition: transform 0.2s ease;
-              position: relative;
-              z-index: ${zIndex};
             `;
             markerEl.textContent = count.toString();
 
