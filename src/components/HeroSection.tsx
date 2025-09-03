@@ -11,12 +11,18 @@ const HeroSection = () => {
   
   // Array of background images to cycle through
   const backgroundImages = [
-    "/portfolio/project1/PHOTO-2025-09-02-11-07-28.jpg",
-    "/portfolio/project1/PHOTO-2025-09-02-11-07-49.jpg",
-    "/portfolio/project1/PHOTO-2025-09-02-11-08-08.jpg",
-    "/portfolio/project1/PHOTO-2025-09-02-11-08-09.jpg",
-    "/portfolio/project1/PHOTO-2025-09-02-11-07-53.jpg",
-    "/portfolio/project1/PHOTO-2025-09-02-11-07-27.jpg"
+    "/heroloop/PHOTO-2025-09-03-11-16-34.JPG",
+    "/heroloop/f93bd364-aa09-43a8-b158-b11ae1c1f4da.JPG",
+    "/heroloop/e9b8ed9c-03ff-4b21-aa11-2752d032f63d.JPG",
+    "/heroloop/e3fc38b1-946c-4f74-a90e-26e632b334df.JPG",
+    "/heroloop/bd646138-e26d-4f6c-b26a-dbde73abd379.JPG",
+    "/heroloop/bb3839b2-e55b-4e9f-97b3-d4b5be1e6205.JPG",
+    "/heroloop/a6a396d6-7850-461c-9cda-61aeacc6a19a.JPG",
+    "/heroloop/05832a9d-5af1-438a-ba60-1d53f8fa141c.JPG",
+    "/heroloop/83b1ceef-b211-4a06-ba2b-c71a0d517a17.JPG",
+    "/heroloop/5fecae60-ae8a-4ff9-bc67-d79c0447e195.JPG",
+    "/heroloop/01dcd149-3c15-4565-b78f-f272cbd9f086.JPG",
+    "/heroloop/0be4ca73-ac98-48de-97d2-dded0ac3511f.JPG"
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
