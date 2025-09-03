@@ -22,6 +22,9 @@ const getProjectLocations = () => {
     'Teignmouth': [-3.4978, 50.5458],
     'Harbourton, Totnes': [-3.6945, 50.4318], // Coordinates for Harbourton, Totnes
     'Totnes': [-3.6945, 50.4318],
+    'Kenton': [-3.4648, 50.5989], // Coordinates for Kenton, Devon
+    'Torquay': [-3.5339, 50.4619], // Coordinates for Torquay, Devon
+    'Bovey Tracey': [-3.6778, 50.5922], // Coordinates for Bovey Tracey, Devon
   };
 
   projects.forEach(project => {
@@ -162,25 +165,7 @@ const ProjectLocationMap = () => {
             `;
             markerEl.textContent = count.toString();
 
-            // Create label below the marker
-            const labelEl = document.createElement('div');
-            labelEl.style.cssText = `
-              background: rgba(${isDawlish ? '255, 215, 0' : '232, 1, 248'}, 0.95);
-              color: ${isDawlish ? 'black' : 'white'};
-              padding: 4px 8px;
-              border-radius: 4px;
-              font-size: 11px;
-              font-weight: bold;
-              white-space: nowrap;
-              border: 1px solid white;
-              box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-              margin-top: 6px;
-              text-align: center;
-            `;
-            labelEl.textContent = locationName;
-
             markerContainer.appendChild(markerEl);
-            markerContainer.appendChild(labelEl);
 
             // Add hover effect
             markerContainer.addEventListener('mouseenter', () => {
