@@ -12,7 +12,7 @@ export default function ContactPage() {
     {
       icon: <Phone size={24} />,
       title: "Phone",
-      details: ["07805 469770"],
+      details: ["01626 911236"],
       link: "tel:07805469770"
     },
     {

@@ -65,15 +65,15 @@ const Navigation = () => {
                 className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm flex items-center space-x-2 px-3 py-1"
               >
                 <Phone size={14} />
-                <span>07805 469770</span>
+                <span>01626 911236</span>
               </a>
               {/* Contact separator */}
               <div className="h-4 w-px bg-white opacity-80 mx-2"></div>
               <a
-                href="mailto:hello@bsrdecorating.co.uk"
+                href="mailto:info@bsrdecorating.co.uk"
                 className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm px-3 py-1"
               >
-                hello@bsrdecorating.co.uk
+                info@bsrdecorating.co.uk
               </a>
             </div>
           </div>
@@ -89,7 +89,7 @@ const Navigation = () => {
             className="text-bsr-white font-medium flex items-center space-x-2 hover:opacity-90 transition-opacity duration-200"
           >
             <Phone size={16} />
-            <span>07805 469770</span>
+            <span>01626 911236</span>
           </a>
         </div>
       </div>

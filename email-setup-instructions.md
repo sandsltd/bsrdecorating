@@ -38,13 +38,13 @@ EMAIL_PASSWORD=your-password
 EMAIL_HOST=mail.privateemail.com
 EMAIL_PORT=587
 EMAIL_SECURE=false
-EMAIL_USER=hello@saunders-simmons.co.uk
+EMAIL_USER=info@bsrdecorating.co.uk
 EMAIL_PASSWORD=your-password
 ```
 
 ## Testing
 Once configured, the quote request form will:
-- ✅ Send professional emails to `hello@saunders-simmons.co.uk`
+- ✅ Send professional emails to `info@bsrdecorating.co.uk`
 - ✅ Include all customer details and project requirements
 - ✅ Show success/error messages to users
 

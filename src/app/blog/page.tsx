@@ -102,27 +102,7 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Newsletter Signup */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-bsr-highlight">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-bsr-white mb-4">
-            Stay Updated with Decorating Tips
-          </h2>
-          <p className="text-xl text-bsr-white mb-8 opacity-90">
-            Get the latest decorating trends, tips, and project showcases delivered to your inbox.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-lg text-bsr-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-bsr-white"
-            />
-            <button className="bg-bsr-white text-bsr-highlight hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors duration-200">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </section>
+
 
       {/* SEO Content */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">

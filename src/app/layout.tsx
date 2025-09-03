@@ -56,7 +56,7 @@ export default function RootLayout({
     "description": "Professional domestic and commercial decorating services across Devon",
     "url": "https://bsrdecorating.co.uk",
     "telephone": "+447805469770",
-    "email": "hello@bsrdecorating.co.uk",
+    "email": "info@bsrdecorating.co.uk",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Dawlish",

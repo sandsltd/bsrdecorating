@@ -113,7 +113,7 @@ export default function CommunityPage() {
                   <span>Visit Surfers Against Sewage</span>
                 </a>
                 <a
-                  href="mailto:hello@bsrdecorating.co.uk"
+                  href="mailto:info@bsrdecorating.co.uk"
                   className="border-2 border-[#0B7EC8] text-[#0B7EC8] hover:bg-[#0B7EC8] hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200"
                 >
                   Ask About Our Eco-Friendly Options
@@ -186,14 +186,18 @@ export default function CommunityPage() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="#"
+                  href="https://infocus-charity.org.uk"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
                 >
                   <Heart size={18} />
                   <span>Support the Cause</span>
                 </a>
                 <a
-                  href="#"
+                  href="https://infocus-charity.org.uk"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="border-2 border-bsr-highlight text-bsr-highlight hover:bg-bsr-highlight hover:text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200"
                 >
                   Learn More About InFocus
@@ -352,7 +356,7 @@ export default function CommunityPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:hello@bsrdecorating.co.uk"
+              href="mailto:info@bsrdecorating.co.uk"
               className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
             >
               <Mail size={20} />
@@ -363,7 +367,7 @@ export default function CommunityPage() {
               className="border-2 border-bsr-highlight text-bsr-highlight hover:bg-bsr-highlight hover:text-bsr-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2"
             >
               <Phone size={20} />
-              <span>Call: 07805 469770</span>
+              <span>Call: 01626 911236</span>
             </a>
           </div>
         </div>

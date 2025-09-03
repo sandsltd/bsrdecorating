@@ -157,7 +157,7 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
         onClose();
       } else if (result.missingConfig) {
         // Email not configured yet - show fallback message
-        alert(`Thank you for your interest! Email service is being set up. Please call us directly at 07805 469770 or email hello@saunders-simmons.co.uk with your quote request.`);
+        alert(`Thank you for your interest! Email service is being set up. Please call us directly at 01626 911236 or email info@bsrdecorating.co.uk with your quote request.`);
         onClose();
       } else {
         alert(`Error sending quote request: ${result.message}`);
@@ -479,7 +479,7 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
           type="tel"
           value={formData.phone}
           onChange={(e) => updateFormField('phone', e.target.value)}
-          placeholder="07805 469770"
+          placeholder="01626 911236"
           className="w-full p-3 bg-bsr-black border border-bsr-gray-light rounded-lg text-bsr-white placeholder-gray-400 focus:border-bsr-highlight focus:outline-none"
         />
       </div>

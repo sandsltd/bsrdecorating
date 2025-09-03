@@ -3,9 +3,11 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Star, Quote, ThumbsUp, Award, Users } from 'lucide-react';
+import { useQuoteModal } from '@/contexts/QuoteModalContext';
 
 export default function ReviewsPage() {
   const [selectedService, setSelectedService] = useState('all');
+  const { openQuoteModal } = useQuoteModal();
 
   const services = [
     { id: 'all', name: 'All Services' },
@@ -254,12 +256,12 @@ export default function ReviewsPage() {
             Get your free quote today and experience the BSR difference for yourself.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
-              className="bg-bsr-white text-bsr-highlight hover:bg-gray-100 px-8 py-3 rounded-md font-semibold transition-colors duration-200"
+            <button
+              onClick={openQuoteModal}
+              className="bg-bsr-yellow text-bsr-black hover:bg-yellow-300 px-8 py-3 rounded-md font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl"
             >
               Get Free Quote
-            </a>
+            </button>
             <a
               href="/gallery"
               className="border-2 border-bsr-white text-bsr-white hover:bg-bsr-white hover:text-bsr-highlight px-8 py-3 rounded-md font-semibold transition-colors duration-200"

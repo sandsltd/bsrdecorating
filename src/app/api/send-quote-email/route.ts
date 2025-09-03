@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
       console.error('Email environment variables not configured');
       return NextResponse.json({
         success: false,
-        message: 'Email service not configured. Please contact us directly at 07805 469770.',
+        message: 'Email service not configured. Please contact us directly at 01626 911236.',
         missingConfig: true
       }, { status: 200 }); // Return 200 to avoid browser errors
     }
@@ -180,7 +180,7 @@ export async function POST(request: NextRequest) {
     // Email options
     const mailOptions = {
       from: process.env.EMAIL_FROM || process.env.EMAIL_USER,
-      to: 'hello@saunders-simmons.co.uk',
+      to: 'info@bsrdecorating.co.uk',
       subject: `🎨 New Quote Request from ${formData.name} (${formData.postcode})`,
       html: emailHTML,
       text: `
@@ -262,8 +262,8 @@ ${formData.message}
 
             <div class="contact-info">
               <h3>Need to speak to us sooner?</h3>
-              <p><strong>Phone:</strong> 07805 469770</p>
-              <p><strong>Email:</strong> hello@saunders-simmons.co.uk</p>
+              <p><strong>Phone:</strong> 01626 911236</p>
+              <p><strong>Email:</strong> info@bsrdecorating.co.uk</p>
               <p>We are available Monday to Friday, 8:00 AM to 6:00 PM</p>
             </div>
 
@@ -301,8 +301,8 @@ Your Quote Reference:
 Location: ${formData.postcode} | Service: ${formData.serviceType.charAt(0).toUpperCase() + formData.serviceType.slice(1)}
 
 Need to speak to us sooner?
-Phone: 07805 469770
-Email: hello@saunders-simmons.co.uk
+Phone: 01626 911236
+Email: info@bsrdecorating.co.uk
 We are available Monday to Friday, 8:00 AM to 6:00 PM
 
 We look forward to helping transform your space with our professional decorating services.
@@ -354,7 +354,7 @@ This email was sent in response to your quote request on our website.
     return NextResponse.json(
       { 
         success: false, 
-        message: 'Failed to send quote request. Please call 07805 469770.',
+        message: 'Failed to send quote request. Please call 01626 911236.',
         error: error instanceof Error ? error.message : 'Unknown error'
       },
       { status: 200 } // Change to 200 to avoid browser console errors

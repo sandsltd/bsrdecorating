@@ -52,11 +52,11 @@ export default function CareersPage() {
                 Please send your CV and a covering letter to:
               </p>
               <a
-                href="mailto:careers@bsrdecorating.co.uk"
+                href="mailto:info@bsrdecorating.co.uk"
                 className="inline-flex items-center space-x-2 bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200"
               >
                 <Mail size={18} />
-                <span>careers@bsrdecorating.co.uk</span>
+                <span>info@bsrdecorating.co.uk</span>
               </a>
             </div>
           </div>
@@ -176,7 +176,7 @@ export default function CareersPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:careers@bsrdecorating.co.uk"
+              href="mailto:info@bsrdecorating.co.uk"
               className="bg-bsr-white text-bsr-highlight hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 flex items-center justify-center space-x-2"
             >
               <Mail size={20} />

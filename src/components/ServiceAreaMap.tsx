@@ -476,7 +476,7 @@ const ServiceAreaMap = () => {
               <div className="space-y-3">
                 <p className="text-sm text-gray-300">Free quotes across all areas</p>
                 <div className="text-center py-2">
-                  <div className="text-bsr-highlight font-bold text-xl">07805 469770</div>
+                  <div className="text-bsr-highlight font-bold text-xl">01626 911236</div>
                   <p className="text-xs text-gray-300 mt-1">Click markers for details</p>
                 </div>
               </div>

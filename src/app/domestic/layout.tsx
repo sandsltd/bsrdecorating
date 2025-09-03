@@ -44,7 +44,7 @@ export default function DomesticLayout({
       "@type": "LocalBusiness",
       "name": "BSR Decorating",
       "telephone": "+447805469770",
-      "email": "hello@bsrdecorating.co.uk",
+      "email": "info@bsrdecorating.co.uk",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Dawlish",
