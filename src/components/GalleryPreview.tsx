@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Image as ImageIcon, Video, ChevronLeft, ChevronRight, X, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { projects } from '@/data/projects';
+import { getFeaturedProjects } from '@/data/projects';
 
 interface GalleryPreviewProps {
   filterCategories?: string[];
@@ -21,8 +21,8 @@ const GalleryPreview = ({
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
-  // Get all projects - will only show the farmhouse project for now
-  const galleryItems = projects;
+  // Get only featured projects for homepage display
+  const galleryItems = getFeaturedProjects();
 
   // Filter items based on filterCategories prop
   const filteredItems = filterCategories 

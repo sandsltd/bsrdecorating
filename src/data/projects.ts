@@ -102,7 +102,7 @@ export const projects: Project[] = [
       '/portfolio/project1/VIDEO-2025-09-02-11-07-44.mp4'
     ],
     rating: 5,
-    featured: true
+    featured: false
   },
   {
     id: 2,
@@ -141,7 +141,7 @@ export const projects: Project[] = [
       '/portfolio/project2/PHOTO-2025-09-02-11-09-56.jpg'
     ],
     rating: 5,
-    featured: true
+    featured: false
   },
   {
     id: 3,
@@ -230,7 +230,7 @@ export const projects: Project[] = [
       '/portfolio/project4/PHOTO-2025-09-02-11-13-25 2.jpg'
     ],
     rating: 5,
-    featured: true
+    featured: false
   },
   {
     id: 5,
@@ -305,7 +305,7 @@ export const projects: Project[] = [
       '/portfolio/project5/PHOTO-2025-09-02-11-16-33 2.jpg'
     ],
     rating: 5,
-    featured: true
+    featured: false
   },
   {
     id: 6,
@@ -349,7 +349,7 @@ export const projects: Project[] = [
       '/portfolio/project6/PHOTO-2025-09-02-11-19-04.jpg'
     ],
     rating: 5,
-    featured: true
+    featured: false
   },
   {
     id: 7,
@@ -375,7 +375,7 @@ export const projects: Project[] = [
       '/portfolio/project7/PHOTO-2025-09-02-11-28-57 3.jpg'
     ],
     rating: 5,
-    featured: true
+    featured: false
   },
   {
     id: 8,
@@ -435,7 +435,7 @@ export const projects: Project[] = [
       '/portfolio/project8/VIDEO-2025-09-02-11-30-38.mp4'
     ],
     rating: 5,
-    featured: true
+    featured: false
   },
   {
     id: 9,
@@ -467,7 +467,7 @@ export const projects: Project[] = [
       '/portfolio/project9/VIDEO-2025-09-02-11-33-15.mp4'
     ],
     rating: 5,
-    featured: true
+    featured: false
   },
   {
     id: 10,
@@ -505,7 +505,7 @@ export const projects: Project[] = [
       '/portfolio/project10/VIDEO-2025-09-02-11-37-13.mp4'
     ],
     rating: 5,
-    featured: true
+    featured: false
   },
   {
     id: 11,
@@ -628,7 +628,7 @@ export const projects: Project[] = [
       '/portfolio/project11/VIDEO-2025-09-02-11-41-18.mp4'
     ],
     rating: 5,
-    featured: true
+    featured: false
   },
   {
     id: 12,
@@ -757,7 +757,7 @@ export const projects: Project[] = [
       '/portfolio/project14/PHOTO-2025-09-03-11-10-40.jpg'
     ],
     rating: 5,
-    featured: true
+    featured: false
   },
   {
     id: 15,
@@ -792,7 +792,7 @@ export const projects: Project[] = [
       '/portfolio/project15/PHOTO-2025-09-03-11-11-33.jpg'
     ],
     rating: 5,
-    featured: true
+    featured: false
   },
   {
     id: 16,
@@ -967,7 +967,7 @@ export const projects: Project[] = [
       '/portfolio/project19/PHOTO-2025-09-03-11-18-18.jpg'
     ],
     rating: 5,
-    featured: true
+    featured: false
   },
   {
     id: 20,
@@ -1007,7 +1007,7 @@ export const projects: Project[] = [
       '/portfolio/project20/PHOTO-2025-09-03-11-19-07.jpg'
     ],
     rating: 5,
-    featured: true
+    featured: false
   }
 ];
 
