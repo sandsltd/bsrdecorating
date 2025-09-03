@@ -40,8 +40,17 @@ export async function POST(request: NextRequest) {
     };
     console.log('Environment variables:', envVars);
 
-    if (!process.env.EMAIL_HOST || !process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+    // Check for both EMAIL_PASS and EMAIL_PASSWORD
+    const emailPassword = process.env.EMAIL_PASS || process.env.EMAIL_PASSWORD;
+    
+    if (!process.env.EMAIL_HOST || !process.env.EMAIL_USER || !emailPassword) {
       console.log('Missing required email environment variables');
+      console.log('Available env vars:', {
+        EMAIL_HOST: !!process.env.EMAIL_HOST,
+        EMAIL_USER: !!process.env.EMAIL_USER,
+        EMAIL_PASS: !!process.env.EMAIL_PASS,
+        EMAIL_PASSWORD: !!process.env.EMAIL_PASSWORD
+      });
       return NextResponse.json(
         { error: 'Email service not configured. Please contact us directly at info@bsrdecorating.co.uk or 01626 911236.' },
         { status: 503 }
@@ -55,7 +64,7 @@ export async function POST(request: NextRequest) {
       secure: parseInt(process.env.EMAIL_PORT || '587') === 465, // SSL for port 465
       auth: {
         user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
+        pass: emailPassword
       }
     });
 
@@ -274,6 +283,7 @@ Please respond to the customer directly at ${email} or ${phone}.
     const customerMailOptions = {
       from: process.env.EMAIL_FROM || process.env.EMAIL_USER,
       to: email,
+      replyTo: process.env.EMAIL_DEFAULT || 'info@bsrdecorating.co.uk',
       subject: 'Thank you for contacting us - BSR Decorating',
       html: customerEmailHTML,
       text: `
@@ -290,8 +300,8 @@ Your Contact Reference:
 Service Interest: ${serviceDisplay} | Contact: ${phone}
 
 Need to speak to us sooner?
-Phone: ${process.env.BUSINESS_PHONE || '01626 911236'}
-Email: ${defaultEmail}
+Phone: 01626 911236
+Email: info@bsrdecorating.co.uk
 We are available Monday to Friday, 8:00 AM to 6:00 PM
 
 We look forward to helping transform your space with our professional decorating services.
@@ -313,17 +323,37 @@ This email was sent in response to your contact form submission on our website.
     });
     
     try {
-      await transporter.sendMail(customerMailOptions);
-      console.log('Customer thank you email sent successfully to:', email);
+      console.log('Sending customer email with transporter config:', {
+        host: process.env.EMAIL_HOST,
+        port: process.env.EMAIL_PORT,
+        user: process.env.EMAIL_USER ? 'configured' : 'missing',
+        from: customerMailOptions.from,
+        to: customerMailOptions.to
+      });
+      
+      const customerEmailResult = await transporter.sendMail(customerMailOptions);
+      console.log('✅ Customer thank you email sent successfully to:', email);
+      console.log('📧 Customer email SMTP response:', {
+        messageId: customerEmailResult.messageId,
+        response: customerEmailResult.response,
+        accepted: customerEmailResult.accepted,
+        rejected: customerEmailResult.rejected,
+        pending: customerEmailResult.pending
+      });
     } catch (customerEmailError) {
-      console.error('Failed to send customer thank you email:', customerEmailError);
-      const errorDetails = {
-        message: customerEmailError instanceof Error ? customerEmailError.message : 'Unknown error',
-        code: 'code' in (customerEmailError as object) ? (customerEmailError as { code: string }).code : 'Unknown code',
-        response: 'response' in (customerEmailError as object) ? (customerEmailError as { response: string }).response : 'No response'
-      };
-      console.error('Customer email error details:', errorDetails);
+      console.error('❌ Failed to send customer thank you email:', customerEmailError);
+      
+      if (customerEmailError instanceof Error) {
+        console.error('Customer email error details:', {
+          message: customerEmailError.message,
+          stack: customerEmailError.stack,
+          name: customerEmailError.name
+        });
+      }
+      
       // Don't fail the whole request if customer email fails - BSR email is more important
+      // But log it prominently so we know about it
+      console.error('🚨 CUSTOMER EMAIL FAILED - Business got notification but customer did not get confirmation');
     }
 
     return NextResponse.json(
