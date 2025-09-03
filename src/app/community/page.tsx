@@ -1,15 +1,73 @@
 'use client';
 
+import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Heart, Calendar, Users, HandHeart, MapPin, Phone, Mail } from 'lucide-react';
 import { useQuoteModal } from '@/contexts/QuoteModalContext';
 
+
+
 export default function CommunityPage() {
   const { openQuoteModal } = useQuoteModal();
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "BSR Decorating",
+    "description": "Local decorating business committed to community support and environmental protection",
+    "url": "https://bsrdecorating.co.uk/community",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dawlish",
+      "addressRegion": "Devon",
+      "addressCountry": "GB"
+    },
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Eco-Friendly Decorating Services",
+        "description": "Professional decorating using water-based paints and sustainable practices"
+      }
+    },
+    "sponsor": [
+      {
+        "@type": "Organization",
+        "name": "Surfers Against Sewage",
+        "url": "https://www.sas.org.uk/",
+        "description": "Ocean conservation charity focused on protecting marine environments"
+      },
+      {
+        "@type": "Organization",
+        "name": "InFocus Charity",
+        "url": "https://infocus-charity.org.uk",
+        "description": "Community charity supported through fundraising activities"
+      }
+    ]
+  };
+
   return (
-    <div className="min-h-screen bg-bsr-black">
+    <>
+      <Head>
+        <title>Community & Environmental Commitment | BSR Decorating Devon</title>
+        <meta name="description" content="BSR Decorating's commitment to community and environment. Supporting Surfers Against Sewage, using eco-friendly water-based paints, and protecting Devon's beautiful coastlines through sustainable decorating practices." />
+        <meta name="keywords" content="eco-friendly decorators Devon, environmental decorating, water-based paints, Surfers Against Sewage support, sustainable decorating Devon, community decorators, charitable decorators Devon, environmental commitment" />
+        <meta property="og:title" content="Community & Environment | BSR Decorating Devon" />
+        <meta property="og:description" content="Our commitment to community and environmental protection in Devon" />
+        <meta property="og:url" content="https://bsrdecorating.co.uk/community" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/images/logo-2.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Community & Environment | BSR Decorating Devon" />
+        <meta name="twitter:description" content="Our commitment to community and environmental protection in Devon" />
+        <meta name="twitter:image" content="/images/logo-2.png" />
+      </Head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <div className="min-h-screen bg-bsr-black">
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-bsr-black to-bsr-gray">
         <div className="max-w-6xl mx-auto text-center">
@@ -398,6 +456,7 @@ export default function CommunityPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

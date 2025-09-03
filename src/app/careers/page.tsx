@@ -1,12 +1,70 @@
 'use client';
 
+import Head from 'next/head';
 import { motion } from 'framer-motion';
 import { Mail, Users, Star, Award } from 'lucide-react';
 import Link from 'next/link';
 
+
+
 export default function CareersPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Experienced Decorators",
+    "description": "Join BSR Decorating as an experienced decorator. We need decorators from time to time for larger jobs and are always interested in hearing from experienced professionals.",
+    "datePosted": "2025-01-25",
+    "hiringOrganization": {
+      "@type": "LocalBusiness",
+      "name": "BSR Decorating",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dawlish",
+        "addressRegion": "Devon",
+        "addressCountry": "GB"
+      },
+      "url": "https://bsrdecorating.co.uk"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Devon",
+        "addressCountry": "GB"
+      }
+    },
+    "employmentType": "CONTRACTOR",
+    "experienceRequirements": "Proven decorating experience required",
+    "skills": [
+      "Interior painting",
+      "Exterior painting",
+      "Surface preparation",
+      "Attention to detail",
+      "Customer service"
+    ]
+  };
+
   return (
-    <div className="min-h-screen">
+    <>
+      <Head>
+        <title>Careers | Join BSR Decorating Team - Decorator Jobs Devon</title>
+        <meta name="description" content="Join the BSR Decorating team. Decorator and painter job opportunities across Devon. Work with a professional, established decorating company based in Dawlish serving Newton Abbot, Torquay, Exeter." />
+        <meta name="keywords" content="decorator jobs Devon, painter careers, decorating apprenticeships, BSR Decorating jobs, decorator employment Devon, painting jobs Dawlish Newton Abbot, decorating team careers" />
+        <meta property="og:title" content="Careers | BSR Decorating Devon" />
+        <meta property="og:description" content="Join our professional decorating team in Devon" />
+        <meta property="og:url" content="https://bsrdecorating.co.uk/careers" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/images/Business decorating image.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Careers | BSR Decorating Devon" />
+        <meta name="twitter:description" content="Join our professional decorating team in Devon" />
+        <meta name="twitter:image" content="/images/Business decorating image.jpeg" />
+      </Head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-bsr-black via-bsr-gray to-bsr-black">
         <div className="max-w-7xl mx-auto text-center">
@@ -191,6 +249,7 @@ export default function CareersPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 import { motion } from 'framer-motion';
 import { Image as ImageIcon, Video, Star, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { projects } from '@/data/projects';
@@ -12,6 +13,39 @@ export default function PortfolioPage() {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "BSR Decorating Project Portfolio",
+    "description": "Gallery of completed decorating projects across Devon",
+    "url": "https://bsrdecorating.co.uk/portfolio",
+    "image": projects.map(project => ({
+      "@type": "ImageObject",
+      "url": `https://bsrdecorating.co.uk${project.image}`,
+      "name": project.title,
+      "description": project.description,
+      "contentLocation": {
+        "@type": "Place",
+        "name": project.location,
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Devon",
+          "addressCountry": "GB"
+        }
+      }
+    })),
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BSR Decorating",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dawlish",
+        "addressRegion": "Devon",
+        "addressCountry": "GB"
+      }
+    }
+  };
 
   const categories = [
     { id: 'all', name: 'All Projects' },
@@ -65,7 +99,26 @@ export default function PortfolioPage() {
   }, [selectedProject]);
 
   return (
-    <div className="min-h-screen">
+    <>
+      <Head>
+        <title>Project Portfolio | BSR Decorating Work Gallery - Dawlish, Newton Abbot, Torquay & Exeter</title>
+        <meta name="description" content="View our completed decorating projects across Devon. Professional painting and decorating portfolio showcasing domestic and commercial work in Dawlish, Newton Abbot, Torquay, Exeter and surrounding areas." />
+        <meta name="keywords" content="decorating portfolio Devon, painting projects gallery, before after decorating, BSR project examples, decorating work Dawlish Newton Abbot Torquay Exeter, completed decorating projects, professional decorating gallery" />
+        <meta property="og:title" content="Project Portfolio | BSR Decorating Devon" />
+        <meta property="og:description" content="Completed decorating projects across Devon - see our professional work" />
+        <meta property="og:url" content="https://bsrdecorating.co.uk/portfolio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/portfolio/project1/PHOTO-2025-09-02-11-07-09.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Project Portfolio | BSR Decorating Devon" />
+        <meta name="twitter:description" content="Completed decorating projects across Devon - see our professional work" />
+        <meta name="twitter:image" content="/portfolio/project1/PHOTO-2025-09-02-11-07-09.jpg" />
+      </Head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-bsr-black via-bsr-gray to-bsr-black">
         <div className="max-w-7xl mx-auto text-center">
@@ -444,6 +497,7 @@ export default function PortfolioPage() {
           </motion.div>
         );
       })()}
-    </div>
+      </div>
+    </>
   );
 }

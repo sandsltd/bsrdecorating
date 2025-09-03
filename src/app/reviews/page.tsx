@@ -1,9 +1,12 @@
 'use client';
 
+import Head from 'next/head';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Star, Quote, ThumbsUp, Award, Users } from 'lucide-react';
 import { useQuoteModal } from '@/contexts/QuoteModalContext';
+
+
 
 export default function ReviewsPage() {
   const [selectedService, setSelectedService] = useState('all');
@@ -130,8 +133,64 @@ export default function ReviewsPage() {
     { icon: <Award size={32} />, value: "5*", label: "Star Rating" },
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "BSR Decorating",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "10",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": reviews.map(review => ({
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": review.rating,
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": review.name
+      },
+      "datePublished": review.date,
+      "reviewBody": review.text,
+      "itemReviewed": {
+        "@type": "LocalBusiness",
+        "name": "BSR Decorating",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dawlish",
+          "addressRegion": "Devon",
+          "addressCountry": "GB"
+        }
+      }
+    }))
+  };
+
   return (
-    <div className="min-h-screen">
+    <>
+      <Head>
+        <title>Customer Reviews | BSR Decorating Testimonials - 5 Star Rated Decorators Devon</title>
+        <meta name="description" content="Read genuine customer reviews for BSR Decorating. 5-star rated professional decorators with excellent testimonials from satisfied customers across Dawlish, Newton Abbot, Torquay, Exeter and Devon." />
+        <meta name="keywords" content="BSR Decorating reviews, decorator testimonials Devon, 5 star decorators, customer feedback painting decorating, decorator reviews Dawlish Newton Abbot Torquay Exeter, professional decorator testimonials" />
+        <meta property="og:title" content="Customer Reviews | BSR Decorating Devon" />
+        <meta property="og:description" content="5-star customer reviews from satisfied clients across Devon" />
+        <meta property="og:url" content="https://bsrdecorating.co.uk/reviews" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/images/Business decorating image.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Customer Reviews | BSR Decorating Devon" />
+        <meta name="twitter:description" content="5-star customer reviews from satisfied clients across Devon" />
+        <meta name="twitter:image" content="/images/Business decorating image.jpeg" />
+      </Head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-bsr-black via-bsr-gray to-bsr-black">
         <div className="max-w-7xl mx-auto text-center">
@@ -281,6 +340,7 @@ export default function ReviewsPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }
