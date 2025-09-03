@@ -18,6 +18,7 @@ const getProjectLocations = () => {
     'Dawlish': [-3.4648, 50.5775],
     'Newton Abbot': [-3.6093, 50.5233],
     'Exeter': [-3.5339, 50.7184],
+    'Exeter & Newton Abbot': [-3.5716, 50.6208], // Midpoint between Exeter and Newton Abbot
     'Exmouth': [-3.4139, 50.6195],
     'Teignmouth': [-3.4978, 50.5458],
     'Harbourton, Totnes': [-3.6945, 50.4318], // Coordinates for Harbourton, Totnes
@@ -132,12 +133,20 @@ const ProjectLocationMap = () => {
           // Get project locations with counts
           const projectLocations = getProjectLocations();
 
+          // Sort entries by count (ascending) so higher counts are added last and appear on top
+          const sortedEntries = Object.entries(projectLocations).sort(([,a], [,b]) => a.count - b.count);
+          
           // Add project location markers
-          Object.entries(projectLocations).forEach(([locationName, data]) => {
+          sortedEntries.forEach(([locationName, data], index) => {
             const { count, coords } = data;
             
             // Check if this is Dawlish (our HQ location) - use gold styling
             const isDawlish = locationName === 'Dawlish';
+            
+            // Calculate z-index for overlap handling - higher counts on top
+            // Use much higher z-index values to override Mapbox defaults
+            const baseZIndex = 10000; // Very high base to override Mapbox
+            const zIndex = baseZIndex + (count * 1000) + index;
             
             // Create container for marker and label
             const markerContainer = document.createElement('div');
@@ -146,6 +155,8 @@ const ProjectLocationMap = () => {
               flex-direction: column;
               align-items: center;
               cursor: pointer;
+              position: relative;
+              z-index: ${zIndex};
             `;
 
             // Create marker element with number
@@ -164,6 +175,8 @@ const ProjectLocationMap = () => {
               font-size: 14px;
               color: ${isDawlish ? '#000' : 'white'};
               transition: transform 0.2s ease;
+              position: relative;
+              z-index: ${zIndex};
             `;
             markerEl.textContent = count.toString();
 
