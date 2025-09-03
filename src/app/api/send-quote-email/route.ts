@@ -177,16 +177,32 @@ export async function POST(request: NextRequest) {
       </html>
     `;
 
-    // Prepare recipient list - include both default and environment variable
-    const recipients = ['info@bsrdecorating.co.uk'];
-    if (process.env.EMAIL_TO && process.env.EMAIL_TO !== 'info@bsrdecorating.co.uk') {
-      recipients.push(process.env.EMAIL_TO);
+    // Prepare recipient list - handle multiple emails
+    const defaultEmail = process.env.EMAIL_DEFAULT || 'info@bsrdecorating.co.uk';
+    const recipients = [defaultEmail];
+    
+    // Handle EMAIL_TO (can be comma-separated)
+    if (process.env.EMAIL_TO) {
+      const additionalEmails = process.env.EMAIL_TO.split(',').map(email => email.trim());
+      additionalEmails.forEach(email => {
+        if (email && email !== defaultEmail && !recipients.includes(email)) {
+          recipients.push(email);
+        }
+      });
+    }
+
+    // Prepare BCC list if specified
+    const bccEmails = [];
+    if (process.env.EMAIL_BCC) {
+      const bccList = process.env.EMAIL_BCC.split(',').map(email => email.trim());
+      bccEmails.push(...bccList);
     }
 
     // Email options
     const mailOptions = {
       from: process.env.EMAIL_FROM || process.env.EMAIL_USER,
       to: recipients.join(', '),
+      bcc: bccEmails.length > 0 ? bccEmails.join(', ') : undefined,
       subject: `🎨 New Quote Request from ${formData.name} (${formData.postcode})`,
       html: emailHTML,
       text: `
@@ -210,6 +226,13 @@ ${formData.message}
 ` : ''}Please contact the customer within 24 hours.
       `
     };
+
+    // Log email configuration for debugging
+    console.log('Email recipients:', {
+      to: recipients.join(', '),
+      bcc: bccEmails.length > 0 ? bccEmails.join(', ') : 'None',
+      totalRecipients: recipients.length + bccEmails.length
+    });
 
     // Send email to BSR
     await transporter.sendMail(mailOptions);

@@ -105,6 +105,16 @@ export default function ReviewsPage() {
       date: "2022-03-15",
       text: "Ben Rourke of BSR Decorating painted a 10m2 wall to provide a blank canvas for our large-scale mural in Central Exeter and painted a black strip at the base of the wall and alongside the stairwell. Quick turnaround and did all this in record time! Ben is highly knowledgeable about paint products and techniques and provided advice on materials and temperature required to ensure quick drying in cold weather. One of the most good-natured tradespeople in Exeter, always positive and reassuring, with a generous heart for arranging paint for the mural donated. Going the extra mile by covering up graffiti on the freshly painted wall and looking forward to BSR Decorating adding an anti-graffiti layer. Excellent job.",
       project: "Exeter Kindness Project"
+    },
+    {
+      id: 10,
+      name: "James Owens",
+      location: "Local Guide",
+      rating: 5,
+      service: "commercial",
+      date: "2025-01-15",
+      text: "We used Bsr to revamp our business unit where we sorely needed an up scale our look bsr and the team went through every step with us and where professional from start to finish on time and clean throughout the process we wouldn't use anyone eles going forward",
+      project: "Business Unit Revamp"
     }
   ];
 
@@ -115,7 +125,7 @@ export default function ReviewsPage() {
 
   const stats = [
     { icon: <Star size={32} />, value: "5.0", label: "Average Rating" },
-    { icon: <Users size={32} />, value: "9", label: "Google Reviews" },
+    { icon: <Users size={32} />, value: "10", label: "Google Reviews" },
     { icon: <ThumbsUp size={32} />, value: "100%", label: "Satisfaction Rate" },
     { icon: <Award size={32} />, value: "5*", label: "Star Rating" },
   ];

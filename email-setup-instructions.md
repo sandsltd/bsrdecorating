@@ -55,19 +55,30 @@ Once configured, the quote request form will:
 ### Default Recipients
 - **All form submissions** automatically go to: `info@bsrdecorating.co.uk`
 
-### Additional Recipients (Optional)
-- Set `EMAIL_TO` environment variable to send copies to additional email addresses
-- If `EMAIL_TO` is different from the default, both emails will receive submissions
-- If `EMAIL_TO` is the same as default, only one email is sent (no duplicates)
+### Multiple Recipients (EMAIL_TO)
+- Set `EMAIL_TO` environment variable for additional email addresses
+- Supports multiple emails separated by commas
+- Automatically removes duplicates and trims whitespace
+
+### BCC Recipients (EMAIL_BCC)
+- Set `EMAIL_BCC` environment variable for blind carbon copy recipients
+- Supports multiple emails separated by commas
+- Recipients won't see each other's email addresses
 
 ### Examples:
 ```bash
-# Send to both info@bsrdecorating.co.uk AND ben@example.com
-EMAIL_TO=ben@example.com
+# Multiple recipients (all visible to each other)
+EMAIL_TO=info@bsrdecorating.co.uk,hello@saunders-simmons.co.uk
 
-# Send only to info@bsrdecorating.co.uk (no additional recipient)
-EMAIL_TO=info@bsrdecorating.co.uk
-# OR simply don't set EMAIL_TO at all
+# BCC recipient (hidden from main recipients)
+EMAIL_BCC=hello@saunders-simmons.co.uk
+
+# Both TO and BCC
+EMAIL_TO=info@bsrdecorating.co.uk,ben@example.com
+EMAIL_BCC=hello@saunders-simmons.co.uk,admin@company.com
+
+# Single additional recipient
+EMAIL_TO=hello@saunders-simmons.co.uk
 ```
 
 ## Current Status
