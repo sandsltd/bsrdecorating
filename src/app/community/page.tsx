@@ -421,7 +421,7 @@ export default function CommunityPage() {
               <span>Email Us About Community Projects</span>
             </a>
             <a
-              href="tel:07805469770"
+              href="tel:01626911236"
               className="border-2 border-bsr-highlight text-bsr-highlight hover:bg-bsr-highlight hover:text-bsr-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2"
             >
               <Phone size={20} />

@@ -16,7 +16,7 @@ export default function ContactPage() {
       icon: <Phone size={24} />,
       title: "Phone",
       details: ["01626 911236"],
-      link: "tel:07805469770"
+      link: "tel:01626911236"
     },
     {
       icon: <Mail size={24} />,
@@ -47,7 +47,7 @@ export default function ContactPage() {
     "mainEntity": {
       "@type": "LocalBusiness",
       "name": "BSR Decorating",
-      "telephone": "+447805469770",
+      "telephone": "+441626911236",
       "email": "info@bsrdecorating.co.uk",
       "address": {
         "@type": "PostalAddress",

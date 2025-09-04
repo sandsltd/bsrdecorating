@@ -70,7 +70,7 @@ export default function RootLayout({
     "name": "BSR Decorating",
     "description": "Professional domestic and commercial decorating services across Devon",
     "url": "https://bsrdecorating.co.uk",
-    "telephone": "+447805469770",
+    "telephone": "+441626911236",
     "email": "info@bsrdecorating.co.uk",
     "address": {
       "@type": "PostalAddress",

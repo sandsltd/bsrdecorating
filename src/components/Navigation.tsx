@@ -61,7 +61,7 @@ const Navigation = () => {
             {/* Right side contact info */}
             <div className="flex items-center">
               <a
-                href="tel:07805469770"
+                href="tel:01626911236"
                 className="text-bsr-white hover:text-bsr-highlight transition-colors duration-200 font-medium text-sm flex items-center space-x-2 px-3 py-1"
               >
                 <Phone size={14} />
@@ -85,7 +85,7 @@ const Navigation = () => {
       <div className="md:hidden bg-bsr-highlight py-2 px-4">
         <div className="max-w-7xl mx-auto flex justify-center items-center">
           <a
-            href="tel:07805469770"
+            href="tel:01626911236"
             className="text-bsr-white font-medium flex items-center space-x-2 hover:opacity-90 transition-opacity duration-200"
           >
             <Phone size={16} />
