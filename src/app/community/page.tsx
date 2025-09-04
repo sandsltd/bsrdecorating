@@ -355,7 +355,7 @@ export default function CommunityPage() {
             <div className="bg-bsr-black bg-opacity-50 rounded-lg p-8 border border-bsr-gray-light">
               <h3 className="text-2xl font-bold text-bsr-highlight mb-4">Supporting Local Business</h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                We prioritize working with local suppliers and subcontractors whenever possible, 
+                We prioritise working with local suppliers and subcontractors whenever possible, 
                 helping to keep money circulating within our Devon communities. From paint suppliers 
                 to equipment hire, we choose local first.
               </p>

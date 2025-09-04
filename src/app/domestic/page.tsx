@@ -118,7 +118,7 @@ export default function DomesticPage() {
     },
     {
       question: "Do you work around my schedule?",
-      answer: "We understand family life and work commitments. We offer flexible scheduling including weekend consultations and can work around your routine to minimize disruption. For interior work, we'll discuss the best approach to keep your home functional during the project."
+      answer: "We understand family life and work commitments. We offer flexible scheduling including weekend consultations and can work around your routine to minimise disruption. For interior work, we'll discuss the best approach to keep your home functional during the project."
     },
     {
       question: "What&apos;s included in your domestic decorating service?",

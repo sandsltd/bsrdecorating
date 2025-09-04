@@ -16,7 +16,7 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'As a landlord or letting agent, you understand that vacant properties mean lost revenue. Every day a property remains empty between tenants directly impacts your bottom line. One of the most effective ways to minimize void periods and attract quality tenants is through professional end-of-tenancy decorating.'
+        content: 'As a landlord or letting agent, you understand that vacant properties mean lost revenue. Every day a property remains empty between tenants directly impacts your bottom line. One of the most effective ways to minimise void periods and attract quality tenants is through professional end-of-tenancy decorating.'
       },
       {
         type: 'heading',
@@ -217,7 +217,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Ready to minimize your next void period? Contact BSR Decorating today for a free, no-obligation quote on your end-of-tenancy decorating requirements.'
+        content: 'Ready to minimise your next void period? Contact BSR Decorating today for a free, no-obligation quote on your end-of-tenancy decorating requirements.'
       }
     ]
   },
@@ -380,7 +380,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Successful commercial decorating requires careful planning to minimize business disruption while achieving optimal results.'
+        content: 'Successful commercial decorating requires careful planning to minimise business disruption while achieving optimal results.'
       },
       {
         type: 'subheading',
@@ -396,7 +396,7 @@ export const blogContent: Record<string, BlogContentData> = {
         content: [
           'Phased approach: Completing work in sections to maintain partial operations',
           'Out-of-hours working: Evening and weekend work to avoid peak business times',
-          'Dust and odour control: Professional techniques to minimize impact on ongoing operations',
+          'Dust and odour control: Professional techniques to minimise impact on ongoing operations',
           'Flexible scheduling: Adapting to unexpected business requirements'
         ]
       },

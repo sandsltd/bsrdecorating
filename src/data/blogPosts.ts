@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: 1,
     title: "The Importance of End-of-Tenancy Decorating for Landlords and Letting Agents",
-    excerpt: "Discover how professional end-of-tenancy decorating can reduce void periods, attract quality tenants, and maximize rental returns for landlords and letting agents.",
+    excerpt: "Discover how professional end-of-tenancy decorating can reduce void periods, attract quality tenants, and maximise rental returns for landlords and letting agents.",
     category: "Landlord Services",
     date: "2025-01-20",
     readTime: "8 min read",
@@ -33,7 +33,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: 3,
     title: "Cost-Effective Decorating Solutions for Rental Properties and HMOs",
-    excerpt: "Maximize your rental property portfolio with smart decorating choices. Learn about hardwearing finishes, strategic colour schemes, and efficient turnaround solutions for HMOs and rental properties.",
+    excerpt: "Maximise your rental property portfolio with smart decorating choices. Learn about hardwearing finishes, strategic colour schemes, and efficient turnaround solutions for HMOs and rental properties.",
     category: "Property Investment",
     date: "2025-01-15",
     readTime: "9 min read",
