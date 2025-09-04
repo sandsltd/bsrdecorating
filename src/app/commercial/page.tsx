@@ -74,14 +74,14 @@ export default function CommercialPage() {
 
   const coverageAreas = [
     { area: "Dawlish", type: "HQ", description: "Our headquarters and commercial hub" },
-    { area: "Newton Abbot", type: "main", description: "Full commercial services available" },
-    { area: "Bovey Tracey", type: "main", description: "Business and retail decorating" },
-    { area: "Torquay", type: "main", description: "Tourism and hospitality sector specialist" },
-    { area: "Exeter", type: "main", description: "City centre and business parks" },
-    { area: "Topsham", type: "main", description: "Historic commercial properties" },
-    { area: "Exmouth", type: "main", description: "Coastal commercial properties" },
-    { area: "Plymouth", type: "larger", description: "Large commercial and industrial projects" },
-    { area: "Honiton", type: "larger", description: "Commercial property portfolios" }
+    { area: "Newton Abbot", type: "main", description: "Regular service area" },
+    { area: "Bovey Tracey", type: "main", description: "Regular service area" },
+    { area: "Torquay", type: "main", description: "Regular service area" },
+    { area: "Exeter", type: "main", description: "Regular service area" },
+    { area: "Topsham", type: "main", description: "Regular service area" },
+    { area: "Exmouth", type: "main", description: "Regular service area" },
+    { area: "Plymouth", type: "larger", description: "Extended coverage area" },
+    { area: "Honiton", type: "larger", description: "Extended coverage area" }
   ];
 
   const faqs = [
@@ -311,12 +311,14 @@ export default function CommercialPage() {
                     : 'bg-bsr-black border border-bsr-gray-light text-gray-300 hover:border-bsr-yellow'
                 }`}
               >
-                <h3 className={`font-semibold mb-1 ${area.type === 'HQ' ? 'text-lg' : 'text-base'}`}>
+                <h3 className={`font-semibold ${area.description ? 'mb-1' : ''} ${area.type === 'HQ' ? 'text-lg' : 'text-base'}`}>
                   {area.area}
                 </h3>
-                <p className={`text-xs ${area.type === 'HQ' ? 'text-bsr-white/90' : area.type === 'main' ? 'text-gray-300' : 'text-gray-400'}`}>
-                  {area.description}
-                </p>
+                {area.description && (
+                  <p className={`text-xs ${area.type === 'HQ' ? 'text-bsr-white/90' : area.type === 'main' ? 'text-gray-300' : 'text-gray-400'}`}>
+                    {area.description}
+                  </p>
+                )}
               </div>
             ))}
           </div>

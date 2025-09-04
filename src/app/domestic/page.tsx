@@ -72,15 +72,15 @@ export default function DomesticPage() {
   ];
 
   const coverageAreas = [
-    { area: "Dawlish", type: "HQ", description: "Our headquarters and main service base" },
-    { area: "Newton Abbot", type: "main", description: "Full domestic services available" },
-    { area: "Bovey Tracey", type: "main", description: "All decorating services" },
-    { area: "Torquay", type: "main", description: "Complete home decoration" },
-    { area: "Exeter", type: "main", description: "City and surrounding areas" },
-    { area: "Topsham", type: "main", description: "Historic property specialists" },
-    { area: "Exmouth", type: "main", description: "Coastal property experts" },
-    { area: "Plymouth", type: "larger", description: "Larger domestic projects" },
-    { area: "Honiton", type: "larger", description: "Heritage restoration projects" }
+    { area: "Dawlish", type: "HQ", description: "Our headquarters and commercial hub" },
+    { area: "Newton Abbot", type: "main", description: "Regular service area" },
+    { area: "Bovey Tracey", type: "main", description: "Regular service area" },
+    { area: "Torquay", type: "main", description: "Regular service area" },
+    { area: "Exeter", type: "main", description: "Regular service area" },
+    { area: "Topsham", type: "main", description: "Regular service area" },
+    { area: "Exmouth", type: "main", description: "Regular service area" },
+    { area: "Plymouth", type: "larger", description: "Extended coverage area" },
+    { area: "Honiton", type: "larger", description: "Extended coverage area" }
   ];
 
   const faqs = [
