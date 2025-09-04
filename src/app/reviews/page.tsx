@@ -3,7 +3,7 @@
 import Head from 'next/head';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Star, Quote, ThumbsUp, Award, Users } from 'lucide-react';
+import { Star, Quote, ThumbsUp, Award, Users, ExternalLink } from 'lucide-react';
 import { useQuoteModal } from '@/contexts/QuoteModalContext';
 
 
@@ -197,9 +197,26 @@ export default function ReviewsPage() {
           <h1 className="text-4xl md:text-6xl font-bold text-bsr-white mb-4">
             Customer <span className="text-bsr-highlight">Reviews</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
             Don&apos;t just take our word for it - hear from our satisfied customers about their experience with BSR Decorating
           </p>
+          
+          {/* Leave a Review Button */}
+          <div className="mt-8">
+            <a
+              href="https://g.page/r/CavCrG_DSS5wEBM/review"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-3 bg-[#4285f4] hover:bg-[#3367d6] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              <Star size={20} className="text-yellow-300" />
+              <span>Leave Us a Google Review</span>
+              <ExternalLink size={18} />
+            </a>
+            <p className="text-sm text-gray-400 mt-3">
+              Share your experience and help others discover our services
+            </p>
+          </div>
         </div>
       </section>
 
