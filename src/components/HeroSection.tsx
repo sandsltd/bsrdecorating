@@ -65,14 +65,19 @@ const HeroSection = () => {
           {/* Left Content - Mobile: Separate sections, Desktop: Single container */}
           <div className="md:backdrop-blur-md md:bg-bsr-black/20 md:rounded-2xl md:p-6 lg:p-8 md:border md:border-bsr-gray-light/30 md:shadow-2xl">
             {/* Rating Badge */}
-            <div className="inline-flex items-center space-x-2 bg-bsr-black/70 backdrop-blur-sm border border-bsr-highlight rounded-full px-4 py-2 mb-8 shadow-lg">
+            <a
+              href="https://share.google/2x9XTKoO4xSoPgnC6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 bg-bsr-black/70 backdrop-blur-sm border border-bsr-highlight rounded-full px-4 py-2 mb-8 shadow-lg hover:bg-bsr-black/80 hover:border-bsr-yellow transition-all duration-200 hover:shadow-xl"
+            >
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} size={16} className="text-bsr-yellow fill-current" />
                 ))}
               </div>
               <span className="text-bsr-highlight font-semibold">5.0 on Google</span>
-            </div>
+            </a>
 
             {/* Main Headline */}
             <div className="mb-6">
@@ -95,7 +100,7 @@ const HeroSection = () => {
               <p className="text-lg text-gray-300 leading-relaxed">
                 Our experienced team of professional decorators brings over 20 years of expertise to every project. 
                 We specialise in commercial and domestic interior and exterior painting, wallpaper installation, 
-                and complete property transformations. Quality workmanship and exceptional results guaranteed.
+                plus complete property transformations. Quality workmanship and exceptional results guaranteed.
               </p>
             </div>
 
