@@ -38,10 +38,10 @@ export const metadata: Metadata = {
     siteName: "BSR Decorating",
     images: [
       {
-        url: "/images/Business decorating image.jpeg",
+        url: "/Logos/BSR Logo-8.png",
         width: 1200,
         height: 630,
-        alt: "BSR Decorating - Professional decorating services in Devon"
+        alt: "BSR Decorating Logo - Professional decorating services in Devon"
       }
     ]
   },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "BSR Decorating - Professional Painters & Decorators in Devon",
     description: "Expert decorating services across Dawlish, Newton Abbot, Torquay, Exeter & surrounding Devon areas.",
-    images: ["/images/Business decorating image.jpeg"]
+    images: ["/Logos/BSR Logo-8.png"]
   },
   other: {
     "geo.region": "GB-DEV",
