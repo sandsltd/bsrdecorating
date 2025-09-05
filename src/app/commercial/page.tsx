@@ -133,7 +133,7 @@ export default function CommercialPage() {
         title="Commercial Decorating Services"
         subtitle="Professional decorating solutions for businesses across South East Devon"
         description="Specialising in eco-friendly commercial decorating with minimal business disruption. From office renovations to multi-property projects, our 20 years of experience ensures your business transformation exceeds expectations while maintaining operational efficiency."
-        image="/portfolio/project13/PHOTO-2025-09-02-12-45-21.jpg"
+        image="/images/commercialdecorating.jpg"
       />
 
       {/* Process */}
