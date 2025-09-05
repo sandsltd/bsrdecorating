@@ -59,6 +59,7 @@ export async function POST(request: NextRequest) {
 
     // Additional services list
     const additionalServices = [];
+    if (formData.interiorDecorating) additionalServices.push('Interior Decorating');
     if (formData.externalDecorating) additionalServices.push('Exterior Decorating');
     if (formData.garageDoor) additionalServices.push('Garage Door Painting');
     if (formData.frontDoor) additionalServices.push('Front Door Painting');
