@@ -1008,6 +1008,61 @@ export const projects: Project[] = [
     ],
     rating: 5,
     featured: false
+  },
+  {
+    id: 21,
+    title: 'Rental Property Complete Refresh - High-End Finish',
+    category: 'domestic',
+    type: 'video',
+    description: 'Complete refresh of a Dawlish rental property with high-end finishes and extremely durable paints for long-lasting results. Included complimentary front door painting and full property cleaning for a stress-free handover.',
+    fullDescription: 'This Dawlish property was purchased as a rental investment and required a complete refresh to prepare it for tenants. We delivered a high-end finish throughout while using extremely durable paints to ensure longevity in a rental environment. The project demanded a quick turnaround without compromising on quality. We went the extra mile by painting the front door free of charge and providing a full clean including hoovering and mopping, making it a completely stress-free process for the client. Every surface was carefully prepared and painted to rental-grade durability standards while maintaining an upmarket aesthetic that would appeal to quality tenants.',
+    location: 'Dawlish',
+    specialFeatures: [
+      'Rental-grade durable paint systems',
+      'High-end finish throughout',
+      'Quick turnaround project',
+      'Complimentary front door painting',
+      'Full property cleaning service',
+      'Stress-free client experience',
+      'Investment property preparation'
+    ],
+    image: '/portfolio/project21/PHOTO-2025-09-05-15-28-42.jpg',
+    images: [
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-42.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-41.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-40.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-40 2.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-40 3.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-33.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-33 2.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-32.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-31.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-30.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-30 2.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-29.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-28.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-26.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-25.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-53.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-50.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-50 2.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-49.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-49 2.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-48.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-47.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-45.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-44.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-28-44 2.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-17-08.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-17-07.jpg',
+      '/portfolio/project21/PHOTO-2025-09-05-15-17-07 2.jpg'
+    ],
+    videos: [
+      '/portfolio/project21/VIDEO-2025-09-05-15-28-25.mp4',
+      '/portfolio/project21/VIDEO-2025-09-05-15-18-17.mp4'
+    ],
+    rating: 5,
+    featured: false
   }
 ];
 
