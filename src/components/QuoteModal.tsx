@@ -12,6 +12,7 @@ interface FormData {
   postcode: string;
   serviceType: 'domestic' | 'commercial';
   numberOfRooms: string;
+  interiorDecorating: boolean;
   externalDecorating: boolean;
   garageDoor: boolean;
   frontDoor: boolean;
@@ -40,6 +41,7 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
     postcode: '',
     serviceType: 'domestic',
     numberOfRooms: '',
+    interiorDecorating: false,
     externalDecorating: false,
     garageDoor: false,
     frontDoor: false,
@@ -72,6 +74,7 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
         postcode: '',
         serviceType: 'domestic',
         numberOfRooms: '',
+        interiorDecorating: false,
         externalDecorating: false,
         garageDoor: false,
         frontDoor: false,
@@ -198,7 +201,7 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
     } else {
       // For domestic, either number of rooms OR at least one service must be provided
       const hasRooms = formData.numberOfRooms.trim() !== '';
-      const hasService = formData.externalDecorating || formData.garageDoor || formData.frontDoor || formData.wallpaperHanging || formData.colourConsultation;
+      const hasService = formData.interiorDecorating || formData.externalDecorating || formData.garageDoor || formData.frontDoor || formData.wallpaperHanging || formData.colourConsultation;
       return hasRooms || hasService;
     }
   };
@@ -310,6 +313,15 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
             </label>
             <p className="text-sm text-gray-400 mb-3">Please provide number of rooms above OR select at least one service below</p>
             <div className="space-y-2">
+              <label className="flex items-center p-3 border border-bsr-gray-light rounded-lg hover:border-bsr-highlight transition-colors">
+                <input
+                  type="checkbox"
+                  checked={formData.interiorDecorating}
+                  onChange={(e) => updateFormField('interiorDecorating', e.target.checked)}
+                  className="mr-3 text-bsr-highlight focus:ring-bsr-highlight"
+                />
+                <span className="text-gray-300">Interior Decorating</span>
+              </label>
               <label className="flex items-center p-3 border border-bsr-gray-light rounded-lg hover:border-bsr-highlight transition-colors">
                 <input
                   type="checkbox"
