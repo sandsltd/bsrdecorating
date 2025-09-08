@@ -348,8 +348,8 @@ export default function ReviewsPage() {
             >
               Get Free Quote
             </button>
-            <a
-              href="/gallery"
+            <Link
+              href="/portfolio"
               className="border-2 border-bsr-white text-bsr-white hover:bg-bsr-white hover:text-bsr-highlight px-8 py-3 rounded-md font-semibold transition-colors duration-200"
             >
               View Our Work

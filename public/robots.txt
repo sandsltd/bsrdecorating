@@ -4,7 +4,7 @@ Allow: /
 # High-value pages for crawling
 Allow: /domestic
 Allow: /commercial
-Allow: /gallery
+Allow: /portfolio
 Allow: /blog
 Allow: /contact
 Allow: /reviews

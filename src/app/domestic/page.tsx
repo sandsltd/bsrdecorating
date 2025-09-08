@@ -1,6 +1,22 @@
-'use client';
-
+import { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: "Domestic Decorating Services | Professional House Painters Devon | BSR Decorating",
+  description: "Expert domestic decorating services across Devon. Specialising in eco-friendly interior & exterior house painting, wallpaper hanging, and heritage restoration. Free quotes.",
+  keywords: "domestic decorating Devon, house painters Dawlish, interior painting Newton Abbot, exterior decorating Exeter, wallpaper hanging Torquay, heritage restoration Devon",
+  alternates: {
+    canonical: "https://bsrdecorating.co.uk/domestic"
+  },
+  openGraph: {
+    title: "Domestic Decorating Services | BSR Decorating Devon",
+    description: "Professional domestic decorating services across Devon. Eco-friendly painting and heritage restoration specialists.",
+    url: "https://bsrdecorating.co.uk/domestic",
+    type: "website"
+  }
+};
+
+'use client';
 import { Check, Star, Phone, Clock, Shield, Palette, ChevronDown, ChevronUp } from 'lucide-react';
 import { useState } from 'react';
 import ServiceHero from '@/components/ServiceHero';
@@ -437,7 +453,7 @@ export default function DomesticPage() {
               <span>Get Free Quote</span>
             </button>
             <Link
-              href="/gallery"
+              href="/portfolio"
               className="border-2 border-bsr-white text-bsr-white hover:bg-bsr-white hover:text-bsr-highlight px-8 py-3 rounded-md font-semibold transition-colors duration-200"
             >
               View Our Work

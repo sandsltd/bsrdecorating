@@ -34,7 +34,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Our experience working with landlords across Devon shows that freshly decorated properties consistently rent faster than those showing signs of wear and tear. Clean, bright walls and ceilings create an immediate positive impression, making tenants more likely to commit during their viewing. See examples in our [project gallery](/gallery).'
+        content: 'Our experience working with landlords across Devon shows that freshly decorated properties consistently rent faster than those showing signs of wear and tear. Clean, bright walls and ceilings create an immediate positive impression, making tenants more likely to commit during their viewing. See examples in our [project portfolio](/portfolio).'
       },
       {
         type: 'paragraph',
@@ -402,7 +402,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Interested in seeing examples of our commercial work? Browse our [project gallery](/gallery) to see transformations across various business types.'
+        content: 'Interested in seeing examples of our commercial work? Browse our [project portfolio](/portfolio) to see transformations across various business types.'
       },
       {
         type: 'link',
@@ -634,7 +634,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Looking for inspiration? Check out our [gallery of completed projects](/gallery) to see how professional decoration transforms rental properties.'
+        content: 'Looking for inspiration? Check out our [portfolio of completed projects](/portfolio) to see how professional decoration transforms rental properties.'
       },
       {
         type: 'link',

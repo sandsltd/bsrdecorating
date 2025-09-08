@@ -1,6 +1,22 @@
-'use client';
-
+import { Metadata } from 'next';
 import { useState, useEffect } from 'react';
+
+export const metadata: Metadata = {
+  title: "Project Portfolio | BSR Decorating Work Gallery - Dawlish, Newton Abbot, Torquay & Exeter",
+  description: "View our completed decorating projects across Devon. Professional painting and decorating portfolio showcasing domestic and commercial work in Dawlish, Newton Abbot, Torquay, Exeter and surrounding areas.",
+  keywords: "decorating portfolio Devon, painting projects gallery, before after decorating, BSR project examples, decorating work Dawlish Newton Abbot Torquay Exeter, completed decorating projects, professional decorating gallery",
+  alternates: {
+    canonical: "https://bsrdecorating.co.uk/portfolio"
+  },
+  openGraph: {
+    title: "Project Portfolio | BSR Decorating Devon",
+    description: "Completed decorating projects across Devon - see our professional work",
+    url: "https://bsrdecorating.co.uk/portfolio",
+    type: "website"
+  }
+};
+
+'use client';
 import Image from 'next/image';
 import Head from 'next/head';
 import { motion } from 'framer-motion';

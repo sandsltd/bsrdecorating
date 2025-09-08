@@ -8,12 +8,16 @@ import { QuoteModalProvider } from "@/contexts/QuoteModalContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://bsrdecorating.co.uk'),
   title: "BSR Decorating - Professional Painters & Decorators in Dawlish, Newton Abbot, Torquay & Exeter, Devon",
   description: "Professional domestic & commercial decorating services across Dawlish, Newton Abbot, Torquay, Exeter, Topsham & Exmouth. Expert painters & decorators in Devon. Free quotes, quality workmanship, competitive prices.",
   keywords: "painters decorators Dawlish, decorating services Newton Abbot, painters Torquay, decorators Exeter, commercial decorating Devon, domestic decorating Topsham, painting contractors Exmouth, decorators Bovey Tracey, house painters Devon, office decorating Devon",
   authors: [{ name: "BSR Decorating" }],
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
+  alternates: {
+    canonical: "https://bsrdecorating.co.uk"
+  },
   icons: {
     icon: [
       { url: '/favicon/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
