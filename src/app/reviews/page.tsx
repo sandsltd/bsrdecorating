@@ -2,6 +2,7 @@
 
 import Head from 'next/head';
 import { useState } from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Star, Quote, ThumbsUp, Award, Users, ExternalLink } from 'lucide-react';
 import { useQuoteModal } from '@/contexts/QuoteModalContext';
@@ -353,7 +354,7 @@ export default function ReviewsPage() {
               className="border-2 border-bsr-white text-bsr-white hover:bg-bsr-white hover:text-bsr-highlight px-8 py-3 rounded-md font-semibold transition-colors duration-200"
             >
               View Our Work
-            </a>
+            </Link>
           </div>
         </div>
       </section>

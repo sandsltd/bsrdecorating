@@ -1,22 +1,6 @@
-import { Metadata } from 'next';
-import Link from 'next/link';
-
-export const metadata: Metadata = {
-  title: "Commercial Decorating Services | Professional Business Painters Devon | BSR Decorating",
-  description: "Expert commercial decorating services across Devon. Office painting, retail spaces, industrial projects. Out-of-hours working, minimal disruption. Free commercial quotes.",
-  keywords: "commercial decorating Devon, office painters Dawlish, business decorating Newton Abbot, retail painting Exeter, industrial decorating Torquay, commercial painters Devon",
-  alternates: {
-    canonical: "https://bsrdecorating.co.uk/commercial"
-  },
-  openGraph: {
-    title: "Commercial Decorating Services | BSR Decorating Devon",
-    description: "Professional commercial decorating services across Devon. Minimal disruption, out-of-hours working available.",
-    url: "https://bsrdecorating.co.uk/commercial",
-    type: "website"
-  }
-};
-
 'use client';
+
+import Link from 'next/link';
 import { Check, Star, Phone, Clock, Shield, Building, ChevronDown, ChevronUp } from 'lucide-react';
 import { useState } from 'react';
 import ServiceHero from '@/components/ServiceHero';

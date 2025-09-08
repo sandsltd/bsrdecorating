@@ -125,7 +125,7 @@ export default function DawlishPage() {
               
               <h4 className="text-lg font-semibold text-bsr-white mb-3">Quality Materials</h4>
               <p className="text-gray-300">
-                We use high-quality, weather-resistant paints and materials perfect for Dawlish's coastal environment.
+                We use high-quality, weather-resistant paints and materials perfect for Dawlish&apos;s coastal environment.
               </p>
             </div>
             <div>
