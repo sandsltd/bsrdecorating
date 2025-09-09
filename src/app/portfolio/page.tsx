@@ -208,12 +208,15 @@ export default function PortfolioPage() {
                 >
                   {/* Project Image */}
                   <div className="relative h-64 overflow-hidden">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    quality={75}
+                  />
                     <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-10 transition-all duration-300" />
                     
                     {/* Project Type Icon */}
@@ -332,7 +335,10 @@ export default function PortfolioPage() {
                           alt={`${project.title} - Image ${currentImageIndex + 1}`}
                           fill
                           className="object-contain p-4"
-                          priority
+                          priority={currentImageIndex === 0}
+                          loading={currentImageIndex === 0 ? 'eager' : 'lazy'}
+                          sizes="(max-width: 768px) 100vw, 90vw"
+                          quality={85}
                         />
                         
                         {/* Image Counter */}

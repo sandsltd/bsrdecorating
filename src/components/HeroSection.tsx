@@ -36,26 +36,41 @@ const HeroSection = () => {
     
     return () => clearInterval(interval);
   }, [backgroundImages.length]);
+
+  // Preload next image for smoother transitions
+  useEffect(() => {
+    const nextIndex = (currentImageIndex + 1) % backgroundImages.length;
+    const img = new window.Image();
+    img.src = backgroundImages[nextIndex];
+  }, [currentImageIndex, backgroundImages]);
   
   return (
     <section className="relative min-h-screen bg-bsr-black flex items-center justify-center pt-28 md:pt-16 lg:pt-28">
       {/* Image Background Slideshow */}
       <div className="absolute inset-0 overflow-hidden">
-        {backgroundImages.map((image, index) => (
-          <Image
-            key={image}
-            src={image}
-            alt="BSR Decorating Professional Work"
-            fill
-            className={`object-cover transition-opacity duration-1000 ${
-              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
-            }`}
-            style={{
-              objectPosition: 'center center'
-            }}
-            priority={index === 0}
-          />
-        ))}
+        {backgroundImages.map((image, index) => {
+          // Only render first 3 images initially for better performance
+          const shouldRender = index <= 2 || index === currentImageIndex;
+          
+          return shouldRender ? (
+            <Image
+              key={image}
+              src={image}
+              alt="BSR Decorating Professional Work"
+              fill
+              className={`object-cover transition-opacity duration-1000 ${
+                index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+              }`}
+              style={{
+                objectPosition: 'center center'
+              }}
+              priority={index === 0}
+              loading={index === 0 ? 'eager' : 'lazy'}
+              sizes="100vw"
+              quality={index === 0 ? 90 : 75}
+            />
+          ) : null;
+        })}
         {/* Overlay for text readability */}
         <div className="absolute inset-0 bg-bsr-black/40 md:bg-bsr-black/60"></div>
       </div>
