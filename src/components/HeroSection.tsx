@@ -4,13 +4,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Phone, Star } from 'lucide-react';
 import { useQuoteModal } from '@/contexts/QuoteModalContext';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 
 const HeroSection = () => {
   const { openQuoteModal } = useQuoteModal();
   
-  // Array of background images to cycle through
-  const backgroundImages = [
+  // Array of background images to cycle through - memoized to prevent re-renders
+  const backgroundImages = useMemo(() => [
     "/heroloop/PHOTO-2025-09-03-11-16-34.JPG",
     "/heroloop/f93bd364-aa09-43a8-b158-b11ae1c1f4da.JPG",
     "/heroloop/e9b8ed9c-03ff-4b21-aa11-2752d032f63d.JPG",
@@ -23,7 +23,7 @@ const HeroSection = () => {
     "/heroloop/5fecae60-ae8a-4ff9-bc67-d79c0447e195.JPG",
     "/heroloop/01dcd149-3c15-4565-b78f-f272cbd9f086.JPG",
     "/heroloop/0be4ca73-ac98-48de-97d2-dded0ac3511f.JPG"
-  ];
+  ], []);
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   

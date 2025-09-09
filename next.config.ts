@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Target modern browsers to reduce JavaScript bundle size
+  compiler: {
+    // Remove console logs in production for smaller bundles
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
   images: {
     remotePatterns: [
       {

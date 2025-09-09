@@ -1,0 +1,19 @@
+# Browsers that we support
+
+# Modern browsers (last 2 versions)
+last 2 Chrome versions
+last 2 Firefox versions
+last 2 Safari versions
+last 2 Edge versions
+
+# Support browsers with >0.5% usage globally
+>0.5%
+
+# Exclude very old browsers to reduce polyfills
+not ie <= 11
+not op_mini all
+not dead
+
+# Support modern mobile browsers
+last 2 iOS versions
+last 2 Android versions

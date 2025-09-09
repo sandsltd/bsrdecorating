@@ -1,6 +1,6 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextResponse } from 'next/server'
 
-export function middleware(request: NextRequest) {
+export function middleware() {
   // EMERGENCY: Disable all redirects to keep site live
   return NextResponse.next()
 }
