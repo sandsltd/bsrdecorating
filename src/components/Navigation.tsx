@@ -101,10 +101,11 @@ const Navigation = () => {
             <Image
               src="/Logos/BSR Logo-7.png"
               alt="BSR Decorating"
-              width={120}
-              height={40}
+              width={60}
+              height={60}
               className="h-10 w-auto"
               priority
+              quality={75}
             />
             <span className="text-bsr-white font-semibold text-sm md:text-lg">
               BSR Decorating

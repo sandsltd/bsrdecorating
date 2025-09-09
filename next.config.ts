@@ -21,6 +21,8 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 31536000, // 1 year
     dangerouslyAllowSVG: false,
     contentDispositionType: 'attachment',
+    unoptimized: false,
+    loader: 'default',
   },
   async headers() {
     return [

@@ -17,9 +17,10 @@ const Footer = () => {
               <Image
                 src="/Logos/BSR Logo-7.png"
                 alt="BSR Decorating"
-                width={150}
-                height={50}
+                width={80}
+                height={80}
                 className="h-12 w-auto"
+                quality={75}
               />
             </div>
             <p className="text-gray-300 mb-4">

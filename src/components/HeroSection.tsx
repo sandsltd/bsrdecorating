@@ -172,9 +172,10 @@ const HeroSection = () => {
                 <Image
                   src="/Logos/Logo white.png"
                   alt="BSR Decorating Logo"
-                  width={240}
-                  height={240}
-                  className="h-48 w-48 drop-shadow-lg"
+                  width={120}
+                  height={120}
+                  className="h-24 w-24 drop-shadow-lg"
+                  quality={80}
                 />
               </div>
             </div>
