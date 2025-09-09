@@ -68,6 +68,7 @@ const HeroSection = () => {
               loading={index === 0 ? 'eager' : 'lazy'}
               sizes="100vw"
               quality={index === 0 ? 90 : 75}
+              fetchPriority={index === 0 ? 'high' : 'low'}
             />
           ) : null;
         })}

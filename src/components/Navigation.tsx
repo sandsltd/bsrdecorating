@@ -106,6 +106,7 @@ const Navigation = () => {
               className="h-10 w-auto"
               priority
               quality={75}
+              fetchPriority="high"
             />
             <span className="text-bsr-white font-semibold text-sm md:text-lg">
               BSR Decorating
