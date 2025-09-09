@@ -119,6 +119,26 @@ export default function ReviewsPage() {
       date: "2025-01-15",
       text: "We used Bsr to revamp our business unit where we sorely needed an up scale our look bsr and the team went through every step with us and where professional from start to finish on time and clean throughout the process we wouldn't use anyone eles going forward",
       project: "Business Unit Revamp"
+    },
+    {
+      id: 11,
+      name: "Julie Coote",
+      location: "Local Guide",
+      rating: 5,
+      service: "domestic",
+      date: "2025-09-07",
+      text: "I am so glad Ben was recommended to me. He did a fantastic job on a house I just bought which needed a complete repaint indoors - walls, ceilings and woodwork. He is a real professional with a great attitude to his work. He gave a time frame which he stuck to and obviously takes a real pride in doing the best job possible. I am so pleased with the result. I highly recommend him!",
+      project: "Complete House Repaint"
+    },
+    {
+      id: 12,
+      name: "Lewis Parker",
+      location: "Local Guide",
+      rating: 5,
+      service: "domestic",
+      date: "2025-09-04",
+      text: "I've used Bens decorating services on multiple occasions both at home and through work. Ben delivers both an excellent service and finish on every job.",
+      project: "Multiple Decorating Projects"
     }
   ];
 
@@ -129,7 +149,7 @@ export default function ReviewsPage() {
 
   const stats = [
     { icon: <Star size={32} />, value: "5.0", label: "Average Rating" },
-    { icon: <Users size={32} />, value: "10", label: "Google Reviews" },
+    { icon: <Users size={32} />, value: "13", label: "Google Reviews" },
     { icon: <ThumbsUp size={32} />, value: "100%", label: "Satisfaction Rate" },
     { icon: <Award size={32} />, value: "5*", label: "Star Rating" },
   ];
@@ -141,7 +161,7 @@ export default function ReviewsPage() {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
-      "reviewCount": "10",
+      "reviewCount": "13",
       "bestRating": "5",
       "worstRating": "1"
     },
