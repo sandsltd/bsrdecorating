@@ -20,15 +20,18 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+      { url: '/favicon.ico', sizes: 'any', type: 'image/x-icon' },
       { url: '/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
       { url: '/favicon/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/favicon/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
     ],
     apple: [
       { url: '/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
     other: [
-      { rel: 'shortcut icon', url: '/favicon/favicon.ico' },
+      { rel: 'shortcut icon', url: '/favicon.ico' },
+      { rel: 'icon', url: '/favicon.ico', type: 'image/x-icon' },
     ],
   },
   manifest: '/manifest.json',
@@ -170,6 +173,8 @@ export default function RootLayout({
   return (
     <html lang="en-GB">
       <head>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
