@@ -1,9 +1,7 @@
 'use client';
 
-import { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
-import { MapPin, Phone, Mail, Star, CheckCircle, ArrowRight, Clock, Award } from 'lucide-react'
+import { MapPin, Phone, Star, CheckCircle, ArrowRight, Clock, Award } from 'lucide-react'
 import ServiceAreaMap from '@/components/ServiceAreaMap'
 import { useQuoteModal } from '@/contexts/QuoteModalContext'
 
