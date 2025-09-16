@@ -41,8 +41,8 @@ export default function BlogPage() {
   return (
     <>
       <Head>
-        <title>Decorating Blog | Tips, Trends & Insights from BSR Decorating Devon</title>
-        <meta name="description" content="Expert decorating tips, trends, and project insights from BSR Decorating. Professional advice on painting, decorating, and property maintenance across Dawlish, Newton Abbot, Torquay, Exeter and Devon." />
+        <title>Decorating Tips & Trends Dawlish, Devon | Expert Painting Advice – BSR Blog</title>
+        <meta name="description" content="FREE expert decorating tips from Dawlish professionals! Painting advice, trends, and insider secrets for Devon homeowners and businesses." />
         <meta name="keywords" content="decorating blog Devon, painting tips Dawlish, home decorating advice, commercial decorating insights, property maintenance blog, decorating trends Newton Abbot Torquay Exeter, professional decorator blog, painting advice Devon" />
         <meta property="og:title" content="Decorating Blog | BSR Decorating Devon" />
         <meta property="og:description" content="Expert decorating tips and insights from professional decorators in Devon" />

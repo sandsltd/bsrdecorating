@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Project Portfolio | BSR Decorating Work Gallery - Dawlish, Newton Abbot, Torquay & Exeter",
-  description: "View our completed decorating projects across Devon. Professional painting and decorating portfolio showcasing domestic and commercial work in Dawlish, Newton Abbot, Torquay, Exeter and surrounding areas.",
+  title: "Decorating Portfolio Dawlish & Devon | Before & After Projects – BSR Decorating",
+  description: "See our stunning before & after decorating projects across Dawlish, Exeter, Torquay and Devon. Real customer transformations and professional results.",
   keywords: "decorating portfolio Devon, painting projects gallery, before after decorating, BSR project examples, decorating work Dawlish Newton Abbot Torquay Exeter, completed decorating projects, professional decorating gallery",
   alternates: {
     canonical: new URL('/portfolio', 'https://bsrdecorating.co.uk')

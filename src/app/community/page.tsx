@@ -50,8 +50,8 @@ export default function CommunityPage() {
   return (
     <>
       <Head>
-        <title>Community & Environmental Commitment | BSR Decorating Devon</title>
-        <meta name="description" content="BSR Decorating's commitment to community and environment. Supporting Surfers Against Sewage, using eco-friendly water-based paints, and protecting Devon's beautiful coastlines through sustainable decorating practices." />
+        <title>Eco-Friendly Decorators Devon | Supporting Local Charities – BSR Community</title>
+        <meta name="description" content="🌊 Eco-friendly decorating that protects Devon's coastlines! Supporting Surfers Against Sewage & local charities. Water-based paints, sustainable practices." />
         <meta name="keywords" content="eco-friendly decorators Devon, environmental decorating, water-based paints, Surfers Against Sewage support, sustainable decorating Devon, community decorators, charitable decorators Devon, environmental commitment" />
         <meta property="og:title" content="Community & Environment | BSR Decorating Devon" />
         <meta property="og:description" content="Our commitment to community and environmental protection in Devon" />

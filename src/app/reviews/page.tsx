@@ -194,8 +194,8 @@ export default function ReviewsPage() {
   return (
     <>
       <Head>
-        <title>Customer Reviews | BSR Decorating Testimonials - 5 Star Rated Decorators Devon</title>
-        <meta name="description" content="Read genuine customer reviews for BSR Decorating. 5-star rated professional decorators with excellent testimonials from satisfied customers across Dawlish, Newton Abbot, Torquay, Exeter and Devon." />
+        <title>⭐ 5-Star Reviews Dawlish Decorators | Real Customer Stories – BSR Decorating</title>
+        <meta name="description" content="⭐ 13 Five-Star Google Reviews! Read why Dawlish, Exeter & Devon customers choose BSR Decorating. Real testimonials from satisfied homeowners." />
         <meta name="keywords" content="BSR Decorating reviews, decorator testimonials Devon, 5 star decorators, customer feedback painting decorating, decorator reviews Dawlish Newton Abbot Torquay Exeter, professional decorator testimonials" />
         <meta property="og:title" content="Customer Reviews | BSR Decorating Devon" />
         <meta property="og:description" content="5-star customer reviews from satisfied clients across Devon" />

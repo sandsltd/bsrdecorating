@@ -47,8 +47,8 @@ export default function CareersPage() {
   return (
     <>
       <Head>
-        <title>Careers | Join BSR Decorating Team - Decorator Jobs Devon</title>
-        <meta name="description" content="Join the BSR Decorating team. Decorator and painter job opportunities across Devon. Work with a professional, established decorating company based in Dawlish serving Newton Abbot, Torquay, Exeter." />
+        <title>Decorator Jobs Devon | Join Our Award-Winning Team – BSR Decorating Careers</title>
+        <meta name="description" content="Join Devon's top-rated decorating team! Exciting opportunities for skilled painters & decorators. Based in Dawlish, serving all of Devon." />
         <meta name="keywords" content="decorator jobs Devon, painter careers, decorating apprenticeships, BSR Decorating jobs, decorator employment Devon, painting jobs Dawlish Newton Abbot, decorating team careers" />
         <meta property="og:title" content="Careers | BSR Decorating Devon" />
         <meta property="og:description" content="Join our professional decorating team in Devon" />

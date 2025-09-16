@@ -1,14 +1,12 @@
-import { Metadata } from 'next'
-import Link from 'next/link'
-import { MapPin, Phone, Mail } from 'lucide-react'
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Professional Decorators Dawlish | BSR Decorating Services',
-  description: 'Expert painting and decorating services in Dawlish, Devon. Local decorators with over 20 years experience. Free quotes, quality workmanship, competitive prices.',
-  keywords: 'decorators Dawlish, painters Dawlish, decorating services Dawlish Devon, local painters decorators, Dawlish painting contractors',
-}
+import Link from 'next/link'
+import { MapPin, Phone, Mail, ArrowRight } from 'lucide-react'
+import { useQuoteModal } from '@/contexts/QuoteModalContext'
 
 export default function DawlishPage() {
+  const { openQuoteModal } = useQuoteModal();
+  
   return (
     <div className="min-h-screen bg-gradient-to-b from-bsr-black via-bsr-gray to-bsr-black">
       {/* Hero Section */}
@@ -22,12 +20,12 @@ export default function DawlishPage() {
             Local decorators with over 20 years of experience serving the community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="/contact"
+            <button
+              onClick={() => openQuoteModal()}
               className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
             >
               Get Free Quote
-            </Link>
+            </button>
             <Link 
               href="/portfolio"
               className="border border-bsr-highlight text-bsr-highlight hover:bg-bsr-highlight hover:text-bsr-white px-8 py-3 rounded-lg font-semibold transition-all duration-200"
@@ -45,17 +43,31 @@ export default function DawlishPage() {
             Our Dawlish Decorating Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
-              <h3 className="text-xl font-semibold text-bsr-white mb-4">Interior Painting</h3>
-              <p className="text-gray-300">Transform your Dawlish home with professional interior painting services.</p>
-            </div>
-            <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
-              <h3 className="text-xl font-semibold text-bsr-white mb-4">Exterior Decorating</h3>
-              <p className="text-gray-300">Protect and beautify your property with expert exterior painting and decorating.</p>
-            </div>
+            <Link href="/domestic" className="group bg-bsr-gray border-2 border-bsr-highlight rounded-lg p-6 hover:border-bsr-highlight hover:bg-bsr-black transition-all duration-200 transform hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl">
+              <h3 className="text-xl font-semibold text-bsr-white mb-4 group-hover:text-bsr-highlight transition-colors duration-200">Domestic Decorating</h3>
+              <p className="text-gray-300 mb-4">Transform your Dawlish home with professional interior and exterior painting services.</p>
+              <div className="flex items-center text-bsr-highlight text-sm font-medium">
+                <span>Learn More</span>
+                <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform duration-200" />
+              </div>
+            </Link>
+            <Link href="/commercial" className="group bg-bsr-gray border-2 border-bsr-highlight rounded-lg p-6 hover:border-bsr-highlight hover:bg-bsr-black transition-all duration-200 transform hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl">
+              <h3 className="text-xl font-semibold text-bsr-white mb-4 group-hover:text-bsr-highlight transition-colors duration-200">Commercial Decorating</h3>
+              <p className="text-gray-300 mb-4">Professional painting and decorating for Dawlish businesses and commercial properties.</p>
+              <div className="flex items-center text-bsr-highlight text-sm font-medium">
+                <span>Learn More</span>
+                <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform duration-200" />
+              </div>
+            </Link>
             <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
               <h3 className="text-xl font-semibold text-bsr-white mb-4">Wallpaper Hanging</h3>
-              <p className="text-gray-300">Professional wallpaper installation and removal services in Dawlish.</p>
+              <p className="text-gray-300 mb-4">Professional wallpaper installation and removal services in Dawlish.</p>
+              <button
+                onClick={() => openQuoteModal()}
+                className="text-bsr-highlight text-sm font-medium hover:text-bsr-white transition-colors duration-200"
+              >
+                Get Quote →
+              </button>
             </div>
           </div>
         </div>

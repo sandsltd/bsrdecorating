@@ -53,6 +53,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/coverage" className="text-gray-300 hover:text-bsr-highlight transition-colors duration-200">
+                  Coverage Areas
+                </Link>
+              </li>
+              <li>
                 <Link href="/community" className="text-gray-300 hover:text-bsr-highlight transition-colors duration-200">
                   Community
                 </Link>
