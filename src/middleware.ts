@@ -1,23 +1,7 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextResponse } from 'next/server'
 
-export function middleware(request: NextRequest) {
-  const url = request.nextUrl.clone()
-  const hostname = url.hostname
-  const protocol = url.protocol
-  
-  // Redirect all www to non-www (modern, clean approach)
-  if (hostname.startsWith('www.')) {
-    url.hostname = hostname.replace('www.', '')
-    return NextResponse.redirect(url, 301)
-  }
-  
-  // Redirect HTTP to HTTPS 
-  if (protocol === 'http:') {
-    url.protocol = 'https:'
-    return NextResponse.redirect(url, 301)
-  }
-  
-  // Continue with the request
+export function middleware() {
+  // EMERGENCY: Disable all redirects to keep site live
   return NextResponse.next()
 }
 

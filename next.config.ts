@@ -67,22 +67,6 @@ const nextConfig: NextConfig = {
       },
     ]
   },
-  async redirects() {
-    return [
-      // Redirect www to non-www (clean, modern approach)
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'www.bsrdecorating.co.uk',
-          },
-        ],
-        destination: 'https://bsrdecorating.co.uk/:path*',
-        permanent: true,
-      },
-    ]
-  },
 };
 
 export default nextConfig;
