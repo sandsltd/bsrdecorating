@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: '🏠 Dawlish\'s most trusted decorators! 20+ years serving the local area. FREE quotes, quality guaranteed. Call your local team today!',
   keywords: 'decorators Dawlish, painters Dawlish, decorating services Dawlish Devon, local painters decorators, Dawlish painting contractors',
   alternates: {
-    canonical: new URL('/areas/dawlish', 'https://bsrdecorating.co.uk')
+    canonical: '/areas/dawlish'
   },
   openGraph: {
     title: 'Dawlish Decorators & Painters | Local Experts Since 2003 – BSR Decorating',

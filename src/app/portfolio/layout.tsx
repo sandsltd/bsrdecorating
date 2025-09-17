@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: "See our stunning before & after decorating projects across Dawlish, Exeter, Torquay and Devon. Real customer transformations and professional results.",
   keywords: "decorating portfolio Devon, painting projects gallery, before after decorating, BSR project examples, decorating work Dawlish Newton Abbot Torquay Exeter, completed decorating projects, professional decorating gallery",
   alternates: {
-    canonical: new URL('/portfolio', 'https://bsrdecorating.co.uk')
+    canonical: '/portfolio'
   },
   openGraph: {
     title: "Project Portfolio | BSR Decorating Devon",

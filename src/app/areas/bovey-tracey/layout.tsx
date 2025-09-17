@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: '🏠 Bovey Tracey\'s premier decorators! Professional painting for homes & businesses. FREE quotes, 20+ years serving Dartmoor area. Call today!',
   keywords: 'decorators Bovey Tracey, painters Bovey Tracey, decorating services Bovey Tracey Devon, house painters Bovey Tracey, commercial decorating Bovey Tracey, Dartmoor decorators',
   alternates: {
-    canonical: new URL('/areas/bovey-tracey', 'https://bsrdecorating.co.uk')
+    canonical: '/areas/bovey-tracey'
   },
   openGraph: {
     title: 'Bovey Tracey Decorators & Painters | BSR Decorating',

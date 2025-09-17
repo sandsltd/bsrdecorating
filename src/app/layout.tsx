@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   viewport: "width=device-width, initial-scale=1", 
   robots: "index, follow",
   alternates: {
-    canonical: new URL('https://bsrdecorating.co.uk')
+    canonical: '/'
   },
   icons: {
     icon: [

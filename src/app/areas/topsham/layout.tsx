@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: '🏘️ Topsham\'s decorating specialists! Historic riverside properties & waterfront homes. Heritage expertise, period features. FREE quotes today!',
   keywords: 'decorators Topsham, painters Topsham, decorating services Topsham Devon, heritage decorating Topsham, waterfront property painting, historic village decorating, period property Topsham',
   alternates: {
-    canonical: new URL('/areas/topsham', 'https://bsrdecorating.co.uk')
+    canonical: '/areas/topsham'
   },
   openGraph: {
     title: 'Topsham Decorators & Painters | BSR Decorating',

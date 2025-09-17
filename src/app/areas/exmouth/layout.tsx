@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: '🏖️ Exmouth\'s leading decorators! Seafront properties, holiday homes & businesses. Salt-resistant finishes, coastal expertise. FREE quotes!',
   keywords: 'decorators Exmouth, painters Exmouth, decorating services Exmouth Devon, seafront decorating Exmouth, holiday home painting, coastal property decorating, marine decorating Exmouth',
   alternates: {
-    canonical: new URL('/areas/exmouth', 'https://bsrdecorating.co.uk')
+    canonical: '/areas/exmouth'
   },
   openGraph: {
     title: 'Exmouth Decorators & Painters | BSR Decorating',

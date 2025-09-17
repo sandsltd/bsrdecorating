@@ -148,7 +148,7 @@ export async function POST(request: NextRequest) {
             <h3 style="margin: 0 0 10px 0;">🎨 BSR Decorating</h3>
             <p style="margin: 5px 0;"><strong>Phone:</strong> 01626 911236</p>
             <p style="margin: 5px 0;"><strong>Email:</strong> info@bsrdecorating.co.uk</p>
-            <p style="margin: 5px 0;"><strong>Website:</strong> www.bsrdecorating.co.uk</p>
+            <p style="margin: 5px 0;"><strong>Website:</strong> bsrdecorating.co.uk</p>
           </div>
         </div>
       </body>

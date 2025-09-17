@@ -1,6 +1,5 @@
 'use client';
 
-import Head from 'next/head';
 import { motion } from 'framer-motion';
 import { Mail, Users, Star, Award } from 'lucide-react';
 import Link from 'next/link';
@@ -46,20 +45,6 @@ export default function CareersPage() {
 
   return (
     <>
-      <Head>
-        <title>Decorator Jobs Devon | Join Our Award-Winning Team – BSR Decorating Careers</title>
-        <meta name="description" content="Join Devon's top-rated decorating team! Exciting opportunities for skilled painters & decorators. Based in Dawlish, serving all of Devon." />
-        <meta name="keywords" content="decorator jobs Devon, painter careers, decorating apprenticeships, BSR Decorating jobs, decorator employment Devon, painting jobs Dawlish Newton Abbot, decorating team careers" />
-        <meta property="og:title" content="Careers | BSR Decorating Devon" />
-        <meta property="og:description" content="Join our professional decorating team in Devon" />
-        <meta property="og:url" content="https://bsrdecorating.co.uk/careers" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/images/Business decorating image.jpeg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Careers | BSR Decorating Devon" />
-        <meta name="twitter:description" content="Join our professional decorating team in Devon" />
-        <meta name="twitter:image" content="/images/Business decorating image.jpeg" />
-      </Head>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: '🏠 Newton Abbot\'s trusted decorators! Professional painting & decorating for homes and businesses. FREE quotes, 20+ years experience. Call today!',
   keywords: 'decorators Newton Abbot, painters Newton Abbot, decorating services Newton Abbot Devon, commercial decorating Newton Abbot, domestic painting Newton Abbot, house painters Newton Abbot',
   alternates: {
-    canonical: new URL('/areas/newton-abbot', 'https://bsrdecorating.co.uk')
+    canonical: '/areas/newton-abbot'
   },
   openGraph: {
     title: 'Newton Abbot Decorators & Painters | BSR Decorating',

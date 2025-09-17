@@ -1,6 +1,5 @@
 'use client';
 
-import Head from 'next/head';
 import { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -193,20 +192,6 @@ export default function ReviewsPage() {
 
   return (
     <>
-      <Head>
-        <title>⭐ 5-Star Reviews Dawlish Decorators | Real Customer Stories – BSR Decorating</title>
-        <meta name="description" content="⭐ 13 Five-Star Google Reviews! Read why Dawlish, Exeter & Devon customers choose BSR Decorating. Real testimonials from satisfied homeowners." />
-        <meta name="keywords" content="BSR Decorating reviews, decorator testimonials Devon, 5 star decorators, customer feedback painting decorating, decorator reviews Dawlish Newton Abbot Torquay Exeter, professional decorator testimonials" />
-        <meta property="og:title" content="Customer Reviews | BSR Decorating Devon" />
-        <meta property="og:description" content="5-star customer reviews from satisfied clients across Devon" />
-        <meta property="og:url" content="https://bsrdecorating.co.uk/reviews" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/images/Business decorating image.jpeg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Customer Reviews | BSR Decorating Devon" />
-        <meta name="twitter:description" content="5-star customer reviews from satisfied clients across Devon" />
-        <meta name="twitter:image" content="/images/Business decorating image.jpeg" />
-      </Head>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

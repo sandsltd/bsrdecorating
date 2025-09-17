@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: "See where BSR Decorating provides professional painting and decorating services across Devon. Interactive coverage map showing Dawlish, Exeter, Torquay, Newton Abbot, Bovey Tracey, Topsham, Exmouth and surrounding areas.",
   keywords: "BSR Decorating coverage areas, service locations Devon, decorators near me, painters Devon areas, decorating services map, Dawlish Exeter Torquay Newton Abbot coverage, Devon decorating locations",
   alternates: {
-    canonical: new URL('/coverage', 'https://bsrdecorating.co.uk')
+    canonical: '/coverage'
   },
   openGraph: {
     title: "Service Coverage Areas | BSR Decorating Devon",

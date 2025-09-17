@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: "Transform your home with expert interior and exterior painting. Domestic decorating in Dawlish, Exeter, Newton Abbot, and surrounding Devon areas.",
   keywords: "house painters Dawlish, home decorators Newton Abbot, interior painting Torquay, exterior painting Exeter, domestic decorating Devon, house painting Topsham, home decorating Exmouth, residential painting Bovey Tracey, wallpaper hanging Devon, house renovation decorating",
   alternates: {
-    canonical: new URL('/domestic', 'https://bsrdecorating.co.uk')
+    canonical: '/domestic'
   },
   openGraph: {
     title: "Domestic Decorating Services | BSR Decorating Devon",

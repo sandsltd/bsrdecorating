@@ -1,6 +1,5 @@
 'use client';
 
-import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Heart, Calendar, Users, HandHeart, MapPin, Phone, Mail } from 'lucide-react';
@@ -49,20 +48,6 @@ export default function CommunityPage() {
 
   return (
     <>
-      <Head>
-        <title>Eco-Friendly Decorators Devon | Supporting Local Charities – BSR Community</title>
-        <meta name="description" content="🌊 Eco-friendly decorating that protects Devon's coastlines! Supporting Surfers Against Sewage & local charities. Water-based paints, sustainable practices." />
-        <meta name="keywords" content="eco-friendly decorators Devon, environmental decorating, water-based paints, Surfers Against Sewage support, sustainable decorating Devon, community decorators, charitable decorators Devon, environmental commitment" />
-        <meta property="og:title" content="Community & Environment | BSR Decorating Devon" />
-        <meta property="og:description" content="Our commitment to community and environmental protection in Devon" />
-        <meta property="og:url" content="https://bsrdecorating.co.uk/community" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/images/logo-2.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Community & Environment | BSR Decorating Devon" />
-        <meta name="twitter:description" content="Our commitment to community and environmental protection in Devon" />
-        <meta name="twitter:image" content="/images/logo-2.png" />
-      </Head>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

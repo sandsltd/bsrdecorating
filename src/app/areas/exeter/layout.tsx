@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: '🏛️ Exeter\'s premier decorators! Historic city centre & modern developments. Commercial offices, heritage homes. FREE quotes, expert craftsmanship!',
   keywords: 'decorators Exeter, painters Exeter, decorating services Exeter Devon, commercial decorating Exeter, office painting Exeter, heritage property decorating Exeter, domestic decorating Exeter',
   alternates: {
-    canonical: new URL('/areas/exeter', 'https://bsrdecorating.co.uk')
+    canonical: '/areas/exeter'
   },
   openGraph: {
     title: 'Exeter Decorators & Painters | BSR Decorating',

@@ -1,6 +1,5 @@
 'use client';
 
-import Head from 'next/head';
 import { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, CheckCircle } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
@@ -38,76 +37,8 @@ export default function ContactPage() {
     }
   ];
 
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "name": "Contact BSR Decorating",
-    "description": "Contact information for BSR Decorating professional decorators in Devon",
-    "url": "https://bsrdecorating.co.uk/contact",
-    "mainEntity": {
-      "@type": "LocalBusiness",
-      "name": "BSR Decorating",
-      "telephone": "+441626911236",
-      "email": "info@bsrdecorating.co.uk",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Dawlish",
-        "addressRegion": "Devon",
-        "addressCountry": "GB"
-      },
-      "openingHours": [
-        "Mo-Fr 08:00-18:00",
-        "Sa 09:00-16:00"
-      ],
-      "serviceArea": [
-        {
-          "@type": "City",
-          "name": "Dawlish",
-          "addressRegion": "Devon",
-          "addressCountry": "GB"
-        },
-        {
-          "@type": "City",
-          "name": "Newton Abbot",
-          "addressRegion": "Devon",
-          "addressCountry": "GB"
-        },
-        {
-          "@type": "City",
-          "name": "Torquay",
-          "addressRegion": "Devon",
-          "addressCountry": "GB"
-        },
-        {
-          "@type": "City",
-          "name": "Exeter",
-          "addressRegion": "Devon",
-          "addressCountry": "GB"
-        }
-      ]
-    }
-  };
 
   return (
-    <>
-      <Head>
-        <title>Free Decorating Quote Dawlish & Devon | Contact BSR Decorating Today</title>
-        <meta name="description" content="Get your FREE decorating quote today! Professional painters in Dawlish, Exeter, Torquay. Call 01626 911236 or email for instant response." />
-        <meta name="keywords" content="contact BSR Decorating, free decorating quote Devon, decorators Dawlish contact, painting quote Newton Abbot Torquay Exeter, decorator contact details Devon, BSR Decorating phone number email" />
-        <meta property="og:title" content="Contact BSR Decorating | Free Quotes Devon" />
-        <meta property="og:description" content="Get your free decorating quote from professional decorators in Devon" />
-        <meta property="og:url" content="https://bsrdecorating.co.uk/contact" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/images/Business decorating image.jpeg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact BSR Decorating | Free Quotes Devon" />
-        <meta name="twitter:description" content="Get your free decorating quote from professional decorators in Devon" />
-        <meta name="twitter:image" content="/images/Business decorating image.jpeg" />
-      </Head>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
       <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-bsr-black via-bsr-gray to-bsr-black">
@@ -206,6 +137,5 @@ export default function ContactPage() {
         </div>
       </section>
       </div>
-    </>
   );
 }

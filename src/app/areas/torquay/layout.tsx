@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: '🌊 Torquay\'s trusted decorators! Coastal property painting specialists. Hotels, B&Bs, homes & businesses. FREE quotes, weather-resistant finishes!',
   keywords: 'decorators Torquay, painters Torquay, decorating services Torquay Devon, coastal decorating Torquay, hotel decorating Torquay, holiday home painting Torquay, Torquay painters decorators',
   alternates: {
-    canonical: new URL('/areas/torquay', 'https://bsrdecorating.co.uk')
+    canonical: '/areas/torquay'
   },
   openGraph: {
     title: 'Torquay Decorators & Painters | BSR Decorating',

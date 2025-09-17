@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: "Professional commercial decorating for offices, retail, and business spaces. Serving Dawlish, Exeter, Torquay, and across Devon.",
   keywords: "commercial decorators Dawlish, office painters Newton Abbot, business decorating Torquay, commercial painting Exeter, retail space decorating Devon, industrial painting Topsham, warehouse decorating Exmouth, office refurbishment Bovey Tracey, commercial property decorating Devon",
   alternates: {
-    canonical: new URL('/commercial', 'https://bsrdecorating.co.uk')
+    canonical: '/commercial'
   },
   openGraph: {
     title: "Commercial Decorating Services | BSR Decorating Devon",

@@ -3,61 +3,11 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
-import Head from 'next/head';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import { blogPosts, categories } from '@/data/blogPosts';
 
 export default function BlogPage() {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "BSR Decorating Blog",
-    "description": "Expert decorating tips, trends, and project insights from professional decorators in Devon",
-    "url": "https://bsrdecorating.co.uk/blog",
-    "publisher": {
-      "@type": "LocalBusiness",
-      "name": "BSR Decorating",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Dawlish",
-        "addressRegion": "Devon",
-        "addressCountry": "GB"
-      }
-    },
-    "mainEntity": blogPosts.map(post => ({
-      "@type": "BlogPosting",
-      "headline": post.title,
-      "description": post.excerpt,
-      "datePublished": post.date,
-      "url": `https://bsrdecorating.co.uk/blog/${post.slug}`,
-      "image": `https://bsrdecorating.co.uk${post.image}`,
-      "author": {
-        "@type": "Organization",
-        "name": "BSR Decorating Team"
-      }
-    }))
-  };
-
   return (
-    <>
-      <Head>
-        <title>Decorating Tips & Trends Dawlish, Devon | Expert Painting Advice – BSR Blog</title>
-        <meta name="description" content="FREE expert decorating tips from Dawlish professionals! Painting advice, trends, and insider secrets for Devon homeowners and businesses." />
-        <meta name="keywords" content="decorating blog Devon, painting tips Dawlish, home decorating advice, commercial decorating insights, property maintenance blog, decorating trends Newton Abbot Torquay Exeter, professional decorator blog, painting advice Devon" />
-        <meta property="og:title" content="Decorating Blog | BSR Decorating Devon" />
-        <meta property="og:description" content="Expert decorating tips and insights from professional decorators in Devon" />
-        <meta property="og:url" content="https://bsrdecorating.co.uk/blog" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/images/Business decorating image.jpeg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Decorating Blog | BSR Decorating Devon" />
-        <meta name="twitter:description" content="Expert decorating tips and insights from professional decorators in Devon" />
-        <meta name="twitter:image" content="/images/Business decorating image.jpeg" />
-      </Head>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
       <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-bsr-black via-bsr-gray to-bsr-black">
@@ -193,6 +143,5 @@ export default function BlogPage() {
         </div>
       </section>
       </div>
-    </>
   );
 }
