@@ -161,7 +161,7 @@ const Footer = () => {
                 className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200"
               >
                 <Image
-                  src="https://www.saunders-simmons.co.uk/SANDSLOGO.png"
+                  src="https://www.saunders-simmons.co.uk/logos/logo.png"
                   alt="Saunders Simmons Ltd"
                   width={240}
                   height={60}

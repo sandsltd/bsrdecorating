@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   description: "BSR Decorating offers professional house painting and commercial decorating in Dawlish, Exeter, Torquay, and across Devon. Free quotes available.",
   keywords: "painters decorators Dawlish, decorating services Newton Abbot, painters Torquay, decorators Exeter, commercial decorating Devon, domestic decorating Topsham, painting contractors Exmouth, decorators Bovey Tracey, house painters Devon, office decorating Devon",
   authors: [{ name: "BSR Decorating" }],
-  viewport: "width=device-width, initial-scale=1", 
   robots: "index, follow",
   alternates: {
     canonical: '/'
@@ -35,7 +34,6 @@ export const metadata: Metadata = {
     ],
   },
   manifest: '/manifest.json',
-  themeColor: '#e501ff',
   openGraph: {
     title: "BSR Decorating - Professional Painters & Decorators in Devon",
     description: "Expert decorating services across Dawlish, Newton Abbot, Torquay, Exeter & surrounding Devon areas. Domestic & commercial painting specialists.",
@@ -64,6 +62,12 @@ export const metadata: Metadata = {
     "geo.position": "50.5833;-3.4667",
     "ICBM": "50.5833, -3.4667"
   }
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#e501ff',
 };
 
 export default function RootLayout({

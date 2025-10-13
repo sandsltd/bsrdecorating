@@ -152,6 +152,35 @@ export default function BlogContent({ sections }: BlogContentProps) {
         }
         return null;
 
+      case 'colorPalette':
+        if (Array.isArray(section.content)) {
+          return (
+            <div key={index} className="my-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {section.content.map((color, colorIndex) => (
+                  <div 
+                    key={colorIndex}
+                    className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-4 hover:border-bsr-highlight transition-all duration-200"
+                  >
+                    <div className="flex items-center space-x-3 mb-3">
+                      <div 
+                        className="w-12 h-12 rounded-lg border-2 border-gray-600 shadow-sm"
+                        style={{ backgroundColor: color.hex }}
+                      ></div>
+                      <div className="flex-1">
+                        <h4 className="text-bsr-white font-semibold text-sm">{color.name}</h4>
+                        <p className="text-gray-400 text-xs">{color.hex}</p>
+                      </div>
+                    </div>
+                    <p className="text-gray-300 text-sm">{color.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        }
+        return null;
+
       default:
         return null;
     }

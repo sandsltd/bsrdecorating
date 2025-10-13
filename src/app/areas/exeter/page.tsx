@@ -10,42 +10,42 @@ export default function ExeterPage() {
   
   const services = [
     {
-      title: "Interior Painting Exeter",
-      description: "Professional interior decorating for Exeter's diverse property portfolio, from heritage buildings to modern developments.",
-      features: ["Heritage property specialists", "Modern office interiors", "University accommodation", "Period colour schemes"]
+      title: "Luxury Interior Decorating Exeter",
+      description: "Premium interior decorating for Exeter's most prestigious properties, from Georgian townhouses in St. Leonard's to modern luxury developments in Pennsylvania and Newtown.",
+      features: ["Luxury finishes & materials", "Heritage property specialists", "High-end residential", "Period colour schemes", "Affluent area expertise"]
+    },
+    {
+      title: "Commercial Office Decorating Exeter",
+      description: "Professional commercial decorating for Exeter's thriving business district, from historic city centre offices to modern business parks and university facilities.",
+      features: ["City centre offices", "Modern business parks", "University facilities", "Healthcare properties", "Retail spaces"]
+    },
+    {
+      title: "Heritage Property Restoration Exeter",
+      description: "Specialist restoration services for Exeter's historic buildings, listed properties, and conservation areas with traditional techniques and period authenticity.",
+      features: ["Listed building compliance", "Traditional materials", "Conservation techniques", "Period authenticity", "Historic building expertise"]
     },
     {
       title: "Exterior Painting Exeter",
-      description: "Expert exterior painting for Exeter properties, combining traditional techniques with modern weather protection.",
-      features: ["Historic building restoration", "Modern commercial exteriors", "Listed building expertise", "City centre properties"]
-    },
-    {
-      title: "Commercial Decorating Exeter",
-      description: "Professional commercial decorating services for Exeter's thriving business district and commercial developments.",
-      features: ["Office complexes", "Retail spaces", "Educational facilities", "Healthcare properties"]
-    },
-    {
-      title: "Heritage Property Restoration",
-      description: "Specialist restoration services for Exeter's historic buildings and conservation areas.",
-      features: ["Listed building compliance", "Traditional materials", "Conservation techniques", "Period authenticity"]
+      description: "Expert exterior painting for Exeter properties, combining traditional techniques with modern weather protection for both heritage and contemporary buildings.",
+      features: ["Historic building restoration", "Modern commercial exteriors", "Weather-resistant finishes", "City centre properties", "Heritage compliance"]
     }
   ];
 
   const benefits = [
     {
       icon: <Star size={24} />,
-      title: "Heritage Specialists",
-      description: "Expert knowledge of Exeter's historic architecture and conservation requirements"
+      title: "Luxury Property Specialists",
+      description: "Expert knowledge of Exeter's most prestigious areas including St. Leonard's, Pennsylvania, and Newtown, with heritage building expertise"
     },
     {
       icon: <CheckCircle size={24} />,
-      title: "Commercial Focus",
-      description: "Extensive experience with Exeter's business district and commercial properties"
+      title: "Commercial Office Experts",
+      description: "Extensive experience with Exeter's business district, from historic city centre offices to modern business parks and university facilities"
     },
     {
       icon: <Phone size={24} />,
-      title: "City Centre Access",
-      description: "Understanding of city centre logistics and parking restrictions for efficient project delivery"
+      title: "Affluent Area Access",
+      description: "Understanding of Exeter's premium residential areas and city centre logistics for efficient project delivery to high-value clients"
     }
   ];
 
@@ -117,12 +117,12 @@ export default function ExeterPage() {
         <section className="relative py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-bsr-white mb-6">
-              Decorators in <span className="text-bsr-highlight">Exeter</span> – Heritage & Modern Property Specialists
+              Luxury Decorators in <span className="text-bsr-highlight">Exeter</span> – Heritage & Commercial Specialists
             </h1>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8">
-              BSR Decorating provides expert painting and decorating services throughout Exeter, Devon's historic cathedral city. 
-              From heritage buildings in the city centre to modern commercial developments and residential properties, we combine 
-              traditional craftsmanship with contemporary techniques, serving Exeter's diverse property needs with over 20 years of experience.
+              BSR Decorating provides premium painting and decorating services throughout Exeter's most prestigious areas, including St. Leonard's, Pennsylvania, and Newtown. 
+              From luxury heritage properties to modern commercial offices and high-end residential developments, we combine traditional craftsmanship with contemporary techniques, 
+              serving Exeter's affluent clientele with over 20 years of experience in heritage building restoration and commercial office decorating.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
@@ -206,32 +206,32 @@ export default function ExeterPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold text-bsr-white mb-6">
-                  Serving Exeter and Greater Devon
+                  Serving Exeter's Most Prestigious Areas
                 </h2>
                 <p className="text-gray-300 mb-6">
                   Exeter, Devon's ancient cathedral city and modern economic hub, presents unique decorating challenges 
-                  and opportunities. From medieval timber-framed buildings to cutting-edge university facilities and 
-                  contemporary office developments, we understand the diverse requirements of this historic yet forward-thinking city.
+                  and opportunities for luxury properties. From Georgian townhouses in St. Leonard's to modern developments in Pennsylvania and Newtown, 
+                  we understand the diverse requirements of Exeter's most prestigious residential and commercial areas.
                 </p>
                 <p className="text-gray-300 mb-6">
-                  Our expertise encompasses conservation work in Exeter's historic quarter, modern commercial decorating 
-                  in the business district, and residential projects from Georgian terraces to new-build developments. 
-                  We're experienced in working within conservation area restrictions and listed building requirements.
+                  Our expertise encompasses luxury heritage property restoration in Exeter's historic quarter, premium commercial office decorating 
+                  in the business district, and high-end residential projects from Georgian terraces to luxury new-build developments. 
+                  We're experienced in working within conservation area restrictions, listed building requirements, and the specific needs of affluent clients.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Link
                     href="/domestic"
                     className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-6 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group transform hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl"
                   >
-                    <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Domestic Decorating</h4>
-                    <p className="text-gray-300 text-sm">Heritage homes & modern properties in Exeter</p>
+                    <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Luxury Domestic Decorating</h4>
+                    <p className="text-gray-300 text-sm">Heritage homes & luxury properties in Exeter's affluent areas</p>
                   </Link>
                   <Link
                     href="/commercial"
                     className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-6 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group transform hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl"
                   >
-                    <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Commercial Decorating</h4>
-                    <p className="text-gray-300 text-sm">Offices, retail & institutions in Exeter</p>
+                    <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Commercial Office Decorating</h4>
+                    <p className="text-gray-300 text-sm">Premium offices, retail & institutions in Exeter</p>
                   </Link>
                 </div>
               </div>
@@ -288,39 +288,57 @@ export default function ExeterPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl font-semibold text-bsr-white mb-4">Exeter Domestic Decorating</h3>
+                <h3 className="text-xl font-semibold text-bsr-white mb-4">Luxury Domestic Decorating Exeter</h3>
                 <p className="text-gray-300 mb-4">
-                  From Georgian terraces in the city centre to modern family homes in Exeter's suburbs, our domestic 
-                  decorating services combine respect for historical character with contemporary living needs. Specialist 
-                  in period property restoration and modern home decoration.
+                  From Georgian townhouses in St. Leonard's to luxury developments in Pennsylvania and Newtown, our premium domestic 
+                  decorating services combine respect for historical character with contemporary luxury living. Specialist 
+                  in heritage property restoration and high-end residential decoration for Exeter's most prestigious areas.
                 </p>
                 <ul className="space-y-2 text-gray-300 text-sm">
-                  <li>• Heritage property restoration</li>
-                  <li>• Georgian and Victorian homes</li>
-                  <li>• Modern residential developments</li>
+                  <li>• Luxury heritage property restoration</li>
+                  <li>• Georgian and Victorian townhouses</li>
+                  <li>• High-end residential developments</li>
                   <li>• Conservation area compliance</li>
+                  <li>• Affluent area expertise (St. Leonard's, Pennsylvania, Newtown)</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-bsr-white mb-4">Exeter Commercial Decorating</h3>
+                <h3 className="text-xl font-semibold text-bsr-white mb-4">Commercial Office Decorating Exeter</h3>
                 <p className="text-gray-300 mb-4">
-                  Professional commercial decorating for Exeter's diverse business sector. From historic city centre 
-                  offices to modern business parks, university facilities to healthcare properties, we deliver high-quality 
-                  commercial decorating with minimal business disruption.
+                  Professional commercial office decorating for Exeter's thriving business sector. From historic city centre 
+                  offices to modern business parks, university facilities to healthcare properties, we deliver premium 
+                  commercial decorating with minimal business disruption for Exeter's most prestigious business addresses.
                 </p>
                 <ul className="space-y-2 text-gray-300 text-sm">
-                  <li>• City centre offices</li>
+                  <li>• Premium city centre offices</li>
                   <li>• University facilities</li>
                   <li>• Healthcare properties</li>
                   <li>• Retail and hospitality</li>
+                  <li>• Modern business parks</li>
                 </ul>
               </div>
             </div>
             <div className="text-center mt-8">
-              <p className="text-gray-300 text-sm">
-                Serving Exeter, Crediton, Cullompton, Ottery St Mary, and the wider Mid Devon area. 
-                For professional decorating services in Exeter, contact BSR Decorating today.
+              <p className="text-gray-300 text-sm mb-6">
+                Serving Exeter's most prestigious areas including St. Leonard's, Pennsylvania, Newtown, and the wider Mid Devon area. 
+                For luxury decorating services in Exeter, contact BSR Decorating today.
               </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+                <Link
+                  href="/blog/luxury-decorating-trends-exeter"
+                  className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-4 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group"
+                >
+                  <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Luxury Decorating Trends in Exeter</h4>
+                  <p className="text-gray-300 text-sm">Discover the latest luxury decorating trends for Exeter's most prestigious areas</p>
+                </Link>
+                <Link
+                  href="/blog/commercial-office-decorating-exeter-city-centre"
+                  className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-4 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group"
+                >
+                  <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Commercial Office Decorating</h4>
+                  <p className="text-gray-300 text-sm">Professional office decorating strategies for Exeter's business district</p>
+                </Link>
+              </div>
             </div>
           </div>
         </section>

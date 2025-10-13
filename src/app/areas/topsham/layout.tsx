@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Topsham Decorators & Painters | Historic Riverside Village – BSR Decorating',
-  description: '🏘️ Topsham\'s decorating specialists! Historic riverside properties & waterfront homes. Heritage expertise, period features. FREE quotes today!',
-  keywords: 'decorators Topsham, painters Topsham, decorating services Topsham Devon, heritage decorating Topsham, waterfront property painting, historic village decorating, period property Topsham',
+  title: 'Heritage Decorators Topsham | Period Property & Waterfront Specialists – BSR Decorating',
+  description: '🏘️ Topsham\'s heritage decorating specialists! Period property decorating, waterfront maintenance, conservation area experts. FREE quotes today!',
+  keywords: 'heritage decorators Topsham, period property decorating Topsham, waterfront property maintenance Topsham, conservation area decorating Topsham, painters Topsham, decorating services Topsham Devon, heritage decorating Topsham, waterfront property painting, historic village decorating, period property Topsham, conservation area compliance Topsham',
   alternates: {
     canonical: '/areas/topsham'
   },
   openGraph: {
-    title: 'Topsham Decorators & Painters | BSR Decorating',
-    description: 'Professional decorating services in Topsham - historic riverside village specialists',
+    title: 'Heritage Decorators Topsham | BSR Decorating',
+    description: 'Professional heritage and waterfront decorating services in Topsham - period property and conservation area specialists',
     url: 'https://bsrdecorating.co.uk/areas/topsham',
     type: 'website'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Topsham Decorators & Painters | BSR Decorating',
-    description: 'Professional decorating services in Topsham - historic riverside village specialists',
+    title: 'Heritage Decorators Topsham | BSR Decorating',
+    description: 'Professional heritage and waterfront decorating services in Topsham - period property and conservation area specialists',
   }
 };
 

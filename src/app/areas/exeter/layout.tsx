@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Exeter Decorators & Painters | Commercial & Domestic Specialists – BSR Decorating',
-  description: '🏛️ Exeter\'s premier decorators! Historic city centre & modern developments. Commercial offices, heritage homes. FREE quotes, expert craftsmanship!',
-  keywords: 'decorators Exeter, painters Exeter, decorating services Exeter Devon, commercial decorating Exeter, office painting Exeter, heritage property decorating Exeter, domestic decorating Exeter',
+  title: 'Luxury Decorators Exeter | Commercial Office & Heritage Specialists – BSR Decorating',
+  description: '🏛️ Exeter\'s premier luxury decorators! St. Leonard\'s, Pennsylvania, Newtown. Commercial offices, heritage homes, affluent areas. FREE quotes, expert craftsmanship!',
+  keywords: 'luxury decorators Exeter, commercial office decorating Exeter, heritage property decorating Exeter, painters Exeter, decorating services Exeter Devon, luxury decorating Exeter, commercial decorating Exeter, office painting Exeter, St Leonards Exeter decorators, Pennsylvania Exeter painters, Newtown Exeter decorating',
   alternates: {
     canonical: '/areas/exeter'
   },
   openGraph: {
-    title: 'Exeter Decorators & Painters | BSR Decorating',
-    description: 'Professional decorating services in Exeter - heritage and modern property specialists',
+    title: 'Luxury Decorators Exeter | BSR Decorating',
+    description: 'Premium decorating services in Exeter - luxury heritage and commercial office specialists',
     url: 'https://bsrdecorating.co.uk/areas/exeter',
     type: 'website'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Exeter Decorators & Painters | BSR Decorating',
-    description: 'Professional decorating services in Exeter - heritage and modern property specialists',
+    title: 'Luxury Decorators Exeter | BSR Decorating',
+    description: 'Premium decorating services in Exeter - luxury heritage and commercial office specialists',
   }
 };
 

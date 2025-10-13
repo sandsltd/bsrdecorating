@@ -33,6 +33,11 @@ const blogPostsMap = blogPosts.reduce((acc, post) => {
 // Helper function to get keywords for each blog post
 function getBlogKeywords(slug: string): string {
   const keywordMap: Record<string, string> = {
+    'autumn-decorating-trends-devon-homes': "autumn decorating trends Devon, seasonal decorating Exeter, autumn colours Topsham, warm autumnal shades Devon, seasonal colour schemes Exeter, autumn interior design Devon, seasonal decorating trends",
+    'luxury-decorating-trends-exeter': "luxury decorating Exeter, luxury decorating trends, St Leonards Exeter decorators, Pennsylvania Exeter painters, Newtown Exeter decorating, affluent area decorating, premium decorating Exeter",
+    'heritage-property-restoration-topsham': "heritage property restoration Topsham, period property decorating Topsham, conservation area decorating Topsham, heritage decorating Topsham, traditional restoration techniques, conservation compliance Topsham",
+    'commercial-office-decorating-exeter-city-centre': "commercial office decorating Exeter, city centre office decorating, commercial decorating Exeter, office painting Exeter, business decorating Exeter, commercial painting Exeter",
+    'waterfront-property-maintenance-topsham': "waterfront property maintenance Topsham, marine-grade decorating Topsham, salt air resistance, flood-resistant finishes, estuary property maintenance, waterfront decorating Topsham",
     'end-tenancy-decorating-landlords-letting-agents': "end of tenancy decorating, landlord painting services, property management decorating, rental property maintenance, void period reduction",
     'professional-decorating-enhances-business-premises': "commercial decorating services, business painting contractors, office decorating, workplace transformation, professional painting",
     'cost-effective-decorating-rental-properties-hmos': "rental property decorating, HMO painting services, landlord decorating contractors, property investment decorating, cost effective painting"

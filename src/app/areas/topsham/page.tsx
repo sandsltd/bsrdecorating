@@ -10,42 +10,42 @@ export default function TopshamPage() {
   
   const services = [
     {
-      title: "Interior Painting Topsham",
-      description: "Sympathetic interior decorating for Topsham's historic properties, preserving period character while providing modern comfort.",
-      features: ["Period colour schemes", "Traditional techniques", "Feature wall restoration", "Sensitive modernisation"]
+      title: "Period Property Decorating Topsham",
+      description: "Expert period property decorating for Topsham's historic homes, preserving authentic character while enhancing modern comfort in this conservation area.",
+      features: ["Period colour schemes", "Traditional techniques", "Conservation area compliance", "Heritage authenticity", "Sensitive modernisation"]
+    },
+    {
+      title: "Waterfront Property Maintenance Topsham",
+      description: "Specialized waterfront property decorating for Topsham's riverside and estuary-facing homes, using marine-grade materials and flood-resistant techniques.",
+      features: ["Marine-grade protection", "Salt air resistance", "Flood-resistant finishes", "Waterfront maintenance", "Estuary specialist techniques"]
+    },
+    {
+      title: "Heritage Property Restoration Topsham",
+      description: "Specialist heritage property restoration for Topsham's Listed buildings and conservation area properties, using traditional materials and period techniques.",
+      features: ["Conservation compliance", "Traditional materials", "Period authenticity", "Listed building expertise", "Conservation area specialist"]
     },
     {
       title: "Exterior Painting Topsham",
-      description: "Expert exterior painting for Topsham's riverside and historic properties, using appropriate materials and methods.",
-      features: ["Waterfront property protection", "Historic building techniques", "Traditional colour palettes", "Weather-resistant finishes"]
-    },
-    {
-      title: "Heritage Property Restoration",
-      description: "Specialist restoration services for Topsham's Listed buildings and properties within the Conservation Area.",
-      features: ["Conservation compliance", "Traditional materials", "Period authenticity", "Listed building expertise"]
-    },
-    {
-      title: "Waterfront Property Decorating",
-      description: "Specialized decorating for Topsham's unique riverside and estuary-facing properties.",
-      features: ["Moisture protection", "Salt air resistance", "Flood-resistant finishes", "Waterfront maintenance"]
+      description: "Expert exterior painting for Topsham's historic riverside properties, combining traditional techniques with modern weather protection for this unique waterfront location.",
+      features: ["Waterfront property protection", "Historic building techniques", "Traditional colour palettes", "Weather-resistant finishes", "Conservation area expertise"]
     }
   ];
 
   const benefits = [
     {
       icon: <Star size={24} />,
-      title: "Heritage Village Experts",
-      description: "Deep understanding of Topsham's unique character and conservation requirements"
+      title: "Conservation Area Specialists",
+      description: "Deep understanding of Topsham's conservation area requirements and heritage building regulations"
     },
     {
       icon: <CheckCircle size={24} />,
-      title: "Waterfront Specialists",
-      description: "Expert knowledge of decorating riverside and estuary-facing properties"
+      title: "Waterfront Property Experts",
+      description: "Specialist knowledge of decorating riverside and estuary-facing properties with marine-grade materials"
     },
     {
       icon: <Phone size={24} />,
-      title: "Local Community Focus",
-      description: "Committed to preserving the character of this historic Devon village"
+      title: "Period Property Craftsmen",
+      description: "Traditional craftsmanship techniques for Topsham's historic homes and listed buildings"
     }
   ];
 
@@ -109,13 +109,13 @@ export default function TopshamPage() {
         <section className="relative py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-bsr-white mb-6">
-              Decorators in <span className="text-bsr-highlight">Topsham</span> – Historic Riverside Village Specialists
+              Heritage Decorators in <span className="text-bsr-highlight">Topsham</span> – Period Property & Waterfront Specialists
             </h1>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8">
-              BSR Decorating provides expert painting and decorating services in the historic riverside village of Topsham. 
-              Specializing in heritage properties, Listed buildings, and waterfront homes, we understand the unique character 
-              and conservation requirements of this beautiful Devon village. With over 20 years of experience, we combine 
-              traditional techniques with modern expertise to preserve Topsham's distinctive charm.
+              BSR Decorating provides specialist heritage and waterfront decorating services in the historic riverside village of Topsham. 
+              Specializing in period property decorating, conservation area compliance, and waterfront property maintenance, we understand the unique challenges 
+              of this beautiful Devon village. With over 20 years of experience in heritage restoration and marine-grade decorating, we combine 
+              traditional craftsmanship with modern techniques to preserve Topsham's distinctive character.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
@@ -144,7 +144,7 @@ export default function TopshamPage() {
                 Our Topsham Decorating Services
               </h2>
               <p className="text-xl text-gray-300">
-                Specialist decorating services for Topsham's historic properties and waterfront homes
+                Specialist period property decorating and waterfront maintenance for Topsham's heritage homes
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -174,7 +174,7 @@ export default function TopshamPage() {
                 Why Choose BSR Decorating for Your Topsham Project?
               </h2>
               <p className="text-xl text-gray-300">
-                Specialist expertise in Topsham's historic village character and waterfront challenges
+                Specialist expertise in Topsham's conservation area requirements and waterfront property challenges
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -199,33 +199,33 @@ export default function TopshamPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold text-bsr-white mb-6">
-                  Preserving Topsham's Historic Character
+                  Heritage & Waterfront Property Specialists
                 </h2>
                 <p className="text-gray-300 mb-6">
-                  Topsham is one of Devon's most beautiful historic villages, with its Georgian and Victorian houses, 
-                  narrow streets, and riverside setting creating a unique conservation challenge. As a designated 
-                  Conservation Area with numerous Listed buildings, every decorating project requires careful consideration 
-                  of historical authenticity and planning requirements.
+                  Topsham is one of Devon's most prestigious historic villages, with its Georgian and Victorian houses, 
+                  narrow streets, and riverside setting creating unique conservation and waterfront challenges. As a designated 
+                  Conservation Area with numerous Listed buildings, every period property decorating project requires specialist 
+                  knowledge of historical authenticity, conservation area compliance, and waterfront property maintenance.
                 </p>
                 <p className="text-gray-300 mb-6">
-                  Our expertise includes working with traditional lime mortars, historic paint colours, and appropriate 
+                  Our heritage expertise includes working with traditional lime mortars, period paint colours, and conservation-compliant 
                   materials that respect the village's character while providing modern durability. We understand the 
-                  unique challenges of waterfront properties, from moisture protection to salt air resistance.
+                  unique challenges of waterfront property maintenance, from marine-grade protection to salt air resistance and flood-resistant finishes.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Link
                     href="/domestic"
                     className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-6 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group transform hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl"
                   >
-                    <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Heritage Homes</h4>
-                    <p className="text-gray-300 text-sm">Historic properties & waterfront homes in Topsham</p>
+                    <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Period Property Decorating</h4>
+                    <p className="text-gray-300 text-sm">Heritage homes & waterfront properties in Topsham</p>
                   </Link>
                   <Link
                     href="/commercial"
                     className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-6 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group transform hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl"
                   >
-                    <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Commercial Properties</h4>
-                    <p className="text-gray-300 text-sm">Shops, restaurants & businesses in Topsham</p>
+                    <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Waterfront Property Maintenance</h4>
+                    <p className="text-gray-300 text-sm">Marine-grade decorating & waterfront maintenance in Topsham</p>
                   </Link>
                 </div>
               </div>
@@ -282,39 +282,57 @@ export default function TopshamPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl font-semibold text-bsr-white mb-4">Topsham Heritage Properties</h3>
+                <h3 className="text-xl font-semibold text-bsr-white mb-4">Period Property Decorating Topsham</h3>
                 <p className="text-gray-300 mb-4">
-                  Topsham's historic properties require specialist knowledge and techniques. Our heritage decorating 
+                  Topsham's historic properties require specialist period property decorating knowledge and traditional techniques. Our heritage decorating 
                   services preserve the authentic character of Georgian and Victorian buildings while ensuring modern 
-                  comfort and durability. Expert in Conservation Area and Listed building requirements.
+                  comfort and durability. Expert in Conservation Area compliance, Listed building requirements, and period authenticity.
                 </p>
                 <ul className="space-y-2 text-gray-300 text-sm">
                   <li>• Georgian terraced houses</li>
                   <li>• Victorian waterfront properties</li>
-                  <li>• Listed building compliance</li>
-                  <li>• Traditional paint techniques</li>
+                  <li>• Conservation area compliance</li>
+                  <li>• Traditional period techniques</li>
+                  <li>• Listed building expertise</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-bsr-white mb-4">Waterfront Property Specialists</h3>
+                <h3 className="text-xl font-semibold text-bsr-white mb-4">Waterfront Property Maintenance Topsham</h3>
                 <p className="text-gray-300 mb-4">
-                  Topsham's unique riverside location creates specific challenges for property maintenance. Our waterfront 
-                  property specialists understand moisture protection, salt air resistance, and the decorating needs of 
-                  properties facing the Exe Estuary.
+                  Topsham's unique riverside location creates specific challenges for waterfront property maintenance. Our waterfront 
+                  property specialists understand marine-grade protection, salt air resistance, and the specialized decorating needs of 
+                  properties facing the Exe Estuary with flood-resistant finishes and estuary specialist techniques.
                 </p>
                 <ul className="space-y-2 text-gray-300 text-sm">
                   <li>• Estuary-facing properties</li>
-                  <li>• Moisture protection systems</li>
+                  <li>• Marine-grade protection systems</li>
                   <li>• Salt air resistance</li>
                   <li>• Flood-resistant finishes</li>
+                  <li>• Waterfront maintenance expertise</li>
                 </ul>
               </div>
             </div>
             <div className="text-center mt-8">
-              <p className="text-gray-300 text-sm">
+              <p className="text-gray-300 text-sm mb-6">
                 Serving Topsham, Countess Wear, Exton, and the surrounding Exe Estuary area. 
-                For professional heritage decorating services in Topsham, contact BSR Decorating today.
+                For professional period property decorating and waterfront maintenance services in Topsham, contact BSR Decorating today.
               </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+                <Link
+                  href="/blog/heritage-property-restoration-topsham"
+                  className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-4 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group"
+                >
+                  <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Heritage Property Restoration in Topsham</h4>
+                  <p className="text-gray-300 text-sm">Expert guide to heritage property restoration in Topsham's conservation area</p>
+                </Link>
+                <Link
+                  href="/blog/waterfront-property-maintenance-topsham"
+                  className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-4 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group"
+                >
+                  <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Waterfront Property Maintenance</h4>
+                  <p className="text-gray-300 text-sm">Specialist guide to waterfront property maintenance in Topsham's riverside location</p>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
