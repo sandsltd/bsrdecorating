@@ -5,7 +5,7 @@ export interface ColorSwatch {
 }
 
 export interface BlogSection {
-  type: 'paragraph' | 'heading' | 'subheading' | 'list' | 'quote' | 'image' | 'link' | 'colorPalette';
+  type: 'paragraph' | 'heading' | 'subheading' | 'list' | 'quote' | 'image' | 'link' | 'colorPalette' | 'quoteCTA';
   content?: string | string[] | ColorSwatch[];
   level?: number; // for headings (1-6)
   imageAlt?: string; // for images
@@ -238,6 +238,10 @@ export const blogContent: Record<string, BlogContentData> = {
         content: 'Transform your Devon home with autumn decorating trends',
         href: '/areas/exeter',
         linkText: 'View Our Services'
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Ready to transform your Devon home with autumn decorating? Get your free quote today!'
       }
     ]
   },
@@ -338,6 +342,10 @@ export const blogContent: Record<string, BlogContentData> = {
         content: 'Discover our luxury decorating services in Exeter\'s most prestigious areas',
         href: '/areas/exeter',
         linkText: 'View Exeter Services'
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Ready to transform your Exeter home with luxury decorating? Get your free quote today!'
       }
     ]
   },
@@ -438,6 +446,10 @@ export const blogContent: Record<string, BlogContentData> = {
         content: 'Learn more about our heritage restoration services in Topsham',
         href: '/areas/topsham',
         linkText: 'View Topsham Services'
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Ready to restore your Topsham heritage property? Get your free quote today!'
       }
     ]
   },
@@ -538,6 +550,10 @@ export const blogContent: Record<string, BlogContentData> = {
         content: 'Discover our commercial decorating services in Exeter city centre',
         href: '/areas/exeter',
         linkText: 'View Commercial Services'
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Ready to transform your Exeter office space? Get your free commercial decorating quote today!'
       }
     ]
   },
@@ -638,6 +654,10 @@ export const blogContent: Record<string, BlogContentData> = {
         content: 'Learn more about our waterfront property maintenance services in Topsham',
         href: '/areas/topsham',
         linkText: 'View Waterfront Services'
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Ready to protect your Topsham waterfront property? Get your free maintenance quote today!'
       }
     ]
   },
