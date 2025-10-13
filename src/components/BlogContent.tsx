@@ -53,7 +53,9 @@ export default function BlogContent({ sections }: BlogContentProps) {
             key={index} 
             className="text-gray-300 leading-relaxed mb-6 text-lg"
           >
-            {typeof section.content === 'string' ? renderTextWithLinks(section.content) : section.content}
+            {typeof section.content === 'string' ? renderTextWithLinks(section.content) : 
+             Array.isArray(section.content) ? section.content.join(' ') : 
+             section.content}
           </p>
         );
 
@@ -73,7 +75,9 @@ export default function BlogContent({ sections }: BlogContentProps) {
             key={index} 
             className={headingClasses[section.level as keyof typeof headingClasses] || headingClasses[2]}
           >
-            {section.content}
+            {typeof section.content === 'string' ? section.content : 
+             Array.isArray(section.content) ? section.content.join(' ') : 
+             section.content}
           </HeadingTag>
         );
 
@@ -83,7 +87,9 @@ export default function BlogContent({ sections }: BlogContentProps) {
             key={index} 
             className="text-2xl font-semibold text-bsr-white mb-4 mt-8"
           >
-            {section.content}
+            {typeof section.content === 'string' ? section.content : 
+             Array.isArray(section.content) ? section.content.join(' ') : 
+             section.content}
           </h3>
         );
 
@@ -97,7 +103,7 @@ export default function BlogContent({ sections }: BlogContentProps) {
                 className="text-gray-300 leading-relaxed flex items-start"
               >
                 <span className="text-bsr-highlight mr-3 mt-1.5 flex-shrink-0">•</span>
-                <span className="text-lg">{item}</span>
+                <span className="text-lg">{typeof item === 'string' ? item : String(item)}</span>
               </li>
             ))}
           </ul>
@@ -110,7 +116,9 @@ export default function BlogContent({ sections }: BlogContentProps) {
             className="my-8 p-6 bg-bsr-gray border-l-4 border-bsr-highlight rounded-r-lg"
           >
             <p className="text-bsr-white text-xl font-medium italic leading-relaxed">
-              &ldquo;{section.content}&rdquo;
+              &ldquo;{typeof section.content === 'string' ? section.content : 
+               Array.isArray(section.content) ? section.content.join(' ') : 
+               section.content}&rdquo;
             </p>
           </blockquote>
         );
@@ -157,24 +165,30 @@ export default function BlogContent({ sections }: BlogContentProps) {
           return (
             <div key={index} className="my-8">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {section.content.map((color, colorIndex) => (
-                  <div 
-                    key={colorIndex}
-                    className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-4 hover:border-bsr-highlight transition-all duration-200"
-                  >
-                    <div className="flex items-center space-x-3 mb-3">
+                {section.content.map((color, colorIndex) => {
+                  // Type guard to ensure it's a ColorSwatch
+                  if (typeof color === 'object' && color !== null && 'hex' in color && 'name' in color && 'description' in color) {
+                    return (
                       <div 
-                        className="w-12 h-12 rounded-lg border-2 border-gray-600 shadow-sm"
-                        style={{ backgroundColor: color.hex }}
-                      ></div>
-                      <div className="flex-1">
-                        <h4 className="text-bsr-white font-semibold text-sm">{color.name}</h4>
-                        <p className="text-gray-400 text-xs">{color.hex}</p>
+                        key={colorIndex}
+                        className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-4 hover:border-bsr-highlight transition-all duration-200"
+                      >
+                        <div className="flex items-center space-x-3 mb-3">
+                          <div 
+                            className="w-12 h-12 rounded-lg border-2 border-gray-600 shadow-sm"
+                            style={{ backgroundColor: color.hex }}
+                          ></div>
+                          <div className="flex-1">
+                            <h4 className="text-bsr-white font-semibold text-sm">{color.name}</h4>
+                            <p className="text-gray-400 text-xs">{color.hex}</p>
+                          </div>
+                        </div>
+                        <p className="text-gray-300 text-sm">{color.description}</p>
                       </div>
-                    </div>
-                    <p className="text-gray-300 text-sm">{color.description}</p>
-                  </div>
-                ))}
+                    );
+                  }
+                  return null;
+                })}
               </div>
             </div>
           );
