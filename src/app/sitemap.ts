@@ -8,19 +8,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: new Date('2024-12-19'),
       changeFrequency: 'weekly' as const,
       priority: 1.0,
     },
     {
       url: `${baseUrl}/domestic`,
-      lastModified: new Date(),
+      lastModified: new Date('2024-12-19'),
       changeFrequency: 'monthly' as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/commercial`,
-      lastModified: new Date(),
+      lastModified: new Date('2024-12-19'),
       changeFrequency: 'monthly' as const,
       priority: 0.9,
     },
@@ -65,6 +65,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/gallery`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
     },
   ]
 

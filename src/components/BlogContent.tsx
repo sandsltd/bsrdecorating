@@ -1,14 +1,19 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { BlogSection } from '@/data/blogContent';
+import { useQuoteModal } from '@/contexts/QuoteModalContext';
 
 interface BlogContentProps {
   sections: BlogSection[];
 }
 
 export default function BlogContent({ sections }: BlogContentProps) {
+  const { openQuoteModal } = useQuoteModal();
+  
   // Helper function to render text with inline links
   const renderTextWithLinks = (text: string) => {
     // Split text by [link](url) pattern
@@ -194,6 +199,24 @@ export default function BlogContent({ sections }: BlogContentProps) {
           );
         }
         return null;
+
+      case 'quoteCTA':
+        return (
+          <div key={index} className="my-8 p-6 bg-bsr-gray border border-bsr-highlight rounded-lg text-center">
+            <p className="text-bsr-white text-lg mb-4">
+              {typeof section.content === 'string' ? section.content : 
+               Array.isArray(section.content) ? section.content.join(' ') : 
+               section.content}
+            </p>
+            <button
+              onClick={openQuoteModal}
+              className="inline-flex items-center space-x-2 bg-bsr-yellow hover:bg-bsr-yellow-light text-bsr-black px-6 py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              <span>Get Free Quote</span>
+              <ArrowRight size={16} />
+            </button>
+          </div>
+        );
 
       default:
         return null;
