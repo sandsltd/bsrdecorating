@@ -10,6 +10,7 @@ const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
   email: z.string().email('Please enter a valid email address'),
   phone: z.string().min(10, 'Please enter a valid phone number'),
+  postcode: z.string().min(5, 'Please enter a valid postcode').max(10, 'Postcode is too long'),
   service: z.enum(['domestic', 'commercial', 'both']),
   message: z.string().min(10, 'Message must be at least 10 characters'),
 });
@@ -28,6 +29,7 @@ const ContactForm = ({ onSuccess }: ContactFormProps) => {
     handleSubmit,
     formState: { errors },
     reset,
+    setValue,
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
   });
@@ -119,6 +121,28 @@ const ContactForm = ({ onSuccess }: ContactFormProps) => {
         />
         {errors.phone && (
           <p className="mt-1 text-sm text-red-400">{errors.phone.message}</p>
+        )}
+      </div>
+
+      {/* Postcode */}
+      <div>
+        <label htmlFor="postcode" className="block text-sm font-medium text-bsr-white mb-2">
+          Postcode *
+        </label>
+        <input
+          {...register('postcode')}
+          type="text"
+          id="postcode"
+          className="w-full px-4 py-3 bg-bsr-gray border border-bsr-gray-light rounded-md text-bsr-white placeholder-gray-400 focus:outline-none focus:border-bsr-highlight transition-colors duration-200"
+          placeholder="EX1 1AA"
+          style={{ textTransform: 'uppercase' }}
+          onInput={(e) => {
+            const value = (e.target as HTMLInputElement).value.toUpperCase();
+            setValue('postcode', value, { shouldValidate: true });
+          }}
+        />
+        {errors.postcode && (
+          <p className="mt-1 text-sm text-red-400">{errors.postcode.message}</p>
         )}
       </div>
 

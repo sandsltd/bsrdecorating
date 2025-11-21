@@ -6,12 +6,12 @@ export async function POST(request: NextRequest) {
     console.log('Contact email API called');
     
     const formData = await request.json();
-    const { name, email, phone, service, message } = formData;
+    const { name, email, phone, postcode, service, message } = formData;
 
-    console.log('Form data received:', { name, email, phone, service, messageLength: message?.length });
+    console.log('Form data received:', { name, email, phone, postcode, service, messageLength: message?.length });
 
     // Validate required fields
-    if (!name || !email || !phone || !service || !message) {
+    if (!name || !email || !phone || !postcode || !service || !message) {
       console.log('Validation failed: missing required fields');
       return NextResponse.json(
         { error: 'All fields are required' },
@@ -130,6 +130,11 @@ export async function POST(request: NextRequest) {
                 <span class="value">${phone}</span>
               </div>
               
+              <div class="detail-row">
+                <span class="label">📍 Postcode:</span>
+                <span class="value">${postcode}</span>
+              </div>
+              
               <div class="detail-row" style="border-bottom: none;">
                 <span class="label">🏠 Service Interest:</span>
                 <span class="value">${serviceDisplay}</span>
@@ -190,6 +195,7 @@ Customer Details:
 Name: ${name}
 Email: ${email}
 Phone: ${phone}
+Postcode: ${postcode}
 Service Interest: ${serviceDisplay}
 
 Message:
@@ -255,7 +261,7 @@ Please respond to the customer directly at ${email} or ${phone}.
 
             <div class="quote-reference">
               <h3 style="margin: 0; font-size: 18px;">Your Contact Reference</h3>
-              <p style="margin: 5px 0 0 0; font-size: 16px;">Service Interest: ${serviceDisplay} | Contact: ${phone}</p>
+              <p style="margin: 5px 0 0 0; font-size: 16px;">Service Interest: ${serviceDisplay} | Postcode: ${postcode} | Contact: ${phone}</p>
             </div>
 
             <div class="contact-info">
@@ -297,7 +303,7 @@ What happens next?
 We will contact you within 2 working days to discuss your requirements and answer any questions you may have. Our experienced team is ready to help transform your space with our professional decorating services.
 
 Your Contact Reference:
-Service Interest: ${serviceDisplay} | Contact: ${phone}
+Service Interest: ${serviceDisplay} | Postcode: ${postcode} | Contact: ${phone}
 
 Need to speak to us sooner?
 Phone: 01626 911236
