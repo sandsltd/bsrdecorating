@@ -1,11 +1,36 @@
 'use client';
 
 import Link from 'next/link'
-import { MapPin, Phone, Mail, Star, CheckCircle, ArrowRight } from 'lucide-react'
+import { MapPin, Phone, Mail, Star, CheckCircle, ArrowRight, ChevronRight } from 'lucide-react'
 import { useQuoteModal } from '@/contexts/QuoteModalContext'
 
 export default function BoveyTraceyPage() {
   const { openQuoteModal } = useQuoteModal();
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bsrdecorating.co.uk"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Areas We Cover",
+        "item": "https://bsrdecorating.co.uk/coverage"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Bovey Tracey",
+        "item": "https://bsrdecorating.co.uk/areas/bovey-tracey"
+      }
+    ]
+  };
   
   const services = [
     {
@@ -105,6 +130,10 @@ export default function BoveyTraceyPage() {
       />
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -161,6 +190,23 @@ export default function BoveyTraceyPage() {
         }) }}
       />
       <div className="min-h-screen bg-gradient-to-b from-bsr-black via-bsr-gray to-bsr-black">
+        {/* Breadcrumbs */}
+        <section className="py-4 px-4 sm:px-6 lg:px-8 bg-bsr-black border-b border-bsr-gray-light">
+          <div className="max-w-7xl mx-auto">
+            <nav className="flex items-center space-x-2 text-sm">
+              <Link href="/" className="text-gray-400 hover:text-bsr-highlight transition-colors duration-200">
+                Home
+              </Link>
+              <ChevronRight size={16} className="text-gray-600" />
+              <Link href="/coverage" className="text-gray-400 hover:text-bsr-highlight transition-colors duration-200">
+                Areas We Cover
+              </Link>
+              <ChevronRight size={16} className="text-gray-600" />
+              <span className="text-bsr-white font-medium">Bovey Tracey</span>
+            </nav>
+          </div>
+        </section>
+
         {/* Hero Section */}
         <section className="relative py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto text-center">

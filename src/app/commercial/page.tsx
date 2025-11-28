@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Check, Star, Phone, Clock, Shield, Building, ChevronDown, ChevronUp } from 'lucide-react';
+import { Check, Star, Phone, Clock, Shield, Building, ChevronDown, ChevronUp, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 import ServiceHero from '@/components/ServiceHero';
 import FeaturedProjects from '@/components/FeaturedProjects';
@@ -11,6 +11,25 @@ import { useQuoteModal } from '@/contexts/QuoteModalContext';
 export default function CommercialPage() {
   const { openQuoteModal } = useQuoteModal();
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bsrdecorating.co.uk"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Commercial Decorating",
+        "item": "https://bsrdecorating.co.uk/commercial"
+      }
+    ]
+  };
 
   const toggleFAQ = (index: number) => {
     setOpenFAQ(openFAQ === index ? null : index);
@@ -128,7 +147,24 @@ export default function CommercialPage() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <div className="min-h-screen">
+        {/* Breadcrumbs */}
+        <section className="py-4 px-4 sm:px-6 lg:px-8 bg-bsr-black border-b border-bsr-gray-light">
+          <div className="max-w-7xl mx-auto">
+            <nav className="flex items-center space-x-2 text-sm">
+              <Link href="/" className="text-gray-400 hover:text-bsr-highlight transition-colors duration-200">
+                Home
+              </Link>
+              <ChevronRight size={16} className="text-gray-600" />
+              <span className="text-bsr-white font-medium">Commercial Decorating</span>
+            </nav>
+          </div>
+        </section>
         <ServiceHero
         title="Commercial Decorating Services"
         subtitle="Professional decorating solutions for businesses across South East Devon"
@@ -426,5 +462,6 @@ export default function CommercialPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }
