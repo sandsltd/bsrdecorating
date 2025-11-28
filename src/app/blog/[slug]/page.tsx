@@ -40,7 +40,13 @@ function getBlogKeywords(slug: string): string {
     'waterfront-property-maintenance-topsham': "waterfront property maintenance Topsham, marine-grade decorating Topsham, salt air resistance, flood-resistant finishes, estuary property maintenance, waterfront decorating Topsham",
     'end-tenancy-decorating-landlords-letting-agents': "end of tenancy decorating, landlord painting services, property management decorating, rental property maintenance, void period reduction",
     'professional-decorating-enhances-business-premises': "commercial decorating services, business painting contractors, office decorating, workplace transformation, professional painting",
-    'cost-effective-decorating-rental-properties-hmos': "rental property decorating, HMO painting services, landlord decorating contractors, property investment decorating, cost effective painting"
+    'cost-effective-decorating-rental-properties-hmos': "rental property decorating, HMO painting services, landlord decorating contractors, property investment decorating, cost effective painting",
+    'painter-decorator-cost-exeter-2025-price-guide': "painter decorator cost Exeter, decorating prices Exeter, how much does painting cost Exeter, decorator quotes Exeter, painting cost per room Exeter, commercial decorating prices Exeter, heritage property painting cost Exeter, 2025 decorating prices",
+    'best-paint-types-exeter-homes-old-damp-listed-properties': "best paint for Exeter homes, paint for old properties Exeter, paint for damp walls Exeter, listed building paint Exeter, heritage paint Exeter, period property paint Exeter, breathable paint Exeter, anti-mould paint Exeter",
+    'exeter-new-build-paintwork-problems-how-pros-fix': "new build paint problems Exeter, Heavitree new build decorating, developer paintwork issues, new build paint quality, professional repainting new builds, fixing developer paintwork, Exeter new build homes",
+    'decorating-tips-exeter-period-homes-specialist-advice': "period home decorating Exeter, Georgian house decorating Exeter, Victorian property decorating Exeter, heritage home decorating Exeter, listed building decorating Exeter, period property paint Exeter, conservation area decorating Exeter",
+    'topsham-waterfront-homes-best-paints-humidity-salt-air-weather': "Topsham waterfront paint, estuary property paint, salt air resistant paint, marine grade paint Topsham, waterfront home decorating Topsham, humidity resistant paint, weatherproof paint Topsham",
+    'maintaining-period-home-topsham-painter-expert-advice': "period home maintenance Topsham, Topsham conservation area maintenance, heritage property maintenance Topsham, maintaining listed building Topsham, period property care Topsham, Topsham period home upkeep"
   };
   return keywordMap[slug] || "";
 }

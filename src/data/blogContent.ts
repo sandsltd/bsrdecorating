@@ -1295,5 +1295,1434 @@ export const blogContent: Record<string, BlogContentData> = {
         content: 'At BSR Decorating, we specialise in working with property investors and landlords across Devon. Our [domestic decorating services](/domestic) are perfect for rental properties and HMOs. Our experience managing decoration for rental properties means we understand your challenges and can deliver solutions that improve your returns while maintaining the highest standards.'
       }
     ]
+  },
+  'painter-decorator-cost-exeter-2025-price-guide': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Planning a decorating project in Exeter? Understanding the costs involved is crucial for budgeting and making informed decisions. Whether you\'re refreshing a Georgian townhouse in St. Leonard\'s, updating a commercial office in the city centre, or maintaining a heritage property, this comprehensive 2025 price guide will help you understand what to expect when hiring a professional painter and decorator in Exeter.'
+      },
+      {
+        type: 'heading',
+        content: 'Average Painter & Decorator Costs in Exeter (2025)',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional decorating costs in Exeter vary based on several factors including property type, scope of work, and specific requirements. Here\'s what you can expect:'
+      },
+      {
+        type: 'subheading',
+        content: 'Interior Painting & Decorating',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Standard room (3m x 4m): £300-£600 per room',
+          'Living room (large): £500-£900',
+          'Kitchen: £400-£800 (includes cabinets if required)',
+          'Bedroom: £250-£550',
+          'Bathroom: £300-£650 (moisture-resistant finishes)',
+          'Hallway & stairs: £400-£750',
+          'Full house interior (3-bed): £2,500-£5,000',
+          'Full house interior (4-bed): £3,500-£7,000'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Exterior Painting & Decorating',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Front elevation only: £800-£1,500',
+          'Full exterior (semi-detached): £1,500-£3,000',
+          'Full exterior (detached): £2,500-£5,000',
+          'Windows & doors (per unit): £150-£300',
+          'Guttering & fascias: £300-£600',
+          'Rendering preparation & painting: £1,200-£2,500'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Commercial Decorating in Exeter',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Small office (50m²): £800-£1,500',
+          'Medium office (100m²): £1,500-£3,000',
+          'Large office (200m²+): £3,000-£6,000',
+          'Retail unit (frontage): £500-£1,200',
+          'Restaurant/bar: £2,000-£5,000',
+          'Warehouse (per 100m²): £800-£1,500'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Heritage & Listed Property Work',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter\'s heritage properties require specialist techniques and materials, which affects pricing:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Period property interior: +20-30% on standard rates',
+          'Listed building work: +30-50% (requires specialist materials & techniques)',
+          'Conservation area compliance: +15-25%',
+          'Traditional lime plastering: £40-£60 per m²',
+          'Heritage paint application: £25-£40 per m²'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Factors Affecting Decorating Costs in Exeter',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Property Type & Condition',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'The condition of your Exeter property significantly impacts costs. Older properties in areas like St. Leonard\'s, Pennsylvania, and Newtown often require more preparation work:'
+      },
+      {
+        type: 'list',
+        content: [
+          'New-build properties: Lower prep costs, standard rates apply',
+          'Period properties: Higher prep costs, may need specialist materials',
+          'Damp-affected properties: Additional treatment required (+£500-£2,000)',
+          'Previously painted surfaces: Preparation time varies',
+          'Unpainted surfaces: Priming required (+£200-£500 per room)'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Paint Quality & Finish Type',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'The paint you choose affects both cost and longevity:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Economy paint: Lower material cost, shorter lifespan',
+          'Premium paint (Dulux Trade, Farrow & Ball): Higher cost, 10-15 year lifespan',
+          'Heritage paint (Little Greene, Farrow & Ball): Premium cost, authentic finishes',
+          'Specialist paints (anti-mould, fire-retardant): +30-50% material cost'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Location & Access',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter city centre properties may have additional considerations:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Parking restrictions: May require permits or alternative arrangements',
+          'City centre access: Limited vehicle access may affect material delivery',
+          'Residential areas (St. Leonard\'s, Pennsylvania): Standard access',
+          'Commercial districts: May require out-of-hours work (+20-30%)'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'What\'s Included in Professional Decorating Quotes',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'A professional quote from BSR Decorating includes:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Site survey and assessment',
+          'Preparation work (filling, sanding, masking)',
+          'Priming where required',
+          'Two coats of paint (minimum)',
+          'Clean-up and waste disposal',
+          'Protection of furniture and flooring',
+          'Professional finish guarantee'
+        ]
+      },
+      {
+        type: 'quote',
+        content: 'Transparent pricing is essential. At BSR Decorating, our quotes include all preparation, materials, and labour—no hidden costs, no surprises.'
+      },
+      {
+        type: 'heading',
+        content: 'Cost-Saving Tips for Exeter Decorating Projects',
+        level: 2
+      },
+      {
+        type: 'list',
+        content: [
+          'Combine multiple rooms: Better rates for whole-house projects',
+          'Plan ahead: Book during quieter periods (autumn/winter)',
+          'Choose quality paint: Better longevity reduces long-term costs',
+          'Maintain regularly: Preventative maintenance costs less than major repairs',
+          'Get multiple quotes: Compare but consider value, not just price'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Why Professional Decorating Costs More (And Why It\'s Worth It)',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional decorators in Exeter bring expertise that DIY simply can\'t match:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Proper preparation: 70% of quality finish is in the prep work',
+          'Right materials: Knowledge of which paints work best for Exeter\'s climate and property types',
+          'Time efficiency: Professionals work faster, minimising disruption',
+          'Quality finish: Professional techniques ensure longevity',
+          'Guarantee: Professional work comes with guarantees and insurance'
+        ]
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Ready to get an accurate quote for your Exeter decorating project? Contact BSR Decorating today for a free, no-obligation quote. We serve all areas of Exeter including St. Leonard\'s, Pennsylvania, Newtown, and the city centre.'
+      }
+    ]
+  },
+  'best-paint-types-exeter-homes-old-damp-listed-properties': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Exeter\'s beautiful mix of Georgian townhouses, Victorian terraces, and period properties presents unique challenges when it comes to choosing paint. Whether you own a listed building in the conservation area, a damp-prone property, or a heritage home, selecting the right paint is crucial for both appearance and longevity. This expert guide will help you choose the best paint types for Exeter\'s diverse property portfolio.'
+      },
+      {
+        type: 'heading',
+        content: 'Paint for Exeter\'s Period & Listed Properties',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter\'s heritage properties, particularly in areas like St. Leonard\'s and the city centre, require specialist paint that respects the building\'s character while providing protection.'
+      },
+      {
+        type: 'subheading',
+        content: 'Breathable Paints for Period Properties',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Traditional buildings need to "breathe"—allowing moisture to escape through walls. Modern non-breathable paints can trap moisture, leading to damp and decay:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Lime-based paints: Traditional, highly breathable, perfect for old stone and brick',
+          'Clay paints: Natural, breathable, excellent for period interiors',
+          'Mineral paints: Silicate-based, breathable, durable for exteriors',
+          'Avoid: Vinyl emulsions on old walls—they trap moisture and cause problems'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Heritage Paint Brands for Exeter Properties',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'For listed buildings and conservation areas, these brands offer authentic finishes:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Farrow & Ball: Authentic heritage colours, breathable finishes',
+          'Little Greene: Traditional formulations, period-appropriate colours',
+          'Earthborn: Clay-based, highly breathable, eco-friendly',
+          'Auro: Natural paints, suitable for sensitive buildings'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Paint for Damp-Prone Exeter Properties',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Many Exeter properties, especially older buildings, face damp challenges. The right paint can help manage moisture effectively.'
+      },
+      {
+        type: 'subheading',
+        content: 'Anti-Mould & Moisture-Resistant Paints',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Dulux Trade Weathershield: Excellent for damp-prone exteriors',
+          'Zinsser Perma-White: Anti-mould, perfect for bathrooms and kitchens',
+          'Crown Trade Anti-Mould: Long-lasting protection against mould growth',
+          'Johnstone\'s Stormshield: Weather-resistant, ideal for Exeter\'s climate'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Breathable Solutions for Damp Walls',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'If your Exeter property has damp issues, breathable paint is essential:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Identify the damp source first: Rising damp, penetrating damp, or condensation',
+          'Use breathable paint: Allows moisture to escape while protecting the surface',
+          'Consider lime plaster: If replastering, use breathable lime-based systems',
+          'Avoid: Non-breathable paints that trap moisture and worsen problems'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Paint for Different Exeter Property Types',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Georgian Townhouses (St. Leonard\'s, City Centre)',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Interior: Farrow & Ball Estate Emulsion or Little Greene Intelligent Matt',
+          'Exterior: Mineral-based paints or breathable masonry paint',
+          'Woodwork: Traditional oil-based or modern water-based alternatives',
+          'Colours: Period-appropriate palettes (Georgian greys, creams, heritage blues)'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Victorian Terraces',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Interior: Breathable emulsion (clay or mineral-based)',
+          'Exterior: Durable masonry paint with good breathability',
+          'Features: Consider heritage colours for authentic Victorian character',
+          'Preparation: Often requires extensive prep due to multiple paint layers'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Modern Properties',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Interior: Standard emulsion (Dulux Trade, Crown Trade)',
+          'Exterior: Weather-resistant masonry paint',
+          'Flexibility: Modern properties can use any quality paint system',
+          'Consider: Low-VOC options for better indoor air quality'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Specialist Paint Requirements for Listed Buildings',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'If your Exeter property is listed or in a conservation area, you may need specific approvals:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Check with Exeter City Council: Listed building consent may be required',
+          'Use traditional materials: Often specified in conservation requirements',
+          'Colour restrictions: Some areas have approved colour palettes',
+          'Professional application: Listed buildings often require specialist techniques'
+        ]
+      },
+      {
+        type: 'quote',
+        content: 'Choosing the right paint for Exeter\'s period properties isn\'t just about colour—it\'s about protecting your investment and respecting the building\'s heritage.'
+      },
+      {
+        type: 'heading',
+        content: 'Interior vs Exterior Paint Considerations',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Interior Paint for Exeter Homes',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Living areas: Matt or eggshell for period properties, durable for family homes',
+          'Kitchens: Moisture-resistant, wipeable finishes (satin or gloss)',
+          'Bathrooms: Anti-mould, moisture-resistant paint essential',
+          'Bedrooms: Breathable options for older properties, standard emulsion for modern'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Exterior Paint for Exeter Properties',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Masonry: Breathable masonry paint for old buildings, standard for modern',
+          'Woodwork: Microporous paint for windows and doors (allows wood to breathe)',
+          'Metalwork: Specialist metal paint for railings and gates',
+          'Consider: Exeter\'s weather—rain, salt air (if near coast), and temperature variations'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Professional Paint Selection Advice',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'At BSR Decorating, we assess each Exeter property individually:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Property age and construction type',
+          'Existing paint systems and condition',
+          'Damp issues or moisture problems',
+          'Listed building or conservation area status',
+          'Client preferences and budget',
+          'Long-term maintenance requirements'
+        ]
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Need expert advice on choosing the right paint for your Exeter property? Contact BSR Decorating for a professional assessment. We specialise in period properties, listed buildings, and damp-prone homes across Exeter.'
+      }
+    ]
+  },
+  'exeter-new-build-paintwork-problems-how-pros-fix': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'If you\'ve bought a new-build home in Exeter\'s Heavitree, new developments, or any of the city\'s expanding residential areas, you might have noticed issues with the paintwork sooner than expected. This isn\'t uncommon—developer finishes are often done quickly and to a budget, not to professional standards. Here\'s what goes wrong with new-build paintwork and how professional decorators fix it properly.'
+      },
+      {
+        type: 'heading',
+        content: 'Common Problems with Exeter New-Build Paintwork',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Poor Surface Preparation',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'The most common issue with developer paintwork is inadequate preparation:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Unfilled nail holes and imperfections',
+          'Rough plaster not properly sanded',
+          'Dust and debris left on surfaces',
+          'No primer on bare plaster or wood',
+          'Paint applied over dirty or greasy surfaces'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Low-Quality Paint',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Developers often use budget paint to keep costs down:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Thin coverage requiring multiple coats',
+          'Poor durability and washability',
+          'Colour fading quickly',
+          'Inadequate protection for high-traffic areas',
+          'Not suitable for specific room requirements (bathrooms, kitchens)'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Rushed Application',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Paint applied too thickly (drips and runs)',
+          'Paint applied too thinly (patchy coverage)',
+          'Insufficient drying time between coats',
+          'Brush marks and roller streaks visible',
+          'Cutting-in not done properly (uneven edges)'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Inappropriate Paint for Room Type',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Standard emulsion in bathrooms (needs moisture-resistant)',
+          'Wrong finish for kitchens (needs wipeable)',
+          'No anti-mould paint where needed',
+          'Inadequate protection for high-traffic areas'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'How Professional Decorators Fix New-Build Paintwork',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Proper Surface Preparation',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional decorators start with thorough preparation:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Complete surface inspection: Identify all imperfections',
+          'Filling and sanding: Smooth all surfaces properly',
+          'Cleaning: Remove all dust, grease, and contaminants',
+          'Priming: Apply appropriate primer to bare surfaces',
+          'Masking: Protect areas not being painted'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Quality Paint Selection',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Professionals use trade-quality paint:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Dulux Trade or Crown Trade: Professional-grade durability',
+          'Appropriate finishes: Matt for living areas, satin for kitchens/bathrooms',
+          'Moisture-resistant: For bathrooms and damp-prone areas',
+          'Washable: For high-traffic and family areas',
+          'Long-lasting: 10-15 year lifespan vs 2-3 years for budget paint'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Professional Application Techniques',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Correct paint thickness: Applied evenly, not too thick or thin',
+          'Proper cutting-in: Clean, straight edges with brush work',
+          'Roller technique: Consistent texture, no streaks',
+          'Multiple coats: As many as needed for perfect coverage',
+          'Adequate drying: Proper time between coats for best results'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Room-Specific Solutions for Exeter New-Builds',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Kitchens',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Problem: Standard emulsion that marks easily',
+          'Solution: Wipeable satin or eggshell finish',
+          'Additional: Grease-resistant paint for areas near cooking',
+          'Professional approach: Proper preparation and quality paint'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Bathrooms',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Problem: Standard paint that develops mould',
+          'Solution: Anti-mould, moisture-resistant paint',
+          'Additional: Proper ventilation consideration',
+          'Professional approach: Specialist bathroom paint systems'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Living Areas & Bedrooms',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Problem: Thin coverage, poor durability',
+          'Solution: Quality matt emulsion, proper number of coats',
+          'Additional: Consider washable options for family homes',
+          'Professional approach: Trade-quality paint with proper application'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Hallways & Stairs',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Problem: Scuff marks and wear',
+          'Solution: Durable, washable finish',
+          'Additional: Consider tougher paint for high-traffic areas',
+          'Professional approach: Appropriate paint for traffic levels'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'When to Repaint Your Exeter New-Build',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Signs it\'s time for professional repainting:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Paint peeling or flaking within first year',
+          'Visible brush marks or roller streaks',
+          'Patchy coverage or colour inconsistency',
+          'Mould appearing in bathrooms',
+          'Paint marking easily in kitchens',
+          'General wear appearing too quickly',
+          'You simply want a better finish'
+        ]
+      },
+      {
+        type: 'quote',
+        content: 'Developer finishes are about speed and cost. Professional finishes are about quality and longevity. The difference is immediately visible and lasts for years.'
+      },
+      {
+        type: 'heading',
+        content: 'Cost of Fixing New-Build Paintwork',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional repainting of new-build properties typically costs:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Single room: £300-£600 (depending on size and issues)',
+          'Full house (3-bed): £2,500-£4,000',
+          'Full house (4-bed): £3,500-£5,500',
+          'Kitchen/bathroom specialist work: Additional £200-£400 per room'
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: 'Remember: Professional work lasts 10-15 years vs 2-3 years for developer finishes, making it better value long-term.'
+      },
+      {
+        type: 'heading',
+        content: 'Why Heavitree & New-Build Areas Need Professional Paintwork',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter\'s expanding residential areas like Heavitree have many new-build properties. These homes deserve professional finishes that:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Protect your investment properly',
+          'Look professional and well-maintained',
+          'Last significantly longer',
+          'Add value to your property',
+          'Provide peace of mind'
+        ]
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Tired of substandard developer paintwork? BSR Decorating specialises in fixing new-build paint issues across Exeter, including Heavitree and all new development areas. Get a professional finish that lasts.'
+      }
+    ]
+  },
+  'decorating-tips-exeter-period-homes-specialist-advice': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Exeter\'s period properties—from Georgian townhouses in St. Leonard\'s to Victorian terraces and heritage homes—require specialist decorating approaches. These beautiful buildings have unique characteristics that demand expert knowledge and appropriate techniques. Here\'s essential specialist advice for decorating Exeter\'s period homes.'
+      },
+      {
+        type: 'heading',
+        content: 'Understanding Exeter\'s Period Property Types',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Georgian Properties (St. Leonard\'s, City Centre)',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Georgian homes in Exeter feature:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Symmetrical facades and proportions',
+          'Large sash windows',
+          'Original panelled doors and shutters',
+          'Period fireplaces and cornicing',
+          'High ceilings and spacious rooms'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Victorian Terraces',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Bay windows and decorative features',
+          'Original floorboards and fireplaces',
+          'Period tiling and stained glass',
+          'Ornate plasterwork',
+          'Narrow but tall proportions'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Edwardian Properties',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Lighter, airier feel than Victorian',
+          'Arts and Crafts influences',
+          'Quality joinery and built-in features',
+          'Garden-focused design',
+          'Better natural light'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Essential Decorating Principles for Period Properties',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Respect the Building\'s Character',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Period properties have inherent character that should be enhanced, not hidden:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Work with original features, don\'t cover them',
+          'Choose colours that complement the period',
+          'Use appropriate finishes (matt for period interiors)',
+          'Preserve original details (cornicing, panelling, fireplaces)',
+          'Consider the building\'s history and style'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Use Breathable Paint Systems',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Old buildings need to breathe—this is crucial:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Traditional buildings have permeable walls',
+          'Non-breathable paint traps moisture',
+          'Trapped moisture causes damp and decay',
+          'Use breathable paints (lime, clay, or mineral-based)',
+          'Essential for both interior and exterior work'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Colour Schemes for Exeter Period Properties',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Georgian Colour Palettes',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Georgian homes suit:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Soft greys and creams (Farrow & Ball, Little Greene)',
+          'Heritage blues and greens',
+          'Warm neutrals that complement period features',
+          'Rich, muted tones (not bright modern colours)',
+          'Consider: Original Georgian colours were often quite bold'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Victorian Colour Schemes',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Deeper, richer colours',
+          'Jewel tones (deep reds, greens, blues)',
+          'Warm earth tones',
+          'Dramatic contrasts (dark walls, light woodwork)',
+          'Consider: Victorian homes can handle stronger colours'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Specialist Techniques for Period Property Decorating',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Preparing Old Surfaces',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Test for lead paint: Essential safety step',
+          'Gentle preparation: Don\'t damage original surfaces',
+          'Fill appropriately: Use breathable fillers for old walls',
+          'Repair before decorating: Fix issues properly first',
+          'Respect original materials: Work with, not against, the building'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Working with Original Features',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Cornicing: Clean carefully, paint to enhance detail',
+          'Panelling: Use appropriate finishes, preserve character',
+          'Fireplaces: Highlight, don\'t hide, period features',
+          'Sash windows: Specialist techniques for period windows',
+          'Original floors: Protect during decorating work'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Listed Buildings & Conservation Areas',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'If your Exeter property is listed or in a conservation area:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Check requirements: Exeter City Council may have specific rules',
+          'Listed building consent: May be required for external work',
+          'Approved materials: Often specified for listed properties',
+          'Colour restrictions: Some areas have approved palettes',
+          'Professional requirement: Listed work often needs specialists',
+          'Documentation: Keep records of all work done'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Common Mistakes to Avoid',
+        level: 2
+      },
+      {
+        type: 'list',
+        content: [
+          'Using non-breathable paint on old walls',
+          'Covering original features',
+          'Choosing inappropriate modern colours',
+          'Rushing preparation work',
+          'Using wrong materials for period properties',
+          'Ignoring damp issues before decorating',
+          'Not checking listed building requirements'
+        ]
+      },
+      {
+        type: 'quote',
+        content: 'Decorating a period property in Exeter isn\'t just painting—it\'s preserving history while creating a beautiful, functional home. Specialist knowledge makes all the difference.'
+      },
+      {
+        type: 'heading',
+        content: 'Professional Period Property Decorating',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'At BSR Decorating, we specialise in period property work across Exeter:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Heritage expertise: Understanding of period building techniques',
+          'Appropriate materials: Breathable paints and traditional methods',
+          'Listed building experience: Knowledge of conservation requirements',
+          'Respectful approach: Enhancing character, not changing it',
+          'Long-term thinking: Solutions that protect and preserve'
+        ]
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Planning to decorate your Exeter period property? Get specialist advice from BSR Decorating. We understand the unique requirements of Georgian, Victorian, and heritage homes across St. Leonard\'s, Pennsylvania, and all of Exeter.'
+      }
+    ]
+  },
+  'topsham-waterfront-homes-best-paints-humidity-salt-air-weather': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Topsham\'s beautiful waterfront properties face unique challenges that standard paint simply can\'t handle. The combination of high humidity, salt air from the estuary, and constant weather exposure requires specialist paint systems designed for marine environments. If you own a riverside property in Topsham, choosing the right paint isn\'t just about aesthetics—it\'s about protecting your investment from the elements.'
+      },
+      {
+        type: 'heading',
+        content: 'Why Topsham Waterfront Properties Need Specialist Paint',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Salt Air Corrosion',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Topsham\'s estuary location means properties are exposed to salt-laden air:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Salt accelerates corrosion of metalwork (railings, gates, window frames)',
+          'Salt can degrade paint finishes faster than inland properties',
+          'Metalwork needs specialist anti-corrosion primers and paints',
+          'Regular maintenance is essential for waterfront properties'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'High Humidity Levels',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Estuary location creates consistently high humidity',
+          'Humidity promotes mould and mildew growth',
+          'Standard paint can\'t handle constant moisture exposure',
+          'Interior paint needs moisture-resistant properties',
+          'Exterior paint must be breathable yet protective'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Weather Exposure',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Wind-driven rain from estuary',
+          'Temperature fluctuations',
+          'UV exposure (if south-facing)',
+          'Frost and freeze-thaw cycles',
+          'Constant moisture from river proximity'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Best Paint Types for Topsham Waterfront Homes',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Exterior Masonry Paint',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'For Topsham\'s waterfront exteriors, you need:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Weather-resistant masonry paint: Stands up to constant moisture',
+          'Breathable formula: Allows walls to dry while protecting',
+          'Salt-resistant: Specifically formulated for marine environments',
+          'UV protection: Prevents fading from sun exposure',
+          'Recommended: Dulux Trade Weathershield, Johnstone\'s Stormshield'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Exterior Woodwork Paint',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Microporous paint: Allows wood to breathe while protecting',
+          'Anti-fungal properties: Prevents mould and rot',
+          'Salt-resistant: Essential for estuary locations',
+          'Flexible finish: Moves with wood expansion/contraction',
+          'Recommended: Sadolin Classic, Ronseal Weatherproof'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Metalwork Paint',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Anti-corrosion primer: Essential first step',
+          'Metal-specific paint: Formulated for salt air environments',
+          'Zinc-rich primers: For maximum corrosion protection',
+          'Regular maintenance: More frequent than inland properties',
+          'Recommended: Hammerite, Rust-Oleum specialist ranges'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Interior Paint for High Humidity',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Anti-mould paint: Essential for bathrooms and high-humidity areas',
+          'Moisture-resistant: For rooms affected by estuary humidity',
+          'Breathable options: For period properties that need to breathe',
+          'Kitchen paint: Grease and moisture-resistant finishes',
+          'Recommended: Zinsser Perma-White, Crown Trade Anti-Mould'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Specialist Considerations for Topsham Properties',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Period Properties on the Waterfront',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Topsham\'s heritage waterfront homes need special attention:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Breathable paint: Essential for old walls',
+          'Traditional materials: Where possible, use period-appropriate options',
+          'Conservation compliance: Check requirements for listed buildings',
+          'Balance: Breathability with weather protection',
+          'Expert application: Requires specialist knowledge'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Flood Risk Considerations',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Flood-resistant finishes: For lower-level rooms',
+          'Quick-drying paint: If flooding is a risk',
+          'Waterproof options: For basements or ground floors',
+          'Regular inspection: Check for water damage',
+          'Professional assessment: Understand your property\'s flood risk'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Preparation is Critical for Waterfront Properties',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Proper preparation is even more important for Topsham waterfront homes:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Thorough cleaning: Remove salt deposits and contaminants',
+          'Repair damage: Fix any weather-related issues first',
+          'Appropriate primers: Use salt-resistant primers where needed',
+          'Surface preparation: More critical in harsh environments',
+          'Professional assessment: Identify all issues before starting'
+        ]
+      },
+      {
+        type: 'quote',
+        content: 'Waterfront properties in Topsham need paint systems that work with the environment, not against it. Specialist knowledge of marine-grade finishes is essential.'
+      },
+      {
+        type: 'heading',
+        content: 'Maintenance Schedule for Topsham Waterfront Homes',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Waterfront properties require more frequent maintenance:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Exterior repainting: Every 5-7 years (vs 8-10 for inland)',
+          'Metalwork: Annual inspection, repaint every 3-5 years',
+          'Woodwork: Check annually, repaint every 4-6 years',
+          'Interior: Standard schedule, but use appropriate paint',
+          'Regular cleaning: Remove salt deposits and debris'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Cost Considerations for Waterfront Paintwork',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Specialist paint for waterfront properties costs more, but it\'s essential:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Marine-grade paint: 20-30% more expensive than standard',
+          'More frequent maintenance: Factor into long-term costs',
+          'Specialist application: May require experienced decorators',
+          'Better value: Proper paint lasts longer and protects better',
+          'Investment protection: Prevents costly damage from weather'
+        ]
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Need specialist paint advice for your Topsham waterfront property? BSR Decorating has extensive experience with estuary properties, salt air protection, and marine-grade finishes. Contact us for expert guidance.'
+      }
+    ]
+  },
+  'maintaining-period-home-topsham-painter-expert-advice': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Maintaining a period home in Topsham\'s conservation area requires specialist knowledge and a long-term approach. These beautiful heritage properties have unique needs that go beyond standard decorating. As professional painters with extensive experience in Topsham\'s period properties, we share expert advice on maintaining these special homes for generations to come.'
+      },
+      {
+        type: 'heading',
+        content: 'Understanding Topsham\'s Period Properties',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Conservation Area Requirements',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Topsham is a designated conservation area, which means:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Planning permission may be required for external work',
+          'Specific materials and techniques may be specified',
+          'Colour choices may be restricted',
+          'Original features must be preserved',
+          'Professional expertise is often essential'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Common Period Property Types in Topsham',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Georgian townhouses: Elegant proportions, period features',
+          'Victorian terraces: Characterful, original details',
+          'Listed buildings: Additional restrictions and requirements',
+          'Waterfront period properties: Unique challenges of estuary location',
+          'Heritage cottages: Traditional construction methods'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Essential Maintenance Principles for Period Homes',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Prevention Over Cure',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Regular maintenance prevents major problems:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Annual inspections: Catch issues early',
+          'Prompt repairs: Fix problems before they worsen',
+          'Protective maintenance: Keep paintwork in good condition',
+          'Weather protection: Maintain exterior finishes',
+          'Cost-effective: Regular maintenance costs less than major repairs'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Use Appropriate Materials',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Breathable paints: Essential for old walls',
+          'Traditional materials: Where specified or appropriate',
+          'Period-appropriate finishes: Respect the building\'s character',
+          'Quality products: Invest in materials that last',
+          'Conservation-compliant: Meet conservation area requirements'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Annual Maintenance Checklist for Topsham Period Homes',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Exterior Maintenance',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Inspect paintwork: Look for peeling, cracking, or fading',
+          'Check woodwork: Windows, doors, and decorative features',
+          'Examine masonry: Look for cracks, damp, or deterioration',
+          'Gutters and downpipes: Clear and check condition',
+          'Metalwork: Railings, gates, and fixtures',
+          'Roof: Check for issues that could affect walls'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Interior Maintenance',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Check for damp: Early signs of moisture problems',
+          'Inspect original features: Cornicing, panelling, fireplaces',
+          'Woodwork condition: Doors, skirting, architraves',
+          'Plaster condition: Cracks or deterioration',
+          'Decorative finishes: Paint condition and touch-ups needed'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Common Issues in Topsham Period Properties',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Damp Problems',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Period properties, especially waterfront ones, can face damp:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Rising damp: From ground moisture',
+          'Penetrating damp: Through walls or roof',
+          'Condensation: From high humidity (common in Topsham)',
+          'Solution: Identify source, use breathable materials, ensure ventilation'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Paint Deterioration',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Non-breathable paint: Traps moisture, causes problems',
+          'Weather exposure: Especially for waterfront properties',
+          'Salt air: Accelerates deterioration in estuary locations',
+          'Solution: Use appropriate breathable, weather-resistant paint'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Original Feature Damage',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Neglected maintenance: Features deteriorate over time',
+          'Inappropriate materials: Can damage original features',
+          'Lack of expertise: Period features need specialist care',
+          'Solution: Regular maintenance with appropriate materials and techniques'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Long-Term Maintenance Strategy',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: '5-Year Maintenance Plan',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Year 1: Full exterior repaint if needed, interior touch-ups',
+          'Year 2: Interior refresh, woodwork maintenance',
+          'Year 3: Exterior touch-ups, feature restoration if needed',
+          'Year 4: Interior maintenance, preparation for major work',
+          'Year 5: Full exterior repaint, major interior work if required'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: '10-Year Major Refurbishment',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Full interior and exterior repaint',
+          'Restoration of original features',
+          'Address any structural issues',
+          'Upgrade paint systems if needed',
+          'Comprehensive maintenance of all elements'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Working with Conservation Requirements',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Topsham\'s conservation area status means:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Check requirements: Contact local authority before major work',
+          'Use approved materials: Often specified for conservation areas',
+          'Respect character: Maintain period-appropriate finishes',
+          'Professional help: Conservation work often needs specialists',
+          'Documentation: Keep records of all maintenance work'
+        ]
+      },
+      {
+        type: 'quote',
+        content: 'Maintaining a period home in Topsham is about preserving history while ensuring the property remains beautiful and functional. It requires specialist knowledge, appropriate materials, and a long-term approach.'
+      },
+      {
+        type: 'heading',
+        content: 'Professional Period Property Maintenance',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'At BSR Decorating, we specialise in period property maintenance across Topsham:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Conservation area expertise: Understanding of local requirements',
+          'Heritage knowledge: Appropriate materials and techniques',
+          'Long-term planning: Maintenance strategies that protect your investment',
+          'Waterfront experience: Specialised knowledge for estuary properties',
+          'Respectful approach: Preserving character while maintaining functionality'
+        ]
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Need expert advice on maintaining your Topsham period property? BSR Decorating specialises in conservation area work, heritage maintenance, and long-term property care. Contact us for professional guidance.'
+      }
+    ]
   }
 };

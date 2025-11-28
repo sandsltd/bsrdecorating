@@ -89,18 +89,80 @@ export const blogPosts: BlogPost[] = [
     readTime: "9 min read",
     image: "/images/affordable decorating.png",
     slug: "cost-effective-decorating-rental-properties-hmos"
+  },
+  {
+    id: 9,
+    title: "How Much Does a Painter & Decorator Cost in Exeter? 2025 Price Guide",
+    excerpt: "Get transparent pricing for painting and decorating services in Exeter. Complete 2025 cost guide covering interior, exterior, commercial, and heritage property work with real examples.",
+    category: "Pricing Guide",
+    date: "2025-11-28",
+    readTime: "12 min read",
+    image: "/portfolio/project1/PHOTO-2025-09-02-11-07-09.jpg",
+    slug: "painter-decorator-cost-exeter-2025-price-guide"
+  },
+  {
+    id: 10,
+    title: "Best Paint Types for Exeter Homes (Old, Damp or Listed Properties)",
+    excerpt: "Expert guide to choosing the right paint for Exeter's heritage homes, period properties, and damp-prone buildings. Specialist advice for listed buildings and conservation areas.",
+    category: "Expert Advice",
+    date: "2025-11-28",
+    readTime: "10 min read",
+    image: "/portfolio/project2/PHOTO-2025-09-02-11-09-52.jpg",
+    slug: "best-paint-types-exeter-homes-old-damp-listed-properties"
+  },
+  {
+    id: 11,
+    title: "The Real Problem With Exeter New-Build Paintwork (And How Pros Fix It)",
+    excerpt: "Why new-build homes in Exeter's Heavitree and new developments need professional paintwork. Common issues with developer finishes and how professional decorators solve them.",
+    category: "Expert Advice",
+    date: "2025-11-28",
+    readTime: "9 min read",
+    image: "/portfolio/project5/PHOTO-2025-09-02-11-16-33.jpg",
+    slug: "exeter-new-build-paintwork-problems-how-pros-fix"
+  },
+  {
+    id: 12,
+    title: "Decorating Tips for Exeter Period Homes (Specialist Advice)",
+    excerpt: "Essential decorating advice for Exeter's period properties, Georgian townhouses, and heritage homes. Specialist techniques for listed buildings and conservation areas.",
+    category: "Heritage Restoration",
+    date: "2025-11-28",
+    readTime: "11 min read",
+    image: "/portfolio/project1/PHOTO-2025-09-02-11-07-13.jpg",
+    slug: "decorating-tips-exeter-period-homes-specialist-advice"
+  },
+  {
+    id: 13,
+    title: "Topsham Waterfront Homes: Best Paints for Humidity, Salt Air & Weather Exposure",
+    excerpt: "Specialist guide to choosing paint for Topsham's waterfront properties. Marine-grade protection, salt air resistance, and weather-resistant finishes for estuary-facing homes.",
+    category: "Waterfront Maintenance",
+    date: "2025-11-28",
+    readTime: "10 min read",
+    image: "/portfolio/project11/PHOTO-2025-09-02-11-40-49.jpg",
+    slug: "topsham-waterfront-homes-best-paints-humidity-salt-air-weather"
+  },
+  {
+    id: 14,
+    title: "Maintaining a Period Home in Topsham – A Painter's Expert Advice",
+    excerpt: "Professional painter's guide to maintaining Topsham's period properties and heritage homes. Conservation area compliance, traditional techniques, and long-term maintenance strategies.",
+    category: "Heritage Restoration",
+    date: "2025-11-28",
+    readTime: "11 min read",
+    image: "/portfolio/project2/PHOTO-2025-09-02-11-09-52.jpg",
+    slug: "maintaining-period-home-topsham-painter-expert-advice"
   }
 ];
 
 export const categories = [
   { name: "All Posts", count: blogPosts.length },
   { name: "Luxury Decorating", count: 1 },
-  { name: "Heritage Restoration", count: 1 },
+  { name: "Heritage Restoration", count: 3 },
   { name: "Commercial Services", count: 2 },
-  { name: "Waterfront Maintenance", count: 1 },
+  { name: "Waterfront Maintenance", count: 2 },
   { name: "Seasonal Trends", count: 1 },
   { name: "Landlord Services", count: 1 },
-  { name: "Property Investment", count: 1 }
+  { name: "Property Investment", count: 1 },
+  { name: "Pricing Guide", count: 1 },
+  { name: "Expert Advice", count: 2 }
 ];
 
 // Helper function to get the latest blog posts (sorted by date)

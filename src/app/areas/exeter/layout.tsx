@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Luxury Decorators Exeter | Commercial Office & Heritage Specialists – BSR Decorating',
-  description: '🏛️ Exeter\'s premier luxury decorators! St. Leonard\'s, Pennsylvania, Newtown. Commercial offices, heritage homes, affluent areas. FREE quotes, expert craftsmanship!',
-  keywords: 'luxury decorators Exeter, commercial office decorating Exeter, heritage property decorating Exeter, painters Exeter, decorating services Exeter Devon, luxury decorating Exeter, commercial decorating Exeter, office painting Exeter, St Leonards Exeter decorators, Pennsylvania Exeter painters, Newtown Exeter decorating',
+  title: 'Decorator Exeter – Interior & Exterior Painting | Domestic & Commercial – BSR Decorating',
+  description: 'Professional decorators in Exeter covering homes, offices, shops & heritage properties. Quality finishes, fast turnaround, free quotes. Serving St Leonard\'s, Topsham & central Exeter.',
+  keywords: 'decorator Exeter, painters Exeter, interior painting Exeter, exterior painting Exeter, commercial decorators Exeter, domestic decorating Exeter, office painting Exeter, heritage property decorating Exeter, decorating services Exeter Devon, St Leonards Exeter decorators, Pennsylvania Exeter painters, Newtown Exeter decorating, Topsham decorators',
   alternates: {
     canonical: '/areas/exeter'
   },
   openGraph: {
-    title: 'Luxury Decorators Exeter | BSR Decorating',
-    description: 'Premium decorating services in Exeter - luxury heritage and commercial office specialists',
+    title: 'Decorator Exeter – Interior & Exterior Painting | Domestic & Commercial – BSR Decorating',
+    description: 'Professional decorators in Exeter covering homes, offices, shops & heritage properties. Quality finishes, fast turnaround, free quotes.',
     url: 'https://bsrdecorating.co.uk/areas/exeter',
     type: 'website'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Luxury Decorators Exeter | BSR Decorating',
-    description: 'Premium decorating services in Exeter - luxury heritage and commercial office specialists',
+    title: 'Decorator Exeter – Interior & Exterior Painting | Domestic & Commercial',
+    description: 'Professional decorators in Exeter covering homes, offices, shops & heritage properties. Quality finishes, fast turnaround, free quotes.',
   }
 };
 
