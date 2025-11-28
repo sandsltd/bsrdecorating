@@ -112,6 +112,63 @@ export default function ExmouthPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do you work on seafront properties in Exmouth?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we specialise in seafront property decorating in Exmouth. We use marine-grade paint systems, salt-resistant coatings, and specialist techniques specifically designed for extreme coastal exposure, protecting properties from wind, salt air, and weather damage."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you handle holiday home decorating in Exmouth?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we specialise in holiday home decorating in Exmouth. We offer quick turnaround times, durable finishes suitable for rental properties, and flexible scheduling to work around guest bookings and tourism seasons."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you use marine-grade paints for coastal properties?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we use marine-grade paint systems and specialist coatings for coastal properties in Exmouth. These paints are specifically designed to resist salt air, high humidity, UV exposure, and extreme weather conditions common in seafront locations."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are you experienced with marine business decorating?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we have experience decorating marine-related businesses in Exmouth, including boatyards, marinas, and waterside restaurants. We understand the unique challenges of these environments and use appropriate protective finishes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you offer quick turnaround for holiday properties?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we offer quick turnaround decorating services for holiday properties in Exmouth. We understand the need to complete work between guest bookings and can provide fast, efficient decorating to minimise downtime for holiday rental properties."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you protect against extreme coastal weather?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We use specialist marine-grade protection systems including salt-resistant primers, weather-resistant topcoats, and UV protection specifically designed for Exmouth's challenging coastal environment. Our techniques ensure long-lasting protection against wind, rain, salt air, and sun exposure."
+              }
+            }
+          ]
+        }) }}
+      />
       <div className="min-h-screen bg-gradient-to-b from-bsr-black via-bsr-gray to-bsr-black">
         {/* Hero Section */}
         <section className="relative py-20 px-4 sm:px-6 lg:px-8">
@@ -323,6 +380,74 @@ export default function ExmouthPage() {
                 Serving Exmouth, Lympstone, Budleigh Salterton, and the East Devon coastal area. 
                 For professional coastal decorating services in Exmouth, contact BSR Decorating today.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-bsr-white mb-8 text-center">
+              Frequently Asked Questions About Decorating in Exmouth
+            </h2>
+            <div className="space-y-6">
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you work on seafront properties in Exmouth?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we specialise in seafront property decorating in Exmouth. We use marine-grade paint systems, salt-resistant coatings, and specialist techniques specifically designed for extreme coastal exposure, protecting properties from wind, salt air, and weather damage.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Can you handle holiday home decorating in Exmouth?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we specialise in holiday home decorating in Exmouth. We offer quick turnaround times, durable finishes suitable for rental properties, and flexible scheduling to work around guest bookings and tourism seasons.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you use marine-grade paints for coastal properties?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we use marine-grade paint systems and specialist coatings for coastal properties in Exmouth. These paints are specifically designed to resist salt air, high humidity, UV exposure, and extreme weather conditions common in seafront locations.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Are you experienced with marine business decorating?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we have experience decorating marine-related businesses in Exmouth, including boatyards, marinas, and waterside restaurants. We understand the unique challenges of these environments and use appropriate protective finishes.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you offer quick turnaround for holiday properties?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we offer quick turnaround decorating services for holiday properties in Exmouth. We understand the need to complete work between guest bookings and can provide fast, efficient decorating to minimise downtime for holiday rental properties.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  How do you protect against extreme coastal weather?
+                </h3>
+                <p className="text-gray-300">
+                  We use specialist marine-grade protection systems including salt-resistant primers, weather-resistant topcoats, and UV protection specifically designed for Exmouth's challenging coastal environment. Our techniques ensure long-lasting protection against wind, rain, salt air, and sun exposure.
+                </p>
+              </div>
+            </div>
+            <div className="text-center mt-8">
+              <button
+                onClick={() => openQuoteModal()}
+                className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+              >
+                <Phone size={20} />
+                <span>Get Your Free Exmouth Quote</span>
+              </button>
             </div>
           </div>
         </section>

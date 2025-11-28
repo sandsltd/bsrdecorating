@@ -103,6 +103,63 @@ export default function NewtonAbbotPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do you offer decorating in Kingsteignton and Abbotskerswell?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we provide decorating services throughout Newton Abbot and surrounding areas including Kingsteignton, Abbotskerswell, and Bovey Tracey. We cover all of South Devon with quick response times from our nearby Dawlish base."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you work on period properties in Newton Abbot?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we have extensive experience with period properties in Newton Abbot. We understand traditional Devon architecture and use appropriate techniques for Georgian, Victorian, and Edwardian properties, preserving character while ensuring modern durability."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you offer out-of-hours commercial decorating in Newton Abbot?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we offer out-of-hours and weekend work for commercial decorating in Newton Abbot. We understand that businesses need minimal disruption, and we can schedule work during evenings, weekends, or outside normal business hours."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are you fully insured for commercial painting in Newton Abbot?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we are fully insured for all commercial painting and decorating work in Newton Abbot. We carry comprehensive public liability insurance and employers' liability insurance, ensuring complete coverage for all commercial projects."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does decorating cost in Newton Abbot?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Decorating costs in Newton Abbot vary based on property type and scope of work. Standard room decorating typically ranges from £300-£600 per room, while full house interior work for a 3-bedroom property ranges from £2,500-£5,000. We provide free, no-obligation quotes for all Newton Abbot projects."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you work on business parks in Newton Abbot?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we provide commercial decorating services for business parks in Newton Abbot. We have experience with modern office buildings, retail units, and industrial properties, working around business operations to minimise disruption."
+              }
+            }
+          ]
+        }) }}
+      />
       <div className="min-h-screen bg-gradient-to-b from-bsr-black via-bsr-gray to-bsr-black">
         {/* Hero Section */}
         <section className="relative py-20 px-4 sm:px-6 lg:px-8">
@@ -311,6 +368,74 @@ export default function NewtonAbbotPage() {
                 Serving Newton Abbot, Bovey Tracey, Kingsteignton, Abbotskerswell, and surrounding South Devon areas. 
                 For professional decorating services in Newton Abbot, contact BSR Decorating today.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-bsr-white mb-8 text-center">
+              Frequently Asked Questions About Decorating in Newton Abbot
+            </h2>
+            <div className="space-y-6">
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you offer decorating in Kingsteignton and Abbotskerswell?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we provide decorating services throughout Newton Abbot and surrounding areas including Kingsteignton, Abbotskerswell, and Bovey Tracey. We cover all of South Devon with quick response times from our nearby Dawlish base.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Can you work on period properties in Newton Abbot?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we have extensive experience with period properties in Newton Abbot. We understand traditional Devon architecture and use appropriate techniques for Georgian, Victorian, and Edwardian properties, preserving character while ensuring modern durability.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you offer out-of-hours commercial decorating in Newton Abbot?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we offer out-of-hours and weekend work for commercial decorating in Newton Abbot. We understand that businesses need minimal disruption, and we can schedule work during evenings, weekends, or outside normal business hours.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Are you fully insured for commercial painting in Newton Abbot?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we are fully insured for all commercial painting and decorating work in Newton Abbot. We carry comprehensive public liability insurance and employers' liability insurance, ensuring complete coverage for all commercial projects.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  How much does decorating cost in Newton Abbot?
+                </h3>
+                <p className="text-gray-300">
+                  Decorating costs in Newton Abbot vary based on property type and scope of work. Standard room decorating typically ranges from £300-£600 per room, while full house interior work for a 3-bedroom property ranges from £2,500-£5,000. We provide free, no-obligation quotes for all Newton Abbot projects.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you work on business parks in Newton Abbot?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we provide commercial decorating services for business parks in Newton Abbot. We have experience with modern office buildings, retail units, and industrial properties, working around business operations to minimise disruption.
+                </p>
+              </div>
+            </div>
+            <div className="text-center mt-8">
+              <button
+                onClick={() => openQuoteModal()}
+                className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+              >
+                <Phone size={20} />
+                <span>Get Your Free Newton Abbot Quote</span>
+              </button>
             </div>
           </div>
         </section>

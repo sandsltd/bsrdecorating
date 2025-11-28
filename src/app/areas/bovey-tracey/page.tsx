@@ -103,6 +103,63 @@ export default function BoveyTraceyPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do you work on Dartmoor cottages in Bovey Tracey?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we specialise in decorating Dartmoor cottages and period properties in Bovey Tracey. We understand traditional Devon architecture and use appropriate techniques and materials for these unique heritage properties, preserving their character while ensuring modern durability."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you work on pottery studios and creative spaces?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we provide decorating services for pottery studios, creative spaces, and artistic businesses in Bovey Tracey. We understand the unique needs of creative industries and can provide appropriate finishes for studio environments."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you use traditional materials for period properties?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we use traditional materials and techniques for period properties in Bovey Tracey where appropriate. We understand the importance of breathable paints and traditional finishes for heritage properties, while ensuring modern protection and durability."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are you experienced with heritage property restoration?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we have extensive experience with heritage property restoration in Bovey Tracey. We understand traditional Devon architecture, use period-appropriate techniques, and can work with conservation requirements for listed buildings and heritage properties."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you work on properties near Dartmoor National Park?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we provide decorating services for properties near Dartmoor National Park, including Bovey Tracey and surrounding areas. We understand the unique challenges of properties in this area, including weather exposure and traditional architecture."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How quickly can you respond to projects in Bovey Tracey?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "As we're based nearby in Dawlish, we can typically respond quickly to projects in Bovey Tracey. Response times vary depending on project size and current workload, but we prioritise local projects and can often accommodate urgent work."
+              }
+            }
+          ]
+        }) }}
+      />
       <div className="min-h-screen bg-gradient-to-b from-bsr-black via-bsr-gray to-bsr-black">
         {/* Hero Section */}
         <section className="relative py-20 px-4 sm:px-6 lg:px-8">
@@ -312,6 +369,74 @@ export default function BoveyTraceyPage() {
                 Serving Bovey Tracey, Lustleigh, Moretonhampstead, Chudleigh, and the surrounding Dartmoor area. 
                 For professional decorating services in Bovey Tracey, contact BSR Decorating today.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-bsr-white mb-8 text-center">
+              Frequently Asked Questions About Decorating in Bovey Tracey
+            </h2>
+            <div className="space-y-6">
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you work on Dartmoor cottages in Bovey Tracey?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we specialise in decorating Dartmoor cottages and period properties in Bovey Tracey. We understand traditional Devon architecture and use appropriate techniques and materials for these unique heritage properties, preserving their character while ensuring modern durability.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Can you work on pottery studios and creative spaces?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we provide decorating services for pottery studios, creative spaces, and artistic businesses in Bovey Tracey. We understand the unique needs of creative industries and can provide appropriate finishes for studio environments.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you use traditional materials for period properties?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we use traditional materials and techniques for period properties in Bovey Tracey where appropriate. We understand the importance of breathable paints and traditional finishes for heritage properties, while ensuring modern protection and durability.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Are you experienced with heritage property restoration?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we have extensive experience with heritage property restoration in Bovey Tracey. We understand traditional Devon architecture, use period-appropriate techniques, and can work with conservation requirements for listed buildings and heritage properties.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you work on properties near Dartmoor National Park?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we provide decorating services for properties near Dartmoor National Park, including Bovey Tracey and surrounding areas. We understand the unique challenges of properties in this area, including weather exposure and traditional architecture.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  How quickly can you respond to projects in Bovey Tracey?
+                </h3>
+                <p className="text-gray-300">
+                  As we're based nearby in Dawlish, we can typically respond quickly to projects in Bovey Tracey. Response times vary depending on project size and current workload, but we prioritise local projects and can often accommodate urgent work.
+                </p>
+              </div>
+            </div>
+            <div className="text-center mt-8">
+              <button
+                onClick={() => openQuoteModal()}
+                className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+              >
+                <Phone size={20} />
+                <span>Get Your Free Bovey Tracey Quote</span>
+              </button>
             </div>
           </div>
         </section>

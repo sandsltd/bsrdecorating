@@ -112,6 +112,63 @@ export default function TorquayPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do you work on holiday properties in Torquay?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we specialise in holiday property decorating in Torquay. We understand the unique needs of holiday rentals, B&Bs, and hotels, offering quick turnaround times, durable finishes, and flexible scheduling to work around guest bookings and tourism seasons."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you handle salt air damage on seafront properties?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we specialise in protecting seafront properties in Torquay from salt air damage. We use marine-grade paint systems, salt-resistant coatings, and specialist primers specifically designed for coastal environments to ensure long-lasting protection."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you work on Victorian villas in Torquay?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we have extensive experience with Victorian villas in Torquay. We understand the architectural features and use appropriate techniques to preserve the character of these beautiful period properties while ensuring modern durability and weather protection."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you offer quick turnaround for holiday properties?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we offer quick turnaround decorating services for holiday properties in Torquay. We understand the need to complete work between guest bookings and can provide fast, efficient decorating to minimise downtime for holiday rental properties."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are you experienced with hotel decorating in Torquay?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we have extensive experience with hotel and B&B decorating in Torquay. We work around guest bookings, use low-odour products, and provide durable finishes suitable for high-traffic tourism properties."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you work during off-season periods?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we work throughout the year in Torquay, including off-season periods when many holiday properties are available for decorating work. We can schedule projects to fit around tourism seasons and guest bookings."
+              }
+            }
+          ]
+        }) }}
+      />
       <div className="min-h-screen bg-gradient-to-b from-bsr-black via-bsr-gray to-bsr-black">
         {/* Hero Section */}
         <section className="relative py-20 px-4 sm:px-6 lg:px-8">
@@ -321,6 +378,74 @@ export default function TorquayPage() {
                 Serving Torquay, Paignton, Brixham, and the wider English Riviera area. 
                 For professional decorating services in Torquay, contact BSR Decorating today.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-bsr-white mb-8 text-center">
+              Frequently Asked Questions About Decorating in Torquay
+            </h2>
+            <div className="space-y-6">
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you work on holiday properties in Torquay?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we specialise in holiday property decorating in Torquay. We understand the unique needs of holiday rentals, B&Bs, and hotels, offering quick turnaround times, durable finishes, and flexible scheduling to work around guest bookings and tourism seasons.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Can you handle salt air damage on seafront properties?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we specialise in protecting seafront properties in Torquay from salt air damage. We use marine-grade paint systems, salt-resistant coatings, and specialist primers specifically designed for coastal environments to ensure long-lasting protection.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you work on Victorian villas in Torquay?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we have extensive experience with Victorian villas in Torquay. We understand the architectural features and use appropriate techniques to preserve the character of these beautiful period properties while ensuring modern durability and weather protection.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you offer quick turnaround for holiday properties?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we offer quick turnaround decorating services for holiday properties in Torquay. We understand the need to complete work between guest bookings and can provide fast, efficient decorating to minimise downtime for holiday rental properties.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Are you experienced with hotel decorating in Torquay?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we have extensive experience with hotel and B&B decorating in Torquay. We work around guest bookings, use low-odour products, and provide durable finishes suitable for high-traffic tourism properties.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you work during off-season periods?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we work throughout the year in Torquay, including off-season periods when many holiday properties are available for decorating work. We can schedule projects to fit around tourism seasons and guest bookings.
+                </p>
+              </div>
+            </div>
+            <div className="text-center mt-8">
+              <button
+                onClick={() => openQuoteModal()}
+                className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+              >
+                <Phone size={20} />
+                <span>Get Your Free Torquay Quote</span>
+              </button>
             </div>
           </div>
         </section>

@@ -98,11 +98,70 @@ export default function TopshamPage() {
     }
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you work on conservation area properties in Topsham?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we specialise in conservation area work in Topsham. As a designated Conservation Area, Topsham has specific requirements for property work, and we have extensive experience with conservation area compliance, traditional materials, and period-appropriate techniques required for heritage properties."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you handle waterfront property decorating in Topsham?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we specialise in waterfront property decorating in Topsham. Our team has extensive experience with estuary-facing properties, using marine-grade paints, salt air resistant finishes, and flood-resistant techniques specifically designed for Topsham's unique riverside location."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are you experienced with listed buildings in Topsham?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we have extensive experience with listed buildings in Topsham. We understand the specific requirements for listed building consent, use traditional materials and techniques, and work closely with conservation officers to ensure all work meets heritage standards while preserving the character of these historic properties."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you use breathable paints for period properties?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we use breathable paint systems for period properties in Topsham. Traditional buildings need to 'breathe' to allow moisture to escape, and we use lime-based paints, clay paints, or mineral paints that are specifically designed for historic properties, preventing damp issues while protecting the building."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you protect against salt air damage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use specialist marine-grade paint systems and anti-corrosion primers specifically designed for salt air environments. Our waterfront property maintenance includes regular inspections, appropriate surface preparation, and the use of salt-resistant finishes that protect against the corrosive effects of estuary air in Topsham."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work on estuary-facing properties?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we specialise in estuary-facing properties in Topsham. These properties face unique challenges from high humidity, salt air, and weather exposure. We use specialist techniques including marine-grade protection, flood-resistant finishes, and weather-resistant paint systems specifically designed for estuary locations."
+        }
+      }
+    ]
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <div className="min-h-screen bg-gradient-to-b from-bsr-black via-bsr-gray to-bsr-black">
         {/* Hero Section */}
@@ -347,6 +406,74 @@ export default function TopshamPage() {
                   <p className="text-gray-300 text-sm">Specialist guide to waterfront maintenance in Topsham</p>
                 </Link>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-bsr-white mb-8 text-center">
+              Frequently Asked Questions About Decorating in Topsham
+            </h2>
+            <div className="space-y-6">
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you work on conservation area properties in Topsham?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we specialise in conservation area work in Topsham. As a designated Conservation Area, Topsham has specific requirements for property work, and we have extensive experience with conservation area compliance, traditional materials, and period-appropriate techniques required for heritage properties.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Can you handle waterfront property decorating in Topsham?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we specialise in waterfront property decorating in Topsham. Our team has extensive experience with estuary-facing properties, using marine-grade paints, salt air resistant finishes, and flood-resistant techniques specifically designed for Topsham's unique riverside location.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Are you experienced with listed buildings in Topsham?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we have extensive experience with listed buildings in Topsham. We understand the specific requirements for listed building consent, use traditional materials and techniques, and work closely with conservation officers to ensure all work meets heritage standards while preserving the character of these historic properties.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you use breathable paints for period properties?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we use breathable paint systems for period properties in Topsham. Traditional buildings need to 'breathe' to allow moisture to escape, and we use lime-based paints, clay paints, or mineral paints that are specifically designed for historic properties, preventing damp issues while protecting the building.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  How do you protect against salt air damage?
+                </h3>
+                <p className="text-gray-300">
+                  We use specialist marine-grade paint systems and anti-corrosion primers specifically designed for salt air environments. Our waterfront property maintenance includes regular inspections, appropriate surface preparation, and the use of salt-resistant finishes that protect against the corrosive effects of estuary air in Topsham.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you work on estuary-facing properties?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we specialise in estuary-facing properties in Topsham. These properties face unique challenges from high humidity, salt air, and weather exposure. We use specialist techniques including marine-grade protection, flood-resistant finishes, and weather-resistant paint systems specifically designed for estuary locations.
+                </p>
+              </div>
+            </div>
+            <div className="text-center mt-8">
+              <button
+                onClick={() => openQuoteModal()}
+                className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+              >
+                <Phone size={20} />
+                <span>Get Your Free Topsham Quote</span>
+              </button>
             </div>
           </div>
         </section>

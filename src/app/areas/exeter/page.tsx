@@ -106,11 +106,70 @@ export default function ExeterPage() {
     }
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you offer decorating in St Leonard's?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide comprehensive decorating services throughout St Leonard's, one of Exeter's most prestigious areas. Our team has extensive experience with the Georgian townhouses and period properties in this affluent neighbourhood, including heritage property restoration and luxury interior decorating."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you work on listed buildings in Exeter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we specialise in listed building work in Exeter. We have extensive experience with heritage properties, conservation area compliance, and traditional techniques required for listed buildings. We understand the planning requirements and use appropriate materials and methods for historic properties."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are you fully insured for commercial painting in Exeter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we are fully insured for all commercial painting and decorating work in Exeter. We carry comprehensive public liability insurance and employers' liability insurance, ensuring complete coverage for all commercial projects including offices, retail spaces, and business properties."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer weekend work for Exeter offices?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we offer weekend and out-of-hours work for Exeter offices to minimise business disruption. We understand that commercial decorating needs to fit around business operations, and we can schedule work during evenings, weekends, or outside normal business hours."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does decorating cost in Exeter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Decorating costs in Exeter vary based on property type, scope of work, and specific requirements. Standard room decorating typically ranges from £300-£600 per room, while full house interior work for a 3-bedroom property ranges from £2,500-£5,000. Commercial decorating and heritage property work may have different pricing. We provide free, no-obligation quotes for all Exeter projects."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work in Pennsylvania and Newtown?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide decorating services in both Pennsylvania and Newtown, two of Exeter's most affluent residential areas. We have extensive experience with luxury properties in these neighbourhoods, including high-end residential developments, period properties, and modern luxury homes."
+        }
+      }
+    ]
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <div className="min-h-screen bg-gradient-to-b from-bsr-black via-bsr-gray to-bsr-black">
         {/* Hero Section */}
@@ -374,6 +433,74 @@ export default function ExeterPage() {
                   <p className="text-gray-300 text-sm">Professional strategies for Exeter's business district</p>
                 </Link>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-bsr-white mb-8 text-center">
+              Frequently Asked Questions About Decorating in Exeter
+            </h2>
+            <div className="space-y-6">
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you offer decorating in St Leonard's?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we provide comprehensive decorating services throughout St Leonard's, one of Exeter's most prestigious areas. Our team has extensive experience with the Georgian townhouses and period properties in this affluent neighbourhood, including heritage property restoration and luxury interior decorating.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Can you work on listed buildings in Exeter?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we specialise in listed building work in Exeter. We have extensive experience with heritage properties, conservation area compliance, and traditional techniques required for listed buildings. We understand the planning requirements and use appropriate materials and methods for historic properties.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Are you fully insured for commercial painting in Exeter?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we are fully insured for all commercial painting and decorating work in Exeter. We carry comprehensive public liability insurance and employers' liability insurance, ensuring complete coverage for all commercial projects including offices, retail spaces, and business properties.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you offer weekend work for Exeter offices?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we offer weekend and out-of-hours work for Exeter offices to minimise business disruption. We understand that commercial decorating needs to fit around business operations, and we can schedule work during evenings, weekends, or outside normal business hours.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  How much does decorating cost in Exeter?
+                </h3>
+                <p className="text-gray-300">
+                  Decorating costs in Exeter vary based on property type, scope of work, and specific requirements. Standard room decorating typically ranges from £300-£600 per room, while full house interior work for a 3-bedroom property ranges from £2,500-£5,000. Commercial decorating and heritage property work may have different pricing. We provide free, no-obligation quotes for all Exeter projects.
+                </p>
+              </div>
+              <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                  Do you work in Pennsylvania and Newtown?
+                </h3>
+                <p className="text-gray-300">
+                  Yes, we provide decorating services in both Pennsylvania and Newtown, two of Exeter's most affluent residential areas. We have extensive experience with luxury properties in these neighbourhoods, including high-end residential developments, period properties, and modern luxury homes.
+                </p>
+              </div>
+            </div>
+            <div className="text-center mt-8">
+              <button
+                onClick={() => openQuoteModal()}
+                className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+              >
+                <Phone size={20} />
+                <span>Get Your Free Exeter Quote</span>
+              </button>
             </div>
           </div>
         </section>

@@ -7,7 +7,98 @@ import { useQuoteModal } from '@/contexts/QuoteModalContext'
 export default function DawlishPage() {
   const { openQuoteModal } = useQuoteModal();
   
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "BSR Decorating - Dawlish",
+    "description": "Professional decorating services in Dawlish, Devon",
+    "url": "https://bsrdecorating.co.uk/areas/dawlish",
+    "telephone": "+441626911236",
+    "email": "info@bsrdecorating.co.uk",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dawlish",
+      "addressRegion": "Devon",
+      "addressCountry": "GB"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 50.5833,
+      "longitude": -3.4667
+    },
+    "serviceArea": {
+      "@type": "City",
+      "name": "Dawlish",
+      "addressRegion": "Devon",
+      "addressCountry": "GB"
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you offer decorating in Dawlish Warren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide decorating services throughout Dawlish Warren and all surrounding areas including Holcombe and Starcross. As local decorators based in Dawlish, we offer quick response times and understand the unique coastal environment of the area."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are you fully insured for decorating work in Dawlish?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we are fully insured for all decorating work in Dawlish. We carry comprehensive public liability insurance and employers' liability insurance, ensuring complete coverage for all domestic and commercial projects."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work on coastal properties in Dawlish?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we specialise in coastal property decorating in Dawlish. We use weather-resistant and salt-resistant paint systems specifically designed for coastal environments, protecting properties from the challenging seaside weather conditions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can you start a project in Dawlish?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As local decorators based in Dawlish, we can typically start projects quickly. Response times vary depending on project size and current workload, but we prioritise local Dawlish projects and can often accommodate urgent work. Contact us for current availability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer free quotes in Dawlish?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide free, no-obligation quotes for all decorating projects in Dawlish. We'll visit your property, assess the work required, and provide a detailed written quote with transparent pricing and no hidden costs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you work on Victorian properties in Dawlish?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we have extensive experience with Victorian properties in Dawlish. We understand the unique characteristics of Victorian architecture and use appropriate techniques and materials to preserve the character while ensuring modern durability and protection."
+        }
+      }
+    ]
+  };
+  
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
     <div className="min-h-screen bg-gradient-to-b from-bsr-black via-bsr-gray to-bsr-black">
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8">
@@ -154,6 +245,75 @@ export default function DawlishPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-bsr-gray">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-bsr-white mb-8 text-center">
+            Frequently Asked Questions About Decorating in Dawlish
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-bsr-black border border-bsr-gray-light rounded-lg p-6">
+              <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                Do you offer decorating in Dawlish Warren?
+              </h3>
+              <p className="text-gray-300">
+                Yes, we provide decorating services throughout Dawlish Warren and all surrounding areas including Holcombe and Starcross. As local decorators based in Dawlish, we offer quick response times and understand the unique coastal environment of the area.
+              </p>
+            </div>
+            <div className="bg-bsr-black border border-bsr-gray-light rounded-lg p-6">
+              <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                Are you fully insured for decorating work in Dawlish?
+              </h3>
+              <p className="text-gray-300">
+                Yes, we are fully insured for all decorating work in Dawlish. We carry comprehensive public liability insurance and employers' liability insurance, ensuring complete coverage for all domestic and commercial projects.
+              </p>
+            </div>
+            <div className="bg-bsr-black border border-bsr-gray-light rounded-lg p-6">
+              <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                Do you work on coastal properties in Dawlish?
+              </h3>
+              <p className="text-gray-300">
+                Yes, we specialise in coastal property decorating in Dawlish. We use weather-resistant and salt-resistant paint systems specifically designed for coastal environments, protecting properties from the challenging seaside weather conditions.
+              </p>
+            </div>
+            <div className="bg-bsr-black border border-bsr-gray-light rounded-lg p-6">
+              <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                How quickly can you start a project in Dawlish?
+              </h3>
+              <p className="text-gray-300">
+                As local decorators based in Dawlish, we can typically start projects quickly. Response times vary depending on project size and current workload, but we prioritise local Dawlish projects and can often accommodate urgent work. Contact us for current availability.
+              </p>
+            </div>
+            <div className="bg-bsr-black border border-bsr-gray-light rounded-lg p-6">
+              <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                Do you offer free quotes in Dawlish?
+              </h3>
+              <p className="text-gray-300">
+                Yes, we provide free, no-obligation quotes for all decorating projects in Dawlish. We'll visit your property, assess the work required, and provide a detailed written quote with transparent pricing and no hidden costs.
+              </p>
+            </div>
+            <div className="bg-bsr-black border border-bsr-gray-light rounded-lg p-6">
+              <h3 className="text-xl font-semibold text-bsr-white mb-3">
+                Can you work on Victorian properties in Dawlish?
+              </h3>
+              <p className="text-gray-300">
+                Yes, we have extensive experience with Victorian properties in Dawlish. We understand the unique characteristics of Victorian architecture and use appropriate techniques and materials to preserve the character while ensuring modern durability and protection.
+              </p>
+            </div>
+          </div>
+          <div className="text-center mt-8">
+            <button
+              onClick={() => openQuoteModal()}
+              className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+            >
+              <Phone size={20} />
+              <span>Get Your Free Dawlish Quote</span>
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
+    </>
   )
 }
