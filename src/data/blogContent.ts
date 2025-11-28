@@ -249,7 +249,7 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'Exeter\'s most prestigious areas, including St. Leonard\'s, Pennsylvania, and Newtown, are home to some of Devon\'s finest properties. These affluent neighbourhoods demand the highest standards of luxury decorating, combining heritage character with contemporary elegance. As Exeter\'s premier luxury decorators, we\'ve witnessed the evolution of decorating trends in these exclusive areas.'
+        content: 'Exeter\'s most prestigious areas, including St. Leonard\'s, Pennsylvania, and Newtown, are home to some of Devon\'s finest properties. These affluent neighbourhoods demand the highest standards of luxury decorating, combining heritage character with contemporary elegance. As [Exeter\'s premier luxury decorators](/areas/exeter), we\'ve witnessed the evolution of decorating trends in these exclusive areas. Our [domestic decorating services](/domestic) specialise in luxury heritage property work.'
       },
       {
         type: 'heading',
@@ -353,7 +353,7 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'Topsham\'s conservation area presents unique challenges and opportunities for heritage property restoration. As one of Devon\'s most beautiful historic villages, Topsham requires specialist knowledge of period techniques, conservation compliance, and traditional materials. Our expertise in this unique location has taught us the importance of preserving historical character while ensuring modern comfort.'
+        content: '[Topsham\'s conservation area](/areas/topsham) presents unique challenges and opportunities for heritage property restoration. As one of Devon\'s most beautiful historic villages, Topsham requires specialist knowledge of period techniques, conservation compliance, and traditional materials. Our expertise in this unique location has taught us the importance of preserving historical character while ensuring modern comfort. Our [domestic decorating services](/domestic) specialise in heritage property restoration.'
       },
       {
         type: 'heading',
@@ -457,7 +457,7 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'Exeter\'s city centre presents unique challenges for commercial office decorating, from historic buildings with planning restrictions to modern business parks requiring contemporary finishes. Our experience decorating offices throughout Exeter\'s business district has taught us the importance of balancing functionality with aesthetic appeal.'
+        content: '[Exeter\'s city centre](/areas/exeter) presents unique challenges for [commercial office decorating](/commercial), from historic buildings with planning restrictions to modern business parks requiring contemporary finishes. Our experience decorating offices throughout Exeter\'s business district has taught us the importance of balancing functionality with aesthetic appeal.'
       },
       {
         type: 'heading',
@@ -548,8 +548,13 @@ export const blogContent: Record<string, BlogContentData> = {
       {
         type: 'link',
         content: 'Discover our commercial decorating services in Exeter city centre',
+        href: '/commercial',
+        linkText: 'View Commercial Decorating Services'
+      },
+      {
+        type: 'link',
         href: '/areas/exeter',
-        linkText: 'View Commercial Services'
+        linkText: 'Learn More About Our Exeter Services'
       },
       {
         type: 'quoteCTA',
@@ -1300,7 +1305,7 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'Planning a decorating project in Exeter? Understanding the costs involved is crucial for budgeting and making informed decisions. Whether you\'re refreshing a Georgian townhouse in St. Leonard\'s, updating a commercial office in the city centre, or maintaining a heritage property, this comprehensive 2025 price guide will help you understand what to expect when hiring a professional painter and decorator in Exeter.'
+        content: 'Planning a decorating project in Exeter? Understanding the costs involved is crucial for budgeting and making informed decisions. Whether you\'re refreshing a Georgian townhouse in St. Leonard\'s, updating a [commercial office](/commercial) in the city centre, or maintaining a heritage property, this comprehensive 2025 price guide will help you understand what to expect when hiring a professional painter and decorator in [Exeter](/areas/exeter).'
       },
       {
         type: 'heading',
@@ -1500,8 +1505,13 @@ export const blogContent: Record<string, BlogContentData> = {
         ]
       },
       {
-        type: 'quoteCTA',
-        content: 'Ready to get an accurate quote for your Exeter decorating project? Contact BSR Decorating today for a free, no-obligation quote. We serve all areas of Exeter including St. Leonard\'s, Pennsylvania, Newtown, and the city centre.'
+        type: 'paragraph',
+        content: 'Ready to get an accurate quote for your Exeter decorating project? Our [domestic decorating services](/domestic) and [commercial decorating services](/commercial) cover all property types across [Exeter](/areas/exeter). Contact BSR Decorating today for a free, no-obligation quote. We serve all areas of Exeter including St. Leonard\'s, Pennsylvania, Newtown, and the city centre.'
+      },
+      {
+        type: 'link',
+        href: '/areas/exeter',
+        linkText: 'View Our Exeter Decorating Services'
       }
     ]
   },
@@ -1509,7 +1519,7 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'Exeter\'s beautiful mix of Georgian townhouses, Victorian terraces, and period properties presents unique challenges when it comes to choosing paint. Whether you own a listed building in the conservation area, a damp-prone property, or a heritage home, selecting the right paint is crucial for both appearance and longevity. This expert guide will help you choose the best paint types for Exeter\'s diverse property portfolio.'
+        content: 'Exeter\'s beautiful mix of Georgian townhouses, Victorian terraces, and period properties presents unique challenges when it comes to choosing paint. Whether you own a listed building in the conservation area, a damp-prone property, or a heritage home, selecting the right paint is crucial for both appearance and longevity. This expert guide will help you choose the best paint types for [Exeter\'s diverse property portfolio](/areas/exeter). For professional [domestic decorating services](/domestic) in Exeter, our team has extensive experience with all property types.'
       },
       {
         type: 'heading',
@@ -1720,8 +1730,13 @@ export const blogContent: Record<string, BlogContentData> = {
         ]
       },
       {
-        type: 'quoteCTA',
-        content: 'Need expert advice on choosing the right paint for your Exeter property? Contact BSR Decorating for a professional assessment. We specialise in period properties, listed buildings, and damp-prone homes across Exeter.'
+        type: 'paragraph',
+        content: 'Need expert advice on choosing the right paint for your Exeter property? Our [domestic decorating team](/domestic) specialises in period properties, listed buildings, and damp-prone homes across [Exeter](/areas/exeter). Contact BSR Decorating for a professional assessment.'
+      },
+      {
+        type: 'link',
+        href: '/areas/exeter',
+        linkText: 'Get Expert Paint Advice for Your Exeter Property'
       }
     ]
   },
@@ -1729,7 +1744,7 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'If you\'ve bought a new-build home in Exeter\'s Heavitree, new developments, or any of the city\'s expanding residential areas, you might have noticed issues with the paintwork sooner than expected. This isn\'t uncommon—developer finishes are often done quickly and to a budget, not to professional standards. Here\'s what goes wrong with new-build paintwork and how professional decorators fix it properly.'
+        content: 'If you\'ve bought a new-build home in Exeter\'s Heavitree, new developments, or any of the city\'s expanding residential areas, you might have noticed issues with the paintwork sooner than expected. This isn\'t uncommon—developer finishes are often done quickly and to a budget, not to professional standards. Here\'s what goes wrong with new-build paintwork and how professional decorators fix it properly. Our [domestic decorating services](/domestic) in [Exeter](/areas/exeter) specialise in fixing these common issues.'
       },
       {
         type: 'heading',
@@ -1989,8 +2004,13 @@ export const blogContent: Record<string, BlogContentData> = {
         ]
       },
       {
-        type: 'quoteCTA',
-        content: 'Tired of substandard developer paintwork? BSR Decorating specialises in fixing new-build paint issues across Exeter, including Heavitree and all new development areas. Get a professional finish that lasts.'
+        type: 'paragraph',
+        content: 'Tired of substandard developer paintwork? BSR Decorating specialises in fixing new-build paint issues across [Exeter](/areas/exeter), including Heavitree and all new development areas. Our [domestic decorating services](/domestic) provide professional finishes that last. Get a professional finish that lasts.'
+      },
+      {
+        type: 'link',
+        href: '/areas/exeter',
+        linkText: 'Fix Your New-Build Paintwork in Exeter'
       }
     ]
   },
@@ -1998,7 +2018,7 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'Exeter\'s period properties—from Georgian townhouses in St. Leonard\'s to Victorian terraces and heritage homes—require specialist decorating approaches. These beautiful buildings have unique characteristics that demand expert knowledge and appropriate techniques. Here\'s essential specialist advice for decorating Exeter\'s period homes.'
+        content: 'Exeter\'s period properties—from Georgian townhouses in St. Leonard\'s to Victorian terraces and heritage homes—require specialist decorating approaches. These beautiful buildings have unique characteristics that demand expert knowledge and appropriate techniques. Here\'s essential specialist advice for decorating [Exeter\'s period homes](/areas/exeter). Our [domestic decorating services](/domestic) specialise in heritage property work.'
       },
       {
         type: 'heading',
@@ -2232,8 +2252,13 @@ export const blogContent: Record<string, BlogContentData> = {
         ]
       },
       {
-        type: 'quoteCTA',
-        content: 'Planning to decorate your Exeter period property? Get specialist advice from BSR Decorating. We understand the unique requirements of Georgian, Victorian, and heritage homes across St. Leonard\'s, Pennsylvania, and all of Exeter.'
+        type: 'paragraph',
+        content: 'Planning to decorate your Exeter period property? Get specialist advice from BSR Decorating. We understand the unique requirements of Georgian, Victorian, and heritage homes across St. Leonard\'s, Pennsylvania, and all of [Exeter](/areas/exeter). Our [domestic decorating team](/domestic) has extensive heritage property experience.'
+      },
+      {
+        type: 'link',
+        href: '/areas/exeter',
+        linkText: 'Get Specialist Period Property Advice in Exeter'
       }
     ]
   },
@@ -2241,7 +2266,7 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'Topsham\'s beautiful waterfront properties face unique challenges that standard paint simply can\'t handle. The combination of high humidity, salt air from the estuary, and constant weather exposure requires specialist paint systems designed for marine environments. If you own a riverside property in Topsham, choosing the right paint isn\'t just about aesthetics—it\'s about protecting your investment from the elements.'
+        content: 'Topsham\'s beautiful waterfront properties face unique challenges that standard paint simply can\'t handle. The combination of high humidity, salt air from the estuary, and constant weather exposure requires specialist paint systems designed for marine environments. If you own a riverside property in [Topsham](/areas/topsham), choosing the right paint isn\'t just about aesthetics—it\'s about protecting your investment from the elements. Our [domestic decorating services](/domestic) specialise in waterfront property maintenance.'
       },
       {
         type: 'heading',
@@ -2466,8 +2491,13 @@ export const blogContent: Record<string, BlogContentData> = {
         ]
       },
       {
-        type: 'quoteCTA',
-        content: 'Need specialist paint advice for your Topsham waterfront property? BSR Decorating has extensive experience with estuary properties, salt air protection, and marine-grade finishes. Contact us for expert guidance.'
+        type: 'paragraph',
+        content: 'Need specialist paint advice for your Topsham waterfront property? BSR Decorating has extensive experience with estuary properties, salt air protection, and marine-grade finishes. Our [waterfront property maintenance services](/areas/topsham) in [Topsham](/areas/topsham) use specialist techniques and materials. Contact us for expert guidance.'
+      },
+      {
+        type: 'link',
+        href: '/areas/topsham',
+        linkText: 'Get Waterfront Paint Advice for Topsham Properties'
       }
     ]
   },
@@ -2475,7 +2505,7 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'Maintaining a period home in Topsham\'s conservation area requires specialist knowledge and a long-term approach. These beautiful heritage properties have unique needs that go beyond standard decorating. As professional painters with extensive experience in Topsham\'s period properties, we share expert advice on maintaining these special homes for generations to come.'
+        content: 'Maintaining a period home in [Topsham\'s conservation area](/areas/topsham) requires specialist knowledge and a long-term approach. These beautiful heritage properties have unique needs that go beyond standard decorating. As professional painters with extensive experience in Topsham\'s period properties, we share expert advice on maintaining these special homes for generations to come. Our [domestic decorating services](/domestic) specialise in heritage property maintenance.'
       },
       {
         type: 'heading',
@@ -2720,8 +2750,13 @@ export const blogContent: Record<string, BlogContentData> = {
         ]
       },
       {
-        type: 'quoteCTA',
-        content: 'Need expert advice on maintaining your Topsham period property? BSR Decorating specialises in conservation area work, heritage maintenance, and long-term property care. Contact us for professional guidance.'
+        type: 'paragraph',
+        content: 'Need expert advice on maintaining your Topsham period property? BSR Decorating specialises in conservation area work, heritage maintenance, and long-term property care. Our [period property decorating services](/areas/topsham) in [Topsham](/areas/topsham) combine traditional techniques with modern durability. Contact us for professional guidance.'
+      },
+      {
+        type: 'link',
+        href: '/areas/topsham',
+        linkText: 'Get Period Property Maintenance Advice for Topsham'
       }
     ]
   }

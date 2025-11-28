@@ -317,20 +317,34 @@ export default function TopshamPage() {
                 Serving Topsham, Countess Wear, Exton, and the surrounding Exe Estuary area. 
                 For professional period property decorating and waterfront maintenance services in Topsham, contact BSR Decorating today.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+                <Link
+                  href="/blog/topsham-waterfront-homes-best-paints-humidity-salt-air-weather"
+                  className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-4 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group"
+                >
+                  <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Best Paints for Waterfront Homes</h4>
+                  <p className="text-gray-300 text-sm">Marine-grade paints for humidity, salt air & weather exposure</p>
+                </Link>
+                <Link
+                  href="/blog/maintaining-period-home-topsham-painter-expert-advice"
+                  className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-4 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group"
+                >
+                  <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Maintaining Period Homes</h4>
+                  <p className="text-gray-300 text-sm">A painter's expert advice for Topsham period properties</p>
+                </Link>
                 <Link
                   href="/blog/heritage-property-restoration-topsham"
                   className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-4 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group"
                 >
-                  <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Heritage Property Restoration in Topsham</h4>
-                  <p className="text-gray-300 text-sm">Expert guide to heritage property restoration in Topsham's conservation area</p>
+                  <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Heritage Property Restoration</h4>
+                  <p className="text-gray-300 text-sm">Expert guide to restoration in Topsham's conservation area</p>
                 </Link>
                 <Link
                   href="/blog/waterfront-property-maintenance-topsham"
                   className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-4 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group"
                 >
                   <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Waterfront Property Maintenance</h4>
-                  <p className="text-gray-300 text-sm">Specialist guide to waterfront property maintenance in Topsham's riverside location</p>
+                  <p className="text-gray-300 text-sm">Specialist guide to waterfront maintenance in Topsham</p>
                 </Link>
               </div>
             </div>

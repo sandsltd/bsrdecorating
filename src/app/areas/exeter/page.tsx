@@ -218,22 +218,29 @@ export default function ExeterPage() {
                   in the business district, and high-end residential projects from Georgian terraces to luxury new-build developments. 
                   We're experienced in working within conservation area restrictions, listed building requirements, and the specific needs of affluent clients.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Link
-                    href="/domestic"
-                    className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-6 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group transform hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl"
-                  >
-                    <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Luxury Domestic Decorating</h4>
-                    <p className="text-gray-300 text-sm">Heritage homes & luxury properties in Exeter's affluent areas</p>
-                  </Link>
-                  <Link
-                    href="/commercial"
-                    className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-6 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group transform hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl"
-                  >
-                    <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Commercial Office Decorating</h4>
-                    <p className="text-gray-300 text-sm">Premium offices, retail & institutions in Exeter</p>
-                  </Link>
-                </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <Link
+                  href="/domestic"
+                  className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-6 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group transform hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl"
+                >
+                  <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Domestic Decorating</h4>
+                  <p className="text-gray-300 text-sm">Heritage homes & luxury properties in Exeter's affluent areas</p>
+                </Link>
+                <Link
+                  href="/commercial"
+                  className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-6 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group transform hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl"
+                >
+                  <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Commercial Decorating</h4>
+                  <p className="text-gray-300 text-sm">Premium offices, retail & institutions in Exeter</p>
+                </Link>
+                <Link
+                  href="/portfolio"
+                  className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-6 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group transform hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl"
+                >
+                  <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">View Portfolio</h4>
+                  <p className="text-gray-300 text-sm">See our completed Exeter decorating projects</p>
+                </Link>
+              </div>
               </div>
               <div className="space-y-6">
                 <div className="bg-bsr-black border border-bsr-gray-light rounded-lg p-6">
@@ -323,20 +330,48 @@ export default function ExeterPage() {
                 Serving Exeter's most prestigious areas including St. Leonard's, Pennsylvania, Newtown, and the wider Mid Devon area. 
                 For luxury decorating services in Exeter, contact BSR Decorating today.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
+                <Link
+                  href="/blog/painter-decorator-cost-exeter-2025-price-guide"
+                  className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-4 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group"
+                >
+                  <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Exeter Decorating Costs 2025</h4>
+                  <p className="text-gray-300 text-sm">Complete price guide for painting and decorating in Exeter</p>
+                </Link>
+                <Link
+                  href="/blog/best-paint-types-exeter-homes-old-damp-listed-properties"
+                  className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-4 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group"
+                >
+                  <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Best Paint for Exeter Homes</h4>
+                  <p className="text-gray-300 text-sm">Expert guide to choosing paint for old, damp or listed properties</p>
+                </Link>
+                <Link
+                  href="/blog/exeter-new-build-paintwork-problems-how-pros-fix"
+                  className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-4 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group"
+                >
+                  <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">New-Build Paint Problems</h4>
+                  <p className="text-gray-300 text-sm">How professional decorators fix developer paintwork issues</p>
+                </Link>
+                <Link
+                  href="/blog/decorating-tips-exeter-period-homes-specialist-advice"
+                  className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-4 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group"
+                >
+                  <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Period Home Decorating Tips</h4>
+                  <p className="text-gray-300 text-sm">Specialist advice for Exeter's Georgian and Victorian properties</p>
+                </Link>
                 <Link
                   href="/blog/luxury-decorating-trends-exeter"
                   className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-4 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group"
                 >
-                  <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Luxury Decorating Trends in Exeter</h4>
-                  <p className="text-gray-300 text-sm">Discover the latest luxury decorating trends for Exeter's most prestigious areas</p>
+                  <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Luxury Decorating Trends</h4>
+                  <p className="text-gray-300 text-sm">Latest trends for Exeter's most prestigious areas</p>
                 </Link>
                 <Link
                   href="/blog/commercial-office-decorating-exeter-city-centre"
                   className="bg-bsr-black border-2 border-bsr-highlight rounded-lg p-4 hover:border-bsr-highlight hover:bg-bsr-gray transition-all duration-200 group"
                 >
                   <h4 className="font-semibold text-bsr-white mb-2 group-hover:text-bsr-highlight">Commercial Office Decorating</h4>
-                  <p className="text-gray-300 text-sm">Professional office decorating strategies for Exeter's business district</p>
+                  <p className="text-gray-300 text-sm">Professional strategies for Exeter's business district</p>
                 </Link>
               </div>
             </div>
