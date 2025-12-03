@@ -10,6 +10,7 @@ import GalleryPreview from '@/components/GalleryPreview';
 import ServiceAreaMap from '@/components/ServiceAreaMap';
 import { useQuoteModal } from '@/contexts/QuoteModalContext';
 import { getLatestBlogPosts } from '@/data/blogPosts';
+import { homePageSchema } from './schema';
 
 export default function Home() {
   const { openQuoteModal } = useQuoteModal();
@@ -42,9 +43,14 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <HeroSection />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homePageSchema) }}
+      />
+      <div className="min-h-screen">
+        {/* Hero Section */}
+        <HeroSection />
 
       {/* Services Split */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-bsr-black to-bsr-gray">
@@ -163,6 +169,46 @@ export default function Home() {
           </div>
 
           <ServiceAreaMap />
+          
+          {/* Quick Links to Key Areas */}
+          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+            <Link 
+              href="/decorators-exeter"
+              className="bg-bsr-gray border border-bsr-gray-light rounded-lg px-6 py-4 text-center hover:border-bsr-highlight transition-all duration-300 group"
+            >
+              <h3 className="text-bsr-white font-semibold group-hover:text-bsr-highlight transition-colors">
+                Decorators in Exeter
+              </h3>
+              <p className="text-sm text-gray-400 mt-1">Professional painters</p>
+            </Link>
+            <Link 
+              href="/decorators-torquay"
+              className="bg-bsr-gray border border-bsr-gray-light rounded-lg px-6 py-4 text-center hover:border-bsr-highlight transition-all duration-300 group"
+            >
+              <h3 className="text-bsr-white font-semibold group-hover:text-bsr-highlight transition-colors">
+                Decorators in Torquay
+              </h3>
+              <p className="text-sm text-gray-400 mt-1">Coastal specialists</p>
+            </Link>
+            <Link 
+              href="/areas/newton-abbot"
+              className="bg-bsr-gray border border-bsr-gray-light rounded-lg px-6 py-4 text-center hover:border-bsr-highlight transition-all duration-300 group"
+            >
+              <h3 className="text-bsr-white font-semibold group-hover:text-bsr-highlight transition-colors">
+                Newton Abbot
+              </h3>
+              <p className="text-sm text-gray-400 mt-1">Local service</p>
+            </Link>
+            <Link 
+              href="/areas/bovey-tracey"
+              className="bg-bsr-gray border border-bsr-gray-light rounded-lg px-6 py-4 text-center hover:border-bsr-highlight transition-all duration-300 group"
+            >
+              <h3 className="text-bsr-white font-semibold group-hover:text-bsr-highlight transition-colors">
+                Bovey Tracey
+              </h3>
+              <p className="text-sm text-gray-400 mt-1">Jobs available</p>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -483,6 +529,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

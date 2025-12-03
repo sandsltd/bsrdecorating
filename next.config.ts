@@ -24,6 +24,22 @@ const nextConfig: NextConfig = {
     unoptimized: false,
     loader: 'default',
   },
+  async redirects() {
+    return [
+      // Redirect non-www to www
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'bsrdecorating.co.uk',
+          },
+        ],
+        destination: 'https://www.bsrdecorating.co.uk/:path*',
+        permanent: true,
+      },
+    ]
+  },
   async headers() {
     return [
       {
