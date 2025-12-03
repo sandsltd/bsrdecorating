@@ -1,26 +1,14 @@
-import { Metadata } from 'next';
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 import { Phone, MapPin, Star, Clock, Shield, CheckCircle } from 'lucide-react';
 import ServiceHero from '@/components/ServiceHero';
 import FeaturedProjects from '@/components/FeaturedProjects';
 import ContactForm from '@/components/ContactForm';
 
-export const metadata: Metadata = {
-  title: 'Decorators in Torquay | Professional Painters & Decorators | BSR Decorating',
-  description: 'Looking for decorators in Torquay? BSR Decorating offers professional painting & decorating services. 20+ years experience, free quotes. Call 01626 911236.',
-  keywords: 'decorators in torquay, decorators torquay, painter decorator torquay, painting torquay, torquay decorators, torquay painters',
-  openGraph: {
-    title: 'Professional Decorators in Torquay - BSR Decorating',
-    description: 'Expert decorators serving Torquay and Torbay. Domestic & commercial painting specialists with 20+ years experience.',
-    type: 'website',
-    url: 'https://www.bsrdecorating.co.uk/decorators-torquay'
-  },
-  alternates: {
-    canonical: 'https://www.bsrdecorating.co.uk/decorators-torquay'
-  }
-};
-
 export default function DecoratorsTorquayPage() {
+  const [contactFormSubmitted, setContactFormSubmitted] = useState(false);
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -273,7 +261,14 @@ export default function DecoratorsTorquayPage() {
               </div>
 
               <div className="bg-bsr-gray rounded-lg p-8">
-                <ContactForm />
+                {contactFormSubmitted ? (
+                  <div className="text-center py-8">
+                    <p className="text-bsr-highlight text-lg font-semibold mb-2">Thank you!</p>
+                    <p className="text-gray-300">We'll be in touch within 24 hours.</p>
+                  </div>
+                ) : (
+                  <ContactForm onSuccess={() => setContactFormSubmitted(true)} />
+                )}
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import { getFeaturedProjectsByCategory } from '@/data/projects';
 
 interface FeaturedProjectsProps {
-  category: 'domestic' | 'commercial';
+  category: 'domestic' | 'commercial' | 'exeter' | 'torquay' | string;
   title?: string;
   subtitle?: string;
 }
@@ -18,7 +18,9 @@ const FeaturedProjects = ({ category, title, subtitle }: FeaturedProjectsProps) 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
   
-  const featuredProjects = getFeaturedProjectsByCategory(category).slice(0, 3);
+  // For location-based categories, show domestic projects
+  const projectCategory = (category === 'exeter' || category === 'torquay') ? 'domestic' : category;
+  const featuredProjects = getFeaturedProjectsByCategory(projectCategory as 'domestic' | 'commercial').slice(0, 3);
 
   const defaultTitle = category === 'domestic' 
     ? 'Featured Projects' 

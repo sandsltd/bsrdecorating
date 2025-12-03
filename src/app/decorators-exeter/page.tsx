@@ -1,26 +1,14 @@
-import { Metadata } from 'next';
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 import { Phone, MapPin, Star, Clock, Shield, CheckCircle } from 'lucide-react';
 import ServiceHero from '@/components/ServiceHero';
 import FeaturedProjects from '@/components/FeaturedProjects';
 import ContactForm from '@/components/ContactForm';
 
-export const metadata: Metadata = {
-  title: 'Decorators in Exeter | Professional Painters & Decorators | BSR Decorating',
-  description: 'Looking for decorators in Exeter? BSR Decorating offers professional painting & decorating services. 20+ years experience, free quotes. Call 01626 911236.',
-  keywords: 'decorators in exeter, decorators exeter, painter decorator exeter, painting and decorating exeter, exeter decorators, exeter painters',
-  openGraph: {
-    title: 'Professional Decorators in Exeter - BSR Decorating',
-    description: 'Expert decorators serving Exeter and surrounding areas. Domestic & commercial painting specialists with 20+ years experience.',
-    type: 'website',
-    url: 'https://www.bsrdecorating.co.uk/decorators-exeter'
-  },
-  alternates: {
-    canonical: 'https://www.bsrdecorating.co.uk/decorators-exeter'
-  }
-};
-
 export default function DecoratorsExeterPage() {
+  const [contactFormSubmitted, setContactFormSubmitted] = useState(false);
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -265,7 +253,14 @@ export default function DecoratorsExeterPage() {
               </div>
 
               <div className="bg-bsr-gray rounded-lg p-8">
-                <ContactForm />
+                {contactFormSubmitted ? (
+                  <div className="text-center py-8">
+                    <p className="text-bsr-highlight text-lg font-semibold mb-2">Thank you!</p>
+                    <p className="text-gray-300">We'll be in touch within 24 hours.</p>
+                  </div>
+                ) : (
+                  <ContactForm onSuccess={() => setContactFormSubmitted(true)} />
+                )}
               </div>
             </div>
           </div>
