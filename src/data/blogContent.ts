@@ -2759,5 +2759,140 @@ export const blogContent: Record<string, BlogContentData> = {
         linkText: 'Get Period Property Maintenance Advice for Topsham'
       }
     ]
+  },
+  'new-year-home-refresh-devon-2025': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'As we bid farewell to 2024 and welcome 2025, there\'s no better time to give your Devon home a fresh start. Whether you live in a Georgian townhouse in Exeter, a waterfront property in Topsham, or a family home in Newton Abbot, a professional decorating refresh can transform your living space and set the tone for the year ahead.'
+      },
+      {
+        type: 'heading',
+        content: 'Why January is Perfect for Interior Decorating',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Many homeowners assume spring is the best time for decorating, but January offers distinct advantages for interior work across Devon:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Availability: Decorators often have more flexibility in their schedules after the festive rush',
+          'Indoor focus: Winter weather keeps us indoors anyway, making interior work ideal',
+          'Fresh start psychology: Begin the year with a clean, beautifully decorated home',
+          'Beat the spring rush: Get ahead of the busy spring decorating season',
+          'Post-Christmas reset: Transform rooms that have hosted festive gatherings'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Popular New Year Decorating Projects',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Living Room Refresh',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'After weeks of festive entertaining, your living room may be showing signs of wear. A professional repaint can restore walls to pristine condition whilst giving you the opportunity to update your colour scheme for 2025. We\'re seeing continued interest in warm, cosy neutrals and rich, deep tones that create inviting spaces during the darker winter months.'
+      },
+      {
+        type: 'subheading',
+        content: 'Kitchen Cabinet Refresh',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Kitchen spraying is one of our most popular January services. Rather than the expense and disruption of a full kitchen replacement, professional cabinet spraying can transform your kitchen at a fraction of the cost. Perfect for breathing new life into tired units whilst keeping your New Year budget in check.'
+      },
+      {
+        type: 'subheading',
+        content: 'Hallway and Entrance Updates',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Your hallway is the first impression guests have of your home. After the foot traffic of festive visitors, January is the perfect time to refresh this high-traffic area with durable, washable finishes that will look pristine throughout 2025.'
+      },
+      {
+        type: 'heading',
+        content: 'Colour Trends for 2025',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Looking ahead to 2025, we\'re seeing several emerging colour trends that work beautifully in Devon homes:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Warm earth tones: Terracottas, ochres, and warm browns inspired by Devon\'s landscapes',
+          'Soft greens: From sage to olive, bringing nature indoors',
+          'Rich blues: Deep navy and sophisticated teals for statement walls',
+          'Warm whites: Moving away from stark whites to creamier, more welcoming shades',
+          'Muted pinks: Sophisticated blush tones for bedrooms and living spaces'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Planning Your New Year Decorating Project',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'To make the most of your January decorating project, consider these tips:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Book early: Quality decorators fill their January schedules quickly',
+          'Plan your colours: Take time over Christmas to research and choose your new scheme',
+          'Clear spaces: Use the post-Christmas declutter to prepare rooms for decorating',
+          'Consider whole-house schemes: Ensure colours flow harmoniously from room to room',
+          'Think about finishes: Different rooms need different paint finishes for durability'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Our New Year Decorating Services',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'BSR Decorating offers comprehensive interior decorating services across Devon, including Exeter, Topsham, Newton Abbot, Dawlish, and surrounding areas. Our January services include:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Full room repaints with expert colour consultation',
+          'Kitchen cabinet spraying for a complete kitchen transformation',
+          'Feature wall creation and wallpaper hanging',
+          'Woodwork restoration and painting',
+          'Specialist finishes for period properties',
+          'Commercial property refreshes for businesses starting the new year fresh'
+        ]
+      },
+      {
+        type: 'quote',
+        content: 'From all of us at BSR Decorating, we wish you and your family a very Merry Christmas and a Happy New Year! Thank you for your support throughout 2024. We look forward to helping you create beautiful spaces in 2025 and beyond.'
+      },
+      {
+        type: 'heading',
+        content: 'Start 2025 with a Fresh, Beautiful Home',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Ready to transform your Devon property for the new year? BSR Decorating provides professional painting and decorating services across Exeter, Topsham, Newton Abbot, Torquay, Dawlish, and throughout Devon. Contact us today for a free quote and start 2025 in style.'
+      },
+      {
+        type: 'link',
+        href: '/contact',
+        linkText: 'Get Your Free New Year Decorating Quote'
+      }
+    ]
   }
 };

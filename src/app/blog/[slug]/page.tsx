@@ -33,6 +33,7 @@ const blogPostsMap = blogPosts.reduce((acc, post) => {
 // Helper function to get keywords for each blog post
 function getBlogKeywords(slug: string): string {
   const keywordMap: Record<string, string> = {
+    'new-year-home-refresh-devon-2025': "new year decorating Devon, 2025 home refresh Exeter, January decorating Devon, new year painting Exeter, fresh start decorating, property refresh Devon, new year home improvement Exeter",
     'autumn-decorating-trends-devon-homes': "autumn decorating trends Devon, seasonal decorating Exeter, autumn colours Topsham, warm autumnal shades Devon, seasonal colour schemes Exeter, autumn interior design Devon, seasonal decorating trends",
     'luxury-decorating-trends-exeter': "luxury decorating Exeter, luxury decorating trends, St Leonards Exeter decorators, Pennsylvania Exeter painters, Newtown Exeter decorating, affluent area decorating, premium decorating Exeter",
     'heritage-property-restoration-topsham': "heritage property restoration Topsham, period property decorating Topsham, conservation area decorating Topsham, heritage decorating Topsham, traditional restoration techniques, conservation compliance Topsham",

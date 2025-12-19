@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 15,
+    title: "New Year Home Refresh: Transform Your Devon Property for 2025",
+    excerpt: "Start 2025 with a fresh, beautifully decorated home. Expert tips on refreshing your Exeter or Devon property with professional decorating to welcome the new year in style.",
+    category: "Seasonal Trends",
+    date: "2024-12-19",
+    readTime: "8 min read",
+    image: "/portfolio/project1/PHOTO-2025-09-02-11-07-09.jpg",
+    slug: "new-year-home-refresh-devon-2025"
+  },
+  {
     id: 1,
     title: "Luxury Decorating Trends in Exeter",
     excerpt: "Discover the latest luxury decorating trends for Exeter's most prestigious areas including St. Leonard's, Pennsylvania, and Newtown. From heritage restoration to modern luxury finishes.",
@@ -158,7 +168,7 @@ export const categories = [
   { name: "Heritage Restoration", count: 3 },
   { name: "Commercial Services", count: 2 },
   { name: "Waterfront Maintenance", count: 2 },
-  { name: "Seasonal Trends", count: 1 },
+  { name: "Seasonal Trends", count: 2 },
   { name: "Landlord Services", count: 1 },
   { name: "Property Investment", count: 1 },
   { name: "Pricing Guide", count: 1 },
