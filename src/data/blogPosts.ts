@@ -12,10 +12,10 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: 15,
-    title: "New Year Home Refresh: Transform Your Devon Property for 2025",
-    excerpt: "Start 2025 with a fresh, beautifully decorated home. Expert tips on refreshing your Exeter or Devon property with professional decorating to welcome the new year in style.",
+    title: "New Year Home Refresh: Transform Your Devon Property for 2026",
+    excerpt: "Start 2026 with a fresh, beautifully decorated home. Expert tips on refreshing your Exeter or Devon property with professional decorating to welcome the new year in style.",
     category: "Seasonal Trends",
-    date: "2024-12-19",
+    date: "2025-12-19",
     readTime: "8 min read",
     image: "/portfolio/project1/PHOTO-2025-09-02-11-07-09.jpg",
     slug: "new-year-home-refresh-devon-2025"

@@ -2764,7 +2764,7 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'As we bid farewell to 2024 and welcome 2025, there\'s no better time to give your Devon home a fresh start. Whether you live in a Georgian townhouse in Exeter, a waterfront property in Topsham, or a family home in Newton Abbot, a professional decorating refresh can transform your living space and set the tone for the year ahead.'
+        content: 'As we bid farewell to 2025 and welcome 2026, there\'s no better time to give your Devon home a fresh start. Whether you live in a Georgian townhouse in Exeter, a waterfront property in Topsham, or a family home in Newton Abbot, a professional decorating refresh can transform your living space and set the tone for the year ahead.'
       },
       {
         type: 'heading',
@@ -2797,7 +2797,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'After weeks of festive entertaining, your living room may be showing signs of wear. A professional repaint can restore walls to pristine condition whilst giving you the opportunity to update your colour scheme for 2025. We\'re seeing continued interest in warm, cosy neutrals and rich, deep tones that create inviting spaces during the darker winter months.'
+        content: 'After weeks of festive entertaining, your living room may be showing signs of wear. A professional repaint can restore walls to pristine condition whilst giving you the opportunity to update your colour scheme for 2026. We\'re seeing continued interest in warm, cosy neutrals and rich, deep tones that create inviting spaces during the darker winter months.'
       },
       {
         type: 'subheading',
@@ -2815,16 +2815,16 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Your hallway is the first impression guests have of your home. After the foot traffic of festive visitors, January is the perfect time to refresh this high-traffic area with durable, washable finishes that will look pristine throughout 2025.'
+        content: 'Your hallway is the first impression guests have of your home. After the foot traffic of festive visitors, January is the perfect time to refresh this high-traffic area with durable, washable finishes that will look pristine throughout 2026.'
       },
       {
         type: 'heading',
-        content: 'Colour Trends for 2025',
+        content: 'Colour Trends for 2026',
         level: 2
       },
       {
         type: 'paragraph',
-        content: 'Looking ahead to 2025, we\'re seeing several emerging colour trends that work beautifully in Devon homes:'
+        content: 'Looking ahead to 2026, we\'re seeing several emerging colour trends that work beautifully in Devon homes:'
       },
       {
         type: 'list',
@@ -2877,16 +2877,16 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'quote',
-        content: 'From all of us at BSR Decorating, we wish you and your family a very Merry Christmas and a Happy New Year! Thank you for your support throughout 2024. We look forward to helping you create beautiful spaces in 2025 and beyond.'
+        content: 'From all of us at BSR Decorating, we wish you and your family a very Merry Christmas and a Happy New Year! Thank you for your support throughout 2025. We look forward to helping you create beautiful spaces in 2026 and beyond.'
       },
       {
         type: 'heading',
-        content: 'Start 2025 with a Fresh, Beautiful Home',
+        content: 'Start 2026 with a Fresh, Beautiful Home',
         level: 2
       },
       {
         type: 'paragraph',
-        content: 'Ready to transform your Devon property for the new year? BSR Decorating provides professional painting and decorating services across Exeter, Topsham, Newton Abbot, Torquay, Dawlish, and throughout Devon. Contact us today for a free quote and start 2025 in style.'
+        content: 'Ready to transform your Devon property for the new year? BSR Decorating provides professional painting and decorating services across Exeter, Topsham, Newton Abbot, Torquay, Dawlish, and throughout Devon. Contact us today for a free quote and start 2026 in style.'
       },
       {
         type: 'link',
