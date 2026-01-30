@@ -3083,5 +3083,163 @@ export const blogContent: Record<string, BlogContentData> = {
         linkText: 'Get Your Free Exterior Painting Quote'
       }
     ]
+  },
+  'choose-painter-decorator-exeter-guide': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Finding a reliable painter and decorator in Exeter shouldn\'t be a gamble. Whether you\'re looking to refresh a single room or transform your entire property, choosing the right decorator makes all the difference between a job you\'re delighted with and one that costs you time, money and stress. This guide covers what to look for, what to ask, and the warning signs to watch out for when hiring a painter and decorator in Devon.'
+      },
+      {
+        type: 'heading',
+        content: 'Why Choosing the Right Decorator Matters',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Decorating is one of those trades where the gap between a good job and a poor one is enormous. A skilled painter and decorator will deliver clean lines, even coverage, proper preparation and a finish that lasts. A poor one will leave you with drips, patchy coverage, paint on your carpets and a finish that starts peeling within months. The trouble is, it\'s not always obvious which you\'re getting until the work is underway — so doing your homework upfront is essential.'
+      },
+      {
+        type: 'heading',
+        content: 'What to Look For in an Exeter Painter & Decorator',
+        level: 2
+      },
+      {
+        type: 'subheading',
+        content: 'Experience and Track Record',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Look for a decorator with a proven track record in the Exeter and Devon area. Experience matters in decorating — an established painter will have dealt with every type of property, from modern new builds in Cranbrook to Victorian terraces in St Thomas, Georgian townhouses in Southernhay and heritage properties in Topsham. They\'ll know which products work best in Devon\'s climate, how to handle the damp issues common in older Exeter properties, and how to prepare surfaces properly for a lasting finish.'
+      },
+      {
+        type: 'list',
+        content: [
+          'How long have they been trading? Look for several years of consistent work rather than someone who\'s just started out',
+          'Do they have a portfolio of completed projects you can see? Photos of real jobs tell you far more than any sales pitch',
+          'Can they provide references from previous customers in the Exeter area?',
+          'Have they worked on properties similar to yours? A decorator experienced with period homes in Exeter will understand lime plaster, breathable paints and conservation area requirements'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Insurance and Credentials',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Any professional painter and decorator working in Exeter should carry public liability insurance as a minimum. This protects you if anything goes wrong — accidental damage to your property, injury on site, or any other incident. Don\'t be afraid to ask to see their insurance certificate. A legitimate decorator won\'t be offended by the question.'
+      },
+      {
+        type: 'list',
+        content: [
+          'Public liability insurance — essential, and ideally at least £1 million cover',
+          'Employer\'s liability insurance if they have staff or use subcontractors',
+          'Professional qualifications — NVQ in Painting & Decorating, City & Guilds, or equivalent',
+          'Trade body membership — Dulux Select Decorators, Painting & Decorating Association (PDA), or similar',
+          'DBS checks if they\'ll be working in properties with vulnerable people'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Clear, Written Quotes',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'A professional decorator in Exeter will always visit your property before quoting. Be cautious of anyone who gives you a price over the phone without seeing the job — every property is different and a proper quote needs a proper look. The quote should be detailed and in writing, breaking down exactly what\'s included.'
+      },
+      {
+        type: 'list',
+        content: [
+          'Preparation work — what sanding, filling, stripping or priming is included?',
+          'Number of coats — two coats minimum for walls, often three for a colour change',
+          'Paint specification — which brand and product are they using? Ask specifically',
+          'What\'s included and what isn\'t — moving furniture, covering floors, materials cost',
+          'Timescale — when will they start, how long will it take, and will they be there every day?',
+          'Payment terms — avoid anyone who wants full payment upfront. A deposit plus staged payments or payment on completion is standard'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Red Flags to Watch Out For',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Over 20 years in the trade, we\'ve heard plenty of stories from customers who\'ve been let down by other decorators. Here are the warning signs that should make you think twice.'
+      },
+      {
+        type: 'list',
+        content: [
+          'No fixed business address or professional website — anyone serious about their trade will have a proper business presence',
+          'Quoting without visiting the property — impossible to give an accurate price without seeing the job',
+          'Significantly cheaper than everyone else — if a quote seems too good to be true, it usually is. They\'re likely cutting corners on preparation, using cheap paint, or planning to rush the job',
+          'Wanting full payment upfront — a massive red flag. Never pay everything before work begins',
+          'No portfolio or references — if they can\'t show you examples of previous work, ask yourself why',
+          'Pressure to commit immediately — a professional decorator has enough work coming in that they don\'t need to pressure you into a decision on the spot',
+          'Vague about paint brands — if they won\'t tell you exactly what products they\'re using, they\'re probably using the cheapest option available'
+        ]
+      },
+      {
+        type: 'quote',
+        content: 'The cheapest quote is almost never the best value. Good preparation takes time, quality paint costs more, and skilled work commands a fair price. The decorator who charges a bit more but does the job properly will save you money in the long run because the finish will last years longer.'
+      },
+      {
+        type: 'heading',
+        content: 'Questions to Ask Before Hiring a Decorator in Exeter',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'When you\'ve shortlisted a few painters and decorators in the Exeter area, here are the key questions to ask before making your decision.'
+      },
+      {
+        type: 'list',
+        content: [
+          'What preparation work will you do before painting?',
+          'Which paint brands and products will you use?',
+          'How many coats will you apply?',
+          'Do you have public liability insurance?',
+          'Can I see examples of similar work you\'ve done locally?',
+          'Will you be doing the work yourself or using subcontractors?',
+          'What happens if I\'m not happy with anything once the job is finished?',
+          'How do you handle any unexpected issues discovered during the work?',
+          'What are your payment terms?'
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: 'A good decorator will answer all of these openly and confidently. If someone gets defensive or vague when you ask reasonable questions, that tells you something.'
+      },
+      {
+        type: 'heading',
+        content: 'Why Local Knowledge Matters in Devon',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Devon properties have their own quirks and challenges that a local decorator will understand instinctively. Exeter\'s older properties in areas like St Leonard\'s, Heavitree and the city centre often have lime plaster walls that need breathable paints rather than modern vinyl emulsions. Topsham\'s waterfront properties face salt air and humidity challenges. Newton Abbot and Bovey Tracey properties deal with Dartmoor\'s higher rainfall. A painter and decorator who knows the Exeter area will already understand these issues and use the right products and techniques without you having to ask.'
+      },
+      {
+        type: 'paragraph',
+        content: 'Local decorators also rely on their reputation in the community. A painter working in Exeter who does a poor job knows that word travels fast — in a city this size, your reputation is everything. That accountability is worth something when you\'re choosing who to trust with your home.'
+      },
+      {
+        type: 'heading',
+        content: 'Getting Started',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'If you\'re looking for a painter and decorator in Exeter, Topsham, Newton Abbot, Dawlish, Torquay or anywhere across Devon, we\'re always happy to come out, have a look at your property and provide an honest assessment and detailed written quote — with no pressure and no obligation. We\'ve been decorating Devon properties for over 20 years and our work speaks for itself.'
+      },
+      {
+        type: 'link',
+        href: '/contact',
+        linkText: 'Get Your Free Decorating Quote'
+      }
+    ]
   }
 };

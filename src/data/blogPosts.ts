@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 17,
+    title: "How to Choose a Painter & Decorator in Exeter: What to Look For",
+    excerpt: "Choosing the right painter and decorator in Exeter can be tricky. This honest guide covers what to ask, what to look for, and the red flags to avoid when hiring a decorator in Devon.",
+    category: "Expert Advice",
+    date: "2026-01-30",
+    readTime: "9 min read",
+    image: "/portfolio/project1/PHOTO-2025-09-02-11-07-13.jpg",
+    slug: "choose-painter-decorator-exeter-guide"
+  },
+  {
     id: 16,
     title: "Exterior Painting in Exeter: When to Paint, What to Use & Why It Matters",
     excerpt: "A complete guide to exterior painting for Exeter and Devon homeowners. Learn the best time of year to paint, which coatings last longest in Devon's climate, and how professional exterior decorating protects your property.",
@@ -182,7 +192,7 @@ export const categories = [
   { name: "Landlord Services", count: 1 },
   { name: "Property Investment", count: 1 },
   { name: "Pricing Guide", count: 1 },
-  { name: "Expert Advice", count: 3 }
+  { name: "Expert Advice", count: 4 }
 ];
 
 // Helper function to get the latest blog posts (sorted by date)
