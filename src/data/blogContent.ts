@@ -2894,5 +2894,194 @@ export const blogContent: Record<string, BlogContentData> = {
         linkText: 'Get Your Free New Year Decorating Quote'
       }
     ]
+  },
+  'exterior-painting-exeter-devon-guide': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Your home\'s exterior is the first thing visitors, neighbours and potential buyers see. In Exeter and across Devon, our maritime climate of wind-driven rain, coastal salt air and strong UV exposure means exterior paintwork takes a real beating. Getting it right — choosing the right time of year, the right products and the right preparation — is the difference between a finish that lasts two years and one that lasts ten.'
+      },
+      {
+        type: 'heading',
+        content: 'When Is the Best Time to Paint Exteriors in Devon?',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Timing is everything with exterior painting. Devon\'s weather can be unpredictable, but there are clear windows that give the best results. The ideal months for exterior decorating in Exeter and the surrounding area are late April through to September, when temperatures are consistently above 10°C and humidity levels are lower.'
+      },
+      {
+        type: 'list',
+        content: [
+          'Late spring (April–May) — Longer dry spells, moderate temperatures and surfaces have dried out from winter moisture',
+          'Summer (June–August) — Warmest and driest conditions, though avoid painting in direct strong sunlight as it can cause paint to dry too quickly and blister',
+          'Early autumn (September) — Still warm enough for paint to cure properly, and surfaces are thoroughly dry from summer',
+          'Winter (October–March) — Generally unsuitable for exterior work due to low temperatures, frost risk and high moisture levels'
+        ]
+      },
+      {
+        type: 'quote',
+        content: 'We always check surface moisture levels with a damp meter before starting any exterior work. Even if the weather looks fine, Devon\'s humidity can leave surfaces holding moisture that\'s invisible to the eye but will ruin a paint finish from underneath.'
+      },
+      {
+        type: 'heading',
+        content: 'Why Exterior Painting Matters More Than You Think',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Exterior decorating isn\'t just about kerb appeal — though a freshly painted exterior can add significant value to your Exeter property. More importantly, quality exterior paintwork acts as your home\'s first line of defence against the elements. Devon\'s climate presents specific challenges that make regular exterior maintenance essential.'
+      },
+      {
+        type: 'subheading',
+        content: 'Protection Against Devon\'s Climate',
+        level: 3
+      },
+      {
+        type: 'list',
+        content: [
+          'Rain and moisture penetration — Devon receives significantly more rainfall than the national average. Cracked or peeling exterior paint allows moisture into masonry, leading to damp, mould and structural damage',
+          'UV degradation — South-facing elevations in Exeter and Topsham take heavy UV exposure, causing paint to fade, chalk and break down',
+          'Salt air corrosion — Properties in Exmouth, Dawlish and coastal areas face salt-laden winds that accelerate paint deterioration and attack metal fixtures',
+          'Algae and moss growth — Devon\'s mild, damp climate encourages biological growth on north-facing walls that can undermine paint adhesion',
+          'Thermal movement — Temperature fluctuations cause masonry to expand and contract, which cheaper paints cannot accommodate without cracking'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Choosing the Right Exterior Paint for Exeter Homes',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Not all exterior paints are created equal, and what works on a modern rendered property in Cranbrook won\'t necessarily suit a Victorian brick terrace in St Thomas or a listed Georgian townhouse in Topsham. Here\'s what we recommend based on over 20 years of decorating Devon properties.'
+      },
+      {
+        type: 'subheading',
+        content: 'Masonry Paint for Rendered and Plastered Walls',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'For most Exeter homes with rendered or plastered exteriors, a high-quality masonry paint is the go-to choice. We use Dulux Weathershield and Johnstone\'s Stormshield for their proven durability in the South West climate. These products offer 15-year protection guarantees and include anti-fungal additives to combat Devon\'s damp conditions.'
+      },
+      {
+        type: 'subheading',
+        content: 'Breathable Paints for Older Properties',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Period and heritage properties in Exeter, Topsham and Newton Abbot often have lime-rendered or solid stone walls that need to breathe. Using modern plastic-based masonry paints on these properties traps moisture inside the walls, causing damp, blown plaster and paint failure. Instead, we use mineral-based breathable paints such as Keim Granital or Earthborn Silicate Masonry Paint, which allow moisture vapour to pass through whilst still providing excellent weather protection.'
+      },
+      {
+        type: 'subheading',
+        content: 'Exterior Woodwork',
+        level: 3
+      },
+      {
+        type: 'paragraph',
+        content: 'Wooden window frames, fascias, barge boards and doors need specialist exterior wood paints or stains. We favour Dulux Weathershield Exterior Gloss for a traditional high-sheen finish, or Sadolin for a more natural timber look. Proper preparation — sanding back, treating any rot, priming bare wood — is what makes exterior woodwork paint last. Skip the prep and you\'ll be repainting within two years.'
+      },
+      {
+        type: 'heading',
+        content: 'The Preparation That Makes the Difference',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'If there\'s one thing that separates a professional exterior paint job from a DIY attempt, it\'s preparation. In Devon\'s climate, thorough preparation is even more critical than in drier parts of the country. Here\'s what our exterior painting process involves for a typical Exeter property.'
+      },
+      {
+        type: 'list',
+        content: [
+          'Full scaffold or access tower setup for safe, thorough coverage of all elevations',
+          'Pressure washing to remove dirt, algae, moss and loose material from all surfaces',
+          'Allowing adequate drying time after washing — typically 48-72 hours in Devon\'s climate',
+          'Scraping and sanding all loose or flaking paint back to a sound surface',
+          'Filling cracks and repairing damaged render, pointing or woodwork',
+          'Treating any fungal or algae growth with specialist biocide solutions',
+          'Applying appropriate primer to bare or repaired surfaces',
+          'Masking windows, doors and areas not being painted for clean, sharp lines',
+          'Minimum two full coats of top-quality exterior paint for lasting protection'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'How Much Does Exterior Painting Cost in Exeter?',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Exterior painting costs in Exeter and Devon vary based on property size, condition, access requirements and paint specification. As a rough guide for a typical 3-bedroom semi-detached house in the Exeter area:'
+      },
+      {
+        type: 'list',
+        content: [
+          'Front elevation only — from £800 to £1,500',
+          'Full exterior (all elevations) — from £2,000 to £4,500',
+          'Windows, doors and woodwork only — from £600 to £1,200',
+          'Full exterior including woodwork — from £3,000 to £6,000',
+          'Heritage or listed property exterior — from £4,000 upwards depending on specification'
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: 'These prices include scaffold hire, full preparation, premium paints and a professional finish. We always provide a detailed written quote after surveying the property, so there are no surprises.'
+      },
+      {
+        type: 'heading',
+        content: 'Signs Your Exeter Property Needs Exterior Painting',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'Not sure whether your property needs exterior decorating? Here are the warning signs to look out for on Exeter and Devon properties.'
+      },
+      {
+        type: 'list',
+        content: [
+          'Paint is chalking — when you run your hand across the surface, white powder comes off',
+          'Visible cracking, flaking or peeling on any painted surface',
+          'Colour has faded significantly, particularly on south and west-facing walls',
+          'Green algae or black mould patches appearing on walls',
+          'Bare wood visible on window frames, fascias or doors',
+          'Render is cracking or blowing away from the wall',
+          'Damp patches appearing inside the property, particularly near external walls'
+        ]
+      },
+      {
+        type: 'quote',
+        content: 'Catching exterior paint deterioration early saves money in the long run. A straightforward repaint is far cheaper than dealing with moisture damage, rotten timbers or damaged render that results from neglected exterior maintenance.'
+      },
+      {
+        type: 'heading',
+        content: 'Why Choose BSR for Exterior Painting in Devon?',
+        level: 2
+      },
+      {
+        type: 'paragraph',
+        content: 'With over 20 years of experience decorating properties across Exeter, Topsham, Newton Abbot, Dawlish, Torquay and the wider Devon area, we understand the specific challenges our local climate presents. We use only premium products proven to perform in South West conditions, and our thorough preparation process ensures your exterior paintwork looks fantastic and protects your property for years to come.'
+      },
+      {
+        type: 'list',
+        content: [
+          'Fully insured with public liability cover for all exterior work',
+          'All work carried out from proper scaffold or access equipment — no cutting corners with ladders',
+          'Premium paints from trusted brands like Dulux Weathershield, Johnstone\'s and Keim',
+          'Detailed written quotes with no hidden costs',
+          'Clean, tidy and respectful of your property and neighbours throughout the project'
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: 'Whether you need a full exterior repaint, just the front of the house freshened up, or specialist heritage exterior work, we\'re happy to come and take a look and provide an honest assessment and quote.'
+      },
+      {
+        type: 'link',
+        href: '/contact',
+        linkText: 'Get Your Free Exterior Painting Quote'
+      }
+    ]
   }
 };

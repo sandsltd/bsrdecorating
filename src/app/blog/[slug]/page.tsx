@@ -47,7 +47,8 @@ function getBlogKeywords(slug: string): string {
     'exeter-new-build-paintwork-problems-how-pros-fix': "new build paint problems Exeter, Heavitree new build decorating, developer paintwork issues, new build paint quality, professional repainting new builds, fixing developer paintwork, Exeter new build homes",
     'decorating-tips-exeter-period-homes-specialist-advice': "period home decorating Exeter, Georgian house decorating Exeter, Victorian property decorating Exeter, heritage home decorating Exeter, listed building decorating Exeter, period property paint Exeter, conservation area decorating Exeter",
     'topsham-waterfront-homes-best-paints-humidity-salt-air-weather': "Topsham waterfront paint, estuary property paint, salt air resistant paint, marine grade paint Topsham, waterfront home decorating Topsham, humidity resistant paint, weatherproof paint Topsham",
-    'maintaining-period-home-topsham-painter-expert-advice': "period home maintenance Topsham, Topsham conservation area maintenance, heritage property maintenance Topsham, maintaining listed building Topsham, period property care Topsham, Topsham period home upkeep"
+    'maintaining-period-home-topsham-painter-expert-advice': "period home maintenance Topsham, Topsham conservation area maintenance, heritage property maintenance Topsham, maintaining listed building Topsham, period property care Topsham, Topsham period home upkeep",
+    'exterior-painting-exeter-devon-guide': "exterior painting Exeter, exterior decorating Devon, outside painting Exeter, exterior house painter Devon, exterior painting cost Exeter, exterior decorating Topsham, exterior painter Newton Abbot, exterior painting Dawlish, masonry painting Exeter, exterior property maintenance Devon"
   };
   return keywordMap[slug] || "";
 }

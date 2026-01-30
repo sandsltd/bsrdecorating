@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 16,
+    title: "Exterior Painting in Exeter: When to Paint, What to Use & Why It Matters",
+    excerpt: "A complete guide to exterior painting for Exeter and Devon homeowners. Learn the best time of year to paint, which coatings last longest in Devon's climate, and how professional exterior decorating protects your property.",
+    category: "Expert Advice",
+    date: "2026-01-30",
+    readTime: "10 min read",
+    image: "/portfolio/project5/PHOTO-2025-09-02-11-16-33.jpg",
+    slug: "exterior-painting-exeter-devon-guide"
+  },
+  {
     id: 15,
     title: "New Year Home Refresh: Transform Your Devon Property for 2026",
     excerpt: "Start 2026 with a fresh, beautifully decorated home. Expert tips on refreshing your Exeter or Devon property with professional decorating to welcome the new year in style.",
@@ -172,7 +182,7 @@ export const categories = [
   { name: "Landlord Services", count: 1 },
   { name: "Property Investment", count: 1 },
   { name: "Pricing Guide", count: 1 },
-  { name: "Expert Advice", count: 2 }
+  { name: "Expert Advice", count: 3 }
 ];
 
 // Helper function to get the latest blog posts (sorted by date)
