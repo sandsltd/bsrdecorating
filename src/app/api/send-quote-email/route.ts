@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
-import * as postmark from 'postmark';
-
-const client = new postmark.ServerClient(process.env.POSTMARK_API_TOKEN!);
+import { Resend } from 'resend';
 
 export async function POST(request: NextRequest) {
   try {
     const formData = await request.json();
+
+    const resend = new Resend(process.env.RESEND_API_KEY!);
 
     // Determine coverage area
     let coverageArea = 'Outside normal coverage area';
@@ -67,7 +67,7 @@ export async function POST(request: NextRequest) {
           
           <div class="content">
             <div class="urgent">
-              <strong>⚡ New Quote Request Received!</strong><br>
+              <strong>New Quote Request Received!</strong><br>
               A potential customer has submitted a quote request through your website.
             </div>
 
@@ -146,7 +146,7 @@ export async function POST(request: NextRequest) {
           
           <div class="footer">
             <p style="margin: 0;"><strong>BSR Decorating</strong></p>
-            <p style="margin: 5px 0 0 0;">Professional Decorating Services • South East Devon</p>
+            <p style="margin: 5px 0 0 0;">Professional Decorating Services - South East Devon</p>
           </div>
         </div>
       </body>
@@ -182,13 +182,13 @@ export async function POST(request: NextRequest) {
     });
 
     // Send email to BSR
-    await client.sendEmail({
-      From: process.env.EMAIL_FROM!,
-      To: recipients.join(', '),
-      Bcc: bccEmails.length > 0 ? bccEmails.join(', ') : undefined,
-      Subject: `New Quote Request from ${formData.name} (${formData.postcode})`,
-      HtmlBody: emailHTML,
-      TextBody: `
+    await resend.emails.send({
+      from: 'web@saunders-simmons.co.uk',
+      to: recipients,
+      bcc: bccEmails.length > 0 ? bccEmails : undefined,
+      subject: `New Quote Request from ${formData.name} (${formData.postcode})`,
+      html: emailHTML,
+      text: `
 New Quote Request - BSR Decorating
 
 Customer Details:
@@ -283,13 +283,13 @@ ${formData.message}
     console.log('Attempting to send customer thank you email to:', formData.email);
 
     try {
-      const customerResult = await client.sendEmail({
-        From: process.env.EMAIL_FROM!,
-        To: formData.email,
-        ReplyTo: process.env.EMAIL_DEFAULT || 'info@bsrdecorating.co.uk',
-        Subject: 'Thank you for your quote request - BSR Decorating',
-        HtmlBody: customerEmailHTML,
-        TextBody: `
+      const customerResult = await resend.emails.send({
+        from: 'web@saunders-simmons.co.uk',
+        to: formData.email,
+        replyTo: process.env.EMAIL_DEFAULT || 'info@bsrdecorating.co.uk',
+        subject: 'Thank you for your quote request - BSR Decorating',
+        html: customerEmailHTML,
+        text: `
 Thank you for your quote request - BSR Decorating
 
 Dear ${formData.name},
@@ -316,7 +316,7 @@ BSR Decorating | Professional Decorating Services | South East Devon
 This email was sent in response to your quote request on our website.
         `.trim(),
       });
-      console.log('Customer thank you email sent successfully to:', formData.email, '- Message ID:', customerResult.MessageID);
+      console.log('Customer thank you email sent successfully to:', formData.email, '- Message ID:', customerResult.data?.id);
     } catch (customerEmailError) {
       console.error('Failed to send customer thank you email:', customerEmailError);
 

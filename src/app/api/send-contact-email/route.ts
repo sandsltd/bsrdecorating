@@ -1,7 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import * as postmark from 'postmark';
-
-const client = new postmark.ServerClient(process.env.POSTMARK_API_TOKEN!);
+import { Resend } from 'resend';
 
 export async function POST(request: NextRequest) {
   try {
@@ -30,6 +28,8 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
+
+    const resend = new Resend(process.env.RESEND_API_KEY!);
 
     // Service type formatting
     const serviceDisplay = service === 'domestic' ? 'Domestic' : 
@@ -65,7 +65,7 @@ export async function POST(request: NextRequest) {
           
           <div class="content">
             <div class="urgent">
-              <strong>📧 New Contact Message Received!</strong><br>
+              <strong>New Contact Message Received!</strong><br>
               A customer has sent a message through your website contact form.
             </div>
 
@@ -73,33 +73,33 @@ export async function POST(request: NextRequest) {
               <h2 style="color: #E801F8; margin-top: 0;">Customer Details</h2>
               
               <div class="detail-row">
-                <span class="label">👤 Name:</span>
+                <span class="label">Name:</span>
                 <span class="value">${name}</span>
               </div>
               
               <div class="detail-row">
-                <span class="label">📧 Email:</span>
+                <span class="label">Email:</span>
                 <span class="value">${email}</span>
               </div>
               
               <div class="detail-row">
-                <span class="label">📞 Phone:</span>
+                <span class="label">Phone:</span>
                 <span class="value">${phone}</span>
               </div>
               
               <div class="detail-row">
-                <span class="label">📍 Postcode:</span>
+                <span class="label">Postcode:</span>
                 <span class="value">${postcode}</span>
               </div>
               
               <div class="detail-row" style="border-bottom: none;">
-                <span class="label">🏠 Service Interest:</span>
+                <span class="label">Service Interest:</span>
                 <span class="value">${serviceDisplay}</span>
               </div>
             </div>
 
             <div class="contact-details">
-              <h2 style="color: #E801F8; margin-top: 0;">💬 Customer Message</h2>
+              <h2 style="color: #E801F8; margin-top: 0;">Customer Message</h2>
               <div class="message-content">
                 ${message}
               </div>
@@ -107,7 +107,7 @@ export async function POST(request: NextRequest) {
           </div>
           
           <div class="footer">
-            <h3 style="margin: 0 0 10px 0;">🎨 BSR Decorating</h3>
+            <h3 style="margin: 0 0 10px 0;">BSR Decorating</h3>
             <p style="margin: 5px 0;"><strong>Phone:</strong> 01626 911236</p>
             <p style="margin: 5px 0;"><strong>Email:</strong> info@bsrdecorating.co.uk</p>
             <p style="margin: 5px 0;"><strong>Website:</strong> bsrdecorating.co.uk</p>
@@ -146,13 +146,13 @@ export async function POST(request: NextRequest) {
     });
 
     // Send email to BSR
-    await client.sendEmail({
-      From: process.env.EMAIL_FROM!,
-      To: recipients.join(', '),
-      Bcc: bccEmails.length > 0 ? bccEmails.join(', ') : undefined,
-      Subject: `New Contact Message from ${name} - ${serviceDisplay}`,
-      HtmlBody: emailHTML,
-      TextBody: `
+    await resend.emails.send({
+      from: 'web@saunders-simmons.co.uk',
+      to: recipients,
+      bcc: bccEmails.length > 0 ? bccEmails : undefined,
+      subject: `New Contact Message from ${name} - ${serviceDisplay}`,
+      html: emailHTML,
+      text: `
 New Contact Message - BSR Decorating
 
 Customer Details:
@@ -220,9 +220,9 @@ Please respond to the customer directly at ${email} or ${phone}.
 
             <div class="contact-info">
               <h3>Need to speak to us sooner?</h3>
-              <p><strong>📞 Phone:</strong> 01626 911236</p>
-              <p><strong>📧 Email:</strong> info@bsrdecorating.co.uk</p>
-              <p><strong>🕒 Hours:</strong> Monday to Friday, 8:00 AM to 6:00 PM</p>
+              <p><strong>Phone:</strong> 01626 911236</p>
+              <p><strong>Email:</strong> info@bsrdecorating.co.uk</p>
+              <p><strong>Hours:</strong> Monday to Friday, 8:00 AM to 6:00 PM</p>
             </div>
 
             <p>We look forward to helping transform your space with our professional decorating services.</p>
@@ -244,13 +244,13 @@ Please respond to the customer directly at ${email} or ${phone}.
     console.log('Attempting to send customer thank you email to:', email);
 
     try {
-      const customerResult = await client.sendEmail({
-        From: process.env.EMAIL_FROM!,
-        To: email,
-        ReplyTo: process.env.EMAIL_DEFAULT || 'info@bsrdecorating.co.uk',
-        Subject: 'Thank you for contacting us - BSR Decorating',
-        HtmlBody: customerEmailHTML,
-        TextBody: `
+      const customerResult = await resend.emails.send({
+        from: 'web@saunders-simmons.co.uk',
+        to: email,
+        replyTo: process.env.EMAIL_DEFAULT || 'info@bsrdecorating.co.uk',
+        subject: 'Thank you for contacting us - BSR Decorating',
+        html: customerEmailHTML,
+        text: `
 Thank you for contacting us - BSR Decorating
 
 Dear ${name},
@@ -277,7 +277,7 @@ BSR Decorating | Professional Decorating Services | South East Devon
 This email was sent in response to your contact form submission on our website.
         `.trim(),
       });
-      console.log('Customer thank you email sent successfully to:', email, '- Message ID:', customerResult.MessageID);
+      console.log('Customer thank you email sent successfully to:', email, '- Message ID:', customerResult.data?.id);
     } catch (customerEmailError) {
       console.error('Failed to send customer thank you email:', customerEmailError);
 
