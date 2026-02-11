@@ -1,10 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+import * as postmark from 'postmark';
+
+const client = new postmark.ServerClient(process.env.POSTMARK_API_TOKEN!);
 
 export async function POST(request: NextRequest) {
   try {
     console.log('Contact email API called');
-    
+
     const formData = await request.json();
     const { name, email, phone, postcode, service, message } = formData;
 
@@ -28,51 +30,6 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
-
-    // Check environment variables
-    const envVars = {
-      EMAIL_HOST: process.env.EMAIL_HOST,
-      EMAIL_PORT: process.env.EMAIL_PORT,
-      EMAIL_USER: process.env.EMAIL_USER,
-      EMAIL_PASS: process.env.EMAIL_PASS ? '[REDACTED]' : undefined,
-      EMAIL_FROM: process.env.EMAIL_FROM,
-      EMAIL_TO: process.env.EMAIL_TO
-    };
-    console.log('Environment variables:', envVars);
-
-    // Check for both EMAIL_PASS and EMAIL_PASSWORD
-    const emailPassword = process.env.EMAIL_PASS || process.env.EMAIL_PASSWORD;
-    
-    if (!process.env.EMAIL_HOST || !process.env.EMAIL_USER || !emailPassword) {
-      console.log('Missing required email environment variables');
-      console.log('Available env vars:', {
-        EMAIL_HOST: !!process.env.EMAIL_HOST,
-        EMAIL_USER: !!process.env.EMAIL_USER,
-        EMAIL_PASS: !!process.env.EMAIL_PASS,
-        EMAIL_PASSWORD: !!process.env.EMAIL_PASSWORD
-      });
-      return NextResponse.json(
-        { error: 'Email service not configured. Please contact us directly at info@bsrdecorating.co.uk or 01626 911236.' },
-        { status: 503 }
-      );
-    }
-
-    // Create email transporter using environment variables
-    const transporter = nodemailer.createTransport({
-      host: process.env.EMAIL_HOST,
-      port: parseInt(process.env.EMAIL_PORT || '587'),
-      secure: parseInt(process.env.EMAIL_PORT || '587') === 465, // SSL for port 465
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: emailPassword
-      }
-    });
-
-    console.log('Transporter config:', {
-      host: process.env.EMAIL_HOST,
-      port: process.env.EMAIL_PORT,
-      user: process.env.EMAIL_USER ? 'configured' : 'missing'
-    });
 
     // Service type formatting
     const serviceDisplay = service === 'domestic' ? 'Domestic' : 
@@ -163,32 +120,39 @@ export async function POST(request: NextRequest) {
     // Prepare recipient list - handle multiple emails
     const defaultEmail = process.env.EMAIL_DEFAULT || 'info@bsrdecorating.co.uk';
     const recipients = [defaultEmail];
-    
+
     // Handle EMAIL_TO (can be comma-separated)
     if (process.env.EMAIL_TO) {
-      const additionalEmails = process.env.EMAIL_TO.split(',').map(email => email.trim());
-      additionalEmails.forEach(email => {
-        if (email && email !== defaultEmail && !recipients.includes(email)) {
-          recipients.push(email);
+      const additionalEmails = process.env.EMAIL_TO.split(',').map(e => e.trim());
+      additionalEmails.forEach(e => {
+        if (e && e !== defaultEmail && !recipients.includes(e)) {
+          recipients.push(e);
         }
       });
     }
 
     // Prepare BCC list if specified
-    const bccEmails = [];
+    const bccEmails: string[] = [];
     if (process.env.EMAIL_BCC) {
-      const bccList = process.env.EMAIL_BCC.split(',').map(email => email.trim());
+      const bccList = process.env.EMAIL_BCC.split(',').map(e => e.trim());
       bccEmails.push(...bccList);
     }
 
-    // Email options
-    const mailOptions = {
-      from: process.env.EMAIL_FROM || process.env.EMAIL_USER,
+    // Log email configuration for debugging
+    console.log('Email recipients:', {
       to: recipients.join(', '),
-      bcc: bccEmails.length > 0 ? bccEmails.join(', ') : undefined,
-      subject: `📧 New Contact Message from ${name} - ${serviceDisplay}`,
-      html: emailHTML,
-      text: `
+      bcc: bccEmails.length > 0 ? bccEmails.join(', ') : 'None',
+      totalRecipients: recipients.length + bccEmails.length
+    });
+
+    // Send email to BSR
+    await client.sendEmail({
+      From: process.env.EMAIL_FROM!,
+      To: recipients.join(', '),
+      Bcc: bccEmails.length > 0 ? bccEmails.join(', ') : undefined,
+      Subject: `New Contact Message from ${name} - ${serviceDisplay}`,
+      HtmlBody: emailHTML,
+      TextBody: `
 New Contact Message - BSR Decorating
 
 Customer Details:
@@ -205,17 +169,7 @@ ${message}
 This message was sent from the BSR Decorating website contact form.
 Please respond to the customer directly at ${email} or ${phone}.
       `.trim(),
-    };
-
-    // Log email configuration for debugging
-    console.log('Email recipients:', {
-      to: recipients.join(', '),
-      bcc: bccEmails.length > 0 ? bccEmails.join(', ') : 'None',
-      totalRecipients: recipients.length + bccEmails.length
     });
-
-    // Send email to BSR
-    await transporter.sendMail(mailOptions);
     console.log('BSR notification email sent successfully');
 
     // Send thank you email to customer (matching quote form styling exactly)
@@ -286,13 +240,17 @@ Please respond to the customer directly at ${email} or ${phone}.
       </html>
     `;
 
-    const customerMailOptions = {
-      from: process.env.EMAIL_FROM || process.env.EMAIL_USER,
-      to: email,
-      replyTo: process.env.EMAIL_DEFAULT || 'info@bsrdecorating.co.uk',
-      subject: 'Thank you for contacting us - BSR Decorating',
-      html: customerEmailHTML,
-      text: `
+    // Send customer thank you email
+    console.log('Attempting to send customer thank you email to:', email);
+
+    try {
+      const customerResult = await client.sendEmail({
+        From: process.env.EMAIL_FROM!,
+        To: email,
+        ReplyTo: process.env.EMAIL_DEFAULT || 'info@bsrdecorating.co.uk',
+        Subject: 'Thank you for contacting us - BSR Decorating',
+        HtmlBody: customerEmailHTML,
+        TextBody: `
 Thank you for contacting us - BSR Decorating
 
 Dear ${name},
@@ -317,38 +275,12 @@ The BSR Decorating Team
 
 BSR Decorating | Professional Decorating Services | South East Devon
 This email was sent in response to your contact form submission on our website.
-      `
-    };
-
-    // Send customer thank you email
-    console.log('Attempting to send customer thank you email to:', email);
-    console.log('Customer email options:', {
-      from: customerMailOptions.from,
-      to: customerMailOptions.to,
-      subject: customerMailOptions.subject
-    });
-    
-    try {
-      console.log('Sending customer email with transporter config:', {
-        host: process.env.EMAIL_HOST,
-        port: process.env.EMAIL_PORT,
-        user: process.env.EMAIL_USER ? 'configured' : 'missing',
-        from: customerMailOptions.from,
-        to: customerMailOptions.to
+        `.trim(),
       });
-      
-      const customerEmailResult = await transporter.sendMail(customerMailOptions);
-      console.log('✅ Customer thank you email sent successfully to:', email);
-      console.log('📧 Customer email SMTP response:', {
-        messageId: customerEmailResult.messageId,
-        response: customerEmailResult.response,
-        accepted: customerEmailResult.accepted,
-        rejected: customerEmailResult.rejected,
-        pending: customerEmailResult.pending
-      });
+      console.log('Customer thank you email sent successfully to:', email, '- Message ID:', customerResult.MessageID);
     } catch (customerEmailError) {
-      console.error('❌ Failed to send customer thank you email:', customerEmailError);
-      
+      console.error('Failed to send customer thank you email:', customerEmailError);
+
       if (customerEmailError instanceof Error) {
         console.error('Customer email error details:', {
           message: customerEmailError.message,
@@ -356,10 +288,9 @@ This email was sent in response to your contact form submission on our website.
           name: customerEmailError.name
         });
       }
-      
+
       // Don't fail the whole request if customer email fails - BSR email is more important
-      // But log it prominently so we know about it
-      console.error('🚨 CUSTOMER EMAIL FAILED - Business got notification but customer did not get confirmation');
+      console.error('CUSTOMER EMAIL FAILED - Business got notification but customer did not get confirmation');
     }
 
     return NextResponse.json(
