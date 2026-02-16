@@ -32,26 +32,26 @@ async function main() {
     `\nRankings checked: ${indexedCount}/${rankings.length} keywords indexed.\n`
   );
 
-  // --- Stage 2: Content Generation (new or refresh) ---
-  console.log("--- Stage 2: Generating/refreshing blog content ---\n");
-  const blogPost = await generateBlogPost(strategyDocUpdated, rankings);
+  // --- Stage 2: Competitor Tracking (moved before content to inform smart topic picker) ---
+  console.log("--- Stage 2: Checking competitor websites ---\n");
+  const competitorReport = await checkCompetitors();
+
+  // --- Stage 3: Content Generation (now uses rankings + competitor data for smart topic selection) ---
+  console.log("\n--- Stage 3: Generating/refreshing blog content ---\n");
+  const blogPost = await generateBlogPost(strategyDocUpdated, rankings, competitorReport);
 
   if (blogPost) {
     // Write the blog post to the TypeScript data files
     publishPost(blogPost);
   }
 
-  // --- Stage 3: Internal Linking ---
-  console.log("--- Stage 3: Adding internal links ---\n");
+  // --- Stage 4: Internal Linking ---
+  console.log("--- Stage 4: Adding internal links ---\n");
   const linksAdded = await addInternalLinks();
   console.log(`Internal linking: ${linksAdded} links added.\n`);
 
-  // --- Stage 4: Competitor Tracking ---
-  console.log("--- Stage 4: Checking competitor websites ---\n");
-  const competitorReport = await checkCompetitors();
-
   // --- Stage 5: SEO Strategy Analysis ---
-  console.log("\n--- Stage 5: Analysing SEO strategy ---\n");
+  console.log("--- Stage 5: Analysing SEO strategy ---\n");
   const recommendations = await generateRecommendations(
     strategyDocUpdated,
     rankings

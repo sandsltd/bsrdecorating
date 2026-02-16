@@ -2,10 +2,13 @@ import Anthropic from "@anthropic-ai/sdk";
 import fs from "fs";
 import path from "path";
 import { CONFIG } from "./config";
+import type { CompetitorReport } from "./competitors";
 
 interface RankingData {
   keyword: string;
   position: number | null;
+  clicks: number;
+  impressions: number;
   previousPosition: string;
 }
 
@@ -120,11 +123,59 @@ function inferCategory(topic: string, keyword: string): string {
   return "Expert Advice";
 }
 
-async function generateNewTopic(
-  strategyContent: string
+async function generateSmartTopic(
+  strategyContent: string,
+  rankings: RankingData[],
+  competitorReport: CompetitorReport | null
 ): Promise<{ keyword: string; context: string; category: string }> {
-  const { titles } = getExistingPosts();
+  const { titles, posts } = getExistingPosts();
   const anthropic = new Anthropic();
+
+  // Build rankings intelligence
+  const nearPageOne = rankings
+    .filter((r) => r.position !== null && r.position > 10 && r.position <= 25)
+    .sort((a, b) => (a.position || 999) - (b.position || 999));
+
+  const notIndexed = rankings
+    .filter((r) => r.position === null && r.impressions === 0);
+
+  const declining = rankings.filter((r) => {
+    const prevMatch = r.previousPosition.match(/Position ([\d.]+)/);
+    if (!prevMatch || r.position === null) return false;
+    return r.position - parseFloat(prevMatch[1]) >= 3;
+  });
+
+  const highImpressionLowClick = rankings
+    .filter((r) => r.impressions > 10 && r.clicks === 0);
+
+  // Build competitor intelligence
+  let competitorActivity = "No competitor data available.";
+  if (competitorReport) {
+    const active = competitorReport.competitors.filter((c) => c.recentPages.length > 0);
+    if (active.length > 0) {
+      competitorActivity = active.map((c) => {
+        const pages = c.recentPages.slice(0, 5).map((p) => {
+          const pagePath = p.url.replace(/https?:\/\/[^/]+/, "");
+          return `  - ${pagePath}`;
+        }).join("\n");
+        return `${c.name} (${c.domain}) — ${c.recentPages.length} new pages:\n${pages}`;
+      }).join("\n\n");
+    } else {
+      competitorActivity = "No competitors have published new content recently.";
+    }
+  }
+
+  // Seasonal context
+  const month = new Date().getMonth(); // 0-11
+  const seasonalContext = month >= 1 && month <= 3
+    ? "It's late winter/early spring — perfect time for content about spring exterior painting, property refresh, and booking ahead for summer."
+    : month >= 4 && month <= 6
+    ? "It's spring/early summer — peak demand season. Focus on exterior work, outdoor painting, and timely content."
+    : month >= 7 && month <= 9
+    ? "It's summer/early autumn — still high demand. Good time for autumn prep content, interior decorating for winter."
+    : "It's late autumn/winter — focus on interior decorating, landlord turnaround season, commercial work, and planning for spring.";
+
+  const existingPostsList = posts.map((p) => `- "${p.title}" (${p.category}, ${p.slug})`).join("\n");
 
   const response = await anthropic.messages.create({
     model: CONFIG.contentModel,
@@ -132,32 +183,75 @@ async function generateNewTopic(
     messages: [
       {
         role: "user",
-        content: `You are an SEO strategist for BSR Decorating (bsrdecorating.co.uk), a painter and decorator based in Dawlish, Devon, targeting Exeter and Topsham markets.
+        content: `You are an expert SEO strategist for BSR Decorating (bsrdecorating.co.uk), a painter and decorator based in Dawlish, Devon, targeting Exeter and Topsham markets. 20+ years experience, specialising in heritage properties, kitchen spraying, and eco-friendly paints.
 
-## SEO Strategy
-${strategyContent}
+## LIVE RANKINGS DATA
+${nearPageOne.length > 0 ? `**Near page 1 (positions 11-25 — quick wins with supporting content):**\n${nearPageOne.map((r) => `- "${r.keyword}" at position #${r.position} (${r.impressions} impressions, ${r.clicks} clicks)`).join("\n")}` : "No keywords near page 1 yet."}
 
-## Existing Blog Posts
-${titles.length > 0 ? titles.map((t) => `- ${t}`).join("\n") : "None yet."}
+${declining.length > 0 ? `**Declining keywords (need supporting content):**\n${declining.map((r) => `- "${r.keyword}" dropped to #${r.position} (was ${r.previousPosition})`).join("\n")}` : ""}
 
-## Your Task
-Suggest ONE new blog post topic that would be valuable for SEO. Consider:
-- Long-tail keywords homeowners in Exeter and Topsham might search for
-- Heritage and conservation area decorating (994 listed buildings in Exeter, 20 conservation areas)
-- Kitchen spraying as a growing niche
-- Period property painting challenges specific to Devon
-- Topics that complement existing posts without duplicating them
-- Seasonal angles relevant to the Exeter decorating market
+${highImpressionLowClick.length > 0 ? `**High impressions but no clicks (CTR opportunity — better titles/content):**\n${highImpressionLowClick.map((r) => `- "${r.keyword}" — ${r.impressions} impressions, 0 clicks`).join("\n")}` : ""}
+
+${notIndexed.length > 0 ? `**Not indexed yet (${notIndexed.length} keywords):** Content gaps that need blog posts to start ranking.` : ""}
+
+## COMPETITOR ACTIVITY (Last 3 months)
+${competitorActivity}
+
+## SEASONAL CONTEXT
+${seasonalContext}
+
+## MARKET CONTEXT
+- Exeter: 994 listed buildings, 20 conservation areas, ~138,000 population
+- Topsham: 228 listed buildings, avg property £506k, affluent riverside area
+- Cranbrook: Growing new town (3,300 to 8,000 homes) — new build opportunity
+- Liveable Exeter: 12,000 new homes programme — future demand
+- Kitchen cabinet spraying: fastest-growing decorator service in UK
+- 61% of businesses report difficulty hiring skilled tradespeople
+
+## EXISTING BLOG POSTS (${posts.length} total — DO NOT duplicate these)
+${existingPostsList}
+
+## YOUR TASK
+Analyse all the data above and suggest ONE new blog post topic. Use this decision framework:
+
+1. **FIRST PRIORITY:** Is there a keyword near page 1 (position 11-25) that a new supporting blog post could help push onto page 1? Write content that targets a long-tail variant of that keyword.
+2. **SECOND PRIORITY:** Are competitors publishing content in an area where BSR has no coverage? Write a better version targeting that gap.
+3. **THIRD PRIORITY:** Is there a seasonal opportunity right now? Write timely content that will rank when demand peaks.
+4. **FOURTH PRIORITY:** Is there an untapped keyword cluster (heritage, kitchen spraying, eco-friendly, landlord, commercial) with room for more content?
+
+The topic MUST:
+- Target a specific long-tail keyword phrase that real people search for
+- Be locally relevant to Exeter, Topsham, or Devon (not generic national content)
+- NOT duplicate any existing blog post
+- Have clear search intent (someone searching this wants to hire a decorator or learn about decorating)
 
 Respond in EXACTLY this JSON format, nothing else:
-{"keyword": "the target keyword phrase", "context": "A 1-2 sentence description of the article angle", "category": "one of: Expert Advice, Heritage Restoration, Seasonal Trends, Commercial Services, Waterfront Maintenance, Luxury Decorating, Landlord Services, Property Investment, Pricing Guide, Kitchen Spraying"}`,
+{"keyword": "the target keyword phrase", "context": "Why this topic was chosen based on the data — reference specific rankings, competitor activity, or seasonal timing", "category": "one of: Expert Advice, Heritage Restoration, Seasonal Trends, Commercial Services, Waterfront Maintenance, Luxury Decorating, Landlord Services, Property Investment, Pricing Guide, Kitchen Spraying"}`,
       },
     ],
   });
 
   const text =
     response.content[0].type === "text" ? response.content[0].text : "";
-  return JSON.parse(text);
+  try {
+    let cleaned = text.replace(/```json\n?/g, "").replace(/```\n?/g, "").trim();
+    const jsonStart = cleaned.indexOf("{");
+    const jsonEnd = cleaned.lastIndexOf("}");
+    if (jsonStart !== -1 && jsonEnd > jsonStart) {
+      cleaned = cleaned.slice(jsonStart, jsonEnd + 1);
+    }
+    const parsed = JSON.parse(cleaned);
+    console.log(`Smart topic selection reason: ${parsed.context}`);
+    return parsed;
+  } catch {
+    // Fallback to a safe default
+    console.warn("Failed to parse smart topic JSON, falling back to basic topic");
+    return {
+      keyword: "decorator exeter tips",
+      context: "Fallback topic — smart picker failed to return valid JSON",
+      category: "Expert Advice",
+    };
+  }
 }
 
 function findPostToRefresh(
@@ -224,7 +318,8 @@ function findPostToRefresh(
 
 export async function generateBlogPost(
   strategyContent: string,
-  rankings: RankingData[] = []
+  rankings: RankingData[] = [],
+  competitorReport: CompetitorReport | null = null
 ): Promise<GeneratedPost | null> {
   // Check if any existing post needs refreshing first
   const refreshCandidate = findPostToRefresh(rankings);
@@ -238,12 +333,14 @@ export async function generateBlogPost(
 
   let topic = pickNextTopic(strategyContent);
 
-  if (!topic) {
+  if (topic) {
+    console.log(`Queued topic found: "${topic.keyword}"`);
+  } else {
     console.log(
-      "All planned topics covered. Generating a new topic with AI..."
+      "All planned topics covered. Using smart topic picker..."
     );
-    topic = await generateNewTopic(strategyContent);
-    console.log(`AI suggested topic: "${topic.keyword}"`);
+    topic = await generateSmartTopic(strategyContent, rankings, competitorReport);
+    console.log(`Smart topic selected: "${topic.keyword}"`);
   }
 
   console.log(`Generating blog post for keyword: "${topic.keyword}"`);
