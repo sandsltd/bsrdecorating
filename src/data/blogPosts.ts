@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Heritage Restoration',
     date: '2026-02-16',
     readTime: '9 min read',
-    image: '/images/blog/topsham-conservation-area-decorating-guide.jpg',
+    image: '/portfolio/project2/PHOTO-2025-09-02-11-09-52.jpg',
     slug: 'topsham-conservation-area-decorating-guide',
   },
   {
@@ -27,7 +27,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Kitchen Spraying',
     date: '2026-02-16',
     readTime: '9 min read',
-    image: '/images/blog/kitchen-cabinet-spraying-vs-replacement-devon.jpg',
+    image: '/images/Home decorating image.jpeg',
     slug: 'kitchen-cabinet-spraying-vs-replacement-devon',
   },
   {

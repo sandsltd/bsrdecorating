@@ -21,6 +21,67 @@ interface NewPost {
   isRefresh: boolean;
 }
 
+// Pool of existing images on the site, mapped by category
+const IMAGE_POOL: Record<string, string[]> = {
+  "Heritage Restoration": [
+    "/portfolio/project2/PHOTO-2025-09-02-11-09-52.jpg",
+    "/portfolio/project11/PHOTO-2025-09-02-11-40-49.jpg",
+    "/portfolio/project1/PHOTO-2025-09-02-11-07-13.jpg",
+  ],
+  "Commercial Services": [
+    "/images/office decorating.png",
+    "/images/commercialdecorating.jpg",
+    "/images/Business decorating image.jpeg",
+  ],
+  "Landlord Services": [
+    "/images/to let.png",
+    "/images/affordable decorating.png",
+  ],
+  "Property Investment": [
+    "/images/to let.png",
+    "/images/affordable decorating.png",
+  ],
+  "Seasonal Trends": [
+    "/portfolio/project5/PHOTO-2025-09-02-11-16-33.jpg",
+    "/portfolio/project19/PHOTO-2025-09-03-11-18-18.jpg",
+  ],
+  "Waterfront Maintenance": [
+    "/portfolio/project5/PHOTO-2025-09-02-11-16-33.jpg",
+    "/portfolio/project2/PHOTO-2025-09-02-11-09-52.jpg",
+  ],
+  "Expert Advice": [
+    "/portfolio/project1/PHOTO-2025-09-02-11-07-09.jpg",
+    "/portfolio/project5/PHOTO-2025-09-02-11-16-33.jpg",
+    "/images/Home decorating image.jpeg",
+  ],
+  "Kitchen Spraying": [
+    "/images/Home decorating image.jpeg",
+    "/images/home decorating image 2.jpeg",
+    "/portfolio/project1/PHOTO-2025-09-02-11-07-13.jpg",
+  ],
+  "Pricing Guide": [
+    "/images/Home decorating image.jpeg",
+    "/portfolio/project1/PHOTO-2025-09-02-11-07-09.jpg",
+  ],
+  "Luxury Decorating": [
+    "/portfolio/project11/PHOTO-2025-09-02-11-40-49.jpg",
+    "/portfolio/project2/PHOTO-2025-09-02-11-09-52.jpg",
+  ],
+};
+
+const DEFAULT_IMAGES = [
+  "/portfolio/project1/PHOTO-2025-09-02-11-07-13.jpg",
+  "/portfolio/project5/PHOTO-2025-09-02-11-16-33.jpg",
+  "/portfolio/project2/PHOTO-2025-09-02-11-09-52.jpg",
+  "/images/Home decorating image.jpeg",
+];
+
+function pickImage(category: string): string {
+  const pool = IMAGE_POOL[category] || DEFAULT_IMAGES;
+  // Pick a random image from the pool
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
 function run(cmd: string): string {
   console.log(`> ${cmd}`);
   return execSync(cmd, { encoding: "utf-8", cwd: process.cwd() }).trim();
@@ -119,7 +180,7 @@ function addPostMetadata(post: NewPost): void {
     category: '${post.category}',
     date: '${today}',
     readTime: '${readTime}',
-    image: '/images/blog/${post.slug}.jpg',
+    image: '${pickImage(post.category)}',
     slug: '${post.slug}',
   },`;
 
