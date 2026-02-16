@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Random delay (09:00–10:00 window)
+      - name: Random delay (09:00–15:00 window)
         if: github.event_name == 'schedule'
         run: |
-          DELAY=$((RANDOM % 3600))
+          DELAY=$((RANDOM % 21600))
           echo "Sleeping for $((DELAY / 60)) minutes before starting..."
           sleep $DELAY
 
