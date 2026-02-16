@@ -65,7 +65,8 @@ function getAdjacentPosts(currentSlug: string) {
     previous: currentIndex > 0 ? sortedPosts[currentIndex - 1] : null,
     next: currentIndex < sortedPosts.length - 1 ? sortedPosts[currentIndex + 1] : null
   };
-}
+    'spring-exterior-painting-devon-complete-guide': "exterior painting devon, spring exterior painting devon complete guide",
+  }
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
