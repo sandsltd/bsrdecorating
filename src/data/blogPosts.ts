@@ -9,7 +9,7 @@ export interface BlogPost {
   slug: string;
 }
 
-export const blogPosts: BlogPost[
+export const blogPosts: BlogPost[] = [
   {
     id: 18,
     title: 'Kitchen Cabinet Spraying vs Replacement: Complete Cost Comparison for Devon Homeowners',
@@ -19,7 +19,7 @@ export const blogPosts: BlogPost[
     readTime: '9 min read',
     image: '/images/blog/kitchen-cabinet-spraying-vs-replacement-devon.jpg',
     slug: 'kitchen-cabinet-spraying-vs-replacement-devon',
-  },] = [
+  },
   {
     id: 17,
     title: "How to Choose a Painter & Decorator in Exeter: What to Look For",

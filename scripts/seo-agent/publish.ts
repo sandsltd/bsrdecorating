@@ -124,15 +124,19 @@ function addPostMetadata(post: NewPost): void {
   },`;
 
   // Insert at the beginning of the blogPosts array (newest first)
-  const arrayStart = content.indexOf("export const blogPosts");
-  if (arrayStart === -1) {
+  // Look for "= [" after the export to avoid matching "BlogPost[]" type annotation
+  const arrayDecl = content.indexOf("export const blogPosts");
+  if (arrayDecl === -1) {
     throw new Error("Could not find blogPosts array in blogPosts.ts");
   }
 
-  const firstBracket = content.indexOf("[", arrayStart);
-  if (firstBracket === -1) {
-    throw new Error("Could not find opening bracket of blogPosts array");
+  const arrayAssignment = content.indexOf("= [", arrayDecl);
+  if (arrayAssignment === -1) {
+    throw new Error("Could not find '= [' for blogPosts array");
   }
+
+  // Find the "[" in "= ["
+  const firstBracket = content.indexOf("[", arrayAssignment);
 
   // Insert after the opening bracket
   content =
