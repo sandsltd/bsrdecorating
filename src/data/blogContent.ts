@@ -18,6 +18,254 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'topsham-conservation-area-decorating-guide': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Topsham is one of Devon\'s most beautiful historic towns, with 228 listed buildings and a conservation area that protects its unique Georgian and Victorian character. If you own a property in Topsham\'s conservation area, you\'ll know that decorating isn\'t quite as straightforward as it might be elsewhere. The rules exist for good reason—to preserve the architectural heritage that makes Topsham so special—but they can feel confusing if you\'ve never navigated them before.',
+      },
+      {
+        type: 'paragraph',
+        content: 'As decorators with over 20 years\' experience working on [heritage properties across Topsham](/areas/topsham), we\'ve helped dozens of homeowners transform their period homes whilst staying fully compliant with conservation area regulations. This guide will walk you through everything you need to know about decorating a listed or conservation area property in Topsham, from what requires planning permission to which materials and paint colours work best.',
+      },
+      {
+        type: 'heading',
+        content: 'Understanding Topsham Conservation Area',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'The Topsham Conservation Area was designated to protect the town\'s historic character, particularly its wealth of 18th and 19th century buildings along the Strand, Fore Street, and the streets leading up from the Exe Estuary. Properties here include everything from modest fishermen\'s cottages to grand Georgian townhouses, many constructed from the local red sandstone or rendered and painted in traditional colours.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Living in a conservation area means certain alterations to your property\'s exterior require planning permission from East Devon District Council, even if those same changes would be permitted development elsewhere. The goal is to ensure that any work respects the historic character of the area and doesn\'t harm the appearance of the building or its surroundings.',
+      },
+      {
+        type: 'paragraph',
+        content: 'It\'s worth noting that conservation area status is separate from listed building status. A property can be in a conservation area without being listed, or it can be both. Across Exeter\'s 20 conservation areas, there are 994 listed buildings in total, with Topsham accounting for 228 of these—the second-highest concentration in the city after St David\'s.',
+      },
+      {
+        type: 'heading',
+        content: 'What Decorating Work Requires Permission?',
+        level: 2,
+      },
+      {
+        type: 'subheading',
+        content: 'External Changes That Need Consent',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'In Topsham\'s conservation area, you\'ll typically need planning permission or listed building consent for:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Changing the colour of external paintwork on a listed building (even repainting in the same colour may require consent)',
+          'Rendering or re-rendering external walls, or changing the type of render',
+          'Removing or replacing original windows, doors, or other architectural features',
+          'Adding new external features like satellite dishes on front elevations',
+          'Demolishing walls, chimneys, or outbuildings',
+          'Installing new roof lights or altering the roofline',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'The rules are particularly strict for listed buildings. A Topsham property owner was fined £38,000 in December 2025 for making unauthorised alterations to a listed building—a reminder that the council takes enforcement seriously.',
+      },
+      {
+        type: 'subheading',
+        content: 'Internal Work and Permitted Changes',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Generally speaking, internal decorating work in a conservation area property doesn\'t require permission unless the building is listed. You\'re free to paint internal walls, change colour schemes, hang wallpaper, and refresh woodwork without seeking consent.',
+      },
+      {
+        type: 'paragraph',
+        content: 'However, if your property is listed, you\'ll need listed building consent for internal alterations that affect the character of the building, such as removing original plasterwork, stripping historic paint layers, or altering original features like panelling or fireplaces.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For rear elevations and areas not visible from public streets, the rules are sometimes more relaxed, but it\'s always worth checking with the council before proceeding. What seems like a minor change to you might be significant from a heritage perspective.',
+      },
+      {
+        type: 'heading',
+        content: 'Choosing the Right Paint and Materials',
+        level: 2,
+      },
+      {
+        type: 'subheading',
+        content: 'Why Traditional Materials Matter',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Period properties in Topsham were built using breathable materials—lime mortar, lime plaster, and porous stone or brick. These materials allow moisture to move through the walls naturally, preventing damp from becoming trapped inside the structure. Modern masonry paints and cement renders create an impermeable barrier that can trap moisture, leading to damp problems, blown render, and internal decay.',
+      },
+      {
+        type: 'paragraph',
+        content: 'This is why conservation officers often insist on breathable paints and lime-based materials for listed buildings and properties in conservation areas. It\'s not about being difficult—it\'s about protecting the building\'s long-term health.',
+      },
+      {
+        type: 'subheading',
+        content: 'Best Paint Types for Topsham Properties',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'For external walls on period properties, we typically recommend:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Limewash: The most breathable option, perfect for listed buildings. Available in traditional heritage colours.',
+          'Mineral paints: Highly breathable silicate-based paints that bond chemically to the substrate. Excellent durability in coastal climates.',
+          'Breathable masonry paint: Modern paints specifically designed to allow moisture vapour transmission whilst providing weather protection.',
+          'Traditional oil-based paints: For timber windows, doors, and other woodwork on heritage properties.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'For internal walls, you have more flexibility, though many homeowners choose breathable emulsions or traditional distemper paints to maintain the authentic character of their period home. We cover the technical details in our guide to [the best paint types for period properties](/blog/best-paint-types-exeter-homes).',
+      },
+      {
+        type: 'subheading',
+        content: 'Heritage Colour Palettes',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Topsham\'s historic character is partly defined by its traditional colour palette—soft creams, whites, warm ochres, and the occasional deep red or grey-green. If you\'re repainting a listed building\'s exterior, the conservation officer will likely want to approve your colour choice.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Period paint manufacturers like Farrow & Ball, Little Greene, and Papers & Paints offer heritage ranges that are pre-approved for many conservation areas. These colours are based on historical analysis of pigments used in Georgian and Victorian times, so they naturally complement period architecture.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For properties along the waterfront on Monmouth Avenue or the Strand, consider how colours will look in Topsham\'s unique light—the proximity to the estuary creates softer, cooler tones that affect how colours appear throughout the day.',
+      },
+      {
+        type: 'heading',
+        content: 'The Planning Permission Process',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'If your proposed decorating work requires planning permission or listed building consent, here\'s what to expect:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Pre-application advice: East Devon District Council offers a paid pre-application service where you can discuss your plans with a conservation officer before submitting a formal application. This can save time and money by identifying issues early.',
+          'Formal application: Submit your application with detailed specifications of materials, colours, and methods. Include photos of the existing condition and paint samples if changing colours.',
+          'Consultation period: The council will consult with neighbours and heritage organisations. For straightforward applications, this usually takes 8 weeks for listed building consent.',
+          'Decision: The council will approve, approve with conditions, or refuse the application. Conditions might specify particular materials, colours, or methods of work.',
+          'Work completion: Once consent is granted, you must complete the work within the specified timeframe (usually three years) and in accordance with the approved plans.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'The process might sound daunting, but conservation officers are usually helpful and pragmatic. Their job is to protect heritage, not to make life difficult for homeowners. If you\'re working with experienced [heritage decorators in Topsham](/areas/exeter/heritage-property-painting), we can often guide you through the process and liaise with the council on your behalf.',
+      },
+      {
+        type: 'heading',
+        content: 'Common Decorating Challenges in Topsham Properties',
+        level: 2,
+      },
+      {
+        type: 'subheading',
+        content: 'Dealing with Damp and Moisture',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Topsham\'s waterfront location means many properties face higher humidity levels than homes further inland. Period buildings with solid walls (no cavity) are particularly vulnerable to moisture penetration, especially on elevations facing the prevailing south-westerly weather.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Before decorating, it\'s essential to identify and address any damp issues. This might mean repointing with lime mortar, improving ventilation, or treating rising damp at ground level. Painting over damp walls with modern impermeable paint will only trap the moisture and make the problem worse.',
+      },
+      {
+        type: 'subheading',
+        content: 'Preparing Historic Surfaces',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Period properties often have layers of historic paint, uneven plaster, or lime render that requires specialist preparation. Stripping back to bare plaster isn\'t always appropriate—historic paint layers can themselves be part of the building\'s heritage value.',
+      },
+      {
+        type: 'paragraph',
+        content: 'A skilled decorator will assess the existing finish and prepare it sympathetically, removing loose material without damaging sound historic fabric. This is particularly important on listed buildings where you\'re required to preserve original features.',
+      },
+      {
+        type: 'subheading',
+        content: 'Windows and Woodwork',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Original timber windows and doors in Topsham properties are often over 100 years old. With proper maintenance and decoration, they can last another century, but they need the right treatment. Modern acrylic paints can cause timber to deteriorate by preventing it from breathing. Traditional oil-based primer and undercoat, followed by a flexible topcoat, offers much better protection.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Many Topsham properties feature original sash windows, six-panel Georgian doors, or decorative bargeboards that are protected features. Replacing them requires listed building consent and is rarely approved. Professional decoration and repair is almost always the preferred option.',
+      },
+      {
+        type: 'heading',
+        content: 'Why Professional Decorators Matter for Heritage Work',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Decorating a conservation area property isn\'t the same as decorating a modern home. It requires understanding of traditional materials, sympathy for historic building fabric, and knowledge of what conservation officers expect. A decorator experienced in heritage work can:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Advise on appropriate materials and methods before you start',
+          'Help prepare planning applications and specifications',
+          'Source specialist paints and materials that meet conservation requirements',
+          'Prepare historic surfaces properly without causing damage',
+          'Complete work to a standard that will satisfy building control inspections',
+          'Identify potential issues like hidden damp or structural problems before they become expensive repairs',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'The cost of using a specialist heritage decorator is usually offset by avoiding mistakes, rejected planning applications, and long-term problems from using inappropriate materials. In Topsham, where the average property value is £506,000, protecting your investment with quality work makes financial sense.',
+      },
+      {
+        type: 'quote',
+        content: 'With 228 listed buildings and a fiercely protected conservation area, Topsham demands decorators who understand heritage. The right approach preserves history whilst creating beautiful, practical homes for modern living.',
+      },
+      {
+        type: 'heading',
+        content: 'Getting Started with Your Topsham Decorating Project',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'If you\'re planning decorating work on a conservation area or listed property in Topsham, start by checking whether you need consent. East Devon District Council\'s planning portal has helpful guidance, or you can speak to a conservation officer directly.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Next, find a decorator with genuine heritage experience. Ask to see examples of previous work on period properties, and check they understand the importance of breathable materials and traditional methods. The cheapest quote isn\'t always the best value when you\'re dealing with an irreplaceable historic building.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Finally, plan ahead. The consent process can take two to three months, and specialist materials sometimes need to be ordered. Starting early means you can book your preferred decorator during the optimal season for external work—typically late spring through early autumn when temperatures are mild and rainfall is lower.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Planning a decorating project on your Topsham conservation area property? BSR Decorating has over 20 years\' experience working with heritage and period homes across Topsham and Exeter. We understand the planning process, work with conservation-approved materials, and deliver finishes that respect your home\'s history whilst meeting modern standards. Contact us today for a free consultation and quote.',
+      },
+    ],
+  },
   'kitchen-cabinet-spraying-vs-replacement-devon': {
     sections: [
       {

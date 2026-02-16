@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 19,
+    title: 'Topsham Conservation Area: Your Complete Guide to Decorating a Listed Property',
+    excerpt: 'Everything Topsham homeowners need to know about decorating within conservation area rules, from planning permission to paint choices.',
+    category: 'Heritage Restoration',
+    date: '2026-02-16',
+    readTime: '9 min read',
+    image: '/images/blog/topsham-conservation-area-decorating-guide.jpg',
+    slug: 'topsham-conservation-area-decorating-guide',
+  },
+  {
     id: 18,
     title: 'Kitchen Cabinet Spraying vs Replacement: Complete Cost Comparison for Devon Homeowners',
     excerpt: 'Discover whether kitchen spraying or replacement offers better value for your Devon home. Expert cost comparison and advice.',
