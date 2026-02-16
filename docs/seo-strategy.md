@@ -206,34 +206,34 @@ The agent should work through these in order, picking the next unwritten topic e
 
 | # | Topic | Target Keyword | Est. Searches | Published | Filename |
 |---|-------|---------------|---------------|-----------|----------|
-| 1 | Kitchen Cabinet Spraying vs Replacement: Complete Cost Comparison for Devon Homeowners | Not indexed yet | 16 Feb 2026 | No | — |
-| 2 | Topsham Conservation Area: Your Complete Guide to Decorating a Listed Property | Not indexed yet | 16 Feb 2026 | No | — |
-| 3 | Spring Exterior Painting Guide: When and How to Paint Your Devon Home | Not indexed yet | 16 Feb 2026 | No | — |
-| 4 | The Best Exterior Paint for Devon's Coastal Weather | Not indexed yet | 16 Feb 2026 | No | — |
-| 5 | Commercial Decorating in Exeter: What Business Owners Need to Know | Not indexed yet | 16 Feb 2026 | No | — |
+| 1 | Kitchen Cabinet Spraying vs Replacement: Complete Cost Comparison for Devon Homeowners | kitchen spraying vs replacement | 200-500/mo national | No | — |
+| 2 | Topsham Conservation Area: Your Complete Guide to Decorating a Listed Property | topsham conservation area decorating | <10 local | No | — |
+| 3 | Spring Exterior Painting Guide: When and How to Paint Your Devon Home | exterior painting devon | 20-40 seasonal | No | — |
+| 4 | The Best Exterior Paint for Devon's Coastal Weather | best paint devon weather | 10-30 | No | — |
+| 5 | Commercial Decorating in Exeter: What Business Owners Need to Know | commercial decorator exeter | 10-30 | No | — |
 
 #### HIGH Priority
 
 | # | Topic | Target Keyword | Est. Searches | Published | Filename |
 |---|-------|---------------|---------------|-----------|----------|
-| 6 | Limewash Paint: Everything You Need to Know for Period Properties | Not indexed yet | 16 Feb 2026 | No | — |
-| 7 | Solving Damp and Paint Problems in Exeter Homes | Not indexed yet | 16 Feb 2026 | No | — |
-| 8 | HMO and Rental Property Decorating: A Landlord's Complete Guide | Not indexed yet | 16 Feb 2026 | Partial | cost-effective-decorating-rental-properties-hmos (expand) |
-| 9 | Why Eco-Friendly Paint Matters and the Best Options for Your Home | Not indexed yet | 16 Feb 2026 | No | — |
-| 10 | New Build Paint Problems: Common Issues and Professional Solutions | Not indexed yet | 16 Feb 2026 | Partial | the-real-problem-with-exeter-new-build-paintwork (expand) |
-| 11 | Painting Trends for Devon Homes: What's Popular in 2026 | Not indexed yet | 16 Feb 2026 | No | — |
-| 12 | How Long Does Exterior Paint Last in Devon's Climate? | Not indexed yet | 16 Feb 2026 | No | — |
+| 6 | Limewash Paint: Everything You Need to Know for Period Properties | limewash paint old house | 100-300/mo national | No | — |
+| 7 | Solving Damp and Paint Problems in Exeter Homes | damp walls painting exeter | 10-30 | No | — |
+| 8 | HMO and Rental Property Decorating: A Landlord's Complete Guide | HMO decorating guide | 50-100/mo national | Partial | cost-effective-decorating-rental-properties-hmos (expand) |
+| 9 | Why Eco-Friendly Paint Matters and the Best Options for Your Home | eco friendly paint uk | 100-300/mo national | No | — |
+| 10 | New Build Paint Problems: Common Issues and Professional Solutions | new build paint problems | 30-80/mo national | Partial | the-real-problem-with-exeter-new-build-paintwork (expand) |
+| 11 | Painting Trends for Devon Homes: What's Popular in 2026 | painting trends 2026 uk | 200-500/mo national | No | — |
+| 12 | How Long Does Exterior Paint Last in Devon's Climate? | how long exterior paint last | 100-300/mo national | No | — |
 
 #### MEDIUM Priority
 
 | # | Topic | Target Keyword | Est. Searches | Published | Filename |
 |---|-------|---------------|---------------|-----------|----------|
-| 13 | Breathable Paint for Old Houses: A Complete Guide | Not indexed yet | 16 Feb 2026 | No | — |
-| 14 | Preparing Your Devon Home for Winter: A Maintenance Checklist | Not indexed yet | 16 Feb 2026 | No | — |
-| 15 | Best Paint for Coastal Properties: Salt Air, Humidity and Weather | Not indexed yet | 16 Feb 2026 | Partial | topsham-waterfront-homes-best-paints (expand) |
-| 16 | Heritage Paint Colours for Topsham Homes | Not indexed yet | 16 Feb 2026 | No | — |
-| 17 | Conservation Area Painting Rules: What You Need Planning Permission For | Not indexed yet | 16 Feb 2026 | No | — |
-| 18 | Decorating Costs UK 2026: Complete Pricing Guide | Not indexed yet | 16 Feb 2026 | Partial | how-much-painter-decorator-cost-exeter (localise) |
+| 13 | Breathable Paint for Old Houses: A Complete Guide | breathable paint old houses | 100-200/mo national | No | — |
+| 14 | Preparing Your Devon Home for Winter: A Maintenance Checklist | winter property maintenance devon | 10-20 | No | — |
+| 15 | Best Paint for Coastal Properties: Salt Air, Humidity and Weather | best paint coastal properties | 50-150/mo national | Partial | topsham-waterfront-homes-best-paints (expand) |
+| 16 | Heritage Paint Colours for Topsham Homes | heritage paint colours topsham | <5 | No | — |
+| 17 | Conservation Area Painting Rules: What You Need Planning Permission For | conservation area painting rules | 50-150/mo national | No | — |
+| 18 | Decorating Costs UK 2026: Complete Pricing Guide | decorating costs uk 2026 | 500-1,500/mo national | Partial | how-much-painter-decorator-cost-exeter (localise) |
 
 ### Already Published Blog Posts (17 total)
 

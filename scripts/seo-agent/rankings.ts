@@ -29,13 +29,26 @@ function getSearchConsoleClient() {
   return google.searchconsole({ version: "v1", auth });
 }
 
+function extractRankingsSection(strategyContent: string): string {
+  // Only parse from the "Keyword Rankings Tracker" section, stop before "Competitor Watchlist"
+  const startMarker = "## Keyword Rankings Tracker";
+  const endMarker = "## Competitor Watchlist";
+  const startIdx = strategyContent.indexOf(startMarker);
+  if (startIdx === -1) return "";
+  const endIdx = strategyContent.indexOf(endMarker, startIdx);
+  return endIdx === -1
+    ? strategyContent.slice(startIdx)
+    : strategyContent.slice(startIdx, endIdx);
+}
+
 function parseKeywordsFromStrategy(strategyContent: string): string[] {
+  const rankingsSection = extractRankingsSection(strategyContent);
   const keywords: string[] = [];
   const tableRowRegex =
     /\|\s*\d+\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|/g;
   let match;
 
-  while ((match = tableRowRegex.exec(strategyContent)) !== null) {
+  while ((match = tableRowRegex.exec(rankingsSection)) !== null) {
     const keyword = match[1].trim();
     if (keyword && keyword !== "Keyword" && !keyword.startsWith("---")) {
       keywords.push(keyword);
@@ -48,12 +61,13 @@ function parseKeywordsFromStrategy(strategyContent: string): string[] {
 function parsePreviousPositions(
   strategyContent: string
 ): Map<string, string> {
+  const rankingsSection = extractRankingsSection(strategyContent);
   const positions = new Map<string, string>();
   const tableRowRegex =
     /\|\s*\d+\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|/g;
   let match;
 
-  while ((match = tableRowRegex.exec(strategyContent)) !== null) {
+  while ((match = tableRowRegex.exec(rankingsSection)) !== null) {
     const keyword = match[1].trim();
     const position = match[2].trim();
     if (keyword && keyword !== "Keyword" && !keyword.startsWith("---")) {

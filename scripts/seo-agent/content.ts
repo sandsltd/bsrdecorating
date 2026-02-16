@@ -79,11 +79,20 @@ function pickNextTopic(strategyContent: string): {
 } | null {
   const { slugs } = getExistingPosts();
 
+  // Extract only the Blog Topic Queue section to avoid matching other tables
+  const startMarker = "### Blog Topic Queue";
+  const endMarker = "### Already Published";
+  const startIdx = strategyContent.indexOf(startMarker);
+  const endIdx = strategyContent.indexOf(endMarker, startIdx);
+  const topicSection = startIdx !== -1
+    ? (endIdx !== -1 ? strategyContent.slice(startIdx, endIdx) : strategyContent.slice(startIdx))
+    : strategyContent;
+
   // Parse the Blog Topic Queue from the strategy doc
   const topicRegex = /\|\s*\d+\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*[^|]+?\s*\|\s*(No|Partial)\s*\|/g;
   let match;
 
-  while ((match = topicRegex.exec(strategyContent)) !== null) {
+  while ((match = topicRegex.exec(topicSection)) !== null) {
     const topic = match[1].trim();
     const keyword = match[2].trim();
     const status = match[3].trim();
@@ -301,7 +310,14 @@ Important: Do NOT use markdown formatting (no **, no ##). Just plain text in sec
     response.content[0].type === "text" ? response.content[0].text : "";
 
   try {
-    const cleaned = text.replace(/```json\n?/g, "").replace(/```\n?/g, "").trim();
+    // Strip code fences and find the JSON object
+    let cleaned = text.replace(/```json\n?/g, "").replace(/```\n?/g, "").trim();
+    // If the response doesn't start with {, try to find the JSON object
+    const jsonStart = cleaned.indexOf("{");
+    const jsonEnd = cleaned.lastIndexOf("}");
+    if (jsonStart !== -1 && jsonEnd > jsonStart) {
+      cleaned = cleaned.slice(jsonStart, jsonEnd + 1);
+    }
     const parsed = JSON.parse(cleaned);
 
     console.log(`Blog post generated: "${parsed.title}" (${parsed.slug})`);
@@ -317,8 +333,46 @@ Important: Do NOT use markdown formatting (no **, no ##). Just plain text in sec
     };
   } catch (error) {
     console.error("Failed to parse generated blog post JSON:", error);
-    console.error("Raw response:", text.slice(0, 500));
-    return null;
+    console.error("Raw response (first 500 chars):", text.slice(0, 500));
+    console.error("Raw response (last 500 chars):", text.slice(-500));
+
+    // Retry with a simpler prompt asking for just JSON
+    console.log("Retrying content generation with simplified prompt...");
+    try {
+      const retryResponse = await anthropic.messages.create({
+        model: CONFIG.contentModel,
+        max_tokens: 4096,
+        messages: [
+          { role: "user", content: prompt },
+          { role: "assistant", content: text },
+          { role: "user", content: "Your response contained invalid JSON. Please return ONLY the JSON object, starting with { and ending with }. No code fences, no explanation." },
+        ],
+      });
+
+      const retryText = retryResponse.content[0].type === "text" ? retryResponse.content[0].text : "";
+      let retryCleaned = retryText.trim();
+      const rStart = retryCleaned.indexOf("{");
+      const rEnd = retryCleaned.lastIndexOf("}");
+      if (rStart !== -1 && rEnd > rStart) {
+        retryCleaned = retryCleaned.slice(rStart, rEnd + 1);
+      }
+      const retryParsed = JSON.parse(retryCleaned);
+
+      console.log(`Blog post generated on retry: "${retryParsed.title}" (${retryParsed.slug})`);
+
+      return {
+        title: retryParsed.title,
+        slug: retryParsed.slug,
+        excerpt: retryParsed.excerpt,
+        category: topic.category,
+        targetKeyword: topic.keyword,
+        sections: retryParsed.sections,
+        isRefresh: false,
+      };
+    } catch (retryError) {
+      console.error("Retry also failed:", retryError);
+      return null;
+    }
   }
 }
 
