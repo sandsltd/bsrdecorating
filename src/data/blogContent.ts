@@ -36,7 +36,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Devon\'s autumn landscape provides the perfect inspiration for seasonal decorating. The golden yellows of turning leaves, the rich oranges of pumpkins, and the deep browns of fallen chestnuts create a natural palette that brings warmth and comfort to any home. These colours work particularly well in Exeter\'s Georgian townhouses and Topsham\'s heritage properties, where they complement the traditional architecture beautifully.'
+        content: 'Devon\'s autumn landscape provides the perfect inspiration for seasonal decorating. The golden yellows of turning leaves, the rich oranges of pumpkins, and the deep browns of fallen chestnuts create a natural palette that brings warmth and comfort to any home. These colours work particularly well in Exeter\'s Georgian townhouses and Topsham\'s [heritage properties](/blog/heritage-property-restoration-topsham), where they complement the traditional architecture beautifully.'
       },
       {
         type: 'subheading',
@@ -133,7 +133,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Update your home\'s exterior with timeless colors that create a welcoming entrance for guests. These work particularly well with Devon\'s traditional architecture:'
+        content: 'Update your home\'s exterior with timeless colors that create a welcoming entrance for guests. These work particularly well with [Devon\'s traditional architecture](/blog/exterior-painting-exeter-devon-guide):'
       },
       {
         type: 'list',
@@ -191,7 +191,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'To complete the autumnal look, incorporate natural fibres like wood, rattan, and wool that echo the earthy elements of Devon\'s countryside. These materials work particularly well in Topsham\'s waterfront properties, where they complement the natural estuary setting.'
+        content: 'To complete the autumnal look, incorporate natural fibres like wood, rattan, and wool that echo the earthy elements of Devon\'s countryside. These materials work particularly well in [Topsham\'s waterfront properties](/blog/waterfront-property-maintenance-topsham), where they complement the natural estuary setting.'
       },
       {
         type: 'list',
@@ -376,7 +376,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Heritage property restoration in Topsham demands traditional materials and techniques. We use lime mortars, period-appropriate paints, and traditional joinery methods to ensure authenticity. This includes understanding the specific requirements of Georgian and Victorian properties in the village.'
+        content: 'Heritage property restoration in Topsham demands traditional materials and techniques. We use lime mortars, [period-appropriate paints](/blog/best-paint-types-exeter-homes-old-damp-listed-properties), and traditional joinery methods to ensure authenticity. This includes understanding the specific requirements of Georgian and Victorian properties in the village.'
       },
       {
         type: 'list',
@@ -543,7 +543,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Our expertise in Exeter\'s diverse commercial landscape, from historic city centre offices to modern business parks, makes us the ideal choice for commercial decorating projects. We understand the unique challenges of city centre locations and deliver results that enhance your business environment.'
+        content: 'Our expertise in Exeter\'s diverse commercial landscape, from historic city centre offices to modern business parks, makes us the ideal choice for commercial decorating projects. We understand the unique challenges of city centre locations and deliver results that [enhance your business environment](/blog/professional-decorating-enhances-business-premises).'
       },
       {
         type: 'link',
@@ -589,7 +589,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Our waterfront property maintenance uses marine-grade protection systems designed specifically for estuary and riverside locations. These systems provide superior resistance to salt air, moisture, and environmental damage while maintaining aesthetic appeal.'
+        content: 'Our waterfront property maintenance uses marine-grade protection systems designed specifically for estuary and riverside locations. These systems provide [superior resistance to salt air, moisture, and environmental damage](/blog/topsham-waterfront-homes-best-paints-humidity-salt-air-weather) while maintaining aesthetic appeal.'
       },
       {
         type: 'list',
@@ -639,7 +639,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Many of Topsham\'s waterfront properties are historic, requiring a balance between heritage authenticity and modern protection. Our approach respects period character while ensuring contemporary durability in this challenging environment.'
+        content: 'Many of Topsham\'s waterfront properties are historic, requiring a balance between heritage authenticity and modern protection. Our approach respects [period character while ensuring contemporary durability](/blog/heritage-property-restoration-topsham) in this challenging environment.'
       },
       {
         type: 'quote',
@@ -652,7 +652,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Our expertise in Topsham\'s unique waterfront environment, combined with our understanding of heritage requirements, makes us the ideal choice for waterfront property maintenance. We protect your investment while preserving the character of this beautiful riverside village.'
+        content: 'Our expertise in [Topsham\'s unique waterfront environment](/areas/topsham), combined with our understanding of heritage requirements, makes us the ideal choice for waterfront property maintenance. We protect your investment while preserving the character of this beautiful riverside village.'
       },
       {
         type: 'link',
@@ -764,7 +764,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Many landlords question whether the investment in professional decorating is worthwhile, especially when faced with multiple property turnovers. However, the mathematics strongly favour professional decoration:'
+        content: 'Many landlords question whether the investment in professional decorating is worthwhile, especially when faced with multiple property turnovers. However, the mathematics strongly favour professional decoration. For more details on pricing, see our [comprehensive cost guide for Exeter](/blog/painter-decorator-cost-exeter-2025-price-guide).'
       },
       {
         type: 'subheading',
@@ -1222,7 +1222,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Developing a relationship with a single, reliable decorating company can provide significant advantages for property investors and landlords.'
+        content: 'Developing a relationship with a single, reliable decorating company can provide significant advantages for property investors and landlords. Knowing [how to choose a painter & decorator in Exeter](/blog/choose-painter-decorator-exeter-guide) is the first step toward building this valuable partnership.'
       },
       {
         type: 'subheading',
@@ -2764,7 +2764,7 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'As we bid farewell to 2025 and welcome 2026, there\'s no better time to give your Devon home a fresh start. Whether you live in a Georgian townhouse in Exeter, a waterfront property in Topsham, or a family home in Newton Abbot, a professional decorating refresh can transform your living space and set the tone for the year ahead.'
+        content: 'As we bid farewell to 2025 and welcome 2026, there\'s no better time to give your Devon home a fresh start. Whether you live in a [Georgian townhouse in Exeter](/blog/decorating-tips-exeter-period-homes-specialist-advice), a [waterfront property in Topsham](/blog/topsham-waterfront-homes-best-paints-humidity-salt-air-weather), or a family home in Newton Abbot, a professional decorating refresh can transform your living space and set the tone for the year ahead.'
       },
       {
         type: 'heading',
@@ -2824,7 +2824,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Looking ahead to 2026, we\'re seeing several emerging colour trends that work beautifully in Devon homes:'
+        content: 'Looking ahead to 2026, we\'re seeing several emerging colour trends that work beautifully in Devon homes. For more inspiration on current styles, explore our [luxury decorating trends in Exeter](/blog/luxury-decorating-trends-exeter):'
       },
       {
         type: 'list',
@@ -2972,7 +2972,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Period and heritage properties in Exeter, Topsham and Newton Abbot often have lime-rendered or solid stone walls that need to breathe. Using modern plastic-based masonry paints on these properties traps moisture inside the walls, causing damp, blown plaster and paint failure. Instead, we use mineral-based breathable paints such as Keim Granital or Earthborn Silicate Masonry Paint, which allow moisture vapour to pass through whilst still providing excellent weather protection.'
+        content: 'Period and heritage properties in Exeter, Topsham and Newton Abbot often have lime-rendered or solid stone walls that need to breathe. Using modern plastic-based masonry paints on these properties traps moisture inside the walls, causing damp, blown plaster and paint failure. Instead, we use mineral-based breathable paints such as Keim Granital or Earthborn Silicate Masonry Paint, which allow moisture vapour to pass through whilst still providing excellent weather protection. For more guidance on [choosing the right paint for older properties, see our specialist guide](/blog/best-paint-types-exeter-homes-old-damp-listed-properties).'
       },
       {
         type: 'subheading',
@@ -3013,7 +3013,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Exterior painting costs in Exeter and Devon vary based on property size, condition, access requirements and paint specification. As a rough guide for a typical 3-bedroom semi-detached house in the Exeter area:'
+        content: 'Exterior painting costs in Exeter and Devon vary based on property size, condition, access requirements and paint specification. For a detailed breakdown of what to expect, read our [full 2025 pricing guide for painters and decorators in Exeter](/blog/painter-decorator-cost-exeter-2025-price-guide). As a rough guide for a typical 3-bedroom semi-detached house in the Exeter area:'
       },
       {
         type: 'list',
@@ -3061,7 +3061,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'With over 20 years of experience decorating properties across Exeter, Topsham, Newton Abbot, Dawlish, Torquay and the wider Devon area, we understand the specific challenges our local climate presents. We use only premium products proven to perform in South West conditions, and our thorough preparation process ensures your exterior paintwork looks fantastic and protects your property for years to come.'
+        content: 'With over 20 years of experience decorating properties across Exeter, Topsham, Newton Abbot, Dawlish, Torquay and the wider Devon area, we understand the specific challenges our local climate presents. We use only premium products proven to perform in South West conditions, and our thorough preparation process ensures your exterior paintwork looks fantastic and protects your property for years to come. If you\'re looking for a trusted professional, our guide on [how to choose a painter and decorator in Exeter](/blog/choose-painter-decorator-exeter-guide) explains what to look for.'
       },
       {
         type: 'list',
@@ -3111,7 +3111,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Look for a decorator with a proven track record in the Exeter and Devon area. Experience matters in decorating — an established painter will have dealt with every type of property, from modern new builds in Cranbrook to Victorian terraces in St Thomas, Georgian townhouses in Southernhay and heritage properties in Topsham. They\'ll know which products work best in Devon\'s climate, how to handle the damp issues common in older Exeter properties, and how to prepare surfaces properly for a lasting finish.'
+        content: 'Look for a decorator with a proven track record in the Exeter and Devon area. Experience matters in decorating — an established painter will have dealt with every type of property, from [modern new builds in Cranbrook](/blog/exeter-new-build-paintwork-problems-how-pros-fix) to Victorian terraces in St Thomas, [Georgian townhouses in Southernhay and heritage properties in Topsham](/blog/heritage-property-restoration-topsham). They\'ll know which products work best in Devon\'s climate, how to handle the damp issues common in older Exeter properties, and how to prepare surfaces properly for a lasting finish.'
       },
       {
         type: 'list',
@@ -3220,7 +3220,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Devon properties have their own quirks and challenges that a local decorator will understand instinctively. Exeter\'s older properties in areas like St Leonard\'s, Heavitree and the city centre often have lime plaster walls that need breathable paints rather than modern vinyl emulsions. Topsham\'s waterfront properties face salt air and humidity challenges. Newton Abbot and Bovey Tracey properties deal with Dartmoor\'s higher rainfall. A painter and decorator who knows the Exeter area will already understand these issues and use the right products and techniques without you having to ask.'
+        content: 'Devon properties have their own quirks and challenges that a local decorator will understand instinctively. Exeter\'s older properties in areas like St Leonard\'s, Heavitree and the city centre often have [lime plaster walls that need breathable paints](/blog/best-paint-types-exeter-homes-old-damp-listed-properties) rather than modern vinyl emulsions. [Topsham\'s waterfront properties face salt air and humidity challenges](/blog/topsham-waterfront-homes-best-paints-humidity-salt-air-weather). Newton Abbot and Bovey Tracey properties deal with Dartmoor\'s higher rainfall. A painter and decorator who knows the Exeter area will already understand these issues and use the right products and techniques without you having to ask.'
       },
       {
         type: 'paragraph',
@@ -3233,7 +3233,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'If you\'re looking for a painter and decorator in Exeter, Topsham, Newton Abbot, Dawlish, Torquay or anywhere across Devon, we\'re always happy to come out, have a look at your property and provide an honest assessment and detailed written quote — with no pressure and no obligation. We\'ve been decorating Devon properties for over 20 years and our work speaks for itself.'
+        content: 'If you\'re looking for a painter and decorator in [Exeter](/areas/exeter), [Topsham](/areas/topsham), Newton Abbot, [Dawlish](/areas/dawlish), Torquay or anywhere across Devon, we\'re always happy to come out, have a look at your property and provide an honest assessment and detailed written quote — with no pressure and no obligation. We\'ve been decorating Devon properties for over 20 years and our work speaks for itself.'
       },
       {
         type: 'link',

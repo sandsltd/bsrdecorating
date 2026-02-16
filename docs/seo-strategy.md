@@ -15,53 +15,53 @@
 
 | # | Keyword | Current Position | Last Checked | Target Page | Notes |
 |---|---------|-----------------|--------------|-------------|-------|
-| 1 | decorator exeter | Page 10 | Nov 2025 | /areas/exeter | Biggest opportunity. Simon Santucci & Vivid Decor dominate. |
-| 2 | painter and decorator exeter | Not checked | — | /areas/exeter | High volume variant (~90-150/mo). |
-| 3 | painter exeter | Not checked | — | /areas/exeter | ~70-130 searches/mo. |
-| 4 | decorator topsham | Page 2 | Nov 2025 | /areas/topsham | Close to Page 1. Push with content + links. |
-| 5 | kitchen spraying exeter | Not checked | — | /areas/exeter/kitchen-spraying | ~30-70/mo. Growing niche. No local specialist ranks. |
-| 6 | heritage decorator exeter | Not checked | — | /areas/exeter/heritage-property-painting | Very low competition. 994 listed buildings in Exeter. |
-| 7 | decorator dawlish | Page 1 | Nov 2025 | /areas/dawlish | DEFEND this. Home base. Only Santucci competes. |
+| 1 | decorator exeter | Position 39.5 | 16 Feb 2026 | /areas/exeter | Biggest opportunity. Simon Santucci & Vivid Decor dominate. |
+| 2 | painter and decorator exeter | Position 28.6 | 16 Feb 2026 | /areas/exeter | High volume variant (~90-150/mo). |
+| 3 | painter exeter | Position 41 | 16 Feb 2026 | /areas/exeter | ~70-130 searches/mo. |
+| 4 | decorator topsham | Not indexed yet | 16 Feb 2026 | /areas/topsham | Close to Page 1. Push with content + links. |
+| 5 | kitchen spraying exeter | Not indexed yet | 16 Feb 2026 | /areas/exeter/kitchen-spraying | ~30-70/mo. Growing niche. No local specialist ranks. |
+| 6 | heritage decorator exeter | Not indexed yet | 16 Feb 2026 | /areas/exeter/heritage-property-painting | Very low competition. 994 listed buildings in Exeter. |
+| 7 | decorator dawlish | Not indexed yet | 16 Feb 2026 | /areas/dawlish | DEFEND this. Home base. Only Santucci competes. |
 
 ### Tier 2 — HIGH (Service + Location)
 
 | # | Keyword | Current Position | Last Checked | Target Page | Notes |
 |---|---------|-----------------|--------------|-------------|-------|
-| 8 | commercial decorator exeter | Not checked | — | /commercial | ~10-30/mo. Isca & Vivid Decor rank. |
-| 9 | interior decorator exeter | Not checked | — | /domestic | ~20-50/mo. |
-| 10 | exterior painter exeter | Not checked | — | /domestic | ~10-30/mo. Seasonal peak Mar-Aug. |
-| 11 | painter and decorator topsham | Not checked | — | /areas/topsham | Low competition variant. |
-| 12 | heritage decorator topsham | Not checked | — | /areas/topsham | Only Santucci has a Topsham page. |
-| 13 | wallpaper hanger exeter | Not checked | — | /domestic | ~10-30/mo. |
-| 14 | landlord painter exeter | Not checked | — | /domestic | ~5-10/mo. Recurring revenue keyword. |
-| 15 | decorator newton abbot | Not checked | — | /areas/newton-abbot | Secondary market. |
-| 16 | decorator torquay | Not checked | — | /areas/torquay | Secondary market. |
+| 8 | commercial decorator exeter | Position 23.7 | 16 Feb 2026 | /commercial | ~10-30/mo. Isca & Vivid Decor rank. |
+| 9 | interior decorator exeter | Not indexed yet | 16 Feb 2026 | /domestic | ~20-50/mo. |
+| 10 | exterior painter exeter | Not indexed yet | 16 Feb 2026 | /domestic | ~10-30/mo. Seasonal peak Mar-Aug. |
+| 11 | painter and decorator topsham | Not indexed yet | 16 Feb 2026 | /areas/topsham | Low competition variant. |
+| 12 | heritage decorator topsham | Not indexed yet | 16 Feb 2026 | /areas/topsham | Only Santucci has a Topsham page. |
+| 13 | wallpaper hanger exeter | Not indexed yet | 16 Feb 2026 | /domestic | ~10-30/mo. |
+| 14 | landlord painter exeter | Not indexed yet | 16 Feb 2026 | /domestic | ~5-10/mo. Recurring revenue keyword. |
+| 15 | decorator newton abbot | Not indexed yet | 16 Feb 2026 | /areas/newton-abbot | Secondary market. |
+| 16 | decorator torquay | Not indexed yet | 16 Feb 2026 | /areas/torquay | Secondary market. |
 
 ### Tier 3 — MEDIUM (Long-Tail + Informational)
 
 | # | Keyword | Current Position | Last Checked | Target Page | Notes |
 |---|---------|-----------------|--------------|-------------|-------|
-| 17 | how much does a decorator cost in exeter | Not checked | — | Blog (cost guide) | ~10-30/mo. HIGH conversion intent. |
-| 18 | best painter and decorator in exeter | Not checked | — | /reviews | ~10-30/mo. Trust keyword. |
-| 19 | conservation area painting rules exeter | Not checked | — | Blog | Very low comp. 20 conservation areas in Exeter. |
-| 20 | listed building paint exeter | Not checked | — | Blog | Niche authority builder. |
-| 21 | lime wash exeter | Not checked | — | Blog | ~5-15/mo. Heritage niche. |
-| 22 | damp walls exeter | Not checked | — | Blog | ~10-30/mo. Problem-solution content. |
-| 23 | kitchen cabinet spraying vs replacement | Not checked | — | Blog | 200-500/mo national. High value. |
-| 24 | exterior painting cost exeter | Not checked | — | Blog (cost guide) | |
-| 25 | decorator exeter reviews | Not checked | — | /reviews | Trust signal keyword. |
+| 17 | how much does a decorator cost in exeter | Not indexed yet | 16 Feb 2026 | Blog (cost guide) | ~10-30/mo. HIGH conversion intent. |
+| 18 | best painter and decorator in exeter | Not indexed yet | 16 Feb 2026 | /reviews | ~10-30/mo. Trust keyword. |
+| 19 | conservation area painting rules exeter | Not indexed yet | 16 Feb 2026 | Blog | Very low comp. 20 conservation areas in Exeter. |
+| 20 | listed building paint exeter | Not indexed yet | 16 Feb 2026 | Blog | Niche authority builder. |
+| 21 | lime wash exeter | Not indexed yet | 16 Feb 2026 | Blog | ~5-15/mo. Heritage niche. |
+| 22 | damp walls exeter | Not indexed yet | 16 Feb 2026 | Blog | ~10-30/mo. Problem-solution content. |
+| 23 | kitchen cabinet spraying vs replacement | Not indexed yet | 16 Feb 2026 | Blog | 200-500/mo national. High value. |
+| 24 | exterior painting cost exeter | Not indexed yet | 16 Feb 2026 | Blog (cost guide) | |
+| 25 | decorator exeter reviews | Not indexed yet | 16 Feb 2026 | /reviews | Trust signal keyword. |
 
 ### Tier 4 — SUPPORTING (Blog Content)
 
 | # | Keyword | Current Position | Last Checked | Target Page | Notes |
 |---|---------|-----------------|--------------|-------------|-------|
-| 26 | decorating costs uk 2026 | Not checked | — | Blog | 500-1,500/mo national. |
-| 27 | best paint for exterior walls uk | Not checked | — | Blog | 300-700/mo national. |
-| 28 | period property decorating tips | Not checked | — | Blog | 100-300/mo national. |
-| 29 | breathable paint for old houses | Not checked | — | Blog | 100-200/mo national. |
-| 30 | best paint for devon weather | Not checked | — | Blog | ~10-30/mo. Unique local content. |
-| 31 | new build paint problems | Not checked | — | Blog | 30-80/mo national. Cranbrook + Liveable Exeter pipeline. |
-| 32 | eco friendly paint uk | Not checked | — | Blog | 100-300/mo. Aligns with BSR values. |
+| 26 | decorating costs uk 2026 | Not indexed yet | 16 Feb 2026 | Blog | 500-1,500/mo national. |
+| 27 | best paint for exterior walls uk | Not indexed yet | 16 Feb 2026 | Blog | 300-700/mo national. |
+| 28 | period property decorating tips | Not indexed yet | 16 Feb 2026 | Blog | 100-300/mo national. |
+| 29 | breathable paint for old houses | Not indexed yet | 16 Feb 2026 | Blog | 100-200/mo national. |
+| 30 | best paint for devon weather | Not indexed yet | 16 Feb 2026 | Blog | ~10-30/mo. Unique local content. |
+| 31 | new build paint problems | Not indexed yet | 16 Feb 2026 | Blog | 30-80/mo national. Cranbrook + Liveable Exeter pipeline. |
+| 32 | eco friendly paint uk | Not indexed yet | 16 Feb 2026 | Blog | 100-300/mo. Aligns with BSR values. |
 
 ---
 
@@ -206,34 +206,34 @@ The agent should work through these in order, picking the next unwritten topic e
 
 | # | Topic | Target Keyword | Est. Searches | Published | Filename |
 |---|-------|---------------|---------------|-----------|----------|
-| 1 | Kitchen Cabinet Spraying vs Replacement: Complete Cost Comparison for Devon Homeowners | kitchen spraying vs replacement | 200-500/mo national | No | — |
-| 2 | Topsham Conservation Area: Your Complete Guide to Decorating a Listed Property | topsham conservation area decorating | <10 local | No | — |
-| 3 | Spring Exterior Painting Guide: When and How to Paint Your Devon Home | exterior painting devon | 20-40 seasonal | No | — |
-| 4 | The Best Exterior Paint for Devon's Coastal Weather | best paint devon weather | 10-30 | No | — |
-| 5 | Commercial Decorating in Exeter: What Business Owners Need to Know | commercial decorator exeter | 10-30 | No | — |
+| 1 | Kitchen Cabinet Spraying vs Replacement: Complete Cost Comparison for Devon Homeowners | Not indexed yet | 16 Feb 2026 | No | — |
+| 2 | Topsham Conservation Area: Your Complete Guide to Decorating a Listed Property | Not indexed yet | 16 Feb 2026 | No | — |
+| 3 | Spring Exterior Painting Guide: When and How to Paint Your Devon Home | Not indexed yet | 16 Feb 2026 | No | — |
+| 4 | The Best Exterior Paint for Devon's Coastal Weather | Not indexed yet | 16 Feb 2026 | No | — |
+| 5 | Commercial Decorating in Exeter: What Business Owners Need to Know | Not indexed yet | 16 Feb 2026 | No | — |
 
 #### HIGH Priority
 
 | # | Topic | Target Keyword | Est. Searches | Published | Filename |
 |---|-------|---------------|---------------|-----------|----------|
-| 6 | Limewash Paint: Everything You Need to Know for Period Properties | limewash paint old house | 100-300/mo national | No | — |
-| 7 | Solving Damp and Paint Problems in Exeter Homes | damp walls painting exeter | 10-30 | No | — |
-| 8 | HMO and Rental Property Decorating: A Landlord's Complete Guide | HMO decorating guide | 50-100/mo national | Partial | cost-effective-decorating-rental-properties-hmos (expand) |
-| 9 | Why Eco-Friendly Paint Matters and the Best Options for Your Home | eco friendly paint uk | 100-300/mo national | No | — |
-| 10 | New Build Paint Problems: Common Issues and Professional Solutions | new build paint problems | 30-80/mo national | Partial | the-real-problem-with-exeter-new-build-paintwork (expand) |
-| 11 | Painting Trends for Devon Homes: What's Popular in 2026 | painting trends 2026 uk | 200-500/mo national | No | — |
-| 12 | How Long Does Exterior Paint Last in Devon's Climate? | how long exterior paint last | 100-300/mo national | No | — |
+| 6 | Limewash Paint: Everything You Need to Know for Period Properties | Not indexed yet | 16 Feb 2026 | No | — |
+| 7 | Solving Damp and Paint Problems in Exeter Homes | Not indexed yet | 16 Feb 2026 | No | — |
+| 8 | HMO and Rental Property Decorating: A Landlord's Complete Guide | Not indexed yet | 16 Feb 2026 | Partial | cost-effective-decorating-rental-properties-hmos (expand) |
+| 9 | Why Eco-Friendly Paint Matters and the Best Options for Your Home | Not indexed yet | 16 Feb 2026 | No | — |
+| 10 | New Build Paint Problems: Common Issues and Professional Solutions | Not indexed yet | 16 Feb 2026 | Partial | the-real-problem-with-exeter-new-build-paintwork (expand) |
+| 11 | Painting Trends for Devon Homes: What's Popular in 2026 | Not indexed yet | 16 Feb 2026 | No | — |
+| 12 | How Long Does Exterior Paint Last in Devon's Climate? | Not indexed yet | 16 Feb 2026 | No | — |
 
 #### MEDIUM Priority
 
 | # | Topic | Target Keyword | Est. Searches | Published | Filename |
 |---|-------|---------------|---------------|-----------|----------|
-| 13 | Breathable Paint for Old Houses: A Complete Guide | breathable paint old houses | 100-200/mo national | No | — |
-| 14 | Preparing Your Devon Home for Winter: A Maintenance Checklist | winter property maintenance devon | 10-20 | No | — |
-| 15 | Best Paint for Coastal Properties: Salt Air, Humidity and Weather | best paint coastal properties | 50-150/mo national | Partial | topsham-waterfront-homes-best-paints (expand) |
-| 16 | Heritage Paint Colours for Topsham Homes | heritage paint colours topsham | <5 | No | — |
-| 17 | Conservation Area Painting Rules: What You Need Planning Permission For | conservation area painting rules | 50-150/mo national | No | — |
-| 18 | Decorating Costs UK 2026: Complete Pricing Guide | decorating costs uk 2026 | 500-1,500/mo national | Partial | how-much-painter-decorator-cost-exeter (localise) |
+| 13 | Breathable Paint for Old Houses: A Complete Guide | Not indexed yet | 16 Feb 2026 | No | — |
+| 14 | Preparing Your Devon Home for Winter: A Maintenance Checklist | Not indexed yet | 16 Feb 2026 | No | — |
+| 15 | Best Paint for Coastal Properties: Salt Air, Humidity and Weather | Not indexed yet | 16 Feb 2026 | Partial | topsham-waterfront-homes-best-paints (expand) |
+| 16 | Heritage Paint Colours for Topsham Homes | Not indexed yet | 16 Feb 2026 | No | — |
+| 17 | Conservation Area Painting Rules: What You Need Planning Permission For | Not indexed yet | 16 Feb 2026 | No | — |
+| 18 | Decorating Costs UK 2026: Complete Pricing Guide | Not indexed yet | 16 Feb 2026 | Partial | how-much-painter-decorator-cost-exeter (localise) |
 
 ### Already Published Blog Posts (17 total)
 
@@ -376,6 +376,11 @@ An automated agent runs every 5 days via GitHub Actions. It:
 ---
 
 ## Session Log
+
+### 16 Feb 2026 — Automated SEO Agent Run
+- **What was done:** Checked rankings for 50 keywords (4 indexed). No new blog post needed — all planned topics covered. Added 23 internal links across blog posts. 2 competitors have published new content recently. Generated 5 SEO recommendations.
+- **Run type:** Automated (GitHub Actions)
+
 
 > **Instructions for the SEO agent:** Add an entry each time SEO work is done. Keep it brief — what was done, what changed, what to do next.
 
