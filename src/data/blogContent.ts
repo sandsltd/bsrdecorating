@@ -18,6 +18,264 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'kitchen-cabinet-spraying-vs-replacement-devon': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'If you\'re looking at your tired kitchen cabinets in your Exeter or Topsham home and wondering whether to spray them or replace them entirely, you\'re not alone. It\'s one of the most common questions we hear at BSR Decorating, and with kitchen replacements costing anywhere from £5,000 to £25,000, it\'s a decision worth getting right.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The good news? Kitchen cabinet spraying has transformed from a niche service into a mainstream solution that can save Devon homeowners thousands of pounds whilst delivering stunning results. But it\'s not always the right choice for every kitchen. Let\'s break down the costs, benefits, and practical considerations to help you make an informed decision.',
+      },
+      {
+        type: 'heading',
+        content: 'The True Cost of Kitchen Replacement',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'A full kitchen replacement involves far more than just new cabinet doors. You\'re looking at new carcasses, worktops, sinks, taps, appliances, flooring, tiling, electrics, plumbing, and installation labour. In Exeter, where the average property value sits at £285,000, homeowners typically spend between £8,000 and £15,000 on a mid-range kitchen replacement.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Here\'s what a typical kitchen replacement in Devon actually costs:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Budget kitchen replacement: £5,000-£8,000 (basic units, laminate worktops)',
+          'Mid-range kitchen: £10,000-£15,000 (quality units, composite worktops)',
+          'Premium kitchen: £20,000-£30,000+ (bespoke units, quartz or granite worktops)',
+          'Labour and installation: £2,000-£5,000 (depending on complexity)',
+          'Additional trades (electrician, plumber, tiler): £1,500-£3,000',
+          'Disruption period: 2-4 weeks without a functional kitchen',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'For properties in higher-value areas like Topsham (average £506,000) or St Leonard\'s (£350,000-£700,000), homeowners often lean towards [luxury decorating and premium replacements](/blog/luxury-decorating-trends-exeter), pushing costs well above £25,000. That\'s a substantial investment, particularly when the existing cabinet carcasses are perfectly sound.',
+      },
+      {
+        type: 'heading',
+        content: 'The Cost of Professional Kitchen Cabinet Spraying',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Kitchen cabinet spraying offers a dramatically different cost profile. At BSR Decorating, a complete kitchen spraying service typically ranges from £750 to £2,500, depending on the size of your kitchen, the number of cabinets, and the finish you choose.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Here\'s what professional kitchen spraying includes:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Thorough preparation: cleaning, degreasing, and sanding all surfaces',
+          'Removal of doors, drawer fronts, and hardware',
+          'Professional spraying using specialist equipment (not DIY aerosols)',
+          'Multiple coats of high-quality, durable paint or lacquer',
+          'Proper drying time between coats',
+          'Reassembly and fitting of new or existing hardware',
+          'Completion time: typically 3-5 days, kitchen usable throughout',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'The average cost for a standard kitchen in Exeter is around £1,200-£1,500. That\'s roughly 10-15% of the cost of a mid-range replacement, yet the visual transformation can be equally dramatic. We\'ve sprayed kitchens across Devon, from Victorian terraces in Heavitree to modern homes in Pennsylvania, and the results consistently surprise homeowners who expected they\'d need a full replacement.',
+      },
+      {
+        type: 'heading',
+        content: 'When Kitchen Spraying Makes Sense',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Kitchen spraying isn\'t suitable for every situation, but when the conditions are right, it\'s an outstanding solution. Here\'s when we recommend it:',
+      },
+      {
+        type: 'subheading',
+        content: 'Solid Cabinet Construction',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'If your cabinets are made from solid wood, MDF, or quality laminate, they\'re ideal candidates for spraying. Many kitchens installed 10-20 years ago were built to last and have structurally sound carcasses that will easily outlast current trends. We regularly spray kitchens in period properties across Topsham and Exeter\'s conservation areas where the original cabinetry is solid timber—far superior to modern budget units.',
+      },
+      {
+        type: 'subheading',
+        content: 'Outdated Colour or Finish',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'That orange oak or dark mahogany finish that was fashionable 15 years ago? Perfect for spraying. Glossy melamine doors from the 1990s? Also sprayable. If the issue is purely aesthetic rather than structural, spraying delivers a contemporary finish at a fraction of replacement costs. We\'ve transformed countless kitchens from dated dark wood to crisp white, soft grey, or fashionable sage green.',
+      },
+      {
+        type: 'subheading',
+        content: 'Good Layout and Functionality',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'If your kitchen layout works well for your household and you\'re happy with the storage and workflow, there\'s no need to rip it out. Spraying lets you keep the functionality whilst completely updating the appearance. This is particularly relevant for rental properties and HMO landlords in Exeter who need to refresh kitchens cost-effectively between tenancies.',
+      },
+      {
+        type: 'subheading',
+        content: 'Environmental Considerations',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Kitchen replacement generates enormous amounts of waste—old units, worktops, and appliances typically end up in landfill. Spraying is the sustainable choice, preserving perfectly functional cabinetry whilst dramatically reducing environmental impact. At BSR Decorating, we\'re proud partners of Surfers Against Sewage and advocate for eco-conscious decorating solutions wherever possible.',
+      },
+      {
+        type: 'heading',
+        content: 'When Kitchen Replacement is the Better Choice',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Honesty matters in our industry. Sometimes spraying simply isn\'t the right solution, and we\'ll always tell you when replacement makes more sense:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Structural damage: warped doors, water-damaged carcasses, or failing hinges can\'t be fixed with paint',
+          'Poor-quality flat-pack construction: cheap modern units with peeling veneer or crumbling chipboard aren\'t worth spraying',
+          'Major layout changes: if you need to reconfigure your kitchen workspace, you\'ll need new units anyway',
+          'Missing or damaged doors: if doors or drawer fronts are beyond repair, replacement becomes more cost-effective',
+          'Irreparable hardware: if the cabinet boxes themselves are failing, spraying won\'t solve underlying problems',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'We assess every kitchen honestly before recommending spraying. For instance, many new-build properties in developments like Cranbrook have been fitted with budget kitchens that simply won\'t respond well to spraying. In these cases, we\'ll recommend replacement or refer you to a trusted kitchen fitter.',
+      },
+      {
+        type: 'heading',
+        content: 'The Process: What to Expect from Professional Kitchen Spraying',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Understanding the process helps set realistic expectations. Here\'s how professional kitchen spraying works at BSR Decorating:',
+      },
+      {
+        type: 'paragraph',
+        content: 'First, we carefully remove all doors, drawer fronts, and hardware. These are taken to our workshop where conditions can be controlled for optimal spraying. Cabinet frames are masked and protected in situ. Every surface is thoroughly cleaned, degreased (kitchens accumulate surprising amounts of cooking grease), and sanded to create the proper surface profile for paint adhesion.',
+      },
+      {
+        type: 'paragraph',
+        content: 'We then apply a specialist primer suited to your cabinet material—different primers for wood, MDF, melamine, or laminate. This is followed by multiple thin coats of high-quality paint or lacquer, applied with professional HVLP spray equipment that creates a flawless, factory-like finish impossible to achieve with brushes or rollers.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Each coat must fully cure before the next is applied. We use durable paints specifically formulated for kitchen environments—resistant to moisture, grease, heat, and the inevitable knocks that kitchen cabinets endure. The final result is a smooth, consistent finish that looks like new cabinetry.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Throughout the process, your kitchen remains largely functional. You can still use your sink, hob, and appliances. Total disruption is typically 3-5 days rather than the 2-4 weeks required for full replacement.',
+      },
+      {
+        type: 'heading',
+        content: 'Real-World Cost Comparison: A Typical Exeter Kitchen',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Let\'s compare actual costs for a standard kitchen in a three-bedroom semi in Heavitree (average property value £358,000):',
+      },
+      {
+        type: 'paragraph',
+        content: 'Replacement option: Mid-range kitchen with 10 base units, 10 wall units, composite worktop, new sink and tap, installation, tiling, and associated trades. Total cost: £12,500. Timeline: 3 weeks. Result: Brand new kitchen.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Spraying option: Professional spraying of existing solid oak cabinets, new handles, and worktop restoration. Total cost: £1,400. Timeline: 4 days. Result: Kitchen that looks brand new.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The saving? £11,100. That\'s money that could fund a bathroom renovation, garden landscaping, or simply stay in your savings account. For many Devon homeowners, particularly those in [period properties across Exeter](/blog/decorating-tips-exeter-period-homes) where original features are worth preserving, spraying represents outstanding value.',
+      },
+      {
+        type: 'heading',
+        content: 'How Long Does Kitchen Spraying Last?',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'A common concern we hear: \'Will it last?\' The answer depends on the quality of workmanship and materials. DIY spray jobs using aerosol cans might last 1-2 years before showing wear. Professional spraying using specialist equipment and durable paints should last 7-10 years or more with normal use.',
+      },
+      {
+        type: 'paragraph',
+        content: 'We\'ve returned to kitchens we sprayed 8-10 years ago that still look excellent. The key factors are proper preparation, quality materials, and allowing adequate curing time before heavy use. Cutting corners on any of these steps dramatically shortens the lifespan.',
+      },
+      {
+        type: 'paragraph',
+        content: 'It\'s also worth considering that kitchen trends change. That on-trend colour you choose today might feel dated in 10 years—at which point you can respray again for £1,500 rather than replacing for £15,000.',
+      },
+      {
+        type: 'heading',
+        content: 'Kitchen Spraying for Landlords and Investment Properties',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'For Exeter landlords managing rental properties or HMOs, kitchen spraying offers exceptional return on investment. Between tenancies, a tired kitchen can be refreshed for under £1,000, significantly improving the property\'s appeal without the cost and disruption of replacement.',
+      },
+      {
+        type: 'paragraph',
+        content: 'This is particularly relevant in Exeter\'s competitive rental market, where 24.9% of properties (approximately 14,200) are privately rented. A freshly sprayed kitchen in neutral white or light grey makes properties more lettable and can justify slightly higher rents. We work with several letting agents and landlords across Devon who now routinely specify kitchen spraying as part of their [property refresh programmes](/blog/cost-effective-decorating-rental-properties-hmos).',
+      },
+      {
+        type: 'heading',
+        content: 'Making Your Decision: Questions to Ask',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Before deciding between spraying and replacement, honestly assess your situation:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Are the cabinet boxes structurally sound? Open doors and check for water damage, warping, or failing joints.',
+          'Do you like your kitchen layout? If the answer is yes, spraying makes sense. If not, consider replacement.',
+          'What\'s your budget? If £15,000 is available, you have options. If £1,500 is your limit, spraying is the clear choice.',
+          'How long will you stay in the property? If you\'re selling within 1-2 years, spraying offers excellent ROI. If you\'re staying 10+ years, either option works.',
+          'Is sustainability important to you? Spraying is dramatically more environmentally friendly.',
+          'What\'s your timeline? Need it done quickly? Spraying wins. Happy to wait 4-6 weeks? Replacement is feasible.',
+        ],
+      },
+      {
+        type: 'heading',
+        content: 'The Verdict: Which Offers Better Value?',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'For most Devon homeowners with structurally sound kitchens, professional cabinet spraying offers extraordinary value—typically 85-90% cost savings compared to replacement whilst delivering comparable visual impact. It\'s faster, less disruptive, more sustainable, and leaves you with money for other home improvements.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Kitchen replacement makes sense when cabinets are structurally compromised, when you need layout changes, or when you simply want brand new everything and have the budget to match. It\'s a bigger investment but delivers a completely fresh start.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The key is getting honest, expert advice specific to your kitchen. At BSR Decorating, we\'ve sprayed hundreds of kitchens across Exeter, Topsham, and throughout Devon over our 20+ years in business. We\'ll assess your cabinets, discuss your goals and budget, and recommend the solution that genuinely makes sense for your situation—even if that means referring you elsewhere.',
+      },
+      {
+        type: 'quote',
+        content: 'Kitchen spraying typically costs 10-15% of replacement costs whilst delivering 90% of the visual impact—making it one of the most cost-effective home improvements available to Devon homeowners.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Wondering whether your kitchen is suitable for spraying? Contact BSR Decorating for a free, no-obligation assessment. We\'ll give you honest advice and a detailed quote for professional kitchen cabinet spraying in Exeter, Topsham, or throughout Devon.',
+      },
+    ],
+  },
   'autumn-decorating-trends-devon-homes': {
     sections: [
       {
