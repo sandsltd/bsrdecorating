@@ -17,6 +17,7 @@ interface NewPost {
   slug: string;
   excerpt: string;
   category: string;
+  targetKeyword: string;
   sections: BlogSection[];
   isRefresh: boolean;
 }
@@ -330,6 +331,48 @@ function updatePostMetadata(post: NewPost): void {
   }
 }
 
+function addPostKeywords(post: NewPost): void {
+  const keywordsPath = path.join(process.cwd(), CONFIG.blogKeywordsPath);
+  let content = fs.readFileSync(keywordsPath, "utf-8");
+
+  // Check if this slug already has keywords
+  if (content.includes(`'${post.slug}':`)) {
+    console.log(`Keywords already exist for slug: "${post.slug}"`);
+    return;
+  }
+
+  // Build keyword string from targetKeyword and slug words
+  const slugWords = post.slug.replace(/-/g, " ");
+  const keywords = `${post.targetKeyword}, ${slugWords}`;
+
+  // Find the closing of the keywordMap object (the line with just "};")
+  // Insert before the last entry's closing
+  const mapStart = content.indexOf("const keywordMap");
+  if (mapStart === -1) {
+    console.log("Warning: Could not find keywordMap in page.tsx, skipping keywords");
+    return;
+  }
+
+  // Find the closing }; of the keywordMap
+  const mapOpenBrace = content.indexOf("{", content.indexOf("{", mapStart) + 1);
+  let braceCount = 1;
+  let pos = mapOpenBrace + 1;
+  for (; pos < content.length && braceCount > 0; pos++) {
+    if (content[pos] === "{") braceCount++;
+    if (content[pos] === "}") braceCount--;
+  }
+
+  // pos is now just after the closing }, insert before it
+  const insertPoint = pos - 1;
+  const escapedKeywords = keywords.replace(/"/g, '\\"');
+  const newEntry = `    '${post.slug}': "${escapedKeywords}",\n  `;
+
+  content = content.slice(0, insertPoint) + newEntry + content.slice(insertPoint);
+
+  fs.writeFileSync(keywordsPath, content);
+  console.log(`Added keywords for slug: "${post.slug}"`);
+}
+
 export function publishPost(post: NewPost): void {
   if (post.isRefresh) {
     updatePostMetadata(post);
@@ -337,6 +380,7 @@ export function publishPost(post: NewPost): void {
   } else {
     addPostMetadata(post);
     addPostContent(post);
+    addPostKeywords(post);
   }
 }
 
@@ -444,6 +488,11 @@ export function commitAndPush(
   if (blogPost || linksModified) {
     run(`git add ${CONFIG.blogPostsPath}`);
     run(`git add ${CONFIG.blogContentPath}`);
+  }
+
+  // Stage keywords file if a new post was added
+  if (blogPost && !blogPost.isRefresh) {
+    run(`git add ${CONFIG.blogKeywordsPath}`);
   }
 
   const status = run("git status --porcelain");

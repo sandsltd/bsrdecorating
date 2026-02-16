@@ -204,15 +204,16 @@ export const blogPosts: BlogPost[] = [
 
 export const categories = [
   { name: "All Posts", count: blogPosts.length },
-  { name: "Luxury Decorating", count: 1 },
-  { name: "Heritage Restoration", count: 3 },
+  { name: "Expert Advice", count: 4 },
+  { name: "Heritage Restoration", count: 4 },
+  { name: "Kitchen Spraying", count: 1 },
   { name: "Commercial Services", count: 2 },
   { name: "Waterfront Maintenance", count: 2 },
   { name: "Seasonal Trends", count: 2 },
+  { name: "Luxury Decorating", count: 1 },
   { name: "Landlord Services", count: 1 },
   { name: "Property Investment", count: 1 },
   { name: "Pricing Guide", count: 1 },
-  { name: "Expert Advice", count: 4 }
 ];
 
 // Helper function to get the latest blog posts (sorted by date)
