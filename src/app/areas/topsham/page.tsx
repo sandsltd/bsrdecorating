@@ -76,16 +76,18 @@ export default function TopshamPage() {
 
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "ProfessionalService"],
     "name": "BSR Decorating - Topsham",
-    "description": "Professional decorating services in Topsham, Devon",
+    "description": "Professional painting and decorating services in Topsham, Devon. Heritage property restoration, waterfront maintenance and conservation area specialists.",
     "url": "https://bsrdecorating.co.uk/areas/topsham",
     "telephone": "+441626911236",
     "email": "info@bsrdecorating.co.uk",
+    "priceRange": "£108-£2,360",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Topsham",
       "addressRegion": "Devon",
+      "postalCode": "EX3",
       "addressCountry": "GB"
     },
     "geo": {
@@ -93,34 +95,45 @@ export default function TopshamPage() {
       "latitude": 50.6868,
       "longitude": -3.4641
     },
-    "serviceArea": {
-      "@type": "City",
-      "name": "Topsham",
-      "addressRegion": "Devon",
-      "addressCountry": "GB"
+    "areaServed": {
+      "@type": "PostalAddress",
+      "postalCode": "EX3",
+      "addressLocality": "Topsham"
     },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Topsham Decorating Services",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Heritage Property Decorating Topsham",
-            "description": "Specialist decorating for historic and listed buildings"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Waterfront Property Decorating",
-            "description": "Specialized decorating for riverside and estuary-facing properties"
-          }
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Heritage Property Decorating Topsham",
+          "description": "Specialist decorating for historic and listed buildings in Topsham conservation area"
         }
-      ]
-    }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Waterfront Property Decorating Topsham",
+          "description": "Marine-grade decorating for riverside and estuary-facing properties"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Period Property Decorating Topsham",
+          "description": "Expert decorating for Topsham's period homes using traditional techniques"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Exterior Painting Topsham",
+          "description": "Weather-resistant exterior painting for Topsham's riverside properties"
+        }
+      }
+    ]
   };
 
   const faqSchema = {

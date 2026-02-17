@@ -76,16 +76,18 @@ export default function ExeterPage() {
 
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "ProfessionalService"],
     "name": "BSR Decorating - Exeter",
-    "description": "Professional decorating services in Exeter, Devon",
+    "description": "Professional painting and decorating services in Exeter, Devon. Specialist interior, exterior, heritage and commercial decorating.",
     "url": "https://bsrdecorating.co.uk/areas/exeter",
     "telephone": "+441626911236",
     "email": "info@bsrdecorating.co.uk",
+    "priceRange": "£108-£2,360",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Exeter",
       "addressRegion": "Devon",
+      "postalCode": "EX1",
       "addressCountry": "GB"
     },
     "geo": {
@@ -93,42 +95,61 @@ export default function ExeterPage() {
       "latitude": 50.7236,
       "longitude": -3.5339
     },
-    "serviceArea": {
-      "@type": "City",
-      "name": "Exeter",
-      "addressRegion": "Devon",
-      "addressCountry": "GB"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Exeter Decorating Services",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Domestic Decorating Exeter",
-            "description": "Interior and exterior house painting and decorating services"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Commercial Decorating Exeter",
-            "description": "Professional decorating for Exeter offices, retail, and business properties"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Heritage Property Restoration",
-            "description": "Specialist restoration for Exeter's historic and listed buildings"
-          }
+    "areaServed": [
+      { "@type": "PostalAddress", "postalCode": "EX1", "addressLocality": "Exeter" },
+      { "@type": "PostalAddress", "postalCode": "EX2", "addressLocality": "Exeter" },
+      { "@type": "PostalAddress", "postalCode": "EX4", "addressLocality": "Exeter" }
+    ],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Interior Painting Exeter",
+          "description": "Professional interior painting and decorating for homes and period properties in Exeter"
         }
-      ]
-    }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Exterior Painting Exeter",
+          "description": "Exterior painting and weatherproofing for Exeter properties"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Commercial Decorating Exeter",
+          "description": "Office, retail and commercial property decorating in Exeter city centre"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Heritage Property Restoration Exeter",
+          "description": "Specialist restoration for listed buildings and conservation area properties"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Kitchen Cabinet Spraying Exeter",
+          "description": "Professional kitchen cabinet spraying and refinishing in Exeter"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Rental Property Decorating Exeter",
+          "description": "End of tenancy and landlord decorating services in Exeter"
+        }
+      }
+    ]
   };
 
   const faqSchema = {

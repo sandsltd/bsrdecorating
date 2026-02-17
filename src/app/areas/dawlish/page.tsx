@@ -34,16 +34,18 @@ export default function DawlishPage() {
   
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "ProfessionalService"],
     "name": "BSR Decorating - Dawlish",
-    "description": "Professional decorating services in Dawlish, Devon",
+    "description": "Professional painting and decorating services in Dawlish, Devon. Interior, exterior, coastal property and Victorian property specialists.",
     "url": "https://bsrdecorating.co.uk/areas/dawlish",
     "telephone": "+441626911236",
     "email": "info@bsrdecorating.co.uk",
+    "priceRange": "£108-£2,360",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Dawlish",
       "addressRegion": "Devon",
+      "postalCode": "EX7",
       "addressCountry": "GB"
     },
     "geo": {
@@ -51,12 +53,44 @@ export default function DawlishPage() {
       "latitude": 50.5833,
       "longitude": -3.4667
     },
-    "serviceArea": {
-      "@type": "City",
-      "name": "Dawlish",
-      "addressRegion": "Devon",
-      "addressCountry": "GB"
-    }
+    "areaServed": [
+      { "@type": "PostalAddress", "postalCode": "EX7", "addressLocality": "Dawlish" },
+      { "@type": "PostalAddress", "postalCode": "EX7", "addressLocality": "Dawlish Warren" }
+    ],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Interior Painting Dawlish",
+          "description": "Professional interior painting and decorating for homes in Dawlish"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Exterior Painting Dawlish",
+          "description": "Weather-resistant exterior painting for coastal Dawlish properties"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Victorian Property Decorating Dawlish",
+          "description": "Specialist decorating for Victorian and period properties in Dawlish"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Commercial Decorating Dawlish",
+          "description": "Professional decorating for businesses and commercial properties in Dawlish"
+        }
+      }
+    ]
   };
 
   const faqSchema = {

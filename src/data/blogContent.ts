@@ -514,7 +514,7 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'If you\'re looking at your tired kitchen cabinets in your Exeter or Topsham home and wondering whether to spray them or replace them entirely, you\'re not alone. It\'s one of the most common questions we hear at BSR Decorating, and with kitchen replacements costing anywhere from £5,000 to £25,000, it\'s a decision worth getting right.',
+        content: 'If you\'re looking at your tired kitchen cabinets in your [Exeter](/areas/exeter) or [Topsham](/areas/topsham) home and wondering whether to spray them or replace them entirely, you\'re not alone. It\'s one of the most common questions we hear at BSR Decorating, and with kitchen replacements costing anywhere from £5,000 to £25,000, it\'s a decision worth getting right.',
       },
       {
         type: 'paragraph',
@@ -593,7 +593,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'If your cabinets are made from solid wood, MDF, or quality laminate, they\'re ideal candidates for spraying. Many kitchens installed 10-20 years ago were built to last and have structurally sound carcasses that will easily outlast current trends. We regularly spray kitchens in period properties across Topsham and Exeter\'s conservation areas where the original cabinetry is solid timber—far superior to modern budget units.',
+        content: 'If your cabinets are made from solid wood, MDF, or quality laminate, they\'re ideal candidates for spraying. Many kitchens installed 10-20 years ago were built to last and have structurally sound carcasses that will easily outlast current trends. We regularly spray kitchens in period properties across [Topsham](/areas/topsham) and [Exeter\'s conservation areas](/areas/exeter) where the original cabinetry is solid timber—far superior to modern budget units.',
       },
       {
         type: 'subheading',
@@ -611,7 +611,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'If your kitchen layout works well for your household and you\'re happy with the storage and workflow, there\'s no need to rip it out. Spraying lets you keep the functionality whilst completely updating the appearance. This is particularly relevant for rental properties and HMO landlords in Exeter who need to refresh kitchens cost-effectively between tenancies.',
+        content: 'If your kitchen layout works well for your household and you\'re happy with the storage and workflow, there\'s no need to rip it out. Spraying lets you keep the functionality whilst completely updating the appearance. This is particularly relevant for rental properties and HMO landlords in [Exeter](/areas/exeter) who need to refresh kitchens cost-effectively between tenancies.',
       },
       {
         type: 'subheading',
@@ -1438,7 +1438,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Our experience working with landlords across Devon shows that freshly decorated properties consistently rent faster than those showing signs of wear and tear. Clean, bright walls and ceilings create an immediate positive impression, making tenants more likely to commit during their viewing. See examples in our [project portfolio](/portfolio).'
+        content: 'Our experience working with landlords across Devon, including [Exeter](/areas/exeter), [Topsham](/areas/topsham) and [Dawlish](/areas/dawlish), shows that freshly decorated properties consistently rent faster than those showing signs of wear and tear. Clean, bright walls and ceilings create an immediate positive impression, making tenants more likely to commit during their viewing. See examples in our [project portfolio](/portfolio).'
       },
       {
         type: 'paragraph',
@@ -1568,7 +1568,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Professional teams can complete a full property decoration in 2-3 days, compared to weeks for DIY efforts. This speed is crucial for minimizing void periods and getting properties back on the rental market quickly.'
+        content: 'Professional teams can complete a full property decoration in 2-3 days, compared to weeks for DIY efforts. This speed is crucial for minimizing void periods and getting properties back on the rental market quickly. We work with landlords across [Exeter](/areas/exeter/rental-refresh-painting) and the wider Devon area.'
       },
       {
         type: 'subheading',
@@ -1793,7 +1793,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Professional commercial decorators understand the importance of maintaining business operations:'
+        content: 'Professional [commercial decorators in Exeter](/areas/exeter/commercial-decorating) understand the importance of maintaining business operations:'
       },
       {
         type: 'list',
@@ -1815,7 +1815,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'At BSR Decorating, we specialise in [commercial decorating](/commercial) across Devon, working with businesses of all sizes to create environments that work. Our experience across multiple sectors means we understand the unique requirements of different business types and can deliver decoration that truly enhances your business premises.'
+        content: 'At BSR Decorating, we specialise in [commercial decorating](/commercial) across Devon, including [Exeter city centre](/areas/exeter/commercial-decorating) and [Newton Abbot](/areas/newton-abbot), working with businesses of all sizes to create environments that work. Our experience across multiple sectors means we understand the unique requirements of different business types and can deliver decoration that truly enhances your business premises.'
       }
     ]
   },
@@ -3680,7 +3680,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Exterior decorating isn\'t just about kerb appeal — though a freshly painted exterior can add significant value to your Exeter property. More importantly, quality exterior paintwork acts as your home\'s first line of defence against the elements. Devon\'s climate presents specific challenges that make regular exterior maintenance essential.'
+        content: 'Exterior decorating isn\'t just about kerb appeal — though a freshly painted exterior can add significant value to your Exeter property. More importantly, quality exterior paintwork acts as your home\'s first line of defence against the elements. Devon\'s climate presents specific challenges that make regular [exterior maintenance in Exeter](/areas/exeter/exterior-painting) and across the county essential.'
       },
       {
         type: 'subheading',
@@ -3740,7 +3740,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'If there\'s one thing that separates a professional exterior paint job from a DIY attempt, it\'s preparation. In Devon\'s climate, thorough preparation is even more critical than in drier parts of the country. Here\'s what our exterior painting process involves for a typical Exeter property.'
+        content: 'If there\'s one thing that separates a professional exterior paint job from a DIY attempt, it\'s preparation. In Devon\'s climate, thorough preparation is even more critical than in drier parts of the country. Here\'s what our [exterior painting process in Exeter](/areas/exeter/exterior-painting) involves for a typical property.'
       },
       {
         type: 'list',
@@ -3811,7 +3811,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'With over 20 years of experience decorating properties across Exeter, Topsham, Newton Abbot, Dawlish, Torquay and the wider Devon area, we understand the specific challenges our local climate presents. We use only premium products proven to perform in South West conditions, and our thorough preparation process ensures your exterior paintwork looks fantastic and protects your property for years to come. If you\'re looking for a trusted professional, our guide on [how to choose a painter and decorator in Exeter](/blog/choose-painter-decorator-exeter-guide) explains what to look for.'
+        content: 'With over 20 years of experience decorating properties across [Exeter](/areas/exeter), [Topsham](/areas/topsham), [Newton Abbot](/areas/newton-abbot), [Dawlish](/areas/dawlish), [Torquay](/areas/torquay) and the wider Devon area, we understand the specific challenges our local climate presents. We use only premium products proven to perform in South West conditions, and our thorough preparation process ensures your exterior paintwork looks fantastic and protects your property for years to come. If you\'re looking for a trusted professional, our guide on [how to choose a painter and decorator in Exeter](/blog/choose-painter-decorator-exeter-guide) explains what to look for.'
       },
       {
         type: 'list',
