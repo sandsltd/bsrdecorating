@@ -3,6 +3,11 @@ import fs from "fs";
 import path from "path";
 import { CONFIG } from "./config";
 
+export interface LinkingResult {
+  total: number;
+  details: { postTitle: string; linksAdded: number }[];
+}
+
 interface PostInfo {
   slug: string;
   title: string;
@@ -114,12 +119,12 @@ function getPostSectionText(slug: string): string {
   return content.slice(entryStart, entryEnd);
 }
 
-export async function addInternalLinks(): Promise<number> {
+export async function addInternalLinks(): Promise<LinkingResult> {
   const posts = getAllPosts();
 
   if (posts.length < 2) {
     console.log("Not enough posts for internal linking.");
-    return 0;
+    return { total: 0, details: [] };
   }
 
   const anthropic = new Anthropic();
@@ -127,6 +132,7 @@ export async function addInternalLinks(): Promise<number> {
   let contentFile = fs.readFileSync(contentPath, "utf-8");
 
   let totalLinksAdded = 0;
+  const details: { postTitle: string; linksAdded: number }[] = [];
 
   for (const post of posts) {
     const existingLinks = countInternalLinks(post.slug);
@@ -236,6 +242,7 @@ Return ONLY a JSON array, no explanation:
 
       if (linksAdded > 0) {
         totalLinksAdded += linksAdded;
+        details.push({ postTitle: post.title, linksAdded });
         console.log(
           `Added ${linksAdded} internal links to "${post.title}"`
         );
@@ -249,5 +256,5 @@ Return ONLY a JSON array, no explanation:
     fs.writeFileSync(contentPath, contentFile);
   }
 
-  return totalLinksAdded;
+  return { total: totalLinksAdded, details };
 }

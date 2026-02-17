@@ -29,6 +29,24 @@ interface GeneratedPost {
   targetKeyword: string;
   sections: BlogSection[];
   isRefresh: boolean;
+  wordCount: number;
+  refreshReason: string | null;
+}
+
+function countWords(sections: BlogSection[]): number {
+  let count = 0;
+  for (const section of sections) {
+    if (typeof section.content === "string") {
+      count += section.content.split(/\s+/).filter(Boolean).length;
+    } else if (Array.isArray(section.content)) {
+      for (const item of section.content) {
+        if (typeof item === "string") {
+          count += item.split(/\s+/).filter(Boolean).length;
+        }
+      }
+    }
+  }
+  return count;
 }
 
 interface ExistingPost {
@@ -427,6 +445,8 @@ Important: Do NOT use markdown formatting (no **, no ##). Just plain text in sec
       targetKeyword: topic.keyword,
       sections: parsed.sections,
       isRefresh: false,
+      wordCount: countWords(parsed.sections),
+      refreshReason: null,
     };
   } catch (error) {
     console.error("Failed to parse generated blog post JSON:", error);
@@ -465,6 +485,8 @@ Important: Do NOT use markdown formatting (no **, no ##). Just plain text in sec
         targetKeyword: topic.keyword,
         sections: retryParsed.sections,
         isRefresh: false,
+        wordCount: countWords(retryParsed.sections),
+        refreshReason: null,
       };
     } catch (retryError) {
       console.error("Retry also failed:", retryError);
@@ -565,6 +587,8 @@ Return ONLY a JSON object with this structure. No explanation, no code fences:
       targetKeyword: "",
       sections: parsed.sections,
       isRefresh: true,
+      wordCount: countWords(parsed.sections),
+      refreshReason: reason,
     };
   } catch (error) {
     console.error("Failed to parse refreshed blog post JSON:", error);
