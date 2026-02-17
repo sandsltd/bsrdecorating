@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 21,
+    title: 'The Best Exterior Paint for Devon\'s Coastal Weather: A Professional Guide',
+    excerpt: 'Devon\'s unique coastal climate demands specific paint choices. Learn which products stand up to salt air, rain, and humidity.',
+    category: 'Expert Advice',
+    date: '2026-02-17',
+    readTime: '10 min read',
+    image: '/portfolio/project5/PHOTO-2025-09-02-11-16-33.jpg',
+    slug: 'best-exterior-paint-devon-coastal-weather',
+  },
+  {
     id: 20,
     title: 'Spring Exterior Painting in Devon: The Complete Guide to Perfect Timing and Lasting Results',
     excerpt: 'Discover the ideal timing, weather conditions, and expert techniques for exterior painting in Devon\'s unique coastal climate.',

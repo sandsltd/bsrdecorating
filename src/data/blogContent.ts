@@ -18,6 +18,232 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'best-exterior-paint-devon-coastal-weather': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Living in Devon means enjoying stunning coastal views, historic architecture, and a mild maritime climate. But that same weather that makes our region so beautiful also creates unique challenges for exterior paintwork. Whether you\'re maintaining a Georgian townhouse in Exeter\'s St Leonard\'s conservation area, a waterfront property in Topsham, or a coastal home in Dawlish, choosing the right exterior paint isn\'t just about colour—it\'s about protection, longevity, and value.',
+      },
+      {
+        type: 'paragraph',
+        content: 'After more than 20 years decorating properties across Devon, we\'ve seen firsthand which paints perform and which fail. The best paint for Devon weather needs to handle salt-laden air, high humidity, driving rain from the southwest, and occasional summer heat—all whilst protecting your property\'s fabric and maintaining its appearance. This guide shares what we\'ve learned from thousands of projects across Exeter, Topsham, and the surrounding areas.',
+      },
+      {
+        type: 'heading',
+        content: 'Why Devon\'s Climate Is Particularly Challenging for Exterior Paint',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Devon\'s coastal location creates a perfect storm of conditions that test exterior paintwork. Understanding these challenges helps explain why generic paint recommendations from national retailers often fall short for our region.',
+      },
+      {
+        type: 'subheading',
+        content: 'Salt Air and Coastal Exposure',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Properties within 10 miles of the coast—which includes most of Exeter, all of Topsham, and certainly Dawlish and Exmouth—are constantly exposed to airborne salt particles. These microscopic crystals are highly corrosive and hygroscopic, meaning they attract and hold moisture against painted surfaces. This accelerates paint degradation, causes premature chalking and fading, and can lead to substrate damage if the paint film fails.',
+      },
+      {
+        type: 'paragraph',
+        content: 'We see this most dramatically on properties facing prevailing southwesterly winds. Homes along Topsham\'s waterfront, for example, or properties on elevated positions in Exeter like Pennsylvania and Heavitree, receive particularly intense exposure. The 228 listed buildings in Topsham require especially careful paint selection, as many feature lime renders and historic substrates that need breathable protection.',
+      },
+      {
+        type: 'subheading',
+        content: 'High Rainfall and Humidity',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Devon receives approximately 900-1,000mm of rainfall annually, with autumn and winter seeing the heaviest downpours. This persistent moisture creates several problems for exterior paintwork: prolonged drying times between rain events, increased risk of moisture penetration through any paint defects, algae and mould growth on north-facing and shaded elevations, and substrate movement in timber as moisture levels fluctuate.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The humidity rarely drops significantly even during dry spells, which means painted surfaces never fully dry out. This is why choosing paints with excellent moisture resistance and good breathability is crucial for Devon properties.',
+      },
+      {
+        type: 'subheading',
+        content: 'Temperature Fluctuations and UV Exposure',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Whilst Devon enjoys a mild climate overall, we still experience temperature swings that cause expansion and contraction in painted substrates. Summer temperatures can reach the mid-twenties with intense UV exposure, particularly on south-facing elevations. Winter rarely brings severe frost, but damp cold penetrates building fabric. These cycles stress paint films, and lower-quality products will crack, peel, or lose adhesion within just a few years.',
+      },
+      {
+        type: 'heading',
+        content: 'The Best Paint Types for Devon\'s Coastal Climate',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Not all exterior paints are created equal. For Devon properties, three paint systems consistently outperform others: high-quality masonry paints for rendered and brick surfaces, breathable silicate paints for period and listed properties, and premium exterior wood paints for joinery and cladding. Let\'s examine each in detail.',
+      },
+      {
+        type: 'subheading',
+        content: 'Premium Masonry Paints: Your First Line of Defence',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'For most modern rendered properties and brickwork, a premium masonry paint with specific weather-resistant properties delivers the best results. We consistently specify paints with these characteristics: advanced acrylic or acrylic-silicone resin technology, high breathability rating to allow moisture vapour transmission, integrated fungicidal and algicidal protection, excellent dirt shedding properties, and proven 15-year plus performance in coastal environments.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Products like Dulux Weathershield, Johnstone\'s Stormshield, and Crown Timonox Technology have all performed exceptionally well on properties we\'ve decorated across Exeter and Topsham. These aren\'t budget options—expect to pay £50-80 per 10-litre tin—but the longevity justifies the investment. On a typical three-bedroom semi-detached house in Heavitree or Newtown, the difference between premium and standard masonry paint might be £200-300, but the premium option could last 8-10 years longer.',
+      },
+      {
+        type: 'subheading',
+        content: 'Breathable Silicate Paints for Period Properties',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'For Devon\'s extensive heritage housing stock—including the 994 listed buildings across Exeter and properties within its 20 conservation areas—breathable silicate paints often provide the best solution. These mineral-based paints chemically bond with lime renders, stone, and brick, creating a crystalline structure that allows maximum moisture vapour transmission whilst remaining waterproof.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Silicate paints are particularly suitable for: pre-1919 properties with solid walls and lime-based renders, listed buildings where planning guidance recommends breathable systems, properties with historic damp or salt contamination issues, and stone elevations common in older Exeter and Topsham properties. We\'ve used Keim, Earthborn, and Bauwerk silicate systems extensively on [period properties throughout Topsham](/areas/topsham) and Exeter\'s historic quarters, with excellent results even in exposed coastal locations.',
+      },
+      {
+        type: 'paragraph',
+        content: 'These paints require specialist application—the substrate must be highly alkaline and properly prepared—but they offer exceptional durability, often 20-25 years in our climate. They\'re also naturally resistant to algae and atmospheric pollution, maintaining their appearance with minimal maintenance.',
+      },
+      {
+        type: 'subheading',
+        content: 'Premium Exterior Wood Paints and Stains',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Devon\'s humidity is particularly challenging for exterior joinery. Windows, doors, fascias, and weatherboarding all suffer from moisture-related movement and potential decay. The best paint for Devon weather when protecting timber includes: flexible acrylic or alkyd formulations that accommodate timber movement, excellent water shedding to prevent moisture ingress, UV-stable pigments to prevent fading and chalking, and low-sheen or satin finishes that hide minor imperfections and disguise maintenance intervals better than gloss.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For high-quality results, we typically use Sadolin, Sikkens, Teknos, or Dulux Trade systems. These professional-grade products cost more than retail alternatives, but they\'re formulated for extreme weather exposure. On a property with, for example, 12 timber sash windows, the material cost difference might be £150-200, but the professional product could extend the repainting cycle from 4-5 years to 8-10 years.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For properties with substantial timber elements, we often recommend microporous stain systems rather than paint. These allow even greater moisture vapour transmission, which is ideal for Devon\'s humid conditions, though they require more frequent maintenance.',
+      },
+      {
+        type: 'heading',
+        content: 'Paint Colours That Work Best in Devon\'s Climate',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Colour selection affects more than just aesthetics. In Devon\'s climate, certain colours and tones perform better than others from both a practical and visual perspective.',
+      },
+      {
+        type: 'subheading',
+        content: 'Light to Mid-Tone Colours',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Lighter colours reflect rather than absorb solar radiation, reducing surface temperatures and minimising expansion-contraction cycles. This extends paint life. Mid-tones in whites, creams, soft greys, and muted earth colours are traditional across Devon for good reason—they\'re proven performers. These shades also complement the local architectural palette, particularly important if you\'re decorating a property in one of Exeter\'s conservation areas where planning guidance may influence colour choice.',
+      },
+      {
+        type: 'subheading',
+        content: 'Consider Algae Resistance',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Darker colours, particularly greens and blues, tend to show algae growth more readily than lighter tones. If you\'re set on a darker shade, ensure you\'re using a premium paint with strong algicidal properties, and accept that north-facing elevations may need more frequent cleaning. We see this frequently on properties in sheltered locations or near trees, where persistent shade and poor air circulation exacerbate the problem.',
+      },
+      {
+        type: 'heading',
+        content: 'Preparation: The Foundation of Long-Lasting Exterior Paintwork',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Even the best paint for Devon weather will fail if applied to poorly prepared surfaces. Professional preparation typically accounts for 60-70% of the total time on an [exterior painting project in Exeter](/areas/exeter/exterior-painting), but it\'s what determines whether your paint lasts 5 years or 15 years.',
+      },
+      {
+        type: 'list',
+        content: [
+          'Thorough cleaning to remove dirt, algae, salt deposits, and organic growth using appropriate biocidal washes',
+          'Careful scraping and sanding to remove loose or failing existing paint whilst creating sound edges',
+          'Filling and repair of substrate defects—cracks in render, blown areas, damaged pointing—before any paint is applied',
+          'Application of appropriate stabilising primers and sealers, particularly important on porous or previously unpainted masonry',
+          'Treatment of specific problems like knots in timber, rust on metal details, or efflorescence on masonry',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'On period properties, preparation becomes even more critical. Many of the listed buildings across Topsham and Exeter\'s historic wards have been painted numerous times over decades or centuries, creating complex substrate conditions that require careful assessment and specialist treatment.',
+      },
+      {
+        type: 'heading',
+        content: 'When to Paint: Timing Your Project for Devon\'s Weather',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Even with the best products, timing matters enormously in our climate. External painting requires dry conditions not just during application, but for several days afterwards to allow proper curing.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Late spring through early autumn—roughly May through September—offers the most reliable weather windows. We typically avoid November through February entirely for exterior work, as the combination of short days, frequent rain, and high humidity makes achieving good results extremely difficult. March, April, and October are borderline months where we\'ll work if a settled high-pressure system is forecast, but we build flexibility into project schedules.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For properties with significant exposure to prevailing weather—waterfront homes in Topsham, elevated properties in Exeter, or coastal properties in Dawlish—we\'re even more selective about timing, as these locations need longer curing periods before rain exposure.',
+      },
+      {
+        type: 'heading',
+        content: 'The True Cost of Exterior Painting in Devon',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter homeowners can expect to pay approximately £1,728 for painting a typical house exterior, though this varies considerably based on property size, condition, and access. This figure reflects the reality of using quality materials suitable for Devon\'s climate and proper professional preparation.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Breaking this down, materials typically account for 25-30% of the total cost, with labour, equipment, and expertise making up the remainder. Using premium paints might add 15-20% to the materials cost, but can double the lifespan of the finish—making it significantly more economical over time.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For larger properties, particularly the substantial Victorian and Edwardian houses common in areas like Pennsylvania and St Leonard\'s, costs can reach £3,000-5,000 or more. Listed properties often command higher prices due to the need for breathable paint systems, more extensive preparation, and specialist knowledge of historic building materials.',
+      },
+      {
+        type: 'heading',
+        content: 'Why Professional Application Matters in Coastal Conditions',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'We occasionally see properties where homeowners have attempted exterior painting themselves using retail products, often with disappointing results within 2-3 years. In Devon\'s demanding climate, professional application isn\'t a luxury—it\'s essential for achieving the performance that quality paints are capable of delivering.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional decorators bring: understanding of which paint systems suit specific substrates and exposure conditions, proper surface preparation equipment and techniques, knowledge of application methods that ensure full coverage and proper film thickness, experience reading weather conditions and knowing when it\'s safe to paint, and access to trade-quality materials often unavailable to the public. These factors combine to determine whether your exterior painting investment lasts 5 years or 15 years.',
+      },
+      {
+        type: 'heading',
+        content: 'Protecting Your Devon Property for the Long Term',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Choosing the best paint for Devon weather means understanding our unique coastal climate, selecting proven products formulated for extreme exposure, ensuring thorough professional preparation, and timing the work for optimal weather conditions. Whether you\'re maintaining a modern home in one of Exeter\'s newer developments or caring for a listed property in Topsham\'s conservation area, the right approach to exterior painting protects your investment whilst maintaining the character that makes Devon properties so distinctive.',
+      },
+      {
+        type: 'paragraph',
+        content: 'With over 20 years\' experience decorating properties across Exeter, Topsham, Dawlish, and surrounding areas, BSR Decorating has developed an in-depth understanding of which paint systems perform in our challenging coastal environment. We work exclusively with premium products suited to Devon\'s climate, and we take the time to prepare surfaces properly—because we know that\'s what determines whether your paintwork looks good for 5 years or 15 years.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Planning exterior painting for your Devon property? Contact BSR Decorating for expert advice and a free, no-obligation quote. We\'ll recommend the best paint system for your specific property, location, and budget—backed by more than two decades of local experience.',
+      },
+    ],
+  },
   'spring-exterior-painting-devon-complete-guide': {
     sections: [
       {
