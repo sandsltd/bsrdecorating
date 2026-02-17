@@ -345,29 +345,27 @@ function addPostKeywords(post: NewPost): void {
   const slugWords = post.slug.replace(/-/g, " ");
   const keywords = `${post.targetKeyword}, ${slugWords}`;
 
-  // Find the closing of the keywordMap object (the line with just "};")
-  // Insert before the last entry's closing
-  const mapStart = content.indexOf("const keywordMap");
-  if (mapStart === -1) {
-    console.log("Warning: Could not find keywordMap in page.tsx, skipping keywords");
+  // Find the return statement in getBlogKeywords — insert before it
+  const returnMarker = 'return keywordMap[slug] || "";';
+  const returnIdx = content.indexOf(returnMarker);
+  if (returnIdx === -1) {
+    console.log("Warning: Could not find keywordMap return in page.tsx, skipping keywords");
     return;
   }
 
-  // Find the closing }; of the keywordMap
-  const mapOpenBrace = content.indexOf("{", content.indexOf("{", mapStart) + 1);
-  let braceCount = 1;
-  let pos = mapOpenBrace + 1;
-  for (; pos < content.length && braceCount > 0; pos++) {
-    if (content[pos] === "{") braceCount++;
-    if (content[pos] === "}") braceCount--;
+  // Find the closing }; of the keywordMap object just before the return
+  // Walk backwards from the return to find the "};" that closes keywordMap
+  const beforeReturn = content.lastIndexOf("};", returnIdx);
+  if (beforeReturn === -1) {
+    console.log("Warning: Could not find keywordMap closing in page.tsx, skipping keywords");
+    return;
   }
 
-  // pos is now just after the closing }, insert before it
-  const insertPoint = pos - 1;
+  // Insert a new entry before the closing };
   const escapedKeywords = keywords.replace(/"/g, '\\"');
   const newEntry = `    '${post.slug}': "${escapedKeywords}",\n  `;
 
-  content = content.slice(0, insertPoint) + newEntry + content.slice(insertPoint);
+  content = content.slice(0, beforeReturn) + newEntry + content.slice(beforeReturn);
 
   fs.writeFileSync(keywordsPath, content);
   console.log(`Added keywords for slug: "${post.slug}"`);

@@ -51,7 +51,10 @@ function getBlogKeywords(slug: string): string {
     'exterior-painting-exeter-devon-guide': "exterior painting Exeter, exterior decorating Devon, outside painting Exeter, exterior house painter Devon, exterior painting cost Exeter, exterior decorating Topsham, exterior painter Newton Abbot, exterior painting Dawlish, masonry painting Exeter, exterior property maintenance Devon",
     'choose-painter-decorator-exeter-guide': "painter and decorator Exeter, painters in Exeter, decorator Exeter, painter decorator Exeter, decorators in Exeter, painter and decorators Exeter, painting and decorating Exeter, find decorator Exeter, hire painter Exeter, best decorator Exeter, decorating company Exeter, painters and decorators Exeter",
     'kitchen-cabinet-spraying-vs-replacement-devon': "kitchen cabinet spraying Exeter, kitchen spraying vs replacement, kitchen spraying cost Devon, cabinet spraying Topsham, kitchen respray Exeter, kitchen cabinet painting Devon, kitchen makeover Exeter, spray paint kitchen cabinets Devon",
-    'topsham-conservation-area-decorating-guide': "Topsham conservation area decorating, listed property decorating Topsham, conservation area painting rules, heritage decorator Topsham, listed building paint Topsham, period property decorating Topsham, conservation area planning permission painting"
+    'topsham-conservation-area-decorating-guide': "Topsham conservation area decorating, listed property decorating Topsham, conservation area painting rules, heritage decorator Topsham, listed building paint Topsham, period property decorating Topsham, conservation area planning permission painting",
+    'spring-exterior-painting-devon-complete-guide': "exterior painting devon, spring exterior painting devon complete guide",
+    'best-exterior-paint-devon-coastal-weather': "best paint devon weather, best exterior paint devon coastal weather",
+    'commercial-decorating-exeter-business-owners-guide': "commercial decorator exeter, commercial decorating exeter business owners guide"
   };
   return keywordMap[slug] || "";
 }
@@ -65,10 +68,7 @@ function getAdjacentPosts(currentSlug: string) {
     previous: currentIndex > 0 ? sortedPosts[currentIndex - 1] : null,
     next: currentIndex < sortedPosts.length - 1 ? sortedPosts[currentIndex + 1] : null
   };
-    'spring-exterior-painting-devon-complete-guide': "exterior painting devon, spring exterior painting devon complete guide",
-      'best-exterior-paint-devon-coastal-weather': "best paint devon weather, best exterior paint devon coastal weather",
-      'commercial-decorating-exeter-business-owners-guide': "commercial decorator exeter, commercial decorating exeter business owners guide",
-  }
+}
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
