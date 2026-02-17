@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Commercial Services',
     date: '2026-02-17',
     readTime: '8 min read',
-    image: '/images/blog/14-four-people-scaffolding.webp',
+    image: '/images/Business decorating image.jpeg',
     slug: 'commercial-decorating-exeter-business-owners-guide',
   },
   {
@@ -27,7 +27,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Expert Advice',
     date: '2026-02-17',
     readTime: '10 min read',
-    image: '/images/blog/02-man-painting-house.webp',
+    image: '/portfolio/project5/PHOTO-2025-09-02-11-16-33.jpg',
     slug: 'best-exterior-paint-devon-coastal-weather',
   },
   {
@@ -37,7 +37,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Expert Advice',
     date: '2026-02-16',
     readTime: '10 min read',
-    image: '/images/blog/13-senior-man-exterior-scaffolding.webp',
+    image: '/portfolio/project5/PHOTO-2025-09-02-11-16-33.jpg',
     slug: 'spring-exterior-painting-devon-complete-guide',
   },
   {
@@ -47,7 +47,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Heritage Restoration',
     date: '2026-02-16',
     readTime: '9 min read',
-    image: '/images/blog/43-wooden-door-white-house.webp',
+    image: '/portfolio/project2/PHOTO-2025-09-02-11-09-52.jpg',
     slug: 'topsham-conservation-area-decorating-guide',
   },
   {
@@ -57,7 +57,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Kitchen Spraying',
     date: '2026-02-16',
     readTime: '9 min read',
-    image: '/images/blog/22-roller-in-paint-tray.webp',
+    image: '/images/Home decorating image.jpeg',
     slug: 'kitchen-cabinet-spraying-vs-replacement-devon',
   },
   {
@@ -67,7 +67,7 @@ export const blogPosts: BlogPost[] = [
     category: "Expert Advice",
     date: "2026-01-30",
     readTime: "9 min read",
-    image: "/images/blog/38-woman-in-overalls.webp",
+    image: "/portfolio/project1/PHOTO-2025-09-02-11-07-13.jpg",
     slug: "choose-painter-decorator-exeter-guide"
   },
   {
@@ -77,7 +77,7 @@ export const blogPosts: BlogPost[] = [
     category: "Expert Advice",
     date: "2026-01-30",
     readTime: "10 min read",
-    image: "/images/blog/05-painter-brush-ladder.webp",
+    image: "/portfolio/project5/PHOTO-2025-09-02-11-16-33.jpg",
     slug: "exterior-painting-exeter-devon-guide"
   },
   {
@@ -87,7 +87,7 @@ export const blogPosts: BlogPost[] = [
     category: "Seasonal Trends",
     date: "2025-12-19",
     readTime: "8 min read",
-    image: "/images/blog/35-empty-room-renovation.webp",
+    image: "/portfolio/project1/PHOTO-2025-09-02-11-07-09.jpg",
     slug: "new-year-home-refresh-devon-2025"
   },
   {
@@ -97,7 +97,7 @@ export const blogPosts: BlogPost[] = [
     category: "Luxury Decorating",
     date: "2025-01-25",
     readTime: "12 min read",
-    image: "/images/blog/21-color-shade-samples.webp",
+    image: "/portfolio/project1/PHOTO-2025-09-02-11-07-09.jpg",
     slug: "luxury-decorating-trends-exeter"
   },
   {
@@ -107,7 +107,7 @@ export const blogPosts: BlogPost[] = [
     category: "Heritage Restoration",
     date: "2025-01-23",
     readTime: "10 min read",
-    image: "/images/blog/32-hand-holding-paint-brush.webp",
+    image: "/portfolio/project2/PHOTO-2025-09-02-11-09-52.jpg",
     slug: "heritage-property-restoration-topsham"
   },
   {
@@ -117,7 +117,7 @@ export const blogPosts: BlogPost[] = [
     category: "Commercial Services",
     date: "2025-01-21",
     readTime: "9 min read",
-    image: "/images/blog/10-people-painting-wall.webp",
+    image: "/portfolio/project5/PHOTO-2025-09-02-11-16-33.jpg",
     slug: "commercial-office-decorating-exeter-city-centre"
   },
   {
@@ -127,7 +127,7 @@ export const blogPosts: BlogPost[] = [
     category: "Seasonal Trends",
     date: "2025-01-24",
     readTime: "8 min read",
-        image: "/images/blog/31-blue-yellow-painted-wall.webp",
+        image: "/portfolio/project19/PHOTO-2025-09-03-11-18-18.jpg",
     slug: "autumn-decorating-trends-devon-homes"
   },
   {
@@ -137,7 +137,7 @@ export const blogPosts: BlogPost[] = [
     category: "Waterfront Maintenance",
     date: "2025-01-19",
     readTime: "11 min read",
-    image: "/images/blog/33-painting-fence-brush.webp",
+    image: "/portfolio/project11/PHOTO-2025-09-02-11-40-49.jpg",
     slug: "waterfront-property-maintenance-topsham"
   },
   {
@@ -147,7 +147,7 @@ export const blogPosts: BlogPost[] = [
     category: "Landlord Services",
     date: "2025-01-20",
     readTime: "8 min read",
-    image: "/images/blog/09-painting-new-apartment.webp",
+    image: "/images/to let.png",
     slug: "end-tenancy-decorating-landlords-letting-agents"
   },
   {
@@ -157,7 +157,7 @@ export const blogPosts: BlogPost[] = [
     category: "Commercial Services",
     date: "2025-01-18",
     readTime: "7 min read",
-    image: "/images/blog/40-house-painter-undercoating.webp",
+    image: "/images/office decorating.png",
     slug: "professional-decorating-enhances-business-premises"
   },
   {
@@ -167,7 +167,7 @@ export const blogPosts: BlogPost[] = [
     category: "Property Investment",
     date: "2025-01-15",
     readTime: "9 min read",
-    image: "/images/blog/44-white-paint-buckets.webp",
+    image: "/images/affordable decorating.png",
     slug: "cost-effective-decorating-rental-properties-hmos"
   },
   {
@@ -177,7 +177,7 @@ export const blogPosts: BlogPost[] = [
     category: "Pricing Guide",
     date: "2025-11-28",
     readTime: "12 min read",
-    image: "/images/blog/16-gallons-of-paint.webp",
+    image: "/portfolio/project1/PHOTO-2025-09-02-11-07-09.jpg",
     slug: "painter-decorator-cost-exeter-2025-price-guide"
   },
   {
@@ -187,7 +187,7 @@ export const blogPosts: BlogPost[] = [
     category: "Expert Advice",
     date: "2025-11-28",
     readTime: "10 min read",
-    image: "/images/blog/23-paint-color-swatches.webp",
+    image: "/portfolio/project2/PHOTO-2025-09-02-11-09-52.jpg",
     slug: "best-paint-types-exeter-homes-old-damp-listed-properties"
   },
   {
@@ -197,7 +197,7 @@ export const blogPosts: BlogPost[] = [
     category: "Expert Advice",
     date: "2025-11-28",
     readTime: "9 min read",
-    image: "/images/blog/15-man-renovation-room.webp",
+    image: "/portfolio/project5/PHOTO-2025-09-02-11-16-33.jpg",
     slug: "exeter-new-build-paintwork-problems-how-pros-fix"
   },
   {
@@ -207,7 +207,7 @@ export const blogPosts: BlogPost[] = [
     category: "Heritage Restoration",
     date: "2025-11-28",
     readTime: "11 min read",
-    image: "/images/blog/46-man-stepladder-taping.webp",
+    image: "/portfolio/project1/PHOTO-2025-09-02-11-07-13.jpg",
     slug: "decorating-tips-exeter-period-homes-specialist-advice"
   },
   {
@@ -217,7 +217,7 @@ export const blogPosts: BlogPost[] = [
     category: "Waterfront Maintenance",
     date: "2025-11-28",
     readTime: "10 min read",
-    image: "/images/blog/42-dirty-paint-bucket.webp",
+    image: "/portfolio/project11/PHOTO-2025-09-02-11-40-49.jpg",
     slug: "topsham-waterfront-homes-best-paints-humidity-salt-air-weather"
   },
   {
@@ -227,7 +227,7 @@ export const blogPosts: BlogPost[] = [
     category: "Heritage Restoration",
     date: "2025-11-28",
     readTime: "11 min read",
-    image: "/images/blog/20-woman-adhesive-tape-wall.webp",
+    image: "/portfolio/project2/PHOTO-2025-09-02-11-09-52.jpg",
     slug: "maintaining-period-home-topsham-painter-expert-advice"
   }
 ];
