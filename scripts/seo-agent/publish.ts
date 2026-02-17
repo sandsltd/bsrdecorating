@@ -22,65 +22,128 @@ interface NewPost {
   isRefresh: boolean;
 }
 
-// Pool of existing images on the site, mapped by category
+// Blog images pool — 50 stock images categorised by topic
 const IMAGE_POOL: Record<string, string[]> = {
   "Heritage Restoration": [
-    "/portfolio/project2/PHOTO-2025-09-02-11-09-52.jpg",
-    "/portfolio/project11/PHOTO-2025-09-02-11-40-49.jpg",
-    "/portfolio/project1/PHOTO-2025-09-02-11-07-13.jpg",
+    "/images/blog/05-painter-brush-ladder.webp",
+    "/images/blog/35-empty-room-renovation.webp",
+    "/images/blog/36-house-renovation.webp",
+    "/images/blog/43-wooden-door-white-house.webp",
+    "/images/blog/40-house-painter-undercoating.webp",
+    "/images/blog/15-man-renovation-room.webp",
   ],
   "Commercial Services": [
-    "/images/office decorating.png",
-    "/images/commercialdecorating.jpg",
-    "/images/Business decorating image.jpeg",
+    "/images/blog/09-painting-new-apartment.webp",
+    "/images/blog/10-people-painting-wall.webp",
+    "/images/blog/14-four-people-scaffolding.webp",
+    "/images/blog/46-man-stepladder-taping.webp",
   ],
   "Landlord Services": [
-    "/images/to let.png",
-    "/images/affordable decorating.png",
+    "/images/blog/09-painting-new-apartment.webp",
+    "/images/blog/35-empty-room-renovation.webp",
+    "/images/blog/12-white-painted-wall.webp",
+    "/images/blog/47-white-painted-wall.webp",
   ],
   "Property Investment": [
-    "/images/to let.png",
-    "/images/affordable decorating.png",
+    "/images/blog/35-empty-room-renovation.webp",
+    "/images/blog/36-house-renovation.webp",
+    "/images/blog/09-painting-new-apartment.webp",
+    "/images/blog/15-man-renovation-room.webp",
   ],
   "Seasonal Trends": [
-    "/portfolio/project5/PHOTO-2025-09-02-11-16-33.jpg",
-    "/portfolio/project19/PHOTO-2025-09-03-11-18-18.jpg",
+    "/images/blog/21-color-shade-samples.webp",
+    "/images/blog/23-paint-color-swatches.webp",
+    "/images/blog/34-pink-paint-samples.webp",
+    "/images/blog/31-blue-yellow-painted-wall.webp",
+    "/images/blog/29-gray-white-paint-wall.webp",
   ],
   "Waterfront Maintenance": [
-    "/portfolio/project5/PHOTO-2025-09-02-11-16-33.jpg",
-    "/portfolio/project2/PHOTO-2025-09-02-11-09-52.jpg",
+    "/images/blog/13-senior-man-exterior-scaffolding.webp",
+    "/images/blog/02-man-painting-house.webp",
+    "/images/blog/33-painting-fence-brush.webp",
+    "/images/blog/43-wooden-door-white-house.webp",
   ],
   "Expert Advice": [
-    "/portfolio/project1/PHOTO-2025-09-02-11-07-09.jpg",
-    "/portfolio/project5/PHOTO-2025-09-02-11-16-33.jpg",
-    "/images/Home decorating image.jpeg",
+    "/images/blog/07-paint-bucket-rollers.webp",
+    "/images/blog/08-paint-brush-bucket.webp",
+    "/images/blog/16-gallons-of-paint.webp",
+    "/images/blog/21-color-shade-samples.webp",
+    "/images/blog/22-roller-in-paint-tray.webp",
+    "/images/blog/23-paint-color-swatches.webp",
+    "/images/blog/44-white-paint-buckets.webp",
   ],
   "Kitchen Spraying": [
-    "/images/Home decorating image.jpeg",
-    "/images/home decorating image 2.jpeg",
-    "/portfolio/project1/PHOTO-2025-09-02-11-07-13.jpg",
+    "/images/blog/03-man-paint-roller.webp",
+    "/images/blog/18-person-painting.webp",
+    "/images/blog/30-hand-paint-roller-decor.webp",
+    "/images/blog/39-wall-half-painted.webp",
   ],
   "Pricing Guide": [
-    "/images/Home decorating image.jpeg",
-    "/portfolio/project1/PHOTO-2025-09-02-11-07-09.jpg",
+    "/images/blog/07-paint-bucket-rollers.webp",
+    "/images/blog/16-gallons-of-paint.webp",
+    "/images/blog/28-roller-brush-paint-tray.webp",
+    "/images/blog/44-white-paint-buckets.webp",
   ],
   "Luxury Decorating": [
-    "/portfolio/project11/PHOTO-2025-09-02-11-40-49.jpg",
-    "/portfolio/project2/PHOTO-2025-09-02-11-09-52.jpg",
+    "/images/blog/21-color-shade-samples.webp",
+    "/images/blog/23-paint-color-swatches.webp",
+    "/images/blog/34-pink-paint-samples.webp",
+    "/images/blog/29-gray-white-paint-wall.webp",
+    "/images/blog/12-white-painted-wall.webp",
   ],
 };
 
-const DEFAULT_IMAGES = [
-  "/portfolio/project1/PHOTO-2025-09-02-11-07-13.jpg",
-  "/portfolio/project5/PHOTO-2025-09-02-11-16-33.jpg",
-  "/portfolio/project2/PHOTO-2025-09-02-11-09-52.jpg",
-  "/images/Home decorating image.jpeg",
-];
+// All 50 images as fallback — ensures no image gets reused until all are exhausted
+const ALL_BLOG_IMAGES = Array.from({ length: 50 }, (_, i) => {
+  const num = String(i + 1).padStart(2, "0");
+  const names = [
+    "paint-roller-wall", "man-painting-house", "man-paint-roller", "man-painting-wall",
+    "painter-brush-ladder", "man-polishing-ceiling", "paint-bucket-rollers", "paint-brush-bucket",
+    "painting-new-apartment", "people-painting-wall", "paint-roller-painting", "white-painted-wall",
+    "senior-man-exterior-scaffolding", "four-people-scaffolding", "man-renovation-room",
+    "gallons-of-paint", "woman-painting-wall", "person-painting", "woman-painting-wall-2",
+    "woman-adhesive-tape-wall", "color-shade-samples", "roller-in-paint-tray", "paint-color-swatches",
+    "couple-painting-house", "couple-painting-wall", "couple-painting-wall-2", "couple-painting-together",
+    "roller-brush-paint-tray", "gray-white-paint-wall", "hand-paint-roller-decor",
+    "blue-yellow-painted-wall", "hand-holding-paint-brush", "painting-fence-brush",
+    "pink-paint-samples", "empty-room-renovation", "house-renovation", "woman-paint-splash",
+    "woman-in-overalls", "wall-half-painted", "house-painter-undercoating", "unfinished-painted-wall",
+    "dirty-paint-bucket", "wooden-door-white-house", "white-paint-buckets", "paint-roller-stepladder",
+    "man-stepladder-taping", "white-painted-wall", "multicolor-paint-splashes",
+    "multicolor-abstract-painting", "abstract-multicolor-paints",
+  ];
+  return `/images/blog/${num}-${names[i]}.webp`;
+});
+
+function getUsedImages(): Set<string> {
+  const postsPath = path.join(process.cwd(), CONFIG.blogPostsPath);
+  const content = fs.readFileSync(postsPath, "utf-8");
+  const used = new Set<string>();
+  const imageMatches = content.match(/image:\s*['"]([^'"]+)['"]/g);
+  if (imageMatches) {
+    for (const m of imageMatches) {
+      const img = m.match(/['"]([^'"]+)['"]/)?.[1];
+      if (img) used.add(img);
+    }
+  }
+  return used;
+}
 
 function pickImage(category: string): string {
-  const pool = IMAGE_POOL[category] || DEFAULT_IMAGES;
-  // Pick a random image from the pool
-  return pool[Math.floor(Math.random() * pool.length)];
+  const used = getUsedImages();
+  // Try category-specific images first
+  const pool = IMAGE_POOL[category] || [];
+  const unused = pool.filter((img) => !used.has(img));
+  if (unused.length > 0) {
+    return unused[Math.floor(Math.random() * unused.length)];
+  }
+  // Fall back to any unused image from the full set
+  const allUnused = ALL_BLOG_IMAGES.filter((img) => !used.has(img));
+  if (allUnused.length > 0) {
+    return allUnused[Math.floor(Math.random() * allUnused.length)];
+  }
+  // All 50 used — cycle back through category pool
+  return (pool.length > 0 ? pool : ALL_BLOG_IMAGES)[Math.floor(Math.random() * (pool.length || ALL_BLOG_IMAGES.length))];
 }
 
 function run(cmd: string): string {
