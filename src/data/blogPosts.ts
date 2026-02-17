@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 22,
+    title: 'Commercial Decorating in Exeter: What Business Owners Need to Know',
+    excerpt: 'From period properties to modern offices, discover what makes commercial decorating different and how to choose the right contractor for your Exeter business.',
+    category: 'Commercial Services',
+    date: '2026-02-17',
+    readTime: '8 min read',
+    image: '/images/Business decorating image.jpeg',
+    slug: 'commercial-decorating-exeter-business-owners-guide',
+  },
+  {
     id: 21,
     title: 'The Best Exterior Paint for Devon\'s Coastal Weather: A Professional Guide',
     excerpt: 'Devon\'s unique coastal climate demands specific paint choices. Learn which products stand up to salt air, rain, and humidity.',

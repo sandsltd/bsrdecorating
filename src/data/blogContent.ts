@@ -18,6 +18,212 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'commercial-decorating-exeter-business-owners-guide': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Your business premises make a statement before you say a word. Whether you\'re running a boutique hotel in Cathedral Close, a solicitor\'s office in Southernhay, or a restaurant on Queen Street, the quality of your decorating directly impacts how clients perceive your professionalism. Yet commercial decorating in Exeter comes with unique challenges that many business owners underestimate until they\'re facing disruption, delayed projects, or substandard results.',
+      },
+      {
+        type: 'paragraph',
+        content: 'With over 20 years of experience decorating commercial properties across Exeter, we\'ve learned that successful commercial projects require a fundamentally different approach to domestic work. From navigating conservation area restrictions in Exeter\'s 20 designated areas to coordinating around business operations, commercial decorating demands expertise that goes beyond simply applying paint to walls.',
+      },
+      {
+        type: 'heading',
+        content: 'Why Commercial Decorating Requires Specialist Expertise',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'The distinction between domestic and commercial decorating isn\'t just about scale. Commercial projects involve regulatory requirements, health and safety considerations, and business continuity challenges that residential work doesn\'t face. A [commercial decorator in Exeter](/commercial) needs to understand building regulations, fire safety standards, and accessibility requirements that apply to public-facing premises.',
+      },
+      {
+        type: 'subheading',
+        content: 'Health and Safety Compliance',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Commercial decorating projects must comply with the Health and Safety at Work Act and Construction Design and Management Regulations. This means comprehensive risk assessments, method statements, and appropriate insurance coverage. If you\'re operating in a listed building—and Exeter has 994 of them, including many in the city centre—your decorator needs to understand heritage regulations alongside modern safety requirements.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For businesses in St David\'s, which contains 380 listed buildings, or Topsham with its 228 listed properties, finding a [decorator who understands both conservation requirements](/blog/topsham-conservation-area-decorating-guide) and commercial standards is essential. The wrong approach can result in enforcement action from Exeter City Council, as demonstrated by the £38,000 fine issued to a Topsham property owner in December 2025 for unlawful alterations.',
+      },
+      {
+        type: 'subheading',
+        content: 'Minimal Business Disruption',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Every hour your business premises is inaccessible costs money. Experienced commercial decorators plan projects around your operational needs, working evenings, weekends, or during quiet periods to minimise disruption. This requires meticulous scheduling, efficient work practices, and the flexibility to adapt if business needs change.',
+      },
+      {
+        type: 'paragraph',
+        content: 'We\'ve decorated active restaurants in Exeter\'s Cathedral Quarter, working room by room so service continues uninterrupted. We\'ve completed office refurbishments in Southernhay over weekends so staff return Monday morning to refreshed premises. This level of coordination requires experience and reliability that not all decorators can provide.',
+      },
+      {
+        type: 'heading',
+        content: 'Key Considerations for Exeter Commercial Properties',
+        level: 2,
+      },
+      {
+        type: 'subheading',
+        content: 'Location-Specific Challenges',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter\'s commercial properties present unique challenges depending on their location. Period buildings in conservation areas require breathable paints and traditional techniques. Modern office developments like those around Exeter Business Park need durable, low-maintenance finishes. Retail premises on High Street or Princesshay demand quick turnarounds between tenancies.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Waterfront properties, particularly in the Quayside area, face humidity and weather exposure similar to [Topsham\'s riverside locations](/areas/topsham). These require specialist paint systems designed for Devon\'s coastal climate—not the standard products that might work adequately in drier regions but fail prematurely here.',
+      },
+      {
+        type: 'subheading',
+        content: 'Paint Selection for Commercial Environments',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Commercial environments need paint that withstands heavy use, frequent cleaning, and maintains appearance longer than residential properties. High-traffic areas like reception spaces, corridors, and staircases require scrubbable, durable finishes. Healthcare and food service premises need antimicrobial coatings that meet hygiene standards.',
+      },
+      {
+        type: 'paragraph',
+        content: 'We increasingly recommend eco-friendly, low-VOC paints for commercial premises. These improve indoor air quality—essential for employee wellbeing and productivity—and align with corporate sustainability commitments. For businesses pursuing environmental certifications, paint choices become part of your broader green credentials.',
+      },
+      {
+        type: 'heading',
+        content: 'The Commercial Decorating Process',
+        level: 2,
+      },
+      {
+        type: 'subheading',
+        content: 'Initial Consultation and Site Survey',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional commercial decorating begins with a thorough site survey. This identifies structural issues, assesses existing finishes, notes any heritage or conservation considerations, and determines access requirements. For multi-storey buildings or properties in Exeter\'s narrow historic streets, access equipment and parking logistics become critical planning elements.',
+      },
+      {
+        type: 'paragraph',
+        content: 'During consultation, we discuss your business operations, deadlines, and budget parameters. A restaurant needs completion before peak season. A retailer needs work finished before a product launch. A hotel requires a phased approach so rooms remain available. Understanding these commercial pressures allows us to develop realistic, achievable project plans.',
+      },
+      {
+        type: 'subheading',
+        content: 'Specification and Quotation',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Commercial quotes should be detailed and transparent, itemising materials, labour, access equipment, and any specialist requirements. Vague estimates lead to disputes and budget overruns. A proper specification includes paint systems (primer, undercoat, topcoat), application methods, number of coats, and surface preparation requirements.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For listed buildings or premises in conservation areas, the specification must address heritage requirements. This might include using breathable mineral paints, traditional methods, or specific colour palettes approved by conservation officers. These considerations affect both cost and timescale, which is why early specialist input saves time and money.',
+      },
+      {
+        type: 'subheading',
+        content: 'Project Delivery and Handover',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'During the project, regular communication keeps you informed of progress and any issues that arise. Professional commercial decorators maintain clean, safe work areas, protect your fixtures and fittings, and respect your premises and customers. When complete, a thorough handover includes touching up any marks, removing all materials and equipment, and leaving your premises ready for immediate use.',
+      },
+      {
+        type: 'heading',
+        content: 'Typical Commercial Decorating Costs in Exeter',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Commercial decorating costs vary significantly based on property size, condition, access requirements, and finish specifications. However, some typical Exeter prices for common commercial projects include:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Small office (single room): £500-£800 depending on preparation required',
+          'Restaurant dining area (medium-sized): £2,000-£4,000 including preparation and durable finishes',
+          'Retail unit (standard high street shop): £1,500-£3,500 depending on size and condition',
+          'Hotel bedroom refresh: £400-£700 per room for walls, ceiling, and woodwork',
+          'Office building exterior: £3,000-£8,000+ depending on building height and access requirements',
+          'Heritage property specialist work: From £35-£45 per hour for skilled conservation decorating',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'These figures are indicative. Detailed quotations depend on specific requirements, but they provide useful budgeting guidance. Projects requiring evening or weekend work to avoid business disruption may incur premium rates, but this cost is often offset by avoiding lost trading revenue.',
+      },
+      {
+        type: 'heading',
+        content: 'Questions to Ask Your Commercial Decorator',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Choosing the right commercial decorator in Exeter requires asking the right questions. Before committing to any contractor, establish:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Do they have commercial liability insurance adequate for your premises and business?',
+          'Can they provide references from similar commercial projects in Exeter?',
+          'Do they understand heritage and conservation requirements if your building is listed or in a conservation area?',
+          'How will they minimise disruption to your business operations?',
+          'What is their approach to health and safety, and can they provide method statements and risk assessments?',
+          'Do they have experience with your specific property type—whether retail, hospitality, office, or industrial?',
+          'What guarantees do they offer on their work?',
+          'How do they handle unexpected issues or variations to the original specification?',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'A professional commercial decorator will answer these questions confidently and provide documentation to support their claims. Hesitation or vague responses should raise concerns about their suitability for commercial work.',
+      },
+      {
+        type: 'heading',
+        content: 'The Benefits of Using Local Exeter Decorators',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Local commercial decorators offer distinct advantages for Exeter businesses. We understand the city\'s unique characteristics—from navigating narrow medieval streets with equipment to knowing which local suppliers stock heritage-appropriate materials quickly. We\'re familiar with Exeter City Council\'s planning and conservation departments, which streamlines any necessary approvals.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Local decorators also have reputations to protect within the community. We\'re accountable not just for the duration of a contract, but for the long term. If issues arise months after completion, a local decorator can return quickly to address them. This ongoing relationship provides peace of mind that national contractors cannot match.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For businesses expanding across multiple Exeter locations—whether you\'re opening a second restaurant, refurbishing hotel rooms in phases, or maintaining multiple retail units—working with the same decorator ensures consistency in quality and finish across all your premises.',
+      },
+      {
+        type: 'heading',
+        content: 'Making Your Commercial Decorating Project a Success',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Successful commercial decorating projects in Exeter require three elements: a decorator with genuine commercial expertise, clear communication throughout the project, and realistic planning that accounts for your business needs and any property constraints.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The difference between adequate decorating and exceptional results often comes down to experience—knowing which paint systems suit Devon\'s climate, understanding how to work efficiently in occupied premises, and anticipating problems before they cause delays or budget overruns.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Whether you\'re refreshing a boutique hotel in the Cathedral Quarter, updating solicitors\' offices in Southernhay, or preparing a retail unit for new tenants on Fore Street, choosing a decorator who understands commercial requirements and Exeter\'s unique property landscape ensures your investment enhances your business rather than disrupting it.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Planning a commercial decorating project in Exeter? BSR Decorating brings over 20 years of experience working with businesses across the city, from heritage properties to modern offices. Contact us for a free, no-obligation consultation and detailed quotation tailored to your business needs.',
+      },
+    ],
+  },
   'best-exterior-paint-devon-coastal-weather': {
     sections: [
       {

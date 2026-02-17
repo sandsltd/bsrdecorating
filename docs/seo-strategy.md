@@ -210,7 +210,7 @@ The agent should work through these in order, picking the next unwritten topic e
 | 2 | Topsham Conservation Area: Your Complete Guide to Decorating a Listed Property | topsham conservation area decorating | <10 local | Yes | topsham-conservation-area-decorating-guide |
 | 3 | Spring Exterior Painting Guide: When and How to Paint Your Devon Home | exterior painting devon | 20-40 seasonal | Yes | spring-exterior-painting-devon-complete-guide |
 | 4 | The Best Exterior Paint for Devon's Coastal Weather | best paint devon weather | 10-30 | Yes | best-exterior-paint-devon-coastal-weather |
-| 5 | Commercial Decorating in Exeter: What Business Owners Need to Know | commercial decorator exeter | 10-30 | No | — |
+| 5 | Commercial Decorating in Exeter: What Business Owners Need to Know | commercial decorator exeter | 10-30 | Yes | commercial-decorating-exeter-business-owners-guide |
 
 #### HIGH Priority
 
@@ -376,6 +376,11 @@ An automated agent runs every 5 days via GitHub Actions. It:
 ---
 
 ## Session Log
+
+### 17 Feb 2026 — Automated SEO Agent Run
+- **What was done:** Checked rankings for 32 keywords (4 indexed). Generated blog post: "Commercial Decorating in Exeter: What Business Owners Need to Know" targeting "commercial decorator exeter". Added 1 internal links across blog posts. 2 competitors have published new content recently. Generated 5 SEO recommendations.
+- **Run type:** Automated (GitHub Actions)
+
 
 ### 17 Feb 2026 — Automated SEO Agent Run
 - **What was done:** Checked rankings for 32 keywords (4 indexed). Generated blog post: "The Best Exterior Paint for Devon's Coastal Weather: A Professional Guide" targeting "best paint devon weather". 2 competitors have published new content recently. Generated 5 SEO recommendations.
