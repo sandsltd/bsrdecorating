@@ -57,6 +57,26 @@ export async function generateRecommendations(
   sitePages.push("/");
   scanPages(appDir, "");
 
+  // Scan for existing schema markup on area pages
+  const schemaInfo: string[] = [];
+  for (const page of sitePages) {
+    if (!page.startsWith("/areas/")) continue;
+    const pagePath = path.join(appDir, ...page.split("/").filter(Boolean), "page.tsx");
+    if (!fs.existsSync(pagePath)) continue;
+    const pageContent = fs.readFileSync(pagePath, "utf-8");
+    const schemas: string[] = [];
+    if (pageContent.includes("ProfessionalService")) schemas.push("ProfessionalService");
+    if (pageContent.includes("LocalBusiness")) schemas.push("LocalBusiness");
+    if (pageContent.includes("FAQPage")) schemas.push("FAQPage");
+    if (pageContent.includes("BreadcrumbList")) schemas.push("BreadcrumbList");
+    if (pageContent.includes("makesOffer")) schemas.push("makesOffer");
+    if (pageContent.includes("priceRange")) schemas.push("priceRange");
+    if (pageContent.includes("areaServed")) schemas.push("areaServed");
+    if (schemas.length > 0) {
+      schemaInfo.push(`${page}: ${schemas.join(", ")}`);
+    }
+  }
+
   const rankingSummary = rankings
     .map((r) => {
       const pos = r.position !== null ? `#${r.position}` : "Not indexed";
@@ -84,16 +104,22 @@ ${existingPosts.length > 0 ? existingPosts.map((t) => `- ${t}`).join("\n") : "No
 ## Current Site Pages
 ${sitePages.map((p) => `- ${p}`).join("\n")}
 
+## Existing Schema Markup on Area Pages
+${schemaInfo.length > 0 ? schemaInfo.map((s) => `- ${s}`).join("\n") : "No schema detected on area pages."}
+
 ## Your Task
 Analyse the current SEO state and provide 3-5 actionable recommendations. Think about:
 
-1. **New pages to create** — Are there keywords needing dedicated pages? (e.g. kitchen spraying landing page, comparison pages, new area pages)
-2. **Technical SEO improvements** — Missing structured data, meta tag improvements, internal linking gaps, schema markup opportunities (LocalBusiness, Service, FAQ)
+1. **New pages to create** — Are there keywords needing dedicated pages? (e.g. comparison pages, new area pages, new service pages)
+2. **Technical SEO improvements** — Missing structured data, meta tag improvements, internal linking gaps, schema markup opportunities
 3. **Content gaps** — Topics or angles not covered that would build authority in heritage decorating, kitchen spraying, or the Exeter market
 4. **Quick wins** — Low-effort changes that could improve rankings for specific keywords (e.g. a keyword close to page 1)
 5. **Competitive opportunities** — Based on competitors (Simon Santucci's 19 location pages, Vivid Decor's active blog)
 
-Important:
+CRITICAL RULES:
+- Do NOT recommend creating pages that already exist in the "Current Site Pages" list above
+- Do NOT recommend adding schema markup that is already present in the "Existing Schema Markup" list above
+- Do NOT recommend things that have already been implemented — check the lists above first
 - Be specific and actionable — "Add FAQ schema to the cost guide page" is better than "Improve on-page SEO"
 - Reference specific keywords and their current rankings
 - Consider the 994 listed buildings and 20 conservation areas in Exeter as content opportunities
