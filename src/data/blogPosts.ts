@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 23,
+    title: 'Limewash Paint: Everything You Need to Know for Period Properties in Devon',
+    excerpt: 'Discover why limewash paint is the traditional choice for heritage homes and how it protects historic buildings across Exeter and Topsham.',
+    category: 'Heritage Restoration',
+    date: '2026-02-18',
+    readTime: '9 min read',
+    image: '/images/blog/36-house-renovation.webp',
+    slug: 'limewash-paint-period-properties-devon-guide',
+  },
+  {
     id: 22,
     title: 'Commercial Decorating in Exeter: What Business Owners Need to Know',
     excerpt: 'From period properties to modern offices, discover what makes commercial decorating different and how to choose the right contractor for your Exeter business.',

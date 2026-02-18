@@ -18,6 +18,263 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'limewash-paint-period-properties-devon-guide': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'If you own a period property in Exeter or Topsham, you\'ve likely heard about limewash paint. With 994 listed buildings across Exeter alone and 228 in Topsham\'s conservation area, understanding traditional paint systems isn\'t just about aesthetics—it\'s about protecting your investment and maintaining your home\'s historic integrity. Limewash has been used for centuries on British buildings, and there\'s a very good reason it remains the gold standard for heritage properties today.',
+      },
+      {
+        type: 'heading',
+        content: 'What Is Limewash Paint?',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Limewash is a traditional paint made from slaked lime (calcium hydroxide) mixed with water. Unlike modern emulsion paints that sit on top of a surface, limewash penetrates into porous masonry and actually becomes part of the wall through a process called carbonation. As the limewash dries, it reacts with carbon dioxide in the air and gradually turns back into limestone—the same material many historic buildings are made from.',
+      },
+      {
+        type: 'paragraph',
+        content: 'This chemical transformation is what makes limewash uniquely suited to old buildings. It\'s not a coating that can peel or trap moisture—it\'s a breathable finish that works in harmony with traditional building materials like lime mortar, cob, and soft stone.',
+      },
+      {
+        type: 'heading',
+        content: 'Why Period Properties Need Breathable Paint',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'The single most important thing to understand about historic buildings is that they were designed to breathe. Before the 20th century, buildings in Devon were constructed without damp-proof courses or cavity walls. Instead, they managed moisture through breathability—allowing water vapour to pass through walls naturally.',
+      },
+      {
+        type: 'paragraph',
+        content: 'This is especially critical in Devon\'s climate. Properties along Topsham\'s waterfront or in Exeter\'s riverside areas face constant humidity. When you apply modern [masonry paint or vinyl emulsion to these buildings](/blog/best-paint-types-exeter-homes-old-damp-listed-properties), you create an impermeable barrier that traps moisture inside the walls. The result? Damp problems, blown plaster, and deteriorating masonry.',
+      },
+      {
+        type: 'subheading',
+        content: 'The Cost of Getting It Wrong',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'We regularly see Victorian and Georgian homes in areas like St Leonard\'s and Pennsylvania where well-meaning owners have used modern paints, only to discover rising damp and failing plaster within a few years. In December 2025, a Topsham property owner was fined £38,000 for unauthorised alterations to a listed building—a stark reminder that conservation regulations exist to protect these irreplaceable structures.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Using inappropriate materials isn\'t just a planning issue—it\'s a preservation issue that can cost tens of thousands of pounds to rectify.',
+      },
+      {
+        type: 'heading',
+        content: 'The Benefits of Limewash for Historic Homes',
+        level: 2,
+      },
+      {
+        type: 'subheading',
+        content: 'Breathability and Moisture Management',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Limewash has a high vapour permeability, meaning it allows moisture to evaporate naturally from masonry. This is essential for buildings constructed with lime mortar, cob, or soft sandstone—all common in Devon\'s historic properties. By letting walls breathe, limewash prevents the moisture accumulation that leads to structural decay.',
+      },
+      {
+        type: 'subheading',
+        content: 'Self-Healing Properties',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'One of limewash\'s most remarkable characteristics is its ability to self-heal minor cracks. Because limewash remains slightly porous and flexible, small hairline cracks can actually reseal themselves through continued carbonation and the movement of lime within the coating. This flexibility also allows it to move with the building as it responds to seasonal temperature changes—crucial for old buildings without modern foundations.',
+      },
+      {
+        type: 'subheading',
+        content: 'Natural Antimicrobial Properties',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Limewash is naturally alkaline, which makes it hostile to mould, algae, and bacteria. This is particularly valuable in Devon\'s damp climate, where properties in areas like Heavitree and Alphington can struggle with biological growth on exterior walls. Unlike modern paints that require chemical biocides, limewash provides natural protection that improves over time.',
+      },
+      {
+        type: 'subheading',
+        content: 'Authentic Aesthetic',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Limewash creates a distinctive matte finish with subtle texture and depth that modern paints cannot replicate. It weathers beautifully, developing a soft patina that enhances rather than detracts from a building\'s character. For properties in Exeter\'s 20 conservation areas, this authentic appearance is often a planning requirement.',
+      },
+      {
+        type: 'heading',
+        content: 'When Should You Use Limewash?',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Limewash is appropriate for any building constructed before approximately 1919, particularly those built with traditional materials. This includes the Georgian townhouses in Southernhay, Victorian terraces throughout St Leonard\'s, and the historic cottages that line Topsham\'s streets.',
+      },
+      {
+        type: 'list',
+        content: [
+          'Listed buildings (all Grade I, II*, and II properties)',
+          'Buildings in conservation areas where planning guidance recommends traditional materials',
+          'Properties with lime mortar or lime plaster',
+          'Cob buildings (common in rural Devon and parts of Alphington)',
+          'Soft stone construction (sandstone, limestone)',
+          'Any historic building experiencing damp issues with modern paint',
+          'Properties where previous limewash coatings exist',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'If you\'re unsure whether your property would benefit from limewash, our team at [BSR Decorating](/areas/exeter/heritage-property-painting) can assess your building\'s construction and recommend the most appropriate paint system.',
+      },
+      {
+        type: 'heading',
+        content: 'Limewash vs. Modern Alternatives',
+        level: 2,
+      },
+      {
+        type: 'subheading',
+        content: 'Limewash vs. Modern Masonry Paint',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Modern masonry paints form a plastic film on the surface. While durable on modern buildings, they\'re inappropriate for historic structures because they trap moisture and prevent walls from breathing. They also tend to peel and blister on old buildings as trapped moisture tries to escape.',
+      },
+      {
+        type: 'subheading',
+        content: 'Limewash vs. Lime Paint',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Lime paint (sometimes called mineral paint) is a modern product that contains lime but also includes binders and additives for easier application. While more breathable than standard masonry paint, it\'s not as permeable as traditional limewash and doesn\'t offer the same self-healing properties. For the most sensitive historic buildings, traditional limewash remains the preferred option.',
+      },
+      {
+        type: 'subheading',
+        content: 'Limewash vs. Distemper',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Distemper is another traditional coating, typically used for interior walls and ceilings. While both are breathable, distemper is less durable and weather-resistant than limewash, making limewash the better choice for exterior applications in Devon\'s climate.',
+      },
+      {
+        type: 'heading',
+        content: 'Application: Why Limewash Needs Professional Expertise',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Limewash is not a forgiving material. It requires specific preparation, application techniques, and environmental conditions to perform properly. This is not a weekend DIY project—poorly applied limewash can wash off, appear patchy, or fail to bond correctly.',
+      },
+      {
+        type: 'subheading',
+        content: 'Surface Preparation',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'The substrate must be clean, sound, and appropriately porous. Any previous incompatible coatings must be completely removed—a labour-intensive process that often requires careful scraping or specialist poulticing. The surface typically needs dampening before application to prevent the wall from drawing moisture out of the limewash too quickly.',
+      },
+      {
+        type: 'subheading',
+        content: 'Application Technique',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Limewash is applied in multiple thin coats (typically 3-5) rather than one or two thick coats like modern paint. Each coat must be applied while the previous coat is still damp—timing is critical. The application method also matters: limewash is traditionally applied with a specialist limewash brush using a cross-hatching technique to ensure even coverage and penetration.',
+      },
+      {
+        type: 'subheading',
+        content: 'Weather Conditions',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Limewash cannot be applied in freezing conditions, direct sunlight, or when rain is forecast within 24 hours. In Devon\'s unpredictable climate, this requires careful planning and sometimes means delaying work at short notice. The carbonation process also takes weeks to complete, during which the coating needs protection from harsh weather.',
+      },
+      {
+        type: 'paragraph',
+        content: 'With over 20 years of experience working on [period properties across Exeter and Topsham](/areas/topsham), we understand these complexities. We\'ve successfully applied limewash to listed buildings throughout Devon\'s conservation areas, from Georgian townhouses to medieval cottages.',
+      },
+      {
+        type: 'heading',
+        content: 'Colours and Pigments',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Traditional limewash was available in a limited palette of earth tones because it can only be tinted with lime-compatible natural pigments. These include ochres (yellow and red), umbers (brown), siennas (orange-brown), and iron oxide (red). White limewash, created by using pure lime without pigments, was historically the most common.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Today\'s limewash can incorporate a wider range of lime-compatible pigments, but the palette remains more restricted than modern paints. This actually works in favour of historic buildings, ensuring colours remain appropriate and sympathetic to their period. For listed buildings and conservation areas, choosing historically accurate colours is often a planning requirement—and it\'s also the right aesthetic choice.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The soft, chalky appearance of pigmented limewash is part of its charm. Colours appear more muted and natural than modern paint, developing subtle variations as the coating weathers—exactly the effect you want on a period property.',
+      },
+      {
+        type: 'heading',
+        content: 'Maintenance and Longevity',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Limewash typically needs reapplication every 5-7 years, though this varies depending on exposure and local climate. Properties facing prevailing weather or in exposed coastal locations may need more frequent attention. The good news is that reapplication is straightforward—there\'s no stripping or extensive preparation required. You simply apply fresh coats over the existing limewash.',
+      },
+      {
+        type: 'paragraph',
+        content: 'This ongoing maintenance might sound like a disadvantage compared to modern paints that claim 10-15 year durability. However, consider this: when modern paint fails on an old building, you face extensive and expensive removal work. When limewash needs refreshing, it\'s a simple, relatively inexpensive process that actually improves the building\'s protection.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The cost of limewash application is typically higher than standard masonry paint—expect to pay a premium for both materials and specialist labour. However, for heritage properties, this isn\'t really optional. It\'s the appropriate specification that protects your investment long-term.',
+      },
+      {
+        type: 'heading',
+        content: 'Planning Considerations for Listed Buildings',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'If your property is listed (and remember, Exeter has 994 listed buildings), you\'ll need Listed Building Consent for any external decoration that affects the building\'s character. Even changing the colour of existing limewash may require consent. The local conservation officer will expect you to use appropriate traditional materials—limewash rather than modern paint.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For properties in conservation areas, you typically don\'t need consent for repainting in the same colour and material, but changing colours or materials may require planning permission. Each of Exeter\'s 20 conservation areas has specific guidance, and Topsham\'s conservation area has particularly detailed requirements given the concentration of listed buildings.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Working with experienced heritage decorators who understand these regulations is essential. We regularly liaise with conservation officers and can advise on the approval process for your specific property.',
+      },
+      {
+        type: 'heading',
+        content: 'Is Limewash Right for Your Property?',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'If you own a period property in Exeter, Topsham, or the surrounding areas, limewash deserves serious consideration—especially if you\'ve experienced damp problems, if previous modern paint has failed, or if you\'re looking to restore authentic character to your home.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The properties we work on in areas like St Leonard\'s, Pennsylvania, and along Topsham\'s waterfront have stood for centuries because they were built with breathable materials and maintained with compatible systems. Continuing that tradition with limewash isn\'t just about heritage compliance—it\'s about giving your building the best chance of standing for centuries more.',
+      },
+      {
+        type: 'paragraph',
+        content: 'At BSR Decorating, we\'ve built our reputation on understanding historic buildings and using appropriate traditional techniques. We source quality lime products, prepare surfaces correctly, and apply limewash using time-tested methods that ensure lasting results. Whether you own a Grade II listed townhouse in Exeter\'s city centre or a period cottage in Topsham\'s conservation area, we can help you maintain your property with the care and expertise it deserves.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Considering limewash for your period property? Contact BSR Decorating for expert advice and a free, no-obligation quote. With over 20 years of experience in heritage decoration across Devon, we\'ll help you make the right choice for your historic home.',
+      },
+    ],
+  },
   'commercial-decorating-exeter-business-owners-guide': {
     sections: [
       {
