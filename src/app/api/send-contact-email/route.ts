@@ -36,86 +36,88 @@ export async function POST(request: NextRequest) {
                           service === 'commercial' ? 'Commercial' : 
                           'Both Domestic & Commercial';
 
-    // Create professional email HTML (matching quote form styling)
-    const emailHTML = `
-      <!DOCTYPE html>
-      <html>
-      <head>
-        <style>
-          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-          .header { background: linear-gradient(135deg, #000000, #1a1a1a); color: white; padding: 30px; text-align: center; }
-          .logo { font-size: 28px; font-weight: bold; color: #E801F8; }
-          .container { max-width: 600px; margin: 0 auto; }
-          .content { padding: 30px; background: #f9f9f9; }
-          .contact-details { background: white; padding: 25px; border-radius: 8px; margin: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-          .detail-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee; }
-          .label { font-weight: bold; color: #E801F8; }
-          .value { text-align: right; }
-          .footer { background: #E801F8; color: white; padding: 20px; text-align: center; }
-          .urgent { background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 20px 0; }
-          .message-content { background: #f8f9fa; border-left: 4px solid #E801F8; padding: 20px; margin: 15px 0; border-radius: 8px; }
-        </style>
-      </head>
-      <body>
-        <div class="container">
-          <div class="header">
-            <div class="logo">BSR Decorating</div>
-            <p style="margin: 10px 0 0 0; font-size: 16px;">New Contact Message</p>
-          </div>
-          
-          <div class="content">
-            <div class="urgent">
-              <strong>New Contact Message Received!</strong><br>
-              A customer has sent a message through your website contact form.
-            </div>
+    // Create professional email HTML — all styles inline for email client compatibility
+    const emailHTML = `<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body style="margin:0;padding:0;font-family:Arial,sans-serif;line-height:1.6;color:#333;background:#f4f4f4;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f4;">
+    <tr><td align="center">
+      <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;background:#ffffff;">
+        <!-- Header -->
+        <tr>
+          <td style="background:#000000;color:#ffffff;padding:30px;text-align:center;">
+            <div style="font-size:28px;font-weight:bold;color:#E801F8;">BSR Decorating</div>
+            <p style="margin:10px 0 0 0;font-size:16px;color:#ffffff;">New Contact Message</p>
+          </td>
+        </tr>
+        <!-- Body -->
+        <tr>
+          <td style="padding:30px;background:#f9f9f9;">
+            <!-- Urgent banner -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="background:#fff3cd;border-left:4px solid #ffc107;padding:15px;">
+                  <strong>New Contact Message Received!</strong><br>
+                  A customer has sent a message through your website contact form.
+                </td>
+              </tr>
+            </table>
 
-            <div class="contact-details">
-              <h2 style="color: #E801F8; margin-top: 0;">Customer Details</h2>
-              
-              <div class="detail-row">
-                <span class="label">Name:</span>
-                <span class="value">${name}</span>
-              </div>
-              
-              <div class="detail-row">
-                <span class="label">Email:</span>
-                <span class="value">${email}</span>
-              </div>
-              
-              <div class="detail-row">
-                <span class="label">Phone:</span>
-                <span class="value">${phone}</span>
-              </div>
-              
-              <div class="detail-row">
-                <span class="label">Postcode:</span>
-                <span class="value">${postcode}</span>
-              </div>
-              
-              <div class="detail-row" style="border-bottom: none;">
-                <span class="label">Service Interest:</span>
-                <span class="value">${serviceDisplay}</span>
-              </div>
-            </div>
+            <!-- Customer Details -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:8px;margin-top:20px;">
+              <tr><td style="padding:25px;">
+                <h2 style="color:#E801F8;margin:0 0 15px 0;">Customer Details</h2>
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr style="border-bottom:1px solid #eee;">
+                    <td style="padding:10px 0;font-weight:bold;color:#E801F8;">Name:</td>
+                    <td style="padding:10px 0;text-align:right;">${name}</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid #eee;">
+                    <td style="padding:10px 0;font-weight:bold;color:#E801F8;">Email:</td>
+                    <td style="padding:10px 0;text-align:right;">${email}</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid #eee;">
+                    <td style="padding:10px 0;font-weight:bold;color:#E801F8;">Phone:</td>
+                    <td style="padding:10px 0;text-align:right;">${phone}</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid #eee;">
+                    <td style="padding:10px 0;font-weight:bold;color:#E801F8;">Postcode:</td>
+                    <td style="padding:10px 0;text-align:right;">${postcode}</td>
+                  </tr>
+                  <tr>
+                    <td style="padding:10px 0;font-weight:bold;color:#E801F8;">Service Interest:</td>
+                    <td style="padding:10px 0;text-align:right;">${serviceDisplay}</td>
+                  </tr>
+                </table>
+              </td></tr>
+            </table>
 
-            <div class="contact-details">
-              <h2 style="color: #E801F8; margin-top: 0;">Customer Message</h2>
-              <div class="message-content">
-                ${message}
-              </div>
-            </div>
-          </div>
-          
-          <div class="footer">
-            <h3 style="margin: 0 0 10px 0;">BSR Decorating</h3>
-            <p style="margin: 5px 0;"><strong>Phone:</strong> 01626 911236</p>
-            <p style="margin: 5px 0;"><strong>Email:</strong> info@bsrdecorating.co.uk</p>
-            <p style="margin: 5px 0;"><strong>Website:</strong> bsrdecorating.co.uk</p>
-          </div>
-        </div>
-      </body>
-      </html>
-    `;
+            <!-- Customer Message -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:8px;margin-top:20px;">
+              <tr><td style="padding:25px;">
+                <h2 style="color:#E801F8;margin:0 0 15px 0;">Customer Message</h2>
+                <div style="background:#f8f9fa;border-left:4px solid #E801F8;padding:20px;border-radius:8px;">
+                  ${message}
+                </div>
+              </td></tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Footer -->
+        <tr>
+          <td style="background:#E801F8;color:#ffffff;padding:20px;text-align:center;">
+            <h3 style="margin:0 0 10px 0;color:#ffffff;">BSR Decorating</h3>
+            <p style="margin:5px 0;color:#ffffff;"><strong>Phone:</strong> 01626 911236</p>
+            <p style="margin:5px 0;color:#ffffff;"><strong>Email:</strong> info@bsrdecorating.co.uk</p>
+            <p style="margin:5px 0;color:#ffffff;"><strong>Website:</strong> bsrdecorating.co.uk</p>
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>`;
 
     // Prepare recipient list - handle multiple emails
     const defaultEmail = process.env.EMAIL_DEFAULT || 'info@bsrdecorating.co.uk';
@@ -172,73 +174,78 @@ Please respond to the customer directly at ${email} or ${phone}.
     });
     console.log('BSR notification email sent successfully');
 
-    // Send thank you email to customer (matching quote form styling exactly)
-    const customerEmailHTML = `
-      <!DOCTYPE html>
-      <html>
-      <head>
-        <style>
-          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
-          .container { max-width: 600px; margin: 0 auto; background: #ffffff; }
-          .header { background: linear-gradient(135deg, #000000, #1a1a1a); color: white; padding: 40px 30px; text-align: center; }
-          .company-name { font-size: 32px; font-weight: bold; color: #E801F8; margin: 0; }
-          .tagline { font-size: 16px; margin: 10px 0 0 0; color: #cccccc; }
-          .content { padding: 40px 30px; }
-          .message-box { background: #f8f9fa; border-left: 4px solid #E801F8; padding: 25px; margin: 25px 0; border-radius: 8px; }
-          .highlight { color: #E801F8; font-weight: bold; }
-          .quote-reference { background: #E801F8; color: white; padding: 15px; border-radius: 8px; text-align: center; margin: 25px 0; }
-          .contact-info { background: #000000; color: white; padding: 25px; border-radius: 8px; margin: 25px 0; }
-          .contact-info h3 { color: #E801F8; margin-top: 0; }
-          .footer { background: #f1f1f1; padding: 20px 30px; text-align: center; color: #666; font-size: 14px; }
-          .service-area { background: #e9ecef; padding: 20px; border-radius: 8px; margin: 20px 0; }
-        </style>
-      </head>
-      <body>
-        <div class="container">
-          <div class="header">
-            <h1 class="company-name">BSR Decorating</h1>
-            <p class="tagline">Professional Decorating Services</p>
-          </div>
-          
-          <div class="content">
-            <h2 style="color: #E801F8; margin-top: 0;">Thank You for Your Message</h2>
-            
+    // Send thank you email to customer — all styles inline for email client compatibility
+    const customerEmailHTML = `<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body style="margin:0;padding:0;font-family:Arial,sans-serif;line-height:1.6;color:#333;background:#f4f4f4;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f4;">
+    <tr><td align="center">
+      <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;background:#ffffff;">
+        <!-- Header -->
+        <tr>
+          <td style="background:#000000;color:#ffffff;padding:40px 30px;text-align:center;">
+            <h1 style="font-size:32px;font-weight:bold;color:#E801F8;margin:0;">BSR Decorating</h1>
+            <p style="font-size:16px;margin:10px 0 0 0;color:#cccccc;">Professional Decorating Services</p>
+          </td>
+        </tr>
+        <!-- Body -->
+        <tr>
+          <td style="padding:40px 30px;">
+            <h2 style="color:#E801F8;margin:0 0 20px 0;">Thank You for Your Message</h2>
             <p>Dear ${name},</p>
-            
             <p>Thank you for contacting BSR Decorating regarding your ${serviceDisplay.toLowerCase()} decorating needs. We have received your message and our team is reviewing your enquiry.</p>
-            
-            <div class="message-box">
-              <h3 style="color: #E801F8; margin-top: 0;">What happens next?</h3>
-              <p><strong>We will contact you within 2 working days</strong> to discuss your requirements and answer any questions you may have.</p>
-              <p>Our experienced team is ready to help transform your space with our professional decorating services.</p>
-            </div>
 
-            <div class="quote-reference">
-              <h3 style="margin: 0; font-size: 18px;">Your Contact Reference</h3>
-              <p style="margin: 5px 0 0 0; font-size: 16px;">Service Interest: ${serviceDisplay} | Postcode: ${postcode} | Contact: ${phone}</p>
-            </div>
+            <!-- What happens next -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin:25px 0;">
+              <tr>
+                <td style="background:#f8f9fa;border-left:4px solid #E801F8;padding:25px;border-radius:8px;">
+                  <h3 style="color:#E801F8;margin:0 0 10px 0;">What happens next?</h3>
+                  <p><strong>We will contact you within 2 working days</strong> to discuss your requirements and answer any questions you may have.</p>
+                  <p style="margin-bottom:0;">Our experienced team is ready to help transform your space with our professional decorating services.</p>
+                </td>
+              </tr>
+            </table>
 
-            <div class="contact-info">
-              <h3>Need to speak to us sooner?</h3>
-              <p><strong>Phone:</strong> 01626 911236</p>
-              <p><strong>Email:</strong> info@bsrdecorating.co.uk</p>
-              <p><strong>Hours:</strong> Monday to Friday, 8:00 AM to 6:00 PM</p>
-            </div>
+            <!-- Contact Reference -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin:25px 0;">
+              <tr>
+                <td style="background:#E801F8;color:#ffffff;padding:15px;border-radius:8px;text-align:center;">
+                  <h3 style="margin:0;font-size:18px;color:#ffffff;">Your Contact Reference</h3>
+                  <p style="margin:5px 0 0 0;font-size:16px;color:#ffffff;">Service Interest: ${serviceDisplay} | Postcode: ${postcode} | Contact: ${phone}</p>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Contact Info -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin:25px 0;">
+              <tr>
+                <td style="background:#000000;color:#ffffff;padding:25px;border-radius:8px;">
+                  <h3 style="color:#E801F8;margin:0 0 10px 0;">Need to speak to us sooner?</h3>
+                  <p style="color:#ffffff;margin:5px 0;"><strong>Phone:</strong> 01626 911236</p>
+                  <p style="color:#ffffff;margin:5px 0;"><strong>Email:</strong> info@bsrdecorating.co.uk</p>
+                  <p style="color:#ffffff;margin:5px 0;"><strong>Hours:</strong> Monday to Friday, 8:00 AM to 6:00 PM</p>
+                </td>
+              </tr>
+            </table>
 
             <p>We look forward to helping transform your space with our professional decorating services.</p>
-            
             <p>Best regards,<br>
-            <strong class="highlight">The BSR Decorating Team</strong></p>
-          </div>
-          
-          <div class="footer">
-            <p><strong>BSR Decorating</strong> | Professional Decorating Services | South East Devon</p>
-            <p>This email was sent in response to your contact form submission on our website.</p>
-          </div>
-        </div>
-      </body>
-      </html>
-    `;
+            <strong style="color:#E801F8;">The BSR Decorating Team</strong></p>
+          </td>
+        </tr>
+        <!-- Footer -->
+        <tr>
+          <td style="background:#f1f1f1;padding:20px 30px;text-align:center;color:#666;font-size:14px;">
+            <p style="margin:0;"><strong>BSR Decorating</strong> | Professional Decorating Services | South East Devon</p>
+            <p style="margin:5px 0 0 0;">This email was sent in response to your contact form submission on our website.</p>
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>`;
 
     // Send customer thank you email
     console.log('Attempting to send customer thank you email to:', email);

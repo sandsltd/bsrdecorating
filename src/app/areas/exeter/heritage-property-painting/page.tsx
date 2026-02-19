@@ -42,18 +42,44 @@ export default function ExeterHeritagePropertyPaintingPage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": "https://bsrdecorating.co.uk/areas/exeter/heritage-property-painting#service",
+    "url": "https://bsrdecorating.co.uk/areas/exeter/heritage-property-painting",
     "name": "Heritage Property Painting Exeter",
-    "description": "Specialist heritage property and listed building painting services in Exeter's conservation areas",
+    "description": "Specialist heritage property and listed building painting services in Exeter's conservation areas. Traditional techniques, breathable paints, and period-appropriate finishes.",
+    "image": "https://bsrdecorating.co.uk/images/hero-bg.jpg",
     "provider": {
       "@type": "LocalBusiness",
+      "@id": "https://bsrdecorating.co.uk/#business",
       "name": "BSR Decorating",
-      "telephone": "+441626911236"
+      "telephone": "+441626911236",
+      "email": "info@bsrdecorating.co.uk",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Exeter",
+        "addressRegion": "Devon",
+        "addressCountry": "GB"
+      }
     },
     "serviceType": "Heritage Property Painting",
     "areaServed": {
       "@type": "City",
       "name": "Exeter",
       "addressRegion": "Devon"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "GBP",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2026-01-01"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Heritage Painting Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Listed Building Painting Exeter" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Conservation Area Decorating Exeter" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Period Property Restoration Exeter" } }
+      ]
     }
   };
 

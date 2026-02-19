@@ -42,18 +42,45 @@ export default function ExeterRentalRefreshPaintingPage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": "https://bsrdecorating.co.uk/areas/exeter/rental-refresh-painting#service",
+    "url": "https://bsrdecorating.co.uk/areas/exeter/rental-refresh-painting",
     "name": "Rental Refresh Painting Exeter",
-    "description": "Professional rental property refresh painting services in Exeter for landlords and property managers",
+    "description": "Professional rental property refresh painting services in Exeter for landlords and property managers. Fast turnaround between tenancies to minimise void periods.",
+    "image": "https://bsrdecorating.co.uk/images/hero-bg.jpg",
     "provider": {
       "@type": "LocalBusiness",
+      "@id": "https://bsrdecorating.co.uk/#business",
       "name": "BSR Decorating",
-      "telephone": "+441626911236"
+      "telephone": "+441626911236",
+      "email": "info@bsrdecorating.co.uk",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Exeter",
+        "addressRegion": "Devon",
+        "addressCountry": "GB"
+      }
     },
     "serviceType": "Rental Refresh Painting",
     "areaServed": {
       "@type": "City",
       "name": "Exeter",
       "addressRegion": "Devon"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "GBP",
+      "priceRange": "£400-£1,400",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2026-01-01"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Rental Refresh Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "End of Tenancy Decorating Exeter" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Landlord Painting Service Exeter" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "HMO Property Painting Exeter" } }
+      ]
     }
   };
 

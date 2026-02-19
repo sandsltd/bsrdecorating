@@ -243,7 +243,7 @@ export default function ExeterPage() {
         <section className="relative py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-bsr-white mb-6">
-              Luxury Decorators in <span className="text-bsr-highlight">Exeter</span> – Heritage & Commercial Specialists
+              Painter and Decorator in <span className="text-bsr-highlight">Exeter</span> – Heritage & Commercial Specialists
             </h1>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8">
               BSR Decorating provides premium painting and decorating services throughout Exeter's most prestigious areas, including St. Leonard's, Pennsylvania, and Newtown. 

@@ -29,129 +29,123 @@ export async function POST(request: NextRequest) {
     if (formData.outOfHours) additionalServices.push('Out-of-Hours Working');
     if (formData.otherCommercial) additionalServices.push('Other (see project details)');
 
-    // Create professional email HTML
-    const emailHTML = `
-      <!DOCTYPE html>
-      <html>
-      <head>
-        <style>
-          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-          .header { background: linear-gradient(135deg, #000000, #1a1a1a); color: white; padding: 30px; text-align: center; }
-          .logo { font-size: 28px; font-weight: bold; color: #E801F8; }
-          .container { max-width: 600px; margin: 0 auto; }
-          .content { padding: 30px; background: #f9f9f9; }
-          .quote-details { background: white; padding: 25px; border-radius: 8px; margin: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-          .detail-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee; }
-          .label { font-weight: bold; color: #E801F8; }
-          .value { text-align: right; }
-          .coverage-badge { 
-            display: inline-block; 
-            padding: 8px 16px; 
-            border-radius: 20px; 
-            font-weight: bold; 
-            margin: 10px 0;
-          }
-          .main-coverage { background: #d4edda; color: #155724; }
-          .larger-coverage { background: #cce7ff; color: #004085; }
-          .outside-coverage { background: #f8d7da; color: #721c24; }
-          .footer { background: #E801F8; color: white; padding: 20px; text-align: center; }
-          .urgent { background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 20px 0; }
-        </style>
-      </head>
-      <body>
-        <div class="container">
-          <div class="header">
-            <div class="logo">BSR Decorating</div>
-            <p style="margin: 10px 0 0 0; font-size: 16px;">New Quote Request</p>
-          </div>
-          
-          <div class="content">
-            <div class="urgent">
-              <strong>New Quote Request Received!</strong><br>
-              A potential customer has submitted a quote request through your website.
-            </div>
+    // Coverage badge colours
+    const coverageBadgeStyle = formData.postcodeStatus === 'main'
+      ? 'background:#d4edda;color:#155724;'
+      : formData.postcodeStatus === 'larger'
+        ? 'background:#cce7ff;color:#004085;'
+        : 'background:#f8d7da;color:#721c24;';
 
-            <div class="quote-details">
-              <h2 style="color: #E801F8; margin-top: 0;">Customer Details</h2>
-              
-              <div class="detail-row">
-                <span class="label">Name:</span>
-                <span class="value">${formData.name}</span>
-              </div>
-              
-              <div class="detail-row">
-                <span class="label">Email:</span>
-                <span class="value">${formData.email}</span>
-              </div>
-              
-              ${formData.phone ? `
-              <div class="detail-row">
-                <span class="label">Phone:</span>
-                <span class="value">${formData.phone}</span>
-              </div>
-              ` : ''}
-              
-              <div class="detail-row">
-                <span class="label">Postcode:</span>
-                <span class="value">${formData.postcode}</span>
-              </div>
-              
-              <div style="text-align: center; margin: 15px 0;">
-                <span class="coverage-badge ${formData.postcodeStatus === 'main' ? 'main-coverage' : formData.postcodeStatus === 'larger' ? 'larger-coverage' : 'outside-coverage'}">
-                  ${coverageArea}
-                </span>
-              </div>
-            </div>
+    // Create professional email HTML — all styles inline for email client compatibility
+    const emailHTML = `<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body style="margin:0;padding:0;font-family:Arial,sans-serif;line-height:1.6;color:#333;background:#f4f4f4;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f4;">
+    <tr><td align="center">
+      <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;background:#ffffff;">
+        <!-- Header -->
+        <tr>
+          <td style="background:#000000;color:#ffffff;padding:30px;text-align:center;">
+            <div style="font-size:28px;font-weight:bold;color:#E801F8;">BSR Decorating</div>
+            <p style="margin:10px 0 0 0;font-size:16px;color:#ffffff;">New Quote Request</p>
+          </td>
+        </tr>
+        <!-- Body -->
+        <tr>
+          <td style="padding:30px;background:#f9f9f9;">
+            <!-- Urgent banner -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="background:#fff3cd;border-left:4px solid #ffc107;padding:15px;margin-bottom:20px;">
+                  <strong>New Quote Request Received!</strong><br>
+                  A potential customer has submitted a quote request through your website.
+                </td>
+              </tr>
+            </table>
 
-            <div class="quote-details">
-              <h2 style="color: #E801F8; margin-top: 0;">Project Details</h2>
-              
-              <div class="detail-row">
-                <span class="label">Service Type:</span>
-                <span class="value">${formData.serviceType.charAt(0).toUpperCase() + formData.serviceType.slice(1)}</span>
-              </div>
-              
-              ${formData.numberOfRooms ? `
-              <div class="detail-row">
-                <span class="label">Number of Rooms:</span>
-                <span class="value">${formData.numberOfRooms}</span>
-              </div>
-              ` : ''}
-              
-              ${additionalServices.length > 0 ? `
-              <div class="detail-row">
-                <span class="label">Additional Services:</span>
-                <span class="value">${additionalServices.join(', ')}</span>
-              </div>
-              ` : ''}
-              
-              ${formData.message ? `
-              <div style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #E801F8;">
-                <h4 style="color: #E801F8; margin: 0 0 10px 0; font-size: 16px;">Customer Message:</h4>
-                <p style="margin: 0; color: #333; line-height: 1.5; white-space: pre-wrap;">${formData.message}</p>
-              </div>
-              ` : ''}
-            </div>
+            <!-- Customer Details -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="background:#ffffff;padding:25px;border-radius:8px;margin-top:20px;">
+              <tr><td style="padding:25px;">
+                <h2 style="color:#E801F8;margin:0 0 15px 0;">Customer Details</h2>
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr style="border-bottom:1px solid #eee;">
+                    <td style="padding:10px 0;font-weight:bold;color:#E801F8;">Name:</td>
+                    <td style="padding:10px 0;text-align:right;">${formData.name}</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid #eee;">
+                    <td style="padding:10px 0;font-weight:bold;color:#E801F8;">Email:</td>
+                    <td style="padding:10px 0;text-align:right;">${formData.email}</td>
+                  </tr>
+                  ${formData.phone ? `<tr style="border-bottom:1px solid #eee;">
+                    <td style="padding:10px 0;font-weight:bold;color:#E801F8;">Phone:</td>
+                    <td style="padding:10px 0;text-align:right;">${formData.phone}</td>
+                  </tr>` : ''}
+                  <tr style="border-bottom:1px solid #eee;">
+                    <td style="padding:10px 0;font-weight:bold;color:#E801F8;">Postcode:</td>
+                    <td style="padding:10px 0;text-align:right;">${formData.postcode}</td>
+                  </tr>
+                </table>
+                <div style="text-align:center;margin:15px 0;">
+                  <span style="display:inline-block;padding:8px 16px;border-radius:20px;font-weight:bold;${coverageBadgeStyle}">${coverageArea}</span>
+                </div>
+              </td></tr>
+            </table>
 
-            <div style="background: #e9ecef; padding: 20px; border-radius: 8px; margin: 20px 0;">
-              <h3 style="color: #E801F8; margin-top: 0;">Next Steps:</h3>
-              <ul style="margin: 0; padding-left: 20px;">
-                <li>Review the customer's location and project requirements</li>
-                <li>Contact the customer within 24 hours</li>
-                <li>Schedule a site visit if needed</li>
-                <li>Prepare and send a detailed quote</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="footer">
-            <p style="margin: 0;"><strong>BSR Decorating</strong></p>
-            <p style="margin: 5px 0 0 0;">Professional Decorating Services - South East Devon</p>
-          </div>
-        </div>
-      </body>
-      </html>
-    `;
+            <!-- Project Details -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="background:#ffffff;padding:25px;border-radius:8px;margin-top:20px;">
+              <tr><td style="padding:25px;">
+                <h2 style="color:#E801F8;margin:0 0 15px 0;">Project Details</h2>
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr style="border-bottom:1px solid #eee;">
+                    <td style="padding:10px 0;font-weight:bold;color:#E801F8;">Service Type:</td>
+                    <td style="padding:10px 0;text-align:right;">${formData.serviceType.charAt(0).toUpperCase() + formData.serviceType.slice(1)}</td>
+                  </tr>
+                  ${formData.numberOfRooms ? `<tr style="border-bottom:1px solid #eee;">
+                    <td style="padding:10px 0;font-weight:bold;color:#E801F8;">Number of Rooms:</td>
+                    <td style="padding:10px 0;text-align:right;">${formData.numberOfRooms}</td>
+                  </tr>` : ''}
+                  ${additionalServices.length > 0 ? `<tr style="border-bottom:1px solid #eee;">
+                    <td style="padding:10px 0;font-weight:bold;color:#E801F8;">Additional Services:</td>
+                    <td style="padding:10px 0;text-align:right;">${additionalServices.join(', ')}</td>
+                  </tr>` : ''}
+                </table>
+                ${formData.message ? `
+                <div style="margin-top:20px;padding:15px;background:#f8f9fa;border-radius:8px;border-left:4px solid #E801F8;">
+                  <h4 style="color:#E801F8;margin:0 0 10px 0;font-size:16px;">Customer Message:</h4>
+                  <p style="margin:0;color:#333;line-height:1.5;white-space:pre-wrap;">${formData.message}</p>
+                </div>` : ''}
+              </td></tr>
+            </table>
+
+            <!-- Next Steps -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:20px;">
+              <tr>
+                <td style="background:#e9ecef;padding:20px;border-radius:8px;">
+                  <h3 style="color:#E801F8;margin:0 0 10px 0;">Next Steps:</h3>
+                  <ul style="margin:0;padding-left:20px;">
+                    <li>Review the customer's location and project requirements</li>
+                    <li>Contact the customer within 24 hours</li>
+                    <li>Schedule a site visit if needed</li>
+                    <li>Prepare and send a detailed quote</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Footer -->
+        <tr>
+          <td style="background:#E801F8;color:#ffffff;padding:20px;text-align:center;">
+            <p style="margin:0;color:#ffffff;"><strong>BSR Decorating</strong></p>
+            <p style="margin:5px 0 0 0;color:#ffffff;">Professional Decorating Services - South East Devon</p>
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>`;
 
     // Prepare recipient list - handle multiple emails
     const defaultEmail = process.env.EMAIL_DEFAULT || 'info@bsrdecorating.co.uk';
@@ -211,73 +205,78 @@ ${formData.message}
     });
     console.log('BSR notification email sent successfully');
 
-    // Send thank you email to customer
-    const customerEmailHTML = `
-      <!DOCTYPE html>
-      <html>
-      <head>
-        <style>
-          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
-          .container { max-width: 600px; margin: 0 auto; background: #ffffff; }
-          .header { background: linear-gradient(135deg, #000000, #1a1a1a); color: white; padding: 40px 30px; text-align: center; }
-          .company-name { font-size: 32px; font-weight: bold; color: #E801F8; margin: 0; }
-          .tagline { font-size: 16px; margin: 10px 0 0 0; color: #cccccc; }
-          .content { padding: 40px 30px; }
-          .message-box { background: #f8f9fa; border-left: 4px solid #E801F8; padding: 25px; margin: 25px 0; border-radius: 8px; }
-          .highlight { color: #E801F8; font-weight: bold; }
-          .quote-reference { background: #E801F8; color: white; padding: 15px; border-radius: 8px; text-align: center; margin: 25px 0; }
-          .contact-info { background: #000000; color: white; padding: 25px; border-radius: 8px; margin: 25px 0; }
-          .contact-info h3 { color: #E801F8; margin-top: 0; }
-          .footer { background: #f1f1f1; padding: 20px 30px; text-align: center; color: #666; font-size: 14px; }
-          .service-area { background: #e9ecef; padding: 20px; border-radius: 8px; margin: 20px 0; }
-        </style>
-      </head>
-      <body>
-        <div class="container">
-          <div class="header">
-            <h1 class="company-name">BSR Decorating</h1>
-            <p class="tagline">Professional Decorating Services</p>
-          </div>
-          
-          <div class="content">
-            <h2 style="color: #E801F8; margin-top: 0;">Thank You for Your Quote Request</h2>
-            
+    // Send thank you email to customer — all styles inline for email client compatibility
+    const customerEmailHTML = `<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body style="margin:0;padding:0;font-family:Arial,sans-serif;line-height:1.6;color:#333;background:#f4f4f4;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f4;">
+    <tr><td align="center">
+      <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;background:#ffffff;">
+        <!-- Header -->
+        <tr>
+          <td style="background:#000000;color:#ffffff;padding:40px 30px;text-align:center;">
+            <h1 style="font-size:32px;font-weight:bold;color:#E801F8;margin:0;">BSR Decorating</h1>
+            <p style="font-size:16px;margin:10px 0 0 0;color:#cccccc;">Professional Decorating Services</p>
+          </td>
+        </tr>
+        <!-- Body -->
+        <tr>
+          <td style="padding:40px 30px;">
+            <h2 style="color:#E801F8;margin:0 0 20px 0;">Thank You for Your Quote Request</h2>
             <p>Dear ${formData.name},</p>
-            
             <p>Thank you for choosing BSR Decorating for your ${formData.serviceType} decorating project. We have received your quote request and our team is reviewing the details you provided.</p>
-            
-            <div class="message-box">
-              <h3 style="color: #E801F8; margin-top: 0;">What happens next?</h3>
-              <p><strong>We will contact you within 2 working days</strong> to discuss your project requirements and arrange a convenient time for a site visit if needed.</p>
-              <p>Our experienced team will provide you with a detailed, competitive quote tailored to your specific needs.</p>
-            </div>
 
-            <div class="quote-reference">
-              <h3 style="margin: 0; font-size: 18px;">Your Quote Reference</h3>
-              <p style="margin: 5px 0 0 0; font-size: 16px;">Location: ${formData.postcode} | Service: ${formData.serviceType.charAt(0).toUpperCase() + formData.serviceType.slice(1)}</p>
-            </div>
+            <!-- What happens next -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin:25px 0;">
+              <tr>
+                <td style="background:#f8f9fa;border-left:4px solid #E801F8;padding:25px;border-radius:8px;">
+                  <h3 style="color:#E801F8;margin:0 0 10px 0;">What happens next?</h3>
+                  <p><strong>We will contact you within 2 working days</strong> to discuss your project requirements and arrange a convenient time for a site visit if needed.</p>
+                  <p style="margin-bottom:0;">Our experienced team will provide you with a detailed, competitive quote tailored to your specific needs.</p>
+                </td>
+              </tr>
+            </table>
 
-            <div class="contact-info">
-              <h3>Need to speak to us sooner?</h3>
-              <p><strong>Phone:</strong> 01626 911236</p>
-              <p><strong>Email:</strong> info@bsrdecorating.co.uk</p>
-              <p>We are available Monday to Friday, 8:00 AM to 6:00 PM</p>
-            </div>
+            <!-- Quote Reference -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin:25px 0;">
+              <tr>
+                <td style="background:#E801F8;color:#ffffff;padding:15px;border-radius:8px;text-align:center;">
+                  <h3 style="margin:0;font-size:18px;color:#ffffff;">Your Quote Reference</h3>
+                  <p style="margin:5px 0 0 0;font-size:16px;color:#ffffff;">Location: ${formData.postcode} | Service: ${formData.serviceType.charAt(0).toUpperCase() + formData.serviceType.slice(1)}</p>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Contact Info -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin:25px 0;">
+              <tr>
+                <td style="background:#000000;color:#ffffff;padding:25px;border-radius:8px;">
+                  <h3 style="color:#E801F8;margin:0 0 10px 0;">Need to speak to us sooner?</h3>
+                  <p style="color:#ffffff;margin:5px 0;"><strong>Phone:</strong> 01626 911236</p>
+                  <p style="color:#ffffff;margin:5px 0;"><strong>Email:</strong> info@bsrdecorating.co.uk</p>
+                  <p style="color:#ffffff;margin:5px 0;">We are available Monday to Friday, 8:00 AM to 6:00 PM</p>
+                </td>
+              </tr>
+            </table>
 
             <p>We look forward to helping transform your space with our professional decorating services.</p>
-            
             <p>Best regards,<br>
-            <span class="highlight">The BSR Decorating Team</span></p>
-          </div>
-          
-          <div class="footer">
-            <p><strong>BSR Decorating</strong> | Professional Decorating Services | South East Devon</p>
-            <p>This email was sent in response to your quote request on our website.</p>
-          </div>
-        </div>
-      </body>
-      </html>
-    `;
+            <strong style="color:#E801F8;">The BSR Decorating Team</strong></p>
+          </td>
+        </tr>
+        <!-- Footer -->
+        <tr>
+          <td style="background:#f1f1f1;padding:20px 30px;text-align:center;color:#666;font-size:14px;">
+            <p style="margin:0;"><strong>BSR Decorating</strong> | Professional Decorating Services | South East Devon</p>
+            <p style="margin:5px 0 0 0;">This email was sent in response to your quote request on our website.</p>
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>`;
 
     // Send customer thank you email
     console.log('Attempting to send customer thank you email to:', formData.email);

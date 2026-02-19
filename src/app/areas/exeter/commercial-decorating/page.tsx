@@ -42,18 +42,44 @@ export default function ExeterCommercialDecoratingPage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": "https://bsrdecorating.co.uk/areas/exeter/commercial-decorating#service",
+    "url": "https://bsrdecorating.co.uk/areas/exeter/commercial-decorating",
     "name": "Commercial Decorating Exeter",
-    "description": "Professional commercial decorating services in Exeter city centre, business parks, and office developments",
+    "description": "Professional commercial decorating services in Exeter city centre, business parks, and office developments. Office painting, retail refurbishment, and commercial property maintenance.",
+    "image": "https://bsrdecorating.co.uk/images/hero-bg.jpg",
     "provider": {
       "@type": "LocalBusiness",
+      "@id": "https://bsrdecorating.co.uk/#business",
       "name": "BSR Decorating",
-      "telephone": "+441626911236"
+      "telephone": "+441626911236",
+      "email": "info@bsrdecorating.co.uk",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Exeter",
+        "addressRegion": "Devon",
+        "addressCountry": "GB"
+      }
     },
     "serviceType": "Commercial Decorating",
     "areaServed": {
       "@type": "City",
       "name": "Exeter",
       "addressRegion": "Devon"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "GBP",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2026-01-01"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Commercial Decorating Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Office Painting Exeter" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Retail Shop Decorating Exeter" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Property Maintenance Exeter" } }
+      ]
     }
   };
 
