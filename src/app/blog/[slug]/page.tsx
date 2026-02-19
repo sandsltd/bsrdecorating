@@ -56,6 +56,7 @@ function getBlogKeywords(slug: string): string {
     'best-exterior-paint-devon-coastal-weather': "best paint devon weather, best exterior paint devon coastal weather",
     'commercial-decorating-exeter-business-owners-guide': "commercial decorator exeter, commercial decorating exeter business owners guide"
       'limewash-paint-period-properties-devon-guide': "limewash paint old house, limewash paint period properties devon guide",
+      'solving-damp-paint-problems-exeter-homes': "damp walls painting exeter, solving damp paint problems exeter homes",
   };
   return keywordMap[slug] || "";
 }

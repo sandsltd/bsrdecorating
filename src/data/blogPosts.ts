@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 24,
+    title: 'Solving Damp and Paint Problems in Exeter Homes: A Professional Guide',
+    excerpt: 'Discover why damp causes paint to fail in Exeter homes and how professional decorators tackle the root causes for lasting results.',
+    category: 'Expert Advice',
+    date: '2026-02-19',
+    readTime: '9 min read',
+    image: '/images/blog/21-color-shade-samples.webp',
+    slug: 'solving-damp-paint-problems-exeter-homes',
+  },
+  {
     id: 23,
     title: 'Limewash Paint: Everything You Need to Know for Period Properties in Devon',
     excerpt: 'Discover why limewash paint is the traditional choice for heritage homes and how it protects historic buildings across Exeter and Topsham.',
