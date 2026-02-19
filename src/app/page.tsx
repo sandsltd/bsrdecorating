@@ -112,7 +112,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <div className="inline-flex items-center space-x-2 bg-bsr-highlight bg-opacity-20 border border-bsr-highlight rounded-full px-6 py-2 mb-6">
-              <span className="text-bsr-highlight font-semibold">Why Choose Us</span>
+              <span className="text-bsr-white font-semibold">Why Choose Us</span>
             </div>
             <h2 className="text-4xl font-bold text-bsr-white mb-6">
               Why Choose <span className="text-bsr-highlight">BSR Decorating</span>
@@ -480,9 +480,8 @@ export default function Home() {
                   <Link
                     href={`/blog/${post.slug}`}
                     className="inline-flex items-center space-x-2 text-bsr-highlight hover:text-[#A800B6] font-medium transition-colors duration-200"
-                    aria-label={`Read more about ${post.title}`}
                   >
-                    <span>Read More</span>
+                    <span>Read more: {post.title}</span>
                     <ArrowRight size={16} />
                   </Link>
                 </div>

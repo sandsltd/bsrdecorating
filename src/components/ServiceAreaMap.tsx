@@ -401,7 +401,7 @@ const ServiceAreaMap = () => {
       <div className="space-y-8">
         {/* Map Key Card - Above Map */}
         <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
-          <h3 className="text-lg font-semibold text-bsr-highlight mb-4">Map Key</h3>
+          <h3 className="text-lg font-semibold text-bsr-white mb-4">Map Key</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 rounded-full bg-bsr-highlight border-2 border-white"></div>
@@ -437,7 +437,7 @@ const ServiceAreaMap = () => {
           <div className="lg:w-80 space-y-6">
             {/* Service Areas Card */}
             <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
-              <h4 className="text-lg font-semibold text-bsr-highlight mb-4">Covering South East Devon</h4>
+              <h4 className="text-lg font-semibold text-bsr-white mb-4">Covering South East Devon</h4>
               <div className="space-y-3">
                 <div>
                   <h5 className="text-sm font-semibold text-bsr-white mb-2">Main Coverage</h5>
