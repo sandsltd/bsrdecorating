@@ -180,7 +180,7 @@ export default function KitchenSprayingPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={() => openQuoteModal()}
-                className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+                className="bg-bsr-highlight hover:bg-[#A800B6] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
               >
                 <Phone size={20} />
                 <span>Get Free Kitchen Spraying Quote</span>
@@ -296,7 +296,7 @@ export default function KitchenSprayingPage() {
             <div className="text-center mt-8">
               <Link
                 href="/portfolio"
-                className="text-bsr-highlight hover:text-[#d001e8] font-medium inline-flex items-center space-x-2 transition-colors duration-200"
+                className="text-bsr-highlight hover:text-[#A800B6] font-medium inline-flex items-center space-x-2 transition-colors duration-200"
               >
                 <span>View Our Full Portfolio</span>
                 <ArrowRight size={16} />
@@ -433,7 +433,7 @@ export default function KitchenSprayingPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={() => openQuoteModal()}
-                className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+                className="bg-bsr-highlight hover:bg-[#A800B6] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
               >
                 <Phone size={20} />
                 <span>Get Your Free Quote</span>

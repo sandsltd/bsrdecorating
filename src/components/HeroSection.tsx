@@ -49,9 +49,9 @@ const HeroSection = () => {
       {/* Image Background Slideshow */}
       <div className="absolute inset-0 overflow-hidden">
         {backgroundImages.map((image, index) => {
-          // Only render first 3 images initially for better performance
-          const shouldRender = index <= 2 || index === currentImageIndex;
-          
+          // Only render current and adjacent images for better performance
+          const shouldRender = index === 0 || index === currentImageIndex || index === (currentImageIndex + 1) % backgroundImages.length;
+
           return shouldRender ? (
             <Image
               key={image}
@@ -67,7 +67,7 @@ const HeroSection = () => {
               priority={index === 0}
               loading={index === 0 ? 'eager' : 'lazy'}
               sizes="100vw"
-              quality={index === 0 ? 90 : 75}
+              quality={75}
               fetchPriority={index === 0 ? 'high' : 'low'}
             />
           ) : null;
@@ -155,19 +155,19 @@ const HeroSection = () => {
                   loop
                   muted
                   playsInline
-                  preload="auto"
+                  preload="metadata"
                 >
                   <source src="/videos/hero-background.mp4" type="video/mp4" />
                 </video>
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-bsr-black/60 via-transparent to-transparent"></div>
               </div>
-              
+
               {/* Experience Badge */}
               <div className="absolute -top-4 -right-4 bg-bsr-black/90 backdrop-blur-sm rounded-full px-4 py-2 border border-bsr-yellow">
                 <span className="text-bsr-yellow font-semibold text-sm">20+ Years Experience</span>
               </div>
-              
+
               {/* BSR Logo Badge */}
               <div className="absolute -bottom-4 -left-4">
                 <Image
@@ -192,7 +192,7 @@ const HeroSection = () => {
               </button>
               <Link
                 href="/portfolio"
-                className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl"
+                className="bg-bsr-highlight hover:bg-[#A800B6] text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl"
               >
                 <span>Check Our Work</span>
                 <ArrowRight size={20} />

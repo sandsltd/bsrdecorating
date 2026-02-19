@@ -193,7 +193,7 @@ export default function DawlishPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => openQuoteModal()}
-              className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
+              className="bg-bsr-highlight hover:bg-[#A800B6] text-bsr-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
             >
               Get Free Quote
             </button>
@@ -385,7 +385,7 @@ export default function DawlishPage() {
           <div className="text-center mt-8">
             <button
               onClick={() => openQuoteModal()}
-              className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+              className="bg-bsr-highlight hover:bg-[#A800B6] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
             >
               <Phone size={20} />
               <span>Get Your Free Dawlish Quote</span>

@@ -77,7 +77,7 @@ export default function CommunityPage() {
             {/* Content */}
             <div>
               <div className="flex items-center space-x-3 mb-6">
-                <div className="bg-[#0B7EC8] p-3 rounded-full">
+                <div className="bg-[#0970B5] p-3 rounded-full">
                   {/* Wave icon representing ocean/environment */}
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-white">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="currentColor"/>
@@ -88,7 +88,7 @@ export default function CommunityPage() {
               
               <div className="mb-6">
                 <div className="flex items-center space-x-4 mb-4">
-                  <div className="text-[#0B7EC8] font-bold text-lg">Supporting</div>
+                  <div className="text-[#0970B5] font-bold text-lg">Supporting</div>
                   <Image
                     src="/images/logo-2.png"
                     alt="Surfers Against Sewage"
@@ -101,20 +101,20 @@ export default function CommunityPage() {
               
               <p className="text-lg text-gray-300 mb-6 leading-relaxed">
                 At BSR Decorating we&apos;re committed to doing more than just transforming properties. We proudly donate to 
-                <strong className="text-[#0B7EC8]"> Surfers Against Sewage</strong>, helping to protect our coastlines and marine life.
+                <strong className="text-[#0970B5]"> Surfers Against Sewage</strong>, helping to protect our coastlines and marine life.
               </p>
 
-              <div className="bg-[#0B7EC8]/10 border-l-4 border-[#0B7EC8] p-4 mb-6">
+              <div className="bg-[#0970B5]/10 border-l-4 border-[#0970B5] p-4 mb-6">
                 <p className="text-gray-300 italic">
                   &ldquo;We are Ocean Activists. We are the voice of the ocean. Campaigning for a thriving ocean, thriving people.&rdquo; 
-                  <span className="text-[#0B7EC8] font-semibold">- Surfers Against Sewage</span>
+                  <span className="text-[#0970B5] font-semibold">- Surfers Against Sewage</span>
                 </p>
               </div>
               
               <p className="text-gray-300 mb-6 leading-relaxed">
                 SAS leads the fight against sewage pollution and plastic waste through their 
-                <strong className="text-[#0B7EC8]"> #EndSewagePollution campaign</strong> and 
-                <strong className="text-[#0B7EC8]"> The People vs Plastic</strong> movement. As Ocean Activists, 
+                <strong className="text-[#0970B5]"> #EndSewagePollution campaign</strong> and 
+                <strong className="text-[#0970B5]"> The People vs Plastic</strong> movement. As Ocean Activists, 
                 they work tirelessly to clean up our waterways and hold polluters to account.
               </p>
               
@@ -127,9 +127,9 @@ export default function CommunityPage() {
                 Every project we complete doesn&apos;t just look great – <strong className="text-bsr-highlight">it leaves a cleaner footprint behind</strong>.
               </p>
 
-              <div className="bg-bsr-black bg-opacity-50 rounded-lg p-6 border border-[#0B7EC8]/30">
-                <h4 className="font-semibold text-[#0B7EC8] mb-3 flex items-center space-x-2">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-[#0B7EC8]">
+              <div className="bg-bsr-black bg-opacity-50 rounded-lg p-6 border border-[#0970B5]/30">
+                <h4 className="font-semibold text-[#0970B5] mb-3 flex items-center space-x-2">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-[#0970B5]">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
                   </svg>
                   <span>Our Eco-Friendly Commitment</span>
@@ -148,7 +148,7 @@ export default function CommunityPage() {
                   href="https://www.sas.org.uk/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#0B7EC8] hover:bg-[#095A9C] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+                  className="bg-[#0970B5] hover:bg-[#095A9C] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
                 >
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-white">
                     <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" fill="currentColor"/>
@@ -157,7 +157,7 @@ export default function CommunityPage() {
                 </a>
                 <a
                   href="mailto:info@bsrdecorating.co.uk"
-                  className="border-2 border-[#0B7EC8] text-[#0B7EC8] hover:bg-[#0B7EC8] hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200"
+                  className="border-2 border-[#0970B5] text-[#0970B5] hover:bg-[#0970B5] hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200"
                 >
                   Ask About Our Eco-Friendly Options
                 </a>
@@ -166,11 +166,11 @@ export default function CommunityPage() {
 
             {/* Visual Elements */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-[#0B7EC8]/20 to-bsr-highlight/20 rounded-2xl p-8 border border-[#0B7EC8]/30">
+              <div className="bg-gradient-to-br from-[#0970B5]/20 to-bsr-highlight/20 rounded-2xl p-8 border border-[#0970B5]/30">
                 {/* Ocean/Wave visualization */}
                 <div className="text-center mb-6">
                   <div className="text-6xl mb-4">🌊</div>
-                  <h3 className="text-2xl font-bold text-[#0B7EC8] mb-2">Clean Coasts</h3>
+                  <h3 className="text-2xl font-bold text-[#0970B5] mb-2">Clean Coasts</h3>
                   <p className="text-gray-300">Protected Marine Life</p>
                 </div>
                 
@@ -232,7 +232,7 @@ export default function CommunityPage() {
                   href="https://infocus-charity.org.uk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+                  className="bg-bsr-highlight hover:bg-[#A800B6] text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
                 >
                   <Heart size={18} />
                   <span>Support the Cause</span>
@@ -400,7 +400,7 @@ export default function CommunityPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:info@bsrdecorating.co.uk"
-              className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+              className="bg-bsr-highlight hover:bg-[#A800B6] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
             >
               <Mail size={20} />
               <span>Email Us About Community Projects</span>

@@ -187,7 +187,7 @@ const ContactForm = ({ onSuccess }: ContactFormProps) => {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full bg-bsr-highlight hover:bg-[#d001e8] disabled:bg-gray-600 text-bsr-white px-6 py-3 rounded-md font-medium transition-colors duration-200 flex items-center justify-center space-x-2"
+        className="w-full bg-bsr-highlight hover:bg-[#A800B6] disabled:bg-gray-600 text-bsr-white px-6 py-3 rounded-md font-medium transition-colors duration-200 flex items-center justify-center space-x-2"
       >
         {isSubmitting ? (
           <>

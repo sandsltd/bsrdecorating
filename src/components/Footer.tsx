@@ -111,6 +111,7 @@ const Footer = () => {
                   href="https://facebook.com/bsrdecorating"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Follow BSR Decorating on Facebook"
                   className="bg-bsr-gray hover:bg-bsr-highlight p-2 rounded-full transition-colors duration-200 group"
                 >
                   <Facebook size={20} className="text-gray-300 group-hover:text-bsr-white" />
@@ -119,6 +120,7 @@ const Footer = () => {
                   href="https://instagram.com/bsrdecorating"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Follow BSR Decorating on Instagram"
                   className="bg-bsr-gray hover:bg-bsr-highlight p-2 rounded-full transition-colors duration-200 group"
                 >
                   <Instagram size={20} className="text-gray-300 group-hover:text-bsr-white" />
@@ -127,6 +129,7 @@ const Footer = () => {
                   href="https://www.tiktok.com/@bsr.decorating"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Follow BSR Decorating on TikTok"
                   className="bg-bsr-gray hover:bg-bsr-highlight p-2 rounded-full transition-colors duration-200 group"
                 >
                   {/* Custom TikTok Icon */}

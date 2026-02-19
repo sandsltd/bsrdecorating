@@ -119,7 +119,7 @@ const ServiceAreaMap = () => {
         
         // Add logo image
         const img = document.createElement('img');
-        img.src = '/Logos/BSR Logo-7.png';
+        img.src = '/_next/image?url=%2FLogos%2FBSR%20Logo-7.png&w=128&q=75';
         img.style.width = '60px';
         img.style.height = '60px';
         img.style.objectFit = 'contain';
@@ -401,7 +401,7 @@ const ServiceAreaMap = () => {
       <div className="space-y-8">
         {/* Map Key Card - Above Map */}
         <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
-          <h4 className="text-lg font-semibold text-bsr-highlight mb-4">Map Key</h4>
+          <h3 className="text-lg font-semibold text-bsr-highlight mb-4">Map Key</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 rounded-full bg-bsr-highlight border-2 border-white"></div>

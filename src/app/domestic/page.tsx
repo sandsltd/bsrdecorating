@@ -294,7 +294,7 @@ export default function DomesticPage() {
 
           {/* CTA after Why Choose Us */}
           <div className="text-center mt-12">
-            <div className="bg-gradient-to-r from-bsr-highlight to-[#d001e8] rounded-lg p-8 max-w-3xl mx-auto">
+            <div className="bg-gradient-to-r from-bsr-highlight to-[#A800B6] rounded-lg p-8 max-w-3xl mx-auto">
               <h3 className="text-2xl font-bold text-bsr-white mb-3">
                 Experience the BSR Difference
               </h3>

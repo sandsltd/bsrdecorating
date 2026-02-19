@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'bsr-highlight': '#E801F8',
+        'bsr-highlight': '#C400D4',
         'bsr-blue': '#0E2168',
         'bsr-blue-light': '#1a4b8c',
         'bsr-yellow': '#F7B801',

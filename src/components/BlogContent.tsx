@@ -33,7 +33,7 @@ export default function BlogContent({ sections }: BlogContentProps) {
         <Link
           key={match.index}
           href={match[2]}
-          className="text-bsr-highlight hover:text-[#d001e8] underline font-medium transition-colors duration-200"
+          className="text-bsr-highlight hover:text-[#A800B6] underline font-medium transition-colors duration-200"
         >
           {match[1]}
         </Link>
@@ -155,7 +155,7 @@ export default function BlogContent({ sections }: BlogContentProps) {
             <div key={index} className="my-6">
               <Link
                 href={section.href}
-                className="inline-flex items-center space-x-2 bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="inline-flex items-center space-x-2 bg-bsr-highlight hover:bg-[#A800B6] text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 <span>{section.linkText}</span>
                 <ArrowRight size={16} />

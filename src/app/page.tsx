@@ -236,7 +236,7 @@ export default function Home() {
           <div className="text-center">
             <Link
               href="/reviews"
-              className="inline-flex items-center space-x-2 bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="inline-flex items-center space-x-2 bg-bsr-highlight hover:bg-[#A800B6] text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               <span>View All Reviews</span>
               <ArrowRight size={20} />
@@ -336,7 +336,7 @@ export default function Home() {
             {/* Environmental Content */}
             <div>
               <div className="flex items-center space-x-3 mb-6">
-                <div className="bg-[#0B7EC8] p-3 rounded-full">
+                <div className="bg-[#0970B5] p-3 rounded-full">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-white">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="currentColor"/>
                   </svg>
@@ -345,7 +345,7 @@ export default function Home() {
               </div>
 
               <div className="flex items-center space-x-3 mb-4">
-                <span className="text-[#0B7EC8] font-semibold">Supporting</span>
+                <span className="text-[#0970B5] font-semibold">Supporting</span>
                 <Image
                   src="/images/logo-2.png"
                   alt="Surfers Against Sewage"
@@ -357,7 +357,7 @@ export default function Home() {
               
               <p className="text-lg text-gray-300 mb-6 leading-relaxed">
                 At BSR Decorating we&apos;re committed to doing more than just transforming properties. We proudly donate to 
-                <strong className="text-[#0B7EC8]"> Surfers Against Sewage</strong>, helping to protect our coastlines and marine life.
+                <strong className="text-[#0970B5]"> Surfers Against Sewage</strong>, helping to protect our coastlines and marine life.
               </p>
               
               <p className="text-gray-300 mb-6 leading-relaxed">
@@ -372,7 +372,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/community"
-                  className="bg-[#0B7EC8] hover:bg-[#095A9C] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+                  className="bg-[#0970B5] hover:bg-[#095A9C] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
                 >
                   <span>View Our Community Work</span>
                   <ArrowRight size={18} />
@@ -381,7 +381,7 @@ export default function Home() {
                   href="https://www.sas.org.uk/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border-2 border-[#0B7EC8] text-[#0B7EC8] hover:bg-[#0B7EC8] hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200"
+                  className="border-2 border-[#0970B5] text-[#0970B5] hover:bg-[#0970B5] hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200"
                 >
                   Visit Surfers Against Sewage
                 </a>
@@ -390,11 +390,11 @@ export default function Home() {
 
             {/* Environmental Visual */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-[#0B7EC8]/20 to-bsr-highlight/20 rounded-2xl p-8 border border-[#0B7EC8]/30">
+              <div className="bg-gradient-to-br from-[#0970B5]/20 to-bsr-highlight/20 rounded-2xl p-8 border border-[#0970B5]/30">
                 {/* Ocean/Wave visualization */}
                 <div className="text-center mb-6">
                   <div className="text-6xl mb-4">🌊</div>
-                  <h4 className="text-2xl font-bold text-[#0B7EC8] mb-2">Clean Coasts</h4>
+                  <h4 className="text-2xl font-bold text-[#0970B5] mb-2">Clean Coasts</h4>
                   <p className="text-gray-300">Protected Marine Life</p>
                 </div>
                 
@@ -479,7 +479,8 @@ export default function Home() {
                   </p>
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="inline-flex items-center space-x-2 text-bsr-highlight hover:text-[#d001e8] font-medium transition-colors duration-200"
+                    className="inline-flex items-center space-x-2 text-bsr-highlight hover:text-[#A800B6] font-medium transition-colors duration-200"
+                    aria-label={`Read more about ${post.title}`}
                   >
                     <span>Read More</span>
                     <ArrowRight size={16} />
@@ -492,7 +493,7 @@ export default function Home() {
           <div className="text-center">
             <Link
               href="/blog"
-              className="inline-flex items-center space-x-2 bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="inline-flex items-center space-x-2 bg-bsr-highlight hover:bg-[#A800B6] text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               <span>View All Blog Posts</span>
               <ArrowRight size={20} />

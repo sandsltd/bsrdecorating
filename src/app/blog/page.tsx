@@ -28,7 +28,7 @@ export default function BlogPage() {
             {categories.map((category) => (
               <button
                 key={category.name}
-                className="px-6 py-2 rounded-full font-medium transition-colors duration-200 bg-bsr-highlight text-bsr-white hover:bg-[#d001e8]"
+                className="px-6 py-2 rounded-full font-medium transition-colors duration-200 bg-bsr-highlight text-bsr-white hover:bg-[#A800B6]"
               >
                 {category.name} ({category.count})
               </button>
@@ -89,7 +89,7 @@ export default function BlogPage() {
 
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="inline-flex items-center space-x-2 text-bsr-highlight hover:text-[#d001e8] font-medium transition-colors duration-200 group-hover:translate-x-1"
+                    className="inline-flex items-center space-x-2 text-bsr-highlight hover:text-[#A800B6] font-medium transition-colors duration-200 group-hover:translate-x-1"
                   >
                     <span>Read More</span>
                     <ArrowRight size={16} className="transition-transform duration-200" />

@@ -145,7 +145,7 @@ const FeaturedProjects = ({ category, title, subtitle }: FeaturedProjectsProps) 
         <div className="text-center">
           <Link
             href="/portfolio"
-            className="inline-flex items-center space-x-2 bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="inline-flex items-center space-x-2 bg-bsr-highlight hover:bg-[#A800B6] text-bsr-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             <span>View Full Projects</span>
             <ArrowRight size={20} />

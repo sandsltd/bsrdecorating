@@ -96,7 +96,7 @@ export default function CareersPage() {
               </p>
               <a
                 href="mailto:info@bsrdecorating.co.uk"
-                className="inline-flex items-center space-x-2 bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200"
+                className="inline-flex items-center space-x-2 bg-bsr-highlight hover:bg-[#A800B6] text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200"
               >
                 <Mail size={18} />
                 <span>info@bsrdecorating.co.uk</span>

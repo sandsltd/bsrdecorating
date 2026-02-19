@@ -562,7 +562,7 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
                   type="button"
                   onClick={nextStep}
                   disabled={(currentStep === 1 && !canProceedToStep2()) || (currentStep === 2 && !canProceedToStep3())}
-                  className="flex items-center space-x-2 bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="flex items-center space-x-2 bg-bsr-highlight hover:bg-[#A800B6] text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <span>Next</span>
                   <ChevronRight size={18} />
@@ -570,7 +570,7 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
               ) : (
                 <button
                   type="submit"
-                  className="flex items-center space-x-2 bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
+                  className="flex items-center space-x-2 bg-bsr-highlight hover:bg-[#A800B6] text-bsr-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
                 >
                   <span>Submit Quote Request</span>
                   <ChevronRight size={18} />

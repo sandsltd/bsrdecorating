@@ -190,7 +190,7 @@ export default function ExeterCommercialDecoratingPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={() => openQuoteModal()}
-                className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+                className="bg-bsr-highlight hover:bg-[#A800B6] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
               >
                 <Phone size={20} />
                 <span>Get Free Exeter Commercial Quote</span>
@@ -356,7 +356,7 @@ export default function ExeterCommercialDecoratingPage() {
             </p>
             <button
               onClick={() => openQuoteModal()}
-              className="bg-bsr-highlight hover:bg-[#d001e8] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+              className="bg-bsr-highlight hover:bg-[#A800B6] text-bsr-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
             >
               <Phone size={20} />
               <span>Get Your Free Exeter Commercial Decorating Quote</span>

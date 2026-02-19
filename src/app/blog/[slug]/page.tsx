@@ -89,7 +89,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         <div className="max-w-4xl mx-auto">
           <Link
             href="/blog"
-            className="inline-flex items-center space-x-2 text-bsr-highlight hover:text-[#d001e8] mb-8 transition-colors duration-200 group"
+            className="inline-flex items-center space-x-2 text-bsr-highlight hover:text-[#A800B6] mb-8 transition-colors duration-200 group"
           >
             <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform duration-200" />
             <span>Back to Blog</span>
