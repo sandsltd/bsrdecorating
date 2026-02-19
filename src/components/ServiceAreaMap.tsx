@@ -458,7 +458,7 @@ const ServiceAreaMap = () => {
 
             {/* Quote Request Card */}
             <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
-              <h4 className="text-lg font-semibold text-bsr-highlight mb-4">Get Your Quote</h4>
+              <h4 className="text-lg font-semibold text-bsr-white mb-4">Get Your Quote</h4>
               <div className="space-y-4">
                 <p className="text-sm text-gray-300">Get a personalised quote for your decorating project</p>
                                       <button
@@ -472,11 +472,11 @@ const ServiceAreaMap = () => {
 
             {/* Contact Card */}
             <div className="bg-bsr-gray border border-bsr-gray-light rounded-lg p-6">
-              <h4 className="text-lg font-semibold text-bsr-highlight mb-4">Get a Quote</h4>
+              <h4 className="text-lg font-semibold text-bsr-white mb-4">Get a Quote</h4>
               <div className="space-y-3">
                 <p className="text-sm text-gray-300">Free quotes across all areas</p>
                 <div className="text-center py-2">
-                  <div className="text-bsr-highlight font-bold text-xl">01626 911236</div>
+                  <div className="text-bsr-yellow font-bold text-xl">01626 911236</div>
                   <p className="text-xs text-gray-300 mt-1">Click markers for details</p>
                 </div>
               </div>
