@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Kitchen Spraying Exeter | BSR Decorating',
     description: 'Professional kitchen cabinet spraying services in Exeter, transforming kitchens without replacement',
-    url: 'https://bsrdecorating.co.uk/areas/exeter/kitchen-spraying',
+    url: 'https://www.bsrdecorating.co.uk/areas/exeter/kitchen-spraying',
     type: 'website'
   },
   twitter: {

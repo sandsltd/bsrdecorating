@@ -16,25 +16,25 @@ export default function ExeterHeritagePropertyPaintingPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://bsrdecorating.co.uk"
+        "item": "https://www.bsrdecorating.co.uk"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://bsrdecorating.co.uk/coverage"
+        "item": "https://www.bsrdecorating.co.uk/coverage"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Exeter",
-        "item": "https://bsrdecorating.co.uk/areas/exeter"
+        "item": "https://www.bsrdecorating.co.uk/areas/exeter"
       },
       {
         "@type": "ListItem",
         "position": 4,
         "name": "Heritage Property Painting",
-        "item": "https://bsrdecorating.co.uk/areas/exeter/heritage-property-painting"
+        "item": "https://www.bsrdecorating.co.uk/areas/exeter/heritage-property-painting"
       }
     ]
   };
@@ -42,14 +42,14 @@ export default function ExeterHeritagePropertyPaintingPage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://bsrdecorating.co.uk/areas/exeter/heritage-property-painting#service",
-    "url": "https://bsrdecorating.co.uk/areas/exeter/heritage-property-painting",
+    "@id": "https://www.bsrdecorating.co.uk/areas/exeter/heritage-property-painting#service",
+    "url": "https://www.bsrdecorating.co.uk/areas/exeter/heritage-property-painting",
     "name": "Heritage Property Painting Exeter",
     "description": "Specialist heritage property and listed building painting services in Exeter's conservation areas. Traditional techniques, breathable paints, and period-appropriate finishes.",
-    "image": "https://bsrdecorating.co.uk/images/hero-bg.jpg",
+    "image": "https://www.bsrdecorating.co.uk/images/hero-bg.jpg",
     "provider": {
       "@type": "LocalBusiness",
-      "@id": "https://bsrdecorating.co.uk/#business",
+      "@id": "https://www.bsrdecorating.co.uk/#business",
       "name": "BSR Decorating",
       "telephone": "+441626911236",
       "email": "info@bsrdecorating.co.uk",

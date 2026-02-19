@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Kitchen Cabinet Spraying Devon | BSR Decorating',
     description: 'Professional kitchen cabinet spraying across Devon. Save up to 80% vs replacement. Any colour, 3-5 day turnaround.',
-    url: 'https://bsrdecorating.co.uk/services/kitchen-spraying',
+    url: 'https://www.bsrdecorating.co.uk/services/kitchen-spraying',
     type: 'website'
   },
   twitter: {

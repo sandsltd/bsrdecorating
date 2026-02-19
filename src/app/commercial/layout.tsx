@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Commercial Decorating Services | BSR Decorating Devon",
     description: "Professional commercial decorating for offices, retail spaces & industrial properties across Dawlish, Newton Abbot, Torquay, Exeter & Devon.",
     type: "website",
-    url: "https://bsrdecorating.co.uk/commercial",
+    url: "https://www.bsrdecorating.co.uk/commercial",
     images: [
       {
         url: "/gallery/commercial/office-renovation.jpeg",

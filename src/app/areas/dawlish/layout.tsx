@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Dawlish Decorators & Painters | Local Experts Since 2003 – BSR Decorating',
     description: 'Dawlish\'s most trusted decorators! 20+ years serving the local area. FREE quotes, quality guaranteed.',
-    url: 'https://bsrdecorating.co.uk/areas/dawlish',
+    url: 'https://www.bsrdecorating.co.uk/areas/dawlish',
     type: 'website',
   },
   twitter: {

@@ -22,7 +22,7 @@ export default function CareersPage() {
         "addressRegion": "Devon",
         "addressCountry": "GB"
       },
-      "url": "https://bsrdecorating.co.uk"
+      "url": "https://www.bsrdecorating.co.uk"
     },
     "jobLocation": {
       "@type": "Place",

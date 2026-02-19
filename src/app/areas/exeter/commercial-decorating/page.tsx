@@ -16,25 +16,25 @@ export default function ExeterCommercialDecoratingPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://bsrdecorating.co.uk"
+        "item": "https://www.bsrdecorating.co.uk"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://bsrdecorating.co.uk/coverage"
+        "item": "https://www.bsrdecorating.co.uk/coverage"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Exeter",
-        "item": "https://bsrdecorating.co.uk/areas/exeter"
+        "item": "https://www.bsrdecorating.co.uk/areas/exeter"
       },
       {
         "@type": "ListItem",
         "position": 4,
         "name": "Commercial Decorating",
-        "item": "https://bsrdecorating.co.uk/areas/exeter/commercial-decorating"
+        "item": "https://www.bsrdecorating.co.uk/areas/exeter/commercial-decorating"
       }
     ]
   };
@@ -42,14 +42,14 @@ export default function ExeterCommercialDecoratingPage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://bsrdecorating.co.uk/areas/exeter/commercial-decorating#service",
-    "url": "https://bsrdecorating.co.uk/areas/exeter/commercial-decorating",
+    "@id": "https://www.bsrdecorating.co.uk/areas/exeter/commercial-decorating#service",
+    "url": "https://www.bsrdecorating.co.uk/areas/exeter/commercial-decorating",
     "name": "Commercial Decorating Exeter",
     "description": "Professional commercial decorating services in Exeter city centre, business parks, and office developments. Office painting, retail refurbishment, and commercial property maintenance.",
-    "image": "https://bsrdecorating.co.uk/images/hero-bg.jpg",
+    "image": "https://www.bsrdecorating.co.uk/images/hero-bg.jpg",
     "provider": {
       "@type": "LocalBusiness",
-      "@id": "https://bsrdecorating.co.uk/#business",
+      "@id": "https://www.bsrdecorating.co.uk/#business",
       "name": "BSR Decorating",
       "telephone": "+441626911236",
       "email": "info@bsrdecorating.co.uk",

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Domestic Decorating Services | BSR Decorating Devon",
     description: "Professional house painting & home decorating across Dawlish, Newton Abbot, Torquay, Exeter & surrounding Devon areas.",
     type: "website",
-    url: "https://bsrdecorating.co.uk/domestic",
+    url: "https://www.bsrdecorating.co.uk/domestic",
     images: [
       {
         url: "/gallery/domestic/dining-room.jpeg",

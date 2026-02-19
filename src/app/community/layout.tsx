@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Community & Environmental Support | BSR Decorating Devon",
     description: "Supporting Devon communities and protecting our coastlines through eco-friendly decorating practices",
     type: "website",
-    url: "https://bsrdecorating.co.uk/community",
+    url: "https://www.bsrdecorating.co.uk/community",
     images: [
       {
         url: "/images/Business decorating image.jpeg",

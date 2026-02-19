@@ -19,10 +19,10 @@ export default function PortfolioPage() {
     "@type": "ImageGallery",
     "name": "BSR Decorating Project Portfolio",
     "description": "Gallery of completed decorating projects across Devon",
-    "url": "https://bsrdecorating.co.uk/portfolio",
+    "url": "https://www.bsrdecorating.co.uk/portfolio",
     "image": projects.map(project => ({
       "@type": "ImageObject",
-      "url": `https://bsrdecorating.co.uk${project.image}`,
+      "url": `https://www.bsrdecorating.co.uk${project.image}`,
       "name": project.title,
       "description": project.description,
       "contentLocation": {
@@ -106,7 +106,7 @@ export default function PortfolioPage() {
         <meta name="keywords" content="decorating portfolio Devon, painting projects gallery, before after decorating, BSR project examples, decorating work Dawlish Newton Abbot Torquay Exeter, completed decorating projects, professional decorating gallery" />
         <meta property="og:title" content="Project Portfolio | BSR Decorating Devon" />
         <meta property="og:description" content="Completed decorating projects across Devon - see our professional work" />
-        <meta property="og:url" content="https://bsrdecorating.co.uk/portfolio" />
+        <meta property="og:url" content="https://www.bsrdecorating.co.uk/portfolio" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/portfolio/project1/PHOTO-2025-09-02-11-07-09.jpg" />
         <meta name="twitter:card" content="summary_large_image" />

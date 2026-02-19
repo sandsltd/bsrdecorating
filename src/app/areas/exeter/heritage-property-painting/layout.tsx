@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Heritage Property Painting Exeter | BSR Decorating',
     description: 'Specialist heritage property and listed building painting services in Exeter\'s conservation areas',
-    url: 'https://bsrdecorating.co.uk/areas/exeter/heritage-property-painting',
+    url: 'https://www.bsrdecorating.co.uk/areas/exeter/heritage-property-painting',
     type: 'website'
   },
   twitter: {

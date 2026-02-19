@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Service Coverage Areas | BSR Decorating Devon",
     description: "See our complete service coverage across Devon - from Dawlish to Exeter and everywhere in between",
-    url: "https://bsrdecorating.co.uk/coverage",
+    url: "https://www.bsrdecorating.co.uk/coverage",
     type: "website",
     images: [
       {

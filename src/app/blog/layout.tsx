@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Decorating Blog | BSR Decorating Devon",
     description: "Expert decorating tips and insights from professional decorators in Devon",
     type: "website",
-    url: "https://bsrdecorating.co.uk/blog",
+    url: "https://www.bsrdecorating.co.uk/blog",
     images: [
       {
         url: "/images/Business decorating image.jpeg",
@@ -43,7 +43,7 @@ export default function BlogLayout({
     "@type": "Blog",
     "name": "BSR Decorating Blog",
     "description": "Expert decorating tips, trends, and project insights from professional decorators in Devon",
-    "url": "https://bsrdecorating.co.uk/blog",
+    "url": "https://www.bsrdecorating.co.uk/blog",
     "publisher": {
       "@type": "LocalBusiness",
       "name": "BSR Decorating",

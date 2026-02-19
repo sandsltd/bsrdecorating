@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Painter and Decorator Exeter – Interior & Exterior Painting | BSR Decorating',
     description: 'Professional decorators in Exeter covering homes, offices, shops & heritage properties. Quality finishes, fast turnaround, free quotes.',
-    url: 'https://bsrdecorating.co.uk/areas/exeter',
+    url: 'https://www.bsrdecorating.co.uk/areas/exeter',
     type: 'website'
   },
   twitter: {

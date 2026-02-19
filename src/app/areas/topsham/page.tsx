@@ -16,19 +16,19 @@ export default function TopshamPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://bsrdecorating.co.uk"
+        "item": "https://www.bsrdecorating.co.uk"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://bsrdecorating.co.uk/coverage"
+        "item": "https://www.bsrdecorating.co.uk/coverage"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Topsham",
-        "item": "https://bsrdecorating.co.uk/areas/topsham"
+        "item": "https://www.bsrdecorating.co.uk/areas/topsham"
       }
     ]
   };
@@ -79,7 +79,7 @@ export default function TopshamPage() {
     "@type": ["LocalBusiness", "ProfessionalService"],
     "name": "BSR Decorating - Topsham",
     "description": "Professional painting and decorating services in Topsham, Devon. Heritage property restoration, waterfront maintenance and conservation area specialists.",
-    "url": "https://bsrdecorating.co.uk/areas/topsham",
+    "url": "https://www.bsrdecorating.co.uk/areas/topsham",
     "telephone": "+441626911236",
     "email": "info@bsrdecorating.co.uk",
     "priceRange": "£108-£2,360",

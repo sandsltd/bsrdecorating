@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Commercial Decorating Exeter | BSR Decorating',
     description: 'Professional commercial decorating services in Exeter city centre, business parks, and office developments',
-    url: 'https://bsrdecorating.co.uk/areas/exeter/commercial-decorating',
+    url: 'https://www.bsrdecorating.co.uk/areas/exeter/commercial-decorating',
     type: 'website'
   },
   twitter: {

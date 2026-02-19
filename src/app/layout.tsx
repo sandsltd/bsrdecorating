@@ -8,7 +8,7 @@ import { QuoteModalProvider } from "@/contexts/QuoteModalContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://bsrdecorating.co.uk'),
+  metadataBase: new URL('https://www.bsrdecorating.co.uk'),
   title: "Decorator in Dawlish | Domestic & Commercial Decorating Exeter, Torquay & Devon – BSR Decorating",
   description: "BSR Decorating offers professional house painting and commercial decorating in Dawlish, Exeter, Torquay, and across Devon. Free quotes available.",
   keywords: "painters decorators Dawlish, decorating services Newton Abbot, painters Torquay, decorators Exeter, commercial decorating Devon, domestic decorating Topsham, painting contractors Exmouth, decorators Bovey Tracey, house painters Devon, office decorating Devon",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description: "Expert decorating services across Dawlish, Newton Abbot, Torquay, Exeter & surrounding Devon areas. Domestic & commercial painting specialists.",
     type: "website",
     locale: "en_GB",
-    url: "https://bsrdecorating.co.uk",
+    url: "https://www.bsrdecorating.co.uk",
     siteName: "BSR Decorating",
     images: [
       {
@@ -80,7 +80,7 @@ export default function RootLayout({
     "@type": "LocalBusiness",
     "name": "BSR Decorating",
     "description": "Professional domestic and commercial decorating services across Devon",
-    "url": "https://bsrdecorating.co.uk",
+    "url": "https://www.bsrdecorating.co.uk",
     "telephone": "+441626911236",
     "email": "info@bsrdecorating.co.uk",
     "address": {

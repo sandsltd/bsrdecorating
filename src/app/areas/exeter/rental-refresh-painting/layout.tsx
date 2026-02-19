@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Rental Refresh Painting Exeter | BSR Decorating',
     description: 'Professional rental property refresh painting services in Exeter for landlords and property managers',
-    url: 'https://bsrdecorating.co.uk/areas/exeter/rental-refresh-painting',
+    url: 'https://www.bsrdecorating.co.uk/areas/exeter/rental-refresh-painting',
     type: 'website'
   },
   twitter: {

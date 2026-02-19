@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Exterior Painting Exeter | BSR Decorating',
     description: 'Professional exterior painting services in Exeter covering St Leonard\'s, Pennsylvania, Heavitree, Topsham, and Newtown',
-    url: 'https://bsrdecorating.co.uk/areas/exeter/exterior-painting',
+    url: 'https://www.bsrdecorating.co.uk/areas/exeter/exterior-painting',
     type: 'website'
   },
   twitter: {

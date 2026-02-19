@@ -16,19 +16,19 @@ export default function TorquayPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://bsrdecorating.co.uk"
+        "item": "https://www.bsrdecorating.co.uk"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://bsrdecorating.co.uk/coverage"
+        "item": "https://www.bsrdecorating.co.uk/coverage"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Torquay",
-        "item": "https://bsrdecorating.co.uk/areas/torquay"
+        "item": "https://www.bsrdecorating.co.uk/areas/torquay"
       }
     ]
   };
@@ -79,7 +79,7 @@ export default function TorquayPage() {
     "@type": "LocalBusiness",
     "name": "BSR Decorating - Torquay",
     "description": "Professional decorating services in Torquay, Devon",
-    "url": "https://bsrdecorating.co.uk/areas/torquay",
+    "url": "https://www.bsrdecorating.co.uk/areas/torquay",
     "telephone": "+441626911236",
     "email": "info@bsrdecorating.co.uk",
     "address": {

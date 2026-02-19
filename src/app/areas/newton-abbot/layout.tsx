@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Newton Abbot Decorators & Painters | BSR Decorating',
     description: 'Professional decorating services in Newton Abbot - domestic and commercial painting specialists',
-    url: 'https://bsrdecorating.co.uk/areas/newton-abbot',
+    url: 'https://www.bsrdecorating.co.uk/areas/newton-abbot',
     type: 'website'
   },
   twitter: {

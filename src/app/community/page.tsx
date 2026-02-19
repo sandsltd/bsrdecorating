@@ -15,7 +15,7 @@ export default function CommunityPage() {
     "@type": "Organization",
     "name": "BSR Decorating",
     "description": "Local decorating business committed to community support and environmental protection",
-    "url": "https://bsrdecorating.co.uk/community",
+    "url": "https://www.bsrdecorating.co.uk/community",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Dawlish",

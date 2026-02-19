@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Contact BSR Decorating | Free Quotes Devon",
     description: "Get your free decorating quote from professional decorators in Devon",
     type: "website",
-    url: "https://bsrdecorating.co.uk/contact",
+    url: "https://www.bsrdecorating.co.uk/contact",
     images: [
       {
         url: "/images/Business decorating image.jpeg",
@@ -43,7 +43,7 @@ export default function ContactLayout({
     "@type": "ContactPage",
     "name": "Contact BSR Decorating",
     "description": "Contact information for BSR Decorating professional decorators in Devon",
-    "url": "https://bsrdecorating.co.uk/contact",
+    "url": "https://www.bsrdecorating.co.uk/contact",
     "mainEntity": {
       "@type": "LocalBusiness",
       "name": "BSR Decorating",

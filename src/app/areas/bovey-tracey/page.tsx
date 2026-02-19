@@ -15,19 +15,19 @@ export default function BoveyTraceyPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://bsrdecorating.co.uk"
+        "item": "https://www.bsrdecorating.co.uk"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://bsrdecorating.co.uk/coverage"
+        "item": "https://www.bsrdecorating.co.uk/coverage"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Bovey Tracey",
-        "item": "https://bsrdecorating.co.uk/areas/bovey-tracey"
+        "item": "https://www.bsrdecorating.co.uk/areas/bovey-tracey"
       }
     ]
   };
@@ -78,7 +78,7 @@ export default function BoveyTraceyPage() {
     "@type": "LocalBusiness",
     "name": "BSR Decorating - Bovey Tracey",
     "description": "Professional decorating services in Bovey Tracey, Devon",
-    "url": "https://bsrdecorating.co.uk/areas/bovey-tracey",
+    "url": "https://www.bsrdecorating.co.uk/areas/bovey-tracey",
     "telephone": "+441626911236",
     "email": "info@bsrdecorating.co.uk",
     "address": {

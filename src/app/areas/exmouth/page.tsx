@@ -16,19 +16,19 @@ export default function ExmouthPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://bsrdecorating.co.uk"
+        "item": "https://www.bsrdecorating.co.uk"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://bsrdecorating.co.uk/coverage"
+        "item": "https://www.bsrdecorating.co.uk/coverage"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Exmouth",
-        "item": "https://bsrdecorating.co.uk/areas/exmouth"
+        "item": "https://www.bsrdecorating.co.uk/areas/exmouth"
       }
     ]
   };
@@ -79,7 +79,7 @@ export default function ExmouthPage() {
     "@type": "LocalBusiness",
     "name": "BSR Decorating - Exmouth",
     "description": "Professional decorating services in Exmouth, Devon",
-    "url": "https://bsrdecorating.co.uk/areas/exmouth",
+    "url": "https://www.bsrdecorating.co.uk/areas/exmouth",
     "telephone": "+441626911236",
     "email": "info@bsrdecorating.co.uk",
     "address": {

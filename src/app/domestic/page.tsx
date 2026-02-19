@@ -20,13 +20,13 @@ export default function DomesticPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://bsrdecorating.co.uk"
+        "item": "https://www.bsrdecorating.co.uk"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Domestic Decorating",
-        "item": "https://bsrdecorating.co.uk/domestic"
+        "item": "https://www.bsrdecorating.co.uk/domestic"
       }
     ]
   };

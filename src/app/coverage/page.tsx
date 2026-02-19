@@ -115,7 +115,7 @@ export default function CoveragePage() {
     "@type": "LocalBusiness",
     "name": "BSR Decorating Coverage Areas",
     "description": "Professional decorating services across Devon and surrounding areas",
-    "url": "https://bsrdecorating.co.uk/coverage",
+    "url": "https://www.bsrdecorating.co.uk/coverage",
     "telephone": "+441626911236",
     "email": "info@bsrdecorating.co.uk",
     "address": {

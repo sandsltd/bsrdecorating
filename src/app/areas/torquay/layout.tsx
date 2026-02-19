@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Torquay Decorators & Painters | BSR Decorating',
     description: 'Professional decorating services in Torquay - coastal property specialists',
-    url: 'https://bsrdecorating.co.uk/areas/torquay',
+    url: 'https://www.bsrdecorating.co.uk/areas/torquay',
     type: 'website'
   },
   twitter: {

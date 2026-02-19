@@ -16,19 +16,19 @@ export default function KitchenSprayingPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://bsrdecorating.co.uk"
+        "item": "https://www.bsrdecorating.co.uk"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://bsrdecorating.co.uk/services"
+        "item": "https://www.bsrdecorating.co.uk/services"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Kitchen Spraying",
-        "item": "https://bsrdecorating.co.uk/services/kitchen-spraying"
+        "item": "https://www.bsrdecorating.co.uk/services/kitchen-spraying"
       }
     ]
   };

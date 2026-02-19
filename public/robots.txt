@@ -10,7 +10,7 @@ Allow: /contact
 Allow: /reviews
 
 # Sitemap location
-Sitemap: https://bsrdecorating.co.uk/sitemap.xml
+Sitemap: https://www.bsrdecorating.co.uk/sitemap.xml
 
 # Block unnecessary paths
 Disallow: /api/

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Project Portfolio | BSR Decorating Devon",
     description: "Completed decorating projects across Devon - see our professional work",
-    url: "https://bsrdecorating.co.uk/portfolio",
+    url: "https://www.bsrdecorating.co.uk/portfolio",
     type: "website"
   },
   twitter: {

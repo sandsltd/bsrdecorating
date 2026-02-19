@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Exmouth Decorators & Painters | BSR Decorating',
     description: 'Professional decorating services in Exmouth - seaside town and coastal property specialists',
-    url: 'https://bsrdecorating.co.uk/areas/exmouth',
+    url: 'https://www.bsrdecorating.co.uk/areas/exmouth',
     type: 'website'
   },
   twitter: {

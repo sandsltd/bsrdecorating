@@ -15,19 +15,19 @@ export default function DawlishPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://bsrdecorating.co.uk"
+        "item": "https://www.bsrdecorating.co.uk"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://bsrdecorating.co.uk/coverage"
+        "item": "https://www.bsrdecorating.co.uk/coverage"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Dawlish",
-        "item": "https://bsrdecorating.co.uk/areas/dawlish"
+        "item": "https://www.bsrdecorating.co.uk/areas/dawlish"
       }
     ]
   };
@@ -37,7 +37,7 @@ export default function DawlishPage() {
     "@type": ["LocalBusiness", "ProfessionalService"],
     "name": "BSR Decorating - Dawlish",
     "description": "Professional painting and decorating services in Dawlish, Devon. Interior, exterior, coastal property and Victorian property specialists.",
-    "url": "https://bsrdecorating.co.uk/areas/dawlish",
+    "url": "https://www.bsrdecorating.co.uk/areas/dawlish",
     "telephone": "+441626911236",
     "email": "info@bsrdecorating.co.uk",
     "priceRange": "£108-£2,360",

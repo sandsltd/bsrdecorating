@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Careers | BSR Decorating Devon",
     description: "Join our team of professional decorators serving Devon",
     type: "website",
-    url: "https://bsrdecorating.co.uk/careers",
+    url: "https://www.bsrdecorating.co.uk/careers",
     images: [
       {
         url: "/images/Business decorating image.jpeg",

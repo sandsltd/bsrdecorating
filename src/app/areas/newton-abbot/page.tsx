@@ -15,19 +15,19 @@ export default function NewtonAbbotPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://bsrdecorating.co.uk"
+        "item": "https://www.bsrdecorating.co.uk"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://bsrdecorating.co.uk/coverage"
+        "item": "https://www.bsrdecorating.co.uk/coverage"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Newton Abbot",
-        "item": "https://bsrdecorating.co.uk/areas/newton-abbot"
+        "item": "https://www.bsrdecorating.co.uk/areas/newton-abbot"
       }
     ]
   };
@@ -78,7 +78,7 @@ export default function NewtonAbbotPage() {
     "@type": "LocalBusiness",
     "name": "BSR Decorating - Newton Abbot",
     "description": "Professional decorating services in Newton Abbot, Devon",
-    "url": "https://bsrdecorating.co.uk/areas/newton-abbot",
+    "url": "https://www.bsrdecorating.co.uk/areas/newton-abbot",
     "telephone": "+441626911236",
     "email": "info@bsrdecorating.co.uk",
     "address": {

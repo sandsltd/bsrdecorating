@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Bovey Tracey Decorators & Painters | BSR Decorating',
     description: 'Professional decorating services in Bovey Tracey - domestic and commercial painting specialists',
-    url: 'https://bsrdecorating.co.uk/areas/bovey-tracey',
+    url: 'https://www.bsrdecorating.co.uk/areas/bovey-tracey',
     type: 'website'
   },
   twitter: {

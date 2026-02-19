@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Customer Reviews | BSR Decorating Devon",
     description: "5-star customer reviews from satisfied clients across Devon",
     type: "website",
-    url: "https://bsrdecorating.co.uk/reviews",
+    url: "https://www.bsrdecorating.co.uk/reviews",
     images: [
       {
         url: "/images/Business decorating image.jpeg",

@@ -16,19 +16,19 @@ export default function ExeterPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://bsrdecorating.co.uk"
+        "item": "https://www.bsrdecorating.co.uk"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://bsrdecorating.co.uk/coverage"
+        "item": "https://www.bsrdecorating.co.uk/coverage"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Exeter",
-        "item": "https://bsrdecorating.co.uk/areas/exeter"
+        "item": "https://www.bsrdecorating.co.uk/areas/exeter"
       }
     ]
   };
@@ -79,7 +79,7 @@ export default function ExeterPage() {
     "@type": ["LocalBusiness", "ProfessionalService"],
     "name": "BSR Decorating - Exeter",
     "description": "Professional painting and decorating services in Exeter, Devon. Specialist interior, exterior, heritage and commercial decorating.",
-    "url": "https://bsrdecorating.co.uk/areas/exeter",
+    "url": "https://www.bsrdecorating.co.uk/areas/exeter",
     "telephone": "+441626911236",
     "email": "info@bsrdecorating.co.uk",
     "priceRange": "£108-£2,360",

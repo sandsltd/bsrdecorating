@@ -16,25 +16,25 @@ export default function ExeterExteriorPaintingPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://bsrdecorating.co.uk"
+        "item": "https://www.bsrdecorating.co.uk"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://bsrdecorating.co.uk/coverage"
+        "item": "https://www.bsrdecorating.co.uk/coverage"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Exeter",
-        "item": "https://bsrdecorating.co.uk/areas/exeter"
+        "item": "https://www.bsrdecorating.co.uk/areas/exeter"
       },
       {
         "@type": "ListItem",
         "position": 4,
         "name": "Exterior Painting",
-        "item": "https://bsrdecorating.co.uk/areas/exeter/exterior-painting"
+        "item": "https://www.bsrdecorating.co.uk/areas/exeter/exterior-painting"
       }
     ]
   };
@@ -42,14 +42,14 @@ export default function ExeterExteriorPaintingPage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://bsrdecorating.co.uk/areas/exeter/exterior-painting#service",
-    "url": "https://bsrdecorating.co.uk/areas/exeter/exterior-painting",
+    "@id": "https://www.bsrdecorating.co.uk/areas/exeter/exterior-painting#service",
+    "url": "https://www.bsrdecorating.co.uk/areas/exeter/exterior-painting",
     "name": "Exterior Painting Exeter",
     "description": "Professional exterior painting services in Exeter covering St. Leonard's, Pennsylvania, Heavitree, Topsham, and Newtown. Weather-resistant finishes for heritage and modern properties.",
-    "image": "https://bsrdecorating.co.uk/images/hero-bg.jpg",
+    "image": "https://www.bsrdecorating.co.uk/images/hero-bg.jpg",
     "provider": {
       "@type": "LocalBusiness",
-      "@id": "https://bsrdecorating.co.uk/#business",
+      "@id": "https://www.bsrdecorating.co.uk/#business",
       "name": "BSR Decorating",
       "telephone": "+441626911236",
       "email": "info@bsrdecorating.co.uk",

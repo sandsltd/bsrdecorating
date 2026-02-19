@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Heritage Decorators Topsham | BSR Decorating',
     description: 'Professional heritage and waterfront decorating services in Topsham - period property and conservation area specialists',
-    url: 'https://bsrdecorating.co.uk/areas/topsham',
+    url: 'https://www.bsrdecorating.co.uk/areas/topsham',
     type: 'website'
   },
   twitter: {
