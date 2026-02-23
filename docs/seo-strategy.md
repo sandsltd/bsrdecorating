@@ -15,53 +15,53 @@
 
 | # | Keyword | Current Position | Last Checked | Target Page | Notes |
 |---|---------|-----------------|--------------|-------------|-------|
-| 1 | decorator exeter | Position 34.9 | 22 Feb 2026 | /areas/exeter | Biggest opportunity. Simon Santucci & Vivid Decor dominate. |
-| 2 | painter and decorator exeter | Position 26.9 | 22 Feb 2026 | /areas/exeter | High volume variant (~90-150/mo). |
-| 3 | painter exeter | Position 41 | 22 Feb 2026 | /areas/exeter | ~70-130 searches/mo. |
-| 4 | decorator topsham | Not indexed yet | 22 Feb 2026 | /areas/topsham | Close to Page 1. Push with content + links. |
-| 5 | kitchen spraying exeter | Not indexed yet | 22 Feb 2026 | /areas/exeter/kitchen-spraying | ~30-70/mo. Growing niche. No local specialist ranks. |
-| 6 | heritage decorator exeter | Not indexed yet | 22 Feb 2026 | /areas/exeter/heritage-property-painting | Very low competition. 994 listed buildings in Exeter. |
-| 7 | decorator dawlish | Not indexed yet | 22 Feb 2026 | /areas/dawlish | DEFEND this. Home base. Only Santucci competes. |
+| 1 | decorator exeter | Position 34.9 | 23 Feb 2026 | /areas/exeter | Biggest opportunity. Simon Santucci & Vivid Decor dominate. |
+| 2 | painter and decorator exeter | Position 26.9 | 23 Feb 2026 | /areas/exeter | High volume variant (~90-150/mo). |
+| 3 | painter exeter | Position 41 | 23 Feb 2026 | /areas/exeter | ~70-130 searches/mo. |
+| 4 | decorator topsham | Not indexed yet | 23 Feb 2026 | /areas/topsham | Close to Page 1. Push with content + links. |
+| 5 | kitchen spraying exeter | Not indexed yet | 23 Feb 2026 | /areas/exeter/kitchen-spraying | ~30-70/mo. Growing niche. No local specialist ranks. |
+| 6 | heritage decorator exeter | Not indexed yet | 23 Feb 2026 | /areas/exeter/heritage-property-painting | Very low competition. 994 listed buildings in Exeter. |
+| 7 | decorator dawlish | Not indexed yet | 23 Feb 2026 | /areas/dawlish | DEFEND this. Home base. Only Santucci competes. |
 
 ### Tier 2 — HIGH (Service + Location)
 
 | # | Keyword | Current Position | Last Checked | Target Page | Notes |
 |---|---------|-----------------|--------------|-------------|-------|
-| 8 | commercial decorator exeter | Position 22.8 | 22 Feb 2026 | /commercial | ~10-30/mo. Isca & Vivid Decor rank. |
-| 9 | interior decorator exeter | Not indexed yet | 22 Feb 2026 | /domestic | ~20-50/mo. |
-| 10 | exterior painter exeter | Not indexed yet | 22 Feb 2026 | /domestic | ~10-30/mo. Seasonal peak Mar-Aug. |
-| 11 | painter and decorator topsham | Not indexed yet | 22 Feb 2026 | /areas/topsham | Low competition variant. |
-| 12 | heritage decorator topsham | Not indexed yet | 22 Feb 2026 | /areas/topsham | Only Santucci has a Topsham page. |
-| 13 | wallpaper hanger exeter | Not indexed yet | 22 Feb 2026 | /domestic | ~10-30/mo. |
-| 14 | landlord painter exeter | Not indexed yet | 22 Feb 2026 | /domestic | ~5-10/mo. Recurring revenue keyword. |
-| 15 | decorator newton abbot | Not indexed yet | 22 Feb 2026 | /areas/newton-abbot | Secondary market. |
-| 16 | decorator torquay | Not indexed yet | 22 Feb 2026 | /areas/torquay | Secondary market. |
+| 8 | commercial decorator exeter | Position 22.8 | 23 Feb 2026 | /commercial | ~10-30/mo. Isca & Vivid Decor rank. |
+| 9 | interior decorator exeter | Not indexed yet | 23 Feb 2026 | /domestic | ~20-50/mo. |
+| 10 | exterior painter exeter | Not indexed yet | 23 Feb 2026 | /domestic | ~10-30/mo. Seasonal peak Mar-Aug. |
+| 11 | painter and decorator topsham | Not indexed yet | 23 Feb 2026 | /areas/topsham | Low competition variant. |
+| 12 | heritage decorator topsham | Not indexed yet | 23 Feb 2026 | /areas/topsham | Only Santucci has a Topsham page. |
+| 13 | wallpaper hanger exeter | Not indexed yet | 23 Feb 2026 | /domestic | ~10-30/mo. |
+| 14 | landlord painter exeter | Not indexed yet | 23 Feb 2026 | /domestic | ~5-10/mo. Recurring revenue keyword. |
+| 15 | decorator newton abbot | Not indexed yet | 23 Feb 2026 | /areas/newton-abbot | Secondary market. |
+| 16 | decorator torquay | Not indexed yet | 23 Feb 2026 | /areas/torquay | Secondary market. |
 
 ### Tier 3 — MEDIUM (Long-Tail + Informational)
 
 | # | Keyword | Current Position | Last Checked | Target Page | Notes |
 |---|---------|-----------------|--------------|-------------|-------|
-| 17 | how much does a decorator cost in exeter | Not indexed yet | 22 Feb 2026 | Blog (cost guide) | ~10-30/mo. HIGH conversion intent. |
-| 18 | best painter and decorator in exeter | Not indexed yet | 22 Feb 2026 | /reviews | ~10-30/mo. Trust keyword. |
-| 19 | conservation area painting rules exeter | Not indexed yet | 22 Feb 2026 | Blog | Very low comp. 20 conservation areas in Exeter. |
-| 20 | listed building paint exeter | Not indexed yet | 22 Feb 2026 | Blog | Niche authority builder. |
-| 21 | lime wash exeter | Not indexed yet | 22 Feb 2026 | Blog | ~5-15/mo. Heritage niche. |
-| 22 | damp walls exeter | Not indexed yet | 22 Feb 2026 | Blog | ~10-30/mo. Problem-solution content. |
-| 23 | kitchen cabinet spraying vs replacement | Not indexed yet | 22 Feb 2026 | Blog | 200-500/mo national. High value. |
-| 24 | exterior painting cost exeter | Not indexed yet | 22 Feb 2026 | Blog (cost guide) | |
-| 25 | decorator exeter reviews | Not indexed yet | 22 Feb 2026 | /reviews | Trust signal keyword. |
+| 17 | how much does a decorator cost in exeter | Not indexed yet | 23 Feb 2026 | Blog (cost guide) | ~10-30/mo. HIGH conversion intent. |
+| 18 | best painter and decorator in exeter | Not indexed yet | 23 Feb 2026 | /reviews | ~10-30/mo. Trust keyword. |
+| 19 | conservation area painting rules exeter | Not indexed yet | 23 Feb 2026 | Blog | Very low comp. 20 conservation areas in Exeter. |
+| 20 | listed building paint exeter | Not indexed yet | 23 Feb 2026 | Blog | Niche authority builder. |
+| 21 | lime wash exeter | Not indexed yet | 23 Feb 2026 | Blog | ~5-15/mo. Heritage niche. |
+| 22 | damp walls exeter | Not indexed yet | 23 Feb 2026 | Blog | ~10-30/mo. Problem-solution content. |
+| 23 | kitchen cabinet spraying vs replacement | Not indexed yet | 23 Feb 2026 | Blog | 200-500/mo national. High value. |
+| 24 | exterior painting cost exeter | Not indexed yet | 23 Feb 2026 | Blog (cost guide) | |
+| 25 | decorator exeter reviews | Not indexed yet | 23 Feb 2026 | /reviews | Trust signal keyword. |
 
 ### Tier 4 — SUPPORTING (Blog Content)
 
 | # | Keyword | Current Position | Last Checked | Target Page | Notes |
 |---|---------|-----------------|--------------|-------------|-------|
-| 26 | decorating costs uk 2026 | Not indexed yet | 22 Feb 2026 | Blog | 500-1,500/mo national. |
-| 27 | best paint for exterior walls uk | Not indexed yet | 22 Feb 2026 | Blog | 300-700/mo national. |
-| 28 | period property decorating tips | Not indexed yet | 22 Feb 2026 | Blog | 100-300/mo national. |
-| 29 | breathable paint for old houses | Not indexed yet | 22 Feb 2026 | Blog | 100-200/mo national. |
-| 30 | best paint for devon weather | Not indexed yet | 22 Feb 2026 | Blog | ~10-30/mo. Unique local content. |
-| 31 | new build paint problems | Not indexed yet | 22 Feb 2026 | Blog | 30-80/mo national. Cranbrook + Liveable Exeter pipeline. |
-| 32 | eco friendly paint uk | Not indexed yet | 22 Feb 2026 | Blog | 100-300/mo. Aligns with BSR values. |
+| 26 | decorating costs uk 2026 | Not indexed yet | 23 Feb 2026 | Blog | 500-1,500/mo national. |
+| 27 | best paint for exterior walls uk | Not indexed yet | 23 Feb 2026 | Blog | 300-700/mo national. |
+| 28 | period property decorating tips | Not indexed yet | 23 Feb 2026 | Blog | 100-300/mo national. |
+| 29 | breathable paint for old houses | Not indexed yet | 23 Feb 2026 | Blog | 100-200/mo national. |
+| 30 | best paint for devon weather | Not indexed yet | 23 Feb 2026 | Blog | ~10-30/mo. Unique local content. |
+| 31 | new build paint problems | Not indexed yet | 23 Feb 2026 | Blog | 30-80/mo national. Cranbrook + Liveable Exeter pipeline. |
+| 32 | eco friendly paint uk | Not indexed yet | 23 Feb 2026 | Blog | 100-300/mo. Aligns with BSR values. |
 
 ---
 
@@ -376,6 +376,11 @@ An automated agent runs every 5 days via GitHub Actions. It:
 ---
 
 ## Session Log
+
+### 23 Feb 2026 — Automated SEO Agent Run
+- **What was done:** Checked rankings for 32 keywords (4 indexed). No new blog post needed — all planned topics covered. 2 competitors have published new content recently. Generated 5 SEO recommendations.
+- **Run type:** Automated (GitHub Actions)
+
 
 ### 22 Feb 2026 — Automated SEO Agent Run
 - **What was done:** Checked rankings for 32 keywords (4 indexed). No new blog post needed — all planned topics covered. 2 competitors have published new content recently. Generated 5 SEO recommendations.
