@@ -57,6 +57,7 @@ function getBlogKeywords(slug: string): string {
     'commercial-decorating-exeter-business-owners-guide': "commercial decorator exeter, commercial decorating exeter business owners guide",
     'limewash-paint-period-properties-devon-guide': "limewash paint old house, limewash paint period properties devon guide",
     'solving-damp-paint-problems-exeter-homes': "damp walls painting exeter, solving damp paint problems exeter homes",
+      'eco-friendly-paint-uk-best-options-your-home': "eco friendly paint uk, eco friendly paint uk best options your home",
   };
   return keywordMap[slug] || "";
 }

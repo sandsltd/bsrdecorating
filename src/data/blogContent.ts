@@ -18,6 +18,206 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'eco-friendly-paint-uk-best-options-your-home': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'When we\'re decorating homes across Exeter and Topsham, we\'re increasingly asked about eco-friendly paint options. It\'s a question that reflects a broader shift in how homeowners think about their living spaces. With Devon\'s strong environmental consciousness and our partnership with Surfers Against Sewage, we\'ve made it our business to understand which eco-friendly paints actually work in the real world. Whether you\'re refreshing a Victorian terrace in St Leonard\'s or redecorating a waterfront property in Topsham, choosing the right paint affects not just your health and the environment, but also how long your decoration will last in Devon\'s challenging coastal climate.',
+      },
+      {
+        type: 'heading',
+        content: 'What Makes Paint \'Eco-Friendly\'?',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'The term eco-friendly paint covers several different characteristics. Traditional paints contain high levels of volatile organic compounds, or VOCs, which are chemicals that evaporate into your home\'s air as the paint dries and for months afterwards. These compounds contribute to indoor air pollution and can cause headaches, dizziness, and respiratory irritation. They\'re also harmful to the environment during manufacturing and disposal.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Genuinely eco-friendly paint in the UK typically means paint with low or zero VOC content, measured in grams per litre. EU regulations currently limit VOC content to 30 g/l for matt paint and 80 g/l for gloss, but the best eco-friendly paints go far lower, with many brands offering options under 5 g/l or even zero-VOC formulations. Beyond VOCs, truly sustainable paints also consider their ingredients, using natural pigments and binders, avoiding petroleum-based plastics, and ensuring responsible sourcing throughout the supply chain.',
+      },
+      {
+        type: 'heading',
+        content: 'Why It Matters for Devon Homes',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'In our experience working across Exeter\'s 994 listed buildings and 20 conservation areas, the choice of paint matters even more in older properties. Period homes, particularly common in areas like Pennsylvania and Newtown, need walls to breathe. Modern plastic-based paints can trap moisture in solid walls, leading to damp problems. Many eco-friendly paints, especially those with natural binders, offer better breathability than conventional alternatives.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For families, particularly those with young children or anyone with asthma or allergies, low-VOC paint makes a measurable difference to indoor air quality. We\'ve worked on numerous properties in Exeter where homeowners specifically requested eco-friendly options after experiencing reactions to conventional paint fumes. With the average UK household spending around 90% of their time indoors, the air quality in your home genuinely matters.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Devon\'s proximity to the coast means our commitment to environmental responsibility extends beyond individual homes. Paint manufacturing, waste, and VOC emissions all impact water quality and marine ecosystems. Our partnership with Surfers Against Sewage reflects our understanding that the choices we make in decorating have wider environmental consequences.',
+      },
+      {
+        type: 'heading',
+        content: 'The Best Eco-Friendly Paint Options for UK Homes',
+        level: 2,
+      },
+      {
+        type: 'subheading',
+        content: 'Water-Based Low-VOC Paint',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Water-based paints with low VOC content represent the most practical eco-friendly option for most homeowners. Major manufacturers like Dulux, Crown, and Farrow & Ball all offer low-VOC ranges that perform exceptionally well in real-world conditions. These paints have come a long way in recent years. The coverage, durability, and finish now match traditional formulations, whilst dramatically reducing harmful emissions.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For interior walls and ceilings in standard conditions, low-VOC water-based emulsions work beautifully. They\'re available in thousands of colours, dry quickly, and produce minimal odour. In our [interior painting work across Exeter](/areas/exeter/interior-painting), we\'ve used these paints in everything from new builds at Cranbrook to Georgian townhouses in Southernhay, with excellent results in every setting.',
+      },
+      {
+        type: 'subheading',
+        content: 'Natural Paint',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Natural paints take eco-friendliness a step further, using ingredients derived from plants and minerals rather than petroleum. Brands like Earthborn, Auro, and Little Greene\'s traditional ranges use natural binders such as linseed oil, chalk, clay, and natural resins. These paints are genuinely zero-VOC and completely biodegradable.',
+      },
+      {
+        type: 'paragraph',
+        content: 'We particularly recommend natural paints for period properties and listed buildings. Their breathability makes them ideal for solid walls, and they\'re historically appropriate for heritage work. When we\'re [decorating period homes in Topsham](/blog/decorating-tips-exeter-period-homes), where 228 of the town\'s buildings are listed, natural paints often provide the perfect balance of environmental responsibility and conservation requirements.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The trade-off is usually cost. Natural paints typically cost 20-40% more than low-VOC conventional alternatives, and they sometimes require an extra coat for full coverage. However, their exceptional depth of colour and unique matt finish often justify the investment, particularly in principal rooms.',
+      },
+      {
+        type: 'subheading',
+        content: 'Mineral Paint',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Mineral paints, also called silicate paints, bond chemically with mineral substrates like lime plaster, brick, and stone. They\'re exceptionally breathable, naturally anti-fungal, and incredibly long-lasting. Brands like Keim offer mineral paints that can last 20-30 years on exterior masonry, far longer than conventional alternatives.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For [exterior painting work](/areas/exeter/exterior-painting) on older properties, particularly in exposed coastal locations around Topsham and Exmouth, mineral paints provide outstanding durability. They\'re especially effective on lime-rendered buildings, where their breathability prevents the moisture problems that can occur with modern masonry paint.',
+      },
+      {
+        type: 'subheading',
+        content: 'Milk Paint and Chalk Paint',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Milk paint and chalk paint offer ultra-natural options for furniture and decorative work. Milk paint, made from milk protein, lime, and natural pigments, has been used for centuries and provides a distinctive matt finish that\'s popular in rustic and country-style interiors. Chalk paint, popularised by Annie Sloan, uses chalk and natural pigments for a similar aesthetic.',
+      },
+      {
+        type: 'paragraph',
+        content: 'These paints work beautifully for [kitchen cabinet spraying](/areas/exeter/kitchen-spraying) projects where homeowners want a traditional, handcrafted appearance. They\'re completely natural, though they typically require a natural wax or oil finish for protection, and they\'re not suitable for high-moisture areas or exterior use.',
+      },
+      {
+        type: 'heading',
+        content: 'Performance Considerations',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'After two decades of professional decorating, we can confirm that eco-friendly paint performance now matches or exceeds conventional alternatives in most applications. The early generations of low-VOC paint sometimes struggled with coverage and durability, but modern formulations have solved these issues.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Where you might notice differences:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Drying time: Some natural paints take slightly longer to cure fully, particularly in cold or damp conditions typical of Devon winters',
+          'Coverage: Very dark colours in zero-VOC formulations may require an extra coat compared to conventional paint',
+          'Sheen levels: Natural paints typically produce a distinctive matt finish that differs from modern vinyl matt',
+          'Colour range: Whilst improving, some eco-friendly ranges offer fewer colours than conventional options',
+          'Price: Expect to pay £10-20 more per litre for natural paint, and £5-10 more for low-VOC conventional brands',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'In practice, these differences are minor. We use eco-friendly paint on the majority of our projects, and clients are consistently delighted with both the finish and the improved working environment during application.',
+      },
+      {
+        type: 'heading',
+        content: 'Choosing the Right Option for Your Project',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'The best eco-friendly paint for your home depends on several factors. For standard interior walls and ceilings in modern properties, low-VOC water-based emulsion from a major manufacturer offers excellent performance at a reasonable price. Brands like Dulux Trade Diamond Matt or Crown Trade Clean Extreme are professional-quality options we use regularly.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For period properties, particularly those with solid walls or lime plaster, consider natural paints like Earthborn Claypaint or Little Greene\'s Distemper. These paints respect the building\'s original construction whilst providing modern durability and a beautiful finish. When we\'re working on [heritage properties in conservation areas](/blog/heritage-property-restoration-topsham), breathable natural paint often represents the most appropriate choice both environmentally and architecturally.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For exterior work, especially on exposed coastal properties, mineral silicate paints offer unmatched longevity and breathability. Whilst the initial cost is higher, the 20-30 year lifespan makes them economical over time. For standard exterior work on modern properties, low-VOC water-based masonry paint provides a good balance of performance and environmental responsibility.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For kitchens and bathrooms, look for low-VOC paints specifically formulated for high-moisture environments. Many eco-friendly ranges now include kitchen and bathroom variants with added mould resistance. We\'ve had excellent results with Earthborn Eggshell and Auro 524 in these applications.',
+      },
+      {
+        type: 'heading',
+        content: 'Beyond the Paint: Application Matters',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'The environmental impact of decorating extends beyond paint choice. Professional preparation, proper application, and minimal waste all contribute to a more sustainable project. At BSR Decorating, we take care to:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Calculate paint quantities accurately to minimise waste',
+          'Store leftover paint properly so it remains usable for future touch-ups',
+          'Dispose of any waste paint responsibly through licensed facilities',
+          'Use high-quality brushes and rollers that last for years rather than cheap disposable alternatives',
+          'Prepare surfaces thoroughly so paint lasts as long as possible',
+          'Recommend durable finishes that won\'t need redecorating for many years',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Proper surface preparation is particularly crucial with natural paints, which don\'t mask imperfections as effectively as modern plastic-based alternatives. This attention to detail ensures your eco-friendly paint performs as intended and lasts as long as possible.',
+      },
+      {
+        type: 'heading',
+        content: 'The Cost Question',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Eco-friendly paint typically costs more upfront. For a standard room in Exeter, where painting a bedroom averages around £498, choosing natural paint might add £40-80 to the material cost. For a full house interior, the premium might be £200-400.',
+      },
+      {
+        type: 'paragraph',
+        content: 'However, this calculation doesn\'t account for longevity. Many natural and mineral paints last significantly longer than conventional alternatives, particularly on exterior surfaces. A mineral paint that lasts 25 years costs far less per year than conventional paint that needs reapplying every 5-7 years. The improved air quality and reduced environmental impact also have value that\'s harder to quantify but nonetheless real.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For most homeowners, we recommend a mixed approach: invest in natural or mineral paints for principal rooms and exterior surfaces where longevity matters most, and use quality low-VOC conventional paint elsewhere. This provides excellent environmental benefits whilst keeping costs reasonable.',
+      },
+      {
+        type: 'quote',
+        content: 'Eco-friendly paint isn\'t a compromise anymore. Modern low-VOC and natural paints deliver professional results whilst dramatically reducing harmful emissions and environmental impact. For Devon homeowners, particularly those in period properties, these paints often perform better than conventional alternatives whilst supporting the county\'s environmental values.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Whether you\'re refreshing a single room or completely redecorating your home, choosing eco-friendly paint represents a practical step towards healthier indoor air and reduced environmental impact. The options available in the UK market now offer genuine choice across all price points and performance requirements, making sustainable decorating accessible to every homeowner.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Considering eco-friendly paint for your Exeter or Topsham home? BSR Decorating can advise on the best options for your specific property and provide a free, no-obligation quote. With over 20 years\' experience and a commitment to environmental responsibility through our Surfers Against Sewage partnership, we\'ll help you choose paints that are kind to your home and the planet. Contact us today to discuss your project.',
+      },
+    ],
+  },
   'solving-damp-paint-problems-exeter-homes': {
     sections: [
       {

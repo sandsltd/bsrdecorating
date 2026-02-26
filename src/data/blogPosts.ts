@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 25,
+    title: 'Why Eco-Friendly Paint Matters and the Best Options for Your Home',
+    excerpt: 'Discover why eco-friendly paint matters for Devon homes and which low-VOC, natural options deliver professional results.',
+    category: 'Expert Advice',
+    date: '2026-02-26',
+    readTime: '9 min read',
+    image: '/images/blog/07-paint-bucket-rollers.webp',
+    slug: 'eco-friendly-paint-uk-best-options-your-home',
+  },
+  {
     id: 24,
     title: 'Solving Damp and Paint Problems in Exeter Homes: A Professional Guide',
     excerpt: 'Discover why damp causes paint to fail in Exeter homes and how professional decorators tackle the root causes for lasting results.',
