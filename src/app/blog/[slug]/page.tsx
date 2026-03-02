@@ -58,6 +58,7 @@ function getBlogKeywords(slug: string): string {
     'limewash-paint-period-properties-devon-guide': "limewash paint old house, limewash paint period properties devon guide",
     'solving-damp-paint-problems-exeter-homes': "damp walls painting exeter, solving damp paint problems exeter homes",
       'eco-friendly-paint-uk-best-options-your-home': "eco friendly paint uk, eco friendly paint uk best options your home",
+      'painting-trends-devon-homes-2026': "painting trends 2026 uk, painting trends devon homes 2026",
   };
   return keywordMap[slug] || "";
 }

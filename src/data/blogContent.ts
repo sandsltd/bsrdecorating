@@ -18,6 +18,190 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'painting-trends-devon-homes-2026': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'The painting trends shaping Devon homes in 2026 reflect a fascinating blend of our region\'s architectural heritage, coastal climate considerations, and growing environmental consciousness. After two decades decorating properties from Topsham\'s Georgian townhouses to Exeter\'s Victorian terraces, I\'m seeing homeowners make increasingly sophisticated choices that honour our local character whilst embracing contemporary design sensibilities. Whether you\'re planning a complete refresh or targeting specific rooms, understanding what\'s popular right now can help you make decisions that will look stunning for years to come.',
+      },
+      {
+        type: 'heading',
+        content: 'Heritage Colours Making a Strong Comeback',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Across Exeter\'s 994 listed buildings and 20 conservation areas, we\'re witnessing a renewed appreciation for historically authentic colour palettes. This isn\'t about recreating museum pieces, but rather using heritage colours in fresh, liveable ways that respect the bones of period properties whilst meeting modern lifestyle needs.',
+      },
+      {
+        type: 'subheading',
+        content: 'Earthy Terracottas and Warm Ochres',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Rich, earthy tones are dominating feature walls and dining rooms throughout St Leonard\'s and Pennsylvania. These warm shades work beautifully in Devon\'s often grey light, bringing warmth without overwhelming period architectural details. In Topsham\'s 228 listed buildings, we\'re particularly seeing terracotta shades used in entrance halls and living rooms, paired with crisp white woodwork to maintain brightness.',
+      },
+      {
+        type: 'subheading',
+        content: 'Deep Heritage Greens',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'From sage to forest green, these sophisticated shades are replacing the grey trend that dominated the past five years. Heritage greens complement Devon\'s verdant landscape whilst providing excellent contrast against original cornicing and ceiling roses. We\'ve used these extensively in Victorian terraces throughout Heavitree, where they enhance rather than compete with period features.',
+      },
+      {
+        type: 'heading',
+        content: 'Sustainable and Breathable Paint Choices',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'The painting trends for 2026 aren\'t just about colour. Devon homeowners are increasingly asking about paint composition, environmental impact, and long-term building health. This represents a significant shift in how people think about decorating.',
+      },
+      {
+        type: 'list',
+        content: [
+          'Natural clay and mineral paints for pre-1919 properties, allowing walls to breathe properly',
+          'Low and zero-VOC formulations for improved indoor air quality, especially important in tightly sealed modern homes',
+          'Recycled and reclaimed paint programmes gaining traction among environmentally conscious homeowners',
+          'Limewash finishes for authentic period appearance with genuine breathability in heritage properties',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Our partnership with Surfers Against Sewage reflects this growing demand for environmentally responsible decorating. For properties in Topsham\'s conservation area or Exeter\'s numerous listed buildings, breathable paints aren\'t just trendy, they\'re essential for long-term building preservation. Modern vinyl emulsions can trap moisture in solid-wall constructions, leading to damp issues that cost thousands to remedy.',
+      },
+      {
+        type: 'heading',
+        content: 'Texture and Finish Sophistication',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Beyond colour choice, 2026 sees homeowners paying unprecedented attention to paint finish and texture. This represents a maturation in how people approach interior decorating.',
+      },
+      {
+        type: 'subheading',
+        content: 'Matt and Chalky Finishes Dominating',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Ultra-matt and chalky finishes are replacing the satinwood trend on walls throughout Devon. These finishes absorb rather than reflect light, creating depth and sophistication whilst cleverly disguising minor wall imperfections common in period properties. In Exeter\'s Georgian and Victorian homes, these finishes enhance architectural details rather than competing with them through unwanted sheen.',
+      },
+      {
+        type: 'subheading',
+        content: 'Limewash Texture for Authenticity',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Genuine limewash application is experiencing remarkable growth, particularly in Topsham and the older areas of Exeter. The slight texture and depth of colour variation that limewash provides cannot be replicated with modern paints. For property values averaging £506,000 in Topsham, homeowners are investing in authentic finishes that enhance rather than compromise their period properties\' character and value.',
+      },
+      {
+        type: 'heading',
+        content: 'Exterior Trends Suited to Devon\'s Climate',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Devon\'s coastal position brings specific challenges that influence exterior painting trends. Salt air, driving rain, and humidity require careful product selection and colour choices that actually work in our microclimate.',
+      },
+      {
+        type: 'subheading',
+        content: 'Darker Exterior Colours Gaining Confidence',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'We\'re seeing bolder exterior colour choices across Exeter, with deep blues, slate greys, and even charcoal appearing on Victorian and Edwardian homes. This requires high-quality exterior masonry paint with excellent UV resistance. In Devon\'s intense summer sun, inferior products fade rapidly, making professional product knowledge essential. Modern exterior formulations now offer dark colours that maintain stability in coastal conditions, something impossible just five years ago.',
+      },
+      {
+        type: 'subheading',
+        content: 'Traditional Render Colours in Modern Formulations',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'For rendered properties, we\'re seeing a return to traditional cream and stone shades, but executed in advanced masonry paints with superior water repellency and breathability. These work particularly well in conservation areas where planning considerations favour traditional aesthetics. The formulations, however, are thoroughly modern, offering ten-year-plus durability unimaginable with traditional limewash or distemper.',
+      },
+      {
+        type: 'heading',
+        content: 'Kitchen and Woodwork Trends',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: '[Kitchen cabinet spraying](/areas/exeter/kitchen-spraying) continues its explosive growth in 2026, offering a sustainable and cost-effective alternative to replacement. The colour trends here tell their own story.',
+      },
+      {
+        type: 'list',
+        content: [
+          'Warm neutrals and greiges replacing stark white in kitchen cabinetry',
+          'Deep navy and forest green for lower cabinets, creating sophisticated two-tone schemes',
+          'Natural wood tones celebrated rather than painted over, particularly for quality hardwood',
+          'Satin and eggshell finishes on woodwork replacing high-gloss throughout living spaces',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'For an average kitchen spraying cost of around £750, homeowners can completely transform tired cabinetry in current trend colours. This represents remarkable value compared to the £8,000 to £15,000 cost of replacement, whilst delivering identical visual impact.',
+      },
+      {
+        type: 'heading',
+        content: 'The Accent Wall Evolution',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'The accent wall concept has matured significantly. Rather than one wall in a jarring contrast colour, 2026 trends favour more subtle approaches that enhance room architecture. In Exeter\'s period properties, we\'re creating accent walls that highlight original features: the chimney breast wall in a sitting room, or the wall behind picture rails in a bedroom. Colour choices are typically two or three shades deeper than the main wall colour, creating depth without discord.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For newer properties in developments like Cranbrook, where architectural features are minimal, accent walls are being used more creatively to define functional zones in open-plan spaces. A deeper shade behind a dining area, for instance, visually separates it from the kitchen without requiring structural changes.',
+      },
+      {
+        type: 'heading',
+        content: 'What\'s Declining in Popularity',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Understanding what\'s fading helps avoid choices that will date quickly. Cool greys, which dominated from 2015 to 2022, are noticeably declining across Devon. They\'re being replaced with warmer neutrals, greiges, and mushroom tones that create more inviting spaces. All-white interiors are also receding, with homeowners recognising that carefully chosen colour enhances rather than diminishes space and light.',
+      },
+      {
+        type: 'paragraph',
+        content: 'High-gloss finishes on woodwork and doors are giving way to softer eggshell and satin finishes throughout homes. This creates a more contemporary, sophisticated appearance whilst being more forgiving of minor imperfections and significantly easier to maintain.',
+      },
+      {
+        type: 'heading',
+        content: 'Planning Your 2026 Decorating Project',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'If you\'re planning decorating work this year, consider how these trends might work in your specific property. For [period properties in Topsham](/blog/decorating-tips-exeter-period-homes) or [Exeter\'s conservation areas](/areas/exeter/heritage-property-painting), authentic heritage colours and breathable paint formulations aren\'t just fashionable but practically essential. For newer homes, the sustainability trend offers an opportunity to make environmentally responsible choices without compromising on aesthetics or durability.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Remember that trends should inform rather than dictate your choices. The best decorating decisions consider your property\'s specific characteristics, your lifestyle needs, and Devon\'s unique climate challenges. A colour that looks stunning in a London showroom might appear entirely different in our softer, greyer light.',
+      },
+      {
+        type: 'quote',
+        content: 'The most successful decorating projects in 2026 will be those that balance current trends with timeless principles: appropriate colours for the architecture, quality materials suited to our climate, and execution that enhances rather than fights against the property\'s character.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Whether you\'re refreshing a single room or undertaking a whole-house transformation, understanding these painting trends for 2026 helps you make informed decisions that will look beautiful now and remain appealing for years to come. The key is adapting trends intelligently to suit your specific Devon property and lifestyle.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Planning a decorating project that embraces 2026 trends whilst respecting your property\'s character? Contact BSR Decorating for a free, no-obligation quote and expert advice tailored to your Devon home.',
+      },
+    ],
+  },
   'eco-friendly-paint-uk-best-options-your-home': {
     sections: [
       {

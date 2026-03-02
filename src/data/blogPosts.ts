@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 26,
+    title: 'Painting Trends for Devon Homes: What\'s Popular in 2026',
+    excerpt: 'Discover the painting trends transforming Devon homes in 2026, from heritage colours to sustainable choices and techniques that work in our coastal climate.',
+    category: 'Seasonal Trends',
+    date: '2026-03-02',
+    readTime: '7 min read',
+    image: '/images/blog/34-pink-paint-samples.webp',
+    slug: 'painting-trends-devon-homes-2026',
+  },
+  {
     id: 25,
     title: 'Why Eco-Friendly Paint Matters and the Best Options for Your Home',
     excerpt: 'Discover why eco-friendly paint matters for Devon homes and which low-VOC, natural options deliver professional results.',
