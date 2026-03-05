@@ -59,6 +59,7 @@ function getBlogKeywords(slug: string): string {
     'solving-damp-paint-problems-exeter-homes': "damp walls painting exeter, solving damp paint problems exeter homes",
       'eco-friendly-paint-uk-best-options-your-home': "eco friendly paint uk, eco friendly paint uk best options your home",
       'painting-trends-devon-homes-2026': "painting trends 2026 uk, painting trends devon homes 2026",
+      'how-long-exterior-paint-last-devon-climate': "how long exterior paint last, how long exterior paint last devon climate",
   };
   return keywordMap[slug] || "";
 }

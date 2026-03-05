@@ -18,6 +18,265 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'how-long-exterior-paint-last-devon-climate': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'If you\'re planning to paint your Devon home\'s exterior, one of the first questions you\'ll ask is: how long will it last? The answer isn\'t straightforward, because Devon\'s unique coastal climate presents specific challenges that can significantly affect paint durability. From the salt-laden winds sweeping in from Torbay to the persistent drizzle that characterises our winters, understanding these factors is essential for making informed decisions about your property\'s exterior maintenance.',
+      },
+      {
+        type: 'paragraph',
+        content: 'As professional decorators based in Dawlish with over 20 years of experience working across Exeter, Topsham, and the surrounding areas, we\'ve seen firsthand how Devon\'s weather tests exterior paintwork. In this guide, we\'ll explain exactly how long exterior paint lasts in our local climate, what factors influence longevity, and how you can maximise your investment.',
+      },
+      {
+        type: 'heading',
+        content: 'The Standard Lifespan of Exterior Paint',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Under ideal conditions, quality exterior paint typically lasts between 5 and 15 years, depending on several factors including paint type, surface preparation, and environmental exposure. However, Devon\'s coastal climate means we\'re rarely dealing with ideal conditions.',
+      },
+      {
+        type: 'subheading',
+        content: 'Paint Types and Their Expected Longevity',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Different paint types offer varying levels of durability in Devon\'s climate:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Masonry paint on rendered walls: 5-10 years, though quality breathable masonry paints can last up to 15 years with proper application',
+          'Exterior wood paint on doors and windows: 4-8 years depending on exposure and wood condition',
+          'Traditional lime-based paints on period properties: 5-7 years, though they\'re often preferred for properties in Topsham\'s conservation area or among Exeter\'s 994 listed buildings due to their breathability',
+          'Modern acrylic paints: 7-10 years with good UV and weather resistance',
+          'Oil-based paints: 6-9 years, offering excellent adhesion but longer drying times in Devon\'s humidity',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'These timescales assume professional application with proper surface preparation. DIY jobs or rushed preparation can reduce longevity by 30-50 percent.',
+      },
+      {
+        type: 'heading',
+        content: 'How Devon\'s Climate Affects Exterior Paint Longevity',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Devon\'s weather is beautiful but demanding on exterior paintwork. Understanding these local challenges helps explain why some homes in Exeter and Topsham need repainting sooner than expected.',
+      },
+      {
+        type: 'subheading',
+        content: 'Coastal Salt and Wind Exposure',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Properties in coastal areas like Dawlish, Topsham\'s waterfront, or Exmouth face constant exposure to salt-laden air. Salt is hygroscopic, meaning it draws moisture into painted surfaces, accelerating deterioration. Waterfront homes in Topsham, where the average property value is £506,000, often need repainting 1-2 years sooner than inland properties in areas like Heavitree or Pennsylvania.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Wind-driven rain is particularly problematic for south and west-facing walls, which receive the brunt of Devon\'s prevailing weather. These elevations may need attention 2-3 years before north-facing walls on the same property.',
+      },
+      {
+        type: 'subheading',
+        content: 'High Humidity and Persistent Moisture',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Devon\'s climate is characterised by high humidity levels year-round, with frequent drizzle rather than heavy downpours. This persistent moisture prevents painted surfaces from drying properly, creating conditions where mould, algae, and lichen can establish themselves on exterior walls.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Properties with north-facing walls or those shaded by trees in leafy areas like St Leonard\'s or Pennsylvania are particularly vulnerable. Algae growth isn\'t just unsightly; it actually breaks down paint film and reduces its protective qualities.',
+      },
+      {
+        type: 'subheading',
+        content: 'Temperature Fluctuations and UV Exposure',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'While Devon doesn\'t experience extreme temperature swings, the cycle of warm days and cool nights causes painted surfaces to expand and contract repeatedly. Over time, this movement creates microscopic cracks where water can penetrate, leading to peeling and flaking.',
+      },
+      {
+        type: 'paragraph',
+        content: 'UV radiation, even on cloudy days, gradually degrades paint binders, causing chalking and colour fading. Darker colours fade more noticeably, which is why heritage properties in Exeter\'s 20 conservation areas often stick to traditional lighter shades that age more gracefully.',
+      },
+      {
+        type: 'heading',
+        content: 'Factors That Influence Paint Longevity on Your Property',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Beyond climate, several property-specific factors determine how long exterior paint lasts on your home.',
+      },
+      {
+        type: 'subheading',
+        content: 'Surface Preparation and Paint Quality',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'The single most important factor in paint longevity is thorough surface preparation. Professional decorators spend 60-70 percent of project time on preparation because it\'s what makes the difference between paint that lasts 5 years and paint that lasts 10.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Proper preparation includes removing all loose and flaking paint, treating any damp issues, filling cracks, sanding smooth, and applying appropriate primers. Skipping these steps to save money is false economy. We regularly see properties where previous DIY jobs failed within 2-3 years simply because preparation was inadequate.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Paint quality matters enormously. Premium paints cost 40-60 percent more than budget options but typically last twice as long. For a typical Exeter home exterior painting project costing around £1,728, investing in quality paint adds perhaps £200-300 but extends the repainting interval from 5 years to 8-10 years, representing significant long-term savings.',
+      },
+      {
+        type: 'subheading',
+        content: 'Property Age and Construction Type',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Older properties, particularly the Victorian and Edwardian homes common in areas like St Leonard\'s and Newtown, were built with breathable lime mortar and often lack damp-proof courses. Modern masonry paints can trap moisture in these walls, leading to paint failure and potential structural issues.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For period properties among Topsham\'s 228 listed buildings or Exeter\'s extensive heritage stock, breathable paints like mineral paints or traditional limewash are essential. While they may need repainting slightly more frequently, they protect the building\'s fabric and comply with conservation area requirements.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Modern rendered properties with cavity walls and damp-proof courses can use modern acrylic or silicone-based masonry paints that offer longer protection, typically 10-15 years with quality products and application.',
+      },
+      {
+        type: 'subheading',
+        content: 'Ongoing Maintenance',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Regular maintenance significantly extends paint life. Simple actions make a substantial difference:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Annual washing down of painted surfaces to remove salt deposits and organic growth',
+          'Clearing gutters and downpipes to prevent water overflow onto walls',
+          'Trimming back vegetation to improve air circulation and reduce moisture retention',
+          'Touching up minor damage promptly before water penetration causes larger problems',
+          'Inspecting and maintaining window and door seals to prevent water ingress behind paintwork',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Properties that receive this basic annual maintenance routinely achieve paint lifespans at the upper end of expected ranges, sometimes lasting 12-15 years between full repainting.',
+      },
+      {
+        type: 'heading',
+        content: 'Signs Your Exterior Paint Needs Attention',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Knowing when to repaint prevents minor issues becoming major problems. Watch for these warning signs:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Chalking: Paint surface feels powdery when touched, indicating UV degradation of binders',
+          'Flaking or peeling: Paint lifting away from the surface, usually starting at edges and joints',
+          'Cracking or crazing: Fine cracks forming across painted surfaces, allowing water penetration',
+          'Fading: Noticeable colour loss, particularly on south-facing elevations',
+          'Mould or algae growth: Green or black discolouration, common on north-facing walls in Devon',
+          'Bare patches: Areas where paint has completely worn away, exposing substrate to weather',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'If you notice multiple signs, it\'s time to consider repainting. Addressing issues promptly prevents water damage to underlying materials, which can transform a straightforward painting job into a costly repair project.',
+      },
+      {
+        type: 'heading',
+        content: 'Maximising Paint Longevity in Devon\'s Climate',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'While you can\'t change the weather, you can make choices that maximise how long exterior paint lasts on your Devon property.',
+      },
+      {
+        type: 'subheading',
+        content: 'Choose the Right Paint System',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Working with experienced local decorators who understand Devon\'s specific challenges ensures you get paint recommendations tailored to your property type, location, and exposure. For coastal properties, this might mean specialist marine-grade paints. For heritage properties in conservation areas, it means breathable mineral paints or traditional materials.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Our guide to the [best exterior paint for Devon\'s coastal weather](/blog/best-exterior-paint-devon-coastal-weather) provides detailed recommendations for different property types and locations.',
+      },
+      {
+        type: 'subheading',
+        content: 'Time Your Painting Project Carefully',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Exterior painting should ideally be carried out in dry conditions with temperatures between 10-25 degrees Celsius. In Devon, this typically means late spring through early autumn. However, even summer painting requires careful weather monitoring to avoid painting before rain or during high humidity.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional decorators understand these timing considerations and can advise on optimal scheduling for your specific project. For comprehensive guidance on timing, see our [spring exterior painting guide](/blog/spring-exterior-painting-devon-complete-guide).',
+      },
+      {
+        type: 'subheading',
+        content: 'Invest in Professional Application',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'While DIY exterior painting might seem cost-effective, professional application delivers measurably longer-lasting results. Experienced decorators ensure proper surface preparation, apply paints at correct thicknesses, and use techniques that prevent common failure points.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For a typical Exeter home, professional exterior painting costs around £1,728. If professional application extends paint life from 5 years to 10 years compared to DIY, the annual cost drops from £345 to £173, making it excellent value while ensuring your home looks its best and remains protected.',
+      },
+      {
+        type: 'heading',
+        content: 'Planning Your Next Exterior Painting Project',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Understanding how long exterior paint lasts in Devon\'s climate helps you plan maintenance budgets and avoid emergency repairs. Most homeowners find that painting on a 7-10 year cycle, with annual maintenance and minor touch-ups as needed, keeps their property in excellent condition while spreading costs manageably.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For properties in Topsham, particularly those in the conservation area or among the town\'s 228 listed buildings, working with decorators experienced in heritage properties ensures compliance with planning requirements while achieving lasting results. Similarly, Exeter\'s 994 listed buildings and 20 conservation areas often have specific requirements that influence paint choices and application methods.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Whether your home is a modern new-build in Cranbrook, a Victorian terrace in St Leonard\'s, a waterfront property in Topsham, or anywhere across Exeter, Dawlish, and surrounding areas, professional guidance on paint selection and application delivers the best long-term value.',
+      },
+      {
+        type: 'quote',
+        content: 'Quality exterior painting isn\'t just about appearance; it\'s about protecting your most valuable asset from Devon\'s demanding climate. The right paint system, professionally applied, can last 10-15 years and save you thousands compared to frequent cheap repainting.',
+      },
+      {
+        type: 'paragraph',
+        content: 'At BSR Decorating, we\'ve spent over 20 years understanding exactly how Devon\'s coastal weather affects exterior paintwork. We know which paint systems deliver the longest life on different property types, from heritage buildings to modern homes, and from exposed coastal locations to sheltered inland properties. Our work across [Exeter](/areas/exeter), [Topsham](/areas/topsham), and surrounding areas means we understand the specific challenges your property faces.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Planning to paint your property\'s exterior? Get expert advice on paint selection and a free, no-obligation quote from BSR Decorating. Call us or visit bsrdecorating.co.uk to discuss your project.',
+      },
+    ],
+  },
   'painting-trends-devon-homes-2026': {
     sections: [
       {

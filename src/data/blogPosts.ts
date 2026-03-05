@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 27,
+    title: 'How Long Does Exterior Paint Last in Devon\'s Climate? A Professional Guide',
+    excerpt: 'Discover how Devon\'s coastal weather affects exterior paint longevity and learn how to maximise the lifespan of your home\'s paintwork.',
+    category: 'Expert Advice',
+    date: '2026-03-05',
+    readTime: '9 min read',
+    image: '/images/blog/16-gallons-of-paint.webp',
+    slug: 'how-long-exterior-paint-last-devon-climate',
+  },
+  {
     id: 26,
     title: 'Painting Trends for Devon Homes: What\'s Popular in 2026',
     excerpt: 'Discover the painting trends transforming Devon homes in 2026, from heritage colours to sustainable choices and techniques that work in our coastal climate.',
