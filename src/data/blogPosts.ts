@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 28,
+    title: 'Breathable Paint for Old Houses: A Complete Guide for Devon Period Property Owners',
+    excerpt: 'Discover why breathable paint is essential for period properties and how choosing the right system can prevent damp, preserve historic fabric, and save thousands in repairs.',
+    category: 'Heritage Restoration',
+    date: '2026-03-08',
+    readTime: '9 min read',
+    image: '/images/blog/15-man-renovation-room.webp',
+    slug: 'breathable-paint-old-houses-complete-guide',
+  },
+  {
     id: 27,
     title: 'How Long Does Exterior Paint Last in Devon\'s Climate? A Professional Guide',
     excerpt: 'Discover how Devon\'s coastal weather affects exterior paint longevity and learn how to maximise the lifespan of your home\'s paintwork.',
