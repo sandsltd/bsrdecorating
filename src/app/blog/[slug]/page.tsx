@@ -61,6 +61,7 @@ function getBlogKeywords(slug: string): string {
       'painting-trends-devon-homes-2026': "painting trends 2026 uk, painting trends devon homes 2026",
       'how-long-exterior-paint-last-devon-climate': "how long exterior paint last, how long exterior paint last devon climate",
       'breathable-paint-old-houses-complete-guide': "breathable paint old houses, breathable paint old houses complete guide",
+      'preparing-devon-home-winter-maintenance-checklist': "winter property maintenance devon, preparing devon home winter maintenance checklist",
   };
   return keywordMap[slug] || "";
 }

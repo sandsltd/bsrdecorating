@@ -18,6 +18,281 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'preparing-devon-home-winter-maintenance-checklist': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Winter in Devon brings its own unique challenges for property owners. With average rainfall exceeding 900mm annually in Exeter and exposure to Atlantic weather systems, our homes face constant assault from wind-driven rain, temperature fluctuations, and high humidity. Whether you own a Victorian terrace in St Leonard\'s, a riverside property in Topsham, or a modern family home in Pennsylvania, proper winter property maintenance in Devon is essential to protect your investment and avoid costly repairs.',
+      },
+      {
+        type: 'paragraph',
+        content: 'After more than 20 years decorating homes across Exeter, Topsham, and the surrounding areas, we\'ve seen firsthand what happens when winter maintenance is neglected. A small issue in November becomes a major problem by March. This comprehensive guide covers everything Devon homeowners need to know about preparing their properties for winter, with specific advice for our region\'s unique coastal climate and the 994 listed buildings scattered across Exeter\'s conservation areas.',
+      },
+      {
+        type: 'heading',
+        content: 'External Paintwork and Weatherproofing',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Your home\'s external paintwork is the first line of defence against Devon\'s winter weather. Paint isn\'t just decorative—it\'s a protective barrier that prevents moisture penetration, timber rot, and structural damage.',
+      },
+      {
+        type: 'subheading',
+        content: 'Inspect Before the First Frost',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'October and early November offer the last practical window for [exterior painting work](/areas/exeter/exterior-painting) before winter sets in. Walk around your property and check for these warning signs:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Flaking or peeling paint on window frames, doors, or fascias',
+          'Bare timber exposed to the elements',
+          'Cracking or blistering on rendered surfaces',
+          'Discolouration indicating water ingress',
+          'Failed sealant around windows and door frames',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'In Topsham\'s waterfront properties along the Exe estuary, salt air accelerates paint degradation. Properties in exposed locations like Exwick or the hills around Pennsylvania face additional challenges from wind-driven rain. Even minor paint failures can allow water to penetrate timber substrates, leading to rot that\'s expensive to repair.',
+      },
+      {
+        type: 'subheading',
+        content: 'Emergency Repairs vs Full Repainting',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'If you discover significant paint failures in late autumn, you face a decision. Full exterior repainting typically requires temperatures above 10°C and dry conditions for several consecutive days—increasingly difficult to guarantee after November in Devon. However, targeted repairs can protect vulnerable areas through winter.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional decorators can apply spot treatments to bare timber, reglaze failed putty, and apply emergency weatherproofing to see your property safely through to spring. The average cost to paint a house exterior in Exeter is around £1,728, but winter preparation work typically costs £300-600 depending on the extent of repairs needed.',
+      },
+      {
+        type: 'heading',
+        content: 'Guttering, Drainage and Water Management',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Devon\'s winter rainfall puts enormous pressure on guttering and drainage systems. A blocked gutter doesn\'t just overflow—it directs thousands of litres of water exactly where you don\'t want it: down your walls, into foundations, and through vulnerable points in your property\'s envelope.',
+      },
+      {
+        type: 'subheading',
+        content: 'The Autumn Gutter Clear',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Clear gutters before leaf fall is complete, typically late October or early November. In areas like Heavitree with mature tree cover, or along Topsham\'s leafy residential streets, this is absolutely critical. Remove all debris from gutters and downpipes, and flush with water to check for blockages and leaks.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Pay particular attention to valley gutters on Victorian and Edwardian properties—these hidden gutters between roof slopes are notorious failure points. Many of Exeter\'s 120 listed buildings in the Newtown and St Leonard\'s conservation area have original valley gutters that require specialist maintenance.',
+      },
+      {
+        type: 'subheading',
+        content: 'Check External Ground Drainage',
+        level: 3,
+      },
+      {
+        type: 'list',
+        content: [
+          'Ensure ground-level drains are clear of leaves and debris',
+          'Check that downpipes discharge into proper drainage, not directly against walls',
+          'Verify that garden drainage slopes away from the property',
+          'Look for standing water near foundations after heavy rain',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Properties in Alphington and parts of Topsham with high water tables are particularly vulnerable to drainage issues. Poor drainage combined with Devon\'s clay soils can lead to subsidence issues that manifest as cracking in interior walls and ceilings.',
+      },
+      {
+        type: 'heading',
+        content: 'Interior Preparation and Damp Prevention',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Winter property maintenance in Devon isn\'t just about external work. The combination of cold weather and high humidity creates perfect conditions for condensation, mould, and internal damp issues.',
+      },
+      {
+        type: 'subheading',
+        content: 'Improve Ventilation Before Winter',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Modern double glazing and improved insulation make homes more energy-efficient but can trap moisture if ventilation is inadequate. This is particularly problematic in period properties where traditional lime plaster and breathable walls have been covered with modern materials.',
+      },
+      {
+        type: 'paragraph',
+        content: 'If you\'ve noticed condensation on windows, musty smells, or mould spots in previous winters, address ventilation before temperatures drop. Trickle vents in windows should be kept open, extractor fans should be functioning properly, and loft spaces need adequate ventilation to prevent condensation in roof spaces.',
+      },
+      {
+        type: 'subheading',
+        content: 'Check for Existing Damp Issues',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Inspect your home for signs of damp that will worsen over winter. Common indicators include discoloured patches on walls or ceilings, peeling wallpaper, tide marks at skirting level, or a persistent musty smell. Our guide to [solving damp and paint problems in Exeter homes](/blog/solving-damp-paint-problems-exeter-homes) covers the main causes and solutions in detail.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Rising damp is particularly common in older properties throughout Exeter\'s conservation areas. Many Victorian terraces in Heavitree and Newtown were built without damp-proof courses, relying instead on lime plaster and adequate ventilation. When these properties are renovated with impermeable modern materials, damp becomes trapped.',
+      },
+      {
+        type: 'heading',
+        content: 'Windows, Doors and Draughtproofing',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Gaps around windows and doors account for significant heat loss and can allow wind-driven rain to penetrate your property during winter storms.',
+      },
+      {
+        type: 'subheading',
+        content: 'Inspect and Repair Window Putty',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Traditional sash windows in period properties use linseed oil putty to seal glass panes. This putty hardens and shrinks over time, creating gaps that allow water penetration and draughts. Failed putty is one of the most common issues we encounter when working on Exeter\'s listed buildings.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Replacing window putty is skilled work, particularly in conservation areas where planning restrictions apply. The glazing compound must be properly primed and painted to create a weather-resistant seal. This is essential winter property maintenance in Devon for any home with traditional windows.',
+      },
+      {
+        type: 'subheading',
+        content: 'Check Door Seals and Thresholds',
+        level: 3,
+      },
+      {
+        type: 'list',
+        content: [
+          'Replace worn brush strips and rubber seals around external doors',
+          'Check that door thresholds create a weathertight seal when closed',
+          'Inspect the bottom rail of external doors for rot or paint failure',
+          'Ensure letterboxes have functioning internal draught excluders',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'The average cost to paint a front door in Exeter is £123—a worthwhile investment if the existing finish is failing. A properly painted and sealed external door will last 5-7 years in Devon\'s climate when high-quality exterior paint systems are used.',
+      },
+      {
+        type: 'heading',
+        content: 'Heating System and Interior Environment',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'A well-maintained heating system isn\'t just about comfort—it\'s essential for preventing damp and protecting your decorative finishes through winter.',
+      },
+      {
+        type: 'subheading',
+        content: 'Service Your Boiler Before Winter Demand',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Book boiler servicing in September or October before heating engineers become fully booked. A serviced boiler runs more efficiently, reducing heating costs and ensuring consistent interior temperatures that prevent condensation.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Maintain interior temperatures above 15°C throughout winter, even when the property is unoccupied. This is particularly important for landlords with rental properties in Exeter\'s student areas or for second homes in coastal locations. Low temperatures combined with poor ventilation create ideal conditions for mould growth that can damage recently decorated interiors.',
+      },
+      {
+        type: 'subheading',
+        content: 'Protect Recently Decorated Rooms',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'If you\'ve had [interior decorating work](/areas/exeter/interior-painting) completed during autumn, take extra care through the first winter. Newly applied paint and wallpaper need time to fully cure and can be vulnerable to moisture damage.',
+      },
+      {
+        type: 'list',
+        content: [
+          'Maintain consistent heating in decorated rooms',
+          'Ensure adequate ventilation to allow moisture to escape',
+          'Avoid drying washing on radiators in recently decorated rooms',
+          'Wipe down any condensation from windows promptly',
+        ],
+      },
+      {
+        type: 'heading',
+        content: 'Special Considerations for Period Properties',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter\'s 994 listed buildings and properties within 20 conservation areas require specialised winter maintenance approaches. Traditional construction methods rely on breathability—the ability of walls, lime plaster, and lime mortar to absorb and release moisture naturally.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Modern interventions like cement repointing, impermeable renders, or vinyl paints can trap moisture within historic fabric, causing accelerated decay that\'s often invisible until major damage has occurred. If you own a period property in areas like Topsham (228 listed buildings), St David\'s (380 listed buildings), or the Pennsylvania conservation area, specialist advice is essential.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Our experience with [heritage property decoration in Topsham](/blog/heritage-property-restoration-topsham) and across Exeter\'s conservation areas demonstrates the importance of using appropriate materials. Lime-based paints, breathable masonry treatments, and traditional linseed oil paint systems may cost more initially but provide long-term protection that modern alternatives cannot match.',
+      },
+      {
+        type: 'heading',
+        content: 'Emergency Preparedness',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Devon winter storms can cause sudden damage requiring immediate attention. Keep contact details for emergency tradespeople readily available, including a trusted decorator who can provide emergency weatherproofing.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Take photos of your property\'s exterior before winter. If storm damage occurs, these provide valuable documentation for insurance claims. Pay particular attention to areas that could become vulnerable—loose roof tiles, damaged flashing, or compromised chimney stacks.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Properties in exposed locations like coastal areas around Dawlish, hilltop locations in Pennsylvania, or the Exe estuary in Topsham face higher risks from winter storms. Additional precautions may include securing garden furniture, checking that all external fixtures are properly secured, and ensuring that insurance covers storm damage.',
+      },
+      {
+        type: 'heading',
+        content: 'Professional Winter Property Maintenance in Devon',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'While many winter preparation tasks are within the scope of competent homeowners, some require professional expertise. External painting in challenging weather conditions, work at height, or repairs to listed buildings all benefit from experienced contractors who understand Devon\'s specific challenges.',
+      },
+      {
+        type: 'paragraph',
+        content: 'At BSR Decorating, we\'ve spent over 20 years helping Devon homeowners protect their properties through winter. We understand which repairs are urgent, which can wait until spring, and how to balance immediate protection with long-term preservation—particularly for the period properties and listed buildings that give areas like Topsham, St Leonard\'s, and Pennsylvania their distinctive character.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Early assessment is key. If you\'re concerned about your property\'s readiness for winter, a professional inspection in October or early November allows time to complete necessary work before weather conditions deteriorate. What might seem like a minor issue—a small area of failed paint, a blocked gutter, or inadequate ventilation—can develop into serious problems when subjected to months of Devon winter weather.',
+      },
+      {
+        type: 'quote',
+        content: 'Proper winter property maintenance in Devon isn\'t an expense—it\'s an investment in protecting your home from our region\'s challenging climate. A few hundred pounds spent on preparation can prevent thousands in emergency repairs.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Don\'t wait until the first winter storm exposes vulnerabilities in your property\'s defences. Whether you need emergency weatherproofing, comprehensive external painting, or specialist advice for a period property in one of Exeter\'s conservation areas, professional help is available.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Concerned about your property\'s winter readiness? Contact BSR Decorating for a free, no-obligation assessment. With over 20 years\' experience across Exeter, Topsham, and Devon\'s coastal areas, we\'ll identify any vulnerabilities and recommend practical solutions to protect your home through winter and beyond.',
+      },
+    ],
+  },
   'breathable-paint-old-houses-complete-guide': {
     sections: [
       {

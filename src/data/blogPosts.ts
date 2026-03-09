@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 29,
+    title: 'Preparing Your Devon Home for Winter: A Maintenance Checklist',
+    excerpt: 'Essential winter property maintenance for Devon homes. Protect your property from coastal weather, damp, and storm damage with this professional guide.',
+    category: 'Seasonal Trends',
+    date: '2026-03-09',
+    readTime: '9 min read',
+    image: '/images/blog/23-paint-color-swatches.webp',
+    slug: 'preparing-devon-home-winter-maintenance-checklist',
+  },
+  {
     id: 28,
     title: 'Breathable Paint for Old Houses: A Complete Guide for Devon Period Property Owners',
     excerpt: 'Discover why breathable paint is essential for period properties and how choosing the right system can prevent damp, preserve historic fabric, and save thousands in repairs.',
