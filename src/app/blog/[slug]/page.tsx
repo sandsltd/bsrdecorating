@@ -62,6 +62,7 @@ function getBlogKeywords(slug: string): string {
       'how-long-exterior-paint-last-devon-climate': "how long exterior paint last, how long exterior paint last devon climate",
       'breathable-paint-old-houses-complete-guide': "breathable paint old houses, breathable paint old houses complete guide",
       'preparing-devon-home-winter-maintenance-checklist': "winter property maintenance devon, preparing devon home winter maintenance checklist",
+      'heritage-paint-colours-topsham-homes-guide': "heritage paint colours topsham, heritage paint colours topsham homes guide",
   };
   return keywordMap[slug] || "";
 }

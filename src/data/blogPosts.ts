@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 30,
+    title: 'Heritage Paint Colours for Topsham Homes: A Complete Guide to Period-Appropriate Palettes',
+    excerpt: 'Discover authentic heritage paint colours for your Topsham period property, from Georgian elegance to Victorian richness.',
+    category: 'Heritage Restoration',
+    date: '2026-03-15',
+    readTime: '9 min read',
+    image: '/images/blog/05-painter-brush-ladder.webp',
+    slug: 'heritage-paint-colours-topsham-homes-guide',
+  },
+  {
     id: 29,
     title: 'Preparing Your Devon Home for Winter: A Maintenance Checklist',
     excerpt: 'Essential winter property maintenance for Devon homes. Protect your property from coastal weather, damp, and storm damage with this professional guide.',

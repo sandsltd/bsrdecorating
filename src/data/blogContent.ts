@@ -18,6 +18,228 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'heritage-paint-colours-topsham-homes-guide': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Topsham\'s architectural heritage is one of its most treasured assets. With 228 listed buildings and a thriving conservation area, this historic port town on the Exe estuary demands careful consideration when it comes to decorating. Choosing the right heritage paint colours for Topsham homes isn\'t just about aesthetics—it\'s about respecting the architectural integrity of properties that have stood for centuries whilst creating spaces that feel authentically period yet comfortable for modern living.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Whether you own a Georgian merchant\'s house along the Strand, a Victorian villa in Higher Shapter Street, or a period cottage near the Clyst, understanding historically appropriate colour palettes will help you maintain your property\'s character whilst potentially adding significant value. With [heritage property restoration in Topsham](/blog/heritage-property-restoration-topsham) requiring specialist knowledge, getting the colours right is your first essential step.',
+      },
+      {
+        type: 'heading',
+        content: 'Understanding Topsham\'s Architectural Heritage',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Topsham\'s prosperity as a port from the 17th to 19th centuries created the distinctive architectural landscape we see today. The town\'s wealth from the wool trade, shipbuilding, and maritime commerce meant that merchants and sea captains built substantial homes reflecting the fashionable styles of their eras. Understanding these periods is crucial for selecting appropriate heritage paint colours for Topsham homes.',
+      },
+      {
+        type: 'subheading',
+        content: 'Georgian Period (1714-1830)',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Many of Topsham\'s finest properties date from this era, particularly along the Strand and Fore Street. Georgian architecture favoured classical proportions and restrained elegance. The colour palette of this period was surprisingly bold yet sophisticated, influenced by archaeological discoveries at Pompeii and Herculaneum.',
+      },
+      {
+        type: 'list',
+        content: [
+          'Stone colours: Soft greys, creams, and warm off-whites for exterior render',
+          'Woodwork: Deep Prussian blue, dark green, chocolate brown, or stone colour',
+          'Interior walls: Pea green, salmon pink, primrose yellow, sky blue',
+          'Skirting and dado rails: Often painted to contrast with walls—darker tones or faux marble effects',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Georgian paint was made from natural pigments and had a distinctive flat, chalky finish. Modern heritage paint ranges from manufacturers like Farrow & Ball, Little Greene, and Papers and Paints have meticulously researched these historic colours, offering authentic shades with improved durability.',
+      },
+      {
+        type: 'subheading',
+        content: 'Victorian Period (1837-1901)',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'As Topsham continued to prosper through the Victorian era, wealthier residents built substantial villas, particularly in areas like Higher Shapter Street. Victorian taste evolved from the earlier restrained palette to richer, more complex colour schemes as synthetic pigments became available.',
+      },
+      {
+        type: 'list',
+        content: [
+          'Early Victorian (1840s-1860s): Rich but still relatively restrained—burgundy, forest green, chocolate brown',
+          'Mid-Victorian (1860s-1880s): Deeper, more saturated colours—maroon, olive green, terracotta, mustard yellow',
+          'Late Victorian (1880s-1901): Introduction of Aesthetic Movement influences—sage green, peacock blue, dusky pink, cream',
+          'Woodwork: Dark grains became fashionable—mahogany graining, oak graining, or deep paint colours',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Victorian interiors often used multiple colours in a single room, with different tones for dado, field (main wall), and frieze areas. This created visual richness whilst making rooms feel more intimate and cosy.',
+      },
+      {
+        type: 'heading',
+        content: 'Authentic Heritage Paint Colours for Topsham Properties',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Choosing heritage paint colours for Topsham homes requires balancing historical authenticity with practical modern living. Here\'s a room-by-room guide to appropriate colour choices for period properties.',
+      },
+      {
+        type: 'subheading',
+        content: 'Entrance Halls and Corridors',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'The entrance hall set the tone for the entire house and was typically decorated to impress visitors. Both Georgian and Victorian periods favoured distinct approaches to these important transitional spaces.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For Georgian properties, consider soft stone colours like \'Old White\' or \'Pointing\' from Farrow & Ball, with woodwork in \'Hague Blue\' or \'Studio Green\'. These combinations were typical of prosperous merchant houses and create an elegant, welcoming atmosphere whilst being practical for high-traffic areas.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Victorian halls often featured dado panelling painted in darker tones below with lighter colours above. Try \'Mahogany\' or \'Eating Room Red\' for dados with \'Light Gray\' or \'Ammonite\' above. This traditional approach is both historically accurate and practical, as darker lower walls hide marks from daily use.',
+      },
+      {
+        type: 'subheading',
+        content: 'Reception Rooms',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Drawing rooms and parlours were the showcase spaces of period homes, particularly in Topsham\'s grander properties overlooking the estuary. Colour choices reflected both fashion and the room\'s aspect.',
+      },
+      {
+        type: 'paragraph',
+        content: 'South-facing reception rooms in Georgian properties often featured cooler tones to balance abundant natural light. Consider \'Green Blue\' or \'Dix Blue\' for walls with \'Off-Black\' or \'Railings\' for woodwork. North-facing rooms benefited from warmer tones like \'Setting Plaster\' or \'Pink Ground\'.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Victorian reception rooms embraced richer palettes. Colours like \'Preference Red\', \'Olive\', or \'Rectory Red\' created the warm, opulent atmosphere Victorians favoured. These deeper colours work particularly well in rooms with high ceilings and generous proportions, common in Topsham\'s Victorian villas.',
+      },
+      {
+        type: 'subheading',
+        content: 'Bedrooms',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Period bedrooms typically used softer, more restful colours than public rooms. Georgian bedrooms often featured delicate colours—soft blues, greens, or pinks that created calm, restorative spaces.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Try \'Teresa\'s Green\', \'Borrowed Light\', or \'Calamine\' for walls in Georgian bedrooms. Victorian bedrooms maintained this approach to colour but often with slightly deeper, more saturated tones like \'Mizzle\', \'Pigeon\', or \'Sulking Room Pink\'.',
+      },
+      {
+        type: 'subheading',
+        content: 'Exterior Colours',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Topsham\'s conservation area status means exterior colour choices require particular care. Many properties feature rendered facades or painted brickwork that contribute to the town\'s cohesive historic character.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Traditional lime render was typically finished in soft, natural tones—warm creams, soft greys, or gentle ochres. Modern equivalents include \'String\', \'Hardwick White\', \'Skimming Stone\', or \'Jitney\'. These colours complement the local Devon stone and terracotta tiles whilst respecting the historic streetscape.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Front doors in period properties were statement pieces. Georgian doors were often painted in strong colours—\'Hague Blue\', \'Studio Green\', or \'Brinjal\'. Victorian doors continued this tradition with colours like \'Mahogany\', \'Paean Black\', or \'Railings\'. For [waterfront properties in Topsham](/blog/topsham-waterfront-homes-best-paints), ensure you use exterior-grade paints specifically formulated for coastal conditions.',
+      },
+      {
+        type: 'heading',
+        content: 'Choosing the Right Paint Type for Historic Properties',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Selecting appropriate heritage paint colours for Topsham homes is only half the equation—the type of paint matters just as much as the colour itself. Historic properties, particularly those with solid walls, require breathable paints that allow moisture to escape.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Traditional paints were made from natural ingredients like chalk, clay, and linseed oil. These materials allowed walls to breathe, preventing moisture from becoming trapped within the structure. Modern vinyl and acrylic paints can seal moisture in, leading to damp problems, plaster deterioration, and potential structural issues.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For interior walls in period properties, consider breathable options such as traditional distemper, casein paint, or modern breathable emulsions specifically designed for historic buildings. Our detailed guide on [breathable paint for old houses](/blog/breathable-paint-old-houses-complete-guide) explains why these products are essential for maintaining the health of period properties.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Exterior renders require lime-based paints or breathable masonry paints. These allow moisture to evaporate whilst providing weather protection—crucial in Topsham\'s coastal environment where salt-laden air and high humidity create challenging conditions.',
+      },
+      {
+        type: 'heading',
+        content: 'Conservation Area Considerations',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Topsham\'s conservation area designation means that certain exterior alterations require planning permission. Whilst repainting in similar colours typically doesn\'t require consent, changing exterior colours significantly might need approval, particularly for listed buildings.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The December 2025 case of a Topsham property owner fined £38,000 for unauthorised alterations to a listed building demonstrates that conservation regulations are actively enforced. Before undertaking any exterior decorating work, it\'s wise to consult East Devon District Council\'s conservation team or work with [specialists in heritage property decoration](/areas/exeter/heritage-property-painting) who understand local requirements.',
+      },
+      {
+        type: 'paragraph',
+        content: 'If you\'re unsure whether your planned colour scheme requires consent, the council\'s conservation officer can provide guidance. They\'re generally supportive of appropriate colour choices that enhance the conservation area\'s character whilst respecting individual property styles.',
+      },
+      {
+        type: 'heading',
+        content: 'Modern Living in Period Homes',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'One common concern about using heritage paint colours in Topsham homes is whether historically appropriate palettes will feel too dark or old-fashioned for contemporary lifestyles. The key is thoughtful application rather than strict historical replication.',
+      },
+      {
+        type: 'paragraph',
+        content: 'You don\'t need to recreate every aspect of period decoration to respect your home\'s heritage. Many homeowners successfully blend historic colours with modern furnishings and lifestyles. A Georgian drawing room painted in \'Teresa\'s Green\' works beautifully with contemporary furniture, whilst a Victorian hallway in \'Railings\' provides a dramatic backdrop for modern art.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Consider using stronger period colours as accents rather than throughout. Paint one wall in \'Preference Red\' whilst keeping other walls in a lighter shade. Use authentic heritage colours in hallways, on woodwork, or in smaller rooms whilst employing softer tones in larger living spaces.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The quality of light in your specific property should guide colour choices. Topsham properties vary enormously—from bright, south-facing merchant houses overlooking the estuary to cosier cottages in narrower streets. Test paint colours extensively before committing, viewing samples in different lights throughout the day.',
+      },
+      {
+        type: 'heading',
+        content: 'Working with Heritage Paint Specialists',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Successfully decorating a period property requires more than just choosing the right colours—it demands proper surface preparation, appropriate primers, and skilled application techniques. Period properties often have uneven plaster, previous paint layers, and unique challenges that require experienced hands.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional decorators experienced in heritage work understand how historic buildings behave, which products work best in different situations, and how to prepare surfaces properly for long-lasting results. They can also advise on colour choices that will work with your property\'s specific characteristics, aspect, and architectural details.',
+      },
+      {
+        type: 'quote',
+        content: 'With over 20 years of experience working on heritage properties throughout Devon, including many of Topsham\'s finest period homes, we understand the unique requirements of historic buildings and can help you choose colours that honour your property\'s past whilst creating comfortable spaces for modern living.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Whether you\'re restoring a Georgian merchant\'s house, refreshing a Victorian villa, or maintaining a period cottage, choosing appropriate heritage paint colours for Topsham homes requires balancing historical authenticity with practical modern needs. The right colours can transform your property, enhancing its architectural character whilst creating beautiful, liveable spaces that respect the craftsmanship of previous generations.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Planning to decorate your Topsham period property? BSR Decorating specialises in heritage properties throughout Devon, combining traditional techniques with modern expertise. Contact us today for a free consultation and discover how we can help you choose the perfect heritage paint colours for your home.',
+      },
+    ],
+  },
   'preparing-devon-home-winter-maintenance-checklist': {
     sections: [
       {
