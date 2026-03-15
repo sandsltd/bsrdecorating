@@ -1,8 +1,6 @@
-name: SEO Agent (Weekly)
+name: SEO Agent (Manual Only)
 
 on:
-  schedule:
-    - cron: '0 9 * * 1' # Every Monday at 09:00 UTC
   workflow_dispatch: {} # Manual trigger for testing
 
 permissions:
@@ -14,13 +12,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Random delay (09:00–15:00 window)
-        if: github.event_name == 'schedule'
-        run: |
-          DELAY=$((RANDOM % 21600))
-          echo "Sleeping for $((DELAY / 60)) minutes before starting..."
-          sleep $DELAY
-
       - name: Checkout repository
         uses: actions/checkout@v4
         with:

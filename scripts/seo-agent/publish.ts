@@ -573,7 +573,6 @@ export function commitAndPush(
   } finally {
     if (fs.existsSync(msgFile)) fs.unlinkSync(msgFile);
   }
-  run("git pull --rebase origin main");
-  run("git push origin main");
+  run("git push origin HEAD:main");
   console.log("All changes committed and pushed to main.");
 }
