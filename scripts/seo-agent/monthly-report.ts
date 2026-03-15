@@ -430,6 +430,10 @@ export async function sendMonthlyReport(options: MonthlyReportOptions = {}) {
     html: buildHtml(data as RunRow[], reportDays),
   });
 
+  if (result.error) {
+    throw new Error(`Resend error: ${result.error.message}`);
+  }
+
   console.log(JSON.stringify(result, null, 2));
   console.log(`Monthly report sent to ${recipient}`);
 }

@@ -256,6 +256,10 @@ export async function sendReport(data: EmailReportData): Promise<void> {
     html: buildHtml(data),
   });
 
+  if (result.error) {
+    throw new Error(`Resend error: ${result.error.message}`);
+  }
+
   console.log("Resend response:", JSON.stringify(result));
   console.log(`Report email sent to ${reportEmail}`);
 }
