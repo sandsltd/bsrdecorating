@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 31,
+    title: 'Conservation Area Painting Rules: What You Need Planning Permission For in Devon',
+    excerpt: 'Planning to paint your Exeter or Topsham home? Learn which exterior decorating works need planning permission in conservation areas.',
+    category: 'Heritage Restoration',
+    date: '2026-03-17',
+    readTime: '9 min read',
+    image: '/images/blog/40-house-painter-undercoating.webp',
+    slug: 'conservation-area-painting-rules-devon-planning-permission',
+  },
+  {
     id: 30,
     title: 'Heritage Paint Colours for Topsham Homes: A Complete Guide to Period-Appropriate Palettes',
     excerpt: 'Discover authentic heritage paint colours for your Topsham period property, from Georgian elegance to Victorian richness.',
