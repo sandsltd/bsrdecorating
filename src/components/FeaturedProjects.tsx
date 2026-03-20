@@ -20,7 +20,9 @@ const FeaturedProjects = ({ category, title, subtitle }: FeaturedProjectsProps) 
   
   // For location-based categories, show domestic projects
   const projectCategory = (category === 'exeter' || category === 'torquay') ? 'domestic' : category;
-  const featuredProjects = getFeaturedProjectsByCategory(projectCategory as 'domestic' | 'commercial').slice(0, 3);
+  const featuredProjects = getFeaturedProjectsByCategory(projectCategory as 'domestic' | 'commercial')
+    .sort((a, b) => b.id - a.id)
+    .slice(0, 3);
 
   const defaultTitle = category === 'domestic' 
     ? 'Featured Projects' 

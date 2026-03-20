@@ -53,8 +53,8 @@ export default function PortfolioPage() {
     { id: 'commercial', name: 'Commercial' },
   ];
 
-  // Use projects from the data file
-  const allProjects = projects;
+  // Show latest projects first by project ID
+  const allProjects = [...projects].sort((a, b) => b.id - a.id);
 
   const filteredProjects = allProjects.filter(project => {
     if (selectedCategory === 'all') return true;
