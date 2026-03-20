@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 32,
+    title: 'Spring Exterior Painting in Exeter: Your Complete Guide to Perfect Timing and Results',
+    excerpt: 'Discover why spring is the ideal time for exterior painting in Exeter, and how to achieve lasting results that withstand Devon\'s coastal weather.',
+    category: 'Seasonal Trends',
+    date: '2026-03-20',
+    readTime: '10 min read',
+    image: '/images/blog/31-blue-yellow-painted-wall.webp',
+    slug: 'spring-exterior-painting-exeter-complete-guide',
+  },
+  {
     id: 31,
     title: 'Conservation Area Painting Rules: What You Need Planning Permission For in Devon',
     excerpt: 'Planning to paint your Exeter or Topsham home? Learn which exterior decorating works need planning permission in conservation areas.',

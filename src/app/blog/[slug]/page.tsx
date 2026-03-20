@@ -64,6 +64,7 @@ function getBlogKeywords(slug: string): string {
       'preparing-devon-home-winter-maintenance-checklist': "winter property maintenance devon, preparing devon home winter maintenance checklist",
       'heritage-paint-colours-topsham-homes-guide': "heritage paint colours topsham, heritage paint colours topsham homes guide",
       'conservation-area-painting-rules-devon-planning-permission': "conservation area painting rules, conservation area painting rules devon planning permission",
+      'spring-exterior-painting-exeter-complete-guide': "spring exterior painting exeter, spring exterior painting exeter complete guide",
   };
   return keywordMap[slug] || "";
 }
