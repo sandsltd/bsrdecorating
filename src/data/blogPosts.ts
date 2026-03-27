@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 34,
+    title: 'Spring Exterior Painting in Exeter: Your Complete Guide to Perfect Timing and Results',
+    excerpt: 'Discover why spring is the ideal time for exterior painting in Exeter and how to achieve professional results that last.',
+    category: 'Seasonal Trends',
+    date: '2026-03-27',
+    readTime: '8 min read',
+    image: '/images/blog/45-paint-roller-stepladder.webp',
+    slug: 'spring-exterior-painting-exeter-complete-guide',
+  },
+  {
     id: 33,
     title: 'Spring Exterior Painting in Exeter: Your Complete Guide to Perfect Timing and Results',
     excerpt: 'Everything Exeter homeowners need to know about planning, timing, and executing successful spring exterior painting projects in Devon\'s unique climate.',

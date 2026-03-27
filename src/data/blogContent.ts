@@ -22,6 +22,199 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
+        content: 'As spring arrives in Devon, homeowners across Exeter start thinking about refreshing their properties. After months of winter weather, your exterior paintwork has endured rain, cold temperatures, and coastal winds. Spring offers the perfect window for exterior painting work, combining ideal weather conditions with practical timing for summer enjoyment. Whether you own a Victorian terrace in St Leonard\'s, a riverside property in Topsham, or a modern home in the Liveable Exeter developments, understanding when and how to approach spring exterior painting in Exeter can save you money and ensure results that last for years.',
+      },
+      {
+        type: 'heading',
+        content: 'Why Spring is the Best Season for Exterior Painting in Exeter',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'The timing of exterior painting work matters enormously in Devon\'s maritime climate. Spring provides a sweet spot between winter\'s cold, damp conditions and summer\'s intense heat and occasional storms.',
+      },
+      {
+        type: 'subheading',
+        content: 'Temperature and Weather Considerations',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional exterior painting requires consistent temperatures between 10 and 25 degrees Celsius for proper paint adhesion and curing. In Exeter, this typically means late March through May offers the most reliable conditions. Morning dew has usually evaporated by mid-morning, and the longer daylight hours allow painters to complete more work safely. Spring rainfall in Devon tends to be lighter and more predictable than autumn\'s heavy downpours, allowing experienced decorators to work around showers rather than facing prolonged delays.',
+      },
+      {
+        type: 'subheading',
+        content: 'Booking Ahead for Summer Demand',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Summer represents peak demand for professional decorators across Exeter. By planning your exterior painting for spring, you avoid the 4 to 6 week lead times common in June and July. You also gain the benefit of enjoying your freshly painted home throughout the summer months when you\'re most likely to use garden spaces and entertain outdoors. For the 32,600 owner-occupied homes in Exeter, spring exterior painting means maximum enjoyment of your investment.',
+      },
+      {
+        type: 'heading',
+        content: 'Preparing Your Exeter Property for Spring Exterior Painting',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Proper preparation determines the longevity of any exterior painting project. In Exeter\'s climate, with its proximity to the coast and exposure to Devon weather patterns, preparation becomes even more critical.',
+      },
+      {
+        type: 'subheading',
+        content: 'Surface Assessment and Repairs',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Before any paint touches your walls, a professional decorator will assess substrate condition. This matters particularly for Exeter\'s older properties. With 994 listed buildings across the city and numerous period homes in areas like Pennsylvania and Heavitree, many Exeter properties have original render, traditional timber work, or historic masonry that requires specialist attention. Spring reveals winter damage clearly. Look for cracked render, loose paint, signs of damp penetration, or timber rot. These issues must be addressed before painting begins, or you\'re simply covering problems that will resurface within months. For guidance on addressing moisture issues before painting, see our [guide to solving damp and paint problems in Exeter homes](/blog/solving-damp-paint-problems-exeter-homes).',
+      },
+      {
+        type: 'subheading',
+        content: 'Cleaning and Preparation',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter\'s location means properties accumulate salt deposits from coastal air, biological growth from Devon\'s damp climate, and pollution from urban traffic. Professional preparation includes pressure washing to remove dirt, algae, and loose material, followed by treatment of any biological growth. For properties near the Exe Estuary or in Topsham, this step proves particularly important as salt deposits can prevent proper paint adhesion.',
+      },
+      {
+        type: 'list',
+        content: [
+          'Pressure wash all surfaces to be painted, allowing 48 hours drying time',
+          'Scrape away loose or flaking paint back to sound substrate',
+          'Fill cracks and gaps with appropriate exterior filler',
+          'Sand rough areas and feather edges of existing paint',
+          'Apply fungicidal wash to areas with biological growth',
+          'Prime bare wood and metal with appropriate undercoats',
+        ],
+      },
+      {
+        type: 'heading',
+        content: 'Choosing the Right Paint for Devon\'s Coastal Climate',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Not all exterior paints perform equally in Exeter\'s environment. The combination of salt air, rainfall, and UV exposure requires paint systems designed for coastal and maritime climates. Our [guide to the best exterior paint for Devon\'s coastal weather](/blog/best-exterior-paint-devon-coastal-weather) explores this in detail, but key considerations include breathability for older properties, weather resistance for exposed locations, and appropriate finish for your property type.',
+      },
+      {
+        type: 'subheading',
+        content: 'Masonry Paint for Rendered and Brick Surfaces',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Modern masonry paints offer excellent weather protection for Exeter homes. Quality masonry paint systems typically last 10 to 15 years in Devon\'s climate when properly applied. For the Victorian and Edwardian terraces common in St Leonard\'s and Newtown, breathable masonry paint allows moisture to escape from solid walls whilst providing weather protection. Smooth finishes suit urban properties, whilst textured finishes can hide minor imperfections on older render.',
+      },
+      {
+        type: 'subheading',
+        content: 'Timber Paint and Stain Systems',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Timber elements including doors, windows, fascias, and cladding require different paint systems. Modern microporous paints allow timber to breathe whilst preventing water penetration, essential for managing moisture in Devon\'s climate. For period properties in Topsham\'s conservation area or across Exeter\'s 20 conservation areas, [traditional paint systems and conservation requirements](/blog/conservation-area-painting-rules-devon-planning-permission) may be required or preferred. These often involve oil-based primers and undercoats topped with durable gloss or eggshell finishes.',
+      },
+      {
+        type: 'heading',
+        content: 'The Professional Exterior Painting Process',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Understanding what professional exterior painting involves helps you appreciate the value of expert work and recognise quality when you see it.',
+      },
+      {
+        type: 'subheading',
+        content: 'Access and Safety',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional decorators use appropriate access equipment including scaffold towers, extending ladders, and sometimes full scaffolding for larger properties. This matters particularly for the tall Victorian terraces in areas like Mount Pleasant or the substantial period properties in Pennsylvania. Safe, stable access allows proper preparation and application, particularly at height where shortcuts show most obviously.',
+      },
+      {
+        type: 'subheading',
+        content: 'Application Technique',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional application makes the difference between paint that lasts years and paint that fails within seasons. Experienced decorators apply the correct number of coats, typically a primer or stabilising solution, followed by two full coats of finish paint. They work systematically, maintaining wet edges to avoid lap marks, and timing work to avoid rain and extreme temperatures. For larger projects, we use airless spray equipment for walls, followed by careful cutting-in around windows, doors, and details. This combination delivers speed without sacrificing quality.',
+      },
+      {
+        type: 'heading',
+        content: 'Special Considerations for Exeter Property Types',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter\'s diverse housing stock means different properties require different approaches to exterior painting.',
+      },
+      {
+        type: 'subheading',
+        content: 'Period and Listed Properties',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'For the 228 listed buildings in Topsham and the 994 across Exeter, exterior painting often requires conservation area consent or listed building consent. Traditional paint systems, appropriate colours, and breathable paints become essential rather than optional. [Our heritage property painting service](/areas/exeter/heritage-property-painting) specialises in these requirements, ensuring your work complies with [conservation area painting rules](/blog/conservation-area-painting-rules-devon-planning-permission) whilst protecting your property appropriately.',
+      },
+      {
+        type: 'subheading',
+        content: 'Modern Homes and New Builds',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'The thousands of new homes being built through the Liveable Exeter programme and at Cranbrook present different challenges. New render requires proper curing time before painting, typically 6 to 12 months depending on the render type. Modern materials including uPVC, composite cladding, and render board systems each require specific primers and paint types. Rushing exterior painting on new builds leads to poor adhesion and early failure.',
+      },
+      {
+        type: 'heading',
+        content: 'Cost and Investment for Spring Exterior Painting',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Investment in professional exterior painting varies depending on property size, condition, and specification. In Exeter, typical costs for painting a house exterior average around £1,728, though this varies significantly. A small terraced house might cost £1,200 to £1,800, whilst a large detached period property could require £3,000 to £5,000 or more. This investment protects your property value, with median Exeter house prices at £285,000 and significantly higher in areas like Topsham at £506,000. Regular exterior maintenance preserves and enhances this investment.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Spring booking can sometimes offer better value than peak summer scheduling, as decorators balance their workload across the season. It also provides time to properly plan the work, select colours, and prepare the property without the pressure of summer deadlines.',
+      },
+      {
+        type: 'heading',
+        content: 'Maintaining Your Exterior Paintwork After Spring Application',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional exterior painting should last 10 to 15 years in Devon\'s climate, but simple maintenance extends this lifespan further. Annual checks for minor damage, cleaning gutters to prevent overflow staining, removing vegetation growth from walls, and addressing small areas of damage before they spread all contribute to longevity. Properties in exposed coastal locations or those facing prevailing south-westerly weather may need more frequent attention to vulnerable areas like gable ends and exposed elevations.',
+      },
+      {
+        type: 'heading',
+        content: 'Get Your Exeter Property Ready for Spring',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Spring exterior painting in Exeter offers the perfect combination of ideal weather conditions, practical timing, and maximum enjoyment of results. Whether you\'re refreshing a Victorian terrace in Heavitree, maintaining a riverside property in Topsham, or protecting a modern home in one of Exeter\'s new developments, professional exterior painting protects your investment and enhances your home\'s appearance.',
+      },
+      {
+        type: 'paragraph',
+        content: 'With over 20 years of experience working across Exeter, from listed buildings in conservation areas to modern commercial properties, BSR Decorating understands the specific requirements of Devon\'s climate and Exeter\'s diverse property types. We use breathable, weather-resistant paint systems suited to coastal conditions, and our thorough preparation ensures results that last.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Ready to transform your Exeter property this spring? Contact BSR Decorating for a free, no-obligation quote. We\'ll assess your property, recommend the right paint systems for your needs, and provide clear pricing for professional exterior painting that protects and enhances your home.',
+      },
+    ],
+  },
+  'spring-exterior-painting-exeter-complete-guide': {
+    sections: [
+      {
+        type: 'paragraph',
         content: 'Spring is approaching in Exeter, and with it comes the perfect window for exterior painting projects. After a winter of Devon\'s rain and coastal winds, your property\'s exterior might be showing signs of wear. But timing is everything when it comes to exterior painting, and getting it right can mean the difference between a finish that lasts years and one that fails within months. With over 20 years of experience painting homes across Exeter, from Victorian terraces in St Leonard\'s to waterfront properties in Topsham, we\'ve learned exactly when and how to tackle spring exterior painting for lasting results.',
       },
       {
