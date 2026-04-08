@@ -14,7 +14,7 @@ export const CONFIG = {
   minBlogWordCount: 1000,
 
   // Email
-  emailFrom: "hello@saunders-simmons.co.uk",
+  emailFrom: "Paige SEO <hello@saunders-simmons.co.uk>",
   emailSubjectPrefix: "BSR Decorating SEO Report",
 
   // Site
