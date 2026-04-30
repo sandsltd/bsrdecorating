@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Join Our Team | Decorator Jobs Devon | Careers at BSR Decorating",
-  description: "Join BSR Decorating! We're looking for experienced decorators and painters in Devon. Great rates, flexible work, and join a respected local team.",
+  title: "Full-Time Experienced Decorator Job Devon | Careers at BSR Decorating",
+  description: "BSR Decorating is hiring a full-time experienced decorator in Devon. Pay is negotiable depending on experience. Apply now to join a respected local team.",
   keywords: "decorator jobs Devon, painter careers Dawlish, decorating jobs Newton Abbot Torquay Exeter, painter employment Devon, decorator vacancies, painting jobs Devon, BSR Decorating careers",
   alternates: {
     canonical: '/careers'
   },
   openGraph: {
-    title: "Careers | BSR Decorating Devon",
-    description: "Join our team of professional decorators serving Devon",
+    title: "Full-Time Experienced Decorator | BSR Decorating Devon",
+    description: "BSR Decorating is hiring a full-time experienced decorator in Devon",
     type: "website",
     url: "https://www.bsrdecorating.co.uk/careers",
     images: [
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Careers | BSR Decorating Devon",
-    description: "Join our team of professional decorators serving Devon",
+    title: "Full-Time Experienced Decorator | BSR Decorating Devon",
+    description: "BSR Decorating is hiring a full-time experienced decorator in Devon",
     images: ["/images/Business decorating image.jpeg"]
   },
   other: {
