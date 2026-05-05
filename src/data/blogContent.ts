@@ -4739,11 +4739,11 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'If you\'re planning a decorating project in Exeter, understanding realistic costs is essential before you start. Whether you\'re refreshing a Victorian terrace in St Leonard\'s, painting a [commercial property](/commercial) in the city centre, or maintaining one of Exeter\'s [994 listed buildings](/areas/exeter/heritage-property-painting), this guide provides transparent, up-to-date pricing based on actual 2026 rates across [Exeter](/areas/exeter) and surrounding areas.',
+        content: 'Planning a decorating project in Exeter and wondering what it\'ll actually cost? You\'re not alone. Whether you\'re refreshing a Victorian terrace in St Leonard\'s, repainting a period property in [Topsham](/areas/topsham), or maintaining one of [Exeter\'s 994 listed buildings](/areas/exeter/heritage-property-painting), understanding realistic pricing is crucial before you commit.',
       },
       {
         type: 'paragraph',
-        content: 'As a [professional decorator based in Devon](/), we\'ve compiled real-world pricing data to help you budget accurately and avoid surprises. Costs vary significantly based on property type, condition, and specific requirements—here\'s what you need to know.',
+        content: 'As professional decorators based in Devon with over 20 years of experience working across [Exeter](/areas/exeter) and surrounding areas, we\'ve compiled genuine 2026 pricing data to help you budget accurately. Costs vary significantly based on property age, condition, and specific requirements—here\'s everything you need to know.',
       },
       {
         type: 'heading',
@@ -4752,23 +4752,23 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Interior decorating costs depend on room size, ceiling height, preparation work required, and finish quality. Here are typical prices for Exeter properties in 2026:',
+        content: '[Interior painting costs](/areas/exeter/interior-painting) depend on room size, ceiling height, preparation work required, and the quality of finish you\'re after. Exeter\'s mix of period and modern properties means preparation work can vary dramatically—a new-build in Cranbrook requires minimal prep, while a Victorian property in Heavitree might need extensive filling, sanding, and multiple undercoats.',
       },
       {
         type: 'subheading',
-        content: 'Room-by-Room Pricing',
+        content: 'Room-by-Room Pricing for 2026',
         level: 3,
       },
       {
         type: 'list',
         content: [
-          'Single bedroom: £498 average (includes walls, ceiling, woodwork)',
-          'Living room: £674 average (larger spaces, more complex preparation)',
-          'Kitchen: £364 average for walls and ceiling only',
-          'Bathroom: £332 average (moisture-resistant paints, ventilation considerations)',
-          'Hallway, stairs & landing: £814 average (height access, fiddly woodwork)',
-          'Full 3-bed house interior: £2,800-£4,500 depending on condition',
-          'Full 4-bed house interior: £4,200-£6,500 including all rooms and circulation spaces',
+          '**Single bedroom:** £498 average (includes walls, ceiling, and woodwork with two coats)',
+          '**Living room:** £674 average (larger spaces with bay windows and feature walls)',
+          '**Kitchen walls and ceiling:** £364 average (excludes cabinet painting)',
+          '**Bathroom:** £332 average (using moisture-resistant paints, proper ventilation prep)',
+          '**Hall, stairs and landing:** £814 average (requires height access equipment, intricate woodwork)',
+          '**Full 3-bedroom house interior:** £2,800-£4,500 depending on condition and ceiling heights',
+          '**Full 4-bedroom house interior:** £4,200-£6,500 including all rooms and circulation spaces',
         ],
       },
       {
@@ -4779,46 +4779,74 @@ export const blogContent: Record<string, BlogContentData> = {
       {
         type: 'list',
         content: [
-          'Ceiling per room: £108 average',
-          'Interior doors (per door): £122 average',
-          'Front door: £123 (includes preparation and weather-resistant finish)',
-          'Skirting boards per room: £105 average',
-          'Window frames per window: £45-£85 depending on size',
-          'Radiators (removal, painting, refitting): £35-£55 per radiator',
+          '**Ceiling per room:** £108 average',
+          '**Interior doors:** £122 per door (includes prep, undercoat, two topcoats)',
+          '**Front door:** £123 (weather-resistant finish, proper preparation)',
+          '**Skirting boards:** £105 per room average',
+          '**Window frames:** £45-£85 per window depending on size and condition',
+          '**Radiators:** £35-£55 per radiator (removal, painting behind, refitting)',
         ],
       },
       {
         type: 'paragraph',
-        content: 'These prices assume properties in reasonable condition. Victorian and Edwardian properties common in areas like Heavitree and Pennsylvania often require additional preparation due to age, which can increase costs by 20-30%.',
+        content: 'These prices assume properties in reasonable condition. Period properties—common throughout Exeter\'s conservation areas including St David\'s, Pennsylvania, and the Southernhay district—often require significantly more preparation work. Expect costs to increase by 20-35% for properties with cracked plasterwork, damaged cornicing, or multiple layers of old paint requiring stripping.',
       },
       {
         type: 'heading',
-        content: 'Exterior Painting Costs',
+        content: 'Exterior Painting Costs in Devon\'s Climate',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'Exterior work typically costs more than interior due to access requirements, weather considerations, and the need for specialised weather-resistant paints—particularly important in Devon\'s coastal climate.',
+        content: '[Exterior painting](/areas/exeter/exterior-painting) typically costs more than interior work due to access equipment, weather-dependent scheduling, and the need for specialist paints that withstand Devon\'s coastal climate. Properties in exposed locations or near the Exe Estuary require particular attention to paint specification.',
+      },
+      {
+        type: 'subheading',
+        content: 'Exterior Project Costs',
+        level: 3,
       },
       {
         type: 'list',
         content: [
-          'Full house exterior (3-bed semi): £1,728 average',
-          'Full house exterior (4-bed detached): £2,400-£3,800',
-          'Front elevation only: £800-£1,500',
-          'Rendering preparation & painting: £45-£65 per m²',
-          'Fascias, soffits & guttering: £600-£1,200 for average house',
-          'Windows only (all external frames): £400-£900 depending on number and condition',
+          '**Full house exterior (3-bed semi):** £1,728 average for render/masonry painting',
+          '**Terraced house front elevation:** £850-£1,400 (typical St Leonard\'s or Heavitree terrace)',
+          '**Timber cladding:** £35-£50 per square metre including preparation',
+          '**Fascias, soffits and guttering:** £400-£800 for average 3-bed house',
+          '**External window frames:** £65-£120 per window (more for sash windows)',
+          '**Garden walls and boundary walls:** £18-£28 per linear metre',
         ],
       },
       {
         type: 'paragraph',
-        content: 'Properties near [Topsham\'s waterfront](/areas/topsham) or coastal areas require breathable, moisture-resistant paints that cost 15-25% more than standard products but last significantly longer in humid conditions. For detailed guidance, see our guide on [the best exterior paints for Devon\'s coastal weather](/blog/best-exterior-paint-devon-coastal-weather).',
+        content: 'Scaffolding is often required for two-storey properties and adds £600-£1,200 depending on house size and access. Properties in Exeter\'s narrow streets—like those around St David\'s or the Cathedral Quarter—may require special scaffolding licences from the council, potentially adding to costs.',
       },
       {
         type: 'heading',
-        content: 'Specialist Services & Premium Finishes',
+        content: 'Specialist Services: Where Costs Increase',
         level: 2,
+      },
+      {
+        type: 'subheading',
+        content: 'Heritage and Listed Building Work',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter has 994 listed buildings, with 228 in [Topsham](/areas/topsham) alone. Working on listed or period properties requires specialist knowledge of breathable paints, traditional techniques, and often Listed Building Consent compliance. Heritage decoration typically costs 30-50% more than standard work due to:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Use of specialist breathable and lime-based paints (£45-£75 per litre vs £25-£35 for standard)',
+          'Traditional preparation methods required by conservation officers',
+          'Additional time for delicate work around original features',
+          'Documentation and consultation with conservation officers',
+          'Specialist materials for period-appropriate finishes',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Hourly rates for heritage specialists typically run £31-£40+ compared to £22-£28 for standard decorating work. For a comprehensive guide to working on historic properties, see our [Topsham conservation area decorating guide](/blog/topsham-conservation-area-decorating-guide).',
       },
       {
         type: 'subheading',
@@ -4827,253 +4855,154 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Kitchen spraying has become increasingly popular as a cost-effective alternative to full replacements. Professional [kitchen spraying in Exeter](/areas/exeter/kitchen-spraying) costs approximately £750 for an average kitchen, compared to £5,000-£15,000 for new cabinets. This includes preparation, priming, spraying, and protective topcoats. The finish is factory-quality and transforms tired kitchens completely.',
+        content: '[Kitchen spraying](/areas/exeter/kitchen-spraying) has become extremely popular in Exeter as an alternative to full kitchen replacement. A professional spray finish costs around £750 for an average kitchen—a fraction of the £8,000-£15,000 for new units. This service is particularly popular in period properties where existing kitchen layouts work well but finishes are dated.',
       },
       {
         type: 'subheading',
-        content: 'Wallpaper Hanging',
+        content: 'Wallpaper Hanging and Removal',
         level: 3,
       },
       {
         type: 'list',
         content: [
-          'Wallpapering per room: £316 average (wallpaper supplied by client)',
-          'Wallpaper removal per room: £336 average (includes preparation for painting)',
-          'Feature wall only: £180-£280',
-          'Period property wallpaper hanging: £400-£600 per room (requires specialist techniques for uneven walls)',
+          '**Wallpaper hanging:** £316 per room average (labour only—wallpaper supplied by client)',
+          '**Wallpaper removal:** £336 per room average (can be higher for multiple layers or old paste)',
+          '**Feature wall wallpapering:** £180-£280 depending on pattern matching complexity',
         ],
       },
       {
+        type: 'heading',
+        content: 'What Affects Your Final Quote?',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Several factors can significantly impact your final decorating costs in Exeter:',
+      },
+      {
         type: 'subheading',
-        content: 'Heritage & Period Property Work',
+        content: 'Property Age and Condition',
         level: 3,
       },
       {
         type: 'paragraph',
-        content: 'Exeter has 994 listed buildings requiring specialist knowledge and appropriate materials. Heritage decorating costs more due to:',
+        content: 'Exeter\'s housing stock ranges from Georgian townhouses to brand-new developments like Cranbrook. Victorian and Edwardian properties (common in Heavitree, Pennsylvania, and St Leonard\'s) typically need more preparation than modern homes. New builds paradoxically can also require extra work—many have poor initial paintwork that needs correcting. Read more about [common new-build paint problems](/blog/the-real-problem-with-exeter-new-build-paintwork).',
+      },
+      {
+        type: 'subheading',
+        content: 'Ceiling Height',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Period properties often have 3-3.5 metre ceilings compared to 2.4 metres in modern homes. Higher ceilings mean more wall area, more time on ladders or platforms, and increased material costs. Expect costs to increase by 25-40% for high-ceilinged rooms.',
+      },
+      {
+        type: 'subheading',
+        content: 'Access and Location',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Parking restrictions in central Exeter (particularly around the Cathedral Quarter, Southernhay, and St David\'s) can add time and logistical costs. Narrow lanes in Topsham\'s historic core may limit access for equipment. Properties on hills around Pennsylvania and Higher Hoopern require additional consideration for material delivery.',
+      },
+      {
+        type: 'subheading',
+        content: 'Paint Quality',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional-grade paints cost £35-£75 per 5-litre tin compared to £15-£25 for DIY-store brands. Premium paints like Farrow & Ball or Little Greene (popular for period properties) can cost £85-£125 per 5 litres. However, better paint often means better coverage, so one coat of premium paint may do the job of two coats of budget paint.',
+      },
+      {
+        type: 'heading',
+        content: 'Commercial Decorating Costs',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: '[Commercial painting and decorating](/commercial) operates on different pricing structures. Office spaces in Exeter city centre, retail units, or hospitality venues often require out-of-hours work (adding 20-30% to costs), faster turnarounds, and compliance with commercial building regulations.',
       },
       {
         type: 'list',
         content: [
-          'Breathable paint systems: £8-£15 per litre (vs £3-£6 for standard)',
-          'Lime-based products for older properties',
-          'Additional preparation for historic plasterwork',
-          'Specialist hourly rate: £31-£40+ for heritage-qualified decorators',
-          'Conservation area compliance and documentation',
+          '**Office repainting:** £8-£14 per square metre for walls and ceilings',
+          '**Retail unit refresh:** £1,200-£3,500 depending on size and fixtures',
+          '**Restaurant/pub redecoration:** £3,000-£8,000+ (often including specialist finishes)',
+          '**Commercial exterior:** £15-£30 per square metre depending on access and preparation',
         ],
       },
       {
         type: 'paragraph',
-        content: 'Properties in Topsham\'s conservation area (228 listed buildings) often require planning permission for external colour changes. Our [heritage property painting service](/areas/exeter/heritage-property-painting) includes consultation on appropriate materials and colours for period properties. Read more about [decorating in Topsham\'s conservation area](/blog/topsham-conservation-area-decorating-guide).',
+        content: 'Many Exeter businesses schedule decorating during quiet periods (January-February for hospitality, August for offices near the University). Advanced booking during these periods often secures better rates.',
+      },
+      {
+        type: 'heading',
+        content: 'Landlord and Rental Property Services',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'With 14,200+ private rental properties in Exeter, [landlord painting services](/areas/exeter/rental-refresh-painting) are in constant demand. End-of-tenancy refreshes typically cost £800-£1,800 for a 2-3 bedroom property, depending on wear and tear. Many Exeter landlords work with decorators on retainer agreements for multiple properties, which can reduce per-property costs by 10-15%.',
       },
       {
         type: 'quoteCTA',
-        content: 'Need an accurate quote for your Exeter property? Get a free, no-obligation estimate based on your specific requirements.',
+        content: 'Ready to get accurate pricing for your specific project? We provide detailed, transparent quotes with no hidden costs. [Contact us today](/contact) for a free, no-obligation quote for your Exeter property.',
       },
       {
         type: 'heading',
-        content: 'Commercial & Rental Property Pricing',
-        level: 2,
-      },
-      {
-        type: 'subheading',
-        content: 'Commercial Premises',
-        level: 3,
-      },
-      {
-        type: 'paragraph',
-        content: 'Exeter [commercial decorating](/commercial) often requires out-of-hours work to minimise business disruption, which affects pricing:',
-      },
-      {
-        type: 'list',
-        content: [
-          'Office repaint (per 100m²): £1,200-£2,000',
-          'Retail unit refresh: £1,800-£3,500 depending on size and requirements',
-          'Restaurant/café: £2,500-£5,000 (includes kitchens, compliance finishes)',
-          'Out-of-hours premium: typically 15-25% additional',
-          'Fast-track project premium: 20-30% additional for accelerated timelines',
-        ],
-      },
-      {
-        type: 'subheading',
-        content: 'Landlord & Rental Properties',
-        level: 3,
-      },
-      {
-        type: 'paragraph',
-        content: 'With 14,200 private rental properties in Exeter, [rental property decorating](/areas/exeter/rental-refresh-painting) is a significant market. End-of-tenancy refreshes cost:',
-      },
-      {
-        type: 'list',
-        content: [
-          '1-bed flat: £600-£1,100',
-          '2-bed flat: £900-£1,600',
-          '3-bed house: £1,400-£2,400',
-          'HMO room refresh: £250-£450 per room',
-          'Full HMO redecoration (5-bed): £2,800-£4,500',
-        ],
-      },
-      {
-        type: 'paragraph',
-        content: 'Fast turnarounds between tenancies are possible with proper scheduling. Most rental refreshes take 3-5 days for standard properties.',
-      },
-      {
-        type: 'heading',
-        content: 'What Affects Decorating Costs in Exeter?',
-        level: 2,
-      },
-      {
-        type: 'subheading',
-        content: 'Property Condition & Age',
-        level: 3,
-      },
-      {
-        type: 'paragraph',
-        content: 'Older properties—common throughout Exeter\'s historic centre—require more preparation. Victorian terraces in St Leonard\'s or Edwardian houses in Pennsylvania often have:',
-      },
-      {
-        type: 'list',
-        content: [
-          'Uneven walls requiring additional filling and sanding',
-          'Multiple layers of old paint needing removal',
-          'Damp issues that must be resolved before decoration',
-          'Period features requiring careful work around',
-          'Higher ceilings increasing material and time requirements',
-        ],
-      },
-      {
-        type: 'paragraph',
-        content: 'Preparation typically accounts for 60-70% of total decorating time. Cutting corners here results in poor finishes that won\'t last. Read about [common paint problems in Exeter homes](/blog/best-paint-types-exeter-homes) to understand why proper preparation matters.',
-      },
-      {
-        type: 'subheading',
-        content: 'Paint Quality & Specification',
-        level: 3,
-      },
-      {
-        type: 'paragraph',
-        content: 'Paint quality significantly impacts both initial cost and longevity:',
-      },
-      {
-        type: 'list',
-        content: [
-          'Budget range (basic coverage): 2-4 years lifespan, requires more coats',
-          'Mid-range (good coverage and durability): 5-7 years typical lifespan',
-          'Premium brands (excellent coverage, washable): 7-10 years',
-          'Specialist heritage paints (breathable, period-appropriate): 10-15 years on appropriate substrates',
-        ],
-      },
-      {
-        type: 'paragraph',
-        content: 'Using premium paint typically adds 15-20% to material costs but reduces the frequency of redecoration. For coastal and waterfront properties, moisture-resistant formulations are essential rather than optional.',
-      },
-      {
-        type: 'subheading',
-        content: 'Access & Complexity',
-        level: 3,
-      },
-      {
-        type: 'list',
-        content: [
-          'Scaffolding hire: £500-£1,500 for typical house',
-          'High ceiling access (3m+): adds 20-30% to interior costs',
-          'Challenging external access: adds 25-40%',
-          'Listed building restrictions: specialist methods increase time by 30-50%',
-          'Furniture removal/protection in occupied properties: £100-£300',
-        ],
-      },
-      {
-        type: 'heading',
-        content: 'Seasonal Pricing & Lead Times in Devon',
+        content: 'How to Get the Best Value',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'Decorating costs and availability vary seasonally in Exeter:',
+        content: 'Getting the best value doesn\'t mean choosing the cheapest quote. Here\'s how to ensure you\'re investing wisely:',
       },
       {
         type: 'list',
         content: [
-          'Spring (March-May): Peak exterior season, 4-6 week lead times, premium prices',
-          'Summer (June-August): Highest demand, book 6-8 weeks ahead, full pricing',
-          'Autumn (September-November): Good availability, 2-4 week lead times, competitive pricing',
-          'Winter (December-February): Interior focus, shortest lead times (1-3 weeks), best value pricing',
+          '**Get detailed written quotes:** Ensure quotes specify paint brands, number of coats, surface preparation included, and timeline',
+          '**Check insurance and credentials:** Professional decorators should have public liability insurance (minimum £2 million) and verifiable references',
+          '**Ask about preparation work:** The difference between a £400 room and a £600 room is usually preparation quality—make sure you know what\'s included',
+          '**Consider timing:** Booking exterior work for spring (March-May) often provides better availability than peak summer months',
+          '**Don\'t skip preparation:** Cutting corners on surface prep means paint failure within 2-3 years instead of 7-10 years',
+          '**Request heritage experience for period properties:** Not all decorators understand breathable paints or traditional techniques required for older buildings',
         ],
       },
       {
         type: 'paragraph',
-        content: 'Booking exterior work in winter for spring completion often secures better rates. Interior work year-round maintains steady pricing.',
+        content: 'For guidance on choosing the right decorator, see our guide on [how to choose a painter and decorator in Exeter](/blog/how-to-choose-painter-decorator-exeter).',
       },
       {
         type: 'heading',
-        content: 'How to Get Value from Your Decorator',
-        level: 2,
-      },
-      {
-        type: 'subheading',
-        content: 'Ask the Right Questions',
-        level: 3,
-      },
-      {
-        type: 'list',
-        content: [
-          'What preparation is included in the quote?',
-          'What paint quality/brand will be used?',
-          'How many coats are included?',
-          'Is woodwork preparation (sanding, filling) included?',
-          'What protection/cleanup is provided?',
-          'What\'s the project timeline?',
-          'Are there any additional costs I should anticipate?',
-        ],
-      },
-      {
-        type: 'paragraph',
-        content: 'Detailed quotes should itemise labour, materials, and any extras like scaffolding or specialist products. Vague quotes often hide inadequate preparation or cheap materials. Our guide on [how to choose a decorator in Exeter](/blog/how-to-choose-painter-decorator-exeter) covers this in detail.',
-      },
-      {
-        type: 'subheading',
-        content: 'When Cheap Becomes Expensive',
-        level: 3,
-      },
-      {
-        type: 'paragraph',
-        content: 'The lowest quote isn\'t always the best value. Warning signs include:',
-      },
-      {
-        type: 'list',
-        content: [
-          'Quotes significantly below average (30%+ lower) often mean corners will be cut',
-          'No mention of preparation work in the quote',
-          'Unspecified or cheap paint brands',
-          'No insurance or proper business setup',
-          'Pressure to pay large deposits upfront',
-          'Reluctance to provide references or portfolio',
-        ],
-      },
-      {
-        type: 'paragraph',
-        content: 'Poor decoration typically fails within 18-24 months, costing more to rectify than doing it properly first time. This is particularly true for [heritage properties](/blog/decorating-tips-exeter-period-homes) where inappropriate materials can cause lasting damage.',
-      },
-      {
-        type: 'heading',
-        content: 'Getting Your Free Quote for Exeter Decorating',
+        content: 'Seasonal Variations in Pricing',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'At BSR Decorating, we provide detailed, transparent quotes with no hidden costs. Every estimate includes a property visit to assess condition, discuss your requirements, and recommend appropriate specifications.',
+        content: 'Decorator availability and pricing in Devon follows seasonal patterns. Summer (June-August) is peak season with 4-6 week lead times and premium pricing for urgent work. Spring and autumn offer better availability and potentially more competitive pricing. Winter (December-February) is quieter—perfect for interior projects, commercial work, and securing slots for the following spring\'s exterior work.',
       },
       {
         type: 'paragraph',
-        content: 'We serve [Exeter](/areas/exeter), [Topsham](/areas/topsham), Dawlish, and surrounding areas with over 20 years\' experience in domestic, commercial, and heritage properties. Whether you\'re planning a simple refresh or a complex heritage restoration, we\'ll provide honest advice and competitive pricing.',
+        content: 'Many Exeter decorators offer slight discounts (5-10%) for winter interior work bookings or for scheduling multiple rooms together rather than piecemeal projects.',
+      },
+      {
+        type: 'heading',
+        content: 'Transparent Pricing for Exeter Properties',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Understanding realistic costs helps you budget accurately and avoid nasty surprises. Every property is different—particularly in Exeter where you might be working on anything from a Georgian listed building in the Cathedral Close to a brand-new apartment in Cranbrook—so detailed, property-specific quotes are essential.',
+      },
+      {
+        type: 'paragraph',
+        content: 'At [BSR Decorating](/), we provide transparent, detailed quotes based on thorough property assessments. We\'ll explain exactly what work is required, which materials we\'ll use, and realistic timescales—with no hidden costs or surprise extras.',
       },
       {
         type: 'quoteCTA',
-        content: 'Ready to discuss your project? Contact us today for a free, detailed quote with no obligation.',
-      },
-      {
-        type: 'paragraph',
-        content: 'Understanding costs upfront helps you plan confidently and avoid surprises. With the right decorator, proper materials, and realistic budgeting, your Exeter property will look outstanding for years to come.',
+        content: 'Planning a decorating project in Exeter or Topsham? Get in touch for a free, detailed quote. Call us or [request a quote online](/contact)—we\'re happy to visit your property and provide accurate, transparent pricing with no obligation.',
       },
     ],
   },
