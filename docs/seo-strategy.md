@@ -235,6 +235,25 @@ The agent should work through these in order, picking the next unwritten topic e
 | 17 | Conservation Area Painting Rules: What You Need Planning Permission For | conservation area painting rules | 50-150/mo national | Yes | conservation-area-painting-rules-devon-planning-permission |
 | 18 | Decorating Costs UK 2026: Complete Pricing Guide | decorating costs uk 2026 | 500-1,500/mo national | Partial | how-much-painter-decorator-cost-exeter (localise) |
 
+#### NEXT Priority - May 2026 Expansion
+
+These topics refresh the queue after the original plan was depleted. They stay aligned with the current strategy: push Exeter and Topsham money keywords, build authority around heritage properties and kitchen spraying, and support commercial, landlord, and exterior-service pages with locally specific posts.
+
+| # | Topic | Target Keyword | Est. Searches | Published | Filename |
+|---|-------|---------------|---------------|-----------|----------|
+| 19 | Interior Decorating in Exeter: Room-by-Room Planning for Period and Modern Homes | interior decorator exeter | 20-50/mo | No | — |
+| 20 | Commercial Repainting Timelines for Exeter Offices, Shops and Hospitality Venues | commercial decorator exeter | 10-30/mo | No | — |
+| 21 | Kitchen Spraying in Exeter: What Homeowners Should Know Before Booking | kitchen spraying exeter | 30-70/mo | No | — |
+| 22 | Heritage Decorator Exeter: Paint Choices for Listed Buildings in St Leonard's and St David's | heritage decorator exeter | <10 local | No | — |
+| 23 | Topsham Painter and Decorator Guide: Planning Work on Period and Riverside Homes | painter and decorator topsham | <10 local | No | — |
+| 24 | Wallpaper Hanging in Exeter: Costs, Preparation and Best Rooms to Paper | wallpaper hanger exeter | 10-30/mo | No | — |
+| 25 | Exterior Painting Costs in Exeter: What Affects the Quote in 2026 | exterior painting cost exeter | 10-30/mo | No | — |
+| 26 | Landlord Painting in Exeter: Fast Turnaround Checklist for Rental Refreshes | landlord painter exeter | 5-10/mo | No | — |
+| 27 | Painting Listed Buildings in Exeter: Breathable Paint, Consent and Common Mistakes | listed building paint exeter | <10 local | No | — |
+| 28 | Dawlish Decorator Guide: Coastal Homes, Exterior Paint and Maintenance Timing | decorator dawlish | 10-30/mo | No | — |
+| 29 | Exterior Painter Exeter: Summer Booking Guide for Render, Timber and Masonry | exterior painter exeter | 10-30/mo seasonal | No | — |
+| 30 | Decorator Exeter Reviews: What to Look for Before Choosing a Painter | decorator exeter reviews | 10-30/mo | No | — |
+
 ### Already Published Blog Posts (17 total)
 
 The agent MUST check this list to avoid duplicating existing content.
