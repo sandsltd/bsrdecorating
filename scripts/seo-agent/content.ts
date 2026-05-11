@@ -339,21 +339,21 @@ export async function generateBlogPost(
   rankings: RankingData[] = [],
   competitorReport: CompetitorReport | null = null
 ): Promise<GeneratedPost | null> {
-  // Check if any existing post needs refreshing first
-  const refreshCandidate = findPostToRefresh(rankings);
-
-  if (refreshCandidate) {
-    console.log(
-      `Refreshing post: "${refreshCandidate.post.title}" — ${refreshCandidate.reason}`
-    );
-    return await refreshPost(refreshCandidate.post, refreshCandidate.reason, strategyContent);
-  }
-
   let topic = pickNextTopic(strategyContent);
 
   if (topic) {
     console.log(`Queued topic found: "${topic.keyword}"`);
   } else {
+    // Only refresh stale content once the planned topic queue has been exhausted.
+    const refreshCandidate = findPostToRefresh(rankings);
+
+    if (refreshCandidate) {
+      console.log(
+        `Refreshing post: "${refreshCandidate.post.title}" — ${refreshCandidate.reason}`
+      );
+      return await refreshPost(refreshCandidate.post, refreshCandidate.reason, strategyContent);
+    }
+
     console.log(
       "All planned topics covered. Using smart topic picker..."
     );
