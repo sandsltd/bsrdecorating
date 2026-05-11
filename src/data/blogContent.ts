@@ -18,6 +18,232 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'interior-decorating-exeter-room-by-room-planning': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Interior decorating in Exeter requires a thoughtful approach that respects the character of your home whilst creating spaces that work for modern living. Whether you own a Victorian terrace in St Leonard\'s, a Georgian property in Southernhay, or a contemporary home in one of Exeter\'s newer developments, each room presents unique opportunities and challenges. With over 994 listed buildings across the city and 20 conservation areas, Exeter\'s housing stock is wonderfully diverse, and understanding how to approach each space makes all the difference to the final result.',
+      },
+      {
+        type: 'paragraph',
+        content: 'After more than 20 years decorating homes throughout Exeter, we\'ve learned that successful interior projects begin with proper planning. The homes we work on range from £285,000 properties in Heavitree to £700,000 period houses in Pennsylvania, and whilst budgets vary, the principles of good planning remain constant. This guide walks you through room-by-room considerations to help you make informed decisions about your interior decorating project.',
+      },
+      {
+        type: 'heading',
+        content: 'Understanding Your Exeter Home\'s Character',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Before planning individual rooms, it\'s essential to understand your property\'s architectural character. Exeter\'s housing stock includes everything from medieval buildings in the Cathedral Quarter to brand new homes in Cranbrook. Each era brings different features that influence decorating decisions.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Period properties, particularly common in areas like St Leonard\'s with its 120 listed buildings, often feature high ceilings, ornate cornicing, picture rails, and sash windows. These architectural details deserve careful consideration during decorating. Modern homes in developments like those appearing through the Liveable Exeter programme typically have lower ceilings, larger windows, and open-plan layouts that require different approaches.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The age and construction of your home also affects paint selection. Older properties built with lime mortar need [breathable paints](/blog/breathable-paint-old-houses-complete-guide) to allow moisture movement, whilst newer homes can accommodate modern acrylic systems. Understanding these fundamentals prevents costly mistakes and ensures lasting results.',
+      },
+      {
+        type: 'heading',
+        content: 'Living Rooms: Creating the Heart of Your Home',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'The living room sets the tone for your entire home and typically receives the most attention from visitors. In Exeter, living room decorating costs average £674, though this varies significantly based on room size, ceiling height, and the condition of existing surfaces.',
+      },
+      {
+        type: 'subheading',
+        content: 'Period Property Living Rooms',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Victorian and Edwardian living rooms in areas like Newtown and Mount Pleasant often feature beautiful original details. Picture rails, ceiling roses, and deep skirting boards all deserve highlighting rather than disguising. Consider using slightly different tones to pick out these features, a technique that was historically common and adds depth to the space.',
+      },
+      {
+        type: 'paragraph',
+        content: 'High ceilings in period properties can make rooms feel grand but sometimes cold. Warmer paint colours on walls, combined with a lighter ceiling, help balance the proportions. If your Victorian home has original floorboards, consider how wall colours will work with exposed wood or rugs rather than fitted carpets.',
+      },
+      {
+        type: 'subheading',
+        content: 'Modern Home Living Rooms',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Contemporary Exeter homes, particularly those in newer developments around Monkerton or the expanding Cranbrook area, often feature open-plan living spaces. These require careful colour planning to define different zones without using walls. Slightly different tones or an accent wall can delineate the living area from dining or kitchen spaces.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Lower ceilings in modern homes benefit from lighter colours that reflect natural light. Matt finishes work well on walls, whilst woodwork in eggshell or satin provides subtle contrast without overwhelming the space.',
+      },
+      {
+        type: 'heading',
+        content: 'Kitchens: Balancing Practicality and Style',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Kitchen decorating in Exeter involves more than just wall colour. Cabinet painting and [kitchen spraying](/areas/exeter/kitchen-spraying) has become increasingly popular as homeowners choose to refresh rather than replace, with full kitchen spraying typically costing around £750 compared to £15,000-25,000 for replacement.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Wall preparation is crucial in kitchens. Cooking generates moisture and grease that affect paint adhesion. Proper surface preparation, including degreasing and appropriate primers, ensures paint lasts. Wipeable finishes like eggshell or satin are more practical than matt in kitchens, particularly behind hobs and food preparation areas.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Period kitchens often occupy what were originally separate sculleries or back rooms. These spaces might have lower ceilings or less natural light than other rooms. Lighter colours maximise available light, whilst quality paint helps resist the inevitable wear that kitchens endure. The average cost to paint a kitchen, including walls and ceilings but excluding cabinets, is £364 in Exeter.',
+      },
+      {
+        type: 'heading',
+        content: 'Bedrooms: Creating Restful Spaces',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Bedroom decorating focuses on creating calm, restful environments. Average costs for painting a bedroom in Exeter run around £498, though this varies with room size and ceiling height common in different property types.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Colour psychology matters more in bedrooms than anywhere else. Cooler tones, soft greys, and muted blues generally promote better sleep than vibrant or warm colours. That said, personal preference trumps general guidance, it\'s your space and should reflect what makes you comfortable.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Period bedrooms, particularly in Victorian properties around Pennsylvania or Heavitree, often feature original fireplaces even if they\'re no longer functional. These make natural focal points and deserve consideration in your colour scheme. Highlighting the surround in a contrasting tone can add character without dominating the room.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Modern bedrooms in newer Exeter developments typically have built-in wardrobes that affect wall space. Consider whether these should blend with walls or provide contrast. Built-in furniture painted to match walls can make rooms feel larger, whilst contrasting colours define the furniture as a feature.',
+      },
+      {
+        type: 'heading',
+        content: 'Hallways, Stairs, and Landings: Connecting Your Spaces',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Hall, stairs, and landing decorating costs average £814 in Exeter, making it one of the more significant interior projects. These transitional spaces connect your home and deserve careful attention despite not being rooms where you spend much time.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Hallways in period properties are often narrow with limited natural light. This presents a decorating challenge, dark colours can feel oppressive, but very light colours may show marks quickly in these high-traffic areas. Mid-tones in wipeable finishes offer a practical compromise.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Stairs present particular challenges. In two-storey Victorian terraces common throughout Exeter, stairwells often feature the tallest walls in the house. Decorating these requires proper equipment and expertise. The height makes preparation difficult, and poor brushwork shows clearly. Many homeowners find that bringing in [professional interior decorators](/areas/exeter/interior-painting) for stairwells makes sense even if they tackle other rooms themselves.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Modern homes with open-plan stairs that form part of living spaces need particularly careful colour coordination. The stairs become a visual feature rather than a separate utility space, so colour choices should complement adjacent rooms.',
+      },
+      {
+        type: 'heading',
+        content: 'Bathrooms: Managing Moisture and Ventilation',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Bathroom decorating involves specific challenges around moisture and ventilation. Average costs for painting a bathroom in Exeter run around £332, though period bathrooms with higher ceilings and more decorative features cost more.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Paint selection matters enormously in bathrooms. Modern bathroom paints include fungicides that resist mould growth, essential in Exeter\'s relatively humid climate. Period properties without modern ventilation particularly need these specialist paints.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Many Victorian and Edwardian homes in areas like St Leonard\'s have bathrooms created by converting bedrooms or box rooms. These spaces often lack purpose-built ventilation, making paint choice and surface preparation crucial. Properly primed surfaces with quality bathroom paint last significantly longer than standard emulsion.',
+      },
+      {
+        type: 'heading',
+        content: 'Planning Across Multiple Rooms: Creating Flow',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Whilst each room has individual requirements, successful interior decorating creates flow throughout your home. This doesn\'t mean every room needs the same colour, but colours should relate to create a cohesive feel as you move through the house.',
+      },
+      {
+        type: 'list',
+        content: [
+          'Consider sightlines between rooms. What you see through doorways matters. Colours don\'t need to match, but they should complement each other.',
+          'Woodwork colour creates continuity. Many Exeter homes use the same woodwork colour throughout, typically white or off-white, which ties spaces together even when wall colours vary.',
+          'Natural light changes throughout the day. North-facing rooms in Victorian properties receive cooler light than south-facing rooms, affecting how colours appear.',
+          'Architectural features deserve consistency. If you\'re highlighting cornicing in one period room, consider doing the same in others to create rhythm.',
+          'Think about furniture and belongings. Colours that look perfect in empty rooms might clash with your furniture, rugs, and artwork.',
+        ],
+      },
+      {
+        type: 'heading',
+        content: 'Timing Your Interior Decorating Project',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Interior work can happen year-round, unlike exterior painting which depends on weather. However, timing still matters. Many Exeter homeowners schedule interior decorating for autumn and winter when they\'re spending more time indoors anyway and summer holidays are finished.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Period properties benefit from decorating during drier months when possible. High humidity affects drying times and can cause problems with traditional materials. Modern homes with better environmental control are less affected by seasonal timing.',
+      },
+      {
+        type: 'paragraph',
+        content: 'If you\'re planning multiple rooms, consider the order carefully. Decorating from top to bottom (starting with upper floors) prevents damage to newly decorated spaces below. Similarly, completing halls and stairs last protects them from wear during work on other rooms.',
+      },
+      {
+        type: 'heading',
+        content: 'Working with Period Features',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter\'s wealth of period properties means many interior decorating projects involve [working with historical features](/blog/decorating-tips-exeter-period-homes). Original features like cornicing, ceiling roses, picture rails, and panelling add character but require different approaches than flat, modern walls.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Preparation takes longer with ornate features. Cornicing and ceiling roses need careful cleaning and repair before painting. Picture rails require steady brushwork or precise cutting in. These details separate adequate decoration from excellent results.',
+      },
+      {
+        type: 'paragraph',
+        content: 'In conservation areas or listed buildings, which cover significant portions of central Exeter and all of Topsham\'s historic core, some interior works may require consent. Whilst painting generally doesn\'t, removing or altering original features might. Understanding these requirements before starting prevents complications.',
+      },
+      {
+        type: 'heading',
+        content: 'Choosing Between DIY and Professional Decorating',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Some homeowners enjoy decorating and have the skills for excellent results. Others prefer to employ professionals. Understanding which rooms benefit most from professional expertise helps make informed decisions.',
+      },
+      {
+        type: 'paragraph',
+        content: 'High, difficult spaces like stairwells almost always benefit from professional work. The equipment needed and the consequences of mistakes make these spaces challenging for DIY. Similarly, period rooms with ornate features show quality of workmanship clearly, making professional results worthwhile.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Simple, modern rooms with flat walls and minimal features are most suitable for competent DIY. A spare bedroom in a newer property presents fewer challenges than a Victorian living room with cornicing and picture rails.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Many Exeter homeowners take a mixed approach: tackling straightforward rooms themselves whilst employing [experienced interior decorators](/areas/exeter) for challenging spaces. This balances budget considerations with getting professional results where they matter most.',
+      },
+      {
+        type: 'quote',
+        content: 'Good interior decorating respects your home\'s character whilst creating spaces that work for how you live today. Whether you own a period property in St Leonard\'s or a modern home in Cranbrook, proper planning ensures results you\'ll enjoy for years.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The diversity of Exeter\'s housing stock means no two interior decorating projects are quite the same. Victorian terraces in Heavitree have different requirements than Georgian townhouses in Southernhay or contemporary apartments near the Quay. Understanding your specific property type, its architectural features, and how you use each space creates the foundation for successful decorating that enhances your home and your daily life.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Planning an interior decorating project in Exeter? BSR Decorating brings over 20 years of experience working with period and modern properties throughout the city. We offer free, no-obligation quotes and can discuss your room-by-room requirements in detail. Contact us today to discuss how we can help transform your Exeter home.',
+      },
+    ],
+  },
   'spring-exterior-painting-exeter-complete-guide': {
     sections: [
       {

@@ -65,6 +65,7 @@ function getBlogKeywords(slug: string): string {
       'heritage-paint-colours-topsham-homes-guide': "heritage paint colours topsham, heritage paint colours topsham homes guide",
       'conservation-area-painting-rules-devon-planning-permission': "conservation area painting rules, conservation area painting rules devon planning permission",
       'spring-exterior-painting-exeter-complete-guide': "spring exterior painting exeter, spring exterior painting exeter complete guide",
+      'interior-decorating-exeter-room-by-room-planning': "interior decorator exeter, interior decorating exeter room by room planning",
   };
   return keywordMap[slug] || "";
 }

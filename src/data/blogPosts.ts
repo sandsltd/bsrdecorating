@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 35,
+    title: 'Interior Decorating in Exeter: Room-by-Room Planning for Period and Modern Homes',
+    excerpt: 'Expert guidance for planning interior decorating projects in Exeter homes, from Victorian terraces to modern developments.',
+    category: 'Heritage Restoration',
+    date: '2026-05-11',
+    readTime: '10 min read',
+    image: '/images/blog/43-wooden-door-white-house.webp',
+    slug: 'interior-decorating-exeter-room-by-room-planning',
+  },
+  {
     id: 34,
     title: 'Spring Exterior Painting in Exeter: Your Complete Guide to Perfect Timing and Results',
     excerpt: 'Discover why spring is the ideal time for exterior painting in Exeter and how to achieve professional results that last.',

@@ -241,7 +241,7 @@ These topics refresh the queue after the original plan was depleted. They stay a
 
 | # | Topic | Target Keyword | Est. Searches | Published | Filename |
 |---|-------|---------------|---------------|-----------|----------|
-| 19 | Interior Decorating in Exeter: Room-by-Room Planning for Period and Modern Homes | interior decorator exeter | 20-50/mo | No | — |
+| 19 | Interior Decorating in Exeter: Room-by-Room Planning for Period and Modern Homes | interior decorator exeter | 20-50/mo | Yes | interior-decorating-exeter-room-by-room-planning |
 | 20 | Commercial Repainting Timelines for Exeter Offices, Shops and Hospitality Venues | commercial decorator exeter | 10-30/mo | No | — |
 | 21 | Kitchen Spraying in Exeter: What Homeowners Should Know Before Booking | kitchen spraying exeter | 30-70/mo | No | — |
 | 22 | Heritage Decorator Exeter: Paint Choices for Listed Buildings in St Leonard's and St David's | heritage decorator exeter | <10 local | No | — |
@@ -395,6 +395,11 @@ An automated agent runs every 5 days via GitHub Actions. It:
 ---
 
 ## Session Log
+
+### 11 May 2026 — Automated SEO Agent Run
+- **What was done:** Checked rankings for 32 keywords (5 indexed). Generated blog post: "Interior Decorating in Exeter: Room-by-Room Planning for Period and Modern Homes" targeting "interior decorator exeter". 2 competitors have published new content recently. Generated 5 SEO recommendations.
+- **Run type:** Automated (GitHub Actions)
+
 
 ### 11 May 2026 — Automated SEO Agent Run
 - **What was done:** Checked rankings for 32 keywords (5 indexed). No new blog post needed — all planned topics covered. 2 competitors have published new content recently. Generated 5 SEO recommendations.
