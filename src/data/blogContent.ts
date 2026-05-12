@@ -18,6 +18,280 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'commercial-repainting-timelines-exeter-offices-shops-hospitality': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'When you run a business in Exeter, every hour of disruption costs money. Whether you manage a Fore Street shop, a Queen Street office, or a Quayside hospitality venue, understanding realistic commercial repainting timelines helps you plan effectively, minimise downtime, and maintain your professional image without unnecessary business interruption.',
+      },
+      {
+        type: 'paragraph',
+        content: 'After over 20 years decorating commercial properties across Exeter, from the modern offices near Exeter Business Park to Grade II listed retail spaces in the Cathedral Quarter, we have learned that proper timeline planning makes the difference between a smooth project and a stressful experience. This guide explains what affects commercial decorating schedules and how to plan repainting work around your business operations.',
+      },
+      {
+        type: 'heading',
+        content: 'Why Commercial Decorating Takes Longer Than Residential Work',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Commercial properties present unique challenges that extend timelines compared to domestic decorating. Understanding these factors helps set realistic expectations from the start.',
+      },
+      {
+        type: 'subheading',
+        content: 'Access and Business Hours Constraints',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Unlike residential properties where decorators can work standard hours, commercial projects often require evening, weekend, or overnight work to avoid disrupting trading hours. A retail unit on Exeter High Street that takes three days to paint during closed hours might only require two days if decorators could work continuously without access restrictions.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional [commercial decorator Exeter](/commercial) services factor these constraints into project planning, but clients should understand that restricted access naturally extends timelines and can increase costs due to unsociable hours premiums.',
+      },
+      {
+        type: 'subheading',
+        content: 'Health and Safety Requirements',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Commercial decorating requires comprehensive health and safety procedures that add time to projects. Risk assessments, method statements, COSHH documentation, and coordination with building management all take time before any paintwork begins. For multi-tenant buildings near Southernhay or the Princesshay development, coordinating with facilities management and other businesses adds further scheduling complexity.',
+      },
+      {
+        type: 'subheading',
+        content: 'Fire Safety and Building Regulations',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Commercial properties must comply with stricter fire safety regulations than domestic homes. Paint specifications often require specific fire ratings, particularly for escape routes and communal areas. Some projects require intumescent coatings or fire-resistant paint systems that need longer drying times between coats, extending overall timelines.',
+      },
+      {
+        type: 'heading',
+        content: 'Typical Commercial Repainting Timelines by Property Type',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Every commercial property differs, but these timelines provide realistic benchmarks for planning based on common Exeter business types.',
+      },
+      {
+        type: 'subheading',
+        content: 'Small Offices and Consulting Rooms',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional offices between 500 and 1,500 square feet, common around Southernhay Gardens or the medical consulting rooms near the Royal Devon University Hospital, typically require three to five working days for complete repainting. This includes preparation, two coats throughout, and minimal disruption to daily operations if work is scheduled during evenings or weekends.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional practices often prefer staged approaches where different rooms are decorated sequentially, allowing the business to continue operating. This extends the calendar timeline to two or three weeks but reduces daily disruption.',
+      },
+      {
+        type: 'subheading',
+        content: 'Retail Units and Shop Fronts',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'High Street retail units present particular scheduling challenges. Interior repainting of a typical 1,000 to 2,000 square foot shop requires four to seven days of work, but this usually needs splitting across multiple weeks to work around trading hours.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Exterior shopfront painting requires careful coordination with pedestrian traffic and often needs completed in sections to maintain access. Heritage retail properties in conservation areas like the Cathedral Quarter may require specialist paint specifications and Listed Building Consent, adding two to four weeks to planning timelines before work begins.',
+      },
+      {
+        type: 'subheading',
+        content: 'Restaurants, Cafes and Bars',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Hospitality venues around the Quayside or Gandy Street face the tightest scheduling constraints. Most restaurants cannot close for extended periods, so decorating work typically happens during closed days or overnight after service ends.',
+      },
+      {
+        type: 'paragraph',
+        content: 'A typical restaurant interior requires seven to ten working days spread across three to four weeks, working nights and Mondays when many establishments close. Kitchen areas need specialist paint systems and longer drying times to meet hygiene standards, while dining areas require odour-free paint systems that do not affect the customer experience.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Licensed premises also require coordination with Environmental Health, particularly for kitchen repainting, adding administrative time to projects.',
+      },
+      {
+        type: 'subheading',
+        content: 'Larger Office Buildings and Commercial Spaces',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Multi-floor office buildings like those near Exeter Science Park or Sowton Industrial Estate require project management approaches with phased programmes. A 10,000 square foot office building typically needs four to eight weeks to complete, working floor by floor or zone by zone to minimise disruption.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Common areas including reception, corridors, and stairwells often need decorating during evenings or weekends, while individual office spaces can sometimes be painted during working hours with appropriate dust protection and ventilation.',
+      },
+      {
+        type: 'heading',
+        content: 'What Extends Commercial Decorating Timelines',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Several factors can significantly extend commercial decorating projects beyond baseline estimates. Knowing these helps with realistic planning.',
+      },
+      {
+        type: 'list',
+        content: [
+          'Extensive preparation work: Commercial properties with years of wear, damaged plasterwork, or previous poor decorating require substantial preparation. What appears a straightforward repaint can double in timeline once walls need filling, sanding, and stabilising.',
+          'Heritage and listed building constraints: Exeter has 994 listed buildings including many in commercial use around the Cathedral Quarter, Southernhay, and Topsham. Listed Building Consent can add four to eight weeks before work begins, and approved paint specifications may require specialist products with longer application times.',
+          'Discovery of underlying issues: Once decorating begins, hidden problems like damp, failing plaster, or structural issues may emerge. Addressing these properly extends timelines but prevents future problems. Victorian and Edwardian commercial buildings around St David\'s Station commonly reveal such issues.',
+          'Specification changes: Client requests to change colours, finishes, or scope mid-project inevitably extend timelines. Clear specifications agreed before work starts prevent delays.',
+          'Weather delays for exterior work: Exeter\'s coastal climate affects exterior commercial painting. Rain, high humidity, or cold temperatures prevent proper paint adhesion and drying. Winter exterior projects routinely face weather delays.',
+          'Access coordination in mixed-use buildings: Buildings with residential flats above commercial premises, common throughout central Exeter, require coordinating with residents, building managers, and sometimes multiple commercial tenants, adding scheduling complexity.',
+        ],
+      },
+      {
+        type: 'heading',
+        content: 'How to Minimise Disruption During Commercial Repainting',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Strategic planning significantly reduces business disruption during commercial decorating projects.',
+      },
+      {
+        type: 'subheading',
+        content: 'Schedule Around Quiet Periods',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Most Exeter businesses have quieter trading periods ideal for decorating work. Retail businesses often schedule major work in January or February after Christmas trading. Hospitality venues use quieter winter months. Professional offices schedule work during August or the Christmas break when many staff take leave.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For businesses serving the university, align decorating with academic holidays when student footfall drops. Properties near the University of Exeter or Streatham Campus benefit from scheduling work during university holidays.',
+      },
+      {
+        type: 'subheading',
+        content: 'Use Phased Approaches',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Rather than closing entirely, many businesses prefer phased decorating where different areas are completed sequentially. A Fore Street shop might have the ground floor decorated one week and upper floors the following week, maintaining some trading throughout.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Offices can often remain operational by decorating one floor or zone at a time, with staff temporarily relocating to other areas. This extends calendar timelines but maintains business continuity.',
+      },
+      {
+        type: 'subheading',
+        content: 'Choose Low-Odour, Fast-Drying Paint Systems',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Modern low-VOC and odour-free paint systems allow businesses to continue operating during decorating work. Water-based systems dry faster than traditional oil-based paints, reducing the time each area remains out of use. This proves particularly important for hospitality venues and healthcare facilities where strong paint odours affect customers and patients.',
+      },
+      {
+        type: 'subheading',
+        content: 'Plan Comprehensive Preparation',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Thorough preparation before painting begins minimises later delays. Professional commercial decorators conduct detailed surveys, identify potential issues, and plan comprehensive preparation schedules. Spending an extra day on preparation often saves three days during painting by ensuring smooth surfaces and good adhesion.',
+      },
+      {
+        type: 'heading',
+        content: 'Planning Permissions and Conservation Area Considerations',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Many commercial properties in Exeter face additional planning requirements that affect timelines significantly.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter has 20 conservation areas including the Cathedral Quarter, St Leonard\'s, Topsham, and Southernhay. External changes to commercial buildings in conservation areas often require planning permission or Listed Building Consent, even for repainting if colours change significantly from existing schemes.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Applications typically take eight to twelve weeks for determination. For listed commercial buildings, applications require heritage statements and sometimes specialist paint analysis to determine historically appropriate colour schemes. A Topsham waterfront commercial property owner was fined £38,000 in December 2025 for unauthorised alterations to a listed building, demonstrating that [proper consent is essential](/blog/conservation-area-painting-rules-devon-planning-permission).',
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional commercial decorators familiar with [Exeter heritage properties](/areas/exeter/heritage-property-painting) can advise on consent requirements and liaise with conservation officers, but business owners should factor consent timelines into project planning from the outset.',
+      },
+      {
+        type: 'heading',
+        content: 'Cost Implications of Timeline Choices',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Timeline decisions directly affect commercial decorating costs. Evening and weekend work typically incurs 25 to 50 percent premium rates compared to standard hours. Rushed projects requiring additional decorators to compress timelines increase costs further.',
+      },
+      {
+        type: 'paragraph',
+        content: 'However, extended business closures cost money too. A High Street retail unit losing £2,000 daily revenue during closure often finds that paying premium rates for concentrated out-of-hours work costs less overall than extended closure during trading hours.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Phased approaches spread costs across longer periods, helping businesses manage cash flow while avoiding revenue loss from complete closure.',
+      },
+      {
+        type: 'heading',
+        content: 'Working With Professional Commercial Decorators',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Experienced commercial decorators understand business needs and plan projects accordingly. Key questions to ask when obtaining quotes include:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Can you provide a detailed timeline showing preparation, painting, and drying time for each area?',
+          'What scheduling flexibility do you offer for out-of-hours work?',
+          'How will you minimise disruption to our business operations?',
+          'What health and safety procedures and insurance coverage do you have?',
+          'Can you provide references from similar commercial projects in Exeter?',
+          'How do you handle unexpected delays or issues discovered during work?',
+          'What guarantees or warranties cover the completed work?',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional decorators provide written project programmes, maintain clear communication throughout, and adapt to business needs. They understand that commercial clients prioritise reliability, minimal disruption, and completion to agreed timelines above all else.',
+      },
+      {
+        type: 'heading',
+        content: 'Planning Your Commercial Decorating Project',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Successful commercial decorating projects start with realistic timeline planning. For most Exeter commercial properties, the planning process should begin three to six months before desired completion dates, particularly for work requiring planning consents or scheduled during busy trading periods.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Start by identifying your quietest trading period, considering seasonal business patterns, staff holiday periods, and upcoming events that might be disrupted by decorating work. Obtain detailed quotes from professional commercial decorators who understand business constraints and can provide comprehensive project timelines.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For heritage commercial properties in Exeter\'s conservation areas, consult with experienced decorators early to understand consent requirements and add appropriate lead time for applications. The investment in proper planning prevents rushed projects, unexpected costs, and extended business disruption.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Planning commercial decorating for your Exeter business? BSR Decorating has over 20 years\' experience with offices, shops, and hospitality venues across Exeter, Topsham, and surrounding areas. We specialise in minimising disruption, working around your business needs, and delivering projects on time. Contact us for a free consultation and detailed project timeline tailored to your business.',
+      },
+    ],
+  },
   'interior-decorating-exeter-room-by-room-planning': {
     sections: [
       {

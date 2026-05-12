@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 36,
+    title: 'Commercial Repainting Timelines for Exeter Offices, Shops and Hospitality Venues',
+    excerpt: 'Planning commercial decorating in Exeter? Understand realistic timelines, minimise disruption, and schedule repainting around your business needs.',
+    category: 'Commercial Services',
+    date: '2026-05-12',
+    readTime: '9 min read',
+    image: '/images/blog/14-four-people-scaffolding.webp',
+    slug: 'commercial-repainting-timelines-exeter-offices-shops-hospitality',
+  },
+  {
     id: 35,
     title: 'Interior Decorating in Exeter: Room-by-Room Planning for Period and Modern Homes',
     excerpt: 'Expert guidance for planning interior decorating projects in Exeter homes, from Victorian terraces to modern developments.',

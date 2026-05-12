@@ -66,6 +66,7 @@ function getBlogKeywords(slug: string): string {
       'conservation-area-painting-rules-devon-planning-permission': "conservation area painting rules, conservation area painting rules devon planning permission",
       'spring-exterior-painting-exeter-complete-guide': "spring exterior painting exeter, spring exterior painting exeter complete guide",
       'interior-decorating-exeter-room-by-room-planning': "interior decorator exeter, interior decorating exeter room by room planning",
+      'commercial-repainting-timelines-exeter-offices-shops-hospitality': "commercial decorator exeter, commercial repainting timelines exeter offices shops hospitality",
   };
   return keywordMap[slug] || "";
 }
