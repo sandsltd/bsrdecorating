@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 37,
+    title: 'Kitchen Spraying in Exeter: What Homeowners Should Know Before Booking',
+    excerpt: 'Planning kitchen spraying in Exeter? Our expert guide covers costs, preparation, timing and what to expect from professional cabinet spraying services.',
+    category: 'Kitchen Spraying',
+    date: '2026-05-15',
+    readTime: '10 min read',
+    image: '/images/blog/39-wall-half-painted.webp',
+    slug: 'kitchen-spraying-exeter-what-homeowners-should-know',
+  },
+  {
     id: 36,
     title: 'Commercial Repainting Timelines for Exeter Offices, Shops and Hospitality Venues',
     excerpt: 'Planning commercial decorating in Exeter? Understand realistic timelines, minimise disruption, and schedule repainting around your business needs.',

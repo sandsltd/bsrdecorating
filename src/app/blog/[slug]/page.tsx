@@ -67,6 +67,7 @@ function getBlogKeywords(slug: string): string {
       'spring-exterior-painting-exeter-complete-guide': "spring exterior painting exeter, spring exterior painting exeter complete guide",
       'interior-decorating-exeter-room-by-room-planning': "interior decorator exeter, interior decorating exeter room by room planning",
       'commercial-repainting-timelines-exeter-offices-shops-hospitality': "commercial decorator exeter, commercial repainting timelines exeter offices shops hospitality",
+      'kitchen-spraying-exeter-what-homeowners-should-know': "kitchen spraying exeter, kitchen spraying exeter what homeowners should know",
   };
   return keywordMap[slug] || "";
 }

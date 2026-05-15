@@ -18,6 +18,284 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'kitchen-spraying-exeter-what-homeowners-should-know': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Kitchen cabinet spraying has become one of the fastest-growing decorating services across Exeter, from the Victorian terraces of St Leonard\'s to the modern developments at Cranbrook. It\'s not difficult to see why. With full kitchen replacements costing upwards of £8,000 to £15,000, professional spraying offers a fraction of the cost whilst delivering a completely transformed appearance. But as with any specialist service, understanding what\'s involved before you book makes all the difference between a successful project and a disappointing one.',
+      },
+      {
+        type: 'paragraph',
+        content: 'At BSR Decorating, we\'ve been spraying kitchens across Devon for over 20 years, and we\'ve learned that the homeowners who are happiest with their results are those who knew what to expect from the start. This guide answers the questions we\'re asked most often about [kitchen spraying in Exeter](/areas/exeter/kitchen-spraying), from preparation and timing to realistic costs and how long your newly sprayed kitchen will last.',
+      },
+      {
+        type: 'heading',
+        content: 'What Is Kitchen Cabinet Spraying?',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Kitchen spraying involves applying specialist paint to your existing kitchen cabinets, doors, drawer fronts and sometimes worktops using professional spray equipment. Unlike brush or roller application, spraying creates an ultra-smooth, factory-finish appearance without visible brush marks or texture. The process requires significant preparation, specialist equipment, and considerable skill to achieve durable, professional results.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Most professional kitchen spraying uses either water-based or solvent-based paints specifically formulated for durability. These aren\'t standard wall paints. They\'re designed to withstand the daily wear that kitchen surfaces endure: heat from cooking, steam, frequent cleaning, and constant handling. The best finishes cure to a hard, resilient surface that can last ten years or more with proper care.',
+      },
+      {
+        type: 'heading',
+        content: 'How Much Does Kitchen Spraying Cost in Exeter?',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'According to current local pricing data, professional kitchen cabinet spraying in Exeter typically costs around £750 for a full kitchen, though this varies considerably based on kitchen size, condition, and finish requirements. This compares favourably with the £364 average for brush-painting cabinets, and dramatically undercuts the £8,000 to £15,000 cost of complete kitchen replacement.',
+      },
+      {
+        type: 'subheading',
+        content: 'What Affects the Price?',
+        level: 3,
+      },
+      {
+        type: 'list',
+        content: [
+          'Kitchen size: A small galley kitchen in a Heavitree terrace will cost less than a large open-plan kitchen in a Pennsylvania Road property',
+          'Number of units: More doors and drawer fronts mean more preparation and spraying time',
+          'Current condition: Kitchens requiring repair work, deep cleaning, or significant preparation will cost more',
+          'Finish type: Some finishes require multiple coats or specialist primers',
+          'Colour changes: Changing from dark wood to pale colours, or vice versa, often requires additional coats',
+          'Hardware: Whether you\'re keeping or replacing handles affects preparation time',
+          'Access and protection: Larger homes may require more extensive masking and protection work',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'For accurate pricing specific to your Exeter kitchen, it\'s worth requesting a detailed quote. Professional decorators will typically visit to assess the work before providing a fixed price. You can read more about typical decorating costs in our comprehensive [Exeter pricing guide](/blog/how-much-painter-decorator-cost-exeter).',
+      },
+      {
+        type: 'heading',
+        content: 'The Kitchen Spraying Process: What to Expect',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Understanding the process helps you prepare properly and set realistic expectations about timing and disruption. Professional kitchen spraying isn\'t a quick job. Done properly, it takes several days and requires your kitchen to be largely out of action during that time.',
+      },
+      {
+        type: 'subheading',
+        content: 'Step 1: Preparation',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Preparation accounts for roughly 60 to 70 per cent of the total work. Cabinet doors and drawer fronts are removed, labelled, and taken to a dedicated spray area. All hardware is removed and stored safely. Fixed cabinet frames are thoroughly cleaned to remove grease, which is particularly important in older Exeter properties where years of cooking residue may have built up.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Surfaces are then sanded to create a key for the new paint to adhere to. Any damage, chips, or imperfections are filled and sanded smooth. The kitchen itself is extensively masked and protected. Floors, worktops, appliances, and walls all need covering to prevent overspray damage.',
+      },
+      {
+        type: 'subheading',
+        content: 'Step 2: Priming',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'A specialist primer is applied to all surfaces. This is crucial for adhesion and longevity. The primer is left to dry completely, which can take several hours depending on temperature and humidity. Devon\'s coastal climate, particularly in properties closer to the Exe estuary, can affect drying times.',
+      },
+      {
+        type: 'subheading',
+        content: 'Step 3: Spraying',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Multiple thin coats of paint are applied using professional HVLP or airless spray equipment. Each coat is allowed to dry before the next is applied. Most kitchens require at least two to three topcoats for full coverage and durability. The spray technique requires considerable skill to achieve an even, smooth finish without runs, sags, or orange-peel texture.',
+      },
+      {
+        type: 'subheading',
+        content: 'Step 4: Curing and Reassembly',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Once the final coat is applied, surfaces need time to cure fully. This isn\'t the same as drying to touch. Full curing, where the paint reaches its maximum hardness and durability, can take up to two weeks. Doors and drawers are carefully reassembled, hardware is refitted, and all protection is removed.',
+      },
+      {
+        type: 'heading',
+        content: 'How Long Will Your Kitchen Be Out of Action?',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Most professional kitchen spraying projects take three to five days from start to finish. During this time, your kitchen will be largely unusable. You won\'t have access to cabinets, and appliances may be difficult or impossible to use safely. Many Exeter families plan spraying work around holidays, or arrange temporary kitchen facilities elsewhere in the home.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The work generates minimal dust compared to a full kitchen renovation, but there will be strong paint odours, particularly if solvent-based paints are used. Good ventilation is essential, which can be challenging in winter months.',
+      },
+      {
+        type: 'heading',
+        content: 'Will Spraying Work on Your Kitchen?',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Not every kitchen is suitable for spraying, though most are. The best candidates are kitchens with solid cabinet doors in reasonable structural condition. MDF, solid wood, and laminate can all be sprayed successfully with the right preparation and paint systems.',
+      },
+      {
+        type: 'subheading',
+        content: 'Good Candidates for Spraying',
+        level: 3,
+      },
+      {
+        type: 'list',
+        content: [
+          'Solid MDF or wood doors in good structural condition',
+          'Flat or simple shaker-style doors',
+          'Laminate cabinets that are firmly adhered',
+          'Kitchens with outdated colours but sound construction',
+          'Well-maintained kitchens needing a style refresh',
+          'Oak kitchens where you want to change the tone or cover the grain',
+        ],
+      },
+      {
+        type: 'subheading',
+        content: 'Poor Candidates for Spraying',
+        level: 3,
+      },
+      {
+        type: 'list',
+        content: [
+          'Doors with damaged or peeling laminate',
+          'Heavily damaged or water-damaged cabinets',
+          'Thermofoil or vinyl-wrapped doors, which can be difficult to prepare',
+          'Kitchens with structural issues that need addressing first',
+          'Very high-gloss finishes that show every imperfection',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'A professional decorator will assess your kitchen honestly and advise whether spraying is the right solution. If structural issues need addressing, it\'s worth resolving those first. In some older Exeter properties, particularly Victorian and Edwardian homes in St Leonard\'s or Newtown, underlying damp issues should be resolved before any decorating work. Our guide to [solving damp and paint problems](/blog/solving-damp-paint-problems-exeter-homes) covers this in more detail.',
+      },
+      {
+        type: 'heading',
+        content: 'Choosing Colours and Finishes',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Kitchen spraying offers almost unlimited colour options. You\'re not limited to standard kitchen ranges. Any colour can be matched, though lighter colours tend to be more forgiving and require fewer coats. Popular choices in Exeter currently include soft greys, sage greens, navy blues, and classic whites and off-whites.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Finish options typically include matt, satin, and gloss. Satin is most popular for kitchens, offering a subtle sheen that\'s elegant without being too reflective. It\'s also practical, as it\'s easier to clean than matt and less likely to show fingerprints than high gloss.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For period properties in conservation areas like Topsham or St David\'s, colour choices may need consideration alongside the property\'s character. Heritage colours can work beautifully in sprayed kitchens whilst respecting the building\'s history.',
+      },
+      {
+        type: 'heading',
+        content: 'How Long Does Sprayed Kitchen Paint Last?',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'With proper preparation and high-quality materials, a professionally sprayed kitchen should last ten years or more. This assumes normal domestic use and reasonable care. The longevity depends heavily on the quality of preparation, the paint system used, and how the kitchen is maintained.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Kitchens sprayed with specialist two-pack paints, which cure through chemical reaction rather than just drying, offer exceptional durability. These create an extremely hard, chemical-resistant surface that can withstand decades of use. However, they\'re more expensive and require more technical expertise to apply.',
+      },
+      {
+        type: 'heading',
+        content: 'Caring for Your Newly Sprayed Kitchen',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Newly sprayed cabinets need gentle treatment during the first few weeks whilst the paint fully cures. Avoid harsh cleaning for at least two weeks. After that, regular cleaning with mild detergent and a soft cloth will keep surfaces looking fresh. Avoid abrasive cleaners, scourers, or harsh chemicals, which can damage even the most durable finishes.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Steam is the biggest long-term enemy of kitchen paint. Using extractor fans when cooking, particularly when boiling or steaming food, significantly extends the life of your finish. This is especially important in older Exeter properties where ventilation may be limited.',
+      },
+      {
+        type: 'heading',
+        content: 'DIY Kitchen Spraying vs Professional Service',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'DIY kitchen spraying is technically possible and might save money, but it\'s considerably more difficult than it appears. Professional results require specialist spray equipment, proper extraction and ventilation, extensive preparation skills, and considerable experience in paint application techniques.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Most DIY attempts result in disappointing finishes: runs, sags, orange-peel texture, or adhesion problems that appear within months. The equipment investment alone, for quality spray guns, extraction, and masking materials, approaches the cost of professional work for a single kitchen.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For most Exeter homeowners, professional spraying offers better value. The finish quality, durability, and guaranteed results justify the cost, particularly when compared with full kitchen replacement.',
+      },
+      {
+        type: 'heading',
+        content: 'Questions to Ask Before Booking',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Before committing to kitchen spraying, ask potential decorators these important questions:',
+      },
+      {
+        type: 'list',
+        content: [
+          'What paint system do you use, and why?',
+          'How many coats will be applied?',
+          'What preparation is included in the price?',
+          'How long will the work take?',
+          'Do you have insurance for the work?',
+          'Can you provide references or examples of similar work?',
+          'What guarantee or warranty do you offer?',
+          'How should I prepare my kitchen before you start?',
+          'What aftercare will the finish require?',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional decorators should answer these questions clearly and provide detailed quotations breaking down exactly what\'s included.',
+      },
+      {
+        type: 'heading',
+        content: 'When Is the Best Time to Spray Your Kitchen?',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Kitchen spraying can be done year-round, but timing affects both the process and your convenience. Spring and autumn are ideal: temperatures are moderate, helping paint cure properly, and you\'re less likely to need windows closed against cold or open in high summer heat.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Book well in advance if you have a specific timeframe. Experienced kitchen spraying specialists often have waiting lists of several weeks or months, particularly during peak periods in spring and early summer.',
+      },
+      {
+        type: 'heading',
+        content: 'Transform Your Exeter Kitchen with Professional Spraying',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Kitchen spraying offers an economical, environmentally conscious alternative to complete kitchen replacement. For Exeter homeowners with structurally sound kitchens that simply need a style refresh, it\'s an excellent investment. The key to success lies in choosing an experienced professional who understands the technical requirements and can deliver durable, beautiful results.',
+      },
+      {
+        type: 'paragraph',
+        content: 'At BSR Decorating, we\'ve been transforming kitchens across Exeter, Topsham, and surrounding areas for over 20 years. We use premium paint systems, prepare surfaces properly, and work efficiently to minimise disruption to your home. Every project includes a detailed quote, clear timescales, and aftercare advice to help your kitchen look perfect for years to come.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Ready to transform your kitchen? Contact BSR Decorating today for a free, no-obligation quote and expert advice on whether kitchen spraying is right for your Exeter home.',
+      },
+    ],
+  },
   'commercial-repainting-timelines-exeter-offices-shops-hospitality': {
     sections: [
       {
