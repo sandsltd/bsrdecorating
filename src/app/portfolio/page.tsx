@@ -153,7 +153,7 @@ export default function PortfolioPage() {
               Where We&apos;ve <span className="text-bsr-highlight">Delivered Excellence</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Explore the locations of our completed projects across Devon. Each marker shows the number of projects we&apos;ve completed in that area.
+              Explore a selection of projects we have completed across Devon.
             </p>
           </div>
 
