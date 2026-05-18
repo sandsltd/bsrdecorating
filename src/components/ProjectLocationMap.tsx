@@ -25,6 +25,7 @@ const getProjectLocations = () => {
     'Totnes': [-3.6945, 50.4318],
     'Kenton': [-3.4648, 50.5989], // Coordinates for Kenton, Devon
     'Torquay': [-3.5212, 50.4619], // Coordinates for Torquay, Devon
+    'Topsham': [-3.4667, 50.6853], // Coordinates for Topsham, Devon
     'Bovey Tracey': [-3.6778, 50.5922], // Coordinates for Bovey Tracey, Devon
     'Salcombe': [-3.7694, 50.2389], // Coordinates for Salcombe, Devon
     'Cheriton Bishop': [-3.6889, 50.7556], // Coordinates for Cheriton Bishop, Devon
