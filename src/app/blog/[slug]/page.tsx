@@ -68,6 +68,7 @@ function getBlogKeywords(slug: string): string {
       'interior-decorating-exeter-room-by-room-planning': "interior decorator exeter, interior decorating exeter room by room planning",
       'commercial-repainting-timelines-exeter-offices-shops-hospitality': "commercial decorator exeter, commercial repainting timelines exeter offices shops hospitality",
       'kitchen-spraying-exeter-what-homeowners-should-know': "kitchen spraying exeter, kitchen spraying exeter what homeowners should know",
+      'heritage-decorator-exeter-listed-buildings-st-leonards-st-davids': "heritage decorator exeter, heritage decorator exeter listed buildings st leonards st davids",
   };
   return keywordMap[slug] || "";
 }

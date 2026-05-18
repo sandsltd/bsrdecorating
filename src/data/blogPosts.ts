@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 38,
+    title: 'Heritage Decorator Exeter: Paint Choices for Listed Buildings in St Leonard\'s and St David\'s',
+    excerpt: 'Expert guidance on paint selection and techniques for Exeter\'s 994 listed buildings, from breathable finishes to period colours.',
+    category: 'Heritage Restoration',
+    date: '2026-05-18',
+    readTime: '9 min read',
+    image: '/images/blog/35-empty-room-renovation.webp',
+    slug: 'heritage-decorator-exeter-listed-buildings-st-leonards-st-davids',
+  },
+  {
     id: 37,
     title: 'Kitchen Spraying in Exeter: What Homeowners Should Know Before Booking',
     excerpt: 'Planning kitchen spraying in Exeter? Our expert guide covers costs, preparation, timing and what to expect from professional cabinet spraying services.',

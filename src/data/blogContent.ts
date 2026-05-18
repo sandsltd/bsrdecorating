@@ -18,6 +18,204 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'heritage-decorator-exeter-listed-buildings-st-leonards-st-davids': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Exeter\'s architectural heritage is extraordinary. With 994 listed buildings spread across the city and 20 designated conservation areas, our historic properties tell the story of centuries of craftsmanship. St Leonard\'s alone contains 120 listed buildings, whilst St David\'s ward boasts an impressive 380. If you own one of these remarkable properties, choosing the right paint and decorator isn\'t just about aesthetics—it\'s about preservation, compliance, and protecting your investment for generations to come.',
+      },
+      {
+        type: 'paragraph',
+        content: 'As a heritage decorator in Exeter with over 20 years of experience working on [period properties across Devon](/areas/exeter/heritage-property-painting), I\'ve seen firsthand what happens when modern paints are applied to old buildings. I\'ve also witnessed the transformation when the right materials and techniques are used. This guide will help you understand what makes decorating a listed building different, and why specialist knowledge matters.',
+      },
+      {
+        type: 'heading',
+        content: 'Why Listed Buildings Need Different Paint',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'The fundamental difference between a Georgian townhouse in St Leonard\'s and a modern home in Cranbrook comes down to one word: breathability. Buildings constructed before 1919 were built using lime mortar, lime plaster, and porous materials that allow moisture to move through the walls naturally. This vapour permeability is essential to the building\'s health.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Modern vinyl emulsions and acrylic paints create an impermeable barrier. When applied to old walls, they trap moisture inside the structure. Over months and years, this causes lime plaster to fail, timber to rot, and salt deposits to form on the surface—a white crystalline bloom called efflorescence that signals serious problems beneath.',
+      },
+      {
+        type: 'paragraph',
+        content: 'I\'ve been called to properties on Sidwell Street and around the Cathedral Close where well-meaning decorators have painted beautiful period interiors with standard trade emulsion. Within two years, the paint was bubbling and peeling, and the plaster underneath was crumbling. The cost of remedial work far exceeded what the owners would have paid for breathable alternatives in the first place.',
+      },
+      {
+        type: 'heading',
+        content: 'Paint Types for Heritage Properties in Exeter',
+        level: 2,
+      },
+      {
+        type: 'subheading',
+        content: 'Limewash: The Traditional Choice',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Limewash is the oldest form of wall coating, used on buildings throughout Exeter for centuries. It\'s made from slaked lime and water, sometimes with natural pigments added. Limewash is highly breathable, naturally antibacterial, and develops a beautiful matte patina over time. It\'s ideal for historic exteriors and lime-plastered interiors, particularly in damp-prone areas like cellars and north-facing walls.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The trade-off is durability. Limewash wears gradually and needs reapplication every 5-7 years on exteriors. Many owners of Victorian terraces in Pennsylvania and Edwardian properties around Polsloe find this maintenance schedule suits their approach to stewardship—they\'re caring for a building, not just decorating it.',
+      },
+      {
+        type: 'subheading',
+        content: 'Clay and Mineral Paints',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Clay paints like those from Earthborn and Clayworks, along with mineral paints from brands such as Keim and Graphenstone, offer excellent breathability with better durability than limewash. These paints create a microporous surface that allows water vapour to pass through whilst resisting liquid water penetration—exactly what a listed building needs.',
+      },
+      {
+        type: 'paragraph',
+        content: 'We specify these paints frequently for interior work in [Topsham\'s riverside period properties](/areas/topsham) and Exeter\'s conservation areas. They\'re available in an extensive colour range, apply similarly to conventional emulsion, and the finish improves with age. The initial cost is higher—roughly double that of standard emulsion—but the longevity and performance justify the investment.',
+      },
+      {
+        type: 'subheading',
+        content: 'Traditional Distemper',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Distemper was the standard interior finish throughout the Georgian and Victorian periods. Made from chalk, water, and animal glue, it creates a soft, chalky surface with unmatched breathability. Original distemper can still be found on ceilings in older properties around the Cathedral Quarter and St David\'s.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Modern alternatives like Farrow & Ball\'s Casein Distemper offer similar properties with better durability. Distemper isn\'t washable, which makes it impractical for kitchens and bathrooms, but for bedrooms, hallways, and formal rooms, it creates an authentic period finish that vinyl emulsion simply cannot replicate.',
+      },
+      {
+        type: 'subheading',
+        content: 'Specialist Masonry Paints',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'For external render and masonry, breathable silicate or lime-based masonry paints are essential. Standard acrylic masonry paint will cause the same moisture-trapping problems as vinyl emulsion does internally. Brands like Keim Granital and Dulux Heritage Masonry are formulated specifically for historic buildings and comply with conservation requirements.',
+      },
+      {
+        type: 'heading',
+        content: 'Colour Choices and Conservation Area Requirements',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter\'s conservation areas each have their own character, and whilst there\'s no prescriptive palette, planning officers do pay attention to colour choices—particularly on external elevations visible from the street. The December 2025 case where a Topsham property owner was fined £38,000 for unauthorised alterations to a listed building shows how seriously enforcement is taken.',
+      },
+      {
+        type: 'paragraph',
+        content: 'In St Leonard\'s, the prevailing palette reflects the area\'s Victorian and Edwardian character: warm creams, soft greys, and muted heritage colours. Properties around Newtown and Mont le Grand often feature darker, richer tones—deep reds, forest greens, and traditional blue-greys. St David\'s, with its older building stock, tends toward lighter limewash shades and traditional ochres.',
+      },
+      {
+        type: 'list',
+        content: [
+          'For Georgian properties (pre-1837): Stone colours, off-whites, soft greys, and period greens',
+          'For Victorian properties (1837-1901): Deeper heritage colours, terracottas, and rich creams',
+          'For Edwardian properties (1901-1910): Lighter shades returning to fashion—soft greens, pale blues, warm whites',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'If you\'re planning external colour changes on a listed building or within a conservation area, it\'s worth consulting Exeter City Council\'s planning department early. A brief conversation can save months of complications. We can arrange this on your behalf as part of our heritage decorating service.',
+      },
+      {
+        type: 'heading',
+        content: 'Common Mistakes to Avoid',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Over two decades working as a heritage decorator in Exeter, I\'ve seen several recurring mistakes that compromise historic buildings:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Painting over original lime plaster with vinyl emulsion, trapping moisture and causing deterioration',
+          'Using cement-based fillers on lime plaster walls, creating hard spots that crack and fail',
+          'Applying modern masonry paint to soft lime render, leading to blistering and spalling',
+          'Stripping original features like dado rails and cornicing rather than carefully restoring them',
+          'Choosing inappropriate colours that clash with the building\'s period and the streetscape',
+          'Failing to obtain Listed Building Consent for works that require it—even interior painting can need approval in some cases',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'The last point is particularly important. Listed Building Consent is legally required for any works that affect a building\'s special architectural or historic interest. For most internal redecoration using appropriate materials, consent isn\'t needed—but if you\'re changing colours significantly, removing paint layers to expose original finishes, or working on particularly significant interiors, it\'s essential to check first.',
+      },
+      {
+        type: 'heading',
+        content: 'Why Specialist Knowledge Matters',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Decorating a listed building isn\'t just about applying paint carefully. It requires understanding historic construction methods, recognising signs of underlying problems, and knowing which modern materials can safely be used alongside traditional ones. A heritage decorator brings this knowledge—accumulated through years of working specifically with old buildings.',
+      },
+      {
+        type: 'paragraph',
+        content: 'When we survey a Georgian townhouse near Southernhay or a Victorian terrace in Heavitree, we\'re looking beyond the surface. Is that crack in the plaster caused by settlement, moisture movement, or inappropriate repairs? Is the existing paint layer vinyl that needs removing, or original distemper that should be preserved? Does the substrate need consolidation before any decoration begins?',
+      },
+      {
+        type: 'paragraph',
+        content: 'These questions matter because the wrong decisions lead to repeated failures and escalating costs. [Our approach to heritage property painting](/areas/exeter/heritage-property-painting) starts with understanding what we\'re working with, then specifying appropriate materials and methods. It takes longer than slapping on trade emulsion, but it\'s how these buildings have survived centuries—and how they\'ll survive centuries more.',
+      },
+      {
+        type: 'heading',
+        content: 'Costs and Long-Term Value',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Heritage painting specification typically costs 30-50% more than standard decoration, reflecting specialist materials and the additional time required for proper preparation. For a typical Victorian room in St Leonard\'s, expect to pay £600-800 rather than £400-500 for standard work. For whole-house projects, the premium might add £2,000-4,000 to the total.',
+      },
+      {
+        type: 'paragraph',
+        content: 'But consider the alternative. Inappropriate decoration fails within 3-5 years, requiring complete stripping and redoing—often with remedial plaster work needed as well. Proper heritage specification lasts 10-15 years or more, protects the building fabric, and maintains property value. For homes in conservation areas where the average price exceeds £500,000 in areas like Topsham and £350,000-700,000 in St Leonard\'s, protecting that investment is paramount.',
+      },
+      {
+        type: 'paragraph',
+        content: 'There\'s also the question of authenticity. Period properties command premium prices partly because of their character. Strip out that character with inappropriate decoration, and you diminish what makes the building valuable. Preserve it thoughtfully, and you maintain what buyers in these areas specifically seek.',
+      },
+      {
+        type: 'heading',
+        content: 'Finding the Right Heritage Decorator in Exeter',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Not every painter and decorator has heritage experience. When interviewing potential contractors for your listed building project, ask specific questions: What breathable paint systems do they use? Have they worked in your conservation area before? Can they provide references from similar period properties? Do they understand Listed Building Consent requirements?',
+      },
+      {
+        type: 'paragraph',
+        content: 'Ask to see examples of completed heritage work—not just photographs, but ideally buildings you can visit. A decorator experienced with Victorian terraces in Heavitree should be able to point to multiple completed projects nearby. Someone claiming heritage expertise but unable to discuss lime plaster, breathability, or period-appropriate colours probably doesn\'t have the specialist knowledge your property needs.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional accreditations matter too. Membership of organisations like the Painting & Decorating Association, or specific heritage training from institutions like the Society for the Protection of Ancient Buildings, demonstrates commitment to proper standards.',
+      },
+      {
+        type: 'quote',
+        content: 'Exeter\'s 994 listed buildings represent centuries of architectural evolution. Decorating them properly isn\'t just about following regulations—it\'s about understanding why those regulations exist and caring enough to do the work right.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Whether you own a Georgian townhouse overlooking the Cathedral, a Victorian terrace in St Leonard\'s, or a merchant\'s house in St David\'s, your property deserves decoration that respects its heritage whilst meeting your practical needs for a comfortable, beautiful home. The right materials, applied by someone who understands historic buildings, make all the difference.',
+      },
+      {
+        type: 'paragraph',
+        content: 'At BSR Decorating, we\'ve spent over 20 years working with period properties across Exeter and Topsham. We understand the specific requirements of listed buildings and conservation areas, we use breathable paint systems as standard on historic properties, and we can guide you through colour choices and consent requirements. Most importantly, we care about getting it right—because these buildings matter, and they deserve decorators who understand that.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Planning work on your listed building or period property in Exeter? Contact BSR Decorating for specialist advice and a free, no-obligation quote. We\'re based in Dawlish and work throughout Exeter, Topsham, and the surrounding area.',
+      },
+    ],
+  },
   'kitchen-spraying-exeter-what-homeowners-should-know': {
     sections: [
       {
