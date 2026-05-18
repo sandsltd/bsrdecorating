@@ -1,11 +1,8 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { QuoteModalProvider } from "@/contexts/QuoteModalContext";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.bsrdecorating.co.uk'),
@@ -190,7 +187,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
-      <body className={inter.className}>
+      <body>
         <QuoteModalProvider>
           <div className="min-h-screen bg-bsr-black text-bsr-white" style={{ backgroundColor: '#000000' }}>
             <Navigation />
