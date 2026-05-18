@@ -241,6 +241,10 @@ const ProjectLocationMap = () => {
         ref={mapContainer} 
         className="w-full h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-bsr-gray-light"
       />
+
+      <p className="mt-4 text-center text-sm text-gray-400">
+        Please note this is not the full list of projects we have carried out.
+      </p>
       
       {/* Map Legend */}
       <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm">
