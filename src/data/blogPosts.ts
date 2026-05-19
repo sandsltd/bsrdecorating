@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 39,
+    title: 'Topsham Painter and Decorator Guide: Planning Work on Period and Riverside Homes',
+    excerpt: 'Expert guidance for choosing a painter and decorator in Topsham, with specialist advice for period properties and riverside homes.',
+    category: 'Heritage Restoration',
+    date: '2026-05-19',
+    readTime: '8 min read',
+    image: '/images/blog/03-man-paint-roller.webp',
+    slug: 'topsham-painter-decorator-guide-period-riverside-homes',
+  },
+  {
     id: 38,
     title: 'Heritage Decorator Exeter: Paint Choices for Listed Buildings in St Leonard\'s and St David\'s',
     excerpt: 'Expert guidance on paint selection and techniques for Exeter\'s 994 listed buildings, from breathable finishes to period colours.',

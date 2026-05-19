@@ -18,6 +18,242 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'topsham-painter-decorator-guide-period-riverside-homes': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Topsham presents unique decorating challenges that demand specialist knowledge. With 228 listed buildings, a prominent conservation area, and riverside properties exposed to the Exe Estuary\'s humidity and salt air, choosing the right painter and decorator in Topsham requires careful consideration. Whether you\'re restoring a Georgian townhouse on Fore Street, maintaining a Victorian villa in higher Topsham, or protecting a waterfront property from the elements, understanding what makes Topsham different is essential for successful decorating work.',
+      },
+      {
+        type: 'heading',
+        content: 'Why Topsham Properties Need Specialist Decorating Expertise',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Topsham\'s architectural heritage and waterfront location create decorating requirements that differ significantly from other Devon towns. The combination of period building techniques, conservation area regulations, and challenging coastal weather means standard decorating approaches often fail.',
+      },
+      {
+        type: 'subheading',
+        content: 'The Listed Building Factor',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Topsham contains 228 listed buildings, making it one of the most historically significant areas in Exeter. These properties, concentrated along Fore Street, Monmouth Street, and the Strand, require breathable paints and traditional techniques. Modern vinyl emulsions trap moisture in lime mortar and plaster, causing damp problems and paint failure. A December 2025 case saw a Topsham property owner fined £38,000 for unauthorised alterations to a listed building, demonstrating how seriously conservation regulations are enforced. Your painter and decorator in Topsham must understand these requirements before work begins.',
+      },
+      {
+        type: 'subheading',
+        content: 'Riverside Climate Challenges',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Properties near the Exe Estuary face constant humidity, salt air, and temperature fluctuations. Woodwork expands and contracts more than inland properties, paint coatings must resist salt corrosion, and exterior surfaces endure harsher weathering. The Strand, Retreat Hill, and properties backing onto the estuary require [specialist paint systems designed for coastal exposure](/blog/topsham-waterfront-homes-best-paints-humidity-salt-air-weather). Standard decorating schedules don\'t account for these conditions, leading to premature paint failure and costly redecorating cycles.',
+      },
+      {
+        type: 'subheading',
+        content: 'Conservation Area Restrictions',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Topsham Conservation Area covers the historic town centre, imposing restrictions on exterior colour changes, window treatments, and visible alterations. While internal decorating generally doesn\'t require consent, exterior work often does. Planning applications take 8-12 weeks, and unauthorised work can result in enforcement notices requiring reinstatement at your expense. An experienced Topsham decorator understands which colours and finishes comply with conservation guidelines, saving time and avoiding costly mistakes.',
+      },
+      {
+        type: 'heading',
+        content: 'What to Look for When Choosing a Painter and Decorator in Topsham',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Not all decorators have the specialist knowledge Topsham properties demand. When evaluating potential contractors, ask specific questions that reveal their experience with period and riverside homes.',
+      },
+      {
+        type: 'subheading',
+        content: 'Period Property Experience',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Ask whether they\'ve worked on listed buildings or properties in conservation areas. Request examples of lime plaster preparation, breathable paint systems, and traditional joinery finishing. Decorators experienced with [heritage properties](/areas/exeter/heritage-property-painting) understand that surface preparation differs fundamentally from modern homes. They\'ll identify whether your walls are lime or gypsum plaster before selecting appropriate paints, and they\'ll know which primers prevent tannin bleed-through on old pine or oak woodwork.',
+      },
+      {
+        type: 'subheading',
+        content: 'Understanding of Coastal Conditions',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Riverside and estuary-facing properties require specific paint specifications. Ask which exterior paint systems they recommend for salt air exposure and how they prepare surfaces affected by previous moisture ingress. Experienced decorators working near the [waterfront](/areas/topsham) select paints with high water vapour permeability, use corrosion-inhibiting primers on metalwork, and understand when to recommend dehumidification before decorating damp-affected rooms.',
+      },
+      {
+        type: 'subheading',
+        content: 'Local Knowledge and Planning Awareness',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'A decorator familiar with Topsham Conservation Area knows which exterior colour changes require planning consent and can advise on historically appropriate colour schemes. They should be able to discuss whether your proposed cream front door needs approval, or whether repainting existing colours in the same shade is permitted development. This knowledge prevents delays and ensures compliance from the outset.',
+      },
+      {
+        type: 'heading',
+        content: 'Planning Your Topsham Decorating Project',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Successful decorating in Topsham requires more planning than standard projects. Factor in additional time for surveys, materials specification, and potentially planning applications.',
+      },
+      {
+        type: 'subheading',
+        content: 'Pre-Work Property Assessment',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Period and riverside properties benefit from thorough assessment before work begins. A professional decorator should inspect for damp, identify plaster types, test existing paint for lead content, and assess the condition of substrates. This prevents mid-project discoveries that delay completion and increase costs. For properties with ongoing damp issues, decorating should wait until causes are remedied, otherwise paint failure is inevitable.',
+      },
+      {
+        type: 'subheading',
+        content: 'Materials Selection for Longevity',
+        level: 3,
+      },
+      {
+        type: 'list',
+        content: [
+          'Lime-based paints for lime plaster walls and breathable heritage properties',
+          'Clay paints for superior breathability and low environmental impact',
+          'Specialist masonry paints with fungicidal additives for north-facing exterior walls',
+          'Microporous wood finishes for external joinery in humid conditions',
+          'Low-sheen finishes that hide imperfections in uneven period plasterwork',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Material costs in Topsham reflect the higher specification required. Where standard projects might use contract emulsion at £15-20 per 10 litres, breathable heritage paints cost £40-80 for equivalent coverage. However, correct specification prevents costly redecoration cycles, making premium materials economically sensible for long-term property care.',
+      },
+      {
+        type: 'subheading',
+        content: 'Timing and Seasonal Considerations',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Exterior decorating in Topsham requires careful timing. Spring and early summer offer optimal conditions, with lower humidity and warmer temperatures allowing proper paint curing. Autumn can work if weather holds, but winter decorating risks condensation problems and extended drying times. Riverside properties face additional constraints, as estuary fog and morning mist affect surface preparation and coating application. Interior work can proceed year-round, though winter heating must be managed to prevent condensation during paint drying.',
+      },
+      {
+        type: 'heading',
+        content: 'Common Topsham Decorating Challenges and Solutions',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Certain decorating problems recur frequently in Topsham properties. Understanding these helps set realistic expectations and ensures your chosen decorator addresses them properly.',
+      },
+      {
+        type: 'subheading',
+        content: 'Damp and Salt Efflorescence',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Ground floor rooms in older Topsham properties often show damp patches and white salt deposits. This occurs when groundwater or tidal influence brings salts through solid walls without damp-proof courses. Simply painting over these areas fails within months. Proper treatment requires diagnosis of moisture sources, salt neutralisation, breathable render systems, and lime-based paints that allow continued moisture evaporation. Competent decorators refuse to paint over active damp, instead recommending remediation first.',
+      },
+      {
+        type: 'subheading',
+        content: 'Uneven Historic Surfaces',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Period plasterwork often shows undulations, cracks, and previous repair patches. Modern expectations of smooth walls conflict with historic fabric that shouldn\'t be over-plastered. Experienced decorators use appropriate filler techniques, select paint finishes that minimise imperfection visibility, and help owners understand that some character should be retained rather than eliminated. Lime plaster in particular should never be over-plastered with gypsum products, as this traps moisture and causes deterioration.',
+      },
+      {
+        type: 'subheading',
+        content: 'Listed Building Paint Removal',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Removing multiple paint layers from Georgian or Victorian joinery requires patience and appropriate techniques. Heat guns risk scorching delicate mouldings, while aggressive chemical strippers can damage patina and raise grain excessively. Professional decorators assess whether complete stripping is necessary or whether repainting over sound existing coatings is acceptable. For valuable hardwood features, they may recommend specialist hot air stripping or infrared systems that minimise damage whilst achieving thorough paint removal.',
+      },
+      {
+        type: 'heading',
+        content: 'Costs for Decorating Work in Topsham',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'With average property values in Topsham around £506,000, reflecting the area\'s desirability and period housing stock, decorating budgets tend towards quality rather than economy. Typical costs for common projects include:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Single period room with preparation and two coats: £450-550',
+          'Three-bedroom house full interior refresh: £2,800-3,500',
+          'Heritage-specification exterior painting for terrace house: £2,200-3,000',
+          'Kitchen cabinet spraying to refresh dated units: £750-950',
+          'Riverside property exterior with specialist coastal paint systems: £2,500-3,800',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'These figures reflect the higher material costs, additional preparation requirements, and specialist knowledge that Topsham properties demand. Budget decorators using standard specifications often produce work that fails prematurely, making apparent savings false economy.',
+      },
+      {
+        type: 'heading',
+        content: 'Questions to Ask Your Topsham Decorator',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Before committing to a contractor, ask these specific questions to gauge their suitability for Topsham properties:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Have you worked on listed buildings in Topsham or elsewhere? Can you provide examples?',
+          'What paint systems do you recommend for lime plaster, and why?',
+          'How do you prepare surfaces affected by damp or salt efflorescence?',
+          'Are you familiar with Topsham Conservation Area requirements for exterior colour changes?',
+          'What\'s your approach to dealing with uneven period plasterwork?',
+          'Which primers do you use to prevent tannin staining from old pine or oak?',
+          'How do you protect period features like cornicing, dado rails, and architraves during work?',
+          'What insurance coverage do you carry for working on heritage properties?',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Vague or generic answers suggest insufficient experience. Specialists will provide detailed, specific responses that demonstrate practical knowledge of period and coastal property challenges.',
+      },
+      {
+        type: 'heading',
+        content: 'Getting the Best Results from Your Topsham Decorating Project',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Clear communication and realistic expectations ensure successful outcomes. Discuss exactly what\'s included in quotations, from preparation standards to the number of coats, materials specifications, and protection measures for furnishings and flooring. Agree on start dates with some flexibility for weather delays on exterior work, and establish payment schedules tied to project milestones rather than upfront payments.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For period properties, accept that some surface imperfections add character rather than detracting from quality. A skilled painter and decorator in Topsham will help you distinguish between acceptable historic character and problems requiring attention. They\'ll advise when further structural work is needed before decorating, and won\'t proceed with cosmetic treatments that hide underlying issues.',
+      },
+      {
+        type: 'quote',
+        content: 'The combination of Topsham\'s heritage architecture and challenging riverside climate means choosing the right decorator isn\'t just about price, it\'s about protecting your property investment for years to come.',
+      },
+      {
+        type: 'paragraph',
+        content: 'BSR Decorating brings over 20 years of experience working on period and coastal properties throughout Devon, including extensive work in Topsham\'s conservation area and listed buildings. We understand the specific challenges riverside properties face, specify appropriate heritage paint systems, and take time to prepare surfaces properly for lasting results. Our eco-conscious approach aligns with the values of Topsham\'s community, and our knowledge of local planning requirements ensures your project proceeds smoothly from start to finish.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Planning decorating work on your Topsham property? Contact BSR Decorating for expert advice and a free, detailed quote that addresses your home\'s specific requirements.',
+      },
+    ],
+  },
   'heritage-decorator-exeter-listed-buildings-st-leonards-st-davids': {
     sections: [
       {
