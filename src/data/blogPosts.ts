@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 40,
+    title: 'Wallpaper Hanging in Exeter: Costs, Preparation and Best Rooms to Paper',
+    excerpt: 'Professional guide to wallpaper hanging in Exeter: costs, preparation, pattern matching, and which rooms suit wallpaper best in period and modern homes.',
+    category: 'Pricing Guide',
+    date: '2026-05-28',
+    readTime: '9 min read',
+    image: '/images/blog/28-roller-brush-paint-tray.webp',
+    slug: 'wallpaper-hanging-exeter-costs-preparation-best-rooms',
+  },
+  {
     id: 39,
     title: 'Topsham Painter and Decorator Guide: Planning Work on Period and Riverside Homes',
     excerpt: 'Expert guidance for choosing a painter and decorator in Topsham, with specialist advice for period properties and riverside homes.',

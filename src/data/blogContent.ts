@@ -18,6 +18,255 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'wallpaper-hanging-exeter-costs-preparation-best-rooms': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Wallpaper is experiencing a major revival across Exeter, from Georgian townhouses in St Leonard\'s to Victorian terraces in Heavitree and modern developments in Cranbrook. Whether you\'re restoring a listed building in Topsham or adding character to a rental property, professional wallpaper hanging delivers a level of finish and durability that transforms a room. But what does it cost to hire a wallpaper hanger in Exeter, how should you prepare, and which rooms benefit most from wallpaper over paint?',
+      },
+      {
+        type: 'paragraph',
+        content: 'This guide covers everything Exeter homeowners need to know about professional wallpaper hanging, from selecting the right paper for Devon\'s climate to understanding why preparation matters more than the hanging itself.',
+      },
+      {
+        type: 'heading',
+        content: 'What Does Wallpaper Hanging Cost in Exeter?',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional wallpaper hanging in Exeter typically costs between £280 and £350 per room, depending on the size of the space, the complexity of the pattern, and the condition of your walls. These figures align with local pricing data for standard bedrooms and living rooms with straightforward layouts.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Several factors influence the final cost. Large-scale patterns or geometric designs requiring precise matching add time and material waste. Feature walls cost less than full rooms, typically £150 to £200 depending on the wall size. Wallpaper removal before hanging new paper adds approximately £336 per room, particularly if you\'re dealing with multiple layers or vinyl paper that doesn\'t strip cleanly.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Period properties across Exeter often require additional preparation work. Uneven plaster, cracked cornicing, or damp patches in older homes in Pennsylvania or Newtown need addressing before any wallpaper hanger in Exeter can guarantee a quality finish. This preparation work is separate from the hanging cost but essential for longevity.',
+      },
+      {
+        type: 'quote',
+        content: 'In heritage properties, 60% of a successful wallpaper project is preparation. The hanging itself is the easy part when walls are properly prepared.',
+      },
+      {
+        type: 'heading',
+        content: 'Why Wall Preparation Matters More Than You Think',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'The most common reason wallpaper fails within months is inadequate surface preparation. Even the most expensive designer wallpaper will bubble, peel, or show every imperfection if hung on unprepared walls.',
+      },
+      {
+        type: 'subheading',
+        content: 'What Professional Preparation Involves',
+        level: 3,
+      },
+      {
+        type: 'list',
+        content: [
+          'Complete removal of old wallpaper, including any backing paper that might trap moisture',
+          'Washing walls with sugar soap to remove paste residue, grease, and dust that prevents adhesion',
+          'Filling cracks, holes, and imperfections with flexible filler that won\'t crack as walls move seasonally',
+          'Sanding filled areas and any rough plaster to create a smooth, level surface',
+          'Applying primer or size to seal porous surfaces and ensure even paste absorption',
+          'Checking for damp or mould, particularly common in Exeter properties near the waterfront or in poorly ventilated bathrooms',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'In Exeter\'s period properties, particularly the 994 listed buildings scattered across St David\'s, Topsham, and St Leonard\'s, walls are rarely perfectly flat. Lime plaster expands and contracts with humidity. Historic alterations often leave uneven surfaces. Professional wallpaper hangers in Exeter account for these characteristics, sometimes using lining paper as an intermediate layer to create the smooth surface modern wallpapers require.',
+      },
+      {
+        type: 'paragraph',
+        content: 'If you\'re planning work on a heritage property, understanding the specific requirements for [listed buildings and conservation areas](/blog/topsham-conservation-area-decorating-guide) helps avoid costly mistakes.',
+      },
+      {
+        type: 'heading',
+        content: 'Which Rooms Suit Wallpaper Best?',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Not every room benefits equally from wallpaper. Some spaces showcase it beautifully, while others present practical challenges that make paint a smarter choice.',
+      },
+      {
+        type: 'subheading',
+        content: 'Best Rooms for Wallpaper',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Living rooms and dining rooms are ideal candidates. These spaces benefit from the texture, pattern, and depth wallpaper provides. In period properties across Pennsylvania or St Leonard\'s, historically appropriate wallpaper restores character stripped by decades of magnolia paint. Feature walls behind fireplaces or chimney breasts create focal points without overwhelming smaller Victorian reception rooms.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Bedrooms suit wallpaper particularly well. Lower traffic means less wear, and the decorative impact justifies the investment. In rental properties popular with Exeter\'s student population, one wallpapered feature wall elevates an otherwise basic bedroom without dramatically increasing turnover costs.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Hallways and staircases benefit from wallpaper\'s durability. Quality papers withstand knocks and scuffs better than painted walls in these high-traffic areas. The vertical emphasis of stairwell wallpaper draws the eye upward, making Georgian townhouses in the Cathedral Quarter feel more spacious.',
+      },
+      {
+        type: 'subheading',
+        content: 'Rooms Requiring Special Consideration',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Bathrooms and kitchens require moisture-resistant wallpapers and expert hanging. Standard wallpaper fails quickly in these environments. Vinyl or specially treated papers work in well-ventilated bathrooms away from direct water contact, but expect shorter lifespans than in dry rooms. Many professional wallpaper hangers in Exeter recommend paint or tiles for areas around baths, showers, and sinks.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Kitchens pose similar challenges. Grease, steam, and temperature fluctuations degrade adhesive over time. If you\'re set on wallpaper in a kitchen, restrict it to dining areas away from cooking zones, and choose wipeable vinyl papers. For kitchen transformations on a budget, [kitchen cabinet spraying](/blog/kitchen-spraying-exeter-what-homeowners-should-know) delivers more impact per pound spent.',
+      },
+      {
+        type: 'heading',
+        content: 'Pattern Matching and Material Waste',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'One aspect of wallpaper hanging that surprises many Exeter homeowners is material waste, particularly with patterned papers. Unlike paint, where you buy exactly what you need, wallpaper requires overage for pattern matching.',
+      },
+      {
+        type: 'paragraph',
+        content: 'A small geometric pattern with a short repeat might waste 10-15% of each roll. Large-scale damasks or botanicals with repeats of 60cm or more can waste 25-30%. This isn\'t inefficiency on your decorator\'s part but a mathematical necessity of aligning patterns across seams.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional wallpaper hangers in Exeter calculate these requirements accurately before ordering. They account for pattern repeats, room dimensions, and obstacles like windows and radiators. This precision prevents the frustration of running short mid-project or over-ordering expensive designer papers.',
+      },
+      {
+        type: 'heading',
+        content: 'Wallpaper Choices for Exeter\'s Climate',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Devon\'s coastal climate influences which wallpapers perform well in Exeter homes. Humidity from the Exe estuary affects properties in Topsham and along the waterfront. Morning condensation is common in poorly insulated period properties during winter months.',
+      },
+      {
+        type: 'subheading',
+        content: 'Breathable vs Non-Breathable Papers',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'In older properties built before 1919, breathable wallpapers work with the building\'s natural moisture management. Traditional papers allow water vapour to pass through walls, preventing the trapped moisture that causes damp patches and mould. Vinyl papers, while tough and wipeable, seal walls completely. In a Georgian townhouse with solid stone walls, this traps moisture and causes problems.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Modern homes with cavity walls and damp-proof courses tolerate vinyl papers better, but ventilation still matters. In bathrooms and kitchens, even vinyl wallpaper struggles without adequate extraction.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For more on managing moisture in Exeter\'s older properties, read our guide to [solving damp and paint problems in Exeter homes](/blog/solving-damp-paint-problems-exeter-homes).',
+      },
+      {
+        type: 'heading',
+        content: 'How Long Does Wallpaper Last?',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Professionally hung wallpaper in a suitable room should last 10-15 years before requiring replacement. This longevity makes it cost-effective compared to repainting every 5-7 years, particularly in hallways and living rooms where decorative impact matters.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Lifespan depends on several factors. Quality of the paper itself matters tremendously. Designer papers from established brands use better inks and substrates that resist fading. Preparation quality determines whether paper adheres permanently or begins lifting within months. Environmental conditions like direct sunlight, humidity, and temperature fluctuations all accelerate ageing.',
+      },
+      {
+        type: 'paragraph',
+        content: 'In rental properties, wallpaper\'s durability often justifies higher initial costs. A well-chosen, professionally hung paper withstands tenant turnover better than painted walls that mark and scuff easily.',
+      },
+      {
+        type: 'heading',
+        content: 'DIY vs Professional Wallpaper Hanging',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Wallpaper hanging looks straightforward until you attempt it. Air bubbles, misaligned patterns, visible seams, and paste marks plague amateur attempts. In period properties with uneven walls, out-of-plumb corners, and irregular ceiling heights, DIY wallpapering becomes exponentially harder.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional wallpaper hangers in Exeter bring experience reading walls, adjusting for imperfections, and achieving invisible seams. They know which adhesives suit which papers, how much time to allow for paste to activate, and how to handle delicate materials that tear easily. For expensive designer papers costing £80-150 per roll, professional hanging is insurance against costly mistakes.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Simple papers in small, square rooms suit confident DIY enthusiasts. Complex patterns, large rooms, stairwells, or valuable period properties warrant professional expertise.',
+      },
+      {
+        type: 'heading',
+        content: 'Wallpaper Trends in Exeter Homes',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Across Exeter\'s diverse housing stock, certain wallpaper trends dominate. In period properties, historically appropriate patterns are resurging. William Morris designs, Georgian stripes, and Victorian florals restore authenticity stripped by mid-century modernisation. In Topsham\'s 228 listed buildings, owners increasingly research appropriate papers for their property\'s era.',
+      },
+      {
+        type: 'paragraph',
+        content: 'In modern homes and new developments like Cranbrook, bold feature walls provide personality in otherwise uniform builder-grade interiors. Dark, moody botanicals create drama in open-plan living areas. Textured grasscloths and linens add depth without pattern.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For rental properties, neutral geometric patterns offer broad appeal without the blandness of plain walls. Subtle patterns hide minor wall imperfections better than flat paint, reducing maintenance between tenancies.',
+      },
+      {
+        type: 'heading',
+        content: 'Questions to Ask Your Wallpaper Hanger',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Before hiring a wallpaper hanger in Exeter, ask specific questions that reveal their expertise and approach.',
+      },
+      {
+        type: 'list',
+        content: [
+          'How will you prepare the walls, and what condition do they need to be in before hanging?',
+          'How do you calculate material requirements for my chosen pattern?',
+          'What adhesive do you recommend for this specific wallpaper and wall type?',
+          'Have you worked with this style of property before? (Particularly important for period buildings)',
+          'Can you provide references from similar projects in Exeter?',
+          'What warranty or guarantee do you offer on your work?',
+          'How long will the project take, and will you protect flooring and furniture?',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Experienced professionals answer these questions confidently and specifically. Vague responses or dismissiveness about preparation are warning signs.',
+      },
+      {
+        type: 'heading',
+        content: 'Transform Your Exeter Home with Professional Wallpaper Hanging',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional wallpaper hanging transforms rooms in ways paint alone cannot. The texture, pattern, and depth create spaces with character and personality, whether you\'re restoring a Victorian terrace in Heavitree or adding interest to a modern home in Cranbrook.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Success depends on three elements: choosing appropriate paper for your room and property type, thorough wall preparation, and expert hanging technique. Cut corners on any of these, and the results disappoint within months.',
+      },
+      {
+        type: 'paragraph',
+        content: 'At BSR Decorating, we\'ve hung wallpaper in properties across Exeter for over 20 years, from listed Georgian townhouses in the Cathedral Quarter to modern apartments along the Quay. We understand how Exeter\'s period properties behave, which papers suit Devon\'s climate, and how to achieve seamless results that last.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Whether you\'re planning a single feature wall or papering an entire home, we provide honest advice about what will work in your specific property. Our preparation is thorough, our pattern matching precise, and our finish invisible.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Ready to explore wallpaper for your Exeter home? Contact BSR Decorating for a free, no-obligation quote and expert advice on which papers will work best in your property.',
+      },
+    ],
+  },
   'topsham-painter-decorator-guide-period-riverside-homes': {
     sections: [
       {
