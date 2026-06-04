@@ -18,6 +18,288 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'exterior-painting-costs-exeter-what-affects-quote-2026': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'When planning exterior painting work in Exeter, understanding the factors that influence your quote helps you budget accurately and avoid surprises. From the weathered render of a St Leonard\'s Victorian terrace to the timber cladding on a Topsham waterfront property, every project has unique considerations that affect the final cost. In 2026, the average exterior painting project in Exeter ranges from £1,200 for a small terraced house to over £4,000 for a large detached property, but dozens of variables can shift that figure significantly.',
+      },
+      {
+        type: 'paragraph',
+        content: 'This guide breaks down exactly what professional decorators assess when pricing exterior work, helping you understand your quote and make informed decisions about your Exeter home.',
+      },
+      {
+        type: 'heading',
+        content: 'Property Size and Type: The Foundation of Your Quote',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'The most obvious factor affecting exterior painting costs in Exeter is the size and type of your property. A two-bedroom terraced house in Heavitree requires far less paint, scaffolding and labour than a four-bedroom detached home in Pennsylvania.',
+      },
+      {
+        type: 'subheading',
+        content: 'Typical Exeter Property Costs',
+        level: 3,
+      },
+      {
+        type: 'list',
+        content: [
+          'Small terraced house (2 bed): £1,200–£1,800',
+          'Medium semi-detached (3 bed): £1,800–£2,500',
+          'Large detached house (4 bed): £2,800–£4,500',
+          'Period property with architectural details: Add 20–40%',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'These figures reflect standard masonry or render work. Timber cladding, weatherboarding or mixed materials change the calculation significantly. Properties along the Exe Estuary in Topsham, for example, often feature timber elements that require specialist coatings and preparation, increasing both material and labour costs.',
+      },
+      {
+        type: 'heading',
+        content: 'Surface Condition and Preparation Requirements',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Preparation typically accounts for 60–70% of exterior painting time and directly impacts your quote. A well-maintained property painted three years ago needs minimal prep. A neglected Victorian terrace with flaking paint, damaged render and biological growth requires extensive work before the first coat goes on.',
+      },
+      {
+        type: 'subheading',
+        content: 'Common Preparation Factors in Exeter',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Devon\'s coastal climate creates specific challenges. Salt-laden air in areas like Exmouth and Topsham accelerates paint degradation. Properties near the Exe Estuary face humidity and wind exposure that requires thorough surface preparation and high-performance coatings.',
+      },
+      {
+        type: 'list',
+        content: [
+          'Pressure washing and fungicide treatment: £200–£400',
+          'Render repairs and patching: £300–£800 depending on extent',
+          'Rotten timber replacement: £150–£400 per window frame or board',
+          'Full timber strip and sand: Add 30–50% to timber painting costs',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Properties in Exeter\'s 20 conservation areas, particularly St Leonard\'s and St David\'s with their concentration of Victorian and Edwardian housing, often reveal hidden issues during preparation. Quotes that seem high typically reflect realistic assessments of the work needed to achieve a lasting finish. As we explored in our guide to [the best exterior paint for Devon\'s coastal weather](/blog/best-exterior-paint-devon-coastal-weather), proper preparation and quality materials make the difference between a five-year finish and a fifteen-year finish.',
+      },
+      {
+        type: 'heading',
+        content: 'Access and Scaffolding Costs',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Access requirements significantly affect exterior painting costs in Exeter. A bungalow might need only ladders and trestles. A three-storey Victorian terrace in Pennsylvania or Newtown requires full scaffolding.',
+      },
+      {
+        type: 'subheading',
+        content: 'Scaffolding in Your Quote',
+        level: 3,
+      },
+      {
+        type: 'list',
+        content: [
+          'Two-storey terraced house: £600–£900 for two weeks',
+          'Three-storey semi-detached: £900–£1,400',
+          'Large detached property: £1,200–£2,000',
+          'Difficult access (narrow streets, limited parking): Add 15–25%',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter\'s older neighbourhoods present unique access challenges. The narrow streets of St David\'s, restricted parking in St Leonard\'s, and terraced rows with no rear access all affect scaffolding costs. Properties bordering conservation areas may require licensed scaffolding that doesn\'t damage historic street surfaces, adding to expenses.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Mobile elevated work platforms can sometimes reduce costs for properties with clear access, but most Exeter homes with sash windows, decorative mouldings or three-storey elevations need traditional scaffolding for safe, thorough work.',
+      },
+      {
+        type: 'heading',
+        content: 'Paint Quality and Specification',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Paint quality dramatically affects both immediate costs and long-term value. Trade-quality masonry paint costs £40–£70 per 10 litres. Premium breathable systems for period properties cost £80–£120 per 10 litres. Specialist coatings for coastal exposure or timber protection can exceed £150 per 10 litres.',
+      },
+      {
+        type: 'subheading',
+        content: 'Why Specification Matters in Exeter',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'With 994 listed buildings across Exeter, including 228 in Topsham alone, many properties require breathable, vapour-permeable coatings that allow historic masonry to function properly. Standard vinyl masonry paint traps moisture in old walls, causing long-term damage that costs far more to remedy than the initial saving.',
+      },
+      {
+        type: 'list',
+        content: [
+          'Standard masonry paint (10-year life): £40–£50 per 10L',
+          'Premium exterior emulsion (12–15 year life): £60–£80 per 10L',
+          'Breathable mineral paint for period properties: £80–£120 per 10L',
+          'High-performance timber coatings: £50–£100 per 5L',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional decorators specify paint systems based on your property\'s age, construction and exposure. A rendered 1960s semi in Whipton needs different products than a lime-rendered Georgian terrace in Southernhay. Quotes should detail the paint specification, not just list \'two coats of masonry paint\'.',
+      },
+      {
+        type: 'heading',
+        content: 'Architectural Details and Complexity',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter\'s architectural heritage means many properties feature details that increase painting time and skill requirements. Victorian and Edwardian homes in St Leonard\'s, Pennsylvania and Heavitree typically include decorative brickwork, stone window surrounds, ornate bargeboards and intricate woodwork that demands careful attention.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Each architectural feature adds time and therefore cost to your project. A plain rendered box might take three days to paint. An identical-sized Victorian house with sash windows, decorative eaves, cast iron guttering and stone quoins could take six or seven days.',
+      },
+      {
+        type: 'subheading',
+        content: 'Common Detail Work in Exeter Properties',
+        level: 3,
+      },
+      {
+        type: 'list',
+        content: [
+          'Sash window painting (per window): £80–£150 including preparation',
+          'Cast iron guttering and downpipes: £15–£25 per metre',
+          'Decorative bargeboards and fascias: £200–£400 per elevation',
+          'Stone or brick detailing (masking and cutting in): Adds 20–30% to time',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'If you\'re working on a period property, our dedicated guide to [heritage paint colours for Topsham homes](/blog/heritage-paint-colours-topsham-homes-guide) explores how to choose colours that complement architectural features whilst meeting any conservation requirements.',
+      },
+      {
+        type: 'heading',
+        content: 'Timing and Seasonality',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'When you book exterior painting affects both availability and sometimes cost. Spring and early summer (April to June) represent peak season in Devon. Decorators are busy, lead times extend to six or eight weeks, and some adjust pricing for high-demand periods.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Autumn (September to early November) offers excellent painting conditions in Exeter. Temperatures remain moderate, rainfall is manageable, and decorators have slightly more availability. Winter exterior work is possible but weather-dependent, with shorter working days and potential delays adding to project timelines.',
+      },
+      {
+        type: 'subheading',
+        content: 'Seasonal Considerations',
+        level: 3,
+      },
+      {
+        type: 'list',
+        content: [
+          'Book spring/summer work by February for best availability',
+          'Autumn projects often offer more flexible scheduling',
+          'Winter quotes may include contingency for weather delays',
+          'Urgent work (property sale, rental turnaround) may carry premium pricing',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Our [spring exterior painting guide](/blog/spring-exterior-painting-devon-complete-guide) explores optimal timing for Devon\'s climate in detail, helping you plan projects around weather patterns and decorator availability.',
+      },
+      {
+        type: 'heading',
+        content: 'Conservation Areas and Planning Considerations',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Properties in Exeter\'s 20 conservation areas sometimes face additional considerations that affect painting costs. Whilst most repainting doesn\'t require planning permission, changing colours significantly from the existing scheme might need conservation area consent, particularly for prominent elevations.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Listed building owners face stricter requirements. Any external redecoration of a listed property technically requires listed building consent, though most local authorities adopt pragmatic approaches to routine maintenance in appropriate colours. However, using inappropriate modern paints or changing heritage colours can result in enforcement action. A Topsham property owner faced a £38,000 fine in December 2025 for unauthorised alterations, demonstrating that Exeter City Council takes conservation seriously.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional decorators experienced in heritage work understand these requirements and specify appropriate materials. The modest additional cost of breathable mineral paints and traditional colour schemes is negligible compared to potential enforcement action or long-term building damage.',
+      },
+      {
+        type: 'heading',
+        content: 'Getting Accurate Quotes for Your Exeter Property',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Understanding what affects exterior painting costs in Exeter helps you evaluate quotes intelligently. The lowest price rarely represents the best value. Look for detailed quotes that specify preparation methods, paint systems, access solutions and timescales.',
+      },
+      {
+        type: 'subheading',
+        content: 'Questions to Ask When Comparing Quotes',
+        level: 3,
+      },
+      {
+        type: 'list',
+        content: [
+          'What preparation work is included (washing, repairs, primers)?',
+          'Which specific paint products will be used?',
+          'Is scaffolding included or additional?',
+          'What\'s the expected project duration?',
+          'Does the quote cover making good any minor defects discovered during preparation?',
+          'What guarantee is offered on workmanship?',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Vague quotes listing \'exterior painting\' with a single figure tell you nothing about the work quality you\'ll receive. Detailed specifications protect both you and the decorator, ensuring everyone understands exactly what\'s included.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For properties requiring [commercial decorating](/commercial) standards, specifications become even more critical, particularly for insurance, warranty and maintenance scheduling purposes.',
+      },
+      {
+        type: 'heading',
+        content: 'Investment in Quality: Long-Term Value',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Exterior painting costs in Exeter might seem substantial, but proper work protects your largest asset. A thorough job using quality materials lasts 12–15 years. Cheap work using budget materials fails in five or six years, requiring complete redoing rather than simple refreshing.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Consider the annual cost rather than just the upfront figure. A £3,000 project lasting twelve years costs £250 annually. A £1,800 project lasting six years costs £300 annually, plus the disruption and expense of twice as much scaffolding, preparation and decoration over the same period.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For period properties, using appropriate breathable systems protects the building fabric itself. Trapped moisture in historic masonry causes frost damage, timber decay and interior damp problems that cost thousands to remedy. The premium for correct materials and methods is negligible compared to structural repair costs.',
+      },
+      {
+        type: 'heading',
+        content: 'Professional Exterior Painting in Exeter',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Understanding what influences exterior painting costs helps you plan projects realistically and evaluate quotes intelligently. Whether you\'re refreshing a Victorian terrace in St Leonard\'s, protecting a coastal property in Topsham, or maintaining a modern home in Pinhoe, the same principles apply: thorough preparation, appropriate materials and skilled application create lasting results that protect your investment.',
+      },
+      {
+        type: 'paragraph',
+        content: 'BSR Decorating brings over 20 years of experience to exterior projects across Exeter, from straightforward render repainting to complex heritage work on listed buildings. We provide detailed quotes that explain exactly what we\'ll do, the materials we\'ll use, and the results you can expect. Every project begins with a thorough assessment of your property\'s condition, exposure and any conservation considerations.',
+      },
+      {
+        type: 'paragraph',
+        content: 'We specialise in Devon\'s architectural heritage, understanding the specific requirements of period properties whilst offering modern, efficient solutions for contemporary homes. Our commitment to quality materials and thorough preparation means our exterior work typically lasts well over a decade, providing exceptional long-term value.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Planning exterior painting for your Exeter property? Contact BSR Decorating for a detailed, no-obligation quote that explains exactly what your project needs and why. Call us or visit bsrdecorating.co.uk to arrange your free assessment.',
+      },
+    ],
+  },
   'wallpaper-hanging-exeter-costs-preparation-best-rooms': {
     sections: [
       {

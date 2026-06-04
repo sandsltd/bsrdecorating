@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 41,
+    title: 'Exterior Painting Costs in Exeter: What Affects the Quote in 2026',
+    excerpt: 'From Victorian terraces to coastal homes, discover what influences exterior painting costs in Exeter and how to budget for your 2026 project.',
+    category: 'Expert Advice',
+    date: '2026-06-04',
+    readTime: '9 min read',
+    image: '/images/blog/44-white-paint-buckets.webp',
+    slug: 'exterior-painting-costs-exeter-what-affects-quote-2026',
+  },
+  {
     id: 40,
     title: 'Wallpaper Hanging in Exeter: Costs, Preparation and Best Rooms to Paper',
     excerpt: 'Professional guide to wallpaper hanging in Exeter: costs, preparation, pattern matching, and which rooms suit wallpaper best in period and modern homes.',

@@ -71,6 +71,7 @@ function getBlogKeywords(slug: string): string {
       'heritage-decorator-exeter-listed-buildings-st-leonards-st-davids': "heritage decorator exeter, heritage decorator exeter listed buildings st leonards st davids",
       'topsham-painter-decorator-guide-period-riverside-homes': "painter and decorator topsham, topsham painter decorator guide period riverside homes",
       'wallpaper-hanging-exeter-costs-preparation-best-rooms': "wallpaper hanger exeter, wallpaper hanging exeter costs preparation best rooms",
+      'exterior-painting-costs-exeter-what-affects-quote-2026': "exterior painting cost exeter, exterior painting costs exeter what affects quote 2026",
   };
   return keywordMap[slug] || "";
 }
