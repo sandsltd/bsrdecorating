@@ -18,6 +18,214 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'landlord-painting-exeter-fast-turnaround-rental-refresh': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Every day your Exeter rental property sits empty costs you money. With average rents in Exeter ranging from £950 per month for a one-bedroom flat to £1,400 for a three-bedroom house, a two-week void period can easily cost £450-£650 in lost income. For landlords managing properties across Heavitree, St Thomas, or the student areas around Pennsylvania Road, minimising turnaround time between tenancies isn\'t just convenient, it\'s essential to maintaining healthy rental yields. As professional decorators serving Exeter\'s rental market for over 20 years, we\'ve developed a systematic approach that gets properties back on the market fast without compromising on quality. Here\'s what every landlord needs to know about efficient rental property painting in Exeter.',
+      },
+      {
+        type: 'heading',
+        content: 'Why Speed Matters in Rental Property Decorating',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter\'s rental market is competitive. With approximately 14,200 private rental properties across the city and steady demand from students, young professionals, and families, properties in good condition rent quickly. The difference between a tired-looking property and a freshly decorated one isn\'t just aesthetic, it directly impacts your void period and achievable rent. Properties with fresh, neutral decoration typically let 30-40% faster than those showing wear and tear, and can command 5-10% higher monthly rents in desirable areas like Topsham or St Leonard\'s.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Time is money in the rental business. If you\'re a landlord painter in Exeter managing multiple properties, you need decorators who understand this urgency and can work to tight schedules whilst maintaining professional standards that satisfy both letting agents and incoming tenants.',
+      },
+      {
+        type: 'heading',
+        content: 'The Essential Landlord Painting Checklist',
+        level: 2,
+      },
+      {
+        type: 'subheading',
+        content: 'Pre-Decoration Assessment',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Before any paintwork begins, a thorough assessment saves time and prevents delays. Walk through the property systematically, noting damage beyond normal wear and tear. Check for damp patches, particularly in older Exeter properties near the river or in St Thomas where Victorian terraces can have historic moisture issues. Identify any repairs needed to plasterwork, particularly around radiators and windows where students or families may have caused accidental damage.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Document everything with dated photographs. This protects you in deposit disputes and provides a clear brief for your decorator. Note which rooms genuinely need full repainting versus those that might only need touching up, particularly if the previous tenancy was short or the tenants were particularly careful.',
+      },
+      {
+        type: 'subheading',
+        content: 'The Fast Turnaround Painting Sequence',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional landlord painters in Exeter follow a specific sequence to maximise efficiency. The process typically runs as follows, with timing based on a standard two-bedroom terraced house common across Pennsylvania, Mount Pleasant, or Polsloe areas:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Day 1: Preparation work. Fill holes, sand surfaces, mask off areas. This foundation work determines the quality of the final finish and cannot be rushed.',
+          'Day 2: First coat throughout. Ceilings first, then walls. Using quick-drying, low-VOC paints means rooms are ready for second coats within 4-6 hours rather than overnight.',
+          'Day 3: Second coat and woodwork. Doors, skirting boards, and window frames receive attention once walls are complete.',
+          'Day 4: Final touches and quality check. Touch-ups, removing masking tape, cleaning splashes, and ensuring everything meets professional standards.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'A well-organised team can complete a typical two-bedroom Exeter rental in 3-4 days. Larger properties or those requiring more extensive preparation take proportionally longer, but the principle remains: systematic working minimises wasted time.',
+      },
+      {
+        type: 'heading',
+        content: 'Choosing the Right Paint for Rental Properties',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Not all paint is equal when it comes to rental properties. You need products that balance three priorities: durability, cost-effectiveness, and quick turnaround time. For Exeter rental properties, we typically recommend contract matt emulsion for walls and ceilings. These professional-grade paints offer superior coverage, meaning fewer coats and faster completion, whilst being more resistant to scuffs and marks than standard retail paints.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For high-traffic areas like hallways and stairs in Exeter student houses near Pennsylvania or St David\'s, consider scrubbable vinyl matt. Yes, it costs 20-30% more than standard emulsion, but it withstands repeated cleaning and typically lasts two tenancies rather than one. Over a five-year period, this actually reduces your total decorating costs whilst minimising void periods. Our guide to [cost-effective decorating for rental properties](/blog/cost-effective-decorating-rental-properties-hmos) explores these trade-offs in detail.',
+      },
+      {
+        type: 'subheading',
+        content: 'Colour Choices That Rent Properties Faster',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Stick to neutral colours. Magnolia, soft whites, and light greys appeal to the broadest range of tenants and photograph well for online listings. Bold colours might reflect your personal taste, but they significantly narrow your potential tenant pool and often result in longer void periods. The time and money spent repainting in neutral tones when a tenant with different tastes views the property negates any decorating savings.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For Exeter properties targeting professional couples or families in areas like Topsham or Pennsylvania, slightly warmer neutrals create an inviting atmosphere. For student properties, stick to brilliant white throughout, it\'s the most cost-effective, fastest to apply, and easiest to touch up between tenancies.',
+      },
+      {
+        type: 'heading',
+        content: 'Common Rental Property Painting Challenges in Exeter',
+        level: 2,
+      },
+      {
+        type: 'subheading',
+        content: 'Dealing with Damp in Period Properties',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Many Exeter rental properties, particularly Victorian and Edwardian terraces in St Thomas, Heavitree, and St Leonard\'s, experience damp issues. Never paint over damp patches without addressing the underlying cause. Using breathable paints helps but doesn\'t solve structural moisture problems. If you\'re seeing repeated damp issues in solid-wall properties, the problem needs professional diagnosis before any decorating begins. Our article on [solving damp and paint problems in Exeter homes](/blog/solving-damp-paint-problems-exeter-homes) provides detailed guidance on identifying and addressing these issues.',
+      },
+      {
+        type: 'subheading',
+        content: 'Student Property Wear and Tear',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Properties near the University of Exeter campuses at Streatham and St Luke\'s take more punishment than typical rentals. Blu-tack marks, picture hook holes, and scuffed doorframes are inevitable. Rather than full repaints annually, we recommend a two-year cycle for student properties with annual touch-ups to the worst-affected areas. This balances cost against presentation whilst keeping void periods minimal.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For walls that consistently show marks, consider upgrading to higher-spec paints with stain resistance. The upfront cost is higher, typically £350-£400 versus £280-£320 for a student bedroom, but reduces your annual maintenance substantially.',
+      },
+      {
+        type: 'heading',
+        content: 'Coordinating Painting with Other Maintenance',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Efficient landlords coordinate all maintenance during the void period. Schedule carpet cleaning or replacement before painting begins to avoid paint splashes on new carpets. Book boiler servicing, electrical inspections, and any appliance repairs for the same period. This minimises the number of separate contractor visits and ensures everything is completed before new tenants move in.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional decorators experienced with rental properties understand these coordination requirements. We work around other trades, protect finished surfaces when boiler engineers or electricians need access, and maintain schedules even when other contractors run late. This project management experience is worth the modest premium over sole traders who may lack the flexibility to accommodate changing timelines.',
+      },
+      {
+        type: 'heading',
+        content: 'Cost Management for Multi-Property Landlords',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'If you manage multiple rental properties across Exeter, establishing a relationship with a reliable decorator delivers significant advantages. Regular customers typically receive preferential rates, priority scheduling during busy periods, and the efficiency gains of decorators who already know your properties and standards.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Current market rates for landlord painting in Exeter typically run £280-£350 per room for a standard redecoration including preparation, two coats to walls and ceiling, and woodwork touching-up. Full house refreshes for typical two-bedroom properties range from £950-£1,400 depending on condition and specification. For detailed pricing information, see our comprehensive guide to [painter and decorator costs in Exeter](/blog/how-much-painter-decorator-cost-exeter).',
+      },
+      {
+        type: 'paragraph',
+        content: 'Budget approximately 8-12% of your annual rental income for maintenance including decorating, though this varies significantly based on property age, tenant type, and turnover frequency.',
+      },
+      {
+        type: 'heading',
+        content: 'Legal Considerations for Rental Property Decoration',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter rental properties must meet legal standards regardless of decoration schedules. Use low-VOC paints to ensure properties are safe for immediate occupation without off-gassing concerns. Maintain adequate ventilation during painting and ensure all surfaces are fully dry before tenants move in.',
+      },
+      {
+        type: 'paragraph',
+        content: 'If your property is listed (Exeter has 994 listed buildings including numerous rental properties in St David\'s, Topsham, and St Leonard\'s), you must comply with conservation requirements even for internal decoration. Most internal painting requires no consent, but speak to Exeter City Council planning department if you\'re uncertain. Our experience with [heritage property painting in Exeter](/areas/exeter/heritage-property-painting) means we understand these requirements and can advise accordingly.',
+      },
+      {
+        type: 'heading',
+        content: 'Maximising Return on Your Decorating Investment',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Strategic decoration decisions directly impact your rental returns. Freshly decorated properties command higher rents, attract better-quality tenants who tend to stay longer and take better care of the property, and suffer shorter void periods. These factors compound over time into significantly better financial performance compared to properties allowed to deteriorate.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Consider the maths: if fresh decoration increases achievable rent by £50 monthly and reduces your average void period by one week, that\'s £650 additional annual income from a £1,200 investment, a 54% return in year one alone. The decoration lasts 2-3 years in most rental properties, delivering continued returns throughout that period.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For HMO properties or student houses requiring more frequent attention, the calculation differs but the principle holds: good decoration pays for itself through reduced voids and better tenant quality.',
+      },
+      {
+        type: 'quote',
+        content: 'Time is money in the rental business. Every day a property sits empty between tenants costs you rental income. Professional decoration that minimises void periods whilst maintaining quality standards is an investment, not an expense.',
+      },
+      {
+        type: 'heading',
+        content: 'Working with Professional Decorators vs DIY',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Some landlords consider DIY painting to save money, but the calculation rarely works in your favour. Professional decorators complete in 3-4 days what typically takes a DIY landlord 2-3 weekends. If your rental achieves £1,000 monthly, every additional week of void costs £230. The £950 you save doing it yourself becomes a £920 loss when you factor in extended void periods, not to mention the value of your own time.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional work also delivers superior results that last longer and present better to prospective tenants. The difference between adequate DIY and professional finish is immediately visible in property photographs and viewings, directly impacting how quickly your property lets.',
+      },
+      {
+        type: 'heading',
+        content: 'Get Your Exeter Rental Property Back on the Market Fast',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Efficient rental property turnaround requires planning, professional execution, and understanding that decoration is an investment in rental income rather than a grudge expense. Whether you manage a single buy-to-let property in Heavitree or a portfolio across Exeter, working with decorators who understand landlord timelines and priorities makes the difference between profitable rentals and problematic ones.',
+      },
+      {
+        type: 'paragraph',
+        content: 'At BSR Decorating, we\'ve worked with Exeter landlords and letting agents for over 20 years. We understand rental market standards, work to tight turnaround schedules, and deliver decoration that helps properties let faster and for better returns. Our systematic approach minimises void periods whilst maintaining the quality standards that satisfy both letting agents and tenants.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Need your Exeter rental property decorated quickly between tenancies? Contact BSR Decorating for a fast, detailed quote. We specialise in rapid turnaround work that gets properties back on the market without compromising on quality. Call us today or request a free quote through our website.',
+      },
+    ],
+  },
   'exterior-painting-costs-exeter-what-affects-quote-2026': {
     sections: [
       {

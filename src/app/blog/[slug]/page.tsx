@@ -72,6 +72,7 @@ function getBlogKeywords(slug: string): string {
       'topsham-painter-decorator-guide-period-riverside-homes': "painter and decorator topsham, topsham painter decorator guide period riverside homes",
       'wallpaper-hanging-exeter-costs-preparation-best-rooms': "wallpaper hanger exeter, wallpaper hanging exeter costs preparation best rooms",
       'exterior-painting-costs-exeter-what-affects-quote-2026': "exterior painting cost exeter, exterior painting costs exeter what affects quote 2026",
+      'landlord-painting-exeter-fast-turnaround-rental-refresh': "landlord painter exeter, landlord painting exeter fast turnaround rental refresh",
   };
   return keywordMap[slug] || "";
 }

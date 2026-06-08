@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 42,
+    title: 'Landlord Painting in Exeter: Fast Turnaround Checklist for Rental Refreshes',
+    excerpt: 'Professional guide to rapid tenant turnovers in Exeter. Fast, cost-effective painting that minimises void periods and maximises rental returns.',
+    category: 'Landlord Services',
+    date: '2026-06-08',
+    readTime: '9 min read',
+    image: '/images/blog/47-white-painted-wall.webp',
+    slug: 'landlord-painting-exeter-fast-turnaround-rental-refresh',
+  },
+  {
     id: 41,
     title: 'Exterior Painting Costs in Exeter: What Affects the Quote in 2026',
     excerpt: 'From Victorian terraces to coastal homes, discover what influences exterior painting costs in Exeter and how to budget for your 2026 project.',
