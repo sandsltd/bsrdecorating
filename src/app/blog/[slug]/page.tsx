@@ -73,6 +73,7 @@ function getBlogKeywords(slug: string): string {
       'wallpaper-hanging-exeter-costs-preparation-best-rooms': "wallpaper hanger exeter, wallpaper hanging exeter costs preparation best rooms",
       'exterior-painting-costs-exeter-what-affects-quote-2026': "exterior painting cost exeter, exterior painting costs exeter what affects quote 2026",
       'landlord-painting-exeter-fast-turnaround-rental-refresh': "landlord painter exeter, landlord painting exeter fast turnaround rental refresh",
+      'painting-listed-buildings-exeter-breathable-paint-consent-mistakes': "listed building paint exeter, painting listed buildings exeter breathable paint consent mistakes",
   };
   return keywordMap[slug] || "";
 }

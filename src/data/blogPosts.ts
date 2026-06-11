@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 43,
+    title: 'Painting Listed Buildings in Exeter: Breathable Paint, Consent and Common Mistakes',
+    excerpt: 'Expert guide to decorating Exeter\'s 994 listed buildings, from consent requirements to breathable paint systems and period-appropriate colours.',
+    category: 'Heritage Restoration',
+    date: '2026-06-11',
+    readTime: '7 min read',
+    image: '/images/blog/26-couple-painting-wall-2.webp',
+    slug: 'painting-listed-buildings-exeter-breathable-paint-consent-mistakes',
+  },
+  {
     id: 42,
     title: 'Landlord Painting in Exeter: Fast Turnaround Checklist for Rental Refreshes',
     excerpt: 'Professional guide to rapid tenant turnovers in Exeter. Fast, cost-effective painting that minimises void periods and maximises rental returns.',

@@ -18,6 +18,218 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'painting-listed-buildings-exeter-breathable-paint-consent-mistakes': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Exeter is home to 994 listed buildings spanning centuries of architectural history, from medieval timber frames in St David\'s to Georgian townhouses in Southernhay and Victorian villas in Pennsylvania. If you own or maintain one of these properties, decorating work requires careful consideration of both planning regulations and appropriate materials. Get it wrong, and you could face enforcement action like the £38,000 fine issued to a Topsham property owner in December 2025 for unlawful alterations. Get it right, and you\'ll protect your building\'s historic fabric whilst creating a beautiful, healthy home.',
+      },
+      {
+        type: 'paragraph',
+        content: 'This guide explains everything you need to know about painting listed buildings in Exeter, from when you need consent to which paint systems work best for period properties.',
+      },
+      {
+        type: 'heading',
+        content: 'Understanding Listed Building Consent in Exeter',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Listed building consent is separate from planning permission and is required for any work that affects the special architectural or historic interest of a listed building. In Exeter, this applies to 994 properties across the city, with the highest concentrations in St David\'s (380 buildings), Topsham (228 buildings), and the Newtown and St Leonard\'s ward (120 buildings).',
+      },
+      {
+        type: 'subheading',
+        content: 'When You Need Consent for Painting Work',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Not all painting work requires listed building consent, but the rules can be complex. Generally, you need consent for:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Removing or painting over original decorative schemes, particularly historic wallpapers, painted panelling, or plasterwork',
+          'Changing the colour of external joinery, render, or masonry in a way that alters the building\'s character',
+          'Stripping paint from surfaces that were historically painted, or painting surfaces that were historically unpainted',
+          'Using modern paint systems that could trap moisture and damage historic fabric',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Routine redecoration in established colours using appropriate materials typically doesn\'t require consent. However, if your property is Grade I or II* listed, or if you\'re uncertain, it\'s always worth checking with Exeter City Council\'s conservation team before starting work. A quick conversation can save you from costly mistakes and potential enforcement action.',
+      },
+      {
+        type: 'heading',
+        content: 'Why Breathable Paint Matters for Listed Buildings',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'The single most important consideration when painting a listed building in Exeter is breathability. Most period properties built before 1919 were constructed using lime-based materials: lime mortar, lime plaster, and lime render. These materials are porous and designed to allow moisture to move through the building\'s fabric, evaporating naturally.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Modern plastic-based paints create an impermeable barrier that traps this moisture inside the wall. Over time, this causes damp problems, timber decay, plaster failure, and damage to the historic fabric. In Exeter\'s climate, where humidity from the River Exe and Exe Estuary affects properties in Topsham, Alphington, and the quayside areas, breathability is particularly critical.',
+      },
+      {
+        type: 'subheading',
+        content: 'Breathable Paint Systems for Period Properties',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Several paint systems work well on listed buildings:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Limewash: The most breathable option and historically accurate for many Exeter buildings. Needs reapplication every 3-5 years but provides excellent vapour permeability',
+          'Mineral silicate paints: Very breathable and durable, bonding chemically with lime substrates. Popular for external render and masonry',
+          'Clay paints: Highly breathable for internal walls, available in soft heritage colours',
+          'Traditional distemper: Suitable for internal ceilings and walls, though requires specialist application',
+          'Modern breathable emulsions: Some manufacturers produce vinyl-free formulations suitable for period properties',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'For detailed guidance on specific breathable paint systems, see our guide to [breathable paint for old houses](/blog/breathable-paint-old-houses-complete-guide), which explains the science behind moisture movement and product selection.',
+      },
+      {
+        type: 'heading',
+        content: 'Common Mistakes When Painting Listed Buildings',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Over 20 years of decorating heritage properties in Exeter, we\'ve seen the same mistakes repeated across the city. Here are the most damaging:',
+      },
+      {
+        type: 'subheading',
+        content: 'Using Modern Masonry Paint on Historic Render',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Plastic-based masonry paints trap moisture and cause render to fail. This is particularly common on Victorian properties in Heavitree and Pennsylvania, where well-meaning owners apply modern paint systems to lime render. Within 5-10 years, the render begins to crack, bubble, and detach from the wall. Removal and replacement can cost £8,000-£15,000 for a typical terraced house.',
+      },
+      {
+        type: 'subheading',
+        content: 'Stripping Original Paint Schemes',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Many listed buildings in Exeter retain original or early paint schemes beneath later layers. Georgian properties in Southernhay and Cathedral Close often have decorative paintwork on panelling and joinery. Stripping these without investigation can destroy irreplaceable historic evidence. Always investigate what lies beneath before starting removal work, and consider exposing small test areas for conservation officers to assess.',
+      },
+      {
+        type: 'subheading',
+        content: 'Choosing Inappropriate Colours',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Whilst colour choice rarely requires listed building consent for internal work, inappropriate colours can harm a building\'s character. Many Exeter properties have been subjected to bright white throughout, when historical research would reveal that softer, more nuanced colours were originally used. For guidance on period-appropriate colours for different architectural periods, see our guide to [heritage paint colours for Topsham homes](/blog/heritage-paint-colours-topsham-homes-guide).',
+      },
+      {
+        type: 'subheading',
+        content: 'Poor Surface Preparation',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Period properties require more careful preparation than new builds. Uneven lime plaster surfaces, historic joinery with multiple paint layers, and walls affected by past damp all need specialist approaches. Rushing preparation leads to poor adhesion, early failure, and repeated repainting costs.',
+      },
+      {
+        type: 'heading',
+        content: 'Listed Buildings by Exeter Location',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'The type of listed building varies significantly across Exeter, which affects appropriate paint systems:',
+      },
+      {
+        type: 'list',
+        content: [
+          'St David\'s (380 listed buildings): Medieval timber frames, 17th-century merchants\' houses, and early commercial buildings. Often require specialist timber treatment and breathable finishes',
+          'Topsham (228 listed buildings): Georgian and Victorian maritime properties, many exposed to humidity from the Exe Estuary. Breathability and salt-resistant finishes critical',
+          'Newtown and St Leonard\'s (120 listed buildings): Victorian and Edwardian terraces with lime plaster and render. Most benefit from mineral paint systems',
+          'Alphington (59 listed buildings): Village properties ranging from medieval cottages to Georgian houses. Often feature cob walls requiring specialist breathable treatments',
+          'Southernhay and Cathedral Close: High-grade Georgian townhouses with decorative plasterwork and joinery requiring conservation-standard work',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Understanding your property\'s construction type and location helps determine the most appropriate paint system. Our [heritage property painting service in Exeter](/areas/exeter/heritage-property-painting) includes a detailed assessment of your building\'s construction and condition before any work begins.',
+      },
+      {
+        type: 'heading',
+        content: 'Working with Conservation Officers',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter City Council\'s conservation team provides pre-application advice for listed building works. If your project requires consent, submitting a clear application with samples, photographs, and details of proposed materials significantly speeds approval. Conservation officers want to see that you understand your building and have chosen appropriate materials.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Key information to include in applications:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Detailed photographs of existing finishes and condition',
+          'Paint analysis results if available, showing historic colour schemes',
+          'Specifications for proposed paint systems, including breathability ratings',
+          'Sample boards showing proposed colours on actual building materials',
+          'Details of surface preparation methods, particularly for historic substrates',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional decorators experienced in heritage work can often provide much of this information and liaise with conservation officers on your behalf.',
+      },
+      {
+        type: 'heading',
+        content: 'The Cost of Getting It Right',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Painting a listed building properly costs more than decorating a new build. Breathable paint systems are more expensive than standard emulsions, preparation takes longer, and specialist knowledge commands premium rates. Heritage specialist decorators in Exeter typically charge £31-£40 per hour compared to £25-£30 for general domestic work.',
+      },
+      {
+        type: 'paragraph',
+        content: 'However, getting it right first time is always cheaper than remedial work. We\'ve seen cases where inappropriate painting has led to £15,000+ repair bills for render replacement, timber decay treatment, and replastering. Spending an extra £500-£1,000 on appropriate materials and expertise protects both your property and your investment.',
+      },
+      {
+        type: 'quote',
+        content: 'The most expensive paint job is the one that needs redoing. Investing in appropriate breathable systems and specialist knowledge protects Exeter\'s listed buildings for future generations whilst creating healthier, more beautiful homes today.',
+      },
+      {
+        type: 'heading',
+        content: 'Professional Heritage Painting in Exeter',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Painting a listed building requires understanding of historic construction methods, appropriate materials, and planning requirements. At BSR Decorating, we\'ve worked on heritage properties across Exeter for over 20 years, from medieval timber frames in St David\'s to Georgian townhouses in Southernhay and Victorian villas in Pennsylvania.',
+      },
+      {
+        type: 'paragraph',
+        content: 'We understand that every listed building is different. Our approach starts with a detailed assessment of your property\'s construction, condition, and any existing consent requirements. We specify appropriate breathable paint systems, prepare surfaces carefully to preserve historic fabric, and liaise with conservation officers when needed. We\'re also proud to use eco-friendly paint systems wherever possible, protecting both your building and the environment.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Whether you\'re planning external redecoration, internal restoration, or dealing with damp and paint failure caused by previous inappropriate work, we can help you make informed decisions about materials and methods.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Planning painting work on a listed building in Exeter? Get expert advice and a free, no-obligation quote from BSR Decorating. Call us or visit bsrdecorating.co.uk to discuss your project.',
+      },
+    ],
+  },
   'landlord-painting-exeter-fast-turnaround-rental-refresh': {
     sections: [
       {
