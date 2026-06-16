@@ -18,6 +18,253 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'dawlish-decorator-guide-coastal-homes-exterior-paint-maintenance': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Dawlish presents unique decorating challenges that demand local expertise. As a coastal town exposed to salt air, strong winds, and Devon\'s unpredictable weather, properties here face accelerated paint degradation and moisture issues that homeowners in inland areas rarely encounter. Whether you own a Victorian terrace near the seafront, a family home in the Secmaton Lane area, or a period property overlooking the Dawlish Water, understanding how coastal conditions affect paintwork is essential for maintaining your investment.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Having worked as a decorator in Dawlish for over 20 years, I\'ve learned that successful coastal decorating isn\'t just about choosing attractive colours. It\'s about selecting the right materials, timing work to avoid weather disruption, and understanding how salt spray and humidity affect different surfaces. This guide shares practical advice to help Dawlish homeowners make informed decisions about their property maintenance.',
+      },
+      {
+        type: 'heading',
+        content: 'Why Dawlish Homes Need Specialist Decorating Attention',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Coastal properties deteriorate faster than inland homes. Salt particles carried on the wind settle on exterior surfaces, drawing moisture into paintwork and accelerating breakdown. Properties within 500 metres of the seafront face the most aggressive conditions, but even homes further inland experience these effects to varying degrees.',
+      },
+      {
+        type: 'subheading',
+        content: 'The Coastal Environment Impact',
+        level: 3,
+      },
+      {
+        type: 'list',
+        content: [
+          'Salt crystallisation beneath paint layers causes bubbling and flaking within 2-3 years on poorly prepared surfaces',
+          'Higher humidity levels mean exterior surfaces dry more slowly after rain, extending the risk period for mould and algae growth',
+          'Strong southwesterly winds drive rain into areas that would remain protected in sheltered locations',
+          'UV exposure is intensified by reflection off the sea, causing colour fading on south and east facing elevations',
+          'Winter storms deposit salt spray across entire properties, not just seafront walls',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'I\'ve seen brand new paint jobs fail within 18 months when standard masonry paint was used without proper preparation. The key is understanding that Dawlish homes need more robust systems than properties in Exeter or inland Devon towns.',
+      },
+      {
+        type: 'heading',
+        content: 'Choosing the Right Exterior Paint for Dawlish Properties',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Not all exterior paint performs equally in coastal conditions. The products that work well in sheltered locations often prove inadequate when facing salt air and driving rain. For Dawlish homes, I recommend focusing on three key properties: breathability, flexibility, and durability.',
+      },
+      {
+        type: 'subheading',
+        content: 'Breathable Masonry Paint Systems',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Breathable paints allow moisture vapour to escape from masonry while preventing liquid water penetration. This is crucial for older Dawlish properties built with solid walls that naturally manage moisture through evaporation. Modern plastic-based paints can trap moisture inside walls, leading to damp problems and internal decoration failure.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For period properties and traditional builds, silicate-based masonry paints or quality breathable acrylics provide the best long-term performance. These systems bond chemically with mineral substrates and allow walls to breathe while offering excellent weather resistance. They\'re particularly effective on the rendered Victorian and Edwardian homes common throughout Dawlish.',
+      },
+      {
+        type: 'subheading',
+        content: 'Timber Protection in Coastal Locations',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Wooden windows, doors, and bargeboards face severe stress in Dawlish\'s climate. Salt draws moisture into timber, causing expansion and contraction cycles that crack conventional paint films. Oil-based exterior systems generally outperform water-based alternatives for timber in coastal locations, though modern hybrid systems are closing this gap.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The key is thorough preparation and quality primer application. I always ensure bare timber receives at least one coat of aluminium wood primer before undercoats and topcoats. This creates a moisture barrier that significantly extends paint life. For properties near the seafront, using a microporous paint system allows trapped moisture to escape while still protecting the timber.',
+      },
+      {
+        type: 'heading',
+        content: 'Timing Exterior Painting Work in Dawlish',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Weather timing is more critical in Dawlish than inland areas. The extended coastal painting season that benefits properties in sheltered locations doesn\'t fully apply here. Understanding seasonal patterns helps avoid costly failures and ensures work progresses smoothly.',
+      },
+      {
+        type: 'subheading',
+        content: 'The Ideal Painting Windows',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Late spring through early autumn offers the most reliable conditions. May through September provides the longest dry spells and warmest temperatures, allowing paint to cure properly. However, even during these months, Dawlish can experience sudden weather changes that disrupt work.',
+      },
+      {
+        type: 'list',
+        content: [
+          'May to June: Excellent conditions before peak summer humidity. Temperature and moisture levels are ideal for most paint systems',
+          'July to August: Peak season but higher humidity can extend drying times. Early morning starts are essential to complete coats before afternoon moisture increases',
+          'September: Often the best month. Lower humidity, stable temperatures, and fewer tourists mean easier access and more consistent conditions',
+          'October: Weather becomes unpredictable. Only undertake urgent repairs or small projects',
+          'November to March: Exterior painting largely unsuitable except for emergency repairs using specialised cold-weather systems',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'I schedule most Dawlish exterior projects between May and September, with September bookings often experiencing the smoothest progress. This seasonal demand means planning ahead is essential. Homeowners who contact me in March or April secure the best time slots for summer work.',
+      },
+      {
+        type: 'subheading',
+        content: 'Weather Monitoring During Projects',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Coastal weather forecasting requires more attention than inland predictions. I monitor detailed marine forecasts rather than general regional predictions, as conditions at the seafront often differ significantly from forecasts based on Exeter Airport data. A project might pause for a day if strong onshore winds are predicted, even when inland areas remain calm.',
+      },
+      {
+        type: 'heading',
+        content: 'Maintenance Schedules for Dawlish Properties',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Proactive maintenance prevents expensive remedial work. Coastal properties need inspection and touch-up more frequently than inland homes. Establishing a regular maintenance routine protects your investment and avoids the deterioration that leads to full redecoration every 3-4 years.',
+      },
+      {
+        type: 'subheading',
+        content: 'Annual Inspection Points',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Every autumn, after summer\'s UV exposure and before winter storms, inspect your property systematically. Look for paint flaking around window frames, cracks in render, and any areas where moisture might penetrate. Small touch-ups in October prevent water ingress that causes major problems by spring.',
+      },
+      {
+        type: 'list',
+        content: [
+          'Window frames and sills: Check for paint breakdown where timber meets glass and at joints',
+          'Doors and thresholds: Examine bottom rails and threshold areas where water pools',
+          'Render and masonry: Look for cracks, particularly around windows and at wall-roof junctions',
+          'Gutters and downpipes: Ensure clear drainage to prevent overflow staining decorated surfaces',
+          'South and west elevations: These face the harshest weather and need most frequent attention',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'Addressing minor issues promptly typically costs a few hundred pounds. Ignoring them leads to full redecoration projects costing several thousand. The average exterior painting cost for a Dawlish property ranges from £1,500 for a small terrace to £4,000-plus for larger detached homes, so preventive maintenance offers significant savings.',
+      },
+      {
+        type: 'heading',
+        content: 'Common Dawlish Decorating Problems and Solutions',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Certain issues appear repeatedly in coastal properties. Understanding these helps homeowners identify problems early and brief decorators effectively.',
+      },
+      {
+        type: 'subheading',
+        content: 'Salt Bloom and Efflorescence',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'White crystalline deposits often appear on masonry surfaces, particularly on older properties. This efflorescence occurs when soluble salts within masonry are drawn to the surface by moisture movement. Simply painting over these deposits leads to rapid paint failure. Proper treatment involves identifying and addressing moisture sources, removing deposits with appropriate treatments, and allowing surfaces to dry thoroughly before decoration.',
+      },
+      {
+        type: 'subheading',
+        content: 'Algae and Mould Growth',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'North-facing walls and shaded areas develop green or black biological growth more quickly in Dawlish\'s humid climate. Modern fungicidal washes treat existing growth, while biocidal paint additives help prevent recurrence. However, these treatments work best when combined with improved drainage and, where possible, increased air circulation around affected areas.',
+      },
+      {
+        type: 'subheading',
+        content: 'Coastal Weathering on Timber',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Wooden windows and doors show accelerated weathering, with paint failure typically starting at joints and end grain. Comprehensive timber preparation, including resin removal, knot treatment, and flexible filler application, is essential. Cutting corners on preparation guarantees premature failure in coastal conditions.',
+      },
+      {
+        type: 'quote',
+        content: 'In over 20 years decorating Dawlish properties, I\'ve learned that preparation time directly correlates with paint longevity. Spending an extra day on thorough surface preparation can double the lifespan of a paint system.',
+      },
+      {
+        type: 'heading',
+        content: 'Interior Decorating Considerations for Coastal Homes',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Coastal conditions affect interior decoration too. Higher ambient humidity levels mean bathrooms and kitchens need more robust paint specifications, and properties without adequate ventilation experience condensation problems that damage decoration.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Modern breathable interior paints help manage moisture in older properties without mechanical ventilation. For newer homes, ensuring extractor fans work effectively and trickle vents remain unblocked prevents the moisture accumulation that leads to mould growth and decoration failure. Our [interior decorating services](/areas/exeter/interior-painting) address these coastal-specific challenges with appropriate material specifications.',
+      },
+      {
+        type: 'heading',
+        content: 'Working with a Local Dawlish Decorator',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Choosing a decorator with coastal experience makes a measurable difference to project outcomes. Local knowledge of Dawlish\'s microclimates, understanding of which materials perform in specific locations, and relationships with suppliers who stock appropriate products all contribute to successful results.',
+      },
+      {
+        type: 'paragraph',
+        content: 'A decorator familiar with Dawlish knows that properties on Barton Terrace face different challenges than homes in Oakfield, even though they\'re less than a mile apart. They understand that the Victorian terraces near the station require different approaches than the newer developments at Gatehouse or Secmaton. This local knowledge prevents the generic solutions that often fail in coastal environments.',
+      },
+      {
+        type: 'paragraph',
+        content: 'When selecting a decorator, ask about their coastal experience specifically. How do they prepare salt-affected surfaces? What paint systems do they recommend for seafront properties versus those further inland? How do they schedule work around weather conditions? The answers reveal whether they understand coastal decorating\'s unique demands.',
+      },
+      {
+        type: 'heading',
+        content: 'Planning Your Dawlish Decorating Project',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Successful coastal decorating starts with realistic planning. Projects take longer than equivalent inland work because weather windows are more restricted and preparation is more extensive. Budget 15-20% more time and approximately 10-15% more cost compared to similar projects in sheltered locations.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For exterior work, contact decorators in early spring to secure summer slots. Flexibility helps too. Being able to accommodate schedule changes when weather interferes keeps projects moving rather than stalling for weeks. Most professional decorators juggle multiple projects to manage weather disruption, so understanding this reality leads to better working relationships.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Interior work faces fewer weather constraints but still benefits from planning around seasons. Winter months suit interior redecoration well, as heating systems are running and homes dry more quickly after work. This also leaves summer free for essential exterior maintenance.',
+      },
+      {
+        type: 'paragraph',
+        content: 'As a Dawlish-based decorator serving the town and surrounding areas including [Exeter](/areas/exeter), [Topsham](/areas/topsham), and the wider South Devon coast, I\'ve developed working methods that account for our unique climate. Every project begins with thorough surface assessment, honest discussion about realistic timescales, and material recommendations based on specific exposure and property type.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Coastal decorating demands more than standard approaches. It requires understanding how salt, moisture, and weather interact with different materials, choosing appropriate systems, and timing work to maximise success. Dawlish homeowners who recognise these factors and work with experienced local professionals protect their properties effectively while maintaining the character that makes coastal living so appealing.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Planning decorating work for your Dawlish property? Contact BSR Decorating for expert advice and a free, no-obligation quote. With over 20 years\' experience in coastal decorating, we understand exactly what Dawlish homes need.',
+      },
+    ],
+  },
   'painting-listed-buildings-exeter-breathable-paint-consent-mistakes': {
     sections: [
       {

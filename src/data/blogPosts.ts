@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 44,
+    title: 'Dawlish Decorator Guide: Coastal Homes, Exterior Paint and Maintenance Timing',
+    excerpt: 'Expert advice on decorating coastal homes in Dawlish, from choosing salt-resistant paint to timing exterior work around Devon\'s weather.',
+    category: 'Expert Advice',
+    date: '2026-06-16',
+    readTime: '9 min read',
+    image: '/images/blog/08-paint-brush-bucket.webp',
+    slug: 'dawlish-decorator-guide-coastal-homes-exterior-paint-maintenance',
+  },
+  {
     id: 43,
     title: 'Painting Listed Buildings in Exeter: Breathable Paint, Consent and Common Mistakes',
     excerpt: 'Expert guide to decorating Exeter\'s 994 listed buildings, from consent requirements to breathable paint systems and period-appropriate colours.',
