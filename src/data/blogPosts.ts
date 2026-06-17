@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 45,
+    title: 'Exterior Painter Exeter: Summer Booking Guide for Render, Timber and Masonry',
+    excerpt: 'Plan your Exeter exterior painting project with this comprehensive guide to render, timber and masonry preparation, timing and material choices.',
+    category: 'Expert Advice',
+    date: '2026-06-17',
+    readTime: '10 min read',
+    image: '/images/blog/22-roller-in-paint-tray.webp',
+    slug: 'exterior-painter-exeter-summer-booking-guide-render-timber-masonry',
+  },
+  {
     id: 44,
     title: 'Dawlish Decorator Guide: Coastal Homes, Exterior Paint and Maintenance Timing',
     excerpt: 'Expert advice on decorating coastal homes in Dawlish, from choosing salt-resistant paint to timing exterior work around Devon\'s weather.',

@@ -18,6 +18,198 @@ export interface BlogContentData {
 }
 
 export const blogContent: Record<string, BlogContentData> = {
+  'exterior-painter-exeter-summer-booking-guide-render-timber-masonry': {
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Summer in Exeter brings the ideal conditions for exterior painting, but it also brings intense competition for decorator availability. If you\'re planning to refresh your home\'s render, timber or masonry surfaces this year, understanding the booking timeline, surface-specific requirements and material choices can mean the difference between a rushed job in poor conditions and a professionally executed finish that lasts for years. With properties ranging from Victorian terraces in St Leonard\'s to modern renders in Cranbrook, finding an exterior painter in Exeter who understands your specific surface type is essential.',
+      },
+      {
+        type: 'heading',
+        content: 'Why Summer Booking Requires Early Planning',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Exterior painting in Devon follows a predictable seasonal pattern. Demand peaks between May and August when weather conditions are most stable, but this creates a booking bottleneck. Professional decorators typically schedule exterior work 4-6 weeks in advance during peak season, and the best contractors book even earlier. In Exeter, where we have approximately 56,000 households and 994 listed buildings requiring specialist knowledge, competition for skilled exterior painters intensifies every spring.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The challenge isn\'t just availability. Rushing to book last-minute often means compromising on weather windows, working with contractors who have gaps in their schedule for concerning reasons, or attempting exterior work in marginal conditions that compromise longevity. A professionally planned exterior painting project accounts for surface preparation time, optimal weather windows, material curing periods and the specific demands of your substrate.',
+      },
+      {
+        type: 'heading',
+        content: 'Understanding Your Exterior Surface Type',
+        level: 2,
+      },
+      {
+        type: 'subheading',
+        content: 'Render: The Most Common Exeter Exterior',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Rendered exteriors dominate Exeter\'s housing stock, from traditional lime renders on period properties in Pennsylvania to modern cement renders on newer developments. Each render type demands different preparation and paint systems. Traditional lime render requires breathable masonry paint that allows moisture vapour to escape, preventing the render from trapping dampness and deteriorating. Modern cement renders are less porous but still benefit from flexible masonry coatings that accommodate minor movement.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Preparation is critical. Rendered surfaces must be clean, dry and stable before painting. This means treating any loose or blown render, washing down to remove algae and dirt accumulation, and allowing adequate drying time. In coastal areas closer to Dawlish and Exmouth, salt contamination requires thorough washing with clean water before paint application. An experienced [exterior painter in Exeter](/areas/exeter/exterior-painting) will inspect your render type and recommend appropriate primers and topcoats.',
+      },
+      {
+        type: 'subheading',
+        content: 'Timber: Cladding, Windows and Fascias',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Timber exteriors in Exeter range from decorative cladding on contemporary extensions to traditional sash windows and fascia boards on Victorian and Edwardian properties. Timber requires different treatment depending on exposure, condition and whether it\'s hardwood or softwood. South-facing timber in full sun experiences more UV degradation and moisture cycling than north-facing surfaces sheltered by neighbouring buildings.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Preparation determines longevity. Flaking paint must be removed, bare timber primed with appropriate wood primer, and any rot or damage repaired before coating. For properties in Topsham\'s conservation area or among Exeter\'s 994 listed buildings, paint colour and finish type may be restricted, requiring breathable microporous coatings in approved heritage colours. Modern high-performance exterior wood paints offer 8-10 year durability on properly prepared surfaces, but only if applied in suitable conditions with correct primer systems.',
+      },
+      {
+        type: 'subheading',
+        content: 'Masonry: Brick and Stone',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Exposed brick and stone feature prominently in Exeter\'s historic properties, particularly in the St David\'s ward with its 380 listed buildings. While many owners prefer natural brick, painted masonry requires specialist knowledge to avoid moisture trapping and deterioration. Stone and brick are porous materials that must breathe, making paint system selection critical.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Previously painted masonry presents challenges. Removing old paint from brick or stone is labour-intensive and sometimes impossible without damaging the substrate. The better approach involves assessing the existing coating condition, removing loose material, treating the surface and overcoating with compatible breathable masonry paint. Some conservation areas prohibit painting unpainted masonry entirely, making professional advice essential before proceeding.',
+      },
+      {
+        type: 'heading',
+        content: 'Exeter\'s Weather Window: Planning for Devon Conditions',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Devon\'s maritime climate creates specific challenges for exterior painting. Our proximity to the coast means higher humidity, salt-laden air in some areas, and rapid weather changes that can catch inexperienced decorators unprepared. Successful exterior painting in Exeter requires monitoring forecasts carefully and understanding that manufacturer temperature and humidity specifications aren\'t optional guidelines but critical requirements for paint curing and adhesion.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Most modern masonry and exterior wood paints require minimum temperatures of 5-10 degrees Celsius and must remain above this threshold during the entire curing period, typically 4-6 hours for water-based systems. Humidity matters equally. Paint applied in high humidity or when rain threatens may not cure properly, leading to poor adhesion, slow drying and compromised durability. This makes summer the preferred window, but even summer in Devon brings sudden showers and foggy mornings that delay work.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Our [spring exterior painting guide](/blog/spring-exterior-painting-devon-complete-guide) covers seasonal timing in detail, but summer offers the most reliable weather windows and longest working days. However, this reliability comes with the trade-off of highest demand and premium scheduling. Early booking secures your preferred dates during optimal conditions rather than squeezing work into marginal September weather when decorators have capacity but conditions deteriorate.',
+      },
+      {
+        type: 'heading',
+        content: 'Material Selection for Longevity',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Paint specification dramatically affects lifespan and maintenance frequency. Budget masonry paint might cost half the price of premium systems, but if it lasts four years instead of ten, you\'re repainting more than twice as often with all the associated disruption and scaffolding costs. For a typical Exeter semi-detached house exterior, the cost difference between budget and premium paint might be £300-500, but the longevity difference is substantial.',
+      },
+      {
+        type: 'list',
+        content: [
+          'Premium masonry paint with high dirt resistance: 10-15 year lifespan on render in good condition',
+          'Mid-range exterior wood systems: 6-8 years on windows and cladding with proper preparation',
+          'Specialist heritage breathable paints: Variable lifespan but essential for period properties to prevent moisture damage',
+          'Coastal-grade systems for properties near the seafront: Enhanced salt and UV resistance',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'For properties in conservation areas or listed buildings, material choice isn\'t purely performance-based. Many historic properties require breathable lime-based paints or specific mineral coatings that allow the building fabric to function as designed. Using modern impermeable coatings on traditional construction can trap moisture, leading to deterioration that costs thousands to repair. Our [heritage property painting service](/areas/exeter/heritage-property-painting) addresses these specialist requirements with appropriate materials and application techniques.',
+      },
+      {
+        type: 'heading',
+        content: 'The True Cost of Exterior Painting in Exeter',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Understanding exterior painting costs helps set realistic budgets and identify suspiciously cheap quotes that indicate cut corners. For a typical Exeter house exterior, expect to pay around £1,728 for a terraced or semi-detached property, with detached homes and those requiring extensive preparation costing more. These figures reflect proper preparation, quality materials and professional application.',
+      },
+      {
+        type: 'paragraph',
+        content: 'What drives the cost? Scaffolding or access equipment represents a significant portion of any exterior project. For two-storey properties, safe access is non-negotiable, and scaffolding hire for 1-2 weeks adds £500-800 to the project. Preparation time often exceeds painting time. Washing down, treating defects, filling, priming and masking can take twice as long as applying the finish coats, but this preparation determines whether your paint job lasts two years or twelve.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Our detailed [exterior painting cost guide](/blog/exterior-painting-costs-exeter-what-affects-quote-2026) breaks down these variables by property type and condition, helping you understand what\'s included in professional quotes and where cost savings make sense versus where they create future problems.',
+      },
+      {
+        type: 'heading',
+        content: 'What to Expect from a Professional Exterior Painter',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Professional exterior painting follows a systematic process that protects your property while delivering lasting results. Initial consultation should include site assessment, substrate identification, defect recording and discussion of colour schemes and finish types. For period properties or those in conservation areas, this includes advising on planning requirements and appropriate materials.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Preparation standards separate professional decorators from those cutting corners. Expect thorough cleaning, defect treatment, appropriate priming and careful masking. Windows, doors, paths and planting all require protection. Modern masonry paints can stain concrete and stone permanently if overspray isn\'t controlled, and damage to established plants from chemical wash-down solutions creates unnecessary conflict.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Application technique matters. Brush, roller and spray each suit different surfaces and situations. Masonry paint typically applies best by roller or airless spray for even coverage and texture. Timber benefits from brush application for detail work combined with roller for larger flat areas. A professional exterior painter in Exeter adjusts technique to substrate and conditions rather than using one method for everything.',
+      },
+      {
+        type: 'heading',
+        content: 'Timing Your Project for Best Results',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Ideal booking timeline for summer exterior painting starts with initial enquiries in March or April. This allows site visits, quotations, colour selection and material specification before peak season begins. Scheduling work for June or July provides optimal weather while avoiding the holiday season disruption of August when many families are away and prefer not to have contractors on site.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For larger projects requiring scaffolding, consider splitting interior and exterior work across seasons. Scaffolding provides excellent access to upper-floor interiors, making it cost-effective to address bedroom ceilings and window frames while access is in place. This approach maximises the value of scaffolding hire and reduces the total number of times your property needs major access equipment.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Late summer and early autumn can offer good conditions and better availability as demand eases. September often provides stable weather in Devon, though days shorten and weather becomes less predictable. For straightforward render refresh on modern properties, autumn works well. For complex timber restoration or heritage masonry requiring extended drying times between coats, summer remains preferable.',
+      },
+      {
+        type: 'heading',
+        content: 'Questions to Ask Before Booking',
+        level: 2,
+      },
+      {
+        type: 'list',
+        content: [
+          'What preparation is included in the quote? Vague answers about \'preparing as necessary\' create disputes later',
+          'Which specific paint system will be used and why? Product names and technical data sheets should be available',
+          'How do you handle weather delays? Professional contractors build contingency into schedules',
+          'What guarantees cover the work? Reputable decorators stand behind their work with clear warranty terms',
+          'Are you insured for exterior work and scaffolding? Public liability insurance is essential, not optional',
+          'Can you provide references for similar properties in Exeter? Local experience with your surface type matters',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'For properties in Topsham, Heavitree, St Leonard\'s or other conservation areas, also ask about experience with planning requirements and heritage-appropriate materials. The £38,000 fine issued to a Topsham property owner in December 2025 for unauthorised alterations demonstrates that conservation area regulations have teeth. Professional decorators working regularly in these areas understand the requirements and can advise on compliance.',
+      },
+      {
+        type: 'heading',
+        content: 'Planning Your Exeter Exterior Painting Project',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Successful exterior painting combines proper material selection, experienced application and optimal timing. Whether you\'re refreshing a modern render in Pennsylvania, restoring timber windows on a St David\'s terrace, or maintaining masonry on a listed Topsham property, the principles remain consistent: understand your substrate, choose appropriate materials, prepare thoroughly and work within suitable weather windows.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Summer offers the best conditions for exterior work in Exeter, but this makes early booking essential. Starting your search now for work in the coming months gives you access to experienced contractors, optimal weather windows and time to plan properly rather than rushing decisions under pressure.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Planning exterior painting for your Exeter property? BSR Decorating brings over 20 years of experience with render, timber and masonry across Devon\'s diverse housing stock. From modern developments to heritage properties requiring specialist approaches, we provide detailed assessments, appropriate material specification and professional execution. Contact us for a free site visit and comprehensive quote tailored to your property\'s specific needs.',
+      },
+    ],
+  },
   'dawlish-decorator-guide-coastal-homes-exterior-paint-maintenance': {
     sections: [
       {

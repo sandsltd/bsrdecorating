@@ -75,6 +75,7 @@ function getBlogKeywords(slug: string): string {
       'landlord-painting-exeter-fast-turnaround-rental-refresh': "landlord painter exeter, landlord painting exeter fast turnaround rental refresh",
       'painting-listed-buildings-exeter-breathable-paint-consent-mistakes': "listed building paint exeter, painting listed buildings exeter breathable paint consent mistakes",
       'dawlish-decorator-guide-coastal-homes-exterior-paint-maintenance': "decorator dawlish, dawlish decorator guide coastal homes exterior paint maintenance",
+      'exterior-painter-exeter-summer-booking-guide-render-timber-masonry': "exterior painter exeter, exterior painter exeter summer booking guide render timber masonry",
   };
   return keywordMap[slug] || "";
 }
