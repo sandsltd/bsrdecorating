@@ -502,7 +502,10 @@ export default function Home() {
       </section>
 
       {/* Gallery Preview */}
-      <GalleryPreview />
+      <GalleryPreview
+        title="Recent Projects"
+        subtitle="See the latest domestic and commercial projects from across Devon"
+      />
 
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-bsr-highlight">

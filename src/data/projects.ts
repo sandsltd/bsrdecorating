@@ -1450,6 +1450,22 @@ export const getFeaturedProjects = (): Project[] => {
   return projects.filter(project => project.featured);
 };
 
+// Helper function to get the latest projects in a category
+export const getLatestProjectsByCategory = (category: Project['category'], limit = 3): Project[] => {
+  return projects
+    .filter(project => project.category === category)
+    .sort((a, b) => b.id - a.id)
+    .slice(0, limit);
+};
+
+// Helper function to get the latest domestic and commercial projects for the homepage
+export const getHomepageRecentProjects = (): Project[] => {
+  return [
+    ...getLatestProjectsByCategory('domestic', 3),
+    ...getLatestProjectsByCategory('commercial', 3)
+  ];
+};
+
 // Helper function to get featured projects by category
 export const getFeaturedProjectsByCategory = (category: string): Project[] => {
   return projects.filter(project => project.featured && project.category === category);
