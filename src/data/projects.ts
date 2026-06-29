@@ -1403,6 +1403,37 @@ export const projects: Project[] = [
     ],
     rating: 5,
     featured: false
+  },
+  {
+    id: 29,
+    title: 'Exterior Masonry Redecoration - Exeter',
+    category: 'domestic',
+    type: 'image',
+    description: 'Exterior masonry redecoration of a property in Exeter using high performance Emperor masonry paint for a breathable, durable and weather-resistant finish.',
+    fullDescription: 'This Exeter property was redecorated externally using a high performance Emperor masonry paint system. The product was selected to give the masonry a durable, weather-resistant finish while still allowing the building to breathe. Careful preparation and application helped refresh the property exterior and provide long-lasting protection against the elements.',
+    location: 'Exeter',
+    year: 2026,
+    specialFeatures: [
+      'Exterior masonry redecoration',
+      'High performance Emperor masonry paint',
+      'Breathable weather-resistant finish',
+      'Long-lasting exterior protection',
+      'Careful masonry preparation',
+      'Professional Exeter property refresh'
+    ],
+    beforeAfter: false,
+    image: '/portfolio/project29/PHOTO-2026-06-25-13-16-38.jpg',
+    images: [
+      '/portfolio/project29/PHOTO-2026-06-25-13-16-38.jpg',
+      '/portfolio/project29/PHOTO-2026-06-25-13-16-38 2.jpg',
+      '/portfolio/project29/PHOTO-2026-06-25-13-16-38 3.jpg',
+      '/portfolio/project29/PHOTO-2026-06-25-13-16-39.jpg',
+      '/portfolio/project29/PHOTO-2026-06-25-13-16-39 2.jpg',
+      '/portfolio/project29/PHOTO-2026-06-25-13-16-39 3.jpg',
+      '/portfolio/project29/PHOTO-2026-06-25-13-16-41.jpg'
+    ],
+    rating: 5,
+    featured: false
   }
 ];
 
