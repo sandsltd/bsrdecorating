@@ -202,8 +202,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 25,
-    title: 'Why Eco-Friendly Paint Matters and the Best Options for Your Home',
-    excerpt: 'Discover why eco-friendly paint matters for Devon homes and which low-VOC, natural options deliver professional results.',
+    title: 'Eco-Friendly Paint UK: Why It Matters and the Best Options for Your Devon Home',
+    excerpt: 'Expert guide to eco-friendly paint for UK homes. Learn which low-VOC paints work best in Devon\'s climate and why they matter for period properties.',
     category: 'Expert Advice',
     date: '2026-02-26',
     readTime: '9 min read',
