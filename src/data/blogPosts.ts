@@ -213,7 +213,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: 24,
     title: 'Solving Damp and Paint Problems in Exeter Homes: A Professional Guide',
-    excerpt: 'Discover why damp causes paint to fail in Exeter homes and how professional decorators tackle the root causes for lasting results.',
+    excerpt: 'Expert advice on identifying, treating and preventing damp issues in Exeter properties before repainting. Essential guidance for period and modern homes.',
     category: 'Expert Advice',
     date: '2026-02-19',
     readTime: '9 min read',

@@ -4630,20 +4630,24 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'If you\'ve noticed paint bubbling, peeling, or discolouring on your Exeter property\'s walls, you\'re not alone. Damp is one of the most common problems affecting homes across Devon, particularly in older properties in areas like St Leonard\'s, Heavitree, and Topsham. With Exeter\'s 994 listed buildings and countless Victorian and Georgian properties, many homeowners face the frustrating cycle of repainting walls only to see the same issues return within months. The truth is, painting over damp walls without addressing the underlying cause is like putting a plaster on a broken bone – it might look better temporarily, but the problem will inevitably resurface.',
+        content: 'If you\'ve noticed paint bubbling, peeling, or discolouring on your Exeter property\'s walls, you\'re facing one of the most common decorating challenges in Devon. Damp affects countless homes across the city, particularly in older properties in St Leonard\'s, Heavitree, and Topsham. With 994 listed buildings and extensive Victorian and Georgian housing stock, many Exeter homeowners experience the frustrating cycle of repainting walls only to see the same problems return within months. The reality is that painting over damp walls without addressing the root cause is a waste of time and money – the problem will always return, often with additional damage.',
       },
       {
         type: 'heading',
-        content: 'Why Damp Is Such a Common Problem in Exeter Properties',
+        content: 'Why Damp Is So Common in Exeter Properties',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'Exeter\'s climate and building stock create the perfect conditions for damp issues. Our coastal location means higher humidity levels year-round, with prevailing south-westerly winds bringing moisture-laden air from the Atlantic. This is particularly noticeable in riverside areas like Topsham and along the Exe Estuary, where properties face additional moisture exposure.',
+        content: 'Exeter\'s location and building heritage create ideal conditions for damp problems. Our coastal climate brings higher humidity year-round, with prevailing south-westerly winds carrying moisture-laden air from the Atlantic. This is especially noticeable in riverside areas like Topsham and along the Exe Estuary, where properties face constant exposure to moisture from multiple directions.',
       },
       {
         type: 'paragraph',
-        content: 'The city\'s historic building stock compounds the issue. Many of Exeter\'s properties, especially those in the 20 conservation areas, were built with solid walls rather than modern cavity wall construction. Victorian terraces in Newtown and Mt Pleasant, Georgian townhouses in Southernhay, and period properties throughout Pennsylvania were designed to \'breathe\' – allowing moisture to move through walls naturally. When these buildings are decorated with modern, impermeable paints or materials, moisture becomes trapped, leading to damp problems and paint failure.',
+        content: 'The city\'s historic building stock compounds these challenges. Many properties in Exeter\'s 20 conservation areas were built with solid walls rather than modern cavity construction. Victorian terraces in Newtown and Mount Pleasant, Georgian townhouses in Southernhay, and period properties throughout Pennsylvania were designed to \'breathe\' – allowing moisture to move naturally through walls. When these buildings are decorated with modern, impermeable paints or materials, moisture becomes trapped inside the walls, leading to damp problems and inevitable paint failure.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Even newer properties aren\'t immune. Poor ventilation in modern airtight homes, combined with lifestyle changes (more cooking, drying clothes indoors, longer showers), means condensation damp has become increasingly common across Exeter\'s housing stock, from the new developments at Cranbrook to apartments in the city centre.',
       },
       {
         type: 'heading',
@@ -4652,172 +4656,211 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'subheading',
-        content: 'Rising Damp',
+        content: '1. Rising Damp',
         level: 3,
       },
       {
         type: 'paragraph',
-        content: 'Rising damp occurs when groundwater moves up through walls via capillary action. It\'s particularly common in older Exeter properties that lack a damp-proof course or where the original DPC has failed. You\'ll typically see a tide mark up to one metre from floor level, often accompanied by salt deposits that appear as white crystalline patches on the wall surface. Paint in these areas will bubble, peel, and eventually flake away as the salts push through the paint film.',
+        content: 'Rising damp occurs when groundwater moves up through walls via capillary action. It\'s particularly common in older Exeter properties that lack a damp-proof course or where the original DPC has failed. You\'ll typically see a tide mark up to one metre from floor level, often accompanied by salt deposits appearing as white crystalline patches on the wall surface. Paint in these areas will bubble, peel, and eventually flake away as hygroscopic salts draw moisture from the air and push through the paint film.',
+      },
+      {
+        type: 'paragraph',
+        content: 'In Exeter\'s period properties, especially those in Topsham and St Leonard\'s, rising damp is frequently misdiagnosed. What appears to be rising damp is often penetrating damp from ground level or condensation damp at skirting level. A professional survey is essential before undertaking expensive remedial work.',
       },
       {
         type: 'subheading',
-        content: 'Penetrating Damp',
+        content: '2. Penetrating Damp',
         level: 3,
       },
       {
         type: 'paragraph',
-        content: 'This type of damp occurs when water enters through the external fabric of the building – through damaged pointing, cracked render, faulty gutters, or porous brickwork. In Exeter\'s climate, with average annual rainfall of around 800mm and our exposure to driving rain, penetrating damp is extremely common. Properties on exposed positions, such as those on higher ground in St David\'s or facing the prevailing weather in Alphington, are particularly vulnerable. The telltale signs include damp patches that appear during or after rainfall and may take days to dry out.',
+        content: 'Penetrating damp occurs when water enters through the external fabric of the building – through damaged pointing, cracked render, faulty gutters, or porous brickwork. Exeter\'s exposure to driving rain, particularly on south and west-facing elevations, makes this extremely common. Properties in exposed locations like Pennsylvania and areas around St David\'s often show damp patches that worsen during wet weather and may partially dry out in summer. Understanding [when to paint exterior surfaces](/blog/exterior-painting-exeter-devon-guide) is crucial for preventing penetrating damp issues.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Coastal properties in Topsham face additional challenges. Salt-laden winds can damage external paintwork and pointing, creating entry points for moisture. If you\'re seeing damp patches that correspond with external features (chimneys, window reveals, parapet walls), penetrating damp is the likely culprit.',
       },
       {
         type: 'subheading',
-        content: 'Condensation Damp',
+        content: '3. Condensation Damp',
         level: 3,
       },
       {
         type: 'paragraph',
-        content: 'Condensation is actually the most common form of damp in UK homes, and Exeter is no exception. It occurs when warm, moisture-laden air meets cold surfaces, causing water to condense. Modern living produces significant moisture – cooking, bathing, drying clothes indoors – and when properties are made more airtight through improvements like double glazing without adequate ventilation, condensation problems worsen. You\'ll typically see black mould growth in corners, behind furniture, and around windows. Paint in affected areas often develops a powdery surface or shows mould growth through the paint film.',
+        content: 'Condensation damp is now the most common form of damp in UK homes, including Exeter. It occurs when warm, moisture-laden air meets cold surfaces, causing water droplets to form. You\'ll typically see it on north-facing walls, in corners where air circulation is poor, behind furniture, and around windows. Black mould growth is a telltale sign of condensation problems.',
+      },
+      {
+        type: 'paragraph',
+        content: 'This type of damp has increased dramatically in recent years as homes become more airtight and energy-efficient. Student accommodation in Exeter\'s St David\'s area and rental properties throughout the city are particularly prone to condensation issues due to occupancy patterns and inadequate ventilation.',
       },
       {
         type: 'heading',
-        content: 'Why Simply Repainting Damp Walls Doesn\'t Work',
+        content: 'How to Identify What Type of Damp You Have',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'Many Exeter homeowners make the mistake of thinking a fresh coat of paint will solve their damp problems. Unfortunately, this approach is doomed to fail, and here\'s why: damp walls contain excess moisture that needs to escape. When you apply standard emulsion or gloss paint over damp walls, you\'re essentially sealing that moisture in. The water has nowhere to go, so it pushes through the paint film, causing bubbling, peeling, and failure.',
-      },
-      {
-        type: 'paragraph',
-        content: 'Additionally, many damp issues involve salts – either from the groundwater in rising damp cases or from the building materials themselves. These salts are hygroscopic, meaning they draw moisture from the air. When you paint over them, the salts continue to work beneath the paint surface, drawing in moisture and pushing outward, which causes paint to fail repeatedly. This is why you\'ll often see the same areas of a wall failing over and over again, even after multiple repaints.',
-      },
-      {
-        type: 'heading',
-        content: 'The Professional Approach to Damp and Painting in Exeter',
-        level: 2,
-      },
-      {
-        type: 'paragraph',
-        content: 'At BSR Decorating, we\'ve been dealing with damp-related painting challenges across Exeter for over 20 years. Our approach is fundamentally different from simply covering the problem with paint. We start by identifying the root cause of the damp, which often requires investigation and sometimes specialist surveys.',
-      },
-      {
-        type: 'subheading',
-        content: 'Step 1: Identify and Eliminate the Damp Source',
-        level: 3,
-      },
-      {
-        type: 'paragraph',
-        content: 'Before any painting begins, the source of damp must be addressed. For rising damp, this might mean installing or repairing a damp-proof course. For penetrating damp, we need to fix the building defect – repointing brickwork, repairing render, clearing gutters, or addressing roofing issues. For condensation, we look at ventilation improvements and lifestyle factors. Sometimes this requires coordination with other trades, which is where our experience managing projects across [Exeter\'s domestic properties](/domestic) becomes invaluable.',
-      },
-      {
-        type: 'subheading',
-        content: 'Step 2: Allow Walls to Dry Properly',
-        level: 3,
-      },
-      {
-        type: 'paragraph',
-        content: 'Once the damp source is eliminated, walls must be given adequate time to dry. This is where many DIY attempts fail – people are understandably eager to get rooms looking good again, but painting too soon guarantees failure. Drying time depends on wall thickness, the severity of the damp, and environmental conditions, but can take several months for seriously affected walls. We use moisture meters to ensure walls have reached acceptable moisture levels before any decoration begins.',
-      },
-      {
-        type: 'subheading',
-        content: 'Step 3: Prepare Surfaces Correctly',
-        level: 3,
-      },
-      {
-        type: 'paragraph',
-        content: 'Proper preparation is critical when dealing with previously damp walls. This typically involves removing all loose or failing paint and plaster, treating any mould growth with fungicidal wash, and neutralising salts where present. In cases of severe salt contamination, we may need to hack off affected plaster and re-plaster with salt-resistant materials. This level of preparation is what separates professional results from repeated failures.',
-      },
-      {
-        type: 'subheading',
-        content: 'Step 4: Use Breathable, Appropriate Paint Systems',
-        level: 3,
-      },
-      {
-        type: 'paragraph',
-        content: 'For period properties in Exeter – and we\'re talking about thousands of buildings across areas like Topsham, St Leonard\'s, and the city\'s conservation areas – breathable paint systems are essential. Modern vinyl emulsions trap moisture, but mineral-based paints like limewash, clay paints, or silicate paints allow walls to breathe naturally. These traditional paint systems work with the building rather than against it, allowing moisture to move through the wall structure without causing paint failure.',
-      },
-      {
-        type: 'paragraph',
-        content: 'We discuss breathable paint options in detail in our guide to [painting Exeter homes with damp or listed building constraints](/blog/best-paint-types-exeter-homes), where we explain how different paint systems suit different building types and damp situations.',
-      },
-      {
-        type: 'heading',
-        content: 'When to Call a Professional Decorator in Exeter',
-        level: 2,
-      },
-      {
-        type: 'paragraph',
-        content: 'While minor condensation issues might be manageable with improved ventilation and careful paint selection, significant damp problems require professional assessment and treatment. You should definitely seek professional help if you\'re experiencing:',
+        content: 'Before any repainting work, accurate diagnosis is essential. Here\'s what to look for:',
       },
       {
         type: 'list',
         content: [
-          'Repeated paint failure in the same areas despite repainting',
-          'Visible tide marks or salt deposits on walls',
-          'Damp patches that appear after rainfall',
-          'Black mould growth that returns quickly after cleaning',
-          'Musty odours that won\'t go away',
-          'Damp issues in a listed building or conservation area property',
-          'Uncertainty about the cause of the damp',
+          'Rising damp: Horizontal tide mark up to 1m high, salt deposits, deteriorating plaster, affected skirting boards',
+          'Penetrating damp: Damp patches corresponding to external defects, worsens with rain, may show staining patterns',
+          'Condensation: Appears on cold surfaces, worse in winter, associated with black mould, streaming windows in morning',
         ],
       },
       {
         type: 'paragraph',
-        content: 'For properties in Exeter\'s conservation areas or listed buildings – remember, there are 228 listed buildings in Topsham alone – using inappropriate materials or methods can cause significant damage and may breach planning regulations. Our experience with [heritage properties across Exeter](/areas/exeter/heritage-property-painting) means we understand not only the technical requirements but also the regulatory landscape surrounding these important buildings.',
+        content: 'A moisture meter reading alone isn\'t sufficient for accurate diagnosis. Professional assessment should consider the building\'s age, construction type, location, and the pattern and position of damp evidence. At BSR Decorating, we always investigate the underlying cause before proposing any decorating solution.',
       },
       {
         type: 'heading',
-        content: 'The Cost of Getting It Right Versus Getting It Wrong',
+        content: 'Why You Can\'t Just Paint Over Damp Walls',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'Many homeowners baulk at the cost of properly addressing damp issues before decorating, thinking it\'s cheaper to just repaint. But this is false economy. The average cost to paint a living room in Exeter is around £674, whilst a bedroom costs approximately £498. If you\'re repainting every 12-18 months because the damp problem wasn\'t properly addressed, those costs rapidly multiply. Meanwhile, structural damage from ongoing damp continues to worsen, potentially leading to much more expensive repairs down the line.',
+        content: 'Many Exeter homeowners try quick fixes: anti-mould paint, damp-proof paint, or simply repainting with multiple coats of emulsion. These approaches fail because they don\'t address the source of moisture. Moisture will always find a way through, causing the new paint to fail just as the old paint did.',
       },
       {
         type: 'paragraph',
-        content: 'Investing in proper investigation, damp treatment, and appropriate decoration might cost more initially, but it\'s a one-time expense that solves the problem permanently rather than temporarily masking it. For most Exeter properties, this approach also protects and potentially enhances property value – particularly important given Exeter\'s median property price of £285,000 and higher values in desirable areas like Topsham (£506,000 average).',
+        content: 'Modern vinyl emulsions and acrylic paints create an impermeable barrier. When moisture is present in the wall, it becomes trapped behind this barrier, leading to blistering, peeling, and eventual paint failure. In period properties, this trapped moisture can cause additional damage to historic plasterwork and even the structural fabric of the building.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For Exeter\'s 994 listed buildings and properties in conservation areas, using inappropriate modern paints can cause long-term damage. [Listed building consent may be required](/blog/painting-listed-buildings-exeter-breathable-paint-consent-mistakes) for changes to internal finishes, and conservation officers increasingly expect breathable, traditional paint systems to be used on historic properties.',
       },
       {
         type: 'heading',
-        content: 'Long-Term Prevention: Keeping Damp at Bay',
+        content: 'The Right Way to Solve Damp Before Repainting',
+        level: 2,
+      },
+      {
+        type: 'subheading',
+        content: 'Step 1: Fix the Source',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'No decorating work should begin until the moisture source is eliminated. This might involve repairing gutters, repointing brickwork, improving drainage around the property, installing or repairing a damp-proof course, or improving ventilation. In Exeter\'s period properties, solutions must be sympathetic to the building\'s age and construction. We regularly work with local surveyors and specialists who understand Devon\'s historic building stock.',
+      },
+      {
+        type: 'subheading',
+        content: 'Step 2: Allow the Wall to Dry',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Once the moisture source is eliminated, walls need time to dry out. Depending on wall thickness and saturation levels, this can take weeks or even months. Rushing this stage guarantees paint failure. We use moisture meters to confirm walls have reached acceptable moisture levels before any preparation work begins.',
+      },
+      {
+        type: 'subheading',
+        content: 'Step 3: Remove Damaged Materials',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Contaminated plaster containing hygroscopic salts must be removed and replaced. These salts (calcium chloride, nitrates, and sulphates) continually draw moisture from the air, making successful painting impossible. We typically remove affected plaster to 300mm beyond the visible damage and apply a salt-retardant render before replastering.',
+      },
+      {
+        type: 'subheading',
+        content: 'Step 4: Choose the Right Paint System',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'For Exeter\'s period properties, breathable paint systems are essential. Limewash, mineral paints, and certain specialist emulsions allow moisture to move through the wall naturally while providing a decorative finish. Modern vinyl paints should generally be avoided on solid-walled properties built before 1920.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For properties where condensation is the issue, improving ventilation and using anti-condensation paint with fungicidal additives can prevent mould growth. However, these products are temporary solutions if the underlying ventilation problem isn\'t addressed.',
+      },
+      {
+        type: 'heading',
+        content: 'Specific Solutions for Exeter Property Types',
+        level: 2,
+      },
+      {
+        type: 'subheading',
+        content: 'Victorian and Georgian Period Properties',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Properties in St Leonard\'s, Pennsylvania, and Topsham\'s conservation area require breathable paint systems. We typically specify lime-based paints or mineral emulsions that work with the building\'s original construction. These paints are more expensive initially but last longer and prevent the damage caused by trapping moisture.',
+      },
+      {
+        type: 'subheading',
+        content: 'Post-War Properties with Cavity Walls',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Homes in Heavitree and newer areas of Exeter with cavity wall construction can usually accept modern paint systems once damp is resolved. The key is ensuring cavity wall insulation hasn\'t been poorly installed, causing a moisture bridge.',
+      },
+      {
+        type: 'subheading',
+        content: 'New Build Properties',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Developments like Cranbrook often experience condensation damp due to airtight construction and inadequate ventilation. Mechanical ventilation with heat recovery (MVHR) systems must be properly maintained. We always ensure new builds are fully dried out before decoration – construction moisture can take 12-18 months to dissipate fully.',
+      },
+      {
+        type: 'subheading',
+        content: 'Rental Properties and HMOs',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Student properties and HMOs in St David\'s and around the university require robust ventilation solutions and regular maintenance. We work with many Exeter landlords to [establish decoration schedules](/blog/landlord-painting-exeter-fast-turnaround-rental-refresh) that address condensation issues before they cause damage.',
+      },
+      {
+        type: 'heading',
+        content: 'Prevention: Stopping Damp Problems Before They Start',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'Once damp problems have been properly addressed and your property has been decorated with appropriate materials, ongoing maintenance helps prevent recurrence:',
+        content: 'Prevention is always more cost-effective than cure. Here\'s what Exeter homeowners should monitor:',
       },
       {
         type: 'list',
         content: [
-          'Regularly clear gutters and check downpipes are functioning correctly',
-          'Ensure adequate ventilation in kitchens and bathrooms, using extractor fans when cooking or bathing',
-          'Don\'t block airbricks or ventilation grilles',
-          'Address any pointing or render cracks promptly before water can penetrate',
-          'Keep rooms at consistent temperatures rather than allowing them to get very cold',
-          'Avoid drying large amounts of washing indoors without adequate ventilation',
-          'Have external paintwork and render inspected every few years',
+          'Clear gutters and downpipes regularly – autumn leaf fall is particularly problematic in Exeter\'s tree-lined streets',
+          'Check external pointing annually, especially on exposed elevations facing the prevailing south-westerly weather',
+          'Ensure adequate ventilation in kitchens and bathrooms – extract fans should vent outside, not into roof spaces',
+          'Don\'t block airbricks or underfloor ventilation – these are essential in period properties',
+          'Keep the gap between external ground level and internal floor level – soil or paving built up against walls causes damp',
+          'In winter, maintain background heating and ventilation even when rooms aren\'t in use',
         ],
       },
       {
-        type: 'paragraph',
-        content: 'For period properties, understanding your building\'s specific needs is crucial. The solid-wall construction common in Exeter\'s older homes requires different care compared to modern cavity-wall construction, which is why we always take time to explain maintenance requirements specific to each property type.',
-      },
-      {
         type: 'heading',
-        content: 'Get Expert Help with Damp and Painting in Exeter',
+        content: 'When to Call a Professional Decorator',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'Damp problems and paint failure are frustrating, but they\'re solvable with the right approach. At BSR Decorating, we\'ve spent more than two decades working with Exeter\'s diverse building stock, from modern homes to 18th-century listed buildings. We understand Devon\'s climate, the specific challenges faced by different property types, and how to achieve lasting decoration results even in challenging conditions.',
+        content: 'While some condensation issues can be resolved with better ventilation and lifestyle changes, most damp problems in Exeter properties require professional assessment and treatment. This is particularly true for period properties, where incorrect diagnosis and treatment can cause expensive long-term damage.',
       },
       {
         type: 'paragraph',
-        content: 'Whether you\'re dealing with damp issues in a Victorian terrace in Heavitree, a listed building in one of Exeter\'s 20 conservation areas, or a modern property with condensation problems, we can help identify the root cause and create a lasting solution that goes far beyond simply covering the problem with another coat of paint.',
+        content: 'At BSR Decorating, we\'ve worked on properties throughout Exeter for over 20 years, from listed buildings in Topsham to modern developments in Cranbrook. We understand Devon\'s specific challenges – the climate, the building stock, and the appropriate solutions for each property type. We always investigate damp issues thoroughly before proposing any decorating work, and we\'re happy to recommend specialists for remedial work beyond our scope.',
+      },
+      {
+        type: 'paragraph',
+        content: 'If you\'re dealing with recurring paint problems caused by damp, we offer free surveys and honest advice. Sometimes the solution is straightforward ventilation improvements and the right paint system. Sometimes it requires more extensive remedial work. Either way, we\'ll give you a clear assessment and a realistic quotation.',
       },
       {
         type: 'quoteCTA',
-        content: 'Tired of paint that keeps failing because of damp? Get expert advice and a free, no-obligation quote from BSR Decorating. We\'ll assess your property, explain exactly what\'s causing the problem, and provide a clear solution that will actually last. Contact us today to discuss your project.',
+        content: 'Dealing with damp and paint problems in your Exeter property? Get expert advice and a free, no-obligation survey from BSR Decorating. Call us today or request a quote online – we\'ll identify the real cause and recommend the right solution for your home.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For more guidance on painting period properties in Exeter, read our guide to <a href="/blog/decorating-tips-exeter-period-homes">decorating tips for Exeter period homes</a> or learn about <a href="/blog/breathable-paint-old-houses-complete-guide">breathable paint for old houses</a>. If you\'re in Topsham, our <a href="/areas/topsham">Topsham decorator services page</a> has specific information about working on properties in the conservation area.',
       },
     ],
   },
