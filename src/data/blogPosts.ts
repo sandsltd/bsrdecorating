@@ -152,8 +152,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 30,
-    title: 'Heritage Paint Colours for Topsham Homes: A Complete Guide to Period-Appropriate Palettes',
-    excerpt: 'Discover authentic heritage paint colours for your Topsham period property, from Georgian elegance to Victorian richness.',
+    title: 'Heritage Paint Colours for Topsham Homes: Your Complete Period-Appropriate Guide',
+    excerpt: 'Expert guide to choosing authentic heritage paint colours for Topsham\'s Georgian, Victorian and Edwardian properties—from conservation area rules to period palettes.',
     category: 'Heritage Restoration',
     date: '2026-03-15',
     readTime: '9 min read',
