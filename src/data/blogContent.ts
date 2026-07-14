@@ -3743,57 +3743,54 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'If you own a period property in Exeter or Topsham, you\'ve likely heard decorators mention breathable paint. With 994 listed buildings across Exeter and 228 in Topsham alone, understanding breathable paint systems isn\'t just good practice, it\'s essential for preserving these historic homes. Yet many homeowners remain confused about what breathable paint actually is, why it matters, and whether their property truly needs it.',
+        content: 'Walk down any street in Topsham\'s conservation area or through St Leonard\'s in Exeter, and you\'ll see hundreds of period properties with one thing in common: walls that were built to breathe. Yet thousands of these historic homes across Devon are suffocating under layers of modern plastic paint, trapping moisture and causing damage that costs homeowners thousands to repair.',
       },
       {
         type: 'paragraph',
-        content: 'Modern emulsions and plastic-based paints can trap moisture inside traditional walls, leading to damp problems, peeling paint, and even structural damage. After more than 20 years decorating period properties across Devon, we\'ve seen the difference the right paint system makes. This guide explains everything you need to know about breathable paint for old houses, from the science behind it to practical product recommendations for Devon\'s coastal climate.',
+        content: 'With 994 listed buildings in Exeter alone and 228 in Topsham, understanding breathable paint isn\'t optional for period property owners—it\'s essential. After more than 20 years decorating heritage properties across Devon, we\'ve seen countless examples where the wrong paint choice has led to damp problems, blown plaster, and peeling paint within months. This guide explains everything you need to know about breathable paint for old houses, from the science behind it to specific product recommendations for our coastal climate.',
       },
       {
         type: 'heading',
-        content: 'What Makes Paint Breathable?',
+        content: 'What Actually Makes Paint Breathable?',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'Breathable paint allows water vapour to pass through the paint film, letting walls dry naturally whilst still providing protection from the elements. This breathability is measured by vapour permeability, often expressed as an SD value. The lower the SD value, the more breathable the paint.',
+        content: 'Breathable paint allows water vapour to pass through the paint film whilst still protecting walls from rain and weather. This breathability is measured by vapour permeability, typically expressed as an SD value (the lower the number, the more breathable the paint). Traditional mineral paints might have an SD value below 0.05, whilst standard modern emulsions can exceed 2.0—effectively creating a plastic barrier.',
       },
       {
         type: 'paragraph',
-        content: 'Traditional buildings constructed before 1919 were built to breathe. Lime mortar, cob walls, and soft bricks all allow moisture to move through them. This moisture comes from everyday activities like cooking and bathing, but also from groundwater rising through walls without damp-proof courses, something standard in older properties throughout St Leonard\'s, Pennsylvania, and Heavitree.',
+        content: 'Traditional buildings constructed before 1919 were designed as complete breathable systems. Lime mortar, cob walls, lath and plaster, and soft Devon sandstone bricks all work together to manage moisture. This isn\'t just about humidity from cooking and bathing—in older properties throughout Heavitree, Pennsylvania, and St David\'s, moisture also rises from the ground through walls that lack damp-proof courses.',
       },
       {
         type: 'paragraph',
-        content: 'When you seal these walls with modern plastic-based paints, you trap moisture inside. The result? Damp patches, blown plaster, peeling paint, and in severe cases, timber decay. We\'ve remedied countless properties in Topsham\'s conservation area where previous decorators used standard emulsion on lime plaster walls, creating exactly these problems.',
+        content: 'When you seal these walls with modern vinyl or acrylic emulsion, you create a moisture trap. Water vapour can\'t escape, so it condenses inside the wall structure. The paint starts to bubble and peel, plaster becomes damp and crumbly, and in severe cases, hidden timber joists begin to rot. We\'ve remedied dozens of properties in Topsham where previous decorators used standard vinyl emulsion on lime plaster—the damage can be extensive and expensive to reverse.',
       },
       {
         type: 'heading',
-        content: 'Does Your Devon Property Need Breathable Paint?',
+        content: 'Does Your Exeter Property Need Breathable Paint?',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'Not every older property requires breathable paint throughout, but certain characteristics indicate you should use it:',
+        content: 'Not every older property requires breathable paint systems throughout, but certain characteristics are clear indicators you should use them:',
       },
       {
         type: 'list',
         content: [
           'Built before 1919 with solid walls (no cavity)',
-          'Constructed with lime mortar, cob, or traditional soft bricks',
-          'Listed building status or within one of Exeter\'s 20 conservation areas',
-          'Lime plaster on internal walls',
-          'No damp-proof course or membrane',
-          'Previous damp issues, particularly along ground floor walls',
-          'Located near water, such as Topsham\'s waterfront properties along the Exe estuary',
+          'Constructed using lime mortar rather than cement',
+          'Traditional materials: cob, wattle and daub, or soft Devon sandstone bricks',
+          'Listed building status or located within one of Exeter\'s 20 conservation areas',
+          'Lime plaster on internal walls (common in properties around Southernhay and The Close)',
+          'No damp-proof course, typical of pre-1875 construction',
+          'Previous damp problems or paint failure, especially if modern paints were used',
+          'North-facing walls or areas with limited ventilation',
         ],
       },
       {
         type: 'paragraph',
-        content: 'Victorian and Edwardian terraces in areas like Newtown and Mount Pleasant often fall into this category. Even if your property has been renovated, if the original construction used traditional materials, breathable paint remains the best choice for long-term preservation.',
-      },
-      {
-        type: 'paragraph',
-        content: 'For properties built after 1919 with cavity walls and damp-proof courses, standard modern paints are generally suitable. However, even some interwar properties used lime-based materials, so it\'s worth having a professional assessment if you\'re unsure. Our [heritage property painting service](/areas/exeter/heritage-property-painting) includes a full survey to determine the right paint system for your specific building.',
+        content: 'Interestingly, we sometimes recommend breathable systems in newer properties too—particularly in poorly ventilated rooms or where there\'s a history of condensation problems. Modern new-build estates like those in Cranbrook can benefit from breathable paint in bathrooms and kitchens where moisture levels run high.',
       },
       {
         type: 'heading',
@@ -3801,157 +3798,206 @@ export const blogContent: Record<string, BlogContentData> = {
         level: 2,
       },
       {
-        type: 'subheading',
-        content: 'Lime Wash',
+        type: 'paragraph',
+        content: 'Several types of paint qualify as \'breathable,\' but they\'re not all equally suitable for Devon\'s coastal climate or for every type of old building.',
+      },
+      {
+        type: 'heading',
+        content: 'Mineral Paints (Silicate Paint)',
         level: 3,
       },
       {
         type: 'paragraph',
-        content: 'The most traditional and breathable option, lime wash has been used for centuries. It\'s essentially slaked lime mixed with water and natural pigments. Lime wash is exceptionally breathable, naturally antimicrobial, and develops a beautiful matte, chalky finish that weathers gracefully.',
+        content: 'The gold standard for breathability. Mineral paints bond chemically with the substrate through a process called silification, creating a permanent, highly breathable finish. Brands like KEIM and Earthborn Silicate Masonry are excellent for exterior work on listed buildings and properties in conservation areas.',
       },
       {
         type: 'paragraph',
-        content: 'However, lime wash requires specific application techniques and regular maintenance, typically needing reapplication every 3-5 years. It\'s ideal for the most sensitive heritage properties, particularly cob buildings common in rural Devon. We use lime wash extensively on listed cottages and farmhouses where authenticity and maximum breathability are priorities.',
+        content: 'We specify mineral paints for many projects in Topsham\'s waterfront properties where salt-laden air and high humidity demand the most breathable system available. The downside? They\'re more expensive (typically £40-60 per litre) and require specific application techniques—this isn\'t a DIY product.',
       },
       {
-        type: 'subheading',
-        content: 'Clay Paint',
+        type: 'heading',
+        content: 'Lime Paint and Limewash',
         level: 3,
       },
       {
         type: 'paragraph',
-        content: 'Clay paints combine natural clay with mineral pigments and natural binders. They\'re highly breathable, completely natural, and create a distinctive flat, velvety finish. Brands like Earthborn Claypaint and Auro offer excellent clay-based systems.',
+        content: 'Traditional lime-based paints are highly breathable and authentic for properties built before 1850. Limewash creates a soft, chalky finish that weathers beautifully on cob cottages and lime-rendered buildings throughout Devon villages. However, limewash requires regular maintenance—expect to refresh it every 3-5 years depending on exposure.',
       },
       {
         type: 'paragraph',
-        content: 'Clay paints work beautifully on lime plaster and are particularly good for bedrooms, as they help regulate humidity. They\'re less durable than mineral paints, so we typically recommend them for low-traffic areas or period properties where authenticity trumps practicality.',
+        content: 'Modern lime paints (like Earthborn Claypaint or Little Greene Limewash) offer better durability whilst maintaining excellent breathability. These work particularly well on internal lime plaster in period properties around St Leonard\'s and Pennsylvania.',
       },
       {
-        type: 'subheading',
-        content: 'Silicate (Mineral) Paint',
+        type: 'heading',
+        content: 'Clay Paints',
         level: 3,
       },
       {
         type: 'paragraph',
-        content: 'Silicate paints, also called mineral paints, chemically bond with mineral substrates like lime plaster, render, and masonry. Products from Keim, Bauwerk, and Graphenstone offer excellent breathability combined with exceptional durability, often lasting 20+ years externally.',
+        content: 'Clay-based paints offer very good breathability combined with a beautiful matt finish. Earthborn Claypaint is our go-to for interior work in period properties—it\'s more forgiving than mineral paint, available in an excellent range of heritage colours, and suitable for DIY application with proper preparation.',
       },
       {
         type: 'paragraph',
-        content: 'This is our most frequently recommended system for [period properties in Topsham](/heritage-property-restoration-topsham) and Exeter. Silicate paints provide the breathability traditional buildings need whilst offering the durability modern homeowners expect. They\'re particularly effective on exposed coastal properties where Devon\'s salt-laden air and driving rain demand robust protection.',
+        content: 'At around £35 per 2.5 litres, clay paints sit between budget emulsion and premium mineral paint on price, offering excellent value for breathability.',
       },
       {
-        type: 'subheading',
-        content: 'Breathable Emulsions',
+        type: 'heading',
+        content: 'Natural Emulsions',
         level: 3,
       },
       {
         type: 'paragraph',
-        content: 'Several manufacturers produce emulsions marketed as breathable or microporous. Products like Farrow & Ball Modern Emulsion, Little Greene Intelligent Matt, and Earthborn Lifestyle Emulsion offer improved breathability compared to standard vinyl emulsions.',
+        content: 'Some modern \'breathable emulsions\' marketed for period properties don\'t match the performance of mineral or lime systems. Products vary widely—some are genuinely breathable (like Farrow & Ball Estate Emulsion), whilst others simply have slightly higher permeability than standard vinyl paint.',
       },
       {
         type: 'paragraph',
-        content: 'Whilst more breathable than conventional paints, these aren\'t suitable for the most sensitive period properties. We use them in situations where a property has mixed construction, newer extensions on older buildings, or where budget constraints make full mineral paint systems impractical. They\'re a reasonable compromise, but not a substitute for proper lime or silicate systems on traditional structures.',
+        content: 'Always check the technical data sheet and look for SD values below 0.5 if you\'re considering these products for sensitive period properties.',
       },
       {
         type: 'heading',
-        content: 'Choosing the Right System for Devon\'s Climate',
+        content: 'Exterior vs Interior: Different Requirements',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'Devon\'s coastal climate presents specific challenges. High humidity, salt air, driving rain from the southwest, and relatively mild winters create conditions where moisture management is critical. Properties in Topsham, particularly those near the estuary, face constant exposure to moisture-laden air.',
+        content: 'The most breathable paint isn\'t always necessary or appropriate everywhere in your property. We typically take a targeted approach based on the specific conditions of each room and surface.',
       },
       {
         type: 'paragraph',
-        content: 'For external walls, we typically recommend silicate paint systems. They provide the weather resistance Devon properties need whilst maintaining breathability. On particularly exposed elevations, we often use masonry paint systems from Keim or Graphenstone, which offer enhanced water resistance without sacrificing vapour permeability.',
+        content: 'For exterior masonry on listed buildings or solid-walled properties, we almost always recommend mineral paint or lime systems. Devon\'s coastal weather—particularly in Dawlish, Exmouth, and coastal areas of Topsham—demands paint that can handle salt air, driving rain, and high humidity whilst allowing the wall to dry between weather events.',
       },
       {
         type: 'paragraph',
-        content: 'Internally, clay paints work wonderfully in bedrooms and living spaces, creating beautiful, natural finishes that regulate humidity. For kitchens and bathrooms where moisture levels are higher, breathable silicate systems provide better durability whilst still allowing walls to dry.',
-      },
-      {
-        type: 'paragraph',
-        content: 'The choice also depends on existing substrate condition. Lime plaster in good condition can take any breathable system. However, if previous decorators have applied modern paints, you may need to remove them, or choose a system that can work over existing coatings. This assessment requires experience, as making the wrong choice can waste thousands of pounds.',
-      },
-      {
-        type: 'heading',
-        content: 'Application Considerations and Costs',
-        level: 2,
-      },
-      {
-        type: 'paragraph',
-        content: 'Breathable paint systems require different application techniques compared to standard emulsions. Lime wash and clay paints need careful brush application. Silicate paints require specific primers and often multiple coats to achieve proper coverage and bonding.',
-      },
-      {
-        type: 'paragraph',
-        content: 'Surface preparation is critical. Walls must be clean, sound, and appropriately porous. Sometimes this means removing previous unsuitable coatings, a time-consuming process that significantly affects project costs. On listed buildings, this work may require consent from conservation officers.',
-      },
-      {
-        type: 'paragraph',
-        content: 'Material costs for breathable paint systems are higher than standard emulsions. Expect to pay £40-80 per litre for quality silicate paints, compared to £15-25 for premium standard emulsions. However, the extended lifespan and protection of your property\'s fabric make this a worthwhile investment.',
-      },
-      {
-        type: 'paragraph',
-        content: 'For a typical Victorian terrace bedroom in Heavitree, using breathable paint might add £200-400 to the project cost compared to standard emulsion. For a full house exterior in Topsham, the premium could be £1,500-3,000. But when you consider you\'re protecting a property valued at £506,000 on average in Topsham, and avoiding potential damp repairs costing £5,000-15,000, the investment makes financial sense.',
-      },
-      {
-        type: 'heading',
-        content: 'Common Mistakes to Avoid',
-        level: 2,
-      },
-      {
-        type: 'paragraph',
-        content: 'The most frequent mistake we see is using breathable paint over non-breathable undercoats or existing paint films. Breathability is only as good as the least breathable layer. If you apply lime wash over vinyl emulsion, you gain nothing.',
-      },
-      {
-        type: 'paragraph',
-        content: 'Another error is using breathable paint to fix damp problems caused by structural issues. Breathable paint manages moisture vapour; it doesn\'t solve rising damp from failed drainage, leaking gutters, or bridged damp-proof courses. We always identify and remedy the source of moisture before redecorating.',
-      },
-      {
-        type: 'paragraph',
-        content: 'Some decorators use breathable systems unnecessarily on modern properties where standard paints are perfectly suitable, adding cost without benefit. Conversely, others use standard paints on period properties where breathable systems are essential, storing up problems for the future.',
-      },
-      {
-        type: 'paragraph',
-        content: 'Finally, inadequate surface preparation undermines even the best breathable paint systems. Rushing preparation to save time or money inevitably leads to poor results and shortened lifespan.',
-      },
-      {
-        type: 'heading',
-        content: 'Working with Listed Buildings and Conservation Areas',
-        level: 2,
-      },
-      {
-        type: 'paragraph',
-        content: 'If your property is listed or within one of Exeter\'s conservation areas, including Topsham, St Leonard\'s, or Pennsylvania Park, using appropriate breathable paint systems isn\'t just good practice, it may be a planning requirement. Conservation officers increasingly specify breathable paints and traditional finishes to preserve historic character.',
-      },
-      {
-        type: 'paragraph',
-        content: 'Recent enforcement action in Topsham, where a property owner faced a £38,000 fine for unauthorised alterations to a listed building, demonstrates how seriously these regulations are taken. Whilst paint choice alone rarely triggers enforcement, using inappropriate materials can contribute to damage that does attract official attention.',
-      },
-      {
-        type: 'paragraph',
-        content: 'Our [Topsham conservation area decorating service](/topsham-conservation-area-decorating-guide) includes liaison with conservation officers when required, ensuring your project complies with all relevant regulations whilst achieving beautiful, lasting results.',
-      },
-      {
-        type: 'heading',
-        content: 'Making the Right Choice for Your Property',
-        level: 2,
-      },
-      {
-        type: 'paragraph',
-        content: 'Choosing breathable paint for old houses isn\'t about following trends; it\'s about understanding how traditional buildings work and selecting systems that work with, not against, their original construction. The wrong paint system can cause thousands of pounds of damage. The right system will preserve your property\'s fabric, maintain its value, and create beautiful, durable finishes.',
-      },
-      {
-        type: 'paragraph',
-        content: 'For period properties in Exeter, Topsham, and across Devon, breathable paint systems represent the professional standard. Whether you choose lime wash for maximum authenticity, clay paint for natural beauty, or silicate systems for durability and breathability, you\'re making an investment in your property\'s long-term health.',
-      },
-      {
-        type: 'paragraph',
-        content: 'At BSR Decorating, we\'ve been specifying and applying breathable paint systems on Devon period properties for over 20 years. We understand the unique challenges of coastal climate, traditional construction, and heritage regulations. Every project begins with a thorough assessment of your property\'s construction, condition, and requirements, ensuring we recommend the right system for your specific situation.',
+        content: 'For interior walls, clay paint or natural emulsion often provides sufficient breathability in bedrooms and living areas. Bathrooms and kitchens in older properties benefit from the highest-spec breathable systems you can afford—these rooms generate the most moisture. We\'ve seen too many Victorian bathrooms in Heavitree and St Leonard\'s where standard bathroom emulsion has trapped steam, leading to mould growth behind the paint film.',
       },
       {
         type: 'quoteCTA',
-        content: 'Considering breathable paint for your period property? Contact BSR Decorating for a free, no-obligation consultation and quote. We\'ll assess your property\'s needs and recommend the most appropriate breathable paint system for lasting protection and beautiful results.',
+        content: 'Not sure which breathable paint system your period property needs? We provide free site surveys and detailed specifications for heritage properties throughout Exeter and Topsham.',
+      },
+      {
+        type: 'heading',
+        content: 'Common Mistakes with Breathable Paint',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Even expensive breathable paint will fail if applied incorrectly. These are the mistakes we see most often when remedying failed paint jobs:',
+      },
+      {
+        type: 'heading',
+        content: 'Painting Over Modern Emulsion',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Breathable paint can\'t work if it\'s sitting on top of a plastic barrier. If your walls currently have vinyl or acrylic emulsion, you must remove it before applying mineral paint or lime systems. We typically use chemical strippers or steam for this—it\'s labour-intensive but essential.',
+      },
+      {
+        type: 'heading',
+        content: 'Using Cement-Based Filler',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Hard cement-based fillers create impermeable patches that force moisture around them, causing damage at the edges. For lime plaster walls, we use lime-based fillers that match the breathability of the substrate.',
+      },
+      {
+        type: 'heading',
+        content: 'Inadequate Surface Preparation',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Mineral paints in particular require clean, sound, slightly porous surfaces. Any loose material, efflorescence, or organic growth must be removed. We often use fungicidal wash on north-facing exterior walls in Topsham where algae growth is common.',
+      },
+      {
+        type: 'heading',
+        content: 'Wrong Primer Choice',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Each breathable paint system requires compatible primers. Using standard acrylic primer under mineral paint defeats the entire purpose. Always use the manufacturer\'s recommended primer system.',
+      },
+      {
+        type: 'heading',
+        content: 'Recommended Products for Devon Period Properties',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Based on two decades of experience with Devon\'s climate and building stock, these are the products we most frequently specify:',
+      },
+      {
+        type: 'paragraph',
+        content: '**For exterior masonry (listed buildings and solid walls):** KEIM Soldalit or Earthborn Silicate Masonry Paint. Premium price but exceptional durability—expect 15-20 years on south-facing elevations, longer on north-facing walls.',
+      },
+      {
+        type: 'paragraph',
+        content: '**For internal lime plaster:** Earthborn Claypaint offers the best balance of performance, availability, and colour choice. The Topsham location works beautifully in period properties, and the finish improves with age.',
+      },
+      {
+        type: 'paragraph',
+        content: '**For traditional cob or lime render:** Traditional limewash from suppliers like Lime Green Products or Mike Wye & Associates. These specialist suppliers understand Devon\'s vernacular buildings and can advise on appropriate mixes.',
+      },
+      {
+        type: 'paragraph',
+        content: '**For heritage colour matching:** Little Greene\'s Limewash range provides excellent breathability with a carefully researched palette suitable for Georgian and Victorian properties throughout Exeter\'s conservation areas.',
+      },
+      {
+        type: 'heading',
+        content: 'Cost Considerations',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Breathable paint systems cost more than standard emulsion—typically 2-3 times as much for materials. A typical bedroom using Earthborn Claypaint might cost £120-150 in paint versus £40-50 for standard emulsion. Mineral paint systems for exterior work can cost £500-800 for a modest cottage.',
+      },
+      {
+        type: 'paragraph',
+        content: 'However, consider the lifespan and protection offered. Standard emulsion on inappropriate substrates might last 2-3 years before problems appear. Quality breathable systems should last 10-15 years internally and 15-25 years externally, whilst actually protecting your property rather than damaging it.',
+      },
+      {
+        type: 'paragraph',
+        content: 'The labour cost for proper application is higher too—mineral paints require specific techniques, and proper preparation takes longer. For a typical Victorian terrace in Heavitree, expect to pay around £4,000-6,000 for a full internal redecoration using appropriate breathable systems, versus £2,500-3,500 using standard paint. The difference represents proper preparation, suitable materials, and expertise.',
+      },
+      {
+        type: 'heading',
+        content: 'Planning Permission and Listed Building Consent',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'If your property is listed or within a conservation area, check requirements before repainting. Grade I and Grade II* listed buildings typically require Listed Building Consent for any external repainting. Grade II listings may not require consent if you\'re repainting in the same colour scheme, but rules vary.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter City Council\'s conservation officers generally welcome breathable paint systems on traditional buildings—these align with best practice for heritage conservation. We work regularly with the planning department on projects in Topsham and Exeter\'s conservation areas and can advise on the consent process.',
+      },
+      {
+        type: 'paragraph',
+        content: 'One Topsham property owner received a £38,000 fine in December 2025 for unauthorised alterations to a listed building. Taking the time to understand requirements and seek proper consent protects both your property and your finances.',
+      },
+      {
+        type: 'heading',
+        content: 'When to Call a Professional',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Whilst some breathable paint systems suit DIY application, we recommend professional specification and application for listed buildings, properties with active damp problems, or anywhere mineral paints are appropriate. The initial cost of specialist paint makes poor application an expensive mistake.',
+      },
+      {
+        type: 'paragraph',
+        content: 'A professional heritage decorator can assess your property\'s construction, identify the underlying substrate, specify appropriate systems, and ensure proper preparation. For properties in Exeter\'s conservation areas or listed buildings in Topsham, this expertise often pays for itself in avoided problems and preserved property value.',
+      },
+      {
+        type: 'paragraph',
+        content: 'We provide detailed specifications for breathable paint systems, including substrate analysis, appropriate product selection for Devon\'s climate, and written quotations that explain exactly what we\'re proposing and why. For period property owners who want to understand their options before committing, we offer free site surveys throughout Exeter, Topsham, and surrounding areas.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Own a period property in Exeter or Topsham? We specialise in heritage painting using appropriate breathable systems. Get expert advice and a detailed quote for your project.',
       },
     ],
   },

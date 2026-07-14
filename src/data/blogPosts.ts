@@ -172,8 +172,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 28,
-    title: 'Breathable Paint for Old Houses: A Complete Guide for Devon Period Property Owners',
-    excerpt: 'Discover why breathable paint is essential for period properties and how choosing the right system can prevent damp, preserve historic fabric, and save thousands in repairs.',
+    title: 'Breathable Paint for Old Houses: The Complete Devon Property Owner\'s Guide',
+    excerpt: 'Everything Exeter and Topsham period property owners need to know about breathable paint systems, from identifying the right products to avoiding costly mistakes.',
     category: 'Heritage Restoration',
     date: '2026-03-08',
     readTime: '9 min read',
