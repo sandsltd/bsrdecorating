@@ -2984,60 +2984,60 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'Living in one of Exeter\'s 20 conservation areas or Topsham\'s historic waterfront comes with undeniable charm—Georgian townhouses, Victorian terraces, and period features that define Devon\'s architectural heritage. But when it comes to repainting your home\'s exterior, the rules aren\'t always straightforward.',
+        content: 'If you own property in one of Exeter\'s 20 conservation areas—from Topsham\'s Georgian waterfront to St Leonard\'s Victorian terraces—you\'ll know the privilege of living amongst Devon\'s finest period architecture. But when it\'s time to refresh your home\'s exterior paintwork, the planning rules can feel like navigating a maze.',
       },
       {
         type: 'paragraph',
-        content: 'Get it wrong, and the consequences can be severe. In December 2025, a Topsham property owner faced a £38,000 fine for unauthorised alterations to a listed building. While most conservation area painting work doesn\'t require planning permission, understanding exactly where the boundaries lie could save you significant time, money, and stress.',
+        content: 'The stakes are high. In December 2025, a Topsham property owner was fined £38,000 for unauthorised work on a listed building. Whilst most conservation area painting doesn\'t require planning permission, knowing exactly where the line falls could save you months of delays, thousands in fines, and the headache of retrospective applications.',
       },
       {
         type: 'paragraph',
-        content: 'As a [professional decorator in Exeter](/areas/exeter) with over 20 years\' experience working on period properties, I\'ve helped hundreds of homeowners navigate these regulations. This guide explains exactly what you can—and can\'t—do without planning permission in Devon\'s conservation areas.',
+        content: 'As an [Exeter-based decorator](/areas/exeter) with over 20 years\' experience working on [heritage properties across Devon](/areas/exeter/heritage-property-painting), I\'ve guided countless homeowners through these regulations. This article explains precisely what conservation area painting rules apply in 2026, what you can do without permission, and when you\'ll need to submit an application to Exeter City Council.',
       },
       {
         type: 'heading',
-        content: 'What Makes a Conservation Area Special?',
+        content: 'Understanding Exeter\'s Conservation Areas',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'Conservation areas are designated by Exeter City Council and East Devon District Council to protect places of special architectural or historic interest. The goal isn\'t to freeze properties in time, but to manage change in ways that preserve their distinctive character.',
+        content: 'Conservation areas are designated by Exeter City Council and East Devon District Council to protect neighbourhoods of special architectural or historic character. The objective isn\'t to prevent all change—it\'s to ensure that alterations respect and enhance the area\'s distinctive qualities.',
       },
       {
         type: 'paragraph',
-        content: 'Exeter has 20 designated conservation areas, including Topsham (with 228 listed buildings), St Leonard\'s (120 listed buildings), Pennsylvania Park, Baring Crescent, Southernhay, St David\'s, Heavitree, Alphington, and the Cathedral Quarter. Each has its own character—from Topsham\'s Dutch-gabled merchants\' houses to St Leonard\'s Victorian terraces—but all share elevated planning controls.',
+        content: 'Exeter has 20 conservation areas protecting everything from medieval streets to Victorian suburbs. The most significant include Topsham (228 listed buildings), St Leonard\'s (120 listed buildings), Pennsylvania Park, Baring Crescent/Mont le Grand, Southernhay, St David\'s/Longbrook, Heavitree, Alphington, and the Cathedral Quarter. Topsham alone spans the historic waterfront, Fore Street, and surrounding Georgian and Victorian streets.',
       },
       {
         type: 'paragraph',
-        content: 'In a conservation area, certain \'permitted development\' rights that apply elsewhere are automatically removed. This means work that wouldn\'t need permission on a modern estate might require approval in historic neighbourhoods.',
+        content: 'Living in a conservation area means certain \'permitted development\' rights—automatic permissions that apply to most homes—are withdrawn. External alterations that wouldn\'t need approval in a modern estate often require planning consent in conservation areas. This affects everything from satellite dishes to windows, but painting rules are more nuanced.',
       },
       {
         type: 'heading',
-        content: 'Painting Work That Doesn\'t Need Planning Permission',
+        content: 'What Exterior Painting Doesn\'t Need Planning Permission',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'The good news: most routine external painting and maintenance falls under permitted development, even in conservation areas. You can proceed without planning permission for:',
+        content: 'The reassuring news: the majority of routine external painting and maintenance doesn\'t require planning permission, even in conservation areas. Like-for-like painting that maintains the building\'s character is generally permitted development.',
+      },
+      {
+        type: 'paragraph',
+        content: 'You can proceed without planning permission for:',
       },
       {
         type: 'list',
         content: [
-          'Repainting rendered or plastered walls in similar or traditional colours appropriate to the building\'s age and the area\'s character',
-          'Painting or repainting wooden windows, doors, fascias, and bargeboards',
-          'Maintaining previously painted brickwork in appropriate colours',
-          'Repainting railings, gates, and decorative ironwork',
-          'Touching up or fully repainting any surface already painted, provided you\'re not making dramatic colour changes',
-          'Applying breathable lime-based paints to historic render or masonry',
+          'Repainting rendered or plastered walls in historically appropriate colours that suit the building\'s age and the area\'s character',
+          'Painting or repainting wooden windows, doors, fascias, bargeboards, and other timber elements in traditional colours',
+          'Repainting existing decorative ironwork, railings, gates, and balconies',
+          'Maintaining and repainting existing stucco, render, or decorative plasterwork',
+          'Touching up or repainting previously painted brickwork or stonework (though painting unpainted masonry is different—see below)',
+          'Repainting gutters, downpipes, and rainwater goods in traditional colours like black, dark grey, or to match existing schemes',
         ],
       },
       {
         type: 'paragraph',
-        content: 'The key principle is \'like-for-like\' maintenance using colours that respect the property\'s period and the streetscape. If your Pennsylvania Park Victorian terrace is painted cream, repainting it in a similar heritage cream or soft stone colour is permitted. If your Topsham Georgian townhouse has white sash windows, repainting them white requires no permission.',
-      },
-      {
-        type: 'paragraph',
-        content: 'Our [heritage property painting service](/areas/exeter/heritage-property-painting) specialises in selecting period-appropriate colours that comply with conservation guidelines while protecting your property\'s character.',
+        content: 'The critical principle: if your property has been painted a certain way historically and you\'re maintaining that finish, you typically won\'t need permission. Repainting a cream-rendered Georgian house in Topsham in a similar cream shade? Generally fine. Repainting Victorian sash windows in Heavitree in traditional white or off-white? Usually permitted.',
       },
       {
         type: 'heading',
@@ -3046,22 +3046,22 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Planning permission becomes necessary when painting work materially affects the building\'s appearance or the conservation area\'s character. This typically includes:',
+        content: 'Planning permission is required when your painting work materially alters the building\'s appearance or introduces changes that affect the conservation area\'s character. This includes:',
       },
       {
         type: 'list',
         content: [
-          'Painting previously unpainted brickwork—a common request that almost always requires permission, as it fundamentally alters the building\'s character',
-          'Dramatic colour changes that clash with neighbouring properties or the area\'s historic palette (such as painting a Georgian terrace bright purple or lime green)',
-          'Painting stonework that was intended to remain natural',
-          'Any painting work to listed buildings beyond routine maintenance—listed building consent is required for most changes',
-          'Removing paint from historic brickwork (this can damage the brick and often needs consent)',
-          'Using modern masonry paints on buildings where breathable finishes are required',
+          'Painting previously unpainted brickwork or stonework—this is considered a material alteration and almost always requires permission in conservation areas',
+          'Painting render, walls, or woodwork in colours that are historically inappropriate or out of character with the building and surrounding area (bright modern colours, for example)',
+          'Removing existing paint from historic brickwork or stonework through aggressive methods like sandblasting, which can cause irreversible damage',
+          'Changing the colour scheme dramatically—for example, painting a traditional cream Georgian house in Topsham in bright blue or pink',
+          'Painting or treating exterior walls with non-breathable modern paints on historic buildings where breathable finishes are required',
+          'Altering decorative features, mouldings, or architectural details that contribute to the building\'s character',
         ],
       },
       {
         type: 'paragraph',
-        content: 'The distinction can be subtle. Repainting a Heavitree Victorian terrace from magnolia to soft heritage blue likely wouldn\'t need permission. Painting the same house hot pink probably would, as it would harm the conservation area\'s character.',
+        content: 'The December 2025 Topsham case demonstrates the importance of compliance. The £38,000 fine was issued for unauthorised alterations to a listed building—a stark reminder that councils enforce these regulations seriously, particularly when work damages historic fabric.',
       },
       {
         type: 'heading',
@@ -3070,174 +3070,162 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'If your property is listed (Exeter has 994 listed buildings across all grades), different rules apply. Listed building consent is required for any work that affects the building\'s special architectural or historic interest, which includes most external painting decisions beyond straightforward maintenance.',
+        content: 'If your property is a listed building (Grade I, II*, or II), even stricter controls apply. Exeter has 994 listed buildings across its conservation areas, with the highest concentrations in St David\'s (380), Topsham (228), and St Leonard\'s/Newtown (120).',
       },
       {
         type: 'paragraph',
-        content: 'For listed properties, you\'ll need consent for:',
+        content: 'For listed buildings, you need Listed Building Consent for any work that affects the character of the building—even internal alterations. External painting that changes the appearance, uses inappropriate materials, or damages historic fabric requires consent. This includes:',
       },
       {
         type: 'list',
         content: [
-          'Any change to external paint colours, even if repainting in a similar shade',
+          'Changing exterior colour schemes',
+          'Using modern non-breathable paints on historic masonry or render',
           'Painting previously unpainted surfaces',
-          'Removing existing paint',
-          'Changing paint types (such as switching from traditional lime-based paint to modern masonry paint)',
-          'Any work to historic joinery, even routine maintenance in some cases',
+          'Removing existing paint finishes',
+          'Using inappropriate preparation methods',
         ],
       },
       {
         type: 'paragraph',
-        content: 'Listed building consent applications can take 8-12 weeks, so plan well ahead. Many [Topsham property owners](/areas/topsham) working on riverside listed buildings engage heritage specialists early to ensure colour schemes and materials gain approval first time.',
+        content: 'Many [Topsham homeowners](/areas/topsham) discover their property is listed when they first consider exterior work. Always check your property\'s listing status on the Historic England website or Exeter City Council\'s planning portal before starting any project.',
       },
       {
         type: 'heading',
-        content: 'Choosing Conservation-Appropriate Paint Colours',
+        content: 'Choosing Appropriate Paint Colours',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'Even when planning permission isn\'t required, choosing appropriate colours prevents problems down the line. Conservation officers can still serve enforcement notices if your colour choices harm the area\'s character, regardless of whether you needed formal permission.',
+        content: 'Even when planning permission isn\'t required, choosing historically appropriate colours is essential both for respecting your property\'s character and avoiding potential planning issues. In Exeter\'s conservation areas, traditional palettes dominate.',
       },
       {
         type: 'paragraph',
-        content: 'Safe colour choices for Devon conservation areas typically include:',
-      },
-      {
-        type: 'list',
-        content: [
-          'Traditional whites, creams, and stone colours for Georgian and Regency properties',
-          'Soft heritage colours—muted blues, greens, and greys—for Victorian and Edwardian homes',
-          'Deep, rich colours like burgundy, forest green, or navy for Victorian doors and joinery',
-          'Natural timber finishes or traditional paints for exposed wooden elements',
-          'Colours already prevalent in your immediate streetscape',
-        ],
+        content: 'For Georgian and early Victorian properties (common in Topsham, Southernhay, and Pennsylvania), appropriate render colours include off-whites, creams, warm stone colours, and soft greys. Woodwork traditionally used white, off-white, dark green, black, or dark grey. Brightly coloured front doors were rare—stick to traditional greens, black, dark blue, or burgundy.',
       },
       {
         type: 'paragraph',
-        content: 'In Topsham, many Dutch-influenced merchants\' houses traditionally featured white or cream render with contrasting painted timber details. St Leonard\'s Victorian terraces often used brick with painted stone detailing. Understanding your property\'s original finish helps guide appropriate choices.',
+        content: 'Later Victorian and Edwardian properties (prevalent in St Leonard\'s, Heavitree, and Newtown) often featured warmer palettes—terracotta, buff, ochre, and sage green for render, with contrasting trim in cream, white, dark green, or brown.',
       },
       {
         type: 'paragraph',
-        content: 'We maintain a library of conservation-approved colour palettes for Exeter\'s different conservation areas and can recommend schemes that respect your property\'s history while reflecting your personal taste.',
+        content: 'If you\'re uncertain, look at neighbouring period properties that haven\'t been altered, consult Exeter City Council\'s conservation area appraisals (available online), or speak with a [specialist heritage decorator](/areas/exeter/heritage-property-painting) who understands local architectural history. I\'ve worked on dozens of conservation area properties and can advise on appropriate schemes for your specific building and location.',
       },
       {
         type: 'heading',
-        content: 'The Importance of Breathable Paint Systems',
+        content: 'The Right Paint Type Matters',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'Beyond colour, paint type matters enormously in conservation areas. Most period properties in Exeter were built using lime mortar and breathable materials that allow moisture to evaporate naturally. Sealing these buildings with modern plastic-based masonry paints traps moisture, causing damp, render failure, and internal damage.',
+        content: 'In conservation areas—especially on older properties—choosing the correct paint type is as important as colour. Many pre-1919 buildings were constructed with lime mortar, lime render, or soft bricks that need to breathe. Trapping moisture with modern plastic-based paints causes damp, decay, and structural damage.',
       },
       {
         type: 'paragraph',
-        content: 'For properties built before 1919 (which includes most buildings in Exeter\'s conservation areas), breathable paint systems are essential. This includes:',
+        content: 'For historic buildings, breathable paints are essential. These include traditional lime wash, mineral silicate paints, and modern breathable masonry paints specifically designed for heritage properties. These allow water vapour to escape whilst protecting against rain penetration.',
+      },
+      {
+        type: 'paragraph',
+        content: 'On timber elements—windows, doors, fascias—use microporous paints that allow moisture movement whilst providing weather protection. Avoid cheap gloss paints that crack and peel rapidly in Devon\'s damp climate.',
+      },
+      {
+        type: 'paragraph',
+        content: 'I\'ve written a detailed guide on [choosing the best paint for Devon\'s coastal weather](/blog/best-exterior-paint-devon-coastal-weather), which covers breathable options suitable for conservation area properties.',
+      },
+      {
+        type: 'heading',
+        content: 'How to Apply for Planning Permission',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'If your proposed painting work requires planning permission or Listed Building Consent, the application process through Exeter City Council is straightforward but requires careful preparation.',
+      },
+      {
+        type: 'paragraph',
+        content: 'You\'ll need to submit:',
       },
       {
         type: 'list',
         content: [
-          'Traditional lime-based paints and limewashes',
-          'Mineral silicate paints',
-          'Clay-based paints',
-          'Modern breathable masonry paints specifically designed for historic buildings',
+          'A completed application form (available on Exeter City Council\'s planning portal)',
+          'Detailed drawings or photographs showing existing and proposed colours',
+          'Paint manufacturer details and colour references',
+          'A heritage statement explaining why your proposals are appropriate (for listed buildings)',
+          'The application fee (varies depending on application type)',
         ],
       },
       {
         type: 'paragraph',
-        content: 'Using appropriate breathable paints isn\'t just about following regulations—it\'s about protecting your investment. We\'ve seen Victorian terraces in Heavitree where modern masonry paint trapped moisture, leading to blown render and £15,000+ repair bills within five years.',
+        content: 'The council typically decides within eight weeks for planning permission and eight weeks for Listed Building Consent. If your application is refused, you can revise and resubmit with modifications addressing the council\'s concerns.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Exeter City Council\'s conservation officers are helpful and can provide pre-application advice. For complex projects, this informal guidance (sometimes chargeable) can save time and increase approval chances.',
+      },
+      {
+        type: 'heading',
+        content: 'What Happens If You Don\'t Get Permission?',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Carrying out unauthorised work in a conservation area or on a listed building can result in enforcement action. The council can issue an enforcement notice requiring you to reverse the work—meaning repainting at your expense—or apply for retrospective permission.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For listed buildings, unauthorised alterations are a criminal offence under the Planning (Listed Buildings and Conservation Areas) Act 1990. Maximum penalties include unlimited fines and up to two years\' imprisonment for deliberate damage. The £38,000 Topsham fine demonstrates councils\' willingness to prosecute serious breaches.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Even if prosecution doesn\'t follow, unauthorised work creates problems when selling. Solicitors\' searches reveal planning breaches, potentially scuppering sales or requiring expensive remediation before completion.',
+      },
+      {
+        type: 'heading',
+        content: 'Working with a Heritage Painting Specialist',
+        level: 2,
+      },
+      {
+        type: 'paragraph',
+        content: 'Conservation area and listed building painting requires specialist knowledge—understanding breathable materials, appropriate colour palettes, traditional techniques, and planning requirements. Choosing an experienced heritage decorator saves time, avoids costly mistakes, and ensures your property receives appropriate treatment.',
+      },
+      {
+        type: 'paragraph',
+        content: 'At BSR Decorating, I\'ve worked on [heritage properties throughout Exeter and Topsham](/areas/exeter/heritage-property-painting) for over two decades. I can advise on colour selection, specify appropriate breathable paints, prepare applications if needed, and deliver finishes that respect your property\'s character whilst providing lasting protection against Devon\'s coastal weather.',
+      },
+      {
+        type: 'paragraph',
+        content: 'I\'ve helped homeowners navigate everything from straightforward repaints in Heavitree conservation area to complex Listed Building Consent applications for Grade II properties in Topsham. My knowledge of Exeter\'s architectural history and council requirements means your project proceeds smoothly, compliantly, and beautifully.',
       },
       {
         type: 'quoteCTA',
-        content: 'Planning work on a conservation area property? Get expert advice and a free quote from our heritage painting specialists.',
+        content: 'Planning exterior painting work on your conservation area or listed property in Exeter or Topsham? Get expert advice on planning requirements, appropriate colours, and breathable paint specifications. Call BSR Decorating for a free consultation and quote.',
       },
       {
         type: 'heading',
-        content: 'How to Check if You Need Planning Permission',
+        content: 'Key Takeaways: Conservation Area Painting Rules',
         level: 2,
-      },
-      {
-        type: 'paragraph',
-        content: 'If you\'re unsure whether your proposed painting work requires permission, take these steps:',
       },
       {
         type: 'list',
         content: [
-          'Check Exeter City Council\'s online planning portal to confirm your property\'s conservation area status and whether it\'s listed',
-          'Review the specific conservation area appraisal document for your neighbourhood—these often include guidance on appropriate colours and materials',
-          'Request pre-application advice from the council\'s conservation officer (£50-£150 depending on complexity)—this provides written guidance before you commit to a formal application',
-          'Consult neighbours\' properties to understand the prevailing colour palette',
-          'Engage a professional decorator experienced in heritage work who understands local planning requirements',
+          'Most routine repainting in similar, historically appropriate colours doesn\'t need planning permission in conservation areas',
+          'Painting previously unpainted brickwork or stonework, or using inappropriate colours, typically requires permission',
+          'Listed buildings have stricter rules—Listed Building Consent may be needed even for repainting',
+          'Choose breathable paints for pre-1919 buildings to avoid damp and structural problems',
+          'Select colours appropriate to your property\'s age and the area\'s character—consult conservation area appraisals if unsure',
+          'Unauthorised work can result in enforcement action, fines up to £38,000+, and complications when selling',
+          'Pre-application advice from Exeter City Council\'s conservation officers can clarify requirements before you start',
+          'Working with an experienced heritage decorator ensures compliance, appropriate materials, and high-quality results',
         ],
       },
       {
         type: 'paragraph',
-        content: 'Pre-application advice is particularly valuable. For around £100, you\'ll receive written confirmation of whether you need permission and what approach is likely to gain approval, potentially saving you months of wasted time and a refused application.',
-      },
-      {
-        type: 'heading',
-        content: 'What Happens if You Don\'t Follow the Rules?',
-        level: 2,
+        content: 'Conservation area regulations exist to protect the architectural heritage that makes Exeter and Topsham such special places to live. By understanding the rules, choosing appropriate colours and materials, and seeking permission when required, you can maintain your property beautifully whilst preserving its character for future generations.',
       },
       {
         type: 'paragraph',
-        content: 'Carrying out work that requires planning permission without obtaining it is a criminal offence. Exeter City Council can serve an enforcement notice requiring you to reverse the work and restore the original appearance—at your expense.',
-      },
-      {
-        type: 'paragraph',
-        content: 'For listed buildings, unauthorised works can result in prosecution and fines of up to £250,000, as the December 2025 Topsham case demonstrated. Even for non-listed buildings in conservation areas, enforcement action can require complete repainting to an approved colour scheme.',
-      },
-      {
-        type: 'paragraph',
-        content: 'Prevention is far simpler than cure. A 10-minute phone call to the conservation officer or a brief consultation with a heritage painting specialist can clarify your position before work begins.',
-      },
-      {
-        type: 'heading',
-        content: 'Working with Heritage Painting Specialists',
-        level: 2,
-      },
-      {
-        type: 'paragraph',
-        content: 'Professional decorators experienced in conservation area work bring significant advantages:',
-      },
-      {
-        type: 'list',
-        content: [
-          'Knowledge of which colours and paint types comply with local conservation guidelines',
-          'Experience preparing heritage paint specifications for planning applications',
-          'Understanding of breathable paint systems appropriate for period buildings',
-          'Established relationships with local conservation officers',
-          'Skill in traditional preparation techniques that protect historic fabric',
-        ],
-      },
-      {
-        type: 'paragraph',
-        content: 'We regularly work with property owners across Topsham, St Leonard\'s, Pennsylvania, and Exeter\'s other conservation areas, preparing detailed specifications that satisfy planning requirements while achieving beautiful, long-lasting results.',
-      },
-      {
-        type: 'paragraph',
-        content: 'Our typical approach includes a site survey to assess the property\'s condition and history, colour consultation using conservation-appropriate palettes, specification of breathable paint systems matched to your building\'s age and construction, preparation of any required planning documentation, and execution using traditional methods that respect the building\'s character.',
-      },
-      {
-        type: 'heading',
-        content: 'Conservation Area Painting: Summary and Next Steps',
-        level: 2,
-      },
-      {
-        type: 'paragraph',
-        content: 'Most routine painting work in Exeter and Topsham conservation areas doesn\'t require planning permission, provided you\'re maintaining existing finishes in appropriate colours. However, painting unpainted brickwork, making dramatic colour changes, or working on listed buildings requires formal consent.',
-      },
-      {
-        type: 'paragraph',
-        content: 'When in doubt, seek advice early. A brief conversation with the council\'s conservation officer or an experienced [heritage decorator](/areas/exeter/heritage-property-painting) can save significant headaches later. Devon\'s conservation areas are precious—protecting them doesn\'t mean living in a museum, but it does mean making thoughtful choices that respect their special character.',
-      },
-      {
-        type: 'paragraph',
-        content: 'If you\'re planning exterior painting work on a conservation area property in Exeter, Topsham, or surrounding areas, we offer free site surveys and colour consultations. With over 20 years\' experience working on period properties across Devon, we\'ll help you navigate the regulations while achieving a finish that enhances your home\'s character and value.',
-      },
-      {
-        type: 'paragraph',
-        content: '[Contact us today](/contact) for expert advice on your conservation area painting project, or explore our guides to [painting period properties in Exeter](/blog/decorating-tips-exeter-period-homes) and [heritage paint colours for Topsham homes](/blog/heritage-paint-colours-topsham-homes-guide).',
+        content: 'Whether you\'re refreshing a cream-rendered Georgian townhouse in Topsham, repainting Victorian sash windows in St Leonard\'s, or tackling render repairs in Pennsylvania, [professional guidance from an experienced Exeter decorator](/areas/exeter) ensures your project enhances rather than compromises your home\'s historic value.',
       },
     ],
   },
