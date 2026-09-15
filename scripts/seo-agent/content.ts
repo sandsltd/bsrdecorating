@@ -118,7 +118,7 @@ function pickNextTopic(strategyContent: string): {
     const keyword = match[2].trim();
     const status = match[3].trim();
 
-    if (status === "No") {
+    if (status === "No" && !/\b(?:costs?|prices?|pricing|how much)\b/i.test(`${topic} ${keyword}`)) {
       // Determine category from the keyword/topic
       const category = inferCategory(topic, keyword);
       return { keyword, context: topic, category };
@@ -135,7 +135,6 @@ function inferCategory(topic: string, keyword: string): string {
   if (text.includes("exterior") || text.includes("weather") || text.includes("coastal") || text.includes("devon climate")) return "Expert Advice";
   if (text.includes("commercial") || text.includes("business")) return "Commercial Services";
   if (text.includes("landlord") || text.includes("hmo") || text.includes("rental")) return "Landlord Services";
-  if (text.includes("cost") || text.includes("price") || text.includes("how much")) return "Pricing Guide";
   if (text.includes("trend") || text.includes("season") || text.includes("spring") || text.includes("winter") || text.includes("autumn")) return "Seasonal Trends";
   if (text.includes("damp") || text.includes("new build") || text.includes("eco")) return "Expert Advice";
   return "Expert Advice";
@@ -220,7 +219,7 @@ ${seasonalContext}
 
 ## MARKET CONTEXT
 - Exeter: 994 listed buildings, 20 conservation areas, ~138,000 population
-- Topsham: 228 listed buildings, avg property £506k, affluent riverside area
+- Topsham: 228 listed buildings, many period properties and riverside homes
 - Cranbrook: Growing new town (3,300 to 8,000 homes) — new build opportunity
 - Liveable Exeter: 12,000 new homes programme — future demand
 - Kitchen cabinet spraying: fastest-growing decorator service in UK
@@ -242,9 +241,10 @@ The topic MUST:
 - Be locally relevant to Exeter, Topsham, or Devon (not generic national content)
 - NOT duplicate any existing blog post
 - Have clear search intent (someone searching this wants to hire a decorator or learn about decorating)
+- Avoid pricing, costs, rates and "how much" topics; blog posts should not publish price figures
 
 Respond in EXACTLY this JSON format, nothing else:
-{"keyword": "the target keyword phrase", "context": "Why this topic was chosen based on the data — reference specific rankings, competitor activity, or seasonal timing", "category": "one of: Expert Advice, Heritage Restoration, Seasonal Trends, Commercial Services, Waterfront Maintenance, Luxury Decorating, Landlord Services, Property Investment, Pricing Guide, Kitchen Spraying"}`,
+{"keyword": "the target keyword phrase", "context": "Why this topic was chosen based on the data — reference specific rankings, competitor activity, or seasonal timing", "category": "one of: Expert Advice, Heritage Restoration, Seasonal Trends, Commercial Services, Waterfront Maintenance, Luxury Decorating, Landlord Services, Property Investment, Kitchen Spraying"}`,
       },
     ],
   });
@@ -380,7 +380,8 @@ Context: ${topic.context}
 - Language: UK English (use "s" not "z" in words like "optimisation", "organisation")
 - Tone: Professional but approachable. Expert knowledge through specifics, not jargon. Local and personal — reference specific Exeter/Topsham streets, landmarks, and areas.
 - Include the target keyword naturally 3-5 times. Don't keyword-stuff.
-- Reference specific Exeter data: 994 listed buildings, 20 conservation areas, specific property prices from the strategy doc
+- Reference relevant Exeter facts, such as listed buildings and conservation areas
+- Do not give numeric prices, price ranges, hourly rates, material prices or property values. Explain that BSR provides a tailored written quote instead.
 - Include internal links using markdown format [text](/path) — link to at least 2 other BSR pages (area pages, service pages, or blog posts)
 - Use industry terminology but explain it. Write for homeowners, not decorators.
 - Structure with clear H2 and H3 headings
@@ -546,6 +547,7 @@ Rewrite and improve this blog post to make it rank better.
 - Language: UK English
 - Keep the same slug: "${post.slug}"
 - Professional but approachable tone
+- Do not include numeric prices, price ranges, hourly rates, material prices or property values. Explain that BSR provides a tailored written quote instead.
 
 ## CRITICAL: Output Format
 Return ONLY a JSON object with this structure. No explanation, no code fences:

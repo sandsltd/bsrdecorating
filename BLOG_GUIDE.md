@@ -2,6 +2,8 @@
 
 This guide explains how to easily add new blog posts to the BSR Decorating website.
 
+Blog posts should explain the work and invite readers to request a tailored written quote. Do not add numeric prices, ranges, hourly rates, material prices or property values to article copy. The article renderer removes legacy pricing claims, and the SEO publisher rejects new posts that contain them.
+
 ## Quick Overview
 
 The blog system uses two main files:
@@ -77,19 +79,9 @@ function getBlogKeywords(slug: string): string {
 }
 ```
 
-### Step 4: Update Categories (If New)
+### Step 4: Choose a Category
 
-If you're adding a new category, update `/src/data/blogPosts.ts`:
-
-```typescript
-export const categories = [
-  { name: "All Posts", count: blogPosts.length },
-  { name: "Landlord Services", count: 1 },
-  { name: "Commercial Services", count: 1 },
-  { name: "Property Investment", count: 1 },
-  { name: "Your New Category", count: 1 } // Add new category
-];
-```
+Set `category` in the new metadata entry. The category list and counts are calculated from `blogPosts` automatically.
 
 ## Content Section Types
 

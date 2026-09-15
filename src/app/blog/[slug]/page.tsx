@@ -6,6 +6,7 @@ import BlogCTA from './BlogCTA';
 import { blogPosts } from '@/data/blogPosts';
 import { blogContent } from '@/data/blogContent';
 import BlogContent from '@/components/BlogContent';
+import { blogSectionsWithoutPricing } from '@/lib/blogPricing';
 
 // Convert array to object for dynamic routing
 const blogPostsMap = blogPosts.reduce((acc, post) => {
@@ -159,7 +160,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
       {/* Article Content */}
       <article className="py-0 px-4 sm:px-6 lg:px-8 mb-16">
-        <BlogContent sections={content.sections} />
+        <BlogContent sections={blogSectionsWithoutPricing(content.sections)} />
       </article>
 
       {/* Article Navigation */}
