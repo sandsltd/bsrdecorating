@@ -58,7 +58,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Reliable decorators stick to quoted prices and agreed timelines. Reviews should mention whether the job was completed on schedule and within budget. In Exeter, where the median cost for a full house repaint is £2,360 and exterior painting averages £1,728, budget overruns can be significant. Look for reviews that specifically praise sticking to the original quote or explain any variations transparently. Vague statements like \'reasonably priced\' don\'t tell you whether the decorator communicates clearly about costs or manages client expectations professionally. Our <a href="/blog/how-much-painter-decorator-cost-exeter">complete Exeter pricing guide</a> gives you baseline figures to compare against.',
+        content: 'Reliable decorators stick to agreed timelines and explain any changes to the work clearly. Reviews should mention whether the job was completed on schedule and whether the decorator kept the customer informed when unexpected preparation was needed. Look for reviews that praise clear written quotes and prompt discussion of any changes. Vague praise tells you little about how a decorator communicates or manages expectations.',
       },
       {
         type: 'subheading',
@@ -1085,7 +1085,7 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'When planning exterior painting work in Exeter, understanding the factors that influence your quote helps you budget accurately and avoid surprises. From the weathered render of a St Leonard\'s Victorian terrace to the timber cladding on a Topsham waterfront property, every project has unique considerations that affect the final cost. In 2026, the average exterior painting project in Exeter ranges from £1,200 for a small terraced house to over £4,000 for a large detached property, but dozens of variables can shift that figure significantly.',
+        content: 'When planning exterior painting work in Exeter, understanding the factors that shape the work helps you avoid surprises. From the weathered render of a St Leonard\'s Victorian terrace to the timber cladding on a Topsham waterfront property, every project has unique preparation, access and paint requirements. A site visit and written quote will account for those details.',
       },
       {
         type: 'paragraph',
@@ -1116,7 +1116,7 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'These figures reflect standard masonry or render work. Timber cladding, weatherboarding or mixed materials change the calculation significantly. Properties along the Exe Estuary in Topsham, for example, often feature timber elements that require specialist coatings and preparation, increasing both material and labour costs.',
+        content: 'Timber cladding, weatherboarding or mixed materials need a different approach from standard masonry or render. Properties along the Exe Estuary in Topsham, for example, often feature timber elements that require specialist coatings and preparation.',
       },
       {
         type: 'heading',
@@ -1367,7 +1367,7 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'Wallpaper is experiencing a major revival across Exeter, from Georgian townhouses in St Leonard\'s to Victorian terraces in Heavitree and modern developments in Cranbrook. Whether you\'re restoring a listed building in Topsham or adding character to a rental property, professional wallpaper hanging delivers a level of finish and durability that transforms a room. But what does it cost to hire a wallpaper hanger in Exeter, how should you prepare, and which rooms benefit most from wallpaper over paint?',
+        content: 'Wallpaper is experiencing a major revival across Exeter, from Georgian townhouses in St Leonard\'s to Victorian terraces in Heavitree and modern developments in Cranbrook. Whether you\'re restoring a listed building in Topsham or adding character to a rental property, professional wallpaper hanging delivers a level of finish and durability that transforms a room. This guide explains how to prepare and which rooms benefit most from wallpaper over paint.',
       },
       {
         type: 'paragraph',
@@ -7659,11 +7659,11 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'Planning a decorating project in Exeter and wondering what it\'ll actually cost? You\'re not alone. Whether you\'re refreshing a Victorian terrace in St Leonard\'s, repainting a period property in [Topsham](/areas/topsham), or maintaining one of [Exeter\'s 994 listed buildings](/areas/exeter/heritage-property-painting), understanding realistic pricing is crucial before you commit.',
+        content: 'Planning a decorating project in Exeter? Whether you\'re refreshing a Victorian terrace in St Leonard\'s, repainting a period property in [Topsham](/areas/topsham), or maintaining one of [Exeter\'s 994 listed buildings](/areas/exeter/heritage-property-painting), it helps to understand what a professional decorator will assess before providing a quote.',
       },
       {
         type: 'paragraph',
-        content: 'As professional decorators based in Devon with over 20 years of experience working across [Exeter](/areas/exeter) and surrounding areas, we\'ve compiled genuine 2026 pricing data to help you budget accurately. Costs vary significantly based on property age, condition, and specific requirements—here\'s everything you need to know.',
+        content: 'As professional decorators based in Devon with over 20 years of experience working across [Exeter](/areas/exeter) and surrounding areas, we know that property age, condition and finish requirements change the scope of a project. This guide explains the questions to ask and the details to include in a written quote.',
       },
       {
         type: 'heading',

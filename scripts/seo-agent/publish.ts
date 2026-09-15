@@ -2,6 +2,7 @@ import { execSync } from "child_process";
 import fs from "fs";
 import path from "path";
 import { CONFIG } from "./config";
+import { hasMonetaryAmount } from "../../src/lib/blogPricing";
 
 interface BlogSection {
   type: string;
@@ -333,7 +334,7 @@ function updatePostContent(post: NewPost): void {
 
   // Find the matching closing brace for this entry
   let braceCount = 0;
-  let entryStart = content.indexOf("{", slugStart);
+  const entryStart = content.indexOf("{", slugStart);
   let i = entryStart;
 
   for (; i < content.length; i++) {
@@ -435,6 +436,14 @@ function addPostKeywords(post: NewPost): void {
 }
 
 export function publishPost(post: NewPost): void {
+  const copy = [post.title, post.excerpt, ...post.sections.flatMap((section) =>
+    typeof section.content === "string" ? [section.content] :
+    Array.isArray(section.content) ? section.content : []
+  )];
+  if (copy.some(hasMonetaryAmount)) {
+    throw new Error(`Blog post "${post.slug}" contains a monetary amount and cannot be published`);
+  }
+
   if (post.isRefresh) {
     updatePostMetadata(post);
     updatePostContent(post);

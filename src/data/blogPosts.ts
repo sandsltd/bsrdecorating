@@ -62,8 +62,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 41,
-    title: 'Exterior Painting Costs in Exeter: What Affects the Quote in 2026',
-    excerpt: 'From Victorian terraces to coastal homes, discover what influences exterior painting costs in Exeter and how to budget for your 2026 project.',
+    title: 'Planning Exterior Painting in Exeter: What Shapes the Work',
+    excerpt: 'From Victorian terraces to coastal homes, discover what affects preparation, access and paint choice for an Exeter exterior project.',
     category: 'Expert Advice',
     date: '2026-06-04',
     readTime: '9 min read',
@@ -72,9 +72,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 40,
-    title: 'Wallpaper Hanging in Exeter: Costs, Preparation and Best Rooms to Paper',
-    excerpt: 'Professional guide to wallpaper hanging in Exeter: costs, preparation, pattern matching, and which rooms suit wallpaper best in period and modern homes.',
-    category: 'Pricing Guide',
+    title: 'Wallpaper Hanging in Exeter: Preparation and Best Rooms to Paper',
+    excerpt: 'Professional guide to wallpaper hanging in Exeter: preparation, pattern matching, and which rooms suit wallpaper best in period and modern homes.',
+    category: 'Expert Advice',
     date: '2026-05-28',
     readTime: '9 min read',
     image: '/images/blog/28-roller-brush-paint-tray.webp',
@@ -392,9 +392,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 9,
-    title: "How Much Does a Painter & Decorator Cost in Exeter? 2025 Price Guide",
-    excerpt: "Get transparent pricing for painting and decorating services in Exeter. Complete 2025 cost guide covering interior, exterior, commercial, and heritage property work with real examples.",
-    category: "Pricing Guide",
+    title: "How to Plan a Painting and Decorating Quote in Exeter",
+    excerpt: "Understand the preparation, access, materials and specialist work that shape a decorating quote for Exeter homes and businesses.",
+    category: "Expert Advice",
     date: "2025-11-28",
     readTime: "12 min read",
     image: "/portfolio/project1/PHOTO-2025-09-02-11-07-09.jpg",
@@ -454,16 +454,10 @@ export const blogPosts: BlogPost[] = [
 
 export const categories = [
   { name: "All Posts", count: blogPosts.length },
-  { name: "Expert Advice", count: 4 },
-  { name: "Heritage Restoration", count: 4 },
-  { name: "Kitchen Spraying", count: 1 },
-  { name: "Commercial Services", count: 2 },
-  { name: "Waterfront Maintenance", count: 2 },
-  { name: "Seasonal Trends", count: 2 },
-  { name: "Luxury Decorating", count: 1 },
-  { name: "Landlord Services", count: 1 },
-  { name: "Property Investment", count: 1 },
-  { name: "Pricing Guide", count: 1 },
+  ...Array.from(new Set(blogPosts.map((post) => post.category)), (name) => ({
+    name,
+    count: blogPosts.filter((post) => post.category === name).length,
+  })),
 ];
 
 // Helper function to get the latest blog posts (sorted by date)
