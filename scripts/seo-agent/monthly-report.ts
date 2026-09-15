@@ -2,6 +2,7 @@ import { pathToFileURL } from "node:url";
 import { Resend } from "resend";
 import { createClient } from "@supabase/supabase-js";
 import { CONFIG } from "./config";
+import { mentionsPricing, safeRankings } from "./editorial-policy";
 
 const TABLE_NAME = "bsr_runs";
 const REPORT_DAYS = 30;
@@ -52,6 +53,26 @@ interface RunRow {
   competitor_data: Competitor[] | null;
   recommendations: Recommendation[] | null;
   session_summary: string;
+}
+
+function safeRun(row: RunRow): RunRow {
+  const safeBlog = !mentionsPricing(`${row.blog_post_title || ""} ${row.blog_post_keyword || ""} ${row.blog_post_slug || ""}`);
+  return {
+    ...row,
+    rankings_data: safeRankings(row.rankings_data || []),
+    blog_post_title: safeBlog ? row.blog_post_title : null,
+    blog_post_keyword: safeBlog ? row.blog_post_keyword : null,
+    blog_post_slug: safeBlog ? row.blog_post_slug : null,
+    recommendations: (row.recommendations || []).filter((rec) =>
+      !mentionsPricing(`${rec.category} ${rec.title} ${rec.description}`)
+    ),
+    competitor_data: (row.competitor_data || []).map((comp) => ({
+      ...comp,
+      recentPages: comp.recentPages.filter((page) => !mentionsPricing(page.url)),
+    })),
+    session_summary: mentionsPricing(row.session_summary)
+      ? "SEO analysis completed. Review the run log for details." : row.session_summary,
+  };
 }
 
 interface MonthlyReportOptions {
@@ -423,11 +444,16 @@ export async function sendMonthlyReport(options: MonthlyReportOptions = {}) {
     ? `${options.subjectPrefix} ${subjectBase}`
     : subjectBase;
 
+  const html = buildHtml((data as RunRow[]).map(safeRun), reportDays);
+  if (mentionsPricing(html)) {
+    throw new Error("Monthly SEO report includes price-led content and cannot be sent");
+  }
+
   const result = await resend.emails.send({
     from: CONFIG.emailFrom,
     to: recipient,
     subject,
-    html: buildHtml(data as RunRow[], reportDays),
+    html,
   });
 
   if (result.error) {

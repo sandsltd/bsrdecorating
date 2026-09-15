@@ -2,6 +2,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import fs from "fs";
 import path from "path";
 import { CONFIG } from "./config";
+import { mentionsPricing } from "./editorial-policy";
 
 export interface LinkingResult {
   total: number;
@@ -120,7 +121,9 @@ function getPostSectionText(slug: string): string {
 }
 
 export async function addInternalLinks(): Promise<LinkingResult> {
-  const posts = getAllPosts();
+  const posts = getAllPosts().filter((post) =>
+    !mentionsPricing(`${post.title} ${post.slug} ${post.category}`)
+  );
 
   if (posts.length < 2) {
     console.log("Not enough posts for internal linking.");
@@ -155,6 +158,10 @@ export async function addInternalLinks(): Promise<LinkingResult> {
     }
 
     if (paragraphContents.length === 0) continue;
+    const candidateParagraphs = paragraphContents
+      .map((content, index) => ({ content, index }))
+      .filter(({ content }) => !mentionsPricing(content));
+    if (candidateParagraphs.length === 0) continue;
 
     const otherPostsList = otherPosts
       .map(
@@ -176,7 +183,7 @@ Title: "${post.title}"
 Category: "${post.category}"
 
 ## Current Paragraphs
-${paragraphContents.map((p, i) => `[${i}]: ${p}`).join("\n\n")}
+${candidateParagraphs.map(({ content, index }) => `[${index}]: ${content}`).join("\n\n")}
 
 ## Other Posts Available to Link To
 ${otherPostsList}
@@ -220,9 +227,10 @@ Return ONLY a JSON array, no explanation:
       let linksAdded = 0;
 
       for (const mod of modifications) {
-        if (mod.index >= 0 && mod.index < paragraphContents.length) {
+        if (Number.isInteger(mod.index) && candidateParagraphs.some(({ index }) => index === mod.index)) {
           const oldContent = paragraphContents[mod.index];
           const newContent = mod.content;
+          if (typeof newContent !== "string" || mentionsPricing(newContent)) continue;
 
           // Count new links in the modified content
           const oldLinks = (oldContent.match(/\[([^\]]+)\]\(\//g) || []).length;

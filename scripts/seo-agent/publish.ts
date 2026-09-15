@@ -2,7 +2,7 @@ import { execSync } from "child_process";
 import fs from "fs";
 import path from "path";
 import { CONFIG } from "./config";
-import { hasMonetaryAmount } from "../../src/lib/blogPricing";
+import { assertNoPricing } from "./editorial-policy";
 
 interface BlogSection {
   type: string;
@@ -78,12 +78,6 @@ const IMAGE_POOL: Record<string, string[]> = {
     "/images/blog/18-person-painting.webp",
     "/images/blog/30-hand-paint-roller-decor.webp",
     "/images/blog/39-wall-half-painted.webp",
-  ],
-  "Pricing Guide": [
-    "/images/blog/07-paint-bucket-rollers.webp",
-    "/images/blog/16-gallons-of-paint.webp",
-    "/images/blog/28-roller-brush-paint-tray.webp",
-    "/images/blog/44-white-paint-buckets.webp",
   ],
   "Luxury Decorating": [
     "/images/blog/21-color-shade-samples.webp",
@@ -436,13 +430,14 @@ function addPostKeywords(post: NewPost): void {
 }
 
 export function publishPost(post: NewPost): void {
-  const copy = [post.title, post.excerpt, ...post.sections.flatMap((section) =>
-    typeof section.content === "string" ? [section.content] :
-    Array.isArray(section.content) ? section.content : []
+  const copy = [post.title, post.slug, post.excerpt, post.category, post.targetKeyword, ...post.sections.flatMap((section) =>
+    [
+      ...(typeof section.content === "string" ? [section.content] :
+        Array.isArray(section.content) ? section.content : []),
+      section.imageAlt || "", section.href || "", section.linkText || "",
+    ]
   )];
-  if (copy.some(hasMonetaryAmount)) {
-    throw new Error(`Blog post "${post.slug}" contains a monetary amount and cannot be published`);
-  }
+  assertNoPricing(copy, `Blog post "${post.slug}"`);
 
   if (post.isRefresh) {
     updatePostMetadata(post);
@@ -466,7 +461,7 @@ export function updateSessionLog(
 
   const newEntry = `### ${today} — Automated SEO Agent Run
 - **What was done:** ${summary}
-- **Run type:** Automated (GitHub Actions)
+- **Run type:** Automated (SEO worker)
 `;
 
   const sessionLogMarker = "## Session Log";

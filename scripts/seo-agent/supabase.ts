@@ -1,6 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 import Anthropic from "@anthropic-ai/sdk";
 import { CONFIG } from "./config";
+import { mentionsPricing } from "./editorial-policy";
 
 const TABLE_NAME = "bsr_runs";
 
@@ -72,7 +73,8 @@ export async function getPreviousNote(): Promise<string | null> {
       return null;
     }
 
-    return data.ai_note_to_self;
+    return data.ai_note_to_self && !mentionsPricing(data.ai_note_to_self)
+      ? data.ai_note_to_self : null;
   } catch (err) {
     console.warn("Failed to fetch previous note:", err);
     return null;
@@ -88,6 +90,17 @@ export async function generateNoteToSelf(context: {
 }): Promise<string | null> {
   try {
     const anthropic = new Anthropic();
+    const safeContext = {
+      ...context,
+      rankingsSummary: context.rankingsSummary.split("\n")
+        .filter((line) => !mentionsPricing(line)).join("\n"),
+      whatWasPublished: mentionsPricing(context.whatWasPublished)
+        ? "No article published this run." : context.whatWasPublished,
+      recommendations: context.recommendations.split("\n")
+        .filter((line) => !mentionsPricing(line)).join("\n"),
+      previousNote: context.previousNote && !mentionsPricing(context.previousNote)
+        ? context.previousNote : null,
+    };
 
     const response = await anthropic.messages.create({
       model: CONFIG.contentModel,
@@ -106,20 +119,21 @@ Write a concise note (2-4 sentences) for your future self focusing on:
 ## This Run's Context
 
 ### Rankings Summary
-${context.rankingsSummary}
+${safeContext.rankingsSummary}
 
 ### What Was Published
-${context.whatWasPublished}
+${safeContext.whatWasPublished}
 
 ### Competitor Activity
 ${context.competitorActivity}
 
 ### Recommendations Generated
-${context.recommendations}
+${safeContext.recommendations}
 
 ### Previous Note To Self
-${context.previousNote || "No previous note (first run)."}
+${safeContext.previousNote || "No previous note (first run)."}
 
+Do not mention prices, costs, rates, fees or budgets.
 Respond with ONLY the note text, no preamble or formatting.`,
         },
       ],
@@ -127,7 +141,8 @@ Respond with ONLY the note text, no preamble or formatting.`,
 
     const text =
       response.content[0].type === "text" ? response.content[0].text : "";
-    return text.trim() || null;
+    const note = text.trim();
+    return note && !mentionsPricing(note) ? note : null;
   } catch (err) {
     console.warn("Failed to generate note-to-self:", err);
     return null;

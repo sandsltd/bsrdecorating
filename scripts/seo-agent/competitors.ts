@@ -1,3 +1,5 @@
+import { mentionsPricing } from "./editorial-policy";
+
 interface CompetitorContent {
   name: string;
   domain: string;
@@ -111,7 +113,7 @@ export async function checkCompetitors(): Promise<CompetitorReport> {
           competitors.push({
             name: comp.name,
             domain: comp.domain,
-            recentPages: recent.map((u) => ({
+            recentPages: recent.filter((u) => !mentionsPricing(u.loc)).map((u) => ({
               url: u.loc,
               lastmod: u.lastmod,
             })),
@@ -148,7 +150,7 @@ export async function checkCompetitors(): Promise<CompetitorReport> {
     competitors.push({
       name: comp.name,
       domain: comp.domain,
-      recentPages: recent.map((u) => ({ url: u.loc, lastmod: u.lastmod })),
+      recentPages: recent.filter((u) => !mentionsPricing(u.loc)).map((u) => ({ url: u.loc, lastmod: u.lastmod })),
       totalPages: urls.length,
     });
 

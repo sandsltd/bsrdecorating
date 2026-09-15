@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import { CONFIG } from "./config";
 import type { CompetitorReport } from "./competitors";
+import { activeStrategyForPrompt, mentionsPricing, safeRankings } from "./editorial-policy";
 
 interface RankingData {
   keyword: string;
@@ -47,6 +48,17 @@ function countWords(sections: BlogSection[]): number {
     }
   }
   return count;
+}
+
+function isSafeGeneratedCopy(post: { title: string; slug: string; excerpt: string; sections: BlogSection[] }): boolean {
+  const copy = [post.title, post.slug, post.excerpt, ...post.sections.flatMap((section) =>
+    [
+      ...(typeof section.content === "string" ? [section.content] :
+        Array.isArray(section.content) ? section.content : []),
+      section.imageAlt || "", section.href || "", section.linkText || "",
+    ]
+  )];
+  return !copy.some(mentionsPricing);
 }
 
 interface ExistingPost {
@@ -118,7 +130,7 @@ function pickNextTopic(strategyContent: string): {
     const keyword = match[2].trim();
     const status = match[3].trim();
 
-    if (status === "No" && !/\b(?:costs?|prices?|pricing|how much)\b/i.test(`${topic} ${keyword}`)) {
+    if (status === "No" && !mentionsPricing(`${topic} ${keyword}`)) {
       // Determine category from the keyword/topic
       const category = inferCategory(topic, keyword);
       return { keyword, context: topic, category };
@@ -145,7 +157,8 @@ async function generateSmartTopic(
   rankings: RankingData[],
   competitorReport: CompetitorReport | null
 ): Promise<{ keyword: string; context: string; category: string }> {
-  const { titles, posts } = getExistingPosts();
+  const { posts } = getExistingPosts();
+  rankings = safeRankings(rankings);
   const anthropic = new Anthropic();
 
   // Build rankings intelligence
@@ -192,7 +205,9 @@ async function generateSmartTopic(
     ? "It's summer/early autumn — still high demand. Good time for autumn prep content, interior decorating for winter."
     : "It's late autumn/winter — focus on interior decorating, landlord turnaround season, commercial work, and planning for spring.";
 
-  const existingPostsList = posts.map((p) => `- "${p.title}" (${p.category}, ${p.slug})`).join("\n");
+  const existingPostsList = posts
+    .filter((post) => !mentionsPricing(`${post.title} ${post.category} ${post.slug}`))
+    .map((p) => `- "${p.title}" (${p.category}, ${p.slug})`).join("\n");
 
   const response = await anthropic.messages.create({
     model: CONFIG.contentModel,
@@ -259,6 +274,9 @@ Respond in EXACTLY this JSON format, nothing else:
       cleaned = cleaned.slice(jsonStart, jsonEnd + 1);
     }
     const parsed = JSON.parse(cleaned);
+    if (mentionsPricing(`${parsed.keyword} ${parsed.category} ${parsed.context}`)) {
+      throw new Error("Smart topic suggested price-led content");
+    }
     console.log(`Smart topic selection reason: ${parsed.context}`);
     return parsed;
   } catch {
@@ -281,6 +299,7 @@ function findPostToRefresh(
   const now = new Date();
 
   for (const post of posts) {
+    if (mentionsPricing(`${post.title} ${post.slug} ${post.category}`)) continue;
     const publishedDate = new Date(post.date);
     const ageInDays =
       (now.getTime() - publishedDate.getTime()) / (1000 * 60 * 60 * 24);
@@ -339,6 +358,7 @@ export async function generateBlogPost(
   rankings: RankingData[] = [],
   competitorReport: CompetitorReport | null = null
 ): Promise<GeneratedPost | null> {
+  rankings = safeRankings(rankings);
   let topic = pickNextTopic(strategyContent);
 
   if (topic) {
@@ -369,7 +389,7 @@ export async function generateBlogPost(
   const prompt = `You are writing a blog post for BSR Decorating (bsrdecorating.co.uk), a painter and decorator based in Dawlish, Devon, serving Exeter, Topsham, and surrounding areas. They have 20+ years experience and specialise in domestic, commercial, heritage/period properties, kitchen spraying, and eco-friendly paints.
 
 ## SEO Strategy Context
-${strategyContent}
+${activeStrategyForPrompt(strategyContent)}
 
 ## Your Task
 Write a blog post targeting this keyword: "${topic.keyword}"
@@ -381,7 +401,7 @@ Context: ${topic.context}
 - Tone: Professional but approachable. Expert knowledge through specifics, not jargon. Local and personal — reference specific Exeter/Topsham streets, landmarks, and areas.
 - Include the target keyword naturally 3-5 times. Don't keyword-stuff.
 - Reference relevant Exeter facts, such as listed buildings and conservation areas
-- Do not give numeric prices, price ranges, hourly rates, material prices or property values. Explain that BSR provides a tailored written quote instead.
+- Do not discuss prices, costs, rates, fees, budgets or property values. Invite readers to request a tailored written quote instead.
 - Include internal links using markdown format [text](/path) — link to at least 2 other BSR pages (area pages, service pages, or blog posts)
 - Use industry terminology but explain it. Write for homeowners, not decorators.
 - Structure with clear H2 and H3 headings
@@ -435,6 +455,10 @@ Important: Do NOT use markdown formatting (no **, no ##). Just plain text in sec
       cleaned = cleaned.slice(jsonStart, jsonEnd + 1);
     }
     const parsed = JSON.parse(cleaned);
+    if (!isSafeGeneratedCopy(parsed)) {
+      console.warn("Generated blog copy includes price-led language; discarding it.");
+      return null;
+    }
 
     console.log(`Blog post generated: "${parsed.title}" (${parsed.slug})`);
 
@@ -451,8 +475,6 @@ Important: Do NOT use markdown formatting (no **, no ##). Just plain text in sec
     };
   } catch (error) {
     console.error("Failed to parse generated blog post JSON:", error);
-    console.error("Raw response (first 500 chars):", text.slice(0, 500));
-    console.error("Raw response (last 500 chars):", text.slice(-500));
 
     // Retry with a simpler prompt asking for just JSON
     console.log("Retrying content generation with simplified prompt...");
@@ -475,6 +497,10 @@ Important: Do NOT use markdown formatting (no **, no ##). Just plain text in sec
         retryCleaned = retryCleaned.slice(rStart, rEnd + 1);
       }
       const retryParsed = JSON.parse(retryCleaned);
+      if (!isSafeGeneratedCopy(retryParsed)) {
+        console.warn("Retried blog copy includes price-led language; discarding it.");
+        return null;
+      }
 
       console.log(`Blog post generated on retry: "${retryParsed.title}" (${retryParsed.slug})`);
 
@@ -521,7 +547,7 @@ async function refreshPost(
 ${reason}
 
 ## SEO Strategy Context
-${strategyContent}
+${activeStrategyForPrompt(strategyContent)}
 
 ## Current Post
 Title: "${post.title}"
@@ -529,7 +555,7 @@ Category: "${post.category}"
 Published: ${post.date}
 
 ## Current Content Sections (raw)
-${existingContent.slice(0, 3000)}
+${mentionsPricing(existingContent) ? "The existing article contains retired price references. Rewrite from the topic and business details without using those references." : existingContent.slice(0, 3000)}
 
 ## Your Task
 Rewrite and improve this blog post to make it rank better.
@@ -547,7 +573,7 @@ Rewrite and improve this blog post to make it rank better.
 - Language: UK English
 - Keep the same slug: "${post.slug}"
 - Professional but approachable tone
-- Do not include numeric prices, price ranges, hourly rates, material prices or property values. Explain that BSR provides a tailored written quote instead.
+- Do not discuss prices, costs, rates, fees, budgets or property values. Invite readers to request a tailored written quote instead.
 
 ## CRITICAL: Output Format
 Return ONLY a JSON object with this structure. No explanation, no code fences:
@@ -578,6 +604,10 @@ Return ONLY a JSON object with this structure. No explanation, no code fences:
   try {
     const cleaned = text.replace(/```json\n?/g, "").replace(/```\n?/g, "").trim();
     const parsed = JSON.parse(cleaned);
+    if (!isSafeGeneratedCopy(parsed)) {
+      console.warn("Refreshed blog copy includes price-led language; discarding it.");
+      return null;
+    }
 
     console.log(`Refreshed post: "${parsed.title}" (${parsed.slug})`);
 
