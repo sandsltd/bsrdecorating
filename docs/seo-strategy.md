@@ -11,7 +11,7 @@
 
 > **Instructions for the SEO agent:** Check rankings for these keywords using Google Search Console data. Update the position and date columns. Track progress over time. Flag any keyword that moves 5+ positions in either direction.
 
-### Tier 1 — CRITICAL (Money Keywords)
+### Tier 1 — CRITICAL (Primary Service Keywords)
 
 | # | Keyword | Current Position | Last Checked | Target Page | Notes |
 |---|---------|-----------------|--------------|-------------|-------|
@@ -41,21 +41,18 @@
 
 | # | Keyword | Current Position | Last Checked | Target Page | Notes |
 |---|---------|-----------------|--------------|-------------|-------|
-| 17 | how much does a decorator cost in exeter | Not indexed yet | 10 Sept 2026 | Blog (cost guide) | ~10-30/mo. HIGH conversion intent. |
 | 18 | best painter and decorator in exeter | Not indexed yet | 10 Sept 2026 | /reviews | ~10-30/mo. Trust keyword. |
 | 19 | conservation area painting rules exeter | Not indexed yet | 10 Sept 2026 | Blog | Very low comp. 20 conservation areas in Exeter. |
 | 20 | listed building paint exeter | Not indexed yet | 10 Sept 2026 | Blog | Niche authority builder. |
 | 21 | lime wash exeter | Not indexed yet | 10 Sept 2026 | Blog | ~5-15/mo. Heritage niche. |
 | 22 | damp walls exeter | Not indexed yet | 10 Sept 2026 | Blog | ~10-30/mo. Problem-solution content. |
 | 23 | kitchen cabinet spraying vs replacement | Not indexed yet | 10 Sept 2026 | Blog | 200-500/mo national. High value. |
-| 24 | exterior painting cost exeter | Not indexed yet | 10 Sept 2026 | Blog (cost guide) | |
 | 25 | decorator exeter reviews | Not indexed yet | 10 Sept 2026 | /reviews | Trust signal keyword. |
 
 ### Tier 4 — SUPPORTING (Blog Content)
 
 | # | Keyword | Current Position | Last Checked | Target Page | Notes |
 |---|---------|-----------------|--------------|-------------|-------|
-| 26 | decorating costs uk 2026 | Not indexed yet | 10 Sept 2026 | Blog | 500-1,500/mo national. |
 | 27 | best paint for exterior walls uk | Not indexed yet | 10 Sept 2026 | Blog | 300-700/mo national. |
 | 28 | period property decorating tips | Not indexed yet | 10 Sept 2026 | Blog | 100-300/mo national. |
 | 29 | breathable paint for old houses | Not indexed yet | 10 Sept 2026 | Blog | 100-200/mo national. |
@@ -114,16 +111,15 @@
 | Listed buildings in Exeter | 994 |
 | Conservation areas | 20 |
 
-### Property Values by Target Area
+### Property Types by Target Area
 
-| Area | Avg. Price | Key Property Types |
-|------|-----------|-------------------|
-| Topsham (EX3) | £506,000 | Period, riverside, detached. 228 listed buildings. |
-| St Leonard's (EX2 4) | £350,000-£700,000 | Victorian/Edwardian terraces. 120 listed buildings in ward. |
-| Pennsylvania (EX4) | £460,000 | Period properties, large Victorian. |
-| Heavitree (EX1) | £358,000 | Victorian terraces, mixed. |
-| Newtown / Mt Pleasant (EX4) | £311,000-£550,000 | Victorian, some Georgian. |
-| Exeter average | £285,000 (median) | Mixed. |
+| Area | Key Property Types |
+|------|--------------------|
+| Topsham (EX3) | Period, riverside and detached homes. 228 listed buildings. |
+| St Leonard's (EX2 4) | Victorian and Edwardian terraces. 120 listed buildings in the ward. |
+| Pennsylvania (EX4) | Period properties and large Victorian homes. |
+| Heavitree (EX1) | Victorian terraces and modern homes. |
+| Newtown / Mt Pleasant (EX4) | Victorian and some Georgian homes. |
 
 ### Listed Buildings by Exeter Ward
 
@@ -149,37 +145,13 @@ Topsham, St Leonard's, Pennsylvania Park, Baring Crescent/Mont le Grand, Souther
 - **Student Accommodation:** 300 new student flats approved Feb 2026 (Clarendon House, Western Way).
 - **Moor Exchange Retail Park:** 12,400 sqm on Honiton Road.
 
-### Pricing Data (Use in Cost Guides)
-
-| Service | Exeter Local Price |
-|---------|-------------------|
-| Paint ceiling (per room) | £108 |
-| Paint interior doors (per door) | £122 |
-| Paint front door | £123 |
-| Paint skirting boards (per room) | £105 |
-| Wallpapering (per room) | £316 |
-| Wallpaper removal (per room) | £336 |
-| Paint bathroom | £332 |
-| Paint kitchen cabinets | £364 |
-| Paint single room | £412 |
-| Paint bedroom | £498 |
-| Paint living room | £674 |
-| Paint hall/stairs/landing | £814 |
-| Paint house exterior | £1,728 |
-| Full house painting | £2,360 |
-| Kitchen spraying (full kitchen) | ~£750 |
-| Heritage specialist hourly rate | £31-£40+ |
-
 ### Industry Trends (Reference in Content)
 
-- UK painting industry: £3.7 billion (2025)
 - 61% of businesses report difficulty hiring skilled tradespeople
 - Kitchen cabinet spraying: fastest-growing decorator service
 - Eco-friendly/low VOC paint market growing at 3.46% CAGR
-- 60% of homeowners plan to decorate in 2025; 22% plan to increase budgets
 - "Refresh not replace" trend driving kitchen spraying and targeted repaints
-- Cost of living pushing budget-conscious customers to DIY for simple jobs — affluent customers still investing in quality professional work
-- Topsham conservation: £38,000 fine Dec 2025 for unlawful listed building alterations
+- Topsham conservation: enforcement against unauthorised listed-building alterations reinforces the need for specialist advice
 
 ### Seasonal Demand Pattern
 
@@ -206,7 +178,7 @@ The agent should work through these in order, picking the next unwritten topic e
 
 | # | Topic | Target Keyword | Est. Searches | Published | Filename |
 |---|-------|---------------|---------------|-----------|----------|
-| 1 | Kitchen Cabinet Spraying vs Replacement: Complete Cost Comparison for Devon Homeowners | kitchen spraying vs replacement | 200-500/mo national | Yes | kitchen-cabinet-spraying-vs-replacement-devon |
+| 1 | Kitchen Cabinet Spraying vs Replacement: Which Option Suits Devon Homes? | kitchen spraying vs replacement | 200-500/mo national | Yes | kitchen-cabinet-spraying-vs-replacement-devon |
 | 2 | Topsham Conservation Area: Your Complete Guide to Decorating a Listed Property | topsham conservation area decorating | <10 local | Yes | topsham-conservation-area-decorating-guide |
 | 3 | Spring Exterior Painting Guide: When and How to Paint Your Devon Home | exterior painting devon | 20-40 seasonal | Yes | spring-exterior-painting-devon-complete-guide |
 | 4 | The Best Exterior Paint for Devon's Coastal Weather | best paint devon weather | 10-30 | Yes | best-exterior-paint-devon-coastal-weather |
@@ -218,7 +190,6 @@ The agent should work through these in order, picking the next unwritten topic e
 |---|-------|---------------|---------------|-----------|----------|
 | 6 | Limewash Paint: Everything You Need to Know for Period Properties | limewash paint old house | 100-300/mo national | Yes | limewash-paint-period-properties-devon-guide |
 | 7 | Solving Damp and Paint Problems in Exeter Homes | damp walls painting exeter | 10-30 | Yes | solving-damp-paint-problems-exeter-homes |
-| 8 | HMO and Rental Property Decorating: A Landlord's Complete Guide | HMO decorating guide | 50-100/mo national | Partial | cost-effective-decorating-rental-properties-hmos (expand) |
 | 9 | Why Eco-Friendly Paint Matters and the Best Options for Your Home | eco friendly paint uk | 100-300/mo national | Yes | eco-friendly-paint-uk-best-options-your-home |
 | 10 | New Build Paint Problems: Common Issues and Professional Solutions | new build paint problems | 30-80/mo national | Partial | the-real-problem-with-exeter-new-build-paintwork (expand) |
 | 11 | Painting Trends for Devon Homes: What's Popular in 2026 | painting trends 2026 uk | 200-500/mo national | Yes | painting-trends-devon-homes-2026 |
@@ -233,7 +204,6 @@ The agent should work through these in order, picking the next unwritten topic e
 | 15 | Best Paint for Coastal Properties: Salt Air, Humidity and Weather | best paint coastal properties | 50-150/mo national | Partial | topsham-waterfront-homes-best-paints (expand) |
 | 16 | Heritage Paint Colours for Topsham Homes | heritage paint colours topsham | <5 | Yes | heritage-paint-colours-topsham-homes-guide |
 | 17 | Conservation Area Painting Rules: What You Need Planning Permission For | conservation area painting rules | 50-150/mo national | Yes | conservation-area-painting-rules-devon-planning-permission |
-| 18 | Decorating Costs UK 2026: Complete Pricing Guide | decorating costs uk 2026 | 500-1,500/mo national | Partial | how-much-painter-decorator-cost-exeter (localise) |
 
 #### NEXT Priority - May 2026 Expansion
 
@@ -246,17 +216,15 @@ These topics refresh the queue after the original plan was depleted. They stay a
 | 21 | Kitchen Spraying in Exeter: What Homeowners Should Know Before Booking | kitchen spraying exeter | 30-70/mo | Yes | kitchen-spraying-exeter-what-homeowners-should-know |
 | 22 | Heritage Decorator Exeter: Paint Choices for Listed Buildings in St Leonard's and St David's | heritage decorator exeter | <10 local | Yes | heritage-decorator-exeter-listed-buildings-st-leonards-st-davids |
 | 23 | Topsham Painter and Decorator Guide: Planning Work on Period and Riverside Homes | painter and decorator topsham | <10 local | Yes | topsham-painter-decorator-guide-period-riverside-homes |
-| 24 | Wallpaper Hanging in Exeter: Costs, Preparation and Best Rooms to Paper | wallpaper hanger exeter | 10-30/mo | Yes | wallpaper-hanging-exeter-costs-preparation-best-rooms |
-| 25 | Exterior Painting Costs in Exeter: What Affects the Quote in 2026 | exterior painting cost exeter | 10-30/mo | Yes | exterior-painting-costs-exeter-what-affects-quote-2026 |
 | 26 | Landlord Painting in Exeter: Fast Turnaround Checklist for Rental Refreshes | landlord painter exeter | 5-10/mo | Yes | landlord-painting-exeter-fast-turnaround-rental-refresh |
 | 27 | Painting Listed Buildings in Exeter: Breathable Paint, Consent and Common Mistakes | listed building paint exeter | <10 local | Yes | painting-listed-buildings-exeter-breathable-paint-consent-mistakes |
 | 28 | Dawlish Decorator Guide: Coastal Homes, Exterior Paint and Maintenance Timing | decorator dawlish | 10-30/mo | Yes | dawlish-decorator-guide-coastal-homes-exterior-paint-maintenance |
 | 29 | Exterior Painter Exeter: Summer Booking Guide for Render, Timber and Masonry | exterior painter exeter | 10-30/mo seasonal | Yes | exterior-painter-exeter-summer-booking-guide-render-timber-masonry |
 | 30 | Decorator Exeter Reviews: What to Look for Before Choosing a Painter | decorator exeter reviews | 10-30/mo | Yes | decorator-exeter-reviews-what-to-look-for |
 
-### Already Published Blog Posts (17 total)
+### Already Published Topics (Selected)
 
-The agent MUST check this list to avoid duplicating existing content.
+The agent MUST check `src/data/blogPosts.ts` for the full current list to avoid duplicating existing content.
 
 | Slug | Title | Category | Primary Keywords |
 |------|-------|----------|-----------------|
@@ -270,8 +238,6 @@ The agent MUST check this list to avoid duplicating existing content.
 | waterfront-property-maintenance-topsham | Waterfront Property Maintenance in Topsham | Waterfront Maintenance | waterfront property maintenance topsham |
 | end-tenancy-decorating-landlords-letting-agents | The Importance of End-of-Tenancy Decorating | Landlord Services | end of tenancy decorating |
 | professional-decorating-enhances-business-premises | How Professional Decorating Enhances Your Business | Commercial Services | professional decorating business |
-| cost-effective-decorating-rental-properties-hmos | Cost-Effective Decorating Solutions for Rental Properties | Property Investment | decorating rental properties HMO |
-| how-much-painter-decorator-cost-exeter | How Much Does a Painter & Decorator Cost in Exeter? | Pricing Guide | painter decorator cost exeter |
 | best-paint-types-exeter-homes | Best Paint Types for Exeter Homes (Old, Damp or Listed) | Expert Advice | best paint exeter homes |
 | the-real-problem-with-exeter-new-build-paintwork | The Real Problem With Exeter New-Build Paintwork | Expert Advice | new build paint problems exeter |
 | decorating-tips-exeter-period-homes | Decorating Tips for Exeter Period Homes | Heritage Restoration | period home decorating exeter |
@@ -303,7 +269,7 @@ The agent MUST check this list to avoid duplicating existing content.
 
 ### Content Rules
 1. **Always localise.** Reference Devon, Exeter, Topsham by name. Mention specific areas (St Leonard's, Pennsylvania, Heavitree) where relevant.
-2. **Use real pricing data.** Reference the pricing table in the Market Context section above.
+2. **Keep articles focused on the work.** Explain preparation, materials and process, then invite readers to request a tailored written quote. Do not publish figures or price-led topics.
 3. **Reference conservation areas and listed buildings.** This establishes heritage expertise and creates content competitors can't easily replicate.
 4. **Include internal links.** Every blog post should link to at least 2 other pages on the site (service pages, area pages, or other blog posts).
 5. **Include a call to action.** Every post should naturally mention getting a free quote.
@@ -320,7 +286,6 @@ The agent MUST check this list to avoid duplicating existing content.
 - Luxury Decorating
 - Landlord Services
 - Property Investment
-- Pricing Guide
 - Kitchen Spraying (NEW — create this category)
 
 ---
@@ -359,7 +324,6 @@ The agent MUST check this list to avoid duplicating existing content.
 
 **Exeter Local Cluster:**
 - how-to-choose-painter-decorator-exeter
-- how-much-painter-decorator-cost-exeter
 - luxury-decorating-trends-exeter
 - commercial-office-decorating-exeter
 - the-real-problem-with-exeter-new-build-paintwork
@@ -368,7 +332,6 @@ The agent MUST check this list to avoid duplicating existing content.
 
 **Landlord/Commercial Cluster:**
 - end-tenancy-decorating-landlords-letting-agents
-- cost-effective-decorating-rental-properties-hmos
 - professional-decorating-enhances-business-premises
 - commercial-office-decorating-exeter
 - → All link to /commercial and /areas/exeter/rental-refresh-painting
@@ -377,7 +340,7 @@ The agent MUST check this list to avoid duplicating existing content.
 
 ## Automated SEO Agent
 
-An automated agent runs every 5 days via GitHub Actions. It:
+The production SEO worker runs on a separate scheduler. The GitHub Actions workflow is manual-only. It:
 
 1. Checks keyword rankings via Google Search Console
 2. Updates the rankings tracker tables above
@@ -388,7 +351,7 @@ An automated agent runs every 5 days via GitHub Actions. It:
 7. Generates SEO recommendations
 8. Commits changes to main and sends an email report
 
-**To run manually:** Go to Actions > "Weekly SEO Agent" > "Run workflow" in GitHub.
+**To run manually:** Go to Actions > "SEO Agent (Manual Only)" > "Run workflow" in GitHub.
 
 **To change what it targets:** Update the Blog Topic Queue and Keyword Rankings Tracker above. The agent reads this document each run to decide what to do next.
 
@@ -781,13 +744,13 @@ An automated agent runs every 5 days via GitHub Actions. It:
 
 - **Exeter is a LOCAL SEO game.** Every piece of content must reference specific Devon locations, streets, and landmarks. Generic decorating advice won't rank.
 - **Heritage is the biggest differentiator.** With 994 listed buildings and only 2 heritage-focused competitors (Isca, Lois Raine) who both have zero blog content, BSR can own this niche through content.
-- **Kitchen spraying is the growth opportunity.** No local decorator ranks for it. National search volume is 300-800/mo. Create a content hub: service page + cost guide + FAQ + before/after gallery.
+- **Kitchen spraying is the growth opportunity.** No local decorator ranks for it. National search volume is 300-800/mo. Create a content hub: service page + FAQ + before/after gallery.
 - **Topsham is almost won.** Page 2 → Page 1 is achievable with 2-3 more targeted blog posts and consistent internal linking.
 - **Exeter will take longer.** Page 10 → Page 1 requires sustained content production, internal linking, and ideally some backlinks. Target 3-6 months.
 - **Don't duplicate existing content.** Always check the "Already Published" list before generating a new post. If a topic overlaps, either skip it or write a distinctly different angle.
 - **Seasonal timing matters.** Publish spring/exterior content in January-February. Publish autumn/interior content in July-August.
 - **The BSR blog system is different from PaperRoute/SkipRoute.** Blog posts are stored in TypeScript data files (`/src/data/blogPosts.ts` and `/src/data/blogContent.ts`), NOT MDX files. The publish module must append to these files.
-- **Conservation area enforcement is real.** A Topsham property owner was fined £38,000 in Dec 2025. This makes excellent content — it demonstrates why professional heritage decorating matters.
+- **Conservation area enforcement is real.** Discuss consent and specialist heritage decorating without publishing monetary figures.
 - **Full research reports** are saved at:
   - `/Users/nick/Documents/code/seo_dec_25/output/bsr-decorating-keyword-research.md`
   - `/Users/nick/Documents/code/seo_dec_25/output/bsr-decorating-market-research.md`

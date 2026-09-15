@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test:seo-policy": "tsx --test scripts/seo-agent/editorial-policy.test.ts",
     "seo-agent": "tsx scripts/seo-agent/index.ts",
     "seo-monthly-report": "tsx scripts/seo-agent/monthly-report.ts",
     "seo-monthly-report-scheduled": "tsx scripts/seo-agent/monthly-report-scheduler.ts"

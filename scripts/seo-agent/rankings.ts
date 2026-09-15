@@ -2,6 +2,7 @@ import { google } from "googleapis";
 import fs from "fs";
 import path from "path";
 import { CONFIG } from "./config";
+import { mentionsPricing } from "./editorial-policy";
 
 interface KeywordRanking {
   keyword: string;
@@ -50,7 +51,7 @@ function parseKeywordsFromStrategy(strategyContent: string): string[] {
 
   while ((match = tableRowRegex.exec(rankingsSection)) !== null) {
     const keyword = match[1].trim();
-    if (keyword && keyword !== "Keyword" && !keyword.startsWith("---")) {
+    if (keyword && keyword !== "Keyword" && !keyword.startsWith("---") && !mentionsPricing(keyword)) {
       keywords.push(keyword);
     }
   }

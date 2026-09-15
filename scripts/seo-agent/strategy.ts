@@ -2,6 +2,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import fs from "fs";
 import path from "path";
 import { CONFIG } from "./config";
+import { activeStrategyForPrompt, mentionsPricing, safeRankings } from "./editorial-policy";
 
 interface RankingData {
   keyword: string;
@@ -33,7 +34,7 @@ export async function generateRecommendations(
     if (titleMatches) {
       for (const m of titleMatches) {
         const title = m.match(/['"]([^'"]+)['"]/)?.[1];
-        if (title) existingPosts.push(title);
+        if (title && !mentionsPricing(title)) existingPosts.push(title);
       }
     }
   }
@@ -70,14 +71,13 @@ export async function generateRecommendations(
     if (pageContent.includes("FAQPage")) schemas.push("FAQPage");
     if (pageContent.includes("BreadcrumbList")) schemas.push("BreadcrumbList");
     if (pageContent.includes("makesOffer")) schemas.push("makesOffer");
-    if (pageContent.includes("priceRange")) schemas.push("priceRange");
     if (pageContent.includes("areaServed")) schemas.push("areaServed");
     if (schemas.length > 0) {
       schemaInfo.push(`${page}: ${schemas.join(", ")}`);
     }
   }
 
-  const rankingSummary = rankings
+  const rankingSummary = safeRankings(rankings)
     .map((r) => {
       const pos = r.position !== null ? `#${r.position}` : "Not indexed";
       return `- "${r.keyword}": ${pos} (prev: ${r.previousPosition}, clicks: ${r.clicks}, impressions: ${r.impressions})`;
@@ -93,7 +93,7 @@ export async function generateRecommendations(
         content: `You are a technical SEO consultant analysing the current state of bsrdecorating.co.uk, a painter and decorator based in Dawlish, Devon, targeting Exeter and Topsham markets. They specialise in domestic, commercial, heritage/period properties, kitchen spraying, and eco-friendly paints.
 
 ## Current SEO Strategy
-${strategyContent}
+${activeStrategyForPrompt(strategyContent)}
 
 ## Current Keyword Rankings
 ${rankingSummary}
@@ -120,7 +120,8 @@ CRITICAL RULES:
 - Do NOT recommend creating pages that already exist in the "Current Site Pages" list above
 - Do NOT recommend adding schema markup that is already present in the "Existing Schema Markup" list above
 - Do NOT recommend things that have already been implemented — check the lists above first
-- Be specific and actionable — "Add FAQ schema to the cost guide page" is better than "Improve on-page SEO"
+- Be specific and actionable — name the affected service page or area page
+- Do not recommend price-led topics or mention prices, costs, rates, fees or budgets
 - Reference specific keywords and their current rankings
 - Consider the 994 listed buildings and 20 conservation areas in Exeter as content opportunities
 - Prioritise by impact
@@ -144,7 +145,11 @@ Respond in EXACTLY this JSON format, nothing else:
 
   try {
     const cleaned = text.replace(/```json\n?/g, "").replace(/```\n?/g, "").trim();
-    return JSON.parse(cleaned);
+    const parsed: Recommendation[] = JSON.parse(cleaned);
+    if (!Array.isArray(parsed)) return [];
+    return parsed.filter((rec) =>
+      !mentionsPricing(`${rec.category} ${rec.title} ${rec.description}`)
+    );
   } catch {
     console.warn("Failed to parse recommendations JSON, skipping.");
     return [];

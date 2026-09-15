@@ -2,7 +2,7 @@
 
 This guide explains how to easily add new blog posts to the BSR Decorating website.
 
-Blog posts should explain the work and invite readers to request a tailored written quote. Do not add numeric prices, ranges, hourly rates, material prices or property values to article copy. The article renderer removes legacy pricing claims, and the SEO publisher rejects new posts that contain them.
+Blog posts should explain the work and invite readers to request a tailored written quote. Do not write about prices, costs, rates, discounts, budgets or property values. The article renderer removes legacy monetary claims, and the SEO publisher rejects new price-led posts.
 
 ## Quick Overview
 
