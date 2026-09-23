@@ -5,6 +5,14 @@ import { CONFIG } from "./config";
 import type { CompetitorReport } from "./competitors";
 import { activeStrategyForPrompt, mentionsPricing, safeRankings } from "./editorial-policy";
 
+const FACTUAL_ACCURACY_RULES = `## Non-negotiable factual accuracy
+- Use only business facts and service offerings explicitly stated in the opening business description or an explicitly labelled product/service context in this prompt. Do not infer services from the target keyword, SEO strategy, topic context, or current post.
+- Treat the SEO strategy, topic context, and any current post as planning material, not verified evidence. Never repeat a claim from them unless it is also present in the approved business/product context.
+- Do not include statistics, percentages, prices, monetary amounts, customer numbers, rankings, performance claims, savings, timescales, frequencies, dimensions, legal/regulatory claims, or other numerical factual claims unless the exact claim is explicitly supplied in the approved business/product context in this prompt.
+- Never invent or assume services, features, coverage areas, staff details, qualifications, accreditations, guarantees, results, availability, or business history.
+- If a claim is not explicitly supported, omit it or rewrite it qualitatively. Do not estimate, generalise, use a plausible-looking figure, or add a citation from memory.
+- Before returning the article, silently check every factual claim against these rules. If unsure, remove it. Accuracy takes priority over detail, word count, and SEO.`;
+
 interface RankingData {
   keyword: string;
   position: number | null;
@@ -395,6 +403,8 @@ ${activeStrategyForPrompt(strategyContent)}
 Write a blog post targeting this keyword: "${topic.keyword}"
 Context: ${topic.context}
 
+${FACTUAL_ACCURACY_RULES}
+
 ## Requirements
 - Length: ${CONFIG.minBlogWordCount}-${CONFIG.maxBlogWordCount} words
 - Language: UK English (use "s" not "z" in words like "optimisation", "organisation")
@@ -567,6 +577,8 @@ Rewrite and improve this blog post to make it rank better.
 - Strengthen keyword targeting without stuffing
 - Make the introduction more compelling
 - Add internal links to BSR service and area pages
+
+${FACTUAL_ACCURACY_RULES}
 
 ## Requirements
 - Length: ${CONFIG.minBlogWordCount}-${CONFIG.maxBlogWordCount} words
