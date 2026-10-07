@@ -22,186 +22,182 @@ export const blogContent: Record<string, BlogContentData> = {
     sections: [
       {
         type: 'paragraph',
-        content: 'With over 50 painting and decorating businesses serving Exeter, choosing the right one can feel overwhelming. Online reviews are often the first place homeowners look, but not all decorator Exeter reviews tell you what you actually need to know. Some reveal genuine expertise, reliability and attention to detail. Others are generic, outdated or fail to reflect the specific challenges of decorating in a city with 994 listed buildings, 20 conservation areas and coastal weather conditions that demand specialist knowledge. This guide will help you separate genuine insight from marketing noise and make an informed choice for your Exeter property.',
+        content: 'Choosing a decorator in Exeter means sifting through countless reviews, websites, and testimonials. With so many painters and decorators operating across the city—from St Leonard\'s to Heavitree, Topsham to Pennsylvania—how do you know which reviews to trust and what genuinely matters when making your decision?',
+      },
+      {
+        type: 'paragraph',
+        content: 'This guide walks you through exactly what to look for in decorator reviews, which warning signs to spot, and the questions you should ask before committing to any painter in Exeter. Whether you\'re planning work on a Victorian terrace in Newtown, a listed building in Topsham, or a modern home in Alphington, these principles will help you make an informed choice.',
       },
       {
         type: 'heading',
-        content: 'Why Exeter Reviews Need Closer Scrutiny Than Most',
+        content: 'Why Reviews Matter (And Why They\'re Not Everything)',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'Exeter is not a standard decorating market. The city centre alone contains 380 listed buildings in the St David\'s ward, with entire streets of Georgian and Victorian properties in St Leonard\'s, Pennsylvania and Southernhay. Topsham adds another 228 listed buildings, many of them waterfront homes facing unique humidity and weather challenges from the Exe estuary. This means your decorator needs more than basic painting skills. They need to understand [breathable paints for listed buildings](/blog/painting-listed-buildings-exeter-breathable-paint-consent-mistakes), lime plaster, sash window detailing, conservation area restrictions and how Devon\'s coastal weather affects exterior paint longevity.',
+        content: 'Reviews provide social proof and insight into how a decorator operates, treats customers, and handles problems. In Exeter\'s tight-knit community, word-of-mouth recommendations carry particular weight—especially in conservation areas like Topsham where property owners often recommend tradespeople who understand heritage work.',
       },
       {
         type: 'paragraph',
-        content: 'A five-star review from someone who had their new-build lounge painted in Cranbrook tells you nothing about whether that decorator can handle your 1840s terraced house in Newtown or Mount Pleasant. When reading decorator Exeter reviews, look for evidence that the reviewer\'s property type matches yours. Did they mention period features? Breathable paint systems? Damp issues common to older Devon stone walls? Conservation area consent? These details reveal whether the decorator has relevant experience for your specific project. For heritage properties in particular, you need someone who understands the requirements outlined in our <a href="/areas/exeter/heritage-property-painting">heritage property painting guide for Exeter</a>.',
+        content: 'However, reviews alone don\'t tell the whole story. A decorator with fewer reviews might be equally skilled but newer to digital platforms. Some established decorators rely heavily on repeat business and recommendations rather than online reviews. What matters is the pattern you see across reviews, not just the star rating.',
       },
       {
         type: 'heading',
-        content: 'Red Flags in Decorator Reviews You Shouldn\'t Ignore',
+        content: 'What to Look for in Decorator Reviews',
         level: 2,
-      },
-      {
-        type: 'subheading',
-        content: 'Generic Praise With No Specifics',
-        level: 3,
-      },
-      {
-        type: 'paragraph',
-        content: 'Reviews that say \'great job\' or \'very professional\' without describing what was actually done are next to useless. What you want to see are specifics: which rooms were decorated, what techniques were used, what problems were solved. A review that mentions \'replastered the bay window reveal and matched the original cornicing profile\' tells you the decorator has heritage restoration skills. A review that says \'painted the living room, looks nice\' tells you nothing about their capability to handle complex joinery, period features or challenging substrates.',
-      },
-      {
-        type: 'subheading',
-        content: 'No Mention of Timeline or Budget Adherence',
-        level: 3,
-      },
-      {
-        type: 'paragraph',
-        content: 'Reliable decorators stick to agreed timelines and explain any changes to the work clearly. Reviews should mention whether the job was completed on schedule and whether the decorator kept the customer informed when unexpected preparation was needed. Look for reviews that praise clear written quotes and prompt discussion of any changes. Vague praise tells you little about how a decorator communicates or manages expectations.',
-      },
-      {
-        type: 'subheading',
-        content: 'All Recent Reviews but No Track Record',
-        level: 3,
-      },
-      {
-        type: 'paragraph',
-        content: 'A decorator with 15 five-star reviews all posted in the last two months and nothing before that should raise questions. Established decorators accumulate reviews steadily over time. A sudden burst of recent reviews with no older feedback might indicate a new business trying to build credibility quickly, or in rare cases, manufactured testimonials. Look for review profiles that show consistent work over several years. Decorators who\'ve been serving Exeter through multiple seasons understand how to prepare exterior surfaces for Devon\'s wet winters and plan interior work around the summer booking peak.',
-      },
-      {
-        type: 'subheading',
-        content: 'No Photos of Completed Work',
-        level: 3,
-      },
-      {
-        type: 'paragraph',
-        content: 'Text reviews are helpful, but photos of finished projects are invaluable. They reveal attention to detail: clean cutting-in around architraves, smooth finishes on window sills, proper preparation of surfaces. For period properties, photos can show whether the decorator respects original features or treats them carelessly. If a decorator\'s online presence has no portfolio images, ask why. Most professionals are proud to show their work, particularly if they specialise in heritage properties or high-end finishes.',
       },
       {
         type: 'heading',
-        content: 'What Good Exeter Decorator Reviews Actually Look Like',
-        level: 2,
+        content: 'Specific Project Details',
+        level: 3,
       },
       {
         type: 'paragraph',
-        content: 'High-quality reviews contain specific details that demonstrate both the decorator\'s competence and the reviewer\'s credibility. Here\'s what to look for:',
+        content: 'The most useful reviews describe specific projects: "David repainted our three-bedroom Edwardian terrace in St Leonard\'s" tells you far more than "great work, very happy." Look for reviews that mention:',
       },
       {
         type: 'list',
         content: [
-          '<strong>Property type and location mentioned:</strong> \'Our Victorian terrace in Heavitree\' or \'Grade II listed cottage in Topsham\' tells you the decorator works with properties similar to yours',
-          '<strong>Scope of work described:</strong> Not just \'decorated two rooms\' but \'stripped wallpaper, repaired plaster cracks, redecorated hall, stairs and landing including stripping and repainting all woodwork\'',
-          '<strong>Problems solved:</strong> \'Identified damp issue before painting and recommended treatment\' or \'matched existing heritage colours perfectly\' shows diagnostic skills and expertise',
-          '<strong>Materials and techniques noted:</strong> \'Used breathable paint throughout as recommended for our 1860s stone walls\' or \'sprayed kitchen cabinets with a professional hard-wearing finish\' reveals technical knowledge',
-          '<strong>Timeline and budget clarity:</strong> \'Completed in three days as quoted\' or \'stayed within the original estimate despite finding additional repair work needed\'',
-          '<strong>Communication and professionalism:</strong> \'Responded quickly to questions\', \'kept the work area clean\', \'protected furniture thoroughly\'',
-          '<strong>Before and after photos:</strong> Visual evidence of the quality of workmanship, particularly useful for exterior painting, kitchen spraying or period property restoration',
+          'The type of property worked on (period homes, new builds, commercial premises)',
+          'Specific services completed (exterior painting, wallpapering, kitchen spraying)',
+          'Challenges overcome (damp walls, conservation area requirements, tight timescales)',
+          'Materials or techniques used (breathable paints for old houses, specialist finishes)',
         ],
       },
       {
+        type: 'paragraph',
+        content: 'Reviews mentioning work similar to yours are particularly valuable. If you own a listed building in Topsham\'s conservation area, a decorator with positive reviews for <a href="/areas/exeter/heritage-property-painting">heritage property work</a> is more relevant than one with glowing testimonials for new-build apartments.',
+      },
+      {
         type: 'heading',
-        content: 'Questions to Ask Based on What Reviews Don\'t Tell You',
+        content: 'How Problems Were Handled',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Every decorating project encounters unexpected issues—a wall in worse condition than anticipated, weather delays for exterior work, supply chain problems. Reviews that mention how a decorator handled problems tell you more about professionalism than perfect projects do.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Look for mentions of communication during difficulties, willingness to find solutions, and transparency about additional work needed. A decorator who discovers damp behind wallpaper in an Exeter Victorian terrace and explains the best approach to addressing it demonstrates expertise and honesty.',
+      },
+      {
+        type: 'heading',
+        content: 'Communication and Professionalism',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Reviews frequently mention communication quality: returning calls promptly, providing clear written quotes, explaining the work schedule, keeping the site tidy. These operational details matter as much as the finished paintwork.',
+      },
+      {
+        type: 'paragraph',
+        content: 'For commercial work—whether it\'s an <a href="/areas/exeter">Exeter city centre office</a> or a hospitality venue—reviews should ideally mention minimal disruption, adherence to timescales, and coordination with other trades. Business owners cannot afford unreliable decorators.',
+      },
+      {
+        type: 'heading',
+        content: 'Local Knowledge and Area-Specific Experience',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Decorators familiar with Exeter\'s property types bring valuable advantages. Someone experienced with the city\'s 994 listed buildings understands breathable paint requirements and conservation area regulations. A decorator who regularly works in Topsham\'s 228 listed buildings knows which approaches work for riverside properties exposed to humidity.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Reviews mentioning specific Exeter locations—St David\'s, Pennsylvania, Heavitree, Mount Pleasant—indicate local familiarity. A decorator operating across Devon\'s coast, from Dawlish to Exmouth, understands how coastal weather affects paint longevity differently than someone working exclusively inland.',
+      },
+      {
+        type: 'heading',
+        content: 'Red Flags to Watch For',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'Even good reviews can\'t cover everything. Use what you\'ve read to inform specific questions when you contact decorators:',
+        content: 'Certain patterns in reviews should raise concerns:',
       },
       {
         type: 'list',
         content: [
-          '<strong>If reviews mention period properties but not conservation areas:</strong> \'Do you have experience working within Exeter\'s conservation areas? Do you handle planning consent applications or advise on requirements?\'',
-          '<strong>If reviews focus on interior work:</strong> \'What\'s your approach to exterior painting in Devon\'s coastal climate? What paint systems do you recommend for render, timber or masonry exposed to salt air?\'',
-          '<strong>If reviews don\'t mention preparation work:</strong> \'How much time do you typically allocate to surface preparation versus painting? How do you handle damp or failing plaster?\'',
-          '<strong>If pricing isn\'t mentioned in reviews:</strong> \'Can you provide a detailed written quote breaking down labour, materials and any additional costs? What\'s your payment schedule?\'',
-          '<strong>If timelines seem vague:</strong> \'What\'s your current lead time? How long would you estimate for a project like mine? What happens if weather delays exterior work?\'',
+          '<strong>No detailed reviews:</strong> If all reviews are generic one-liners, question their authenticity',
+          '<strong>All reviews within a short timeframe:</strong> Genuine reviews accumulate steadily over months and years',
+          '<strong>Defensive responses to criticism:</strong> Professional decorators respond constructively to negative feedback, acknowledging issues and explaining resolutions',
+          '<strong>Reviews mentioning similar problems repeatedly:</strong> One complaint about poor timekeeping might be an anomaly; five suggests a pattern',
+          '<strong>No photographic evidence:</strong> Reputable decorators typically have portfolios showing completed projects in various Exeter properties',
         ],
       },
       {
         type: 'paragraph',
-        content: 'For Exeter properties in particular, ask about specific local challenges. Does the decorator understand that Heavitree Victorian terraces often have solid stone walls requiring breathable paint? That [Topsham waterfront homes need specialist moisture management](/blog/topsham-waterfront-homes-best-paints-humidity-salt-air-weather)? That St Leonard\'s conservation area has restrictions on external colours? These questions reveal whether online praise translates to genuine local expertise. Our <a href="/areas/exeter">Exeter decorating services page</a> outlines the specific challenges we see across different areas of the city.',
+        content: 'Be particularly cautious if reviews avoid mentioning what was actually painted or use vague language that could apply to any trade. Genuine customers describe their specific experience.',
       },
       {
         type: 'heading',
-        content: 'Where to Find the Most Reliable Decorator Reviews in Exeter',
+        content: 'Beyond Online Reviews: Other Trust Indicators',
         level: 2,
       },
       {
-        type: 'subheading',
-        content: 'Google Reviews',
+        type: 'heading',
+        content: 'Insurance and Certifications',
         level: 3,
       },
       {
         type: 'paragraph',
-        content: 'Google\'s review system is hard to manipulate and shows verified purchases where applicable. Look at the overall star rating, but pay more attention to the written content of reviews and how businesses respond to criticism. A decorator who addresses negative feedback professionally and offers solutions demonstrates customer service standards. Check review dates—consistent feedback over months and years is more credible than a sudden cluster.',
-      },
-      {
-        type: 'subheading',
-        content: 'Checkatrade and Trustatrader',
-        level: 3,
-      },
-      {
-        type: 'paragraph',
-        content: 'These platforms verify tradespeople and require reviews to be substantiated. Ratings tend to be reliable because customers can\'t post anonymously and businesses must respond to feedback. However, not all Exeter decorators are listed on these platforms, and membership doesn\'t guarantee quality—it just provides an additional verification layer.',
-      },
-      {
-        type: 'subheading',
-        content: 'Local Facebook Groups and Nextdoor',
-        level: 3,
-      },
-      {
-        type: 'paragraph',
-        content: 'Exeter-specific community groups often contain candid recommendations from neighbours. These tend to be more detailed and honest than public reviews because they\'re shared among local residents. Search groups like \'Exeter Community Group\' or \'Topsham Neighbours\' for recent decorator recommendations. Be aware that personal recommendations can be biased by friendship, so cross-reference with other sources.',
-      },
-      {
-        type: 'subheading',
-        content: 'Heritage and Conservation Organisations',
-        level: 3,
-      },
-      {
-        type: 'paragraph',
-        content: 'If you own a listed building or property in one of Exeter\'s 20 conservation areas, ask for recommendations from the Devon Historic Buildings Trust or Exeter Civic Society. Decorators who specialise in heritage work are often known to these organisations and can provide references from similar projects. This is particularly valuable for complex work like lime plastering, traditional paint finishes or restoration of period joinery.',
+        content: 'Professional decorators carry public liability insurance and can provide evidence. For <a href="/commercial">commercial decorating work</a>, additional certifications like CHAS accreditation may be required. While reviews mention these occasionally, verify them directly.',
       },
       {
         type: 'heading',
-        content: 'How to Verify What Reviews Claim',
+        content: 'Portfolio and Case Studies',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'A decorator\'s portfolio shows the quality and range of work they deliver. Look for examples similar to your project—period property exteriors, modern interiors, kitchen spraying, commercial premises. Portfolios for Exeter decorators should ideally show local properties you might recognise.',
+      },
+      {
+        type: 'heading',
+        content: 'Longevity and Repeat Business',
+        level: 3,
+      },
+      {
+        type: 'paragraph',
+        content: 'Decorators with twenty-plus years serving Exeter demonstrate reliability and quality—you cannot sustain a business that long through poor work. Mentions of repeat customers or whole-street recommendations in areas like St Leonard\'s or Topsham indicate trusted service.',
+      },
+      {
+        type: 'heading',
+        content: 'Questions to Ask Before Booking',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'Don\'t just read reviews—verify them. Ask decorators for references from recent Exeter clients whose properties are similar to yours. A professional decorator will happily provide contact details for two or three past customers. When you speak to references, ask:',
+        content: 'Once reviews have helped you shortlist decorators, these questions clarify whether they suit your specific project:',
       },
       {
         type: 'list',
         content: [
-          'What was the scope of work and final cost?',
-          'Did the decorator stick to the timeline and budget?',
-          'How did they handle any unexpected issues that arose?',
-          'Would you use them again for future decorating work?',
-          'Were there any aspects of the work or service you were unhappy with?',
+          '<strong>Have you worked on similar properties in Exeter?</strong> If you own a Victorian terrace in Heavitree or a listed building in Topsham\'s conservation area, ask for examples of comparable work',
+          '<strong>What preparation work do you include?</strong> Proper preparation determines paint longevity—especially crucial for Exeter\'s older housing stock',
+          '<strong>Which paints do you recommend for my property type?</strong> Period properties need breathable paints; coastal properties need weather-resistant formulations; eco-conscious homeowners want low-VOC options',
+          '<strong>What does your quote include?</strong> Clarify whether it covers all preparation, materials, clearing up, and any necessary repairs discovered during work',
+          '<strong>What\'s your typical project timeline?</strong> Understanding realistic schedules helps, particularly for exterior work dependent on Devon\'s weather',
+          '<strong>Can you provide references from recent Exeter projects?</strong> Speaking directly to previous customers offers reassurance beyond written reviews',
         ],
       },
       {
         type: 'paragraph',
-        content: 'If you\'re planning <a href="/areas/exeter/kitchen-spraying">kitchen cabinet spraying in Exeter</a>, ask to see examples of previous spray work. The finish quality on sprayed kitchens is immediately obvious—smooth, even coverage with no brush marks or roller stipple. Similarly, for <a href="/commercial">commercial decorating in Exeter</a>, ask for references from business clients who can speak to the decorator\'s ability to work around trading hours and minimise disruption.',
-      },
-      {
-        type: 'quoteCTA',
-        content: 'Looking for a decorator in Exeter with verifiable local experience and genuine customer testimonials? BSR Decorating has been serving Exeter, Topsham and surrounding areas for over 20 years, specialising in period properties, heritage restoration and high-quality domestic and commercial work. Get a free, detailed quote with no obligation.',
+        content: 'For specialist work—<a href="/areas/exeter/kitchen-spraying">kitchen cabinet spraying</a>, heritage property decoration, or commercial premises—ask about specific experience in those areas. Generic decorators might lack the expertise these projects demand.',
       },
       {
         type: 'heading',
-        content: 'Red Flags in How Decorators Respond to Reviews',
+        content: 'What Reviews Won\'t Tell You',
         level: 2,
       },
       {
         type: 'paragraph',
-        content: 'How a decorator responds to negative reviews is as revealing as the reviews themselves. Professional decorators acknowledge criticism, explain what happened and describe how they resolved the issue or what they learned. Defensive responses, personal attacks on reviewers or blanket denials without explanation suggest poor customer service standards. No response at all to legitimate complaints suggests a decorator who doesn\'t value client feedback.',
+        content: 'Reviews rarely cover whether a decorator\'s values align with yours. At BSR Decorating, our partnership with Surfers Against Sewage reflects a commitment to environmental responsibility that matters to many Exeter and Topsham residents. If sustainability, community involvement, or specific business practices matter to you, ask directly—reviews seldom mention these aspects.',
       },
       {
         type: 'paragraph',
-        content: 'Conversely, decorators who respond to positive reviews with generic thank-yous miss an opportunity to demonstrate expertise. A good response might say: \'Thanks for the kind words about the St Leonard\'s project. We enjoyed working on your Victorian terrace and we\'re pleased the breathable paint system has solved the condensation issue.\' This shows the decorator remembers the project specifics and reinforces their technical knowledge.',
+        content: 'Similarly, reviews don\'t always reveal a decorator\'s capacity to take on your project within your preferred timeframe. Peak season for exterior work runs from spring through summer, and popular decorators book weeks ahead. Availability matters as much as capability.',
       },
       {
         type: 'heading',
@@ -210,15 +206,28 @@ export const blogContent: Record<string, BlogContentData> = {
       },
       {
         type: 'paragraph',
-        content: 'Online reviews are one tool in your decision-making process, not the only one. Combine review research with in-person consultations, written quotes and your own assessment of professionalism. A decorator who arrives on time for the quote, asks detailed questions about your property, explains material choices clearly and provides a comprehensive written estimate deserves more weight than one with five-star reviews but poor communication.',
+        content: 'The best decorator for your Exeter property balances several factors: positive, detailed reviews; relevant local experience; appropriate specialist knowledge for your property type; clear communication; and professional approach. Reviews form one element of that assessment, not the sole criterion.',
       },
       {
         type: 'paragraph',
-        content: 'For Exeter properties—particularly period homes, listed buildings or properties in conservation areas—look for decorators who demonstrate local knowledge through their reviews and references. They should understand that Pennsylvania Park terraces often have lime plaster that needs breathable finishes. That Alphington stone cottages require different preparation than Pinhoe new-builds. That Topsham riverside homes face moisture challenges that standard paint systems can\'t handle. This level of expertise only comes from years of working across Exeter\'s diverse property stock. Our guide on [decorating period homes in Exeter](/blog/decorating-tips-exeter-period-homes-specialist-advice) covers the technical considerations in detail.',
+        content: 'Trust your instincts during initial conversations. A decorator who listens carefully to your requirements, asks thoughtful questions about your property, and provides clear explanations typically delivers the same attentiveness throughout the project.',
+      },
+      {
+        type: 'heading',
+        content: 'Planning Decorating Work in Exeter?',
+        level: 2,
       },
       {
         type: 'paragraph',
-        content: 'Reviews can point you towards decorators worth contacting. Your own due diligence—asking the right questions, checking references, reviewing detailed quotes—will help you choose the right one for your project. If you\'d like to discuss decorating work on your Exeter property and see examples of our completed projects across the city, <a href="/contact">get in touch with BSR Decorating</a> for a free consultation and detailed quote.',
+        content: 'Whether you\'re refreshing a period property in St Leonard\'s, maintaining a waterfront home in Topsham, or updating commercial premises in Exeter city centre, choosing the right decorator makes all the difference to your project outcome.',
+      },
+      {
+        type: 'paragraph',
+        content: 'BSR Decorating has served Exeter, Topsham, Dawlish and surrounding Devon areas for over twenty years, working on everything from listed buildings in conservation areas to modern homes and commercial properties. We understand local property types, conservation requirements, and the specific challenges Devon\'s coastal climate presents.',
+      },
+      {
+        type: 'quoteCTA',
+        content: 'Planning a decorating project in Exeter or Topsham? Get in touch for a free, no-obligation quote tailored to your property\'s specific requirements.',
       },
     ],
   },
