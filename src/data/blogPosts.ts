@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: 46,
     title: 'Decorator Exeter Reviews: What to Look for Before Choosing a Painter',
-    excerpt: 'How to choose a reliable decorator in Exeter. What reviews really tell you, red flags to avoid, and questions to ask before booking.',
+    excerpt: 'Learn what to look for in decorator reviews when choosing a painter in Exeter, from heritage expertise to commercial experience and local knowledge.',
     category: 'Expert Advice',
     date: '2026-06-22',
     readTime: '7 min read',
