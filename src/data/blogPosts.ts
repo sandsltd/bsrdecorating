@@ -13,10 +13,10 @@ export const blogPosts: BlogPost[] = [
   {
     id: 46,
     title: 'Decorator Exeter Reviews: What to Look for Before Choosing a Painter',
-    excerpt: 'Learn what to look for in decorator reviews when choosing a painter in Exeter, from heritage expertise to commercial experience and local knowledge.',
+    excerpt: 'Learn how to evaluate decorator reviews in Exeter and what really matters when choosing a painter for your Devon home or business.',
     category: 'Expert Advice',
     date: '2026-06-22',
-    readTime: '7 min read',
+    readTime: '9 min read',
     image: '/images/blog/33-painting-fence-brush.webp',
     slug: 'decorator-exeter-reviews-what-to-look-for',
   },
